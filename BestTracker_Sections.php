@@ -127,6 +127,22 @@ start($j++, 'EX Full Art', $have, $EX_Full_Art);
 foreach ($EX_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'EX Full Art (Team Plasma)', $have, $EX_Full_Art_Plasma);
+foreach ($EX_Full_Art_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'EX Full Art (Radiant)', $have, $EX_Full_Art_Radiant);
+foreach ($EX_Full_Art_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'M EX Full Art (Radiant)', $have, $M_EX_Full_Art_Radiant);
+foreach ($M_EX_Full_Art_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'EX Full Art (Special)', $have, $EX_Full_Art_Special);
+foreach ($EX_Full_Art_Special as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Mega EX Full Art', $have, $M_EX_Full_Art);
 foreach ($M_EX_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

@@ -259,6 +259,14 @@ $binder3 = AddCards($binder3, $EX_Full_Art);
 $binder3 = AlignRow($binder3);
 $binder3 = AddCards($binder3, $M_EX_Full_Art);
 $binder3 = AlignPage($binder3);
+$binder3 = AddCards($binder3, $EX_Full_Art_Plasma);
+$binder3 = AlignPage($binder3);
+$binder3 = AddCards($binder3, $EX_Full_Art_Radiant);
+$binder3 = AlignRow($binder3);
+$binder3 = AddCards($binder3, $M_EX_Full_Art_Radiant);
+$binder3 = AlignPage($binder3);
+$binder3 = AddCards($binder3, $EX_Full_Art_Special);
+$binder3 = AlignPage($binder3);
 $binder3 = AddCards($binder3, $EX_Special_Art);
 $binder3 = AlignRow($binder3);
 $binder3 = AddCards($binder3, $M_EX_Special_Art);
@@ -405,7 +413,7 @@ $binder10 = AlignBinder($binder10);
 
 $markers = CountMarkers($binder1) + CountMarkers($binder2) + CountMarkers($binder3) + CountMarkers($binder4) + CountMarkers($binder5) + CountMarkers($binder6) + CountMarkers($binder7) + CountMarkers($binder8) + CountMarkers($binder9);
 
-// print('<h1>Number of VSTAR Markers: '.$markers.'</h1>');
+print('<h1>Number of VSTAR Markers: '.$markers.'</h1>');
 
 $i = 0;
 print('<ul>');

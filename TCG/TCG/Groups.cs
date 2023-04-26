@@ -190,13 +190,6 @@ namespace TCG
 				Cards.Find(Sets.XY, 30.1),
 				Cards.Find(Sets.Evolutions, 22)
 			),
-			new Group // Charizard EX
-			(
-				Rarity.EX_Full_Art,
-				Rules.GROUP_CARDS,
-				Cards.Find(Sets.Flashfire, 100),
-				Cards.Find(Sets.Japanese_BW_XY, 4)
-			),
 			new Group // Mewtwo EX
 			(
 				Rarity.EX_Full_Art,
