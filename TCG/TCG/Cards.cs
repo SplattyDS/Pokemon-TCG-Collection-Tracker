@@ -3731,6 +3731,9 @@ namespace TCG
 			new Card("Arceus VSTAR", Pokedex.Arceus, Rarity.VSTAR, Types.Colorless, Sets.SWSH_Promo, 307),
 			new Card("Miraidon ex", Pokedex.Miraidon, Rarity.ex_SV, Types.Lightning, Sets.SV_Promo, 28),
 			new Card("Koraidon ex", Pokedex.Koraidon, Rarity.ex_SV, Types.Fighting, Sets.SV_Promo, 29),
+			new Card("Chien-Pao ex", Pokedex.Chien_Pao, Rarity.ex_SV, Types.Water, Sets.SV_Promo, 30),
+			new Card("Tinkaton ex", Pokedex.Tinkaton, Rarity.ex_SV, Types.Psychic, Sets.SV_Promo, 31),
+			new Card("Annihilape ex", Pokedex.Annihilape, Rarity.ex_SV, Types.Fighting, Sets.SV_Promo, 32),
 		};
 		
 		// do not add Play! Pokémon prize pack cards (too many and uncertain amount)

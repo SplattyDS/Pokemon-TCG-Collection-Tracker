@@ -4,17 +4,17 @@ start($j++, 'Triple Beat (JP)', $have, $FUT_TB);
 foreach ($FUT_TB as $cur) { imgF($cur); }
 finish();
 
-$FUT_SH = array('SH1','SH2','SH3','SH4','SH5','SH6','SH7','SH8','SH9','SH10','SH11','SH12','SH13','SH14','SH15','SH16','SH17','SH18','SH19','SH20','SH21','SH22','SH23','SH24','SH25','SH26','SH27','SH28','SH29','SH30','SH31','SH32','SH33','SH34');
+$FUT_SH = array('SH1','SH2','SH3','SH4','SH5','SH6','SH7','SH8','SH9','SH10','SH11','SH12','SH13','SH14','SH15','SH16','SH17','SH18','SH19','SH20','SH21','SH22','SH23','SH24','SH25','SH26','SH27','SH28','SH29','SH30','SH31','SH32');
 start($j++, 'Snow Hazard (JP)', $have, $FUT_SH);
 foreach ($FUT_SH as $cur) { imgF($cur); }
 finish();
 
-$FUT_CB = array('CB1','CB2','CB3','CB4','CB5','CB6','CB7','CB8','CB9','CB10','CB11','CB12','CB13','CB14','CB15','CB16','CB17','CB18','CB19','CB20','CB21','CB22','CB23','CB24','CB25','CB26','CB27','CB28','CB29','CB30','CB31','CB32','CB33','CB34');
+$FUT_CB = array('CB1','CB2','CB3','CB4','CB5','CB6','CB7','CB8','CB9','CB10','CB11','CB12','CB13','CB14','CB15','CB16','CB17','CB18','CB19','CB20','CB21','CB22','CB23','CB24','CB25','CB26','CB27','CB28','CB29','CB30','CB31','CB32','CB33');
 start($j++, 'Clay Burst (JP)', $have, $FUT_CB);
 foreach ($FUT_CB as $cur) { imgF($cur); }
 finish();
 
-$FUT_PC = array('PC1','PC2');
+$FUT_PC = array('PC1','PC2','PC3','PC4','PC5','PC6','PC7');
 start($j++, 'Pokemon Card 151 (JP)', $have, $FUT_PC);
 foreach ($FUT_PC as $cur) { imgF($cur); }
 finish();
@@ -37,6 +37,11 @@ finish();
 $FUT_EXSS = array('EXSS1','EXSS2','EXSS3');
 start($j++, 'ex Special Set (JP)', $have, $FUT_EXSS);
 foreach ($FUT_EXSS as $cur) { imgF($cur); }
+finish();
+
+$FUT_EXSD = array('EXSD1','EXSD2','EXSD3','EXSD4','EXSD5','EXSD6','EXSD7','EXSD8');
+start($j++, 'ex Starter Decks (JP)', $have, $FUT_EXSD);
+foreach ($FUT_EXSD as $cur) { imgF($cur); }
 finish();
 
 $FUT_CLF = array('CLF1');
