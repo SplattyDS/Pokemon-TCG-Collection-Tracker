@@ -621,7 +621,7 @@ start($j++, 'Paldea Evolved', $have, $Paldea_Evolved);
 foreach ($Paldea_Evolved as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$SV_Promo = array(3641,3638,3639,3643,3644,3642,3720,3721,3722,3723,3724);
+$SV_Promo = array(3641,3638,3639,3643,3644,3642,3828,3720,3721,3722,3723,3724);
 start($j++, 'SV Promo', $have, $SV_Promo);
 foreach ($SV_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

@@ -3837,6 +3837,7 @@ namespace TCG
 			new Card("Superior Energy Retrieval", Pokedex.NVT, Rarity.Gold_Item_SV, Types.Item, Sets.Paldea_Evolved, 277),
 			new Card("Grass Energy", Pokedex.NVT, Rarity.Gold_Energy_SV, Types.Basic_Grass_Energy, Sets.Paldea_Evolved, 278),
 			new Card("Water Energy", Pokedex.NVT, Rarity.Gold_Energy_SV, Types.Basic_Water_Energy, Sets.Paldea_Evolved, 279),
+			new Card("Pikachu", Pokedex.Pikachu, Rarity.Full_Art, Types.Lightning, Sets.SV_Promo, 27),
 		};
 		
 		// do not add Play! Pokémon prize pack cards (too many and uncertain amount)

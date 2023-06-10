@@ -14,7 +14,7 @@ start($j++, 'Sword & Shield Promo (JP)', $have, $FUT_SSP);
 foreach ($FUT_SSP as $cur) { imgF($cur); }
 finish();
 
-$FUT_SVP = array('SVP1','SVP2','SVP3');
+$FUT_SVP = array('SVP1','SVP2');
 start($j++, 'Scarlet & Violet Promo (JP)', $have, $FUT_SVP);
 foreach ($FUT_SVP as $cur) { imgF($cur); }
 finish();
