@@ -138,6 +138,7 @@
 		Japanese_SWSH,
 		
 		Scarlet_Violet,
+		Paldea_Evolved,
 		SV_Promo,
 
 		Length,
