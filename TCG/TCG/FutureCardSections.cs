@@ -8,6 +8,7 @@
 			new FutureCardSection("Snow Hazard (JP)", "SH", 32),
 			new FutureCardSection("Clay Burst (JP)", "CB", 33),
 			new FutureCardSection("Pokemon Card 151 (JP)", "PC", 33),
+			new FutureCardSection("Ruler of the Black Flame (JP)", "BF", 3),
 			new FutureCardSection("Sword & Shield Promo (JP)", "SSP", 5),
 			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 3),
 			new FutureCardSection("Starter Set Pikachu ex & Pawmot (JP)", "SVC", 1),

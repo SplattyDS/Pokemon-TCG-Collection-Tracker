@@ -19,6 +19,11 @@ start($j++, 'Pokemon Card 151 (JP)', $have, $FUT_PC);
 foreach ($FUT_PC as $cur) { imgF($cur); }
 finish();
 
+$FUT_BF = array('BF1','BF2','BF3');
+start($j++, 'Ruler of the Black Flame (JP)', $have, $FUT_BF);
+foreach ($FUT_BF as $cur) { imgF($cur); }
+finish();
+
 $FUT_SSP = array('SSP1','SSP2','SSP3','SSP4','SSP5');
 start($j++, 'Sword & Shield Promo (JP)', $have, $FUT_SSP);
 foreach ($FUT_SSP as $cur) { imgF($cur); }
