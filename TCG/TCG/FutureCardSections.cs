@@ -5,7 +5,7 @@
 		private static FutureCardSection[] TheCards =
 		{
 			new FutureCardSection("SWSH Promo", "SWSH", 2),
-			new FutureCardSection("Pokemon Card 151 (JP)", "PC", 52),
+			new FutureCardSection("Pokemon Card 151 (JP)", "PC", 56),
 			new FutureCardSection("Ruler of the Black Flame (JP)", "BF", 3),
 			new FutureCardSection("Sword & Shield Promo (JP)", "SSP", 3),
 			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 3),
