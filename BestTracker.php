@@ -363,6 +363,16 @@ if (isset($_GET['test']))
 	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 	finish();
 	
+	$test = array(3730,3649,3725,3735);
+	start($j++, 'Test', $have, $test);
+	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+	finish();
+	
+	$test = array(3732,3734);
+	start($j++, 'Test', $have, $test);
+	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+	finish();
+	
 	return;
 }
 
