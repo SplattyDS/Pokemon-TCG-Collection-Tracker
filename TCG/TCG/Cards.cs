@@ -3838,6 +3838,9 @@ namespace TCG
 			new Card("Grass Energy", Pokedex.NVT, Rarity.Gold_Energy_SV, Types.Basic_Grass_Energy, Sets.Paldea_Evolved, 278),
 			new Card("Water Energy", Pokedex.NVT, Rarity.Gold_Energy_SV, Types.Basic_Water_Energy, Sets.Paldea_Evolved, 279),
 			new Card("Pikachu", Pokedex.Pikachu, Rarity.Full_Art, Types.Lightning, Sets.SV_Promo, 27),
+			new Card("Meowscarada ex", Pokedex.Meowscarada, Rarity.ex_SV, Types.Grass, Sets.SV_Promo, 33),
+			new Card("Skeledirge ex", Pokedex.Skeledirge, Rarity.ex_SV, Types.Fire, Sets.SV_Promo, 34),
+			new Card("Quaquaval ex", Pokedex.Quaquaval, Rarity.ex_SV, Types.Water, Sets.SV_Promo, 35),
 		};
 		
 		// do not add Play! Pokémon prize pack cards (too many and uncertain amount)
