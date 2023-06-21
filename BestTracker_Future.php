@@ -1,10 +1,5 @@
 <?php
-$FUT_SWSH = array('SWSH1','SWSH2');
-start($j++, 'SWSH Promo', $have, $FUT_SWSH);
-foreach ($FUT_SWSH as $cur) { imgF($cur); }
-finish();
-
-$FUT_PC = array('PC1','PC2','PC3','PC4','PC5','PC6','PC7','PC8','PC9','PC10','PC11','PC12','PC13','PC14','PC15','PC16','PC17','PC18','PC19','PC20','PC21','PC22','PC23','PC24','PC25','PC26','PC27','PC28','PC29','PC30','PC31','PC32','PC33','PC34','PC35','PC36','PC37','PC38','PC39','PC40','PC41','PC42','PC43','PC44','PC45','PC46','PC47','PC48','PC49','PC50','PC51','PC52','PC53','PC54','PC55','PC56','PC57');
+$FUT_PC = array('PC1','PC2','PC3','PC4','PC5','PC6','PC7','PC8','PC9','PC10','PC11','PC12','PC13','PC14','PC15','PC16','PC17','PC18','PC19','PC20','PC21','PC22','PC23','PC24','PC25','PC26','PC27','PC28','PC29','PC30','PC31','PC32','PC33','PC34','PC35','PC36','PC37','PC38','PC39','PC40','PC41','PC42','PC43','PC44','PC45','PC46','PC47','PC48','PC49','PC50','PC51','PC52','PC53','PC54','PC55','PC56');
 start($j++, 'Pokemon Card 151 (JP)', $have, $FUT_PC);
 foreach ($FUT_PC as $cur) { imgF($cur); }
 finish();
@@ -19,7 +14,7 @@ start($j++, 'Sword & Shield Promo (JP)', $have, $FUT_SSP);
 foreach ($FUT_SSP as $cur) { imgF($cur); }
 finish();
 
-$FUT_SVP = array('SVP1','SVP2','SVP3');
+$FUT_SVP = array('SVP1','SVP2','SVP3','SVP4');
 start($j++, 'Scarlet & Violet Promo (JP)', $have, $FUT_SVP);
 foreach ($FUT_SVP as $cur) { imgF($cur); }
 finish();

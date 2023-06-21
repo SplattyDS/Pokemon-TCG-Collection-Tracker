@@ -39,7 +39,7 @@
 			// BW & XY
 			new Section(Rarity.EX, "EX", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.M_EX, "Mega EX", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
-			new Section(Rarity.Ace_Spec, "Ace Spec", SortMode.SORT_BY_NAME),
+			new Section(Rarity.Ace_Spec, "Ace Spec", SortMode.SORT_BY_NAME_AND_TYPE),
 			new Section(Rarity.BREAK, " BREAK", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.Ancient_Trait_Alpha, "Ancient Trait α", SortMode.SORT_BY_DEX_AND_TYPE_AND_SET),
 			new Section(Rarity.Ancient_Trait_Omega, "Ancient Trait Ω", SortMode.SORT_BY_DEX_AND_TYPE_AND_SET),

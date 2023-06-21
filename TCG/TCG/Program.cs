@@ -17,6 +17,8 @@ namespace TCG
 			ModifyCards();
 			WriteSections();
 			WriteSets();
+			WriteTypes();
+			WritePokedex();
 			WriteFuture();
 			WriteAll();
 			WriteHave();
@@ -93,10 +95,38 @@ namespace TCG
 
 			foreach (Sets set in Enum.GetValues(typeof(Sets)))
 				code.Add(CodeFromSet(set));
-			
+
 			code.Add("?>");
 
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Sets.php", code);
+		}
+
+		static void WriteTypes()
+		{
+			List<string> code = new List<string>((int)Types.Length + 2);
+
+			code.Add("<?php");
+
+			foreach (Types type in Enum.GetValues(typeof(Types)))
+				code.Add(CodeFromType(type));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Types.php", code);
+		}
+
+		static void WritePokedex()
+		{
+			List<string> code = new List<string>((int)Pokedex.Length + 2);
+
+			code.Add("<?php");
+
+			foreach (Pokedex pokedex in Enum.GetValues(typeof(Pokedex)))
+				code.Add(CodeFromPokedex(pokedex));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Pokedex.php", code);
 		}
 
 		static void WriteFuture()
@@ -187,6 +217,38 @@ namespace TCG
 				"finish();\r\n";
 		}
 
+		static string CodeFromType(Types type)
+		{
+			IEnumerable<Card> cards = CardsFromType(type);
+
+			if (cards.Count() == 0)
+				return "";
+
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			return
+				"$" + type.ToString() + " = array(" + cardArr + ");\r\n" +
+				"start($j++, '" + type.ToString().Replace('_', ' ') + "', $have, $" + type.ToString() + ");\r\n" +
+				"foreach ($" + type.ToString() + " as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }\r\n" +
+				"finish();\r\n";
+		}
+
+		static string CodeFromPokedex(Pokedex pokedex)
+		{
+			IEnumerable<Card> cards = CardsFromPokedex(pokedex);
+
+			if (cards.Count() == 0)
+				return "";
+
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			return
+				"$" + pokedex.ToString() + " = array(" + cardArr + ");\r\n" +
+				"start($j++, '" + pokedex.ToString().Replace('_', ' ') + "', $have, $" + pokedex.ToString() + ");\r\n" +
+				"foreach ($" + pokedex.ToString() + " as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }\r\n" +
+				"finish();\r\n";
+		}
+
 		static IEnumerable<Card> GetMyCollection()
 		{
 			return Cards.Get().Where(c => c.have).OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.rarity);
@@ -247,6 +309,16 @@ namespace TCG
 		static IEnumerable<Card> CardsFromSet(Sets set)
 		{
 			return Cards.Get().Where(c => c.set == set && c.rarity != Rarity.Stamped).OrderBy(c => c.setNum);
+		}
+
+		static IEnumerable<Card> CardsFromType(Types type)
+		{
+			return Cards.Get().Where(c => c.type == type && c.rarity != Rarity.Stamped).OrderBy(c => c.setNum).OrderBy(c => c.set);
+		}
+
+		static IEnumerable<Card> CardsFromPokedex(Pokedex pokedex)
+		{
+			return Cards.Get().Where(c => c.dex == pokedex && c.rarity != Rarity.Stamped).OrderBy(c => c.setNum).OrderBy(c => c.set);
 		}
 
 		static int CountCardsWithRarity(Rarity rarity)

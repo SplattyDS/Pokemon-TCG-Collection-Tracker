@@ -29,5 +29,7 @@
 		Basic_Fairy_Energy,
 		Special_Energy,
 		No_Sorting,
+
+		Length,
 	}
 }

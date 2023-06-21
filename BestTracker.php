@@ -226,6 +226,8 @@
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?set">Set</a></li>
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?col">Collection</a></li>
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?binder">Binder</a></li>
+					<li class="nav-item"><a class="nav-link" href="BestTracker.php?type">Type</a></li>
+					<li class="nav-item"><a class="nav-link" href="BestTracker.php?dex">Dex</a></li>
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?fut">Future</a></li>
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?test">Test</a></li>
 				</ul>
@@ -382,6 +384,18 @@ if (isset($_GET['test']))
 if (isset($_GET['set']))
 {
 	require 'BestTracker_Sets.php';
+	return;
+}
+
+if (isset($_GET['type']))
+{
+	require 'BestTracker_Types.php';
+	return;
+}
+
+if (isset($_GET['dex']))
+{
+	require 'BestTracker_Pokedex.php';
 	return;
 }
 
