@@ -134,9 +134,18 @@
 			let container = document.getElementById("container-" + id);
 			
 			if (container.classList.contains("hidden"))
+			{
 				container.classList.remove("hidden");
+				
+				var images = document.querySelectorAll("#container-" + id + " img");
+				
+				for(var i = 0; i < images.length; i++)
+					images[i].src = images[i].getAttribute('data-src');
+			}
 			else
+			{
 				container.classList.add("hidden");
+			}
 		}
 		
 		const NUM_BACKGROUNDS = 18;
@@ -228,6 +237,7 @@
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?binder">Binder</a></li>
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?type">Type</a></li>
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?dex">Dex</a></li>
+					<li class="nav-item"><a class="nav-link" href="BestTracker.php?all">All</a></li>
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?fut">Future</a></li>
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?test">Test</a></li>
 				</ul>
@@ -244,9 +254,9 @@ function img($ID)
 		return;
 	
 	if ($ID == -1)
-		print('<img class="card-img" src="images/best_tracker/cards/-1.png">');
+		print('<img class="card-img" data-src="images/best_tracker/cards/-1.png">');
 	else if (is_numeric($ID))
-		print('<img class="card-img" src="images/best_tracker/cards/'.(is_numeric($ID) ? str_repeat("0", 4 - strlen($ID)) : '').$ID.'.png">');
+		print('<img class="card-img" data-src="images/best_tracker/cards/'.(is_numeric($ID) ? str_repeat("0", 4 - strlen($ID)) : '').$ID.'.png">');
 }
 
 function imgN($ID)
@@ -255,9 +265,9 @@ function imgN($ID)
 		return;
 	
 	if ($ID == -1)
-		print('<img class="card-img" src="images/best_tracker/cards/-1.png">');
+		print('<img class="card-img" data-src="images/best_tracker/cards/-1.png">');
 	else if (is_numeric($ID))
-		print('<img class="card-have-img" src="images/best_tracker/cards/'.(is_numeric($ID) ? str_repeat("0", 4 - strlen($ID)) : '').$ID.'.png">');
+		print('<img class="card-have-img" data-src="images/best_tracker/cards/'.(is_numeric($ID) ? str_repeat("0", 4 - strlen($ID)) : '').$ID.'.png">');
 }
 
 function imgF($ID)
@@ -265,7 +275,7 @@ function imgF($ID)
 	if (isset($_GET['noimg']))
 		return;
 	
-	print('<img class="card-fut-img" src="images/best_tracker/FUT/'.(is_numeric($ID) ? str_repeat("0", 4 - strlen($ID)) : '').$ID.'.png">');
+	print('<img class="card-fut-img" data-src="images/best_tracker/FUT/'.(is_numeric($ID) ? str_repeat("0", 4 - strlen($ID)) : '').$ID.'.png">');
 }
 
 function start($ID, $name, $have, $arrC)
@@ -423,6 +433,12 @@ if (isset($_GET['col']))
 if (isset($_GET['binder']))
 {
 	require 'BestTracker_Binder.php';
+	return;
+}
+
+if (isset($_GET['percent']))
+{
+	require 'BestTracker_Percent.php';
 	return;
 }
 

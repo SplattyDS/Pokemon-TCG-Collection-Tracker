@@ -320,7 +320,7 @@ namespace TCG
 			new Card("Heat Rotom", Pokedex.Rotom, Rarity.Rotom, Types.Lightning, Sets.Rising_Rivals, 117, true),
 			new Card("Mow Rotom", Pokedex.Rotom, Rarity.Rotom, Types.Lightning, Sets.Rising_Rivals, 118, true),
 			new Card("Wash Rotom", Pokedex.Rotom, Rarity.Rotom, Types.Lightning, Sets.Rising_Rivals, 119, true),
-			new Card("Charon's Choice", Pokedex.NVT, Rarity.Rotom, Types.Item, Sets.Rising_Rivals, 120, true),
+			new Card("Charon's Choice", Pokedex.NVT, Rarity.Rotom, Types.Supporter, Sets.Rising_Rivals, 120, true),
 			new Card("Absol G LV.X", Pokedex.Absol, Rarity.LV_X, Types.Darkness, Sets.Supreme_Victors, 141),
 			new Card("Blaziken FB LV.X", Pokedex.Blaziken, Rarity.LV_X, Types.Fire, Sets.Supreme_Victors, 142),
 			new Card("Charizard G LV.X", Pokedex.Charizard, Rarity.LV_X, Types.Fire, Sets.Supreme_Victors, 143),
@@ -3847,12 +3847,19 @@ namespace TCG
 			new Card("Alakazam ex", Pokedex.Alakazam, Rarity.ex_SV, Types.Psychic, Sets.SV_Promo, 50),
 			new Card("Snorlax", Pokedex.Snorlax, Rarity.Special_Art_Pokemon_SV, Types.Colorless, Sets.SV_Promo, 51),
 			new Card("Charmander", Pokedex.Charmander, Rarity.Special_Art_Pokemon_SV, Types.Fire, Sets.SV_Promo, 44),
+			new Card("Arceus", Pokedex.Arceus, Rarity.Arceus, Types.Colorless, Sets.Japanese_DP, 6),
+			new Card("Mew ex", Pokedex.Mew, Rarity.Metal, Types.Psychic, Sets.Metal_Cards, 5),
+			new Card("Mewtwo", Pokedex.Mewtwo, Rarity.Special_Art_Pokemon_SV, Types.Psychic, Sets.SV_Promo, 52),
+			new Card("Mew ex", Pokedex.Mew, Rarity.ex_SV_Special_Art, Types.Psychic, Sets.SV_Promo, 53),
 		};
 		
 		// do not add Play! Pokémon prize pack cards (too many and uncertain amount)
 		
-		public static Card[] Get()
+		public static Card[] Get(bool removeStamped = true)
 		{
+			if (removeStamped)
+				return TheCards.Where(c => c.rarity != Rarity.Stamped).ToArray();
+			
 			return TheCards;
 		}
 

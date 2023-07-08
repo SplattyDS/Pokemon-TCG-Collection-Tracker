@@ -5,7 +5,7 @@ start($j++, 'Unnumbered Promo', $have, $Unnumbered_Promo);
 foreach ($Unnumbered_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Metal_Cards = array(3223,3224,3612,3613);
+$Metal_Cards = array(3223,3224,3612,3613,3839);
 start($j++, 'Metal Cards', $have, $Metal_Cards);
 foreach ($Metal_Cards as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -215,7 +215,7 @@ start($j++, 'DP Promo', $have, $DP_Promo);
 foreach ($DP_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Japanese_DP = array(3138,3139,3140,3141,3142);
+$Japanese_DP = array(3138,3139,3140,3141,3142,3838);
 start($j++, 'Japanese DP', $have, $Japanese_DP);
 foreach ($Japanese_DP as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -621,7 +621,7 @@ start($j++, 'Paldea Evolved', $have, $Paldea_Evolved);
 foreach ($Paldea_Evolved as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$SV_Promo = array(3641,3638,3639,3643,3644,3642,3828,3720,3721,3722,3723,3724,3829,3830,3831,3837,3834,3835,3836);
+$SV_Promo = array(3641,3638,3639,3643,3644,3642,3828,3720,3721,3722,3723,3724,3829,3830,3831,3837,3834,3835,3836,3840,3841);
 start($j++, 'SV Promo', $have, $SV_Promo);
 foreach ($SV_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

@@ -22,16 +22,17 @@ namespace TCG
 			WriteFuture();
 			WriteAll();
 			WriteHave();
+			WritePercent();
 			// PrintRarities();
 		}
 
-		static void PrintRarities()
+		/*static void PrintRarities()
 		{
 			foreach (Rarity rarity in Enum.GetValues(typeof(Rarity)))
 				Console.WriteLine(rarity.ToString().Replace('_', ' ') + "    " + CountCardsWithRarity(rarity));
 
 			Console.ReadKey();
-		}
+		}*/
 
 		static void WriteCards()
 		{
@@ -75,7 +76,7 @@ namespace TCG
 
 		static void WriteSections()
 		{
-			List<string> code = new List<string>(Sections.Get().Length + 3);
+			List<string> code = new List<string>(Sections.Get().Length + 2);
 
 			code.Add("<?php");
 
@@ -118,11 +119,18 @@ namespace TCG
 		static void WritePokedex()
 		{
 			List<string> code = new List<string>((int)Pokedex.Length + 2);
+			List<(Pokedex,int)> mons = new List<(Pokedex, int)>((int)Pokedex.Length);
 
 			code.Add("<?php");
 
 			foreach (Pokedex pokedex in Enum.GetValues(typeof(Pokedex)))
-				code.Add(CodeFromPokedex(pokedex));
+				mons.Add((pokedex, CardsFromPokedex(pokedex).Count()));
+
+			// IEnumerable<(Pokedex, int)> order = mons.OrderByDescending(p => p.Item2);
+			IEnumerable<(Pokedex, int)> order = mons;
+
+			foreach ((Pokedex, int) thing in order)
+				code.Add(CodeFromPokedex(thing.Item1));
 
 			code.Add("?>");
 
@@ -137,7 +145,9 @@ namespace TCG
 
 			foreach (FutureCardSection section in FutureCardSections.Get())
 				code.Add(CodeFromFutureSection(section));
-			
+
+			code.Add(CodeFromAllFutureSections());
+
 			code.Add("?>");
 
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Future.php", code);
@@ -166,14 +176,26 @@ namespace TCG
 		{
 			List<string> code = new List<string>(3);
 
-			IEnumerable<Card> cards = Cards.Get().OrderBy(c => c.setNum).OrderBy(c => c.set);
-			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
-
 			code.Add("<?php");
 			code.Add(CodeFromCollection(GetMyCollection()));
 			code.Add("?>");
 
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Have.php", code);
+		}
+
+		static void WritePercent()
+		{
+			List<string> code = new List<string>(Sections.Get().Length + 2);
+			IEnumerable<Section> orderedSections = Sections.Get().OrderByDescending(s => (decimal)Cards.Get(false).Where(c => c.rarity == s.rarity && c.have).Count() / (decimal)Cards.Get(false).Where(c => c.rarity == s.rarity).Count());
+			
+			code.Add("<?php");
+
+			foreach (Section section in orderedSections)
+				code.Add(CodeFromSection(section));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Percent.php", code);
 		}
 
 		static string CodeFromCards(Section section)
@@ -256,7 +278,7 @@ namespace TCG
 
 		static IEnumerable<Card> CardsFromSection(Section section)
 		{
-			IEnumerable<Card> cards = Cards.Get().Where(c => c.rarity == section.rarity);
+			IEnumerable<Card> cards = Cards.Get(false).Where(c => c.rarity == section.rarity);
 
 			switch (section.sortMode)
 			{
@@ -295,6 +317,10 @@ namespace TCG
 					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type);
 					break;
 
+				case SortMode.SORT_BY_SET_AND_NAME_AND_DEX_AND_TYPE:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.name).OrderBy(c => c.dex).OrderBy(c => c.type);
+					break;
+
 				case SortMode.SORT_BY_DEX_AND_TYPE_AND_SET:
 					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.set);
 					break;
@@ -308,23 +334,23 @@ namespace TCG
 
 		static IEnumerable<Card> CardsFromSet(Sets set)
 		{
-			return Cards.Get().Where(c => c.set == set && c.rarity != Rarity.Stamped).OrderBy(c => c.setNum);
+			return Cards.Get().Where(c => c.set == set).OrderBy(c => c.setNum);
 		}
 
 		static IEnumerable<Card> CardsFromType(Types type)
 		{
-			return Cards.Get().Where(c => c.type == type && c.rarity != Rarity.Stamped).OrderBy(c => c.setNum).OrderBy(c => c.set);
+			return Cards.Get().Where(c => c.type == type).OrderBy(c => c.setNum).OrderBy(c => c.set);
 		}
 
 		static IEnumerable<Card> CardsFromPokedex(Pokedex pokedex)
 		{
-			return Cards.Get().Where(c => c.dex == pokedex && c.rarity != Rarity.Stamped).OrderBy(c => c.setNum).OrderBy(c => c.set);
+			return Cards.Get().Where(c => c.dex == pokedex).OrderBy(c => c.setNum).OrderBy(c => c.set);
 		}
 
-		static int CountCardsWithRarity(Rarity rarity)
+		/*static int CountCardsWithRarity(Rarity rarity)
 		{
-			return Cards.Get().Count(c => c.rarity == rarity);
-		}
+			return Cards.Get(false).Count(c => c.rarity == rarity);
+		}*/
 
 		static string CodeFromFutureSection(FutureCardSection section)
 		{
@@ -336,6 +362,27 @@ namespace TCG
 				"$FUT_" + section.id + " = array(" + cardArr + ");\r\n" +
 				"start($j++, '" + section.name + "', $have, $FUT_" + section.id + ");\r\n" +
 				"foreach ($FUT_" + section.id + " as $cur) { imgF($cur); }\r\n" +
+				"finish();\r\n";
+		}
+
+		static string CodeFromAllFutureSections()
+		{
+			string cardArr = "";
+			bool first = true;
+
+			foreach (FutureCardSection section in FutureCardSections.Get())
+			{
+				for (int i = 1; i <= section.numCards; i++)
+				{
+					cardArr += (!first ? ",'" : "'") + section.id + i + "'";
+					first = false;
+				}
+			}
+
+			return
+				"$FUT_All = array(" + cardArr + ");\r\n" +
+				"start($j++, 'All', $have, $FUT_All);\r\n" +
+				"foreach ($FUT_All as $cur) { imgF($cur); }\r\n" +
 				"finish();\r\n";
 		}
 	}

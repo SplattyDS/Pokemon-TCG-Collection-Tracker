@@ -64,7 +64,7 @@
 			new Section(Rarity.TT_GX, "Tag Team GX", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.TT_UB_GX, "Tag Team Ultra Beast GX", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.Shining_SM, "Shining (SM)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
-			new Section(Rarity.Prism_Star, "Prism Star", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.Prism_Star, "Prism Star", SortMode.SORT_BY_SET_AND_NAME_AND_DEX_AND_TYPE),
 			new Section(Rarity.Shiny_Vault_SM, "Shiny Vault (SM)", SortMode.SORT_BY_SET),
 			new Section(Rarity.Full_Art_Trainer_SM, "Full Art Trainer (SM)", SortMode.SORT_BY_NAME),
 			new Section(Rarity.GX_Full_Art, "GX Full Art", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),

@@ -10,6 +10,14 @@ namespace TCG
 	{
 		private static Group[] TheGroups =
 		{
+			new Group // Legendary Birds Secret Rares
+			(
+				Rarity.Secret,
+				Rules.GROUP_CARDS,
+				Cards.Find(Sets.Supreme_Victors, 148),
+				Cards.Find(Sets.Supreme_Victors, 150),
+				Cards.Find(Sets.Supreme_Victors, 149)
+			),
 			new Group // Silver Dialga EX
 			(
 				Rarity.Gold_Pokemon,
