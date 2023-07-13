@@ -279,6 +279,18 @@ start($j++, 'VMAX', $have, $VMAX);
 foreach ($VMAX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'VMAX (Blue)', $have, $VMAX_Blue);
+foreach ($VMAX_Blue as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'VMAX (Gigantamax)', $have, $VMAX_Gigantamax);
+foreach ($VMAX_Gigantamax as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'VMAX (Eternamax)', $have, $VMAX_Eternamax);
+foreach ($VMAX_Eternamax as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'VSTAR', $have, $VSTAR);
 foreach ($VSTAR as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -401,6 +413,18 @@ finish();
 
 start($j++, 'VMAX Rainbow', $have, $VMAX_Rainbow);
 foreach ($VMAX_Rainbow as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'VMAX Rainbow (Blue)', $have, $VMAX_Rainbow_Blue);
+foreach ($VMAX_Rainbow_Blue as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'VMAX Rainbow (Gigantamax)', $have, $VMAX_Rainbow_Gigantamax);
+foreach ($VMAX_Rainbow_Gigantamax as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'VMAX Rainbow (Eternamax)', $have, $VMAX_Rainbow_Eternamax);
+foreach ($VMAX_Rainbow_Eternamax as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'VSTAR Rainbow', $have, $VSTAR_Rainbow);

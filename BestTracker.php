@@ -125,6 +125,28 @@
 			padding-right: 10px;
 			margin: 0px;
 		}
+		
+		table.infoTable {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 90%;
+			margin-left: 5%;
+			margin-bottom: 20px;
+		}
+					
+		table.infoTable tr td, table.infoTable tr th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+		
+		table.infoTable tr {
+			background-color: #ffffff;
+		}
+		
+		table.infoTable tr:nth-child(even) {
+			background-color: #dddddd;
+		}
 		</style>
 		
 		<script>
@@ -319,6 +341,39 @@ function finish()
 	print('</div>');
 }
 
+function startTable($id)
+{
+	print('<div id="header-'.$ID.'" class="center" onclick="toggleSection(this, '.$ID.')">
+	<h1>'.$name.'</h1>
+	<h2>'.$haveAmount.'/'.$amount.' ('.$percent.'%)</h2>
+	</div>');
+	
+	print('<div id="container-'.$id.'" class="hidden"><table class="infoTable">
+	<tr>
+	<th>Name</th>
+	<th>Image</th>
+	<th>Type</th>
+	<th>Set<br>+ Number</th>
+	<th>Price</th>
+	</tr>');
+}
+
+function printRow($id, $name, $type, $set, $setno, $price)
+{
+	print('<tr>
+	<td>'.$name.'</td>
+	<td>'.'</td>
+	<td>'.$type.'</td>
+	<td>'.$set.'<br>'.$setno.'</td>
+	<td>€'.$price.'</td>
+	</tr>');
+}
+
+function finishTable()
+{
+	print('</table></div>');
+}
+
 function countN($array)
 {
 	$i = 0;
@@ -384,6 +439,10 @@ if (isset($_GET['test']))
 	start($j++, 'Test', $have, $test);
 	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 	finish();
+	
+	// startTable($j++);
+	// printRow(1, 'Dark Raichu', 'Lightning', 'Team Rocket', 83, 29.99);
+	// finishTable();
 	
 	return;
 }

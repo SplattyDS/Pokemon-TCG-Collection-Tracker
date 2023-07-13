@@ -91,6 +91,9 @@
 			// SWSH
 			new Section(Rarity.V, "V", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.VMAX, "VMAX", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.VMAX_Blue, "VMAX (Blue)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.VMAX_Gigantamax, "VMAX (Gigantamax)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.VMAX_Eternamax, "VMAX (Eternamax)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.VSTAR, "VSTAR", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.V_Union, "V-UNION", SortMode.SORT_BY_SET),
 			new Section(Rarity.Amazing_Rare, "Amazing Rare", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
@@ -122,6 +125,9 @@
 			new Section(Rarity.VSTAR_Gold_Special_Art, "VSTAR Gold Special Art", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.Rainbow_Trainer, "Rainbow Trainer", SortMode.SORT_BY_NAME),
 			new Section(Rarity.VMAX_Rainbow, "VMAX Rainbow", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.VMAX_Rainbow_Blue, "VMAX Rainbow (Blue)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.VMAX_Rainbow_Gigantamax, "VMAX Rainbow (Gigantamax)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.VMAX_Rainbow_Eternamax, "VMAX Rainbow (Eternamax)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.VSTAR_Rainbow, "VSTAR Rainbow", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 
 			// SV

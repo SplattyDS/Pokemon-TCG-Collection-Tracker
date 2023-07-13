@@ -186,7 +186,18 @@ namespace TCG
 		static void WritePercent()
 		{
 			List<string> code = new List<string>(Sections.Get().Length + 2);
-			IEnumerable<Section> orderedSections = Sections.Get().OrderByDescending(s => (decimal)Cards.Get(false).Where(c => c.rarity == s.rarity && c.have).Count() / (decimal)Cards.Get(false).Where(c => c.rarity == s.rarity).Count());
+			IEnumerable<Section> orderedSections;
+			
+			if (Sections.Get().Select(s => (decimal)Cards.Get(false).Where(c => c.rarity == s.rarity).Count()).Contains(0))
+			{
+				orderedSections = Sections.Get();
+				Console.WriteLine("Error, empty section found, not sorting percent.");
+				// Console.ReadKey();
+			}
+			else
+			{
+				orderedSections = Sections.Get().OrderByDescending(s => (decimal)Cards.Get(false).Where(c => c.rarity == s.rarity && c.have).Count() / (decimal)Cards.Get(false).Where(c => c.rarity == s.rarity).Count());
+			}
 			
 			code.Add("<?php");
 

@@ -104,6 +104,9 @@
 		// SWSH
 		V,
 		VMAX,
+		VMAX_Blue,
+		VMAX_Gigantamax,
+		VMAX_Eternamax,
 		VSTAR,
 		V_Union,
 		Amazing_Rare,
@@ -135,6 +138,9 @@
 		VSTAR_Gold_Special_Art,
 		Rainbow_Trainer,
 		VMAX_Rainbow,
+		VMAX_Rainbow_Blue,
+		VMAX_Rainbow_Gigantamax,
+		VMAX_Rainbow_Eternamax,
 		VSTAR_Rainbow,
 
 		// SV

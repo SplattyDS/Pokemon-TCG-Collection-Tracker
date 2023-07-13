@@ -91,6 +91,10 @@ start($j++, 'Shiny Vault (SM)', $have, $Shiny_Vault_SM);
 foreach ($Shiny_Vault_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'VMAX (Gigantamax)', $have, $VMAX_Gigantamax);
+foreach ($VMAX_Gigantamax as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'EX Full Art (Radiant)', $have, $EX_Full_Art_Radiant);
 foreach ($EX_Full_Art_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -115,10 +119,6 @@ start($j++, 'VMAX Special Art', $have, $VMAX_Special_Art);
 foreach ($VMAX_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'VMAX', $have, $VMAX);
-foreach ($VMAX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
 start($j++, 'Gold Energy (SWSH)', $have, $Gold_Energy_SWSH);
 foreach ($Gold_Energy_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -135,6 +135,10 @@ start($j++, 'V Shiny', $have, $V_Shiny_Full_Art);
 foreach ($V_Shiny_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'VMAX', $have, $VMAX);
+foreach ($VMAX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Ancient Trait α', $have, $Ancient_Trait_Alpha);
 foreach ($Ancient_Trait_Alpha as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -145,6 +149,10 @@ finish();
 
 start($j++, 'Gold Stadium (SWSH)', $have, $Gold_Stadium_SWSH);
 foreach ($Gold_Stadium_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'VMAX Rainbow (Gigantamax)', $have, $VMAX_Rainbow_Gigantamax);
+foreach ($VMAX_Rainbow_Gigantamax as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Gold Special Energy (SM)', $have, $Gold_Special_Energy_SM);
@@ -199,10 +207,6 @@ start($j++, 'Special Art Pokémon (SWSH)', $have, $Special_Art_Pokemon_SWSH);
 foreach ($Special_Art_Pokemon_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'VMAX Rainbow', $have, $VMAX_Rainbow);
-foreach ($VMAX_Rainbow as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
 start($j++, 'EX Full Art', $have, $EX_Full_Art);
 foreach ($EX_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -221,6 +225,10 @@ finish();
 
 start($j++, 'Mega EX Full Art', $have, $M_EX_Full_Art);
 foreach ($M_EX_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'VMAX Rainbow', $have, $VMAX_Rainbow);
+foreach ($VMAX_Rainbow as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Full Art Trainer (BW & XY)', $have, $Full_Art_Trainer_BW_XY);
@@ -371,6 +379,14 @@ start($j++, 'Tag Team Ultra Beast GX Rainbow', $have, $TT_UB_GX_Rainbow);
 foreach ($TT_UB_GX_Rainbow as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'VMAX (Blue)', $have, $VMAX_Blue);
+foreach ($VMAX_Blue as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'VMAX (Eternamax)', $have, $VMAX_Eternamax);
+foreach ($VMAX_Eternamax as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Full Art Energy (SWSH)', $have, $Full_Art_Energy_SWSH);
 foreach ($Full_Art_Energy_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -409,6 +425,14 @@ finish();
 
 start($j++, 'Rainbow Trainer', $have, $Rainbow_Trainer);
 foreach ($Rainbow_Trainer as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'VMAX Rainbow (Blue)', $have, $VMAX_Rainbow_Blue);
+foreach ($VMAX_Rainbow_Blue as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'VMAX Rainbow (Eternamax)', $have, $VMAX_Rainbow_Eternamax);
+foreach ($VMAX_Rainbow_Eternamax as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'VSTAR Rainbow', $have, $VSTAR_Rainbow);
