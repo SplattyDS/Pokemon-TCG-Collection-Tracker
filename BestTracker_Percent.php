@@ -7,6 +7,10 @@ start($j++, 'Rotom Subset', $have, $Rotom);
 foreach ($Rotom as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Arceus Subset', $have, $Arceus);
+foreach ($Arceus as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'V-UNION', $have, $V_Union);
 foreach ($V_Union as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -21,10 +25,6 @@ finish();
 
 start($j++, 'Tera ex (SV)', $have, $ex_SV_Tera);
 foreach ($ex_SV_Tera as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Arceus Subset', $have, $Arceus);
-foreach ($Arceus as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Amazing Rare', $have, $Amazing_Rare);

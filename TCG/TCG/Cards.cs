@@ -3847,7 +3847,7 @@ namespace TCG
 			new Card("Alakazam ex", Pokedex.Alakazam, Rarity.ex_SV, Types.Psychic, Sets.SV_Promo, 50),
 			new Card("Snorlax", Pokedex.Snorlax, Rarity.Special_Art_Pokemon_SV, Types.Colorless, Sets.SV_Promo, 51),
 			new Card("Charmander", Pokedex.Charmander, Rarity.Special_Art_Pokemon_SV, Types.Fire, Sets.SV_Promo, 44),
-			new Card("Arceus", Pokedex.Arceus, Rarity.Arceus, Types.Colorless, Sets.Japanese_DP, 6),
+			new Card("Arceus", Pokedex.Arceus, Rarity.Arceus, Types.Colorless, Sets.Japanese_DP, 6, true),
 			new Card("Mew ex", Pokedex.Mew, Rarity.Metal, Types.Psychic, Sets.Metal_Cards, 5),
 			new Card("Mewtwo", Pokedex.Mewtwo, Rarity.Special_Art_Pokemon_SV, Types.Psychic, Sets.SV_Promo, 52),
 			new Card("Mew ex", Pokedex.Mew, Rarity.ex_SV_Special_Art, Types.Psychic, Sets.SV_Promo, 53),
