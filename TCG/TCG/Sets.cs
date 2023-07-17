@@ -5,16 +5,33 @@
 		Unknown,
 		Unnumbered_Promo,
 		Metal_Cards,
-		
+
+		Base_Set,
+		Jungle,
+		Fossil,
+		Base_Set_2,
 		Team_Rocket,
-		
+		Gym_Heroes,
+		Gym_Challenge,
+		Japanese_OS,
+
+		Neo_Genesis,
+		Neo_Discovery,
 		Neo_Revelation,
 		Neo_Destiny,
 		Japanese_Neo,
-		
+
+		Legendary_Collection,
+
+		WOTC_Promo,
+		Southern_Islands,
+		Best_of_Game,
+
+		Expedition,
 		Aquapolis,
 		Skyridge,
-		
+		Japanese_e_Series,
+
 		EX_Ruby_Sapphire,
 		EX_Sandstorm,
 		EX_Dragon,
@@ -31,12 +48,16 @@
 		EX_Crystal_Guardians,
 		EX_Dragon_Frontiers,
 		EX_Power_Keepers,
+		EX_Promo,
 		POP_Series_1,
 		POP_Series_2,
 		POP_Series_3,
 		POP_Series_4,
 		POP_Series_5,
-		EX_Promo,
+		Latias_Half_Deck,
+		Latios_Half_Deck,
+		Plusle_Half_Deck,
+		Minun_Half_Deck,
 		Japanese_EX,
 		
 		Diamond_Pearl,
@@ -51,6 +72,10 @@
 		Supreme_Victors,
 		Arceus,
 		DP_Promo,
+		POP_Series_6,
+		POP_Series_7,
+		POP_Series_8,
+		POP_Series_9,
 		Japanese_DP,
 		
 		HeartGold_SoulSilver,
@@ -75,7 +100,8 @@
 		Legendary_Treasures,
 		Legendary_Treasures_RC,
 		BW_Promo,
-		
+
+		Kalos_Starter_Set,
 		XY,
 		Flashfire,
 		Furious_Fists,
@@ -106,6 +132,7 @@
 		Dragon_Majesty,
 		Lost_Thunder,
 		Team_Up,
+		Detective_Pikachu,
 		Unbroken_Bonds,
 		Unified_Minds,
 		Hidden_Fates,
@@ -139,6 +166,8 @@
 		
 		Scarlet_Violet,
 		Paldea_Evolved,
+		Obsidian_Flames,
+		SV_151,
 		SV_Promo,
 
 		Length,

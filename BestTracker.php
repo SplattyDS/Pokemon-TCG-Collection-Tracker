@@ -3,10 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Best Collection Tracker</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+		
+		<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>-->
+		
 		<style>
 		body {
 			background-image: url('images/best_tracker/background/0.png');
@@ -261,6 +268,22 @@
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?dex">Dex</a></li>
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?all">All</a></li>
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?fut">Future</a></li>
+					
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Holo
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="BestTracker.php?holo">Main</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?holo&set">Set</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?holo&col">Collection</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?holo&binder">Binder</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?holo&type">Type</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?holo&dex">Dex</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?holo&all">All</a></li>
+						</ul>
+					</li>
+					
 					<li class="nav-item"><a class="nav-link" href="BestTracker.php?test">Test</a></li>
 				</ul>
 			</div>
@@ -270,34 +293,54 @@
 		<input type="checkbox" id="background-checkbox" onclick="toggleAutomaticBackground()">
 		
 <?php
-function img($ID)
+function cardImg($class, $path)
 {
 	if (isset($_GET['noimg']))
 		return;
 	
+	print('<img class="'.$class.'" data-src="'.$path.'">');
+}
+
+function idToName($ID)
+{
+	return ''.(is_numeric($ID) ? str_repeat("0", 4 - strlen($ID)) : '').$ID;
+}
+
+function img($ID)
+{
 	if ($ID == -1)
-		print('<img class="card-img" data-src="images/best_tracker/cards/-1.png">');
+		cardImg('card-img', 'images/best_tracker/cards/-1.png');
 	else if (is_numeric($ID))
-		print('<img class="card-img" data-src="images/best_tracker/cards/'.(is_numeric($ID) ? str_repeat("0", 4 - strlen($ID)) : '').$ID.'.png">');
+		cardImg('card-img', 'images/best_tracker/cards/'.idToName($ID).'.png');
 }
 
 function imgN($ID)
 {
-	if (isset($_GET['noimg']))
-		return;
-	
 	if ($ID == -1)
-		print('<img class="card-img" data-src="images/best_tracker/cards/-1.png">');
+		cardImg('card-img', 'images/best_tracker/cards/-1.png');
 	else if (is_numeric($ID))
-		print('<img class="card-have-img" data-src="images/best_tracker/cards/'.(is_numeric($ID) ? str_repeat("0", 4 - strlen($ID)) : '').$ID.'.png">');
+		cardImg('card-have-img', 'images/best_tracker/cards/'.idToName($ID).'.png');
 }
 
 function imgF($ID)
 {
-	if (isset($_GET['noimg']))
-		return;
-	
-	print('<img class="card-fut-img" data-src="images/best_tracker/FUT/'.(is_numeric($ID) ? str_repeat("0", 4 - strlen($ID)) : '').$ID.'.png">');
+	cardImg('card-fut-img', 'images/best_tracker/FUT/'.idToName($ID).'.png');
+}
+
+function imgH($ID)
+{
+	if ($ID == -1)
+		cardImg('card-img', 'images/best_tracker/holo/-1.png');
+	else if (is_numeric($ID))
+		cardImg('card-img', 'images/best_tracker/holo/'.idToName($ID).'.png');
+}
+
+function imgHN($ID)
+{
+	if ($ID == -1)
+		cardImg('card-img', 'images/best_tracker/holo/-1.png');
+	else if (is_numeric($ID))
+		cardImg('card-have-img', 'images/best_tracker/holo/'.idToName($ID).'.png');
 }
 
 function start($ID, $name, $have, $arrC)
@@ -399,7 +442,10 @@ function countHave($arr, $have)
 $j = 1;
 
 require 'BestTracker_Have.php';
+require 'BestTracker_HoloHave.php';
+
 require 'BestTracker_Cards.php';
+require 'BestTracker_HoloCards.php';
 
 if (isset($_GET['test']))
 {
@@ -450,58 +496,49 @@ if (isset($_GET['test']))
 // $have = array_merge($have, array(3390,2715,2069,3414,3281,3542,2882,3483,3645,3648,3641,3652,3653,3654,3655,3656,3646,3647));
 // $have = array_merge($have, array(1852,1694,1695,1701,2124,3409,3512,3270,3274,3424,2196,2414,3536,3515,3416,3280,2189,3509,3717,3531,3554,3345));
 
-if (isset($_GET['set']))
+if (isset($_GET['holo']))
 {
+	if (isset($_GET['set']))
+		require 'BestTracker_Holo_Sets.php';
+	else if (isset($_GET['type']))
+		require 'BestTracker_Holo_Types.php';
+	else if (isset($_GET['dex']))
+		require 'BestTracker_Holo_Pokedex.php';
+	else if (isset($_GET['all']))
+		require 'BestTracker_Holo_All.php';
+	else if (isset($_GET['col']))
+	{
+		start($j++, 'Holo Collection', $holoHave, $holoHave);
+		foreach ($holoHave as $cur) { imgHN($cur); }
+		finish();
+	}
+	else if (isset($_GET['binder']))
+		require 'BestTracker_Holo_Binder.php';
+	else
+		require 'BestTracker_Holo.php';
+}
+else if (isset($_GET['set']))
 	require 'BestTracker_Sets.php';
-	return;
-}
-
-if (isset($_GET['type']))
-{
+else if (isset($_GET['type']))
 	require 'BestTracker_Types.php';
-	return;
-}
-
-if (isset($_GET['dex']))
-{
+else if (isset($_GET['dex']))
 	require 'BestTracker_Pokedex.php';
-	return;
-}
-
-if (isset($_GET['fut']))
-{
+else if (isset($_GET['fut']))
 	require 'BestTracker_Future.php';
-	return;
-}
-
-if (isset($_GET['all']))
-{
+else if (isset($_GET['all']))
 	require 'BestTracker_All.php';
-	return;
-}
-
-if (isset($_GET['col']))
+else if (isset($_GET['col']))
 {
 	start($j++, 'Collection', $have, $have);
 	foreach ($have as $cur) { imgN($cur); }
 	finish();
-	
-	return;
 }
-
-if (isset($_GET['binder']))
-{
+else if (isset($_GET['binder']))
 	require 'BestTracker_Binder.php';
-	return;
-}
-
-if (isset($_GET['percent']))
-{
+else if (isset($_GET['percent']))
 	require 'BestTracker_Percent.php';
-	return;
-}
-
-require 'BestTracker_Sections.php';
+else
+	require 'BestTracker_Sections.php';
 ?>
 	</body>
 </html>

@@ -10,10 +10,19 @@ start($j++, 'Metal Cards', $have, $Metal_Cards);
 foreach ($Metal_Cards as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+
+
+
+
 $Team_Rocket = array(1);
 start($j++, 'Team Rocket', $have, $Team_Rocket);
 foreach ($Team_Rocket as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
+
+
+
+
+
 
 $Neo_Revelation = array(2,3);
 start($j++, 'Neo Revelation', $have, $Neo_Revelation);
@@ -30,6 +39,11 @@ start($j++, 'Japanese Neo', $have, $Japanese_Neo);
 foreach ($Japanese_Neo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+
+
+
+
+
 $Aquapolis = array(12,13,14);
 start($j++, 'Aquapolis', $have, $Aquapolis);
 foreach ($Aquapolis as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
@@ -39,6 +53,7 @@ $Skyridge = array(15,16,17,18,19,20,21,22,23,24,25,26);
 start($j++, 'Skyridge', $have, $Skyridge);
 foreach ($Skyridge as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
+
 
 $EX_Ruby_Sapphire = array(27,28,29,30,31,32,33,34);
 start($j++, 'EX Ruby Sapphire', $have, $EX_Ruby_Sapphire);
@@ -120,6 +135,11 @@ start($j++, 'EX Power Keepers', $have, $EX_Power_Keepers);
 foreach ($EX_Power_Keepers as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$EX_Promo = array(239,2941,240,2942,241,242,243,244,245,246);
+start($j++, 'EX Promo', $have, $EX_Promo);
+foreach ($EX_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 $POP_Series_1 = array(232,2937,233,2938);
 start($j++, 'POP Series 1', $have, $POP_Series_1);
 foreach ($POP_Series_1 as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
@@ -145,10 +165,9 @@ start($j++, 'POP Series 5', $have, $POP_Series_5);
 foreach ($POP_Series_5 as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$EX_Promo = array(239,2941,240,2942,241,242,243,244,245,246);
-start($j++, 'EX Promo', $have, $EX_Promo);
-foreach ($EX_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
+
+
+
 
 $Japanese_EX = array(3126,3127,3128,3129,3130,3131,3132,3133,3134,3135,3136,3137);
 start($j++, 'Japanese EX', $have, $Japanese_EX);
@@ -214,6 +233,10 @@ $DP_Promo = array(343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,35
 start($j++, 'DP Promo', $have, $DP_Promo);
 foreach ($DP_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
+
+
+
+
 
 $Japanese_DP = array(3138,3139,3140,3141,3142,3838);
 start($j++, 'Japanese DP', $have, $Japanese_DP);
@@ -320,6 +343,7 @@ $BW_Promo = array(591,592,593,594,595,596,597,598,599,600,601,602,603,604,605,60
 start($j++, 'BW Promo', $have, $BW_Promo);
 foreach ($BW_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
+
 
 $XY = array(607,608,609,2956,610,2957,611,612,613,614,615,616,617,618,619,620);
 start($j++, 'XY', $have, $XY);
@@ -465,6 +489,7 @@ $Team_Up = array(1482,1483,1484,1485,1486,1487,1488,1489,1490,1491,1492,1493,149
 start($j++, 'Team Up', $have, $Team_Up);
 foreach ($Team_Up as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
+
 
 $Unbroken_Bonds = array(1535,1536,1537,1538,1539,1540,1541,1542,1543,1544,1545,1546,1547,1548,1549,1550,1551,1552,1553,1554,1555,1556,1557,1558,1559,1560,1561,1562,1563,1564,1565,1566,1567,1568,1569,1570,1571,1572,1573,1574,1575,1576,1577,1578,1579,1580,1581,1582,1583,1584,1585,1586,1587,1588,1589,1590,1591,1592);
 start($j++, 'Unbroken Bonds', $have, $Unbroken_Bonds);
@@ -620,6 +645,8 @@ $Paldea_Evolved = array(3725,3726,3727,3728,3729,3730,3731,3732,3733,3734,3735,3
 start($j++, 'Paldea Evolved', $have, $Paldea_Evolved);
 foreach ($Paldea_Evolved as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
+
+
 
 $SV_Promo = array(3641,3638,3639,3643,3644,3642,3828,3720,3721,3722,3723,3724,3829,3830,3831,3837,3834,3835,3836,3840,3841);
 start($j++, 'SV Promo', $have, $SV_Promo);
