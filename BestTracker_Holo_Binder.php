@@ -55,19 +55,19 @@ function PrintPage($binder, $pageNumber)
 	else
 	{
 		$arr = $binder;
-		$index = $pageNumber * 12;
+		$index = $pageNumber * 9;
 	}
 	
 	print('<table class="page">');
 	
-	for ($i = 0; $i < 12; $i++)
+	for ($i = 0; $i < 9; $i++)
 	{
-		if ($i % 4 == 0)
+		if ($i % 3 == 0)
 			print('<tr>');
 		
 		print(GetBinderCell($arr, $index++));
 		
-		if ($i % 4 == 3)
+		if ($i % 3 == 3)
 			print('<tr>');
 	}
 	
@@ -112,53 +112,116 @@ function GetImagePrefix($id)
 	return is_numeric($id) && $id != -1 ? str_repeat("0", 4 - strlen($id)) : '';
 }
 
-function Align($binder, $align, $rest = 0, $padNum = -1)
+function Align(&$binder, $align, $rest = 0, $padNum = -1)
 {
 	while (count($binder) % $align != $rest)
 		array_push($binder, $padNum);
-	
-	return $binder;
 }
 
-function AlignRow($binder)
+function AlignRow(&$binder)
 {
-	return Align($binder, 4);
+	return Align($binder, 3);
 }
 
-function AlignPage($binder)
+function AlignPage(&$binder)
 {
-	return Align($binder, 12);
+	return Align($binder, 9);
 }
 
-function AlignPages($binder)
+function AlignPages(&$binder)
 {
 	if (count($binder) == 0) // otherwise the first page may be empty
-		return $binder;
+		return;
 	
-	return Align($binder, 24, 12);
+	Align($binder, 18, 9);
 }
 
-function AlignBinder($binder)
+function AlignBinder(&$binder)
 {
-	if (count($binder) > 480)
-		return array();
+	if (count($binder) > 360)
+		$binder = array();
 	
-	$binder = AlignPage($binder);
-	return Align($binder, 480, 0, 0);
+	AlignPage($binder);
+	Align($binder, 360, 0, 0);
 }
 
-function AddCards($binder, $cards)
+function AddCards(&$binder, $cards)
 {
-	return array_merge($binder, $cards);
+	$binder = array_merge($binder, $cards);
 }
 
-function CountMarkers($binder)
+function SplitCards(&$binders, $cards)
+{
+	$freeSpace = 0;
+	
+	for ($i = 0; $i < count($binders); $i++)
+		$freeSpace += CountFree($binders[$i]);
+	
+	if ($freeSpace < count($cards))
+	{
+		print('Not enough space to split cards. Needed '.count($cards).', has '.$freeSpace.'.<br>');
+		return ;
+	}
+	
+	for ($i = 0; $i < count($binders); $i++)
+	{
+		$freeSpace = CountFree($binders[$i]);
+		$offset = FirstFreeOffset($binders[$i]);
+		
+		$binders[$i] = array_merge($binders[$i], $cards);
+		
+		// print('count($binders['.$i.']) = '.count($binders[$i]).'<br>');
+		
+		array_splice($binders[$i], 360, count($binders[$i]) - 360);
+		
+		for ($j = 0; $j < $freeSpace; $j++)
+			unset($cards[$j]);
+		
+		array_splice($cards, 1, 1);
+	}
+	
+	
+	// for ($i = 0; $i < count($binders); $i++)
+		// print('count($binders['.$i.']) = '.count($binders[$i]).'<br>');
+}
+
+function FirstFreeOffset(&$binder)
+{
+	for ($i = 0; $i < count($binder); $i++)
+	{
+		if ($binder[$i] == 0)
+			return $i;
+	}
+	
+	return -1;
+}
+
+function CountMarkers(&$binder)
 {
 	$amount = 0;
 	
 	for ($i = 0; $i < count($binder); $i++)
 	{
 		if ($binder[$i] == -1)
+			$amount++;
+	}
+	
+	return $amount;
+}
+
+function CountFree(&$binder)
+{
+	if (count($binder) == 0)
+		return 360;
+	
+	if (count($binder) < 360)
+		return 360 - count($binder);
+	
+	$amount = 0;
+	
+	for ($i = 0; $i < count($binder); $i++)
+	{
+		if ($binder[$i] == 0)
 			$amount++;
 	}
 	
@@ -175,74 +238,121 @@ $binder7 = array();
 $binder8 = array();
 $binder9 = array();
 $binder10 = array();
+$binder11 = array();
+$binder12 = array();
+$binder13 = array();
+$binder14 = array();
+$binder15 = array();
 
-$binder1 = AddCards($binder1, $OS_STAR_HOLO);
-$binder1 = AddCards($binder1, $OS_COSMOS_HOLO);
-$binder1 = AlignPage($binder1);
-$binder1 = AddCards($binder1, $OS_REVERSE_COSMOS_HOLO);
-$binder1 = AlignRow($binder1);
-$binder1 = AddCards($binder1, $OS_COSMOS_HOLO_ENERGY);
-$binder1 = AlignPage($binder1);
-$binder1 = AddCards($binder1, $NEO_COSMOS_HOLO);
-$binder1 = AlignPage($binder1);
-$binder1 = AddCards($binder1, $NEO_REVERSE_COSMOS_HOLO);
-$binder1 = AlignPage($binder1);
-$binder1 = AddCards($binder1, $LC_STAR_HOLO);
-$binder1 = AlignPage($binder1);
-$binder1 = AddCards($binder1, $LC_REVERSE_SILVER_FIREWORKS_HOLO);
-$binder1 = AlignPage($binder1);
-$binder1 = AddCards($binder1, $E_COSMOS_HOLO);
-$binder1 = AlignBinder($binder1);
+AddCards($binder1, $OS_STAR_HOLO);
+AlignRow($binder1);
+AddCards($binder1, $OS_COSMOS_HOLO);
+AlignPage($binder1);
+AddCards($binder1, $OS_COSMOS_HOLO_ENERGY);
+AlignPage($binder1);
+AddCards($binder1, $OS_REVERSE_COSMOS_HOLO);
+AlignPage($binder1);
+AddCards($binder1, $NEO_COSMOS_HOLO);
+AlignPage($binder1);
+AddCards($binder1, $NEO_REVERSE_COSMOS_HOLO);
+AlignPage($binder1);
+AddCards($binder1, $LC_STAR_HOLO);
+AlignPage($binder1);
+AddCards($binder1, $E_COSMOS_HOLO);
+AlignBinder($binder1);
 
-$binder2 = AddCards($binder2, $E_REVERSE_REFRACTOR_HOLO);
-$binder2 = AlignBinder($binder2);
+AddCards($binder2, $LC_REVERSE_SILVER_FIREWORKS_HOLO);
+AlignPage($binder2);
 
-$binder3 = AddCards($binder3, $EX_COSMOS_HOLO);
-$binder3 = AlignRow($binder3);
-$binder3 = AddCards($binder3, $EX_COSMOS_HOLO_VICTORY_MEDAL);
-$binder3 = AlignRow($binder3);
-$binder3 = AddCards($binder3, $EX_COSMOS_HOLO_DELTA);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $EX_VERTICAL_REFRACTOR_HOLO_DELTA);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $EX_PIXEL_WAVE_HOLO_ENERGY);
-$binder3 = AlignBinder($binder3);
+$lcReverseBinders = array(&$binder2, &$binder3);
+SplitCards($lcReverseBinders, $E_REVERSE_REFRACTOR_HOLO);
 
-$binder4 = AddCards($binder4, $EX_REVERSE_REFRACTOR_HOLO);
-$binder4 = AlignPage($binder4);
-$binder4 = AddCards($binder4, $EX_BIG_ENERGY_HOLO_HL);
-$binder4 = AlignBinder($binder4);
+AlignBinder($binder2);
+AlignBinder($binder3);
 
-$binder5 = AddCards($binder5, $EX_ENERGY_HOLO_FL);
-$binder5 = AlignPage($binder5);
-$binder5 = AddCards($binder5, $EX_ENERGY_HOLO_TRR);
-$binder5 = AlignPage($binder5);
-$binder5 = AddCards($binder5, $EX_PRISM_HOLO_D);
-$binder5 = AlignPage($binder5);
-$binder5 = AddCards($binder5, $EX_2D_POKEBALL_HOLO_E);
-$binder5 = AlignBinder($binder5);
+AddCards($binder4, $EX_COSMOS_HOLO);
+AlignRow($binder4);
+AddCards($binder4, $EX_COSMOS_HOLO_VICTORY_MEDAL);
+AlignRow($binder4);
+AddCards($binder4, $EX_COSMOS_HOLO_DELTA);
+AlignPage($binder4);
+AddCards($binder4, $EX_VERTICAL_REFRACTOR_HOLO_DELTA);
+AlignPage($binder4);
+AddCards($binder4, $EX_PIXEL_WAVE_HOLO_ENERGY);
+AlignBinder($binder4);
 
-$binder6 = AddCards($binder6, $EX_3D_POKEBALL_HOLO_UF);
-$binder6 = AlignPage($binder6);
-$binder6 = AddCards($binder6, $EX_REFRACTOR_HOLO_DS);
-$binder6 = AlignPage($binder6);
-$binder6 = AddCards($binder6, $EX_COSMOS_HOLO_LM);
-$binder6 = AlignPage($binder6);
-$binder6 = AddCards($binder6, $EX_REFRACTOR_HOLO_HP);
-$binder6 = AlignBinder($binder6);
+$exReverseBinders = array(&$binder5, &$binder6);
+SplitCards($exReverseBinders, $EX_REVERSE_REFRACTOR_HOLO);
 
-$binder7 = AddCards($binder7, $EX_REFRACTOR_HOLO_CG);
-$binder7 = AlignPage($binder7);
-$binder7 = AddCards($binder7, $EX_REFRACTOR_HOLO_DF);
-$binder7 = AlignPage($binder7);
-$binder7 = AddCards($binder7, $EX_REFRACTOR_HOLO_PK);
-$binder7 = AlignBinder($binder7);
+AlignBinder($binder5);
 
-$binder8 = AlignBinder($binder8);
+AlignPage($binder6);
+AddCards($binder6, $EX_BIG_ENERGY_HOLO_HL);
+AlignPage($binder6);
+AddCards($binder6, $EX_ENERGY_HOLO_FL);
+AlignPage($binder6);
+AddCards($binder6, $EX_ENERGY_HOLO_TRR);
+AlignBinder($binder6);
 
-$binder9 = AlignBinder($binder9);
+AddCards($binder7, $EX_PRISM_HOLO_D);
+AlignPage($binder7);
+AddCards($binder7, $EX_2D_POKEBALL_HOLO_E);
+AlignPage($binder7);
+AddCards($binder7, $EX_3D_POKEBALL_HOLO_UF);
+AlignBinder($binder7);
 
-$binder10 = AlignBinder($binder10);
+AddCards($binder8, $EX_REFRACTOR_HOLO_DS);
+AlignPage($binder8);
+AddCards($binder8, $EX_COSMOS_HOLO_LM);
+AlignPage($binder8);
+AddCards($binder8, $EX_REFRACTOR_HOLO_HP);
+AlignBinder($binder8);
+
+AddCards($binder9, $EX_REFRACTOR_HOLO_CG);
+AlignPage($binder9);
+AddCards($binder9, $EX_REFRACTOR_HOLO_DF);
+AlignPage($binder9);
+AddCards($binder9, $EX_REFRACTOR_HOLO_PK);
+AlignBinder($binder9);
+
+
+
+// DP_REVERSE_CRACKED_ICE_HOLO,
+// DP_REVERSE_SCRATCH_HOLO,
+// DP_REVERSE_REFRACTOR_HOLO,
+
+
+AddCards($binder10, $DP_COSMOS_HOLO);
+AlignPage($binder10);
+AddCards($binder10, $DP_COSMOS_HOLO_VICTORY_MEDAL);
+AlignPage($binder10);
+AddCards($binder10, $DP_CRACKED_ICE_HOLO);
+AlignPage($binder10);
+AddCards($binder10, $DP_MIRROR_HOLO_ENERGY);
+AlignPage($binder10);
+AddCards($binder10, $DP_SCRATCH_HOLO_ENERGY);
+AlignPage($binder10);
+AddCards($binder10, $DP_RUMBLE_COSMOS_HOLO_LOGO);
+AlignBinder($binder10);
+
+
+$dpReverseBinders = array(&$binder11, &$binder12, &$binder13, &$binder14, &$binder15);
+SplitCards($dpReverseBinders, $DP_REVERSE_MIRROR_HOLO);
+
+AlignBinder($binder11);
+AlignBinder($binder12);
+AlignBinder($binder13);
+
+AlignPage($binder14);
+AddCards($binder14, $DP_REVERSE_CRACKED_ICE_HOLO);
+AlignPage($binder14);
+AddCards($binder14, $DP_REVERSE_SCRATCH_HOLO);
+AlignPage($binder14);
+AddCards($binder14, $DP_REVERSE_REFRACTOR_HOLO);
+AlignBinder($binder14);
+
+AddCards($binder15, array(-1));
+AlignBinder($binder15);
 
 $markers = CountMarkers($binder1) + CountMarkers($binder2) + CountMarkers($binder3) + CountMarkers($binder4) + CountMarkers($binder5) + CountMarkers($binder6) + CountMarkers($binder7) + CountMarkers($binder8) + CountMarkers($binder9);
 
@@ -250,27 +360,37 @@ print('<h1>Number of VSTAR Markers: '.$markers.'</h1>');
 
 $i = 1;
 print('<ul>');
-PrintBinderInfo($i++, 'Binder 1 (OS, Neo, e Series)');
-PrintBinderInfo($i++, 'Binder 2 (e Series Reverse)');
-PrintBinderInfo($i++, 'Binder 3 (EX)');
-PrintBinderInfo($i++, 'Binder 4 (EX Reverse 1)');
-PrintBinderInfo($i++, 'Binder 5 (EX Reverse 2)');
-PrintBinderInfo($i++, 'Binder 6 (EX Reverse 3)');
-PrintBinderInfo($i++, 'Binder 7 (EX Reverse 4)');
-// PrintBinderInfo($i++, 'Binder 8 ()');
-// PrintBinderInfo($i++, 'Binder 9 ()');
-// PrintBinderInfo($i++, 'Binder 10 ()');
+PrintBinderInfo($i++, 'Binder 1 (OS, Neo, LC Holo, e Series Holo) - Free Space: '.CountFree($binder1));
+PrintBinderInfo($i++, 'Binder 2 (LC Reverse, e Series Reverse 1) - Free Space: '.CountFree($binder2));
+PrintBinderInfo($i++, 'Binder 3 (e Series Reverse 2) - Free Space: '.CountFree($binder3));
+PrintBinderInfo($i++, 'Binder 4 (EX) - Free Space: '.CountFree($binder4));
+PrintBinderInfo($i++, 'Binder 5 (EX Reverse 1) - Free Space: '.CountFree($binder5));
+PrintBinderInfo($i++, 'Binder 6 (EX Reverse 2) - Free Space: '.CountFree($binder6));
+PrintBinderInfo($i++, 'Binder 7 (EX Reverse 3) - Free Space: '.CountFree($binder7));
+PrintBinderInfo($i++, 'Binder 8 (EX Reverse 4) - Free Space: '.CountFree($binder8));
+PrintBinderInfo($i++, 'Binder 9 (EX Reverse 5) - Free Space: '.CountFree($binder9));
+PrintBinderInfo($i++, 'Binder 10 (DPPt) - Free Space: '.CountFree($binder10));
+PrintBinderInfo($i++, 'Binder 11 (DPPt Reverse 1) - Free Space: '.CountFree($binder11));
+PrintBinderInfo($i++, 'Binder 12 (DPPt Reverse 2) - Free Space: '.CountFree($binder12));
+PrintBinderInfo($i++, 'Binder 13 (DPPt Reverse 3) - Free Space: '.CountFree($binder13));
+PrintBinderInfo($i++, 'Binder 14 (DPPt Reverse 4) - Free Space: '.CountFree($binder14));
+PrintBinderInfo($i++, 'Binder 15 (TBA) - Free Space: '.CountFree($binder15));
 print('</ul>');
 
 $i = 1;
-PrintBinder($i++, $binder1, 'Binder 1 ()');
-PrintBinder($i++, $binder2, 'Binder 2 ()');
-PrintBinder($i++, $binder3, 'Binder 3 ()');
-PrintBinder($i++, $binder4, 'Binder 4 ()');
-PrintBinder($i++, $binder5, 'Binder 5 ()');
-PrintBinder($i++, $binder6, 'Binder 6 ()');
-PrintBinder($i++, $binder7, 'Binder 7 ()');
-// PrintBinder($i++, $binder8, 'Binder 8 ()');
-// PrintBinder($i++, $binder9, 'Binder 9 ()');
-// PrintBinder($i++, $binder10, 'Binder 10 ()');
+PrintBinder($i++, $binder1, 'Binder 1 (OS, Neo, LC, e Series)');
+PrintBinder($i++, $binder2, 'Binder 2 (LC Reverse, e Series Reverse 1)');
+PrintBinder($i++, $binder3, 'Binder 3 (e Series Reverse 2)');
+PrintBinder($i++, $binder4, 'Binder 4 (EX)');
+PrintBinder($i++, $binder5, 'Binder 5 (EX Reverse 1)');
+PrintBinder($i++, $binder6, 'Binder 6 (EX Reverse 2)');
+PrintBinder($i++, $binder7, 'Binder 7 (EX Reverse 3)');
+PrintBinder($i++, $binder8, 'Binder 8 (EX Reverse 4)');
+PrintBinder($i++, $binder9, 'Binder 9 (EX Reverse 5)');
+PrintBinder($i++, $binder10, 'Binder 10 (DPPt)');
+PrintBinder($i++, $binder11, 'Binder 11 (DPPt Reverse 1)');
+PrintBinder($i++, $binder12, 'Binder 12 (DPPt Reverse 2)');
+PrintBinder($i++, $binder13, 'Binder 13 (DPPt Reverse 3)');
+PrintBinder($i++, $binder14, 'Binder 14 (DPPt Reverse 4)');
+PrintBinder($i++, $binder15, 'Binder 15 (TBA)');
 ?>

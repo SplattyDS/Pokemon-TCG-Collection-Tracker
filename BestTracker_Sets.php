@@ -238,6 +238,9 @@ finish();
 
 
 
+
+
+
 $Japanese_DP = array(3138,3139,3140,3141,3142,3838);
 start($j++, 'Japanese DP', $have, $Japanese_DP);
 foreach ($Japanese_DP as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }

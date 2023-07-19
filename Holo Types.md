@@ -3,6 +3,7 @@ original
 	cosmos holo (m - Base Set 2 to Gym Challenge)
 	
 	cosmos holo energy
+	
 	reverse cosmos holo
 	
 Neo
@@ -28,9 +29,12 @@ EX
 	cosmos holo - pokemon only, with border (Mimikyu δ promo)
 	vertical refractor holo - pokemon only, with border (m delta species)
 	
+	pixel wave holo energy
+	
 	reverse refractor holo (r - EX Ruby & Sapphire to EX Team Magma vs Team Aqua)
 	big enery holo (r - EX Hidden Legends)
-	energy holo (r - EX FireRed & LeafGreen - EX Team Rocket Returns)
+	energy holo (r - EX FireRed & LeafGreen)
+	energy holo (r - EX Team Rocket Returns)
 	prism holo (r - EX Deoxys)
 	2D pokeball holo (r - EX Emerald)
 	3D pokeball holo (r - EX Unseen Forces)
@@ -46,58 +50,92 @@ EX
 		rare delta species are pokemon only, with border
 	refractor holo (r - EX Power Keepers)
 	
-	pixel wave holo energy
-	
 DPPt
 	cosmos holo (m)
 	cosmos holo - pokemon only (Victory Medals)
+	cracked ice holo
 	
-	reverse vertical holo (r)
+	mirror holo energy
+	scratch holo energy
+	
+	reverse mirror holo (r)
 	
 	reverse cracked ice holo
+	reverse scratch holo
 	reverse refractor holo
+	
+	pokemon rumble holo logo (does this count?)
 	
 HGSS
 	cosmos holo (m)
 	cosmos holo - pokemon only (Victory Medals)
+	cracked ice holo
 	
-	reverse vertical holo (r)
-	reverse vertical holo energy (r)
+	mirror holo energy (r - Call of Legends)
+	scratch holo energy
+	
+	reverse mirror holo (r)
+	
+	reverse scratch holo
 	
 BW & XY
-	horizontal stripes holo (m BW)
+	tinsel holo (m BW)
 	sheen holo (m XY)
-	
-	reverse vertical holo (r - Black & White only)
-	big energy reverse holo (r - from Emerging Powers)
-	
 	cosmos holo
+	mirror holo
+	cracked ice holo
 	confetti holo
+	
+	scratch holo energy
+	mirror holo energy
+	scratch holo energy
+	sheen holo energy
+	
+	reverse mirror holo (r - Black & White only)
+	reverse energy holo (r - from Emerging Powers)
+	
+	reverse scratch holo
 	
 XY Evolutions
 	stars holo (m)
-	reverse vertical holo (r)
-	
 	cosmos holo
-	confetti holo
+	mirror holo
+	cracked ice holo
+	sheen holo
+	
+	reverse mirror holo (r)
+	
+	// checked up to here
 	
 SM
-	wavy holo (m)
-	big and little energy reverse holo (r)
-	
+	water web holo (m)
 	cosmos holo
+	cracked ice holo
 	confetti holo
 	sequin holo
 	
+	sheen holo energy (r)
+	sheen holo energy tag team (r)
+	
+	reverse big energy holo (r)
+	
 SWSH
 	vertical lines holo (m)
-	energy banner reverse holo (r)
-	
 	cosmos holo
+	cracked ice holo
 	confetti holo
+	sequin holo
+	
+	refractor holo energy (r)
+	refractor holo energy star (r)
+	
+	reverse energy banner holo (r)
 	
 SV (non-reverse are with border)
-	horizontal lines holo (m)
-	rocky reverse holo (r)
-	
+	mirage holo (m)
+	line holo
 	cosmos holo
+	
+	cosmos holo energy (r)
+	
+	reverse rocky holo (r)

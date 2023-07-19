@@ -76,6 +76,9 @@
 		POP_Series_7,
 		POP_Series_8,
 		POP_Series_9,
+		Rumble,
+		Manaphy_Half_Deck,
+		Lucario_Half_Deck,
 		Japanese_DP,
 		
 		HeartGold_SoulSilver,
