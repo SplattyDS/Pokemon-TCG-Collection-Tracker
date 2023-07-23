@@ -71,8 +71,8 @@ HGSS
 	cosmos holo - pokemon only (Victory Medals)
 	cracked ice holo
 	
-	mirror holo energy (r - Call of Legends)
 	scratch holo energy
+	mirror holo energy (r - Call of Legends)
 	
 	reverse mirror holo (r)
 	
@@ -86,7 +86,7 @@ BW & XY
 	cracked ice holo
 	confetti holo
 	
-	scratch holo energy
+	scratch holo energy (BW)
 	mirror holo energy
 	scratch holo energy
 	sheen holo energy
@@ -139,3 +139,16 @@ SV (non-reverse are with border)
 	cosmos holo energy (r)
 	
 	reverse rocky holo (r)
+
+
+
+
+
+
+
+V	set holo
+V	set variant
+V	promos
+V	promo sets
+V	unnumbered promos
+	set reverses

@@ -64,6 +64,42 @@
 			new Section(HoloRarity.DP_REVERSE_REFRACTOR_HOLO, "DPPt Series - Reverse Refractor Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.DP_RUMBLE_COSMOS_HOLO_LOGO, "DPPt Series - Rumble Cosmos Holo Logo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			// HGSS series
+			new Section(HoloRarity.HGSS_COSMOS_HOLO, "HGSS Series - Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.HGSS_COSMOS_HOLO_VICTORY_MEDAL, "HGSS Series - Cosmos Holo Victory Medal", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.HGSS_CRACKED_ICE_HOLO, "HGSS Series - Cracked Ice Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.HGSS_MIRROR_HOLO_ENERGY_COL, "HGSS Series - Mirror Holo Energy (COL)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.HGSS_SCRATCH_HOLO_ENERGY, "HGSS Series - Scratch Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.HGSS_SCRATCH_HOLO_ENERGY_COL, "HGSS Series - Scratch Holo Energy (COL)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.HGSS_REVERSE_MIRROR_HOLO, "HGSS Series - Reverse Mirror Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.HGSS_REVERSE_SCRATCH_HOLO, "HGSS Series - Reverse Scratch Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			// BW & XY series
+			new Section(HoloRarity.BWXY_TINSEL_HOLO, "BW & XY Series - Tinsel Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_TINSEL_HOLO_PLASMA, "BW & XY Series - Tinsel Holo (Plasma)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_SHEEN_HOLO, "BW & XY Series - Sheen Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_COSMOS_HOLO, "BW & XY Series - Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_COSMOS_HOLO_PLASMA, "BW & XY Series - Cosmos Holo (Plasma)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_MIRROR_HOLO, "BW & XY Series - Mirror Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_CRACKED_ICE_HOLO, "BW & XY Series - Cracked Ice Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_CRACKED_ICE_HOLO_PLASMA, "BW & XY Series - Cracked Ice Holo (Plasma)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_CONFETTI_HOLO, "BW & XY Series - Confetti Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.BWXY_SCRATCH_HOLO_ENERGY_BW, "BW & XY Series - Scratch Holo Energy (BW)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_MIRROR_HOLO_ENERGY, "BW & XY Series - Mirror Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_SCRATCH_HOLO_ENERGY, "BW & XY Series - Scratch Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_SHEEN_HOLO_ENERGY, "BW & XY Series - Sheen Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.BWXY_REVERSE_MIRROR_HOLO, "BW & XY Series - Reverse Mirror Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_REVERSE_MIRROR_HOLO_PLASMA, "BW & XY Series - Reverse Mirror Holo (Plasma)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_REVERSE_ENERGY_HOLO, "BW & XY Series - Reverse Energy Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.BWXY_REVERSE_SCRATCH_HOLO, "BW & XY Series - Reverse Scratch Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_REVERSE_SCRATCH_HOLO_PLASMA, "BW & XY Series - Reverse Scratch Holo (Plasma)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 		};
 
 		public static Section[] Get()

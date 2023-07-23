@@ -277,6 +277,8 @@ foreach ($HGSS_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} e
 finish();
 
 
+
+
 $Black_White = array(428,429,430);
 start($j++, 'Black White', $have, $Black_White);
 foreach ($Black_White as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
@@ -346,6 +348,10 @@ $BW_Promo = array(591,592,593,594,595,596,597,598,599,600,601,602,603,604,605,60
 start($j++, 'BW Promo', $have, $BW_Promo);
 foreach ($BW_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
+
+
+
+
 
 
 $XY = array(607,608,609,2956,610,2957,611,612,613,614,615,616,617,618,619,620);

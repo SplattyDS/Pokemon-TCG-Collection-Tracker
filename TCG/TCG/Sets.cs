@@ -87,6 +87,8 @@
 		Triumphant,
 		Call_of_Legends,
 		HGSS_Promo,
+		Gyarados_Half_Deck,
+		Raichu_Half_Deck,
 		Japanese_HGSS,
 		
 		Black_White,
@@ -103,6 +105,10 @@
 		Legendary_Treasures,
 		Legendary_Treasures_RC,
 		BW_Promo,
+		Mc_Donalds_2011,
+		Mc_Donalds_2012,
+		Zoroark_Half_Deck,
+		Excadrill_Half_Deck,
 
 		Kalos_Starter_Set,
 		XY,

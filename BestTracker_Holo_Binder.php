@@ -243,6 +243,8 @@ $binder12 = array();
 $binder13 = array();
 $binder14 = array();
 $binder15 = array();
+$binder16 = array();
+$binder17 = array();
 
 AddCards($binder1, $OS_STAR_HOLO);
 AlignRow($binder1);
@@ -336,7 +338,7 @@ AddCards($binder10, $DP_RUMBLE_COSMOS_HOLO_LOGO);
 AlignBinder($binder10);
 
 
-$dpReverseBinders = array(&$binder11, &$binder12, &$binder13, &$binder14, &$binder15);
+$dpReverseBinders = array(&$binder11, &$binder12, &$binder13, &$binder14);
 SplitCards($dpReverseBinders, $DP_REVERSE_MIRROR_HOLO);
 
 AlignBinder($binder11);
@@ -351,8 +353,28 @@ AlignPage($binder14);
 AddCards($binder14, $DP_REVERSE_REFRACTOR_HOLO);
 AlignBinder($binder14);
 
-AddCards($binder15, array(-1));
+AddCards($binder15, $HGSS_COSMOS_HOLO);
+AlignRow($binder15);
+AddCards($binder15, $HGSS_COSMOS_HOLO_VICTORY_MEDAL);
+AlignPage($binder15);
+AddCards($binder15, $HGSS_CRACKED_ICE_HOLO);
+AlignPage($binder15);
+AddCards($binder15, $HGSS_MIRROR_HOLO_ENERGY_COL);
+AlignPage($binder15);
+AddCards($binder15, $HGSS_SCRATCH_HOLO_ENERGY);
+AlignPage($binder15);
+AddCards($binder15, $HGSS_SCRATCH_HOLO_ENERGY_COL);
+AlignPage($binder15);
+AddCards($binder15, $HGSS_REVERSE_SCRATCH_HOLO);
+
+$hgssReverseBinders = array(&$binder15, &$binder16);
+SplitCards($hgssReverseBinders, $HGSS_REVERSE_MIRROR_HOLO);
+
 AlignBinder($binder15);
+AlignBinder($binder16);
+
+AddCards($binder17, array(-1));
+AlignBinder($binder17);
 
 $markers = CountMarkers($binder1) + CountMarkers($binder2) + CountMarkers($binder3) + CountMarkers($binder4) + CountMarkers($binder5) + CountMarkers($binder6) + CountMarkers($binder7) + CountMarkers($binder8) + CountMarkers($binder9);
 
@@ -374,7 +396,9 @@ PrintBinderInfo($i++, 'Binder 11 (DPPt Reverse 1) - Free Space: '.CountFree($bin
 PrintBinderInfo($i++, 'Binder 12 (DPPt Reverse 2) - Free Space: '.CountFree($binder12));
 PrintBinderInfo($i++, 'Binder 13 (DPPt Reverse 3) - Free Space: '.CountFree($binder13));
 PrintBinderInfo($i++, 'Binder 14 (DPPt Reverse 4) - Free Space: '.CountFree($binder14));
-PrintBinderInfo($i++, 'Binder 15 (TBA) - Free Space: '.CountFree($binder15));
+PrintBinderInfo($i++, 'Binder 15 (HGSS, HGSS Reverse 1) - Free Space: '.CountFree($binder15));
+PrintBinderInfo($i++, 'Binder 16 (HGSS Reverse 2) - Free Space: '.CountFree($binder16));
+PrintBinderInfo($i++, 'Binder 17 (TBA) - Free Space: '.CountFree($binder17));
 print('</ul>');
 
 $i = 1;
@@ -392,5 +416,7 @@ PrintBinder($i++, $binder11, 'Binder 11 (DPPt Reverse 1)');
 PrintBinder($i++, $binder12, 'Binder 12 (DPPt Reverse 2)');
 PrintBinder($i++, $binder13, 'Binder 13 (DPPt Reverse 3)');
 PrintBinder($i++, $binder14, 'Binder 14 (DPPt Reverse 4)');
-PrintBinder($i++, $binder15, 'Binder 15 (TBA)');
+PrintBinder($i++, $binder15, 'Binder 15 (HGSS, HGSS Reverse 1)');
+PrintBinder($i++, $binder16, 'Binder 16 (HGSS Reverse 2)');
+PrintBinder($i++, $binder17, 'Binder 17 (TBA)');
 ?>
