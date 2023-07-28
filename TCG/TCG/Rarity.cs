@@ -58,6 +58,7 @@
 		Ancient_Trait_Omega,
 		Ancient_Trait_Delta,
 		Ancient_Trait_Theta,
+		Mirrored_Stadium,
 		Radiant_Collection,
 		Full_Art_Trainer_BW_XY,
 		Full_Art_Trainer_Evolutions,

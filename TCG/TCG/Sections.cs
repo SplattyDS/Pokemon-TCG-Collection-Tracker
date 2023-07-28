@@ -45,6 +45,7 @@
 			new Section(Rarity.Ancient_Trait_Omega, "Ancient Trait Ω", SortMode.SORT_BY_DEX_AND_TYPE_AND_SET),
 			new Section(Rarity.Ancient_Trait_Delta, "Ancient Trait Δ", SortMode.SORT_BY_DEX_AND_TYPE_AND_SET),
 			new Section(Rarity.Ancient_Trait_Theta, "Ancient Trait θ", SortMode.SORT_BY_DEX_AND_TYPE_AND_SET),
+			new Section(Rarity.Mirrored_Stadium, "Mirrored Stadium", SortMode.SORT_BY_DEX_AND_TYPE_AND_SET),
 			new Section(Rarity.Radiant_Collection, "Radiant Collection", SortMode.SORT_BY_SET),
 			new Section(Rarity.Full_Art_Trainer_BW_XY, "Full Art Trainer (BW & XY)", SortMode.SORT_BY_NAME),
 			new Section(Rarity.Full_Art_Trainer_Evolutions, "Full Art Trainer (Evolutions)", SortMode.SORT_BY_NAME),

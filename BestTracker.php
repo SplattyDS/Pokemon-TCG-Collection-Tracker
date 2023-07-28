@@ -281,6 +281,7 @@
 							<li><a class="dropdown-item" href="BestTracker.php?holo&type">Type</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&dex">Dex</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&all">All</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?holo&test">Test</a></li>
 						</ul>
 					</li>
 					
@@ -447,10 +448,41 @@ require 'BestTracker_HoloHave.php';
 require 'BestTracker_Cards.php';
 require 'BestTracker_HoloCards.php';
 
-if (isset($_GET['test']))
+// $have = array_merge($have, array(3390,2715,2069,3414,3281,3542,2882,3483,3645,3648,3641,3652,3653,3654,3655,3656,3646,3647));
+// $have = array_merge($have, array(1852,1694,1695,1701,2124,3409,3512,3270,3274,3424,2196,2414,3536,3515,3416,3280,2189,3509,3717,3531,3554,3345));
+
+if (isset($_GET['holo']))
 {
-	// $have = array();
-	
+	if (isset($_GET['test']))
+	{
+		$test = array(43,23,40,77,2707,147,433,424,592,1082,1205,1206,2706,1114,1138,1139,1134,1126,1123,1472,1611,1817,2255,2322,2300,2408,2430,2496,2500,2520,2596,2588,2569,2601,2698,2704,2703,2732,2979,2927,2784,2863,2762,3015,2719,2901,2782,3040,2770,2758,2804,2710,2792,2926,2776,3008,2841,2742,2777,2994,2708,2731,2810,2778,2821,2917,2761,3019,3020,2803,3002,3037,2921,2886,3529,3310,3032,4332,4345,4363,4432,5071,5072,4952,5166,5058,5035,5084,4968,5331,4957,5330,5066,5067,5036,5059,5037,5040);
+		start($j++, 'Holo Test', $holoHave, $test);
+		foreach ($test as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+		finish();
+		
+		return;
+	}
+	else if (isset($_GET['set']))
+		require 'BestTracker_Holo_Sets.php';
+	else if (isset($_GET['type']))
+		require 'BestTracker_Holo_Types.php';
+	else if (isset($_GET['dex']))
+		require 'BestTracker_Holo_Pokedex.php';
+	else if (isset($_GET['all']))
+		require 'BestTracker_Holo_All.php';
+	else if (isset($_GET['col']))
+	{
+		start($j++, 'Holo Collection', $holoHave, $holoHave);
+		foreach ($holoHave as $cur) { imgHN($cur); }
+		finish();
+	}
+	else if (isset($_GET['binder']))
+		require 'BestTracker_Holo_Binder.php';
+	else
+		require 'BestTracker_Holo.php';
+}
+else if (isset($_GET['test']))
+{
 	$test = array(3399,3408,3513,3526,3527,3275,3282,3315,3396);
 	start($j++, 'Test', $have, $test);
 	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
@@ -486,36 +518,7 @@ if (isset($_GET['test']))
 	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 	finish();
 	
-	// startTable($j++);
-	// printRow(1, 'Dark Raichu', 'Lightning', 'Team Rocket', 83, 29.99);
-	// finishTable();
-	
 	return;
-}
-
-// $have = array_merge($have, array(3390,2715,2069,3414,3281,3542,2882,3483,3645,3648,3641,3652,3653,3654,3655,3656,3646,3647));
-// $have = array_merge($have, array(1852,1694,1695,1701,2124,3409,3512,3270,3274,3424,2196,2414,3536,3515,3416,3280,2189,3509,3717,3531,3554,3345));
-
-if (isset($_GET['holo']))
-{
-	if (isset($_GET['set']))
-		require 'BestTracker_Holo_Sets.php';
-	else if (isset($_GET['type']))
-		require 'BestTracker_Holo_Types.php';
-	else if (isset($_GET['dex']))
-		require 'BestTracker_Holo_Pokedex.php';
-	else if (isset($_GET['all']))
-		require 'BestTracker_Holo_All.php';
-	else if (isset($_GET['col']))
-	{
-		start($j++, 'Holo Collection', $holoHave, $holoHave);
-		foreach ($holoHave as $cur) { imgHN($cur); }
-		finish();
-	}
-	else if (isset($_GET['binder']))
-		require 'BestTracker_Holo_Binder.php';
-	else
-		require 'BestTracker_Holo.php';
 }
 else if (isset($_GET['set']))
 	require 'BestTracker_Sets.php';

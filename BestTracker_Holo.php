@@ -195,6 +195,18 @@ start($j++, 'BW & XY Series - Sheen Holo', $holoHave, $BWXY_SHEEN_HOLO);
 foreach ($BWXY_SHEEN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'BW & XY Series - Sheen Holo (Flare)', $holoHave, $BWXY_SHEEN_HOLO_FLARE);
+foreach ($BWXY_SHEEN_HOLO_FLARE as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'BW & XY Series - Sheen Holo (Aqua)', $holoHave, $BWXY_SHEEN_HOLO_AQUA);
+foreach ($BWXY_SHEEN_HOLO_AQUA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'BW & XY Series - Sheen Holo (Magma)', $holoHave, $BWXY_SHEEN_HOLO_MAGMA);
+foreach ($BWXY_SHEEN_HOLO_MAGMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'BW & XY Series - Cosmos Holo', $holoHave, $BWXY_COSMOS_HOLO);
 foreach ($BWXY_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -235,12 +247,24 @@ start($j++, 'BW & XY Series - Sheen Holo Energy', $holoHave, $BWXY_SHEEN_HOLO_EN
 foreach ($BWXY_SHEEN_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'BW & XY Series - Mirror Holo Energy (Generations)', $holoHave, $BWXY_MIRROR_HOLO_ENERGY_GENERATIONS);
+foreach ($BWXY_MIRROR_HOLO_ENERGY_GENERATIONS as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'BW & XY Series - Reverse Mirror Holo', $holoHave, $BWXY_REVERSE_MIRROR_HOLO);
 foreach ($BWXY_REVERSE_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'BW & XY Series - Reverse Mirror Holo (Plasma)', $holoHave, $BWXY_REVERSE_MIRROR_HOLO_PLASMA);
 foreach ($BWXY_REVERSE_MIRROR_HOLO_PLASMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'BW & XY Series - Reverse Mirror Holo (Aqua)', $holoHave, $BWXY_REVERSE_MIRROR_HOLO_AQUA);
+foreach ($BWXY_REVERSE_MIRROR_HOLO_AQUA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'BW & XY Series - Reverse Mirror Holo (Magma)', $holoHave, $BWXY_REVERSE_MIRROR_HOLO_MAGMA);
+foreach ($BWXY_REVERSE_MIRROR_HOLO_MAGMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'BW & XY Series - Reverse Energy Holo', $holoHave, $BWXY_REVERSE_ENERGY_HOLO);
@@ -253,6 +277,34 @@ finish();
 
 start($j++, 'BW & XY Series - Reverse Scratch Holo (Plasma)', $holoHave, $BWXY_REVERSE_SCRATCH_HOLO_PLASMA);
 foreach ($BWXY_REVERSE_SCRATCH_HOLO_PLASMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'XY Evolutions - Star Holo', $holoHave, $EV_STAR_HOLO);
+foreach ($EV_STAR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'XY Evolutions - Cosmos Holo', $holoHave, $EV_COSMOS_HOLO);
+foreach ($EV_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'XY Evolutions - Mirror Holo', $holoHave, $EV_MIRROR_HOLO);
+foreach ($EV_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'XY Evolutions - Cracked Ice Holo', $holoHave, $EV_CRACKED_ICE_HOLO);
+foreach ($EV_CRACKED_ICE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'XY Evolutions - Sheen Holo', $holoHave, $EV_SHEEN_HOLO);
+foreach ($EV_SHEEN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'XY Evolutions - Mirror Holo Energy', $holoHave, $EV_MIRROR_HOLO_ENERGY);
+foreach ($EV_MIRROR_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'XY Evolutions - Reverse Mirror Holo', $holoHave, $EV_REVERSE_MIRROR_HOLO);
+foreach ($EV_REVERSE_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 ?>

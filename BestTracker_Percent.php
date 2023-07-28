@@ -147,12 +147,12 @@ start($j++, 'Prime', $have, $Prime);
 foreach ($Prime as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Gold Stadium (SWSH)', $have, $Gold_Stadium_SWSH);
-foreach ($Gold_Stadium_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
 start($j++, 'Tag Team GX', $have, $TT_GX);
 foreach ($TT_GX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Gold Stadium (SWSH)', $have, $Gold_Stadium_SWSH);
+foreach ($Gold_Stadium_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'VMAX Rainbow (Gigantamax)', $have, $VMAX_Rainbow_Gigantamax);
@@ -265,6 +265,10 @@ finish();
 
 start($j++, 'Shiny Legend Subset', $have, $Shiny_Legend);
 foreach ($Shiny_Legend as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Mirrored Stadium', $have, $Mirrored_Stadium);
+foreach ($Mirrored_Stadium as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Full Art Trainer (Evolutions)', $have, $Full_Art_Trainer_Evolutions);

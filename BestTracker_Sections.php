@@ -111,6 +111,10 @@ start($j++, 'Ancient Trait θ', $have, $Ancient_Trait_Theta);
 foreach ($Ancient_Trait_Theta as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Mirrored Stadium', $have, $Mirrored_Stadium);
+foreach ($Mirrored_Stadium as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Radiant Collection', $have, $Radiant_Collection);
 foreach ($Radiant_Collection as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

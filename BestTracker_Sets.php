@@ -394,12 +394,12 @@ start($j++, 'Ancient Origins', $have, $Ancient_Origins);
 foreach ($Ancient_Origins as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$BREAKthrough = array(794,795,796,797,798,799,800,801,802,803,804,805,806,807,808,809,810,811,812,813,814,815,816,817,818,819);
+$BREAKthrough = array(794,795,796,797,798,799,800,801,802,803,804,805,806,807,3842,3843,808,809,810,811,812,813,814,815,816,817,818,819);
 start($j++, 'BREAKthrough', $have, $BREAKthrough);
 foreach ($BREAKthrough as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$BREAKpoint = array(820,821,822,823,824,825,826,827,828,829,830,831,832,833,834,835,836,837,838,839,840,841,842,843,844,845);
+$BREAKpoint = array(820,821,822,823,824,825,826,827,828,829,830,831,832,833,834,835,3844,3845,836,837,838,839,840,841,842,843,844,845);
 start($j++, 'BREAKpoint', $have, $BREAKpoint);
 foreach ($BREAKpoint as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -414,7 +414,7 @@ start($j++, 'Generations RC', $have, $Generations_RC);
 foreach ($Generations_RC as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Fates_Collide = array(867,868,869,870,871,872,873,874,875,876,877,878,879,880,881,882,883,884,885,886,887,888,889,890,891,892,893,894);
+$Fates_Collide = array(867,868,869,870,871,872,873,874,875,876,877,878,879,880,881,882,883,884,3846,3847,885,886,887,888,889,890,891,892,893,894);
 start($j++, 'Fates Collide', $have, $Fates_Collide);
 foreach ($Fates_Collide as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -438,6 +438,17 @@ $XY_Yellow_A_Promo = array(1054,1055,1056,1057,1058,1059,1060,1061,1062,1063,106
 start($j++, 'XY Yellow A Promo', $have, $XY_Yellow_A_Promo);
 foreach ($XY_Yellow_A_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
+
+
+
+
+
+
+
+
+
+
+
 
 $Japanese_BW_XY = array(3143,3144,3145,3146,3147,3148,3149,3150,3151,3152,3153,3154,3155,3156,3157,3158,3159,3160,3161);
 start($j++, 'Japanese BW XY', $have, $Japanese_BW_XY);
@@ -520,7 +531,7 @@ start($j++, 'Hidden Fates SV', $have, $Hidden_Fates_SV);
 foreach ($Hidden_Fates_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Cosmic_Eclipse = array(1762,1763,1764,1765,1766,1767,1768,1769,1770,1771,1772,1773,3629,1774,1775,1776,1777,1778,1779,1780,1781,1782,1783,1784,1785,1786,1787,1788,1789,1790,1791,1792,1793,1794,1795,1796,1797,1798,1799,1800,1801,1802,1803,1804,1805,1806,1807,1808,1809,1810,1811,1812,1813,1814,1815,1816,1817,1818,1819,1820,1821,1822,1823,1824,1825,1826,1827,1828,1829,1830,1831,1832,1833,1834,1835,1836,1837,1838,1839);
+$Cosmic_Eclipse = array(1762,1763,1764,1765,1766,1767,1768,1769,1770,1771,1772,1773,1774,1775,1776,1777,1778,1779,1780,1781,1782,1783,1784,1785,1786,1787,1788,1789,1790,1791,1792,1793,1794,1795,1796,1797,1798,1799,1800,1801,1802,1803,1804,1805,1806,1807,1808,1809,1810,1811,1812,1813,1814,1815,1816,1817,1818,1819,1820,1821,1822,1823,1824,1825,1826,1827,1828,1829,1830,1831,1832,1833,1834,1835,1836,1837,1838,1839);
 start($j++, 'Cosmic Eclipse', $have, $Cosmic_Eclipse);
 foreach ($Cosmic_Eclipse as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

@@ -3638,7 +3638,7 @@ namespace TCG
 			new Card("Charmander (stamp)", Pokedex.Charmander, Rarity.Stamped, Types.Fire, Sets.EX_Dragon, 98.1),
 			new Card("Charmeleon (stamp)", Pokedex.Charmeleon, Rarity.Stamped, Types.Fire, Sets.EX_Dragon, 99.1),
 			new Card("Charizard (stamp)", Pokedex.Charizard, Rarity.Stamped, Types.Fire, Sets.EX_Dragon, 100.1),
-			new Card("Arceus & Dialga & Palkia GX (glossy)", Pokedex.Arceus, Rarity.TT_GX, Types.Dragon, Sets.Cosmic_Eclipse, 156.1),
+			new Card("Arceus & Dialga & Palkia GX (glossy)", Pokedex.Arceus, Rarity.Stamped, Types.Dragon, Sets.Cosmic_Eclipse, 156.1),
 			new Card("Grass Energy", Pokedex.NVT, Rarity.Full_Art_Energy_SWSH, Types.Basic_Grass_Energy, Sets.Crown_Zenith, 152),
 			new Card("Fire Energy", Pokedex.NVT, Rarity.Full_Art_Energy_SWSH, Types.Basic_Fire_Energy, Sets.Crown_Zenith, 153),
 			new Card("Water Energy", Pokedex.NVT, Rarity.Full_Art_Energy_SWSH, Types.Basic_Water_Energy, Sets.Crown_Zenith, 154),
@@ -3851,6 +3851,12 @@ namespace TCG
 			new Card("Mew ex", Pokedex.Mew, Rarity.Metal, Types.Psychic, Sets.Metal_Cards, 5),
 			new Card("Mewtwo", Pokedex.Mewtwo, Rarity.Special_Art_Pokemon_SV, Types.Psychic, Sets.SV_Promo, 52),
 			new Card("Mew ex", Pokedex.Mew, Rarity.ex_SV_Special_Art, Types.Psychic, Sets.SV_Promo, 53),
+			new Card("Parallel City", Pokedex.NVT, Rarity.Mirrored_Stadium, Types.Stadium, Sets.BREAKthrough, 145),
+			new Card("Parallel City", Pokedex.NVT, Rarity.Mirrored_Stadium, Types.Stadium, Sets.BREAKthrough, 145.1),
+			new Card("Reverse Valley", Pokedex.NVT, Rarity.Mirrored_Stadium, Types.Stadium, Sets.BREAKpoint, 110),
+			new Card("Reverse Valley", Pokedex.NVT, Rarity.Mirrored_Stadium, Types.Stadium, Sets.BREAKpoint, 110.1),
+			new Card("Chaos Tower", Pokedex.NVT, Rarity.Mirrored_Stadium, Types.Stadium, Sets.Fates_Collide, 94),
+			new Card("Chaos Tower", Pokedex.NVT, Rarity.Mirrored_Stadium, Types.Stadium, Sets.Fates_Collide, 94.1),
 		};
 		
 		// do not add Play! Pokémon prize pack cards (too many and uncertain amount)

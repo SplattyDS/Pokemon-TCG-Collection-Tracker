@@ -100,16 +100,16 @@ XY Evolutions
 	stars holo (m)
 	cosmos holo
 	mirror holo
-	cracked ice holo
 	sheen holo
+	cracked ice holo
 	
 	reverse mirror holo (r)
-	
-	// checked up to here
 	
 SM
 	water web holo (m)
 	cosmos holo
+	mirror holo
+	sheen holo
 	cracked ice holo
 	confetti holo
 	sequin holo
@@ -119,9 +119,12 @@ SM
 	
 	reverse big energy holo (r)
 	
+	// checked up to here
+	
 SWSH
-	vertical lines holo (m)
+	line holo (m)
 	cosmos holo
+	refractor holo (m - Celebrations only)
 	cracked ice holo
 	confetti holo
 	sequin holo
@@ -130,6 +133,12 @@ SWSH
 	refractor holo energy star (r)
 	
 	reverse energy banner holo (r)
+	
+	reverse mirror holo
+	
+	// to research:
+	// Trick or Trade BOOster Bundle
+	// Play! Pokémon Prize Packs
 	
 SV (non-reverse are with border)
 	mirage holo (m)
@@ -146,9 +155,10 @@ SV (non-reverse are with border)
 
 
 
-V	set holo
-V	set variant
-V	promos
-V	promo sets
-V	unnumbered promos
+	set holo
+	set variant
+	promos
+	yellow A promos
+	promo sets
+	unnumbered promos
 	set reverses
