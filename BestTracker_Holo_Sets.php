@@ -827,6 +827,10 @@ finish();
 
 
 
+$SV_Promo = array(13748,13749,13750,13751,13752,13753,13754,13755,13756,13757,13758,13759,13760,13761,13762,13763,13764,13765,13766);
+start($j++, 'SV Promo', $holoHave, $SV_Promo);
+foreach ($SV_Promo as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
 
 ?>
