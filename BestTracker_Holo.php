@@ -427,4 +427,24 @@ start($j++, 'SWSH Series - Reverse Line Holo', $holoHave, $SWSH_REVERSE_LINE_HOL
 foreach ($SWSH_REVERSE_LINE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'SV Series - Mirage Holo', $holoHave, $SV_MIRAGE_HOLO);
+foreach ($SV_MIRAGE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'SV Series - Cosmos Holo', $holoHave, $SV_COSMOS_HOLO);
+foreach ($SV_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'SV Series - Line Holo', $holoHave, $SV_LINE_HOLO);
+foreach ($SV_LINE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'SV Series - Cosmos Holo Energy', $holoHave, $SV_COSMOS_HOLO_ENERGY);
+foreach ($SV_COSMOS_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'SV Series - Reverse Rocky Holo', $holoHave, $SV_REVERSE_ROCKY_HOLO);
+foreach ($SV_REVERSE_ROCKY_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 ?>
