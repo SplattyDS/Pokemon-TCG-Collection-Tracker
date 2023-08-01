@@ -160,6 +160,11 @@
 		Cosmic_Eclipse,
 		SM_Promo,
 		SM_Yellow_A_Promo,
+		Mc_Donalds_2017,
+		Mc_Donalds_2018,
+		Mc_Donalds_2019,
+		Lycanroc_Half_Deck,
+		Alolan_Raichu_Half_Deck,
 		Japanese_SM,
 		
 		Sword_Shield,
@@ -182,6 +187,8 @@
 		Crown_Zenith,
 		Crown_Zenith_Galarian_Gallery,
 		SWSH_Promo,
+		Mc_Donalds_2021,
+		Mc_Donalds_2022,
 		Japanese_SWSH,
 		
 		Scarlet_Violet,

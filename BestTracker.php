@@ -307,6 +307,11 @@ function idToName($ID)
 	return ''.(is_numeric($ID) ? str_repeat("0", 4 - strlen($ID)) : '').$ID;
 }
 
+function idToHoloName($ID)
+{
+	return ''.(is_numeric($ID) ? str_repeat("0", 5 - strlen($ID)) : '').$ID;
+}
+
 function img($ID)
 {
 	if ($ID == -1)
@@ -333,7 +338,7 @@ function imgH($ID)
 	if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/holo/-1.png');
 	else if (is_numeric($ID))
-		cardImg('card-img', 'images/best_tracker/holo/'.idToName($ID).'.png');
+		cardImg('card-img', 'images/best_tracker/holo/'.idToHoloName($ID).'.png');
 }
 
 function imgHN($ID)
@@ -341,7 +346,7 @@ function imgHN($ID)
 	if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/holo/-1.png');
 	else if (is_numeric($ID))
-		cardImg('card-have-img', 'images/best_tracker/holo/'.idToName($ID).'.png');
+		cardImg('card-have-img', 'images/best_tracker/holo/'.idToHoloName($ID).'.png');
 }
 
 function start($ID, $name, $have, $arrC)

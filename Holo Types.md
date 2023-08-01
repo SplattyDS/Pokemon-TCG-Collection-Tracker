@@ -119,18 +119,17 @@ SM
 	
 	reverse big energy holo (r)
 	
-	// checked up to here
-	
 SWSH
 	line holo (m)
-	cosmos holo
 	refractor holo (m - Celebrations only)
+	cosmos holo
 	cracked ice holo
 	confetti holo
 	sequin holo
 	
 	refractor holo energy (r)
 	refractor holo energy star (r)
+	line holo energy
 	
 	reverse energy banner holo (r)
 	
@@ -138,12 +137,14 @@ SWSH
 	
 	// to research:
 	// Trick or Trade BOOster Bundle
+		// result: set variant
 	// Play! Pokémon Prize Packs
+		// manually check each card -_-
 	
 SV (non-reverse are with border)
 	mirage holo (m)
-	line holo
 	cosmos holo
+	line holo
 	
 	cosmos holo energy (r)
 	
@@ -155,10 +156,10 @@ SV (non-reverse are with border)
 
 
 
-	set holo
-	set variant
-	promos
-	yellow A promos
-	promo sets
+V	set holo
+V	set variant
+V	play prize cards
+V	promos
+V	promo sets
 	unnumbered promos
 	set reverses

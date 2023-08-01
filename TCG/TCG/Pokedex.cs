@@ -821,7 +821,7 @@
 		Shiinotic,
 		Salandit,
 		Salazzle,
-		Stuffel,
+		Stufful,
 		Bewear,
 		Bounsweet,
 		Steenee,

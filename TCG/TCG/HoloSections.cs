@@ -117,6 +117,47 @@
 			new Section(HoloRarity.EV_MIRROR_HOLO_ENERGY, "XY Evolutions - Mirror Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.EV_REVERSE_MIRROR_HOLO, "XY Evolutions - Reverse Mirror Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			// SM Series
+			new Section(HoloRarity.SM_WATER_WEB_HOLO, "SM Series - Water Web Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SM_COSMOS_HOLO, "SM Series - Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SM_MIRROR_HOLO, "SM Series - Mirror Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SM_CRACKED_ICE_HOLO, "SM Series - Cracked Ice Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SM_CONFETTI_HOLO, "SM Series - Confetti Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SM_SHEEN_HOLO, "SM Series - Sheen Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SM_SHEEN_HOLO_DP, "SM Series - Sheen Holo (Detective Pikachu)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SM_SEQUIN_HOLO, "SM Series - Sequin Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.SM_SHEEN_HOLO_ENERGY, "SM Series - Sheen Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SM_SHEEN_HOLO_ENERGY_TT, "SM Series - Sheen Holo Energy (TT)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.SM_REVERSE_BIG_ENERGY_HOLO, "SM Series - Reverse Big Energy Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.SM_REVERSE_COSMOS_BIG_ENERGY_HOLO, "SM Series - Reverse Cosmos Big Energy Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SM_REVERSE_SHEEN_HOLO, "SM Series - Reverse Sheen Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			// SWSH Series
+			new Section(HoloRarity.SWSH_LINE_HOLO, "SWSH Series - Line Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_REFRACTOR_HOLO, "SWSH Series - Refractor Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_COSMOS_HOLO, "SWSH Series - Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_MIRROR_HOLO, "SWSH Series - Mirror Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_CRACKED_ICE_HOLO, "SWSH Series - Cracked Ice Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_CONFETTI_HOLO, "SWSH Series - Confetti Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_SEQUIN_HOLO, "SWSH Series - Sequin Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.SWSH_REFRACTOR_HOLO_ENERGY, "SWSH Series - Refractor Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_REFRACTOR_HOLO_ENERGY_STAR, "SWSH Series - Refractor Holo Energy (Star)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_LINE_HOLO_ENERGY, "SWSH Series - Line Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_LINE_HOLO_ENERGY_STAR, "SWSH Series - Line Holo Energy (Star)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, "SWSH Series - Reverse Energy Banner Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.SWSH_REVERSE_COSMOS_ENERGY_BANNER_HOLO, "SWSH Series - Reverse Cosmos Energy Banner Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_REVERSE_MIRROR_ENERGY_BANNER_HOLO, "SWSH Series - Reverse Mirror Energy Banner Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_REVERSE_MIRROR_HOLO, "SWSH Series - Reverse Mirror Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_REVERSE_REFRACTOR_HOLO, "SWSH Series - Reverse Refractor Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_REVERSE_LINE_HOLO, "SWSH Series - Reverse Line Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
 		};
 
 		public static Section[] Get()

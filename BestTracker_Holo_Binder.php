@@ -111,7 +111,7 @@ function GetBinderImageClass($id)
 
 function GetImagePrefix($id)
 {
-	return is_numeric($id) && $id != -1 ? str_repeat("0", 4 - strlen($id)) : '';
+	return is_numeric($id) && $id != -1 ? str_repeat("0", 5 - strlen($id)) : '';
 }
 
 function Align(&$binder, $align, $rest = 0, $padNum = -1)
@@ -387,8 +387,6 @@ AlignPage($binder17);
 AddCards($binder17, $BWXY_CRACKED_ICE_HOLO);
 AlignPage($binder17);
 AddCards($binder17, $BWXY_CRACKED_ICE_HOLO_PLASMA);
-AlignPage($binder17);
-AddCards($binder17, $BWXY_CONFETTI_HOLO);
 AlignBinder($binder17);
 
 AddCards($binder18, $BWXY_SHEEN_HOLO);
@@ -398,6 +396,8 @@ AlignRow($binder18);
 AddCards($binder18, $BWXY_SHEEN_HOLO_MAGMA);
 AlignRow($binder18);
 AddCards($binder18, $BWXY_SHEEN_HOLO_FLARE);
+AlignPage($binder18);
+AddCards($binder18, $BWXY_CONFETTI_HOLO);
 AlignPage($binder18);
 AddCards($binder18, $BWXY_MIRROR_HOLO_ENERGY);
 AlignPage($binder18);

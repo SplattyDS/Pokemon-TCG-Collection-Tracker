@@ -650,7 +650,7 @@ namespace TCG
 
 		static IEnumerable<HoloCard> HoloCardsFromSet(Sets set)
 		{
-			return HoloCards.Get().Where(c => c.set == set).OrderBy(c => c.setNum);
+			return HoloCards.Get().Where(c => c.set == set).OrderBy(c => c.rarity).OrderBy(c => c.setNum);
 		}
 
 		static IEnumerable<HoloCard> HoloCardsFromType(Types type)

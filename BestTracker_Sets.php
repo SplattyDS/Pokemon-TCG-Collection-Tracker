@@ -546,6 +546,11 @@ start($j++, 'SM Yellow A Promo', $have, $SM_Yellow_A_Promo);
 foreach ($SM_Yellow_A_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+
+
+
+
+
 $Japanese_SM = array(3162,3163,3164,3165,3166,3167,3168,3169,3170,3171,3172,3173,3174,3175,3176,3177,3178,3179,3180,3181,3182,3183,3184,3185,3186,3187,3188,3189,3190,3191,3192,3193,3194,3195,3196,3197,3198,3199,3200,3201,3202,3203,3204,3205,3206,3207,3208,3209,3210,3211,3212,3213,3214,3215,3216,3217,3218,3219);
 start($j++, 'Japanese SM', $have, $Japanese_SM);
 foreach ($Japanese_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
@@ -650,6 +655,8 @@ $SWSH_Promo = array(3001,3002,3003,3004,3005,3006,3007,3008,3009,3010,3011,3012,
 start($j++, 'SWSH Promo', $have, $SWSH_Promo);
 foreach ($SWSH_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
+
+
 
 $Japanese_SWSH = array(3220,3221);
 start($j++, 'Japanese SWSH', $have, $Japanese_SWSH);
