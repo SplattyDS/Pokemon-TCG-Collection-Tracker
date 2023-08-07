@@ -30,11 +30,11 @@
 		
 		a {
 			color: white;
-			text-shadow: 1px 1px 5px black, 2px 2px 5px black, -1px -1px 5px black, -2px -2px 5px black, -1px 1px 5px black, -2px 2px 5px black, 1px -1px 5px black, 2px -2px 5px black;
+			/* text-shadow: 1px 1px 5px black, 2px 2px 5px black, -1px -1px 5px black, -2px -2px 5px black, -1px 1px 5px black, -2px 2px 5px black, 1px -1px 5px black, 2px -2px 5px black; */
 		}
 		
 		nav a {
-			text-shadow: none;
+			/* text-shadow: none; */
 		}
 		
 		.navbar {
@@ -390,33 +390,33 @@ function finish()
 	print('</div>');
 }
 
-function startTable($id)
-{
-	print('<div id="header-'.$ID.'" class="center" onclick="toggleSection(this, '.$ID.')">
-	<h1>'.$name.'</h1>
-	<h2>'.$haveAmount.'/'.$amount.' ('.$percent.'%)</h2>
-	</div>');
+// function startTable($id)
+// {
+	// print('<div id="header-'.$ID.'" class="center" onclick="toggleSection(this, '.$ID.')">
+	// <h1>'.$name.'</h1>
+	// <h2>'.$haveAmount.'/'.$amount.' ('.$percent.'%)</h2>
+	// </div>');
 	
-	print('<div id="container-'.$id.'" class="hidden"><table class="infoTable">
-	<tr>
-	<th>Name</th>
-	<th>Image</th>
-	<th>Type</th>
-	<th>Set<br>+ Number</th>
-	<th>Price</th>
-	</tr>');
-}
+	// print('<div id="container-'.$id.'" class="hidden"><table class="infoTable">
+	// <tr>
+	// <th>Name</th>
+	// <th>Image</th>
+	// <th>Type</th>
+	// <th>Set<br>+ Number</th>
+	// <th>Price</th>
+	// </tr>');
+// }
 
-function printRow($id, $name, $type, $set, $setno, $price)
-{
-	print('<tr>
-	<td>'.$name.'</td>
-	<td>'.'</td>
-	<td>'.$type.'</td>
-	<td>'.$set.'<br>'.$setno.'</td>
-	<td>€'.$price.'</td>
-	</tr>');
-}
+// function printRow($id, $name, $type, $set, $setno, $price)
+// {
+	// print('<tr>
+	// <td>'.$name.'</td>
+	// <td>'.'</td>
+	// <td>'.$type.'</td>
+	// <td>'.$set.'<br>'.$setno.'</td>
+	// <td>€'.$price.'</td>
+	// </tr>');
+// }
 
 function finishTable()
 {
@@ -461,12 +461,22 @@ if (isset($_GET['holo']))
 	if (isset($_GET['test']))
 	{
 		$test = array(43,23,40,77,2707,147,433,424,592,1082,1205,1206,2706,1114,1138,1139,1134,1126,1123,1472,1611,1817,2255,2322,2300,2408,2430,2496,2500,2520,2596,2588,2569,2601,2698,2704,2703,2732,2979,2927,2784,2863,2762,3015,2719,2901,2782,3040,2770,2758,2804,2710,2792,2926,2776,3008,2841,2742,2777,2994,2708,2731,2810,2778,2821,2917,2761,3019,3020,2803,3002,3037,2921,2886,3529,3310,3032,4332,4345,4363,4432,5071,5072,4952,5166,5058,5035,5084,4968,5331,4957,5330,5066,5067,5036,5059,5037,5040);
-		start($j++, 'Holo Test', $holoHave, $test);
+		start($j++, 'Lost', $holoHave, $test);
+		foreach ($test as $cur) { if (in_array($cur, $holoHave, true)) {/*imgHN($cur);*/} else {imgH($cur);} }
+		finish();
+		
+		
+		$test = array(43,79,439,426,155,424,195,296,339,592,1199,899,1190,1139,902,1472,1580,1695,1817,1944,2019,2062,2213,2322,2396,2500,2588,2682,2719,2962,3048,3047,3038,2969,2974,3772,3032,2954,2882,4330,4464,4432,4921,4470,4439,4881,4411,4952,5037,6546,6548,6566,6561,6782,5317,6733,6649,5236,11257,5130,5357,5362,5374,7887,5419,6233,7416,7414,5770,5207,5232,8083,8091,8098,8094,8099,8174,8168,8199,8573,8448,8471,8736,8770,8652,8480,8777,8788,8823,8499,8459,10786,10819,11127,11219,10979,11273,11118,11281,11288,11078,11103,11463,10957,10973,11021,11028,11052,13337,13542,13539,13656);
+		start($j++, '1 of each type', $holoHave, $test);
 		foreach ($test as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 		finish();
 		
 		return;
 	}
+	// else if (isset($_GET['random']))
+	// {
+		// if (in_array($random, $holoHave, true)) {imgHN($random);} else {imgH($random);}
+	// }
 	else if (isset($_GET['set']))
 		require 'BestTracker_Holo_Sets.php';
 	else if (isset($_GET['type']))

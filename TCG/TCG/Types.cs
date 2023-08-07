@@ -41,7 +41,8 @@
 		Rockets_Secret_Machine,
 		Supporter,
 		Stadium,
-		
+
+		Special_Energy,
 		Basic_Grass_Energy,
 		Basic_Fire_Energy,
 		Basic_Water_Energy,
@@ -51,7 +52,6 @@
 		Basic_Darkness_Energy,
 		Basic_Metal_Energy,
 		Basic_Fairy_Energy,
-		Special_Energy,
 
 		No_Sorting,
 

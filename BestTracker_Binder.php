@@ -1,7 +1,7 @@
 <?php
 function PrintBinderInfo($ID, $name)
 {
-	print('<li><a href="#container-'.$ID.'">'.$name.'</a></li>');
+	print('<li><a href="BestTracker.php?binder='.$ID.'">'.$name.'</a></li>');
 }
 
 function PrintBinder($ID, $binder, $name, $numPages = 40)
@@ -15,10 +15,10 @@ function PrintBinder($ID, $binder, $name, $numPages = 40)
 		return;
 	}
 	
-	// <div id="container-'.$ID.'" class="center">
-	print('<table id="container-'.$ID.'">');
-	print('<tr><td colspan="2"><h1 class="center">'.$name.'</h1></td></tr>');
-	print('<tr><td colspan="2" class="center"><img class="binder" src="images/best_tracker/binder/'.$ID.'.png"></td></tr>');
+	print('<h1 id="binder-'.$ID.'" class="center" onclick="toggleSection(this, '.$ID.')">'.$name.'</h1>');
+	print('<div class="center"><img class="binder" src="images/best_tracker/binder/'.$ID.'.png" onclick="toggleSection(this, '.$ID.')"></div>');
+	
+	print('<div id="container-'.$ID.'" class="hidden"><table class="center">');
 	
 	for ($i = 0; $i < $numPages; $i++)
 	{
@@ -39,7 +39,7 @@ function PrintBinder($ID, $binder, $name, $numPages = 40)
 		print('</td></tr>');
 	}
 	
-	print('</table>');
+	print('</table></div>');
 }
 
 function PrintPage($binder, $pageNumber)
@@ -68,33 +68,16 @@ function PrintPage($binder, $pageNumber)
 		print(GetBinderCell($arr, $index++));
 		
 		if ($i % 4 == 3)
-			print('<tr>');
+			print('</tr>');
 	}
 	
 	print('</table>');
-	
-	
-	
-	// print('<table class="page">
-	// <tr><td><img src="images/best_tracker/cards/'.GetImagePrefix($arr[$index]).$arr[$index++].'.png"></td>
-	// <td><img src="images/best_tracker/cards/'.GetImagePrefix($arr[$index]).$arr[$index++].'.png"></td>
-	// <td><img src="images/best_tracker/cards/'.GetImagePrefix($arr[$index]).$arr[$index++].'.png"></td>
-	// <td><img src="images/best_tracker/cards/'.GetImagePrefix($arr[$index]).$arr[$index++].'.png"></td></tr>
-	// <tr><td><img src="images/best_tracker/cards/'.GetImagePrefix($arr[$index]).$arr[$index++].'.png"></td>
-	// <td><img src="images/best_tracker/cards/'.GetImagePrefix($arr[$index]).$arr[$index++].'.png"></td>
-	// <td><img src="images/best_tracker/cards/'.GetImagePrefix($arr[$index]).$arr[$index++].'.png"></td>
-	// <td><img src="images/best_tracker/cards/'.GetImagePrefix($arr[$index]).$arr[$index++].'.png"></td></tr>
-	// <tr><td><img src="images/best_tracker/cards/'.GetImagePrefix($arr[$index]).$arr[$index++].'.png"></td>
-	// <td><img src="images/best_tracker/cards/'.GetImagePrefix($arr[$index]).$arr[$index++].'.png"></td>
-	// <td><img src="images/best_tracker/cards/'.GetImagePrefix($arr[$index]).$arr[$index++].'.png"></td>
-	// <td><img src="images/best_tracker/cards/'.GetImagePrefix($arr[$index]).$arr[$index++].'.png"></td></tr>
-	// </table>');
 }
 
 function GetBinderCell($arr, $index)
 {
 	$id = $arr[$index];
-	return '<td><img class="'.GetBinderImageClass($id).'" src="images/best_tracker/cards/'.GetImagePrefix($id).$id.'.png"></td>';
+	return '<td><img class="'.GetBinderImageClass($id).'" data-src="images/best_tracker/cards/'.GetImagePrefix($id).$id.'.png"></td>';
 }
 
 function GetBinderImageClass($id)
@@ -112,49 +95,47 @@ function GetImagePrefix($id)
 	return is_numeric($id) && $id != -1 ? str_repeat("0", 4 - strlen($id)) : '';
 }
 
-function Align($binder, $align, $rest = 0, $padNum = -1)
+function Align(&$binder, $align, $rest = 0, $padNum = -1)
 {
 	while (count($binder) % $align != $rest)
 		array_push($binder, $padNum);
-	
-	return $binder;
 }
 
-function AlignRow($binder)
+function AlignRow(&$binder)
 {
-	return Align($binder, 4);
+	return Align($binder, 3);
 }
 
-function AlignPage($binder)
+function AlignPage(&$binder)
 {
 	return Align($binder, 12);
 }
 
-function AlignPages($binder)
+function AlignPages(&$binder)
 {
 	if (count($binder) == 0) // otherwise the first page may be empty
-		return $binder;
+		return;
 	
-	return Align($binder, 24, 12);
+	Align($binder, 24, 12);
 }
 
-function AlignBinder($binder)
+function AlignBinder(&$binder)
 {
 	if (count($binder) > 480)
-		return array();
+		$binder = array();
 	
-	$binder = AlignPage($binder);
-	return Align($binder, 480, 0, 0);
+	AlignPage($binder);
+	Align($binder, 480, 0, 0);
 }
 
-function AddCards($binder, $cards)
+function AddCards(&$binder, $cards)
 {
-	return array_merge($binder, $cards);
+	$binder = array_merge($binder, $cards);
 }
 
-function AddV_Union($binder, $cards)
+function AddV_Union(&$binder, $cards)
 {
-	$cards = Align($cards, 8);
+	Align($cards, 8);
 	
 	for ($i = 0; $i < count($cards); $i += 8)
 	{
@@ -164,17 +145,108 @@ function AddV_Union($binder, $cards)
 		
 		$binder = array_merge($binder, $sortedCards);
 	}
-	
-	return $binder;
 }
 
-function CountMarkers($binder)
+function SplitCards(&$binders, $cards)
+{
+	$freeSpace = 0;
+	
+	for ($i = 0; $i < count($binders); $i++)
+		$freeSpace += CountFree($binders[$i]);
+	
+	if ($freeSpace < count($cards))
+	{
+		print('Not enough space to split cards. Needed '.count($cards).', has '.$freeSpace.'.<br>');
+		return ;
+	}
+	
+	for ($i = 0; $i < count($binders); $i++)
+	{
+		$freeSpace = CountFree($binders[$i]);
+		$offset = FirstFreeOffset($binders[$i]);
+		
+		$binders[$i] = array_merge($binders[$i], $cards);
+		
+		// print('count($binders['.$i.']) = '.count($binders[$i]).'<br>');
+		
+		array_splice($binders[$i], 480, count($binders[$i]) - 480);
+		
+		for ($j = 0; $j < $freeSpace; $j++)
+			unset($cards[$j]);
+		
+		array_splice($cards, 1, 1);
+	}
+	
+	
+	// for ($i = 0; $i < count($binders); $i++)
+		// print('count($binders['.$i.']) = '.count($binders[$i]).'<br>');
+}
+
+function FirstFreeOffset(&$binder)
+{
+	for ($i = 0; $i < count($binder); $i++)
+	{
+		if ($binder[$i] == 0)
+			return $i;
+	}
+	
+	return -1;
+}
+
+function CountMarkers(&$binder)
 {
 	$amount = 0;
 	
 	for ($i = 0; $i < count($binder); $i++)
 	{
 		if ($binder[$i] == -1)
+			$amount++;
+	}
+	
+	return $amount;
+}
+
+function CountFree(&$binder)
+{
+	if (count($binder) == 0)
+		return 480;
+	
+	if (count($binder) < 480)
+		return 480 - count($binder);
+	
+	$amount = 0;
+	
+	for ($i = 0; $i < count($binder); $i++)
+	{
+		if ($binder[$i] == 0)
+			$amount++;
+	}
+	
+	return $amount;
+}
+
+function CountValidCards(&$binder)
+{
+	$amount = 0;
+	
+	for ($i = 0; $i < count($binder); $i++)
+	{
+		if ($binder[$i] != 0 && $binder[$i] != -1)
+			$amount++;
+	}
+	
+	return $amount;
+}
+
+function CountHaveBinder(&$binder)
+{
+	global $have;
+	
+	$amount = 0;
+	
+	for ($i = 0; $i < count($binder); $i++)
+	{
+		if ($binder[$i] != 0 && $binder[$i] != -1 && in_array($binder[$i], $have, true))
 			$amount++;
 	}
 	
@@ -192,263 +264,296 @@ $binder7 = array();
 $binder8 = array();
 $binder9 = array();
 $binder10 = array();
+// $binder11 = array();
 
-$binder0 = AddCards($binder0, $Metal);
-$binder0 = AlignPages($binder0);
+AddCards($binder0, $Metal);
+AlignBinder($binder0);
 
-$binder1 = AddCards($binder1, $Secret);
-$binder1 = AlignPage($binder1);
-$binder1 = AddCards($binder1, $Full_Art);
-$binder1 = AlignPage($binder1);
-$binder1 = AddCards($binder1, $Japanese_Full_art);
-$binder1 = AlignPage($binder1);
-$binder1 = AddCards($binder1, $Gold_Pokemon);
-$binder1 = AlignRow($binder1);
-$binder1 = AddCards($binder1, $Ancient_Mew);
-$binder1 = AlignPage($binder1);
-$binder1 = AddCards($binder1, $Shining_Neo);
-$binder1 = AlignRow($binder1);
-$binder1 = AddCards($binder1, $Crystal_Type);
-$binder1 = AlignRow($binder1);
-$binder1 = AddCards($binder1, $ex);
-$binder1 = AlignRow($binder1);
-$binder1 = AddCards($binder1, $Gold_Star);
-$binder1 = AlignRow($binder1);
-$binder1 = AddCards($binder1, $Unown);
-$binder1 = AlignRow($binder1);
-$binder1 = AlignBinder($binder1);
+AddCards($binder1, $Secret);
+AlignPage($binder1);
+AddCards($binder1, $Full_Art);
+AlignPage($binder1);
+AddCards($binder1, $Japanese_Full_art);
+AlignPage($binder1);
+AddCards($binder1, $Gold_Pokemon);
+AlignRow($binder1);
+AddCards($binder1, $Ancient_Mew);
+AlignPage($binder1);
+AddCards($binder1, $Shining_Neo);
+AlignRow($binder1);
+AddCards($binder1, $Crystal_Type);
+AlignRow($binder1);
+AddCards($binder1, $ex);
+AlignRow($binder1);
+AddCards($binder1, $Gold_Star);
+AlignRow($binder1);
+AddCards($binder1, $Unown);
+AlignRow($binder1);
+AlignBinder($binder1);
 
-$binder2 = AddCards($binder2, $LV_X);
-$binder2 = AlignPage($binder2);
-$binder2 = AddCards($binder2, $Shiny_Holo);
-$binder2 = AlignPage($binder2);
-$binder2 = AddCards($binder2, $Rotom);
-$binder2 = AlignPage($binder2);
-$binder2 = AddCards($binder2, $Arceus);
-$binder2 = AlignPage($binder2);
-$binder2 = AddCards($binder2, $Prime);
-$binder2 = AlignPage($binder2);
-$binder2 = AddCards($binder2, $LEGEND);
-$binder2 = AlignRow($binder2);
-$binder2 = AddCards($binder2, $Alph_Lithograph);
-$binder2 = AlignRow($binder2);
-$binder2 = AddCards($binder2, $Shiny_Legend);
-$binder2 = AlignPage($binder2);
-$binder2 = AddCards($binder2, $EX);
-$binder2 = AddCards($binder2, $M_EX);
-$binder2 = AlignBinder($binder2);
+AddCards($binder2, $LV_X);
+AlignPage($binder2);
+AddCards($binder2, $Shiny_Holo);
+AlignPage($binder2);
+AddCards($binder2, $Rotom);
+AlignPage($binder2);
+AddCards($binder2, $Arceus);
+AlignPage($binder2);
+AddCards($binder2, $Prime);
+AlignPage($binder2);
+AddCards($binder2, $LEGEND);
+AlignRow($binder2);
+AddCards($binder2, $Alph_Lithograph);
+AlignRow($binder2);
+AddCards($binder2, $Shiny_Legend);
+AlignPage($binder2);
+AddCards($binder2, $EX);
+AddCards($binder2, $M_EX);
+AlignBinder($binder2);
 
-$binder3 = AddCards($binder3, $Ace_Spec);
-$binder3 = AlignRow($binder3);
-$binder3 = AddCards($binder3, $Mirrored_Stadium);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $BREAK);
-$binder3 = AlignRow($binder3);
-$binder3 = AddCards($binder3, $Ancient_Trait_Alpha);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $Ancient_Trait_Omega);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $Ancient_Trait_Delta);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $Ancient_Trait_Theta);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $Radiant_Collection);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $Full_Art_Trainer_BW_XY);
-$binder3 = AlignRow($binder3);
-$binder3 = AddCards($binder3, $Full_Art_Trainer_Evolutions);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $EX_Full_Art);
-$binder3 = AlignRow($binder3);
-$binder3 = AddCards($binder3, $M_EX_Full_Art);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $EX_Full_Art_Plasma);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $EX_Full_Art_Radiant);
-$binder3 = AlignRow($binder3);
-$binder3 = AddCards($binder3, $M_EX_Full_Art_Radiant);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $EX_Full_Art_Special);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $EX_Special_Art);
-$binder3 = AlignRow($binder3);
-$binder3 = AddCards($binder3, $M_EX_Special_Art);
-$binder3 = AlignPage($binder3);
-$binder3 = AddCards($binder3, $Secret_M_EX);
-$binder3 = AlignBinder($binder3);
+AddCards($binder3, $Ace_Spec);
+AlignRow($binder3);
+AddCards($binder3, $Mirrored_Stadium);
+AlignPage($binder3);
+AddCards($binder3, $BREAK);
+AlignRow($binder3);
+AddCards($binder3, $Ancient_Trait_Alpha);
+AlignPage($binder3);
+AddCards($binder3, $Ancient_Trait_Omega);
+AlignPage($binder3);
+AddCards($binder3, $Ancient_Trait_Delta);
+AlignPage($binder3);
+AddCards($binder3, $Ancient_Trait_Theta);
+AlignPage($binder3);
+AddCards($binder3, $Radiant_Collection);
+AlignPage($binder3);
+AddCards($binder3, $Full_Art_Trainer_BW_XY);
+AlignRow($binder3);
+AddCards($binder3, $Full_Art_Trainer_Evolutions);
+AlignPage($binder3);
+AddCards($binder3, $EX_Full_Art);
+AlignRow($binder3);
+AddCards($binder3, $M_EX_Full_Art);
+AlignPage($binder3);
+AddCards($binder3, $EX_Full_Art_Plasma);
+AlignPage($binder3);
+AddCards($binder3, $EX_Full_Art_Radiant);
+AlignRow($binder3);
+AddCards($binder3, $M_EX_Full_Art_Radiant);
+AlignPage($binder3);
+AddCards($binder3, $EX_Full_Art_Special);
+AlignPage($binder3);
+AddCards($binder3, $EX_Special_Art);
+AlignRow($binder3);
+AddCards($binder3, $M_EX_Special_Art);
+AlignPage($binder3);
+AddCards($binder3, $Secret_M_EX);
+AlignBinder($binder3);
 
-$binder4 = AddCards($binder4, $GX);
-$binder4 = AlignPage($binder4);
-$binder4 = AddCards($binder4, $UB_GX);
-$binder4 = AlignPage($binder4);
-$binder4 = AddCards($binder4, $TT_GX);
-$binder4 = AlignRow($binder4);
-$binder4 = AddCards($binder4, $TT_UB_GX);
-$binder4 = AlignPage($binder4);
-$binder4 = AddCards($binder4, $Shining_SM);
-$binder4 = AlignPage($binder4);
-$binder4 = AddCards($binder4, $Prism_Star);
-$binder4 = AddCards($binder4, $Shiny_Vault_SM);
-$binder4 = AddCards($binder4, $Full_Art_Trainer_SM);
-$binder4 = AlignBinder($binder4);
+AddCards($binder4, $GX);
+AlignPage($binder4);
+AddCards($binder4, $UB_GX);
+AlignPage($binder4);
+AddCards($binder4, $TT_GX);
+AlignRow($binder4);
+AddCards($binder4, $TT_UB_GX);
+AlignPage($binder4);
+AddCards($binder4, $Shining_SM);
+AlignPage($binder4);
+AddCards($binder4, $Prism_Star);
+AddCards($binder4, $Shiny_Vault_SM);
+AddCards($binder4, $Full_Art_Trainer_SM);
+AlignBinder($binder4);
 
-$binder5 = AddCards($binder5, $GX_Full_Art);
-$binder5 = AddCards($binder5, $UB_GX_Full_Art);
-$binder5 = AddCards($binder5, $TT_GX_Full_Art);
-$binder5 = AddCards($binder5, $TT_UB_GX_Full_Art);
-$binder5 = AlignPage($binder5);
-$binder5 = AddCards($binder5, $GX_Shiny_Full_Art);
-$binder5 = AddCards($binder5, $UB_GX_Shiny_Full_Art);
-$binder5 = AlignRow($binder5);
-$binder5 = AddCards($binder5, $GX_Special_Art);
-$binder5 = AlignPage($binder5);
-$binder5 = AddCards($binder5, $TT_GX_Special_Art);
-$binder5 = AddCards($binder5, $TT_UB_GX_Special_Art);
-$binder5 = AlignPage($binder5);
-$binder5 = AddCards($binder5, $Character_Art_SM);
-$binder5 = AddCards($binder5, $Gold_Item_SM);
-$binder5 = AddCards($binder5, $Gold_Stadium_SM);
-$binder5 = AddCards($binder5, $Gold_Energy_SM);
-$binder5 = AlignPage($binder5);
-$binder5 = AddCards($binder5, $Gold_Special_Energy_SM);
-$binder5 = AlignPage($binder5);
-$binder5 = AddCards($binder5, $GX_Gold);
-$binder5 = AlignPage($binder5);
-$binder5 = AddCards($binder5, $TT_GX_Gold);
-$binder5 = AlignBinder($binder5);
+AddCards($binder5, $GX_Full_Art);
+AddCards($binder5, $UB_GX_Full_Art);
+AddCards($binder5, $TT_GX_Full_Art);
+AddCards($binder5, $TT_UB_GX_Full_Art);
+AlignPage($binder5);
+AddCards($binder5, $GX_Shiny_Full_Art);
+AddCards($binder5, $UB_GX_Shiny_Full_Art);
+AlignRow($binder5);
+AddCards($binder5, $GX_Special_Art);
+AlignPage($binder5);
+AddCards($binder5, $TT_GX_Special_Art);
+AddCards($binder5, $TT_UB_GX_Special_Art);
+AlignPage($binder5);
+AddCards($binder5, $Character_Art_SM);
+AddCards($binder5, $Gold_Item_SM);
+AddCards($binder5, $Gold_Stadium_SM);
+AddCards($binder5, $Gold_Energy_SM);
+AlignPage($binder5);
+AddCards($binder5, $Gold_Special_Energy_SM);
+AlignPage($binder5);
+AddCards($binder5, $GX_Gold);
+AlignPage($binder5);
+AddCards($binder5, $TT_GX_Gold);
+AlignBinder($binder5);
 
-$binder6 = AddCards($binder6, $V);
-$binder6 = AlignPage($binder6);
-$binder6 = AddCards($binder6, $VMAX);
-$binder6 = AddCards($binder6, $VMAX_Blue);
-$binder6 = AddCards($binder6, $VMAX_Gigantamax);
-$binder6 = AddCards($binder6, $VMAX_Eternamax);
-$binder6 = AlignPage($binder6);
-$binder6 = AddCards($binder6, $VSTAR);
-$binder6 = AlignBinder($binder6);
+AddCards($binder6, $V);
+AlignPages($binder6);
+AddCards($binder6, $VMAX);
+AddCards($binder6, $VMAX_Blue);
+AddCards($binder6, $VMAX_Gigantamax);
+AddCards($binder6, $VMAX_Eternamax);
+AlignPage($binder6);
+AddCards($binder6, $VSTAR);
+AlignBinder($binder6);
 
-$binder7 = AddV_Union($binder7, $V_Union);
-$binder7 = AddCards($binder7, $Amazing_Rare);
-$binder7 = AddCards($binder7, $Radiant);
-$binder7 = AddCards($binder7, $Shiny_Vault_SWSH);
-$binder7 = AddCards($binder7, $Classic_Collection);
-$binder7 = AlignPage($binder7);
-$binder7 = AddCards($binder7, $Full_Art_Trainer_SWSH);
-$binder7 = AlignPage($binder7);
-$binder7 = AddCards($binder7, $Full_Art_Energy_SWSH);
-$binder7 = AlignBinder($binder7);
+AddV_Union($binder7, $V_Union);
+AddCards($binder7, $Amazing_Rare);
+AddCards($binder7, $Radiant);
+AddCards($binder7, $Shiny_Vault_SWSH);
+AddCards($binder7, $Classic_Collection);
+AlignPage($binder7);
+AddCards($binder7, $Full_Art_Trainer_SWSH);
+AlignPage($binder7);
+AddCards($binder7, $Full_Art_Energy_SWSH);
+AlignBinder($binder7);
 
-$binder8 = AddCards($binder8, $V_Full_Art);
-$binder8 = AlignPage($binder8);
-$binder8 = AddCards($binder8, $V_Shiny_Full_Art);
-$binder8 = AlignPage($binder8);
-$binder8 = AddCards($binder8, $VMAX_Shiny_Full_Art);
-$binder8 = AlignPage($binder8);
-$binder8 = AddCards($binder8, $Special_Art_Trainer_SWSH);
-$binder8 = AlignPage($binder8);
-$binder8 = AddCards($binder8, $Special_Art_Pokemon_SWSH);
-$binder8 = AlignRow($binder8);
-$binder8 = AddCards($binder8, $V_Special_Art);
-$binder8 = AlignPage($binder8);
-$binder8 = AddCards($binder8, $VMAX_Special_Art);
-$binder8 = AlignPage($binder8);
-$binder8 = AddCards($binder8, $VSTAR_Special_Art);
-$binder8 = AlignPage($binder8);
-$binder8 = AddCards($binder8, $Character_Art_SWSH);
-$binder8 = AlignPage($binder8);
-$binder8 = AddCards($binder8, $V_Character_Art);
-$binder8 = AlignRow($binder8);
-$binder8 = AddCards($binder8, $VMAX_Character_Art);
-$binder8 = AlignPage($binder8);
-$binder8 = AddV_Union($binder8, $V_UNION_Character_Art);
-$binder8 = AlignBinder($binder8);
+AddCards($binder8, $V_Full_Art);
+AlignPage($binder8);
+AddCards($binder8, $V_Shiny_Full_Art);
+AlignPage($binder8);
+AddCards($binder8, $VMAX_Shiny_Full_Art);
+AlignPage($binder8);
+AddCards($binder8, $Special_Art_Trainer_SWSH);
+AlignPage($binder8);
+AddCards($binder8, $Special_Art_Pokemon_SWSH);
+AlignRow($binder8);
+AddCards($binder8, $V_Special_Art);
+AlignPage($binder8);
+AddCards($binder8, $VMAX_Special_Art);
+AlignPage($binder8);
+AddCards($binder8, $VSTAR_Special_Art);
+AlignPage($binder8);
+AddCards($binder8, $Character_Art_SWSH);
+AlignPage($binder8);
+AddCards($binder8, $V_Character_Art);
+AlignRow($binder8);
+AddCards($binder8, $VMAX_Character_Art);
+AlignPage($binder8);
+AddV_Union($binder8, $V_UNION_Character_Art);
+AlignBinder($binder8);
 
-$binder9 = AddCards($binder9, $Gold_Item_SWSH);
-$binder9 = AlignPage($binder9);
-$binder9 = AddCards($binder9, $Gold_Stadium_SWSH);
-$binder9 = AlignPage($binder9);
-$binder9 = AddCards($binder9, $Gold_Energy_SWSH);
-$binder9 = AlignPage($binder9);
-$binder9 = AddCards($binder9, $Gold_Special_Energy_SWSH);
-$binder9 = AlignPage($binder9);
-$binder9 = AddCards($binder9, $Gold_Shiny);
-$binder9 = AddCards($binder9, $V_Gold);
-$binder9 = AlignPage($binder9);
-$binder9 = AddCards($binder9, $VSTAR_Gold);
-$binder9 = AlignPage($binder9);
-$binder9 = AddCards($binder9, $V_VMAX_Gold);
-$binder9 = AlignPage($binder9);
-$binder9 = AddCards($binder9, $VSTAR_Gold_Special_Art);
-$binder9 = AlignPage($binder9);
-$binder9 = AddCards($binder9, $GX_Rainbow);
-$binder9 = AddCards($binder9, $UB_GX_Rainbow);
-$binder9 = AlignRow($binder9);
-$binder9 = AddCards($binder9, $TT_GX_Rainbow);
-$binder9 = AddCards($binder9, $TT_UB_GX_Rainbow);
-$binder9 = AlignRow($binder9);
-$binder9 = AddCards($binder9, $Rainbow_Trainer);
-$binder9 = AlignRow($binder9);
-$binder9 = AddCards($binder9, $VMAX_Rainbow);
-$binder9 = AddCards($binder9, $VMAX_Rainbow_Blue);
-$binder9 = AddCards($binder9, $VMAX_Rainbow_Gigantamax);
-$binder9 = AddCards($binder9, $VMAX_Rainbow_Eternamax);
-$binder9 = AlignRow($binder9);
-$binder9 = AddCards($binder9, $VSTAR_Rainbow);
-$binder9 = AlignBinder($binder9);
+AddCards($binder9, $Gold_Item_SWSH);
+AlignPage($binder9);
+AddCards($binder9, $Gold_Stadium_SWSH);
+AlignPage($binder9);
+AddCards($binder9, $Gold_Energy_SWSH);
+AlignPage($binder9);
+AddCards($binder9, $Gold_Special_Energy_SWSH);
+AlignPage($binder9);
+AddCards($binder9, $Gold_Shiny);
+AddCards($binder9, $V_Gold);
+AlignPage($binder9);
+AddCards($binder9, $VSTAR_Gold);
+AlignPage($binder9);
+AddCards($binder9, $V_VMAX_Gold);
+AlignPage($binder9);
+AddCards($binder9, $VSTAR_Gold_Special_Art);
+AlignPage($binder9);
+AddCards($binder9, $GX_Rainbow);
+AddCards($binder9, $UB_GX_Rainbow);
+AlignRow($binder9);
+AddCards($binder9, $TT_GX_Rainbow);
+AddCards($binder9, $TT_UB_GX_Rainbow);
+AlignRow($binder9);
+AddCards($binder9, $Rainbow_Trainer);
+AlignRow($binder9);
+AddCards($binder9, $VMAX_Rainbow);
+AddCards($binder9, $VMAX_Rainbow_Blue);
+AddCards($binder9, $VMAX_Rainbow_Gigantamax);
+AddCards($binder9, $VMAX_Rainbow_Eternamax);
+AlignRow($binder9);
+AddCards($binder9, $VSTAR_Rainbow);
+AlignBinder($binder9);
 
-$binder10 = AddCards($binder10, $ex_SV);
-$binder10 = AlignPages($binder10);
-$binder10 = AddCards($binder10, $ex_SV_Tera);
-$binder10 = AlignPages($binder10);
-$binder10 = AddCards($binder10, $Full_Art_Trainer_SV);
-$binder10 = AlignPages($binder10);
-$binder10 = AddCards($binder10, $ex_SV_Full_Art);
-$binder10 = AlignPages($binder10);
-$binder10 = AddCards($binder10, $ex_SV_Tera_Full_Art);
-$binder10 = AlignPages($binder10);
-$binder10 = AddCards($binder10, $Special_Art_Trainer_SV);
-$binder10 = AlignPages($binder10);
-$binder10 = AddCards($binder10, $Special_Art_Pokemon_SV);
-$binder10 = AlignPages($binder10);
-$binder10 = AddCards($binder10, $ex_SV_Special_Art);
-$binder10 = AlignPages($binder10);
-$binder10 = AddCards($binder10, $Gold_Item_SV);
-$binder10 = AlignPages($binder10);
-$binder10 = AddCards($binder10, $Gold_Energy_SV);
-$binder10 = AlignPages($binder10);
-$binder10 = AddCards($binder10, $ex_SV_Gold);
-$binder10 = AlignPages($binder10);
-$binder10 = AlignBinder($binder10);
+AddCards($binder10, $ex_SV);
+AlignPages($binder10);
+AddCards($binder10, $ex_SV_Tera);
+AlignPages($binder10);
+AddCards($binder10, $Full_Art_Trainer_SV);
+AlignPages($binder10);
+AddCards($binder10, $ex_SV_Full_Art);
+AlignPages($binder10);
+AddCards($binder10, $ex_SV_Tera_Full_Art);
+AlignPages($binder10);
+AddCards($binder10, $Special_Art_Trainer_SV);
+AlignPages($binder10);
+AddCards($binder10, $Special_Art_Pokemon_SV);
+AlignPages($binder10);
+AddCards($binder10, $ex_SV_Special_Art);
+AlignPages($binder10);
+AddCards($binder10, $Gold_Item_SV);
+AlignPages($binder10);
+AddCards($binder10, $Gold_Energy_SV);
+AlignPages($binder10);
+AddCards($binder10, $ex_SV_Gold);
+AlignPages($binder10);
+AlignBinder($binder10);
 
-$markers = CountMarkers($binder1) + CountMarkers($binder2) + CountMarkers($binder3) + CountMarkers($binder4) + CountMarkers($binder5) + CountMarkers($binder6) + CountMarkers($binder7) + CountMarkers($binder8) + CountMarkers($binder9);
+// AddCards($binder11, array(-1));
+// AlignBinder($binder11);
+
+$binders = array
+(
+	&$binder0,
+	&$binder1,
+	&$binder2,
+	&$binder3,
+	&$binder4,
+	&$binder5,
+	&$binder6,
+	&$binder7,
+	&$binder8,
+	&$binder9,
+	&$binder10,
+	// &$binder11,
+);
+
+$markers = 0;
+
+for ($i = 0; $i < count($binders); $i++)
+	$markers += CountMarkers($binders[$i]);
+
+$binderContents = array
+(
+	'Not in a Binder',
+	'General, Gen 1-3',
+	'Gen 4, Gen 5.1 & 6.1',
+	'Gen 5.2 & 6.2',
+	'Gen 7.1',
+	'Gen 7.2',
+	'Gen 8.1',
+	'Gen 8.2',
+	'Gen 8.3',
+	'Gen 8.4, Rainbow',
+	'Gen 9 - Ongoing',
+	// 'TBA',
+);
 
 print('<h1>Number of VSTAR Markers: '.$markers.'</h1>');
 
-$i = 0;
 print('<ul>');
-PrintBinderInfo($i++, 'Not in a Binder');
-PrintBinderInfo($i++, 'Binder 1 (General, Gen 1-3)');
-PrintBinderInfo($i++, 'Binder 2 (Gen 4, Gen 5.1 & 6.1)');
-PrintBinderInfo($i++, 'Binder 3 (Gen 5.2 & 6.2)');
-PrintBinderInfo($i++, 'Binder 4 (Gen 7.1)');
-PrintBinderInfo($i++, 'Binder 5 (Gen 7.2)');
-PrintBinderInfo($i++, 'Binder 6 (Gen 8.1)');
-PrintBinderInfo($i++, 'Binder 7 (Gen 8.2)');
-PrintBinderInfo($i++, 'Binder 8 (Gen 8.3)');
-PrintBinderInfo($i++, 'Binder 9 (Gen 8.4, Rainbow)');
-PrintBinderInfo($i++, 'Binder 10 (Gen 9) - Ongoing');
+
+for ($i = 0; $i < count($binders); $i++)
+{
+	$validCards = CountValidCards($binders[$i]);
+	$haveCount = CountHaveBinder($binders[$i]);
+	$havePercent = $validCards == 0 ? 0 : round($haveCount / $validCards * 100, 2);
+	
+	PrintBinderInfo($i, 'Binder '.$i.' ('.$binderContents[$i].') - Free Space: '.CountFree($binders[$i]).' - Completion: '.$haveCount.'/'.$validCards.' ('.$havePercent.'%)');
+}
+
 print('</ul>');
 
-$i = 0;
-PrintBinder($i++, $binder0, 'Not in a Binder', 1);
-PrintBinder($i++, $binder1, 'Binder 1 (General, Gen 1-3)');
-PrintBinder($i++, $binder2, 'Binder 2 (Gen 4, Gen 5.1 & 6.1)');
-PrintBinder($i++, $binder3, 'Binder 3 (Gen 5.2 & 6.2)');
-PrintBinder($i++, $binder4, 'Binder 4 (Gen 7.1)');
-PrintBinder($i++, $binder5, 'Binder 5 (Gen 7.2)');
-PrintBinder($i++, $binder6, 'Binder 6 (Gen 8.1)');
-PrintBinder($i++, $binder7, 'Binder 7 (Gen 8.2)');
-PrintBinder($i++, $binder8, 'Binder 8 (Gen 8.3)');
-PrintBinder($i++, $binder9, 'Binder 9 (Gen 8.4, Rainbow)');
-PrintBinder($i++, $binder10, 'Binder 10 (Gen 9) - Ongoing');
+if (is_numeric($_GET['binder']))
+{
+	$i = $_GET['binder'];
+	PrintBinder($i, $binders[$i], 'Binder '.$i.' ('.$binderContents[$i].')');
+}
+
+// for ($i = 0; $i < count($binders); $i++)
+	// PrintBinder($i + 1, $binders[$i], 'Binder '.($i + 1).' ('.$binderContents[$i].')');
 ?>

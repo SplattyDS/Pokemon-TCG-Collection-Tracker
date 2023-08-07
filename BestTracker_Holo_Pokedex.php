@@ -351,7 +351,7 @@ start($j++, 'Primeape', $holoHave, $Primeape);
 foreach ($Primeape as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Growlithe = array(255,655,685,816,1372,1732,2312,3385,4042,4189,4539,5679,5680,7733,8111,8807,10058,8745,11480,12423,13089,11272,13378,13379,13764);
+$Growlithe = array(255,655,685,816,1372,1732,2312,3385,4042,4189,4539,5679,5680,7733,8111,8807,10058,8745,11480,12423,13089,11272,13378,13379,13764,13768);
 start($j++, 'Growlithe', $holoHave, $Growlithe);
 foreach ($Growlithe as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -4476,7 +4476,7 @@ start($j++, 'Chewtle', $holoHave, $Chewtle);
 foreach ($Chewtle as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Drednaw = array(10956,11346,10987,11849,11980,12463,11143);
+$Drednaw = array(11346,10987,11849,11980,12463,11143);
 start($j++, 'Drednaw', $holoHave, $Drednaw);
 foreach ($Drednaw as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -4949,7 +4949,7 @@ start($j++, 'Dachsbun', $holoHave, $Dachsbun);
 foreach ($Dachsbun as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Smoliv = array(13368,13369,13763);
+$Smoliv = array(13368,13369,13763,13767);
 start($j++, 'Smoliv', $holoHave, $Smoliv);
 foreach ($Smoliv as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

@@ -119,6 +119,11 @@ start($j++, 'Stadium', $have, $Stadium);
 foreach ($Stadium as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$Special_Energy = array(1156,1260,1261,1275,1307,1308,1323,1351,1397,1592,1653,1654,1839,2050,2096,2391,2392,2875,3474);
+start($j++, 'Special Energy', $have, $Special_Energy);
+foreach ($Special_Energy as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 $Basic_Grass_Energy = array(1157,2694,3630,3826);
 start($j++, 'Basic Grass Energy', $have, $Basic_Grass_Energy);
 foreach ($Basic_Grass_Energy as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
@@ -162,11 +167,6 @@ finish();
 $Basic_Fairy_Energy = array(1212);
 start($j++, 'Basic Fairy Energy', $have, $Basic_Fairy_Energy);
 foreach ($Basic_Fairy_Energy as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-$Special_Energy = array(1156,1260,1261,1275,1307,1308,1323,1351,1397,1592,1653,1654,1839,2050,2096,2391,2392,2875,3474);
-start($j++, 'Special Energy', $have, $Special_Energy);
-foreach ($Special_Energy as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 
