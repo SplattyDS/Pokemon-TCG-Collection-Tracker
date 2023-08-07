@@ -15,6 +15,10 @@ start($j++, 'V-UNION', $have, $V_Union);
 foreach ($V_Union as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Amazing Rare', $have, $Amazing_Rare);
+foreach ($Amazing_Rare as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Radiant', $have, $Radiant);
 foreach ($Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -25,10 +29,6 @@ finish();
 
 start($j++, 'Tera ex (SV)', $have, $ex_SV_Tera);
 foreach ($ex_SV_Tera as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Amazing Rare', $have, $Amazing_Rare);
-foreach ($Amazing_Rare as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Ace Spec', $have, $Ace_Spec);
@@ -45,6 +45,10 @@ finish();
 
 start($j++, 'Metal Cards', $have, $Metal);
 foreach ($Metal as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'V & VMAX Gold', $have, $V_VMAX_Gold);
+foreach ($V_VMAX_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Unown Subset', $have, $Unown);
@@ -67,8 +71,8 @@ start($j++, 'Character Art (SWSH)', $have, $Character_Art_SWSH);
 foreach ($Character_Art_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'V & VMAX Gold', $have, $V_VMAX_Gold);
-foreach ($V_VMAX_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+start($j++, 'Radiant Collection', $have, $Radiant_Collection);
+foreach ($Radiant_Collection as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'V Shiny', $have, $V_Shiny_Full_Art);
@@ -83,12 +87,12 @@ start($j++, 'Ancient Trait θ', $have, $Ancient_Trait_Theta);
 foreach ($Ancient_Trait_Theta as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Radiant Collection', $have, $Radiant_Collection);
-foreach ($Radiant_Collection as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
 start($j++, 'LEGEND', $have, $LEGEND);
 foreach ($LEGEND as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Ancient Trait Ω', $have, $Ancient_Trait_Omega);
+foreach ($Ancient_Trait_Omega as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'LV.X', $have, $LV_X);
@@ -109,10 +113,6 @@ finish();
 
 start($j++, 'Gold Special Energy (SWSH)', $have, $Gold_Special_Energy_SWSH);
 foreach ($Gold_Special_Energy_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ancient Trait Ω', $have, $Ancient_Trait_Omega);
-foreach ($Ancient_Trait_Omega as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Secret Rare', $have, $Secret);
@@ -245,6 +245,10 @@ finish();
 
 start($j++, 'Full Art Trainer (SM)', $have, $Full_Art_Trainer_SM);
 foreach ($Full_Art_Trainer_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Special Art Pokémon (SV)', $have, $Special_Art_Pokemon_SV);
+foreach ($Special_Art_Pokemon_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Japanese Full Art Pokémon', $have, $Japanese_Full_art);
@@ -457,10 +461,6 @@ finish();
 
 start($j++, 'Special Art Trainer (SV)', $have, $Special_Art_Trainer_SV);
 foreach ($Special_Art_Trainer_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Special Art Pokémon (SV)', $have, $Special_Art_Pokemon_SV);
-foreach ($Special_Art_Pokemon_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'ex (SV) Special Art Art', $have, $ex_SV_Special_Art);
