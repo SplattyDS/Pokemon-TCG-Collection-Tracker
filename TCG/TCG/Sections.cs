@@ -142,10 +142,13 @@
 			new Section(Rarity.ex_SV_Tera_Full_Art, "Tera ex (SV) Full Art", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.Special_Art_Trainer_SV, "Special Art Trainer (SV)", SortMode.SORT_BY_NAME),
 			new Section(Rarity.Special_Art_Pokemon_SV, "Special Art Pokémon (SV)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
-			new Section(Rarity.ex_SV_Special_Art, "ex (SV) Special Art Art", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.ex_SV_Special_Art, "ex (SV) Special Art", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.ex_SV_Tera_Special_Art, "Tera ex (SV) Special Art", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.Gold_Item_SV, "Gold Item (SV)", SortMode.SORT_BY_NAME_AND_TYPE),
+			new Section(Rarity.Gold_Stadium_SV, "Gold Stadium (SV)", SortMode.SORT_BY_NAME_AND_TYPE),
 			new Section(Rarity.Gold_Energy_SV, "Gold Energy (SV)", SortMode.SORT_BY_TYPE),
 			new Section(Rarity.ex_SV_Gold, "ex (SV) Gold", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.ex_SV_Tera_Gold, "Tera ex (SV) Gold", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 		};
 
 		public static Section[] Get()

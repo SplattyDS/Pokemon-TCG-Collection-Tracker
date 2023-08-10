@@ -156,8 +156,11 @@
 		Special_Art_Trainer_SV,
 		Special_Art_Pokemon_SV,
 		ex_SV_Special_Art,
+		ex_SV_Tera_Special_Art,
 		Gold_Item_SV,
+		Gold_Stadium_SV,
 		Gold_Energy_SV,
 		ex_SV_Gold,
+		ex_SV_Tera_Gold,
 	}
 }

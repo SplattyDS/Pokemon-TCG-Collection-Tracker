@@ -27,12 +27,12 @@ start($j++, 'Classic Collection', $have, $Classic_Collection);
 foreach ($Classic_Collection as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Tera ex (SV)', $have, $ex_SV_Tera);
-foreach ($ex_SV_Tera as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
 start($j++, 'Ace Spec', $have, $Ace_Spec);
 foreach ($Ace_Spec as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Tera ex (SV)', $have, $ex_SV_Tera);
+foreach ($ex_SV_Tera as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'VSTAR', $have, $VSTAR);
@@ -57,10 +57,6 @@ finish();
 
 start($j++, 'V', $have, $V);
 foreach ($V as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV)', $have, $ex_SV);
-foreach ($ex_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Ancient Trait Δ', $have, $Ancient_Trait_Delta);
@@ -93,6 +89,10 @@ finish();
 
 start($j++, 'Ancient Trait Ω', $have, $Ancient_Trait_Omega);
 foreach ($Ancient_Trait_Omega as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'ex (SV)', $have, $ex_SV);
+foreach ($ex_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'LV.X', $have, $LV_X);
@@ -475,12 +475,20 @@ start($j++, 'Special Art Trainer (SV)', $have, $Special_Art_Trainer_SV);
 foreach ($Special_Art_Trainer_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'ex (SV) Special Art Art', $have, $ex_SV_Special_Art);
+start($j++, 'ex (SV) Special Art', $have, $ex_SV_Special_Art);
 foreach ($ex_SV_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Tera ex (SV) Special Art', $have, $ex_SV_Tera_Special_Art);
+foreach ($ex_SV_Tera_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Gold Item (SV)', $have, $Gold_Item_SV);
 foreach ($Gold_Item_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Gold Stadium (SV)', $have, $Gold_Stadium_SV);
+foreach ($Gold_Stadium_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Gold Energy (SV)', $have, $Gold_Energy_SV);
@@ -489,6 +497,10 @@ finish();
 
 start($j++, 'ex (SV) Gold', $have, $ex_SV_Gold);
 foreach ($ex_SV_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Tera ex (SV) Gold', $have, $ex_SV_Tera_Gold);
+foreach ($ex_SV_Tera_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 ?>

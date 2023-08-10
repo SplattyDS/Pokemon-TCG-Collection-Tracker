@@ -1,5 +1,5 @@
 <?php
-$NVT = array(101,3848,3849,3850,3851,3852,3853,3854,3855,3856,3857,3858,3859,3860,3861,3862,3863,3864,3865,253,311,373,386,397,410,437,469,493,494,495,496,503,504,505,509,518,519,520,525,528,535,536,543,544,549,550,557,558,559,560,566,570,3243,633,634,635,650,651,652,667,668,669,715,716,717,718,719,720,721,722,754,755,756,757,788,792,793,3842,3843,816,817,3844,3845,844,3267,3268,3846,3847,893,914,915,941,942,947,1054,1059,1060,1062,1065,1066,1069,3157,3158,1091,1092,1093,1094,1103,1104,1105,1106,1107,1108,1133,1134,1135,1151,1152,1153,1154,1155,1156,1157,1158,1159,1185,1186,1187,1188,1189,1190,1204,1205,1206,1207,1208,1209,1210,1211,1212,1225,1247,1248,1249,1258,1259,1260,1261,1262,1274,1275,1285,1286,1287,1288,1289,1290,1291,1292,1293,1303,1304,1305,1306,1307,1308,1322,1323,1333,1334,1335,1336,1346,1347,1348,1349,1350,1351,1375,1376,1377,1378,1379,1380,1381,1382,1392,1393,1394,1395,1396,1397,1405,1410,1411,1416,1417,1418,1436,1437,1438,1439,1453,1454,1455,1456,1457,1458,1459,1473,1474,1475,1476,1477,1478,1479,1480,1481,1495,1496,1510,1511,1512,1513,1514,1515,1516,1517,1518,1519,1530,1531,1532,1533,1534,1567,1568,1569,1570,1571,1572,1587,1588,1589,1590,1591,1592,1627,1628,1629,1630,1631,1632,1646,1647,1648,1649,1650,1651,1652,1653,1654,1665,1666,1748,1749,1750,1751,1752,1753,1754,1755,1756,1757,1796,1797,1798,1799,1800,1801,1802,1803,1804,1831,1832,1833,1834,1835,1836,1837,1838,1839,3162,3173,3174,3175,3176,3177,3178,3179,3180,3181,3182,3183,3184,3185,3202,3215,3216,3217,3219,1975,1976,1977,1978,1983,1984,1985,1986,1989,1990,1991,1992,2030,2031,2032,2033,2041,2042,2043,2044,2047,2048,2049,2050,2081,2082,2083,2084,2090,2091,2094,2095,2096,2115,2119,2120,2122,2159,2160,2161,2162,2163,2164,2165,2172,2173,2174,2175,2176,2177,2180,2181,2182,2183,2202,2203,2204,2205,2206,2207,2208,2209,2367,2368,2369,2370,2371,2372,2381,2382,2383,2384,2385,2386,2389,2390,2391,2392,2442,2443,2444,2445,2446,2447,2448,2449,2450,2451,2452,2453,2454,2466,2467,2468,2469,2470,2471,2472,2473,2474,2475,2476,2477,2481,2482,2483,2484,2485,2486,2487,2488,2489,2556,2557,2558,2559,2560,2578,2579,2580,2581,2582,2586,2587,2588,2589,2590,2591,2592,2593,2594,2602,2607,2609,2615,2669,2670,2671,2672,2673,2674,2675,2684,2685,2686,2687,2688,2689,2690,2692,2693,2694,2695,2738,2739,2740,2741,2742,2743,2748,2749,2750,2751,2756,2757,2781,2782,2783,2784,2785,2840,2841,2842,2843,2844,2845,2846,2847,2848,2858,2859,2860,2861,2862,2863,2864,2865,2866,2870,2871,2872,2873,2874,2875,2899,2900,2901,2902,2903,2925,2929,2930,2931,2932,2934,2935,3308,3309,3310,3311,3312,3313,3314,3315,3323,3324,3325,3326,3327,3328,3329,3330,3333,3334,3335,3336,3359,3360,3361,3362,3363,3364,3447,3448,3449,3450,3451,3452,3453,3454,3462,3463,3464,3465,3466,3467,3468,3471,3472,3473,3474,3497,3498,3499,3500,3501,3502,3537,3538,3539,3540,3541,3630,3631,3632,3633,3634,3635,3636,3637,3598,3599,3600,3601,3602,3603,3604,3605,3606,3607,3049,3063,3069,3112,3113,3114,3367,3640,3693,3694,3695,3696,3697,3698,3699,3700,3707,3708,3709,3710,3713,3714,3715,3716,3796,3797,3798,3799,3800,3801,3802,3803,3813,3814,3815,3816,3817,3818,3824,3825,3826,3827);
+$NVT = array(101,3848,3849,3850,3851,3852,3853,3854,3855,3856,3857,3858,3859,3860,3861,3862,3863,3864,3865,253,311,373,386,397,410,437,469,493,494,495,496,503,504,505,509,518,519,520,525,528,535,536,543,544,549,550,557,558,559,560,566,570,3243,633,634,635,650,651,652,667,668,669,715,716,717,718,719,720,721,722,754,755,756,757,788,792,793,3842,3843,816,817,3844,3845,844,3267,3268,3846,3847,893,914,915,941,942,947,1054,1059,1060,1062,1065,1066,1069,3157,3158,1091,1092,1093,1094,1103,1104,1105,1106,1107,1108,1133,1134,1135,1151,1152,1153,1154,1155,1156,1157,1158,1159,1185,1186,1187,1188,1189,1190,1204,1205,1206,1207,1208,1209,1210,1211,1212,1225,1247,1248,1249,1258,1259,1260,1261,1262,1274,1275,1285,1286,1287,1288,1289,1290,1291,1292,1293,1303,1304,1305,1306,1307,1308,1322,1323,1333,1334,1335,1336,1346,1347,1348,1349,1350,1351,1375,1376,1377,1378,1379,1380,1381,1382,1392,1393,1394,1395,1396,1397,1405,1410,1411,1416,1417,1418,1436,1437,1438,1439,1453,1454,1455,1456,1457,1458,1459,1473,1474,1475,1476,1477,1478,1479,1480,1481,1495,1496,1510,1511,1512,1513,1514,1515,1516,1517,1518,1519,1530,1531,1532,1533,1534,1567,1568,1569,1570,1571,1572,1587,1588,1589,1590,1591,1592,1627,1628,1629,1630,1631,1632,1646,1647,1648,1649,1650,1651,1652,1653,1654,1665,1666,1748,1749,1750,1751,1752,1753,1754,1755,1756,1757,1796,1797,1798,1799,1800,1801,1802,1803,1804,1831,1832,1833,1834,1835,1836,1837,1838,1839,3162,3173,3174,3175,3176,3177,3178,3179,3180,3181,3182,3183,3184,3185,3202,3215,3216,3217,3219,1975,1976,1977,1978,1983,1984,1985,1986,1989,1990,1991,1992,2030,2031,2032,2033,2041,2042,2043,2044,2047,2048,2049,2050,2081,2082,2083,2084,2090,2091,2094,2095,2096,2115,2119,2120,2122,2159,2160,2161,2162,2163,2164,2165,2172,2173,2174,2175,2176,2177,2180,2181,2182,2183,2202,2203,2204,2205,2206,2207,2208,2209,2367,2368,2369,2370,2371,2372,2381,2382,2383,2384,2385,2386,2389,2390,2391,2392,2442,2443,2444,2445,2446,2447,2448,2449,2450,2451,2452,2453,2454,2466,2467,2468,2469,2470,2471,2472,2473,2474,2475,2476,2477,2481,2482,2483,2484,2485,2486,2487,2488,2489,2556,2557,2558,2559,2560,2578,2579,2580,2581,2582,2586,2587,2588,2589,2590,2591,2592,2593,2594,2602,2607,2609,2615,2669,2670,2671,2672,2673,2674,2675,2684,2685,2686,2687,2688,2689,2690,2692,2693,2694,2695,2738,2739,2740,2741,2742,2743,2748,2749,2750,2751,2756,2757,2781,2782,2783,2784,2785,2840,2841,2842,2843,2844,2845,2846,2847,2848,2858,2859,2860,2861,2862,2863,2864,2865,2866,2870,2871,2872,2873,2874,2875,2899,2900,2901,2902,2903,2925,2929,2930,2931,2932,2934,2935,3308,3309,3310,3311,3312,3313,3314,3315,3323,3324,3325,3326,3327,3328,3329,3330,3333,3334,3335,3336,3359,3360,3361,3362,3363,3364,3447,3448,3449,3450,3451,3452,3453,3454,3462,3463,3464,3465,3466,3467,3468,3471,3472,3473,3474,3497,3498,3499,3500,3501,3502,3537,3538,3539,3540,3541,3630,3631,3632,3633,3634,3635,3636,3637,3598,3599,3600,3601,3602,3603,3604,3605,3606,3607,3049,3063,3069,3112,3113,3114,3367,3640,3693,3694,3695,3696,3697,3698,3699,3700,3707,3708,3709,3710,3713,3714,3715,3716,3796,3797,3798,3799,3800,3801,3802,3803,3813,3814,3815,3816,3817,3818,3824,3825,3826,3827,3907,3908,3909,3910,3915,3916,3918,3919);
 start($j++, 'NVT', $have, $NVT);
 foreach ($NVT as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -21,7 +21,7 @@ start($j++, 'Charmeleon', $have, $Charmeleon);
 foreach ($Charmeleon as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Charizard = array(3223,5,17,18,53,74,219,278,314,357,526,621,622,2958,623,626,2959,629,636,637,849,850,3248,920,921,935,951,957,1020,3146,1161,1193,1656,1716,1764,1780,1819,1857,1908,1913,1920,2053,2054,2116,2121,2317,2605,2699,2700,2724,2725,2745,2908,3339,3507,3508,3509,3016,3053,3376,3377,3378);
+$Charizard = array(3223,5,17,18,53,74,219,278,314,357,526,621,622,2958,623,626,2959,629,636,637,849,850,3248,920,921,935,951,957,1020,3146,1161,1193,1656,1716,1764,1780,1819,1857,1908,1913,1920,2053,2054,2116,2121,2317,2605,2699,2700,2724,2725,2745,2908,3339,3507,3508,3509,3016,3053,3376,3377,3378,3879,3904,3912,3917);
 start($j++, 'Charizard', $have, $Charizard);
 foreach ($Charizard as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -47,9 +47,17 @@ start($j++, 'Beedrill', $have, $Beedrill);
 foreach ($Beedrill as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$Pidgey = array(3896);
+start($j++, 'Pidgey', $have, $Pidgey);
+foreach ($Pidgey as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
+$Pidgeotto = array(3897);
+start($j++, 'Pidgeotto', $have, $Pidgeotto);
+foreach ($Pidgeotto as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
-$Pidgeot = array(931,932,938,939,3288,3307);
+$Pidgeot = array(931,932,938,939,3288,3307,3885,3906,3914);
 start($j++, 'Pidgeot', $have, $Pidgeot);
 foreach ($Pidgeot as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -122,7 +130,7 @@ start($j++, 'Clefairy', $have, $Clefairy);
 foreach ($Clefairy as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Clefable = array(75);
+$Clefable = array(75,3873);
 start($j++, 'Clefable', $have, $Clefable);
 foreach ($Clefable as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -137,7 +145,7 @@ start($j++, 'Alolan Vulpix', $have, $Alolan_Vulpix);
 foreach ($Alolan_Vulpix as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Ninetales = array(66,851,922,1996,2018);
+$Ninetales = array(66,851,922,1996,2018,3888);
 start($j++, 'Ninetales', $have, $Ninetales);
 foreach ($Ninetales as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -156,6 +164,10 @@ finish();
 
 
 
+$Gloom = array(3887);
+start($j++, 'Gloom', $have, $Gloom);
+foreach ($Gloom as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
 $Vileplume = array(70,1763,1779,1818);
 start($j++, 'Vileplume', $have, $Vileplume);
@@ -600,7 +612,7 @@ finish();
 
 
 
-$Dragonite = array(43,210,645,649,733,2984,2985,933,940,1401,1408,1608,1625,1644,1890,2548,2549,2915,2916,2923,2928,3070,3117,3118);
+$Dragonite = array(43,210,645,649,733,2984,2985,933,940,1401,1408,1608,1625,1644,1890,2548,2549,2915,2916,2923,2928,3070,3117,3118,3884);
 start($j++, 'Dragonite', $have, $Dragonite);
 foreach ($Dragonite as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -677,7 +689,7 @@ foreach ($Lanturn as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else
 finish();
 
 
-$Cleffa = array(2612);
+$Cleffa = array(2612,3891);
 start($j++, 'Cleffa', $have, $Cleffa);
 foreach ($Cleffa as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -815,7 +827,7 @@ finish();
 
 
 
-$Scizor = array(91,134,390,831,832,841,842,1360,1372,1389,1739,2067,2068,2078,2088);
+$Scizor = array(91,134,390,831,832,841,842,1360,1372,1389,1739,2067,2068,2078,2088,3894);
 start($j++, 'Scizor', $have, $Scizor);
 foreach ($Scizor as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -873,8 +885,12 @@ start($j++, 'Skarmory', $have, $Skarmory);
 foreach ($Skarmory as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$Houndour = array(3893);
+start($j++, 'Houndour', $have, $Houndour);
+foreach ($Houndour as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
-$Houndoom = array(388,795,796,808,809,2055,2073,2388,2767);
+$Houndoom = array(388,795,796,808,809,2055,2073,2388,2767,3880);
 start($j++, 'Houndoom', $have, $Houndoom);
 foreach ($Houndoom as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -927,9 +943,13 @@ start($j++, 'Suicune', $have, $Suicune);
 foreach ($Suicune as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$Larvitar = array(3892);
+start($j++, 'Larvitar', $have, $Larvitar);
+foreach ($Larvitar as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
 
-$Tyranitar = array(11,137,218,233,2938,378,771,772,784,785,1429,1448,1468,2347,2363,2364,2651,3046,3770);
+$Tyranitar = array(11,137,218,233,2938,378,771,772,784,785,1429,1448,1468,2347,2363,2364,2651,3046,3770,3870,3900);
 start($j++, 'Tyranitar', $have, $Tyranitar);
 foreach ($Tyranitar as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -1278,7 +1298,7 @@ foreach ($Tropius as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else
 finish();
 
 
-$Absol = array(61,221,312,398,977,978,3557);
+$Absol = array(61,221,312,398,977,978,3557,3881,3903);
 start($j++, 'Absol', $have, $Absol);
 foreach ($Absol as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -1471,7 +1491,7 @@ finish();
 
 
 
-$Vespiquen = array(760,2990);
+$Vespiquen = array(760,2990,3874,3901);
 start($j++, 'Vespiquen', $have, $Vespiquen);
 foreach ($Vespiquen as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -1745,7 +1765,7 @@ start($j++, 'Arceus', $have, $Arceus);
 foreach ($Arceus as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Victini = array(434,511,521,571,1016,1398,1945,2336,2337,2353,2374,3041);
+$Victini = array(434,511,521,571,1016,1398,1945,2336,2337,2353,2374,3041,3868);
 start($j++, 'Victini', $have, $Victini);
 foreach ($Victini as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -2394,7 +2414,7 @@ start($j++, 'Dartrix', $have, $Dartrix);
 foreach ($Dartrix as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Decidueye = array(1072,1136,1714,1849,2213);
+$Decidueye = array(1072,1136,1714,1849,2213,3866);
 start($j++, 'Decidueye', $have, $Decidueye);
 foreach ($Decidueye as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -2703,7 +2723,7 @@ foreach ($Zeraora as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else
 finish();
 
 
-$Melmetal = array(1901,3171,3192,2913,2914,2922,2927,3110);
+$Melmetal = array(1901,3171,3192,2913,2914,2922,2927,3110,3882);
 start($j++, 'Melmetal', $have, $Melmetal);
 foreach ($Melmetal as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -2758,7 +2778,7 @@ start($j++, 'Skwovet', $have, $Skwovet);
 foreach ($Skwovet as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Greedent = array(2198,2310,2654,2655,2667,2668,2683,3536);
+$Greedent = array(2198,2310,2654,2655,2667,2668,2683,3536,3886);
 start($j++, 'Greedent', $have, $Greedent);
 foreach ($Greedent as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -3033,7 +3053,7 @@ start($j++, 'Stonjourner', $have, $Stonjourner);
 foreach ($Stonjourner as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Eiscue = array(2002,2245,3753);
+$Eiscue = array(2002,2245,3753,3869,3899,3911);
 start($j++, 'Eiscue', $have, $Eiscue);
 foreach ($Eiscue as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -3224,6 +3244,10 @@ start($j++, 'Quaquaval', $have, $Quaquaval);
 foreach ($Quaquaval as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$Lechonk = array(3898);
+start($j++, 'Lechonk', $have, $Lechonk);
+foreach ($Lechonk as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
 $Oinkologne = array(3656,3692);
 start($j++, 'Oinkologne', $have, $Oinkologne);
@@ -3244,7 +3268,7 @@ finish();
 
 
 
-$Pawmot = array(3667);
+$Pawmot = array(3667,3871);
 start($j++, 'Pawmot', $have, $Pawmot);
 foreach ($Pawmot as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -3288,7 +3312,7 @@ finish();
 
 
 
-$Bellibolt = array(3733,3785);
+$Bellibolt = array(3733,3785,3890);
 start($j++, 'Bellibolt', $have, $Bellibolt);
 foreach ($Bellibolt as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -3318,8 +3342,12 @@ start($j++, 'Toedscool', $have, $Toedscool);
 foreach ($Toedscool as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$Toedscruel = array(3867);
+start($j++, 'Toedscruel', $have, $Toedscruel);
+foreach ($Toedscruel as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
-$Klawf = array(3675);
+$Klawf = array(3675,3876);
 start($j++, 'Klawf', $have, $Klawf);
 foreach ($Klawf as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -3365,8 +3393,20 @@ foreach ($Bombirdier as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} e
 finish();
 
 
+$Palafin = array(3889);
+start($j++, 'Palafin', $have, $Palafin);
+foreach ($Palafin as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
+$Varoom = array(3895);
+start($j++, 'Varoom', $have, $Varoom);
+foreach ($Varoom as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
+$Revavroom = array(3883,3905,3913);
+start($j++, 'Revavroom', $have, $Revavroom);
+foreach ($Revavroom as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
 $Cyclizar = array(3642);
 start($j++, 'Cyclizar', $have, $Cyclizar);
@@ -3379,12 +3419,20 @@ foreach ($Orthworm as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} els
 finish();
 
 
+$Glimmora = array(3877,3902);
+start($j++, 'Glimmora', $have, $Glimmora);
+foreach ($Glimmora as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
 $Greavard = array(3672);
 start($j++, 'Greavard', $have, $Greavard);
 foreach ($Greavard as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$Houndstone = array(3875);
+start($j++, 'Houndstone', $have, $Houndstone);
+foreach ($Houndstone as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
 $Flamigo = array(3775);
 start($j++, 'Flamigo', $have, $Flamigo);
@@ -3484,12 +3532,12 @@ finish();
 
 
 
-$Koraidon = array(3653,3689,3705,3712,3639,3721);
+$Koraidon = array(3653,3689,3705,3712,3878,3639,3721);
 start($j++, 'Koraidon', $have, $Koraidon);
 foreach ($Koraidon as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Miraidon = array(3649,3685,3702,3711,3638,3720);
+$Miraidon = array(3649,3685,3702,3711,3872,3638,3720);
 start($j++, 'Miraidon', $have, $Miraidon);
 foreach ($Miraidon as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

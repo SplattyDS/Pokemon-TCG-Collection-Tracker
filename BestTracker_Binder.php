@@ -555,11 +555,17 @@ AddCards($binder10, $Special_Art_Pokemon_SV);
 AlignPages($binder10);
 AddCards($binder10, $ex_SV_Special_Art);
 AlignPages($binder10);
+AddCards($binder10, $ex_SV_Tera_Special_Art);
+AlignPages($binder10);
 AddCards($binder10, $Gold_Item_SV);
+AlignPages($binder10);
+AddCards($binder10, $Gold_Stadium_SV);
 AlignPages($binder10);
 AddCards($binder10, $Gold_Energy_SV);
 AlignPages($binder10);
 AddCards($binder10, $ex_SV_Gold);
+AlignPages($binder10);
+AddCards($binder10, $ex_SV_Tera_Gold);
 AlignPages($binder10);
 AlignBinder($binder10);
 

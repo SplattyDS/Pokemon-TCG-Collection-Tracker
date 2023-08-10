@@ -673,6 +673,10 @@ start($j++, 'Paldea Evolved', $have, $Paldea_Evolved);
 foreach ($Paldea_Evolved as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$Obsidian_Flames = array(3866,3867,3868,3869,3870,3871,3872,3873,3874,3875,3876,3877,3878,3879,3880,3881,3882,3883,3884,3885,3886,3887,3888,3889,3890,3891,3892,3893,3894,3895,3896,3897,3898,3899,3900,3901,3902,3903,3904,3905,3906,3907,3908,3909,3910,3911,3912,3913,3914,3915,3916,3917,3918,3919);
+start($j++, 'Obsidian Flames', $have, $Obsidian_Flames);
+foreach ($Obsidian_Flames as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
 
 $SV_Promo = array(3641,3638,3639,3643,3644,3642,3828,3720,3721,3722,3723,3724,3829,3830,3831,3837,3834,3835,3836,3840,3841);
