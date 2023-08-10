@@ -124,32 +124,32 @@ start($j++, 'Special Energy', $have, $Special_Energy);
 foreach ($Special_Energy as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Basic_Grass_Energy = array(1157,2694,3630,3826);
+$Basic_Grass_Energy = array(3848,3854,3860,1157,2694,3630,3826);
 start($j++, 'Basic Grass Energy', $have, $Basic_Grass_Energy);
 foreach ($Basic_Grass_Energy as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Basic_Fire_Energy = array(1210,2695,3631);
+$Basic_Fire_Energy = array(3849,3855,3861,1210,2695,3631);
 start($j++, 'Basic Fire Energy', $have, $Basic_Fire_Energy);
 foreach ($Basic_Fire_Energy as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Basic_Water_Energy = array(1262,2487,3632,3827);
+$Basic_Water_Energy = array(3850,3856,3862,1262,2487,3632,3827);
 start($j++, 'Basic Water Energy', $have, $Basic_Water_Energy);
 foreach ($Basic_Water_Energy as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Basic_Lightning_Energy = array(1158,2592,3633,3715);
+$Basic_Lightning_Energy = array(3851,3857,3863,1158,2592,3633,3715);
 start($j++, 'Basic Lightning Energy', $have, $Basic_Lightning_Energy);
 foreach ($Basic_Lightning_Energy as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Basic_Psychic_Energy = array(1107,2488,3634);
+$Basic_Psychic_Energy = array(3852,3858,3864,1107,2488,3634);
 start($j++, 'Basic Psychic Energy', $have, $Basic_Psychic_Energy);
 foreach ($Basic_Psychic_Energy as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Basic_Fighting_Energy = array(1159,2489,3635,3716);
+$Basic_Fighting_Energy = array(3853,3859,3865,1159,2489,3635,3716);
 start($j++, 'Basic Fighting Energy', $have, $Basic_Fighting_Energy);
 foreach ($Basic_Fighting_Energy as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

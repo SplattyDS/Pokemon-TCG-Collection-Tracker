@@ -36,6 +36,9 @@
 		ex,
 		Gold_Star,
 		Unown,
+		Holo_Energy_EX_Emerald,
+		Holo_Energy_EX_Holon_Phantoms,
+		Holo_Energy_EX_Power_Keepers,
 
 		// DP
 		LV_X,

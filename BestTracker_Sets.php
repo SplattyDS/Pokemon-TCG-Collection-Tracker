@@ -95,7 +95,7 @@ start($j++, 'EX Deoxys', $have, $EX_Deoxys);
 foreach ($EX_Deoxys as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$EX_Emerald = array(115,116,117,118,119,120,121,122,123,124,125,126);
+$EX_Emerald = array(115,116,117,118,119,120,121,122,123,124,125,3848,3849,3850,3851,3852,3853,126);
 start($j++, 'EX Emerald', $have, $EX_Emerald);
 foreach ($EX_Emerald as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -115,7 +115,7 @@ start($j++, 'EX Legend Maker', $have, $EX_Legend_Maker);
 foreach ($EX_Legend_Maker as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$EX_Holon_Phantoms = array(190,191,192,193,194,195,196,3624);
+$EX_Holon_Phantoms = array(190,191,192,193,194,195,3854,3855,3856,3857,3858,3859,196,3624);
 start($j++, 'EX Holon Phantoms', $have, $EX_Holon_Phantoms);
 foreach ($EX_Holon_Phantoms as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -130,7 +130,7 @@ start($j++, 'EX Dragon Frontiers', $have, $EX_Dragon_Frontiers);
 foreach ($EX_Dragon_Frontiers as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$EX_Power_Keepers = array(221,222,223,224,225,226,227,228,229,230,231);
+$EX_Power_Keepers = array(221,222,223,224,225,226,227,228,229,230,231,3860,3861,3862,3863,3864,3865);
 start($j++, 'EX Power Keepers', $have, $EX_Power_Keepers);
 foreach ($EX_Power_Keepers as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

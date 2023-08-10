@@ -103,7 +103,7 @@ function Align(&$binder, $align, $rest = 0, $padNum = -1)
 
 function AlignRow(&$binder)
 {
-	return Align($binder, 3);
+	return Align($binder, 4);
 }
 
 function AlignPage(&$binder)
@@ -144,6 +144,75 @@ function AddV_Union(&$binder, $cards)
 			                             -1,             -1,             -1,             -1,);
 		
 		$binder = array_merge($binder, $sortedCards);
+	}
+}
+
+function AddRows(&$binder, $cardsRow1, $cardsRow2, $cardsRow3, $padCols = 0)
+{
+	$count = count($binder);
+	
+	if ($count % 12 != 0)
+	{
+		print('AddRows: binder not aligned to 12.<br>');
+		return;
+	}
+	else if ($count >= 480)
+	{
+		print('AddRows: binder is full.<br>');
+		return;
+	}
+	else if ($padCols > 3)
+	{
+		print('AddRows: $padCols cannot be bigger than 3, was '.$padCols.'.<br>');
+		return;
+	}
+	
+	$maxRowLength = ($count == 0 || $count == 468) ? 4 : 8;
+	
+	if (count($cardsRow1) + $padCols > $maxRowLength)
+	{
+		print('AddRows: row 1 was '.(count($cardsRow1) + $padCols).', max is '.$maxRowLength.'<br>');
+		return;
+	}
+	else if (count($cardsRow2) + $padCols > $maxRowLength)
+	{
+		print('AddRows: row 2 was '.(count($cardsRow2) + $padCols).', max is '.$maxRowLength.'<br>');
+		return;
+	}
+	else if (count($cardsRow3) + $padCols > $maxRowLength)
+	{
+		print('AddRows: row 3 was '.(count($cardsRow3) + $padCols).', max is '.$maxRowLength.'<br>');
+		return;
+	}
+	
+	$padArr = array();
+	for ($i = 0; $i < $padCols; $i++)
+		array_push($padArr, -1);
+	
+	$offset = 0;
+	$length = 4 - $padCols;
+	
+	$binder = array_merge($binder, $padArr);
+	$binder = array_merge($binder, array_slice($cardsRow1, $offset, $length));
+	AlignRow($binder);
+	$binder = array_merge($binder, $padArr);
+	$binder = array_merge($binder, array_slice($cardsRow2, $offset, $length));
+	AlignRow($binder);
+	$binder = array_merge($binder, $padArr);
+	$binder = array_merge($binder, array_slice($cardsRow3, $offset, $length));
+	AlignRow($binder);
+	
+	if ($maxRowLength != 4)
+	{
+		$offset = 4 - $padCols;
+		$length = 4;
+		
+		$binder = array_merge($binder, array_slice($cardsRow1, $offset, $length));
+		AlignRow($binder);
+		$binder = array_merge($binder, array_slice($cardsRow2, $offset, $length));
+		AlignRow($binder);
+		$binder = array_merge($binder, array_slice($cardsRow3, $offset, $length));
+		AlignRow($binder);
 	}
 }
 
@@ -288,7 +357,8 @@ AlignRow($binder1);
 AddCards($binder1, $Gold_Star);
 AlignRow($binder1);
 AddCards($binder1, $Unown);
-AlignRow($binder1);
+AlignPage($binder1);
+AddRows($binder1, $Holo_Energy_EX_Emerald, $Holo_Energy_EX_Holon_Phantoms, $Holo_Energy_EX_Power_Keepers, 1);
 AlignBinder($binder1);
 
 AddCards($binder2, $LV_X);

@@ -47,6 +47,18 @@ start($j++, 'Unown Subset', $have, $Unown);
 foreach ($Unown as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Holo Energy (EX Emerald)', $have, $Holo_Energy_EX_Emerald);
+foreach ($Holo_Energy_EX_Emerald as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Holo Energy (EX Holon Phantoms)', $have, $Holo_Energy_EX_Holon_Phantoms);
+foreach ($Holo_Energy_EX_Holon_Phantoms as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Holo Energy (EX Power Keepers)', $have, $Holo_Energy_EX_Power_Keepers);
+foreach ($Holo_Energy_EX_Power_Keepers as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'LV.X', $have, $LV_X);
 foreach ($LV_X as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

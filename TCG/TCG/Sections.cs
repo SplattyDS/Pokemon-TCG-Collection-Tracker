@@ -23,6 +23,9 @@
 			new Section(Rarity.ex, "ex", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.Gold_Star, "Gold Star", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.Unown, "Unown Subset", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.Holo_Energy_EX_Emerald, "Holo Energy (EX Emerald)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.Holo_Energy_EX_Holon_Phantoms, "Holo Energy (EX Holon Phantoms)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.Holo_Energy_EX_Power_Keepers, "Holo Energy (EX Power Keepers)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 
 			// DP
 			new Section(Rarity.LV_X, "LV.X", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
