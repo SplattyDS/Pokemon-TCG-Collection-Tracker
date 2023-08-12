@@ -379,6 +379,10 @@ start($j++, 'SWSH Series - Smooth Cosmos Holo', $holoHave, $SWSH_SMOOTH_COSMOS_H
 foreach ($SWSH_SMOOTH_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'SWSH Series - Pixel Cosmos Holo', $holoHave, $SWSH_PIXEL_COSMOS_HOLO);
+foreach ($SWSH_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'SWSH Series - Mirror Holo', $holoHave, $SWSH_MIRROR_HOLO);
 foreach ($SWSH_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -409,6 +413,10 @@ finish();
 
 start($j++, 'SWSH Series - Line Holo Energy (Star)', $holoHave, $SWSH_LINE_HOLO_ENERGY_STAR);
 foreach ($SWSH_LINE_HOLO_ENERGY_STAR as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'SWSH Series - Pixel Cosmos Holo Energy (Star)', $holoHave, $SWSH_PIXEL_COSMOS_HOLO_ENERGY_STAR);
+foreach ($SWSH_PIXEL_COSMOS_HOLO_ENERGY_STAR as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'SWSH Series - Reverse Energy Banner Holo', $holoHave, $SWSH_REVERSE_ENERGY_BANNER_HOLO);

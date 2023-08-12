@@ -103,6 +103,14 @@ start($j++, 'Shiny Vault (SM)', $have, $Shiny_Vault_SM);
 foreach ($Shiny_Vault_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Holo Energy (EX Holon Phantoms)', $have, $Holo_Energy_EX_Holon_Phantoms);
+foreach ($Holo_Energy_EX_Holon_Phantoms as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Holo Energy (EX Power Keepers)', $have, $Holo_Energy_EX_Power_Keepers);
+foreach ($Holo_Energy_EX_Power_Keepers as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'EX Full Art (Radiant)', $have, $EX_Full_Art_Radiant);
 foreach ($EX_Full_Art_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -265,14 +273,6 @@ finish();
 
 start($j++, 'Holo Energy (EX Emerald)', $have, $Holo_Energy_EX_Emerald);
 foreach ($Holo_Energy_EX_Emerald as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Holo Energy (EX Holon Phantoms)', $have, $Holo_Energy_EX_Holon_Phantoms);
-foreach ($Holo_Energy_EX_Holon_Phantoms as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Holo Energy (EX Power Keepers)', $have, $Holo_Energy_EX_Power_Keepers);
-foreach ($Holo_Energy_EX_Power_Keepers as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Alph Litograph', $have, $Alph_Lithograph);

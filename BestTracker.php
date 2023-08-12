@@ -185,6 +185,7 @@
 		function setBackgroundImage(index)
 		{
 			document.body.style.backgroundImage = `url(images/best_tracker/background/${index}.png)`;
+			document.body.style.backgroundPosition = "center";
 			currentIndex = index;
 		}
 		
@@ -245,18 +246,26 @@
 		{
 			// preloads the images to avoid white flashes
 			for (let i = 0; i < NUM_BACKGROUNDS; i++)
-				setBackgroundImage(i);
+				preloadImage(i);
 			
 			setBackgroundImage(0);
 		}
+		
+		function preloadImage(index)
+		{
+			let img = new Image();
+			img.src = "images/best_tracker/background/" + index + ".png";
+		}
 		</script>
 	</head>
-	<body onload="initAutomaticBackground()">
+	<body onload="initAutomaticBackground()" style="background-position: center;">
 		
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="index.php">Best Collection Tracker</a>
 			
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 			
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav mr-auto">
@@ -292,6 +301,9 @@
 		
 		<label for="background-checkbox">Enable automatic background</label>
 		<input type="checkbox" id="background-checkbox" onclick="toggleAutomaticBackground()">
+		<br>
+		<button onclick="previousImage()">Previous</button>
+		<button onclick="nextImage()">Next</button>
 		
 <?php
 function cardImg($class, $path, $visible = false)
