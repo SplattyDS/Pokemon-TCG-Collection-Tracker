@@ -14,3 +14,8 @@ jobs:
         server: ftpupload.net
         username: if0_34804039
         password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: htdocs/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/TCG/**
