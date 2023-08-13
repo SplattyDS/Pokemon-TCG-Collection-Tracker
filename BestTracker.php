@@ -290,11 +290,12 @@
 							<li><a class="dropdown-item" href="BestTracker.php?holo&type">Type</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&dex">Dex</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&all">All</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?holo&test">Test</a></li>
+							<!--<li><a class="dropdown-item" href="BestTracker.php?holo&fut">Future</a></li>-->
+							<!--<li><a class="dropdown-item" href="BestTracker.php?holo&test">Test</a></li>-->
 						</ul>
 					</li>
 					
-					<li class="nav-item"><a class="nav-link" href="BestTracker.php?test">Test</a></li>
+					<!--<li class="nav-item"><a class="nav-link" href="BestTracker.php?test">Test</a></li>-->
 				</ul>
 			</div>
 		</nav>
