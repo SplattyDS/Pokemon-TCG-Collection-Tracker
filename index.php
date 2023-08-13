@@ -11,7 +11,7 @@
 		
 		<style>
 		body {
-			background-image: url('images/best_tracker/background/0.png');
+			/* background-image: url('images/best_tracker/background/0.png'); */
 			background-size: cover;
 			background-attachment: fixed;
 			background-repeat: no-repeat;
@@ -172,16 +172,19 @@
 			}
 		}
 		
-		const NUM_BACKGROUNDS = 18;
+		const NUM_BACKGROUNDS = 31;
 		
-		let currentIndex = 0;
+		let currentIndex = 30;
 		let intervalId;
 		
 		function setBackgroundImage(index)
 		{
+			console.log(index);
 			document.body.style.backgroundImage = `url(images/best_tracker/background/${index}.png)`;
 			document.body.style.backgroundPosition = "center";
 			currentIndex = index;
+			
+			setCookie("background", index, 365);
 		}
 		
 		function nextImage()
@@ -237,19 +240,65 @@
 			}
 		}
 		
-		function initAutomaticBackground()
+		function initBackground()
 		{
 			// preloads the images to avoid white flashes
 			for (let i = 0; i < NUM_BACKGROUNDS; i++)
 				preloadImage(i);
 			
-			setBackgroundImage(0);
+			let backgroundCookie = getCookie("background");
+			
+			if (backgroundCookie != -1)
+				currentIndex = backgroundCookie;
+			
+			console.log("currentIndex:", currentIndex);
+			
+			setBackgroundImage(currentIndex);
 		}
 		
 		function preloadImage(index)
 		{
 			let img = new Image();
 			img.src = "images/best_tracker/background/" + index + ".png";
+		}
+		
+		// Function to set a cookie
+		function setCookie(name, value, days)
+		{
+			console.log("set cookie:", name, "=", value);
+			
+			let expires = "";
+			
+			if (days)
+			{
+				let date = new Date();
+				date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+				expires = "; expires=" + date.toUTCString();
+			}
+			
+			document.cookie = name + "=" + value + expires + "; path=/";
+		}
+		
+		// Function to get the value of a cookie
+		function getCookie(name)
+		{
+			let nameEQ = name + "=";
+			let cookies = document.cookie.split(';');
+			
+			console.log("get cookie:", name);
+			
+			for (let i = 0; i < cookies.length; i++)
+			{
+				let cookie = cookies[i];
+				
+				while (cookie.charAt(0) == ' ')
+					cookie = cookie.substring(1, cookie.length);
+				
+				if (cookie.indexOf(nameEQ) == 0)
+					return parseInt(cookie.substring(nameEQ.length, cookie.length));
+			}
+			
+			return -1;
 		}
 		</script>
 	</head>
