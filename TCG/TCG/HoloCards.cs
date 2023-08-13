@@ -2605,7 +2605,7 @@ namespace TCG
 			new HoloCard("Trapinch δ", Pokedex.Trapinch, HoloRarity.EX_MIRROR_HOLO_DF, Types.Psychic, Sets.EX_Dragon_Frontiers, 68),
 			new HoloCard("Trapinch δ", Pokedex.Trapinch, HoloRarity.EX_MIRROR_HOLO_DF, Types.Psychic, Sets.EX_Dragon_Frontiers, 69),
 			new HoloCard("Vulpix δ", Pokedex.Vulpix, HoloRarity.EX_MIRROR_HOLO_DF, Types.Psychic, Sets.EX_Dragon_Frontiers, 70),
-			new HoloCard("Wooper δ", Pokedex.Wooper, HoloRarity.EX_MIRROR_HOLO_DF, Types.Grass, Sets.EX_Dragon_Frontiers, 71, true),
+			new HoloCard("Wooper δ", Pokedex.Wooper, HoloRarity.EX_MIRROR_HOLO_DF, Types.Grass, Sets.EX_Dragon_Frontiers, 71),
 			new HoloCard("Buffer Piece", Pokedex.NVT, HoloRarity.EX_MIRROR_HOLO_DF, Types.Tool, Sets.EX_Dragon_Frontiers, 72),
 			new HoloCard("Copycat", Pokedex.NVT, HoloRarity.EX_MIRROR_HOLO_DF, Types.Supporter, Sets.EX_Dragon_Frontiers, 73),
 			new HoloCard("Holon Legacy", Pokedex.NVT, HoloRarity.EX_MIRROR_HOLO_DF, Types.Stadium, Sets.EX_Dragon_Frontiers, 74),
