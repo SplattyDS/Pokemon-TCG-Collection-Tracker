@@ -230,7 +230,10 @@
 		
 		function toggleAutomaticBackground()
 		{
-			if (document.getElementById('background-checkbox').checked)
+			let enabled = document.getElementById('background-checkbox').checked;
+			setCookie("automatic", enabled, 365);
+			
+			if (enabled)
 			{
 				intervalId = setInterval(nextImage, 30000);
 			}
@@ -350,5 +353,11 @@
 		<br>
 		<button onclick="previousImage()">Previous</button>
 		<button onclick="nextImage()">Next</button>
+		
+		<div class="center">
+			<h1>Home</h1>
+			<p>Welcome to my Pokémon TCG project named "BestTracker".</p>
+			<p>Feel free to look around!</p>
+		</div>
 	</body>
 </html>
