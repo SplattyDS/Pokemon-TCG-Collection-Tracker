@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Best Collection Tracker</title>
+		<link rel="icon" href="images/best_tracker/icon.png" type="image/png">
 		
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 		
@@ -302,7 +303,7 @@
 		}
 		</script>
 	</head>
-	<body onload="initAutomaticBackground()" style="background-position: center;">
+	<body onload="initBackground()" style="background-position: center;">
 		
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="index.php">Best Collection Tracker</a>
