@@ -10929,8 +10929,8 @@ namespace TCG
 			new HoloCard("Metagross", Pokedex.Metagross, HoloRarity.SWSH_LINE_HOLO, Types.Metal, Sets.Silver_Tempest, 119),
 			new HoloCard("Dragonite", Pokedex.Dragonite, HoloRarity.SWSH_LINE_HOLO, Types.Dragon, Sets.Silver_Tempest, 131),
 			new HoloCard("Archeops", Pokedex.Archeops, HoloRarity.SWSH_LINE_HOLO, Types.Colorless, Sets.Silver_Tempest, 147),
-			new HoloCard("Earthen Seal Stone", Pokedex.NVT, HoloRarity.SWSH_LINE_HOLO, Types.Tool, Sets.Silver_Tempest, 154),
-			new HoloCard("Forest Seal Stone", Pokedex.NVT, HoloRarity.SWSH_LINE_HOLO, Types.Tool, Sets.Silver_Tempest, 156),
+			new HoloCard("Earthen Seal Stone", Pokedex.NVT, HoloRarity.DELETED, Types.Tool, Sets.Silver_Tempest, 154),
+			new HoloCard("Forest Seal Stone", Pokedex.NVT, HoloRarity.DELETED, Types.Tool, Sets.Silver_Tempest, 156),
 			new HoloCard("Zarude", Pokedex.Zarude, HoloRarity.SWSH_LINE_HOLO, Types.Grass, Sets.Crown_Zenith, 16),
 			new HoloCard("Calyrex", Pokedex.Calyrex, HoloRarity.SWSH_LINE_HOLO, Types.Grass, Sets.Crown_Zenith, 17),
 			new HoloCard("Entei", Pokedex.Entei, HoloRarity.SWSH_LINE_HOLO, Types.Fire, Sets.Crown_Zenith, 21),
@@ -10950,7 +10950,7 @@ namespace TCG
 			new HoloCard("Leon", Pokedex.NVT, HoloRarity.SWSH_LINE_HOLO, Types.Supporter, Sets.Crown_Zenith, 134),
 			new HoloCard("Nessa", Pokedex.NVT, HoloRarity.SWSH_LINE_HOLO, Types.Supporter, Sets.Crown_Zenith, 136),
 			new HoloCard("Raihan", Pokedex.NVT, HoloRarity.SWSH_LINE_HOLO, Types.Supporter, Sets.Crown_Zenith, 140),
-			new HoloCard("Sky Seal Stone", Pokedex.NVT, HoloRarity.SWSH_LINE_HOLO, Types.Tool, Sets.Crown_Zenith, 143),
+			new HoloCard("Sky Seal Stone", Pokedex.NVT, HoloRarity.DELETED, Types.Tool, Sets.Crown_Zenith, 143),
 			new HoloCard("Professor Birch", Pokedex.NVT, HoloRarity.EX_PIXEL_COSMOS_HOLO, Types.Supporter, Sets.EX_Emerald, 82),
 			new HoloCard("Grookey", Pokedex.Grookey, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Grass, Sets.Sword_Shield, 10),
 			new HoloCard("Grookey", Pokedex.Grookey, HoloRarity.SWSH_LINE_HOLO, Types.Grass, Sets.Sword_Shield, 11, true),
@@ -10965,9 +10965,9 @@ namespace TCG
 			new HoloCard("Sobble", Pokedex.Sobble, HoloRarity.SWSH_LINE_HOLO, Types.Water, Sets.Sword_Shield, 55, true),
 			new HoloCard("Inteleon", Pokedex.Inteleon, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Water, Sets.Sword_Shield, 58),
 			new HoloCard("Inteleon", Pokedex.Inteleon, HoloRarity.SWSH_CRACKED_ICE_HOLO, Types.Water, Sets.Sword_Shield, 59),
-			new HoloCard("Drednaw", Pokedex.Drednaw, HoloRarity.VERY_RARE_DO_NOT_CARE, Types.Water, Sets.Sword_Shield, 61),
+			new HoloCard("Drednaw", Pokedex.Drednaw, HoloRarity.DELETED, Types.Water, Sets.Sword_Shield, 61),
 			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.SWSH_REVERSE_SMOOTH_COSMOS_ENERGY_BANNER_HOLO, Types.Lightning, Sets.Sword_Shield, 65),
-			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.VERY_RARE_DO_NOT_CARE, Types.Lightning, Sets.Sword_Shield, 65),
+			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.DELETED, Types.Lightning, Sets.Sword_Shield, 65),
 			new HoloCard("Boltund", Pokedex.Boltund, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Lightning, Sets.Sword_Shield, 76),
 			new HoloCard("Galarian Obstagoon", Pokedex.Obstagoon, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Darkness, Sets.Sword_Shield, 119),
 			new HoloCard("Snorlax", Pokedex.Snorlax, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Colorless, Sets.Sword_Shield, 140),
@@ -10976,7 +10976,7 @@ namespace TCG
 			new HoloCard("Flapple", Pokedex.Flapple, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Grass, Sets.Rebel_Clash, 22),
 			new HoloCard("Magikarp", Pokedex.Magikarp, HoloRarity.SWSH_REVERSE_SMOOTH_COSMOS_ENERGY_BANNER_HOLO, Types.Water, Sets.Rebel_Clash, 39),
 			new HoloCard("Eiscue", Pokedex.Eiscue, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Water, Sets.Rebel_Clash, 54),
-			new HoloCard("Alcremie", Pokedex.Alcremie, HoloRarity.VERY_RARE_DO_NOT_CARE, Types.Psychic, Sets.Rebel_Clash, 87),
+			new HoloCard("Alcremie", Pokedex.Alcremie, HoloRarity.DELETED, Types.Psychic, Sets.Rebel_Clash, 87),
 			new HoloCard("Dragapult", Pokedex.Dragapult, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Psychic, Sets.Rebel_Clash, 91),
 			new HoloCard("Galarian Sirfetch'd", Pokedex.Sirfetch_d, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Fighting, Sets.Rebel_Clash, 95),
 			new HoloCard("Zacian", Pokedex.Zacian, HoloRarity.SWSH_CRACKED_ICE_HOLO, Types.Metal, Sets.Rebel_Clash, 139),
@@ -13780,7 +13780,7 @@ namespace TCG
 			new HoloCard("Growlithe (Pixel Cosmos)", Pokedex.Growlithe, HoloRarity.SV_PIXEL_COSMOS_HOLO, Types.Fire, Sets.SV_Promo, 24),
 		};
 		
-		// the VERY_RARE_DO_NOT_CARE play labs promos might get reasonably obtainable in leagues soon
+		// the DELETED play labs promos might get reasonably obtainable in leagues soon
 		// Smoliv and Growlithe from SV_Promo seem to have both pixel and smooth cosmos
 		// Mankey and Primeape from Paldea_Evolved seem to have pixel cosmos
 		// the other current (pre Obsidian Flames) SV cosmos holos seem to have smooth cosmos
@@ -13788,7 +13788,7 @@ namespace TCG
 
 		public static IEnumerable<HoloCard> Get()
 		{
-			return TheCards.Where(c => c.rarity != HoloRarity.VERY_RARE_DO_NOT_CARE);
+			return TheCards.Where(c => c.rarity != HoloRarity.DELETED);
 		}
 
 		public static HoloCard Find(Sets set, double setNum)

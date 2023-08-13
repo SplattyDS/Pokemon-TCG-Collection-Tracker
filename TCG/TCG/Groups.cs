@@ -53,6 +53,26 @@ namespace TCG
 				Cards.Find(Sets.EX_Deoxys, 102),
 				Cards.Find(Sets.Japanese_EX, 6)
 			),
+			/*new Group // Rocket's ex + Lucario ex
+			(
+				Rarity.ex,
+				Rules.ENFORCE_LAST,
+				Cards.Find(Sets.EX_Unseen_Forces, 116),
+				Cards.Find(Sets.EX_Team_Rocket_Returns, 98),
+				Cards.Find(Sets.EX_Team_Rocket_Returns, 102),
+				Cards.Find(Sets.EX_Team_Rocket_Returns, 104),
+				Cards.Find(Sets.EX_Team_Rocket_Returns, 96),
+				Cards.Find(Sets.EX_Team_Rocket_Returns, 106),
+				Cards.Find(Sets.EX_Team_Rocket_Returns, 100),
+				Cards.Find(Sets.EX_Team_Rocket_Returns, 99),
+				Cards.Find(Sets.EX_Team_Rocket_Returns, 101),
+				Cards.Find(Sets.EX_Team_Rocket_Returns, 103),
+				Cards.Find(Sets.EX_Deoxys, 108),
+				Cards.Find(Sets.EX_Team_Rocket_Returns, 97),
+				Cards.Find(Sets.EX_Team_Rocket_Returns, 105),
+				Cards.Find(Sets.Japanese_EX, 11),
+				Cards.Find(Sets.Japanese_EX, 12)
+			),*/
 			new Group // Infernape LV.X
 			(
 				Rarity.LV_X,
@@ -102,7 +122,7 @@ namespace TCG
 				Rarity.EX,
 				Rules.GROUP_CARDS,
 				Cards.Find(Sets.XY, 1),
-				Cards.Find(Sets.Evolutions, 1),
+				// Cards.Find(Sets.Evolutions, 1),
 				Cards.Find(Sets.XY_Promo, 28)
 			),
 			new Group // Charizard EX (1)
@@ -117,8 +137,8 @@ namespace TCG
 				Rarity.EX,
 				Rules.GROUP_CARDS,
 				Cards.Find(Sets.Flashfire, 12),
-				Cards.Find(Sets.Flashfire, 12.1),
-				Cards.Find(Sets.Evolutions, 12)
+				Cards.Find(Sets.Flashfire, 12.1)
+				// Cards.Find(Sets.Evolutions, 12)
 			),
 			new Group // Blastoise EX
 			(
@@ -126,7 +146,7 @@ namespace TCG
 				Rules.GROUP_CARDS,
 				Cards.Find(Sets.XY, 29),
 				Cards.Find(Sets.XY, 29.1),
-				Cards.Find(Sets.Evolutions, 21),
+				// Cards.Find(Sets.Evolutions, 21),
 				Cards.Find(Sets.XY_Promo, 30)
 			),
 			new Group // Kyurem EX
@@ -176,7 +196,7 @@ namespace TCG
 				Cards.Find(Sets.Dark_Explorers, 90),
 				Cards.Find(Sets.BW_Promo, 96)
 			),
-			new Group // M Venusaur EX
+			/*new Group // M Venusaur EX
 			(
 				Rarity.M_EX,
 				Rules.GROUP_CARDS,
@@ -197,7 +217,7 @@ namespace TCG
 				Cards.Find(Sets.XY, 30),
 				Cards.Find(Sets.XY, 30.1),
 				Cards.Find(Sets.Evolutions, 22)
-			),
+			),*/
 			new Group // Mewtwo EX
 			(
 				Rarity.EX_Full_Art,

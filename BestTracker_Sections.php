@@ -39,8 +39,24 @@ start($j++, 'ex', $have, $ex);
 foreach ($ex as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'δ ex', $have, $Delta_Species_ex);
+foreach ($Delta_Species_ex as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Rockets ex', $have, $Rockets_ex);
+foreach ($Rockets_ex as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Lucario ex', $have, $Lucario_ex);
+foreach ($Lucario_ex as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Gold Star', $have, $Gold_Star);
 foreach ($Gold_Star as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'δ Gold Star', $have, $Delta_Species_Gold_Star);
+foreach ($Delta_Species_Gold_Star as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Unown Subset', $have, $Unown);
@@ -61,6 +77,14 @@ finish();
 
 start($j++, 'LV.X', $have, $LV_X);
 foreach ($LV_X as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'LV.X (SP)', $have, $LV_X_SP);
+foreach ($LV_X_SP as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'LV.X (Arceus)', $have, $LV_X_Arceus);
+foreach ($LV_X_Arceus as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Shiny Holo Subset', $have, $Shiny_Holo);
@@ -91,16 +115,44 @@ start($j++, 'Shiny Legend Subset', $have, $Shiny_Legend);
 foreach ($Shiny_Legend as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Shiny Legend Promo', $have, $Shiny_Legend_Promo);
+foreach ($Shiny_Legend_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'EX', $have, $EX);
 foreach ($EX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'EX (Plasma)', $have, $EX_Plasma);
+foreach ($EX_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'EX (Radiant)', $have, $EX_Radiant);
+foreach ($EX_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'EX (Evolutions)', $have, $EX_Evolutions);
+foreach ($EX_Evolutions as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Mega EX', $have, $M_EX);
 foreach ($M_EX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Mega EX (Primal)', $have, $M_EX_Primal);
+foreach ($M_EX_Primal as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Mega EX (Evolutions)', $have, $M_EX_Evolutions);
+foreach ($M_EX_Evolutions as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Ace Spec', $have, $Ace_Spec);
 foreach ($Ace_Spec as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Ace Spec (Plasma)', $have, $Ace_Spec_Plasma);
+foreach ($Ace_Spec_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, ' BREAK', $have, $BREAK);
@@ -127,8 +179,12 @@ start($j++, 'Mirrored Stadium', $have, $Mirrored_Stadium);
 foreach ($Mirrored_Stadium as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Radiant Collection', $have, $Radiant_Collection);
-foreach ($Radiant_Collection as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+start($j++, 'Radiant Collection (BW)', $have, $Radiant_Collection_BW);
+foreach ($Radiant_Collection_BW as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Radiant Collection (XY)', $have, $Radiant_Collection_XY);
+foreach ($Radiant_Collection_XY as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Full Art Trainer (BW & XY)', $have, $Full_Art_Trainer_BW_XY);
@@ -143,6 +199,10 @@ start($j++, 'EX Full Art', $have, $EX_Full_Art);
 foreach ($EX_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'EX Full Art (Evolutions)', $have, $EX_Full_Art_Evolutions);
+foreach ($EX_Full_Art_Evolutions as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'EX Full Art (Team Plasma)', $have, $EX_Full_Art_Plasma);
 foreach ($EX_Full_Art_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -151,16 +211,24 @@ start($j++, 'EX Full Art (Radiant)', $have, $EX_Full_Art_Radiant);
 foreach ($EX_Full_Art_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'M EX Full Art (Radiant)', $have, $M_EX_Full_Art_Radiant);
-foreach ($M_EX_Full_Art_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
 start($j++, 'EX Full Art (Special)', $have, $EX_Full_Art_Special);
 foreach ($EX_Full_Art_Special as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Mega EX Full Art', $have, $M_EX_Full_Art);
 foreach ($M_EX_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Mega EX Full Art (Primal)', $have, $M_EX_Full_Art_Primal);
+foreach ($M_EX_Full_Art_Primal as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Mega EX Full Art (Evolutions)', $have, $M_EX_Full_Art_Evolutions);
+foreach ($M_EX_Full_Art_Evolutions as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Mega EX Full Art (Radiant)', $have, $M_EX_Full_Art_Radiant);
+foreach ($M_EX_Full_Art_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'EX Special Art', $have, $EX_Special_Art);
@@ -321,6 +389,10 @@ finish();
 
 start($j++, 'Radiant', $have, $Radiant);
 foreach ($Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Seal Stone', $have, $Seal_Stone);
+foreach ($Seal_Stone as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Shiny Vault (SWSH)', $have, $Shiny_Vault_SWSH);

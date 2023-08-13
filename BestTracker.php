@@ -187,7 +187,6 @@
 		{
 			console.log(index);
 			document.body.style.backgroundImage = `url(images/best_tracker/background/${index}.png)`;
-			document.body.style.backgroundPosition = "center";
 			currentIndex = index;
 			
 			setCookie("background", index, 365);
@@ -308,7 +307,7 @@
 		}
 		</script>
 	</head>
-	<body onload="initBackground()" style="background-position: center;">
+	<body onload="initBackground()" style="background-position: top center;">
 		
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="index.php">Best Collection Tracker</a>
@@ -803,10 +802,13 @@ else if (isset($_GET['test']))
 	1061,751, // EX Full Art
 	1056, // Mega EX Full Art
 	791, // Mega EX Special Art
-	1843,1167,1168,1117,1842,1081, // GX
+	1852,1843,1167,1168,1117,1842,1081, // GX
 	1362, // Ultra Beast GX
+	1694, // Shiny Vault (SM)
 	1128, // GX Full Art
+	2124, // V
 	2396, // VMAX
+	3280, // VSTAR
 	3016, // V Full Art
 	3030, // V Shiny
 	2737, // V Special Art

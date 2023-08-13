@@ -40,6 +40,7 @@
 		Technical_Machine,
 		Rockets_Secret_Machine,
 		Supporter,
+		Tag_Team_Supporter,
 		Stadium,
 
 		Special_Energy,

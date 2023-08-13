@@ -5,7 +5,7 @@
 	public enum HoloRarity
 	{
 		// for things like the 3 SWSH play labs promos
-		VERY_RARE_DO_NOT_CARE,
+		DELETED,
 
 		// os
 		OS_STAR_HOLO,
