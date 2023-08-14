@@ -806,6 +806,61 @@ function CountHaveBinder(&$binder)
 	return $amount;
 }
 
+function Process(&$input)
+{
+	global $holoHave;
+	
+	$output = array();
+	$haveIndex = 0;
+
+	for ($i = 0; $i < count($input); $i++)
+	{
+		$var = $input[$i];
+		
+		if (is_numeric($var))
+		{
+			if ($var == 0)
+			{
+				for ($j = $haveIndex; $j < count($holoHave); $j++)
+					array_push($output, $holoHave[$j]);
+			}
+			else if ($var == -1)
+			{
+				array_push($output, -1);
+				// print('<p>Added: -1</p>');
+			}
+			else
+			{
+				for ($j = 0; $j < $var; $j++)
+				{
+					array_push($output, $holoHave[$haveIndex + $j]);
+					// print('<p>Added: '.$holoHave[$haveIndex + $j].'</p>');
+				}
+				
+				$haveIndex += $var;
+			}
+		}
+		else if ($var == '/r')
+		{
+			Align($output, 4, 0, 0);
+		}
+		else if ($var == '/p')
+		{
+			Align($output, 12, 0, 0);
+		}
+		else if ($var == '/s')
+		{
+			Align($output, 24, 12, 0);
+		}
+		else if ($var == '/b')
+		{
+			Align($output, 480, 0, 0);
+		}
+	}
+	
+	return $output;
+}
+
 $binder0 = array();
 $binder1 = array();
 $binder2 = array();
@@ -830,22 +885,39 @@ $binder20 = array();
 $binder21 = array();
 $binder22 = array();
 $binder23 = array();
+$binder24 = array();
+$binder25 = array();
+$binder26 = array();
+$binder27 = array();
+$binder28 = array();
+$binder29 = array();
+$binder30 = array();
+$binder31 = array();
+$binder32 = array();
 
 AddCards($binder0, $OS_STAR_HOLO);
 AlignRow($binder0);
 AddCards($binder0, $OS_PIXEL_COSMOS_HOLO);
+AddCards($binder0, $OS_PIXEL_COSMOS_HOLO_DARK);
+AddCards($binder0, $OS_PIXEL_COSMOS_HOLO_OWNER);
+AddCards($binder0, $OS_PIXEL_COSMOS_HOLO_ROCKET);
 AlignRow($binder0);
 AddCards($binder0, $OS_PIXEL_COSMOS_HOLO_ENERGY);
 AlignPage($binder0);
 AddCards($binder0, $OS_REVERSE_PIXEL_COSMOS_HOLO);
+AddCards($binder0, $OS_REVERSE_PIXEL_COSMOS_HOLO_ROCKET);
 AlignPage($binder0);
 AddCards($binder0, $NEO_PIXEL_COSMOS_HOLO);
+AddCards($binder0, $NEO_PIXEL_COSMOS_HOLO_DARK);
+AddCards($binder0, $NEO_PIXEL_COSMOS_HOLO_LIGHT);
 AlignPage($binder0);
 AddCards($binder0, $NEO_REVERSE_PIXEL_COSMOS_HOLO);
 AlignPage($binder0);
 AddCards($binder0, $LC_STAR_HOLO);
+AddCards($binder0, $LC_STAR_HOLO_DARK);
 AlignPage($binder0);
 AddCards($binder0, $LC_REVERSE_FIREWORKS_HOLO);
+AddCards($binder0, $LC_REVERSE_FIREWORKS_HOLO_DARK);
 AlignPage($binder0);
 AddCards($binder0, $E_PIXEL_COSMOS_HOLO);
 AlignBinder($binder0);
@@ -859,42 +931,68 @@ AddCards($binder2, $EX_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
 AlignRow($binder2);
 AddCards($binder2, $EX_PIXEL_COSMOS_HOLO_DELTA);
 AlignPage($binder2);
-AddCards($binder2, $EX_VERTICAL_PLAIN_HOLO_DELTA);
+AddCards($binder2, $EX_PIXEL_COSMOS_HOLO_AQUA);
+AddCards($binder2, $EX_PIXEL_COSMOS_HOLO_MAGMA);
+AlignRow($binder2);
+AddCards($binder2, $EX_PIXEL_COSMOS_HOLO_DARK);
 AlignPage($binder2);
+AddCards($binder2, $EX_VERTICAL_PLAIN_HOLO_DELTA);
+AlignPages($binder2);
 AddCards($binder2, $EX_PIXEL_WAVE_HOLO_ENERGY);
 AlignPage($binder2);
+AddCards($binder2, $EX_PLAIN_HOLO_ENERGY);
+AlignBinder($binder2);
 
 AddCards($binder3, $EX_REVERSE_PLAIN_HOLO);
 AlignPage($binder3);
+AddCards($binder3, $EX_REVERSE_PLAIN_HOLO_AQUA);
+AddCards($binder3, $EX_REVERSE_PLAIN_HOLO_MAGMA);
+AlignPages($binder3);
 AddCards($binder3, $EX_BIG_ENERGY_HOLO_HL);
 AlignBinder($binder3);
 
 AddCards($binder4, $EX_ENERGY_HOLO_FL);
-AlignPage($binder4);
+AlignPages($binder4);
 AddCards($binder4, $EX_ENERGY_HOLO_TRR);
 AlignPage($binder4);
+AddCards($binder4, $EX_ENERGY_HOLO_TRR_DARK);
+AlignRow($binder4);
+AddCards($binder4, $EX_ENERGY_HOLO_TRR_ROCKET);
+AlignPages($binder4);
 AddCards($binder4, $EX_PRISM_HOLO_D);
-AlignPage($binder4);
+AlignPages($binder4);
 AddCards($binder4, $EX_2D_POKEBALL_HOLO_E);
 AlignBinder($binder4);
 
 AddCards($binder5, $EX_3D_POKEBALL_HOLO_UF);
-AlignPage($binder5);
+AlignPages($binder5);
 AddCards($binder5, $EX_PLAIN_HOLO_DS);
+AddCards($binder5, $EX_PLAIN_HOLO_DS_HOLON);
 AlignPage($binder5);
+AddCards($binder5, $EX_PLAIN_HOLO_DS_DELTA);
+AlignPages($binder5);
 AddCards($binder5, $EX_PIXEL_COSMOS_HOLO_LM);
-AlignPage($binder5);
+AlignPages($binder5);
 AddCards($binder5, $EX_MIRROR_HOLO_HP);
+AddCards($binder5, array(-1,-1));
+AddCards($binder5, $EX_MIRROR_HOLO_HP_HOLON);
+AlignPage($binder5);
+AddCards($binder5, $EX_MIRROR_HOLO_HP_DELTA);
 AlignBinder($binder5);
 
 AddCards($binder6, $EX_MIRROR_HOLO_CG);
 AlignPage($binder6);
+AddCards($binder6, $EX_MIRROR_HOLO_CG_DELTA);
+AlignPages($binder6);
 AddCards($binder6, $EX_MIRROR_HOLO_DF);
 AlignPage($binder6);
+AddCards($binder6, $EX_MIRROR_HOLO_DF_DELTA);
+AlignPages($binder6);
 AddCards($binder6, $EX_PLAIN_HOLO_PK);
 AlignBinder($binder6);
 
 AddCards($binder7, $DP_PIXEL_COSMOS_HOLO);
+AddCards($binder7, $DP_PIXEL_COSMOS_HOLO_SP);
 AlignRow($binder7);
 AddCards($binder7, $DP_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
 AlignRow($binder7);
@@ -907,10 +1005,16 @@ AlignPage($binder7);
 AddCards($binder7, $DP_CROSSHATCH_HOLO_ENERGY);
 AlignPage($binder7);
 AddCards($binder7, $DP_CRACKED_ICE_HOLO);
+AlignRow($binder7);
+AddCards($binder7, $DP_CRACKED_ICE_HOLO_SP);
 AlignPage($binder7);
 AddCards($binder7, $DP_REVERSE_CRACKED_ICE_HOLO);
+AlignRow($binder7);
+AddCards($binder7, $DP_REVERSE_CRACKED_ICE_HOLO_SP);
 AlignPage($binder7);
 AddCards($binder7, $DP_REVERSE_CROSSHATCH_HOLO);
+AlignRow($binder7);
+AddCards($binder7, $DP_REVERSE_CROSSHATCH_HOLO_SP);
 AlignPages($binder7);
 AddCards($binder7, $DP_REVERSE_PLAIN_HOLO);
 AlignBinder($binder7);
@@ -920,6 +1024,8 @@ SplitCards($dpReverseBinders, $DP_REVERSE_MIRROR_HOLO);
 
 AlignBinder($binder8);
 AlignBinder($binder9);
+
+AddCards($binder10, $DP_REVERSE_MIRROR_HOLO_SP);
 AlignBinder($binder10);
 
 AddCards($binder11, $HGSS_PIXEL_COSMOS_HOLO);
@@ -1015,67 +1121,64 @@ AlignPages($binder20);
 AddCards($binder20, $EV_REVERSE_MIRROR_HOLO);
 AlignBinder($binder20);
 
-AddCards($binder21, array(-1));
+AddCards($binder21, $SM_WATER_WEB_HOLO);
+AlignPage($binder21);
+AddCards($binder21, $SM_SMOOTH_COSMOS_HOLO);
 AlignBinder($binder21);
 
-$input = array(2, '/r', 2, '/p', 2, '/p', 1, '/p', 4, '/r', 1, '/r', 2, '/p', 1, '/r', 1, '/r', 2, '/r', 3, '/r', 2, '/r', 4, '/p', 29, '/p', 26, '/r', 1, '/p', 3, '/r', 1, '/r', 3, '/p', 11, '/p', 1, '/p', 9, '/p', 1, '/r', 3, '/p', 3, '/r', 1, '/r', 3, '/p', 7, '/p', 8, '/p', 2, '/r', 5, -1, 1, 1, '/p', 76, '/s', 1, '/r', 1, '/r', 2, '/p', 7, '/p', 10, '/p', 11, '/p', 1, '/p', 5, '/p', 41, '/b', 45, '/s', 16, '/p', 4, '/p', 5, '/p', 1, '/s', 143, '/s', -1, '/s', 5, '/p', 3, '/p', 4, '/s', 0, '/s', '/b');
-$output = array();
-$haveIndex = 0;
+AddCards($binder22, $SM_CRACKED_ICE_HOLO);
+AlignRow($binder22);
+AddCards($binder22, $SM_MIRROR_HOLO);
+AlignPage($binder22);
+AddCards($binder22, $SM_CONFETTI_HOLO);
+AlignPage($binder22);
+AddCards($binder22, $SM_SEQUIN_HOLO);
+AlignRow($binder22);
+AddCards($binder22, $SM_SHEEN_HOLO);
+AddCards($binder22, array(-1));
+AddCards($binder22, $SM_SHEEN_HOLO_DP);
+AlignPage($binder22);
+AddCards($binder22, $SM_SHEEN_HOLO_ENERGY);
+AlignPage($binder22);
+AddCards($binder22, $SM_SHEEN_HOLO_ENERGY_TT);
+AlignPage($binder22);
+AddCards($binder22, $SM_REVERSE_SHEEN_HOLO);
+AlignRow($binder22);
+AddCards($binder22, $SM_REVERSE_SMOOTH_COSMOS_BIG_ENERGY_HOLO);
+AlignPage($binder22);
 
-for ($i = 0; $i < count($input); $i++)
-{
-	$var = $input[$i];
-	
-	if (is_numeric($var))
-	{
-		if ($var == 0)
-		{
-			for ($j = $haveIndex; $j < count($holoHave); $j++)
-				array_push($output, $holoHave[$j]);
-		}
-		else if ($var == -1)
-		{
-			array_push($output, -1);
-			// print('<p>Added: -1</p>');
-		}
-		else
-		{
-			for ($j = 0; $j < $var; $j++)
-			{
-				array_push($output, $holoHave[$haveIndex + $j]);
-				// print('<p>Added: '.$holoHave[$haveIndex + $j].'</p>');
-			}
-			
-			$haveIndex += $var;
-		}
-	}
-	else if ($var == '/r')
-	{
-		Align($output, 4, 0, 0);
-	}
-	else if ($var == '/p')
-	{
-		Align($output, 12, 0, 0);
-	}
-	else if ($var == '/s')
-	{
-		Align($output, 24, 12, 0);
-	}
-	else if ($var == '/b')
-	{
-		Align($output, 480, 0, 0);
-	}
-}
+$smReverseBinders = array(&$binder23, &$binder24, &$binder25, &$binder26);
+SplitCards($smReverseBinders, $SM_REVERSE_BIG_ENERGY_HOLO);
+
+AlignBinder($binder22);
+AlignBinder($binder23);
+AlignBinder($binder24);
+AlignBinder($binder25);
+AlignBinder($binder26);
+
+AddCards($binder27, array(-1));
+AlignBinder($binder27);
+
+AddCards($binder28, array(-1));
+AlignBinder($binder28);
+
+AddCards($binder29, array(-1));
+AlignBinder($binder29);
+
+AddCards($binder30, array(-1));
+AlignBinder($binder30);
+
+$input = array(2, '/r', 2, '/p', 2, '/p', 1, '/p', 4, '/r', 1, '/r', 2, '/p', 1, '/r', 1, '/r', 2, '/r', 3, '/r', 1, '/r', 4, '/p', 29, '/p', 26, '/r', 1, '/p', 3, '/r', 1, '/r', 3, '/p', 11, '/p', 1, '/p', 9, '/p', 1, '/r', 3, '/p', 3, '/r', 1, '/r', 3, '/p', 7, '/p', 8, '/p', 2, '/r', 5, -1, 1, 1, '/p', 76, '/s', 1, '/r', 1, '/r', 2, '/p', 7, '/p', 10, '/p', 11, '/p', 1, '/p', 5, '/p', 41, '/b', 45, '/s', 16, '/p', 4, '/p', 5, '/p', 1, '/s', 143, '/s', -1, '/s', 5, '/p', 3, '/p', 4, '/s', 0, '/s', '/b');
 
 // start($j++, 'Collection Test', $holoHave, $output);
 // foreach ($output as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 // finish();
 
-$testBinders = array(&$binder22, &$binder23);
-SplitCards($testBinders, $output);
+$testBinders = array(&$binder31, &$binder32);
+SplitCards($testBinders, Process($input));
 
-AlignBinder($binder22);
-AlignBinder($binder23);
+AlignBinder($binder31);
+AlignBinder($binder32);
 
 $binders = array
 (
@@ -1103,6 +1206,15 @@ $binders = array
 	&$binder21,
 	&$binder22,
 	&$binder23,
+	&$binder24,
+	&$binder25,
+	&$binder26,
+	&$binder27,
+	&$binder28,
+	&$binder29,
+	&$binder30,
+	&$binder31,
+	&$binder32,
 );
 
 $markers = 0;
@@ -1114,11 +1226,11 @@ $binderContents = array
 (
 	'OS Holo, Neo Holo, LC Holo, LC Reverse, e Series Holo',
 	'e Series Reverse',
-	'EX Holo, EX Reverse 1',
+	'EX Holo',
+	'EX Reverse 1',
 	'EX Reverse 2',
 	'EX Reverse 3',
 	'EX Reverse 4',
-	'EX Reverse 5',
 	'DPPt Holo',
 	'DPPt Reverse 1',
 	'DPPt Reverse 2',
@@ -1133,6 +1245,15 @@ $binderContents = array
 	'BWXY Reverse 4',
 	'BWXY Reverse 5',
 	'EV Holo, EV Reverse',
+	'SM Holo 1',
+	'SM Holo 2',
+	'SM Reverse 1',
+	'SM Reverse 2',
+	'SM Reverse 3',
+	'SM Reverse 4',
+	'TBA',
+	'TBA',
+	'TBA',
 	'TBA',
 	'Collection 1',
 	'Collection 2',

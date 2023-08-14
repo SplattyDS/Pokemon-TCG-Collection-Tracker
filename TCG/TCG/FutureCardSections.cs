@@ -7,7 +7,6 @@
 			new FutureCardSection("Paradox Rift", "PR", 4),
 			new FutureCardSection("Pokemon Card 151 (JP)", "PC", 54),
 			new FutureCardSection("Raging Surf (JP)", "RS", 3),
-			new FutureCardSection("Sword & Shield Promo (JP)", "SSP", 3),
 			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 5),
 			new FutureCardSection("ex Starter Decks (JP)", "EXSD", 1),
 			new FutureCardSection("Starter Set Terastal ex (JP)", "SST", 2),

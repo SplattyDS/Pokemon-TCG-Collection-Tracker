@@ -786,6 +786,7 @@ else if (isset($_GET['test']))
 	22, // Crystal Type
 	56,215,216,184,180,221,35, // ex
 	220,230, // Gold Star
+	3851, // Holo Energy EX Emerald
 	3856, // Holo Energy EX Holon Phantoms
 	3860,3861,3862,3864, // Holo Energy EX Power Keepers
 	328,349,354,263, // LV.X
@@ -793,7 +794,8 @@ else if (isset($_GET['test']))
 	366,404, // Prime
 	368,369,382, // LEGEND
 	414, // Shiny Legend Subset
-	552,621,622,2951,970,2952,553,488,2953,603,531,693,554,861,948,597,774,605,980,743,460, // EX
+	621,622,970,553,488,693,554,861,948,597,774,980,743,460, // EX
+	552,2951,2952,2953,603,531,605, // EX (Plasma)
 	803,832, // Mega EX
 	794,927,799,930,1048, // BREAK
 	2966,968, // ancient trait
@@ -817,6 +819,11 @@ else if (isset($_GET['test']))
 	start($j++, 'Lost', $have, $test);
 	foreach ($test as $cur) { if (in_array($cur, $have, true)) {/*imgN($cur);*/} else {img($cur);} }
 	finish();
+	
+	// $test = array(53);
+	// start($j++, 'Expensive (€100+)', $have, $test);
+	// foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+	// finish();
 	
 	// $have = array_merge($have, $test);
 	

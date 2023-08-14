@@ -7,6 +7,18 @@ start($j++, 'OS - Pixel Cosmos Holo', $holoHave, $OS_PIXEL_COSMOS_HOLO);
 foreach ($OS_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'OS - Pixel Cosmos Holo (Dark)', $holoHave, $OS_PIXEL_COSMOS_HOLO_DARK);
+foreach ($OS_PIXEL_COSMOS_HOLO_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'OS - Pixel Cosmos Holo (Owner)', $holoHave, $OS_PIXEL_COSMOS_HOLO_OWNER);
+foreach ($OS_PIXEL_COSMOS_HOLO_OWNER as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'OS - Pixel Cosmos Holo (Rocket)', $holoHave, $OS_PIXEL_COSMOS_HOLO_ROCKET);
+foreach ($OS_PIXEL_COSMOS_HOLO_ROCKET as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'OS - Pixel Cosmos Holo Energy', $holoHave, $OS_PIXEL_COSMOS_HOLO_ENERGY);
 foreach ($OS_PIXEL_COSMOS_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -15,8 +27,20 @@ start($j++, 'OS - Reverse Pixel Cosmos Holo', $holoHave, $OS_REVERSE_PIXEL_COSMO
 foreach ($OS_REVERSE_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'OS - Reverse Pixel Cosmos Holo (Rocket)', $holoHave, $OS_REVERSE_PIXEL_COSMOS_HOLO_ROCKET);
+foreach ($OS_REVERSE_PIXEL_COSMOS_HOLO_ROCKET as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'Neo - Pixel Cosmos Holo', $holoHave, $NEO_PIXEL_COSMOS_HOLO);
 foreach ($NEO_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'Neo - Pixel Cosmos Holo (Dark)', $holoHave, $NEO_PIXEL_COSMOS_HOLO_DARK);
+foreach ($NEO_PIXEL_COSMOS_HOLO_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'Neo - Pixel Cosmos Holo (Light)', $holoHave, $NEO_PIXEL_COSMOS_HOLO_LIGHT);
+foreach ($NEO_PIXEL_COSMOS_HOLO_LIGHT as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'Neo - Reverse Pixel Cosmos Holo', $holoHave, $NEO_REVERSE_PIXEL_COSMOS_HOLO);
@@ -27,8 +51,16 @@ start($j++, 'Legendary Collection - Star Holo', $holoHave, $LC_STAR_HOLO);
 foreach ($LC_STAR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'Legendary Collection - Star Holo (Dark)', $holoHave, $LC_STAR_HOLO_DARK);
+foreach ($LC_STAR_HOLO_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'Legendary Collection - Reverse Fireworks Holo', $holoHave, $LC_REVERSE_FIREWORKS_HOLO);
 foreach ($LC_REVERSE_FIREWORKS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'Legendary Collection - Reverse Fireworks Holo (Dark)', $holoHave, $LC_REVERSE_FIREWORKS_HOLO_DARK);
+foreach ($LC_REVERSE_FIREWORKS_HOLO_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'e Series - Pixel Cosmos Holo', $holoHave, $E_PIXEL_COSMOS_HOLO);
@@ -41,6 +73,18 @@ finish();
 
 start($j++, 'EX Series - Pixel Cosmos Holo', $holoHave, $EX_PIXEL_COSMOS_HOLO);
 foreach ($EX_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'EX Series - Pixel Cosmos Holo (Aqua)', $holoHave, $EX_PIXEL_COSMOS_HOLO_AQUA);
+foreach ($EX_PIXEL_COSMOS_HOLO_AQUA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'EX Series - Pixel Cosmos Holo (Magma)', $holoHave, $EX_PIXEL_COSMOS_HOLO_MAGMA);
+foreach ($EX_PIXEL_COSMOS_HOLO_MAGMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'EX Series - Pixel Cosmos Holo (Dark)', $holoHave, $EX_PIXEL_COSMOS_HOLO_DARK);
+foreach ($EX_PIXEL_COSMOS_HOLO_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'EX Series - Pixel Cosmos Holo Victory Medal', $holoHave, $EX_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
@@ -59,8 +103,20 @@ start($j++, 'EX Series - Pixel Wave Holo Energy', $holoHave, $EX_PIXEL_WAVE_HOLO
 foreach ($EX_PIXEL_WAVE_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'EX Series - Plain Holo Energy', $holoHave, $EX_PLAIN_HOLO_ENERGY);
+foreach ($EX_PLAIN_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'EX Series - Reverse Plain Holo', $holoHave, $EX_REVERSE_PLAIN_HOLO);
 foreach ($EX_REVERSE_PLAIN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'EX Series - Reverse Plain Holo (Aqua)', $holoHave, $EX_REVERSE_PLAIN_HOLO_AQUA);
+foreach ($EX_REVERSE_PLAIN_HOLO_AQUA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'EX Series - Reverse Plain Holo (Magma)', $holoHave, $EX_REVERSE_PLAIN_HOLO_MAGMA);
+foreach ($EX_REVERSE_PLAIN_HOLO_MAGMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'EX Series - Big Energy Holo (Hidden Legends)', $holoHave, $EX_BIG_ENERGY_HOLO_HL);
@@ -73,6 +129,14 @@ finish();
 
 start($j++, 'EX Series - Energy Holo (Team Rocket Returns)', $holoHave, $EX_ENERGY_HOLO_TRR);
 foreach ($EX_ENERGY_HOLO_TRR as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'EX Series - Energy Holo (Team Rocket Returns - Dark)', $holoHave, $EX_ENERGY_HOLO_TRR_DARK);
+foreach ($EX_ENERGY_HOLO_TRR_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'EX Series - Energy Holo (Team Rocket Returns - Rocket)', $holoHave, $EX_ENERGY_HOLO_TRR_ROCKET);
+foreach ($EX_ENERGY_HOLO_TRR_ROCKET as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'EX Series - Prism Holo (Deoxys)', $holoHave, $EX_PRISM_HOLO_D);
@@ -91,6 +155,14 @@ start($j++, 'EX Series - Plain Holo (Delta Species)', $holoHave, $EX_PLAIN_HOLO_
 foreach ($EX_PLAIN_HOLO_DS as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'EX Series - Plain Holo (Delta Species - Holon)', $holoHave, $EX_PLAIN_HOLO_DS_HOLON);
+foreach ($EX_PLAIN_HOLO_DS_HOLON as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'EX Series - Plain Holo (Delta Species - δ)', $holoHave, $EX_PLAIN_HOLO_DS_DELTA);
+foreach ($EX_PLAIN_HOLO_DS_DELTA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'EX Series - Pixel Cosmos Holo (Legend Maker)', $holoHave, $EX_PIXEL_COSMOS_HOLO_LM);
 foreach ($EX_PIXEL_COSMOS_HOLO_LM as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -99,12 +171,28 @@ start($j++, 'EX Series - Mirror Holo (Holon Phantoms)', $holoHave, $EX_MIRROR_HO
 foreach ($EX_MIRROR_HOLO_HP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'EX Series - Mirror Holo (Holon Phantoms - Holon)', $holoHave, $EX_MIRROR_HOLO_HP_HOLON);
+foreach ($EX_MIRROR_HOLO_HP_HOLON as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'EX Series - Mirror Holo (Holon Phantoms - δ)', $holoHave, $EX_MIRROR_HOLO_HP_DELTA);
+foreach ($EX_MIRROR_HOLO_HP_DELTA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'EX Series - Mirror Holo (Crystal Guardians)', $holoHave, $EX_MIRROR_HOLO_CG);
 foreach ($EX_MIRROR_HOLO_CG as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'EX Series - Mirror Holo (Crystal Guardians - δ)', $holoHave, $EX_MIRROR_HOLO_CG_DELTA);
+foreach ($EX_MIRROR_HOLO_CG_DELTA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'EX Series - Mirror Holo (Dragon Frontiers)', $holoHave, $EX_MIRROR_HOLO_DF);
 foreach ($EX_MIRROR_HOLO_DF as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'EX Series - Mirror Holo (Dragon Frontiers - δ)', $holoHave, $EX_MIRROR_HOLO_DF_DELTA);
+foreach ($EX_MIRROR_HOLO_DF_DELTA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'EX Series - Plain Holo (Power Keepers)', $holoHave, $EX_PLAIN_HOLO_PK);
@@ -113,6 +201,10 @@ finish();
 
 start($j++, 'DPPt Series - Pixel Cosmos Holo', $holoHave, $DP_PIXEL_COSMOS_HOLO);
 foreach ($DP_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'DPPt Series - Pixel Cosmos Holo (SP)', $holoHave, $DP_PIXEL_COSMOS_HOLO_SP);
+foreach ($DP_PIXEL_COSMOS_HOLO_SP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'DPPt Series - Pixel Cosmos Holo Victory Medal', $holoHave, $DP_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
@@ -131,6 +223,10 @@ start($j++, 'DPPt Series - Cracked Ice Holo', $holoHave, $DP_CRACKED_ICE_HOLO);
 foreach ($DP_CRACKED_ICE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'DPPt Series - Cracked Ice Holo (SP)', $holoHave, $DP_CRACKED_ICE_HOLO_SP);
+foreach ($DP_CRACKED_ICE_HOLO_SP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'DPPt Series - Mirror Holo Energy', $holoHave, $DP_MIRROR_HOLO_ENERGY);
 foreach ($DP_MIRROR_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -143,12 +239,24 @@ start($j++, 'DPPt Series - Reverse Mirror Holo', $holoHave, $DP_REVERSE_MIRROR_H
 foreach ($DP_REVERSE_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'DPPt Series - Reverse Mirror Holo (SP)', $holoHave, $DP_REVERSE_MIRROR_HOLO_SP);
+foreach ($DP_REVERSE_MIRROR_HOLO_SP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'DPPt Series - Reverse Cracked Ice Holo', $holoHave, $DP_REVERSE_CRACKED_ICE_HOLO);
 foreach ($DP_REVERSE_CRACKED_ICE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'DPPt Series - Reverse Cracked Ice Holo (SP)', $holoHave, $DP_REVERSE_CRACKED_ICE_HOLO_SP);
+foreach ($DP_REVERSE_CRACKED_ICE_HOLO_SP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'DPPt Series - Reverse Crosshatch Holo', $holoHave, $DP_REVERSE_CROSSHATCH_HOLO);
 foreach ($DP_REVERSE_CROSSHATCH_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'DPPt Series - Reverse Crosshatch Holo (SP)', $holoHave, $DP_REVERSE_CROSSHATCH_HOLO_SP);
+foreach ($DP_REVERSE_CROSSHATCH_HOLO_SP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'DPPt Series - Reverse Plain Holo', $holoHave, $DP_REVERSE_PLAIN_HOLO);

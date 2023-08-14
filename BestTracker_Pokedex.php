@@ -764,7 +764,7 @@ start($j++, 'Paldean Wooper', $have, $Paldean_Wooper);
 foreach ($Paldean_Wooper as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Quagsire = array(1677);
+$Quagsire = array(1677,3924);
 start($j++, 'Quagsire', $have, $Quagsire);
 foreach ($Quagsire as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -954,7 +954,7 @@ start($j++, 'Tyranitar', $have, $Tyranitar);
 foreach ($Tyranitar as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Lugia = array(13,131,3133,370,371,417,517,524,582,605,776,2960,787,881,1435,1452,1472,1868,3426,3427,3444,3445,3461,3470,3833);
+$Lugia = array(13,131,3133,370,371,417,517,524,582,605,776,2960,787,881,1435,1452,1472,1868,3426,3427,3444,3445,3461,3470,3833,3925);
 start($j++, 'Lugia', $have, $Lugia);
 foreach ($Lugia as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -1579,7 +1579,7 @@ start($j++, 'Riolu', $have, $Riolu);
 foreach ($Riolu as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Lucario = array(3136,3137,251,346,642,643,648,654,1055,1327,1340,1544,1561,1582,1689,1731,1872,1906,3197,2108,3622,2648,2804,3102,3103,3396,3644);
+$Lucario = array(3136,3137,251,346,642,643,648,654,1055,1327,1340,1544,1561,1582,1689,1731,1872,1906,3197,2108,3622,2648,2804,3102,3103,3396,3923,3644);
 start($j++, 'Lucario', $have, $Lucario);
 foreach ($Lucario as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
