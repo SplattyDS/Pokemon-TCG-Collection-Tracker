@@ -1143,6 +1143,8 @@ AddCards($binder22, $SM_SHEEN_HOLO_ENERGY);
 AlignPage($binder22);
 AddCards($binder22, $SM_SHEEN_HOLO_ENERGY_TT);
 AlignPage($binder22);
+AddCards($binder22, $SM_WATER_WEB_HOLO_ENERGY);
+AlignRow($binder22);
 AddCards($binder22, $SM_REVERSE_SHEEN_HOLO);
 AlignRow($binder22);
 AddCards($binder22, $SM_REVERSE_SMOOTH_COSMOS_BIG_ENERGY_HOLO);

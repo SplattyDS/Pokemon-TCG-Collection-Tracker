@@ -455,6 +455,10 @@ start($j++, 'SM Series - Sequin Holo', $holoHave, $SM_SEQUIN_HOLO);
 foreach ($SM_SEQUIN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'SM Series - Water Web Holo Energy', $holoHave, $SM_WATER_WEB_HOLO_ENERGY);
+foreach ($SM_WATER_WEB_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'SM Series - Sheen Holo Energy', $holoHave, $SM_SHEEN_HOLO_ENERGY);
 foreach ($SM_SHEEN_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

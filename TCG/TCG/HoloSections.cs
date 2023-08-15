@@ -156,6 +156,7 @@
 			new Section(HoloRarity.SM_SHEEN_HOLO_DP, "SM Series - Sheen Holo (Detective Pikachu)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SM_SEQUIN_HOLO, "SM Series - Sequin Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
+			new Section(HoloRarity.SM_WATER_WEB_HOLO_ENERGY, "SM Series - Water Web Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SM_SHEEN_HOLO_ENERGY, "SM Series - Sheen Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SM_SHEEN_HOLO_ENERGY_TT, "SM Series - Sheen Holo Energy (TT)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 

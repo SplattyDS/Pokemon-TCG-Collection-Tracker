@@ -128,12 +128,12 @@ start($j++, 'Basic Water Energy', $holoHave, $Basic_Water_Energy);
 foreach ($Basic_Water_Energy as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Basic_Lightning_Energy = array(440,904,2966,2974,4468,5361,5369,8774,8783,11079,11099,11279,11288,1307,4438,4922,5132,7883,8177);
+$Basic_Lightning_Energy = array(440,904,2966,2974,4468,5361,5369,8774,8783,11079,11099,11279,11288,13769,1307,4438,4922,5132,7883,8177);
 start($j++, 'Basic Lightning Energy', $holoHave, $Basic_Lightning_Energy);
 foreach ($Basic_Lightning_Energy as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Basic_Psychic_Energy = array(441,905,2967,2975,4469,5357,5362,5370,8775,8784,11080,11100,11280,11289,1305,4439,4923,5133,7884,8178);
+$Basic_Psychic_Energy = array(441,905,2967,2975,4469,5357,5362,5370,8775,8784,11080,11100,11280,11289,13770,1305,4439,4923,5133,7884,8178);
 start($j++, 'Basic Psychic Energy', $holoHave, $Basic_Psychic_Energy);
 foreach ($Basic_Psychic_Energy as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
