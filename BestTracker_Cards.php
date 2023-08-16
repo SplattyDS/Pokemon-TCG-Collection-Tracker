@@ -111,7 +111,9 @@ $EX_Full_Art_Evolutions = array(937,938,940);
 
 $EX_Full_Art_Plasma = array(562,537,522,538,539,564,565,524,542);
 
-$EX_Full_Art_Radiant = array(586,862,589,590,864,866);
+$EX_Full_Art_Radiant_BW = array(586,589,590);
+
+$EX_Full_Art_Radiant_XY = array(862,864,866);
 
 $EX_Full_Art_Special = array(723,724,1020,1021,1022,1023,3146);
 

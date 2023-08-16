@@ -223,8 +223,12 @@ start($j++, 'EX Full Art (Team Plasma)', $have, $EX_Full_Art_Plasma);
 foreach ($EX_Full_Art_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'EX Full Art (Radiant)', $have, $EX_Full_Art_Radiant);
-foreach ($EX_Full_Art_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+start($j++, 'EX Full Art (Radiant - BW)', $have, $EX_Full_Art_Radiant_BW);
+foreach ($EX_Full_Art_Radiant_BW as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'EX Full Art (Radiant - XY)', $have, $EX_Full_Art_Radiant_XY);
+foreach ($EX_Full_Art_Radiant_XY as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'EX Full Art (Special)', $have, $EX_Full_Art_Special);
