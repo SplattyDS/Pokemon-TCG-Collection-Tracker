@@ -1,0 +1,55 @@
+OS Dark
+S V	Holo: split
+OS Owner (Gym Leader + Rocket)
+S V	Holo: split
+
+Neo Dark
+S V	Holo: split
+Neo Light
+S V	Holo: split
+
+LC Dark
+S V	Holo: split
+
+EX Owner (Magma + Aqua + Rocket + Holon)
+S V	ex: split (only those with icon in bottom-right, Rocket has different frame)
+S V	Holo: split
+EX Dark
+S V	Holo: split (exception: Dark Celebi)
+EX Delta Species
+S V	ex: split (has different holo and frame)
+S V	Gold Star: split (has different holo and frame)
+S V	Holo: split (has different frame)
+
+DP SP
+S V	LV.X: split (owner icon and "SP" on frame bottom)
+S V	Holo: split (owner icon and "SP" on frame bottom)
+
+BWXY Plasma
+S V	EX: split (bottom background)
+S V	Full Art EX: split (background)
+S V	Holo: split (bottom background + blue border)
+BWXY Flare
+S V	Holo: split (bottom background + red border)
+BWXY Magma
+S V	Holo: split (bottom background)
+BWXY Aqua
+S V	Holo: split (bottom background)
+
+SM Ultra Beast
+S V	GX (+ related): split (GX color different)
+N V	Holo: not split (logo only)
+SM Tag Team
+S V	GX: split
+N V	Full Art Supporter (SM): not split (sorted to the end)
+N V	Holo (supporter): not split (sorted to the end)
+
+SWSH Battle Style (Single Strike + Rapid Strike + Fusion Strike)
+N V	All: not split (logo only)
+
+SV Ancient
+S V	ex: split (right background)
+S V	Holo: split (right background)
+SV Future
+S V	ex: split (right background)
+S V	Holo: split (right background)

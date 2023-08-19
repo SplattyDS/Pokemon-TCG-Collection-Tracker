@@ -334,6 +334,7 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="BestTracker.php?holo">Main</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&set">Set</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?holo&setrev">Set (Reverse)</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&col">Collection</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&binder">Binder</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&type">Type</a></li>
@@ -761,6 +762,8 @@ if (isset($_GET['holo']))
 	}
 	else if (isset($_GET['set']))
 		require 'BestTracker_Holo_Sets.php';
+	else if (isset($_GET['setrev']))
+		require 'BestTracker_Holo_Sets_Reverse.php';
 	else if (isset($_GET['type']))
 		require 'BestTracker_Holo_Types.php';
 	else if (isset($_GET['dex']))

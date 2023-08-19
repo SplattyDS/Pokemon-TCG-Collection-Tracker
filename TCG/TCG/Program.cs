@@ -27,6 +27,7 @@ namespace TCG
 			WriteHoloCards();
 			WriteHoloSections();
 			WriteHoloSets();
+			WriteHoloSetsReverse();
 			WriteHoloTypes();
 			WriteHoloPokedex();
 			WriteHoloAll();
@@ -273,6 +274,20 @@ namespace TCG
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Holo_Sets.php", code);
 		}
 
+		static void WriteHoloSetsReverse()
+		{
+			List<string> code = new List<string>((int)Sets.Length + 2);
+
+			code.Add("<?php");
+
+			foreach (Sets set in Enum.GetValues(typeof(Sets)))
+				code.Add(CodeFromHoloSetReverse(set));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Holo_Sets_Reverse.php", code);
+		}
+
 		static void WriteHoloTypes()
 		{
 			List<string> code = new List<string>((int)Types.Length + 2);
@@ -361,9 +376,9 @@ namespace TCG
 
 		static string CodeFromHoloSet(Sets set)
 		{
-			IEnumerable<HoloCard> cards = HoloCardsFromSet(set);
+			IEnumerable<HoloCard> cards = HoloCardsFromSet(set, false);
 
-			if (cards.Count() == 0)
+			if (cards == null || cards.Count() == 0)
 				return "";
 
 			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
@@ -372,6 +387,22 @@ namespace TCG
 				"$" + set.ToString() + " = array(" + cardArr + ");\r\n" +
 				"start($j++, '" + set.ToString().Replace('_', ' ') + "', $holoHave, $" + set.ToString() + ");\r\n" +
 				"foreach ($" + set.ToString() + " as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }\r\n" +
+				"finish();\r\n";
+		}
+
+		static string CodeFromHoloSetReverse(Sets set)
+		{
+			IEnumerable<HoloCard> cards = HoloCardsFromSet(set, true);
+
+			if (cards == null || cards.Count() == 0)
+				return "";
+
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			return
+				"$" + set.ToString() + "_Rev = array(" + cardArr + ");\r\n" +
+				"start($j++, '" + set.ToString().Replace('_', ' ') + "', $holoHave, $" + set.ToString() + "_Rev);\r\n" +
+				"foreach ($" + set.ToString() + "_Rev as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }\r\n" +
 				"finish();\r\n";
 		}
 
@@ -648,9 +679,9 @@ namespace TCG
 			return Cards.Get().Where(c => c.dex == pokedex).OrderBy(c => c.setNum).OrderBy(c => c.set);
 		}
 
-		static IEnumerable<HoloCard> HoloCardsFromSet(Sets set)
+		static IEnumerable<HoloCard> HoloCardsFromSet(Sets set, bool reverse)
 		{
-			return HoloCards.Get().Where(c => c.set == set).OrderBy(c => c.rarity).OrderBy(c => c.setNum);
+			return SetReverses.FilterCards(HoloCards.Get().Where(c => c.set == set).OrderBy(c => c.rarity).OrderBy(c => c.setNum), set, reverse);
 		}
 
 		static IEnumerable<HoloCard> HoloCardsFromType(Types type)

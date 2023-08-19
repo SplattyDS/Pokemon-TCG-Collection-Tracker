@@ -332,6 +332,7 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="BestTracker.php?holo">Main</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&set">Set</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?holo&setrev">Set (Reverse)</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&col">Collection</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&binder">Binder</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&type">Type</a></li>
