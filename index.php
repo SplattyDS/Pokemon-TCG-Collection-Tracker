@@ -343,6 +343,24 @@
 						</ul>
 					</li>
 					
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Worlds
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="BestTracker.php?worlds">Main</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?worlds&set">Set</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?worlds&year">Year</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?worlds&col">Collection</a></li>
+							<!--<li><a class="dropdown-item" href="BestTracker.php?worlds&binder">Binder</a></li>-->
+							<li><a class="dropdown-item" href="BestTracker.php?worlds&type">Type</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?worlds&dex">Dex</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?worlds&all">All</a></li>
+							<!--<li><a class="dropdown-item" href="BestTracker.php?worlds&fut">Future</a></li>-->
+							<!--<li><a class="dropdown-item" href="BestTracker.php?worlds&test">Test</a></li>-->
+						</ul>
+					</li>
+					
 					<!--<li class="nav-item"><a class="nav-link" href="BestTracker.php?test">Test</a></li>-->
 				</ul>
 			</div>

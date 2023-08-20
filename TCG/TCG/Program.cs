@@ -31,8 +31,16 @@ namespace TCG
 			WriteHoloTypes();
 			WriteHoloPokedex();
 			WriteHoloAll();
-
 			WriteHoloHave();
+
+			WriteWorldsCards();
+			WriteWorldsSections();
+			WriteWorldsSets();
+			WriteWorldsYears();
+			WriteWorldsTypes();
+			WriteWorldsPokedex();
+			WriteWorldsAll();
+			WriteWorldsHave();
 
 			// PrintRarities();
 		}
@@ -342,6 +350,128 @@ namespace TCG
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Holo_All.php", code);
 		}
 
+		static void WriteWorldsCards()
+		{
+			List<string> code = new List<string>(2 + Sections.Get().Length);
+
+			code.Add("<?php");
+
+			foreach (Section section in Sections.Get())
+				code.Add(CodeFromWorldsCards(section));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_WorldsCards.php", code);
+		}
+
+		static void WriteWorldsSections()
+		{
+			List<string> code = new List<string>(2 + Sections.Get().Length);
+
+			code.Add("<?php");
+
+			foreach (Section section in Sections.Get())
+				code.Add(CodeFromWorldsSection(section));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Worlds.php", code);
+		}
+
+		static void WriteWorldsHave()
+		{
+			List<string> code = new List<string>(3);
+			IEnumerable<WorldsCard> collection = GetMyWorldsCollection();
+
+			code.Add("<?php");
+			code.Add("$worldsHave = array(" + string.Join(',', collection.Select(c => c.ToString())) + ");");
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_WorldsHave.php", code);
+		}
+
+		static void WriteWorldsSets()
+		{
+			List<string> code = new List<string>((int)Sets.Length + 2);
+
+			code.Add("<?php");
+
+			foreach (Sets set in Enum.GetValues(typeof(Sets)))
+				code.Add(CodeFromWorldsSet(set));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Worlds_Sets.php", code);
+		}
+
+		static void WriteWorldsYears()
+		{
+			List<string> code = new List<string>(DateTime.Now.Year - 2004 + 1 + 2);
+
+			code.Add("<?php");
+
+			for (int i = 2004; i < DateTime.Now.Year + 1; i++)
+				code.Add(CodeFromWorldsYear(i));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Worlds_Years.php", code);
+		}
+
+		static void WriteWorldsTypes()
+		{
+			List<string> code = new List<string>((int)Types.Length + 2);
+
+			code.Add("<?php");
+
+			foreach (Types type in Enum.GetValues(typeof(Types)))
+				code.Add(CodeFromWorldsType(type));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Worlds_Types.php", code);
+		}
+
+		static void WriteWorldsPokedex()
+		{
+			List<string> code = new List<string>((int)Pokedex.Length + 2);
+			List<(Pokedex, int)> mons = new List<(Pokedex, int)>((int)Pokedex.Length);
+
+			code.Add("<?php");
+
+			foreach (Pokedex pokedex in Enum.GetValues(typeof(Pokedex)))
+				mons.Add((pokedex, WorldsCardsFromPokedex(pokedex).Count()));
+
+			// IEnumerable<(Pokedex, int)> order = mons.OrderByDescending(p => p.Item2);
+			IEnumerable<(Pokedex, int)> order = mons;
+
+			foreach ((Pokedex, int) thing in order)
+				code.Add(CodeFromWorldsPokedex(thing.Item1));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Worlds_Pokedex.php", code);
+		}
+
+		static void WriteWorldsAll()
+		{
+			List<string> code = new List<string>(6);
+
+			IEnumerable<WorldsCard> cards = WorldsCards.Get().OrderBy(c => c.setNum).OrderBy(c => c.set);
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			code.Add("<?php");
+
+			code.Add("$worldsAll = array(" + cardArr + ");");
+			code.Add("start($j++, 'All Worlds Cards', $worldsHave, $worldsAll);");
+			code.Add("foreach ($worldsAll as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }");
+			code.Add("finish();");
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Worlds_All.php", code);
+		}
+
 		static string CodeFromCards(Section section)
 		{
 			IEnumerable<Card> cards = CardsFromSection(section);
@@ -438,6 +568,103 @@ namespace TCG
 				"finish();\r\n";
 		}
 
+		static string CodeFromWorldsCards(Section section)
+		{
+			IEnumerable<WorldsCard> cards = WorldsCardsFromSection(section);
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			return "$" + section.rarity + " = array(" + cardArr + ");\r\n";
+		}
+
+		static string CodeFromWorldsSection(Section section)
+		{
+			if (!WorldsCardsFromSection(section).Any())
+				return "";
+
+			return
+				"start($j++, '" + section.title + "', $worldsHave, $" + section.rarity + ");\r\n" +
+				"foreach ($" + section.rarity + " as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }\r\n" +
+				"finish();\r\n";
+		}
+
+		static string CodeFromWorldsSet(Sets set)
+		{
+			IEnumerable<WorldsCard> cards = WorldsCardsFromSet(set);
+
+			if (cards == null || cards.Count() == 0)
+				return "";
+
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			return
+				"$" + set.ToString() + " = array(" + cardArr + ");\r\n" +
+				"start($j++, '" + set.ToString().Replace('_', ' ') + "', $worldsHave, $" + set.ToString() + ");\r\n" +
+				"foreach ($" + set.ToString() + " as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }\r\n" +
+				"finish();\r\n";
+		}
+
+		static string CodeFromWorldsYear(int year)
+		{
+			IEnumerable<WorldsCard> cards = WorldsCardsFromYear(year);
+
+			if (cards == null || cards.Count() == 0)
+				return "";
+
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+			string back = "";
+
+			if (year < 2022)
+			{
+				back = "cardImg('card-img', 'images/best_tracker/worlds/B" + year + ".png', false);\r\n";
+			}
+			else
+			{
+				for (int i = 0; i < 4; i++)
+					back += "cardImg('card-img', 'images/best_tracker/worlds/B" + year + "_" + (i + 1) + ".png', false);\r\n";
+			}
+
+			back += "print('<br>');\r\n";
+
+			return
+				"$Worlds_" + year + " = array(" + cardArr + ");\r\n" +
+				"start($j++, 'World Championships " + year + "', $worldsHave, $Worlds_" + year + ");\r\n" +
+				back +
+				"foreach ($Worlds_" + year + " as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }\r\n" +
+				"finish();\r\n";
+		}
+
+		static string CodeFromWorldsType(Types type)
+		{
+			IEnumerable<WorldsCard> cards = WorldsCardsFromType(type);
+
+			if (cards.Count() == 0)
+				return "";
+
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			return
+				"$" + type.ToString() + " = array(" + cardArr + ");\r\n" +
+				"start($j++, '" + type.ToString().Replace('_', ' ') + "', $worldsHave, $" + type.ToString() + ");\r\n" +
+				"foreach ($" + type.ToString() + " as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }\r\n" +
+				"finish();\r\n";
+		}
+
+		static string CodeFromWorldsPokedex(Pokedex pokedex)
+		{
+			IEnumerable<WorldsCard> cards = WorldsCardsFromPokedex(pokedex);
+
+			if (cards.Count() == 0)
+				return "";
+
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			return
+				"$" + pokedex.ToString() + " = array(" + cardArr + ");\r\n" +
+				"start($j++, '" + pokedex.ToString().Replace('_', ' ') + "', $worldsHave, $" + pokedex.ToString() + ");\r\n" +
+				"foreach ($" + pokedex.ToString() + " as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }\r\n" +
+				"finish();\r\n";
+		}
+
 		static string CodeFromCollection(IEnumerable<Card> cards)
 		{
 			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
@@ -500,6 +727,11 @@ namespace TCG
 		static IEnumerable<HoloCard> GetMyHoloCollection()
 		{
 			return HoloCards.Get().Where(c => c.have).OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.rarity);
+		}
+
+		static IEnumerable<WorldsCard> GetMyWorldsCollection()
+		{
+			return WorldsCards.Get().Where(c => c.have).OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.rarity);
 		}
 
 		static IEnumerable<Card> CardsFromSection(Section section)
@@ -664,6 +896,87 @@ namespace TCG
 			return cards;
 		}
 
+		static IEnumerable<WorldsCard> WorldsCardsFromSection(Section section)
+		{
+			IEnumerable<WorldsCard> cards = WorldsCards.Get().Where(c => c.rarity == section.rarity);
+
+			switch (section.sortMode)
+			{
+				case SortMode.NO_SORT:
+					break;
+
+				case SortMode.SORT_BY_SET:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set);
+					break;
+
+				case SortMode.SORT_BY_TYPE:
+					cards = cards.OrderBy(c => c.type);
+					break;
+
+				case SortMode.SORT_BY_NAME:
+					cards = cards.OrderBy(c => c.name);
+					break;
+
+				case SortMode.SORT_BY_NAME_AND_TYPE:
+					cards = cards.OrderBy(c => c.name).OrderBy(c => c.type);
+					break;
+
+				case SortMode.SORT_BY_SET_AND_TYPE:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.type);
+					break;
+
+				case SortMode.SORT_BY_SET_AND_DEX:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex);
+					break;
+
+				case SortMode.SORT_BY_TYPE_AND_SET:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.type).OrderBy(c => c.set);
+					break;
+
+				case SortMode.SORT_BY_SET_AND_DEX_AND_TYPE:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type);
+					break;
+
+				case SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type);
+
+					List<WorldsCard> noExtraSort = cards.Where(c => c.type != Types.Item && c.type != Types.Tool && c.type != Types.Technical_Machine && c.type != Types.Supporter && c.type != Types.Stadium && c.type != Types.Special_Energy).ToList();
+
+					List<WorldsCard> sortedItem = cards.Where(c => c.type == Types.Item).OrderBy(c => c.name).ToList();
+					List<WorldsCard> sortedTool = cards.Where(c => c.type == Types.Tool).OrderBy(c => c.name).ToList();
+					List<WorldsCard> sortedTM = cards.Where(c => c.type == Types.Technical_Machine).OrderBy(c => c.name).ToList();
+					List<WorldsCard> sortedR = cards.Where(c => c.type == Types.Rockets_Secret_Machine).OrderBy(c => c.name).ToList();
+					List<WorldsCard> sortedSupporter = cards.Where(c => c.type == Types.Supporter).OrderBy(c => c.name).ToList();
+					List<WorldsCard> sortedStadium = cards.Where(c => c.type == Types.Stadium).OrderBy(c => c.name).ToList();
+					List<WorldsCard> sortedSpecialEnergy = cards.Where(c => c.type == Types.Special_Energy).OrderBy(c => c.name).ToList();
+
+					noExtraSort.AddRange(sortedItem);
+					noExtraSort.AddRange(sortedTool);
+					noExtraSort.AddRange(sortedTM);
+					noExtraSort.AddRange(sortedR);
+					noExtraSort.AddRange(sortedSupporter);
+					noExtraSort.AddRange(sortedStadium);
+					noExtraSort.AddRange(sortedSpecialEnergy);
+
+					cards = noExtraSort.OrderBy(c => c.type);
+
+					break;
+
+				case SortMode.SORT_BY_SET_AND_NAME_AND_DEX_AND_TYPE:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.name).OrderBy(c => c.dex).OrderBy(c => c.type);
+					break;
+
+				case SortMode.SORT_BY_DEX_AND_TYPE_AND_SET:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.set);
+					break;
+
+				default:
+					throw new NotSupportedException(section.sortMode.ToString());
+			}
+
+			return cards;
+		}
+
 		static IEnumerable<Card> CardsFromSet(Sets set)
 		{
 			return Cards.Get().Where(c => c.set == set).OrderBy(c => c.setNum);
@@ -692,6 +1005,26 @@ namespace TCG
 		static IEnumerable<HoloCard> HoloCardsFromPokedex(Pokedex pokedex)
 		{
 			return HoloCards.Get().Where(c => c.dex == pokedex).OrderBy(c => c.setNum).OrderBy(c => c.set);
+		}
+
+		static IEnumerable<WorldsCard> WorldsCardsFromSet(Sets set)
+		{
+			return WorldsCards.Get().Where(c => c.set == set).OrderBy(c => c.setNum);
+		}
+
+		static IEnumerable<WorldsCard> WorldsCardsFromYear(int year)
+		{
+			return WorldsCards.Get().Where(c => c.year == year);
+		}
+
+		static IEnumerable<WorldsCard> WorldsCardsFromType(Types type)
+		{
+			return WorldsCards.Get().Where(c => c.type == type).OrderBy(c => c.setNum).OrderBy(c => c.set);
+		}
+
+		static IEnumerable<WorldsCard> WorldsCardsFromPokedex(Pokedex pokedex)
+		{
+			return WorldsCards.Get().Where(c => c.dex == pokedex).OrderBy(c => c.setNum).OrderBy(c => c.set);
 		}
 
 		/*static int CountCardsWithRarity(Rarity rarity)

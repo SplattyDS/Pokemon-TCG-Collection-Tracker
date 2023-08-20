@@ -60,4 +60,26 @@
 			id = curID++;
 		}
 	}
+
+	public class WorldsCard : CardBase
+	{
+		public Rarity rarity;
+		public int year;
+
+		public static int curID = 1;
+
+		public WorldsCard(string name, Pokedex dex, Rarity rarity, Types type, Sets set, double setNum, int year, bool have = false)
+		{
+			this.name = name;
+			this.dex = dex;
+			this.rarity = rarity;
+			this.type = type;
+			this.set = set;
+			this.setNum = setNum;
+			this.year = year;
+			this.have = have;
+
+			id = curID++;
+		}
+	}
 }

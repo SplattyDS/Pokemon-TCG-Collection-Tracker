@@ -345,6 +345,24 @@
 						</ul>
 					</li>
 					
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Worlds
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="BestTracker.php?worlds">Main</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?worlds&set">Set</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?worlds&year">Year</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?worlds&col">Collection</a></li>
+							<!--<li><a class="dropdown-item" href="BestTracker.php?worlds&binder">Binder</a></li>-->
+							<li><a class="dropdown-item" href="BestTracker.php?worlds&type">Type</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?worlds&dex">Dex</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?worlds&all">All</a></li>
+							<!--<li><a class="dropdown-item" href="BestTracker.php?worlds&fut">Future</a></li>-->
+							<!--<li><a class="dropdown-item" href="BestTracker.php?worlds&test">Test</a></li>-->
+						</ul>
+					</li>
+					
 					<!--<li class="nav-item"><a class="nav-link" href="BestTracker.php?test">Test</a></li>-->
 				</ul>
 			</div>
@@ -383,6 +401,8 @@ function img($ID, $visible = false)
 		cardImg('card-img', 'images/best_tracker/cards/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-img', 'images/best_tracker/cards/'.idToName($ID).'.png', $visible);
+	// else
+		// cardImg('card-img', 'images/best_tracker/cards/'.$ID.'.png', $visible);
 }
 
 function imgN($ID, $visible = false)
@@ -391,6 +411,8 @@ function imgN($ID, $visible = false)
 		cardImg('card-img', 'images/best_tracker/cards/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-have-img', 'images/best_tracker/cards/'.idToName($ID).'.png', $visible);
+	// else
+		// cardImg('card-img', 'images/best_tracker/cards/'.$ID.'.png', $visible);
 }
 
 function imgF($ID, $visible = false)
@@ -404,6 +426,8 @@ function imgH($ID, $visible = false)
 		cardImg('card-img', 'images/best_tracker/holo/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-img', 'images/best_tracker/holo/'.idToHoloName($ID).'.png', $visible);
+	// else
+		// cardImg('card-img', 'images/best_tracker/holo/'.$ID.'.png', $visible);
 }
 
 function imgHN($ID, $visible = false)
@@ -412,6 +436,28 @@ function imgHN($ID, $visible = false)
 		cardImg('card-img', 'images/best_tracker/holo/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-have-img', 'images/best_tracker/holo/'.idToHoloName($ID).'.png', $visible);
+	// else
+		// cardImg('card-img', 'images/best_tracker/holo/'.$ID.'.png', $visible);
+}
+
+function imgW($ID, $visible = false)
+{
+	if ($ID == -1)
+		cardImg('card-img', 'images/best_tracker/worlds/-1.png', $visible);
+	else if (is_numeric($ID))
+		cardImg('card-img', 'images/best_tracker/worlds/'.idToName($ID).'.png', $visible);
+	// else
+		// cardImg('card-img', 'images/best_tracker/worlds/'.$ID.'.png', $visible);
+}
+
+function imgWN($ID, $visible = false)
+{
+	if ($ID == -1)
+		cardImg('card-img', 'images/best_tracker/worlds/-1.png', $visible);
+	else if (is_numeric($ID))
+		cardImg('card-have-img', 'images/best_tracker/worlds/'.idToName($ID).'.png', $visible);
+	// else
+		// cardImg('card-img', 'images/best_tracker/worlds/'.$ID.'.png', $visible);
 }
 
 function start($ID, $name, $have, $arrC, $visible = false)
@@ -518,9 +564,11 @@ $j = 1;
 
 require 'BestTracker_Have.php';
 require 'BestTracker_HoloHave.php';
+require 'BestTracker_WorldsHave.php';
 
 require 'BestTracker_Cards.php';
 require 'BestTracker_HoloCards.php';
+require 'BestTracker_WorldsCards.php';
 
 // $have = array_merge($have, array(3390,2715,2069,3414,3281,3542,2882,3483,3645,3648,3641,3652,3653,3654,3655,3656,3646,3647));
 // $have = array_merge($have, array(1852,1694,1695,1701,2124,3409,3512,3270,3274,3424,2196,2414,3536,3515,3416,3280,2189,3509,3717,3531,3554,3345));
@@ -780,6 +828,41 @@ if (isset($_GET['holo']))
 		require 'BestTracker_Holo_Binder.php';
 	else
 		require 'BestTracker_Holo.php';
+}
+else if (isset($_GET['worlds']))
+{
+	if (isset($_GET['test']))
+	{
+		
+	}
+	else if (isset($_GET['random']))
+	{
+		$random = rand(1, 10);
+		
+		start($j++, 'Random Card', $worldsHave, array($random), true);
+		if (in_array($random, $worldsHave, true)) {imgWN($random, true);} else {imgW($random, true);}
+		finish();
+	}
+	else if (isset($_GET['set']))
+		require 'BestTracker_Worlds_Sets.php';
+	else if (isset($_GET['year']))
+		require 'BestTracker_Worlds_Years.php';
+	else if (isset($_GET['type']))
+		require 'BestTracker_Worlds_Types.php';
+	else if (isset($_GET['dex']))
+		require 'BestTracker_Worlds_Pokedex.php';
+	else if (isset($_GET['all']))
+		require 'BestTracker_Worlds_All.php';
+	else if (isset($_GET['col']))
+	{
+		start($j++, 'Worlds Collection', $worldsHave, $worldsHave);
+		foreach ($worldsHave as $cur) { imgWN($cur); }
+		finish();
+	}
+	// else if (isset($_GET['binder']))
+		// require 'BestTracker_Worlds_Binder.php';
+	else
+		require 'BestTracker_Worlds.php';
 }
 else if (isset($_GET['test']))
 {
