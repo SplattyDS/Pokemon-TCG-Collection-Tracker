@@ -254,12 +254,12 @@ start($j++, 'Ancient Origins', $worldsHave, $Ancient_Origins);
 foreach ($Ancient_Origins as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
 
-$BREAKthrough = array(123,129,144,151);
+$BREAKthrough = array(123,128,144,151);
 start($j++, 'BREAKthrough', $worldsHave, $BREAKthrough);
 foreach ($BREAKthrough as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
 
-$BREAKpoint = array(128,140,130,124);
+$BREAKpoint = array(130,140,124,129);
 start($j++, 'BREAKpoint', $worldsHave, $BREAKpoint);
 foreach ($BREAKpoint as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();

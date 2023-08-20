@@ -1,5 +1,5 @@
 <?php
-$NVT = array(72,75,82,88,115,79,98,86,108,92,105,123,129,144,151,130,155,161,160,182,167);
+$NVT = array(72,75,82,88,115,79,98,86,108,92,105,123,128,144,151,129,155,161,160,182,167);
 start($j++, 'NVT', $worldsHave, $NVT);
 foreach ($NVT as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
@@ -989,7 +989,7 @@ finish();
 
 
 
-$Greninja = array(128);
+$Greninja = array(130);
 start($j++, 'Greninja', $worldsHave, $Greninja);
 foreach ($Greninja as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();

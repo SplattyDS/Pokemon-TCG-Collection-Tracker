@@ -106,9 +106,6 @@ finish();
 
 
 
-start($j++, 'EX Full Art', $worldsHave, $EX_Full_Art);
-foreach ($EX_Full_Art as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
-finish();
 
 
 

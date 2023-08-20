@@ -55,7 +55,7 @@ $Shiny_Legend = array();
 
 $Shiny_Legend_Promo = array();
 
-$EX = array(91,114,106,71,74,78,109,95,66,77,63,64,65,69,96,113,70,87,140,121,127,100,104,102,62,73,90,110,122,97,84,76,125,94,103,107,111,117,120,126,119,68);
+$EX = array(91,114,106,71,74,78,109,95,66,77,63,64,65,69,96,113,70,87,140,121,127,100,104,102,62,73,124,90,110,122,97,84,76,125,94,103,107,111,117,120,126,119,68);
 
 $EX_Plasma = array(89,80,85,81,83);
 
@@ -73,7 +73,7 @@ $Ace_Spec = array(72,75,82,88,115,79,98,105,86,108);
 
 $Ace_Spec_Plasma = array(92);
 
-$BREAK = array(116,128);
+$BREAK = array(116,130);
 
 $Ancient_Trait_Alpha = array();
 
@@ -83,7 +83,7 @@ $Ancient_Trait_Delta = array(112);
 
 $Ancient_Trait_Theta = array();
 
-$Mirrored_Stadium = array(123,129,144,151,130);
+$Mirrored_Stadium = array(123,128,144,151,129);
 
 $Radiant_Collection_BW = array();
 
@@ -105,7 +105,7 @@ $Full_Art_Pokemon_BWXY_Mythical = array();
 
 $Full_Art_Pokemon_BWXY_Other = array();
 
-$EX_Full_Art = array(124);
+$EX_Full_Art = array();
 
 $EX_Full_Art_Evolutions = array();
 

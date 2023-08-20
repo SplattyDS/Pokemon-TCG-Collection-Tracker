@@ -9,7 +9,7 @@ start($j++, 'Fire', $worldsHave, $Fire);
 foreach ($Fire as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
 
-$Water = array(2,12,19,22,29,33,39,53,71,74,78,109,95,106,114,112,128,131,186,185,199,184,183);
+$Water = array(2,12,19,22,29,33,39,53,71,74,78,109,95,106,114,112,130,131,186,185,199,184,183);
 start($j++, 'Water', $worldsHave, $Water);
 foreach ($Water as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
@@ -91,7 +91,7 @@ finish();
 
 
 
-$Stadium = array(123,129,144,151,130,160,182,167);
+$Stadium = array(123,128,144,151,129,160,182,167);
 start($j++, 'Stadium', $worldsHave, $Stadium);
 foreach ($Stadium as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
