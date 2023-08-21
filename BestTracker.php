@@ -460,6 +460,17 @@ function imgWN($ID, $visible = false)
 		// cardImg('card-img', 'images/best_tracker/worlds/'.$ID.'.png', $visible);
 }
 
+function imgER($name, $visible = false)
+{
+	if ($name == '<br>')
+	{
+		print($name);
+		return;
+	}
+	
+	cardImg('card-img', 'images/best_tracker/extremely_rare/'.$name.'.png', $visible);
+}
+
 function start($ID, $name, $have, $arrC, $visible = false)
 {
 	$amount = countN($arrC);
@@ -562,13 +573,21 @@ function countHave($arr, $have)
 
 $j = 1;
 
-require 'BestTracker_Have.php';
-require 'BestTracker_HoloHave.php';
-require 'BestTracker_WorldsHave.php';
-
-require 'BestTracker_Cards.php';
-require 'BestTracker_HoloCards.php';
-require 'BestTracker_WorldsCards.php';
+if (isset($_GET['holo']))
+{
+	require 'BestTracker_HoloHave.php';
+	require 'BestTracker_HoloCards.php';
+}
+else if (isset($_GET['worlds']))
+{
+	require 'BestTracker_WorldsHave.php';
+	require 'BestTracker_WorldsCards.php';
+}
+else
+{
+	require 'BestTracker_Have.php';
+	require 'BestTracker_Cards.php';
+}
 
 // $have = array_merge($have, array(3390,2715,2069,3414,3281,3542,2882,3483,3645,3648,3641,3652,3653,3654,3655,3656,3646,3647));
 // $have = array_merge($have, array(1852,1694,1695,1701,2124,3409,3512,3270,3274,3424,2196,2414,3536,3515,3416,3280,2189,3509,3717,3531,3554,3345));
@@ -863,6 +882,27 @@ else if (isset($_GET['worlds']))
 		// require 'BestTracker_Worlds_Binder.php';
 	else
 		require 'BestTracker_Worlds.php';
+}
+else if (isset($_GET['extremely_rare']))
+{
+	$extreme_rares = array
+	(
+		'EX_1','EX_2','EX_3','<br>',
+		'DP_1','DP_2','DP_3','<br>',
+		'HGSS_1','HGSS_2','HGSS_3','<br>',
+		'BW_1','BW_2','BW_3','BW_4','<br>',
+		'XY_1','XY_2','XY_3','XY_4','<br>',
+		'SM_1','SM_2','SM_3','SM_4','<br>',
+		'SWSH_1','SWSH_2','SWSH_3','SWSH_4','<br>',
+		'SV_1','SV_2','SV_3','<br>',
+		'M_Sachiko_EX','<br>',
+		'Ishihara_GX','Ishihara_Pikachu_GX','<br>',
+		'J_Balvin_V','Katy_Perry_V','Post_Malone_V','<br>',
+	);
+	
+	start($j++, 'Extremely Rare Cards', array(), $extreme_rares, true);
+	foreach ($extreme_rares as $cur) { imgER($cur, true); }
+	finish();
 }
 else if (isset($_GET['test']))
 {
