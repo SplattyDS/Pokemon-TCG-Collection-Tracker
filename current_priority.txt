@@ -13,3 +13,4 @@ BWXY Sheen Holo (Aqua) - 3
 DPPt Holos (except mirror reverse)
 BWXY Plasma Holos
 Evolutions Holos
+SV Cosmos Holo (both pixel and smooth, need more documentation)

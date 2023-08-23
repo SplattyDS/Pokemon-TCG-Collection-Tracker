@@ -825,9 +825,13 @@ start($j++, 'Paldea Evolved', $holoHave, $Paldea_Evolved);
 foreach ($Paldea_Evolved as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+$Obsidian_Flames = array(13771,13772,13773,13774,13775,13776,13777,13778,13779,13780);
+start($j++, 'Obsidian Flames', $holoHave, $Obsidian_Flames);
+foreach ($Obsidian_Flames as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
 
-$SV_Promo = array(13748,13749,13750,13751,13752,13753,13754,13755,13756,13757,13758,13759,13760,13761,13762,13763,13767,13764,13768,13765,13766);
+$SV_Promo = array(13748,13749,13750,13751,13752,13753,13754,13755,13756,13757,13758,13759,13760,13761,13762,13763,13767,13764,13768,13765,13766,13957,13958,13959,13960,13961,13962,13963,13964);
 start($j++, 'SV Promo', $holoHave, $SV_Promo);
 foreach ($SV_Promo as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

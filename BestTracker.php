@@ -913,7 +913,7 @@ else if (isset($_GET['test']))
 	56,215,216,184,180,221,35, // ex
 	220,230, // Gold Star
 	3851, // Holo Energy EX Emerald
-	3856, // Holo Energy EX Holon Phantoms
+	3856,3857, // Holo Energy EX Holon Phantoms
 	3860,3861,3862,3864, // Holo Energy EX Power Keepers
 	328,349,354,263, // LV.X
 	281,292, // Shiny Holo Subset
