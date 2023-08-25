@@ -119,6 +119,7 @@ finish();
 
 
 
+
 start($j++, 'GX', $worldsHave, $GX);
 foreach ($GX as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
@@ -181,6 +182,7 @@ finish();
 start($j++, 'VSTAR', $worldsHave, $VSTAR);
 foreach ($VSTAR as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
+
 
 
 

@@ -458,7 +458,7 @@ start($j++, 'Kalos Starter Set', $holoHave, $Kalos_Starter_Set);
 foreach ($Kalos_Starter_Set as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$XY = array(6501,6633,6502,6503,6634,6504,6635,6505,6636,6506,6637,6507,6508,6638,6639,6509,6640,6510,6641,6511,6512,6642,6643,6513,6644,6645,6646,6647,6648,6514,6515,6516,6649,6517,6650,6651,6652,6653);
+$XY = array(6501,6633,6502,6634,6503,6504,6635,6505,6636,6506,6637,6507,6508,6638,6639,6509,6640,6510,6641,6511,6512,6642,6643,6513,6644,6645,6646,6647,6648,6514,6515,6516,6649,6517,6650,6651,6652,6653);
 start($j++, 'XY', $holoHave, $XY);
 foreach ($XY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

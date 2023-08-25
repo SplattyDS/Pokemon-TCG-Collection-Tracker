@@ -6512,7 +6512,7 @@ namespace TCG
 			new HoloCard("Double Colorless Energy", Pokedex.NVT, HoloRarity.BWXY_REVERSE_ENERGY_HOLO, Types.Special_Energy, Sets.Legendary_Treasures, 113),
 			new HoloCard("Chesnaught", Pokedex.Chesnaught, HoloRarity.BWXY_SHEEN_HOLO, Types.Grass, Sets.XY, 14),
 			new HoloCard("Vivillon [Meadow]", Pokedex.Vivillon, HoloRarity.BWXY_SHEEN_HOLO, Types.Grass, Sets.XY, 17),
-			new HoloCard("Vivillon [High Plains]", Pokedex.Vivillon, HoloRarity.BWXY_SHEEN_HOLO, Types.Grass, Sets.XY, 17),
+			new HoloCard("Vivillon [High Plains]", Pokedex.Vivillon, HoloRarity.BWXY_SHEEN_HOLO, Types.Grass, Sets.XY, 17.1),
 			new HoloCard("Gogoat", Pokedex.Gogoat, HoloRarity.BWXY_SHEEN_HOLO, Types.Grass, Sets.XY, 19),
 			new HoloCard("Delphox", Pokedex.Delphox, HoloRarity.BWXY_SHEEN_HOLO, Types.Fire, Sets.XY, 26),
 			new HoloCard("Talonflame", Pokedex.Talonflame, HoloRarity.BWXY_SHEEN_HOLO, Types.Fire, Sets.XY, 28),
@@ -6910,7 +6910,7 @@ namespace TCG
 			new HoloCard("Scatterbug", Pokedex.Scatterbug, HoloRarity.BWXY_REVERSE_ENERGY_HOLO, Types.Grass, Sets.XY, 15, true),
 			new HoloCard("Spewpa", Pokedex.Spewpa, HoloRarity.BWXY_REVERSE_ENERGY_HOLO, Types.Grass, Sets.XY, 16),
 			new HoloCard("Vivillon [Meadow]", Pokedex.Vivillon, HoloRarity.BWXY_REVERSE_ENERGY_HOLO, Types.Grass, Sets.XY, 17),
-			new HoloCard("Vivillon [High Plains]", Pokedex.Vivillon, HoloRarity.BWXY_REVERSE_ENERGY_HOLO, Types.Grass, Sets.XY, 17),
+			new HoloCard("Vivillon [High Plains]", Pokedex.Vivillon, HoloRarity.BWXY_REVERSE_ENERGY_HOLO, Types.Grass, Sets.XY, 17.1),
 			new HoloCard("Skiddo", Pokedex.Skiddo, HoloRarity.BWXY_REVERSE_ENERGY_HOLO, Types.Grass, Sets.XY, 18),
 			new HoloCard("Gogoat", Pokedex.Gogoat, HoloRarity.BWXY_REVERSE_ENERGY_HOLO, Types.Grass, Sets.XY, 19),
 			new HoloCard("Slugma", Pokedex.Slugma, HoloRarity.BWXY_REVERSE_ENERGY_HOLO, Types.Fire, Sets.XY, 20),
@@ -12879,14 +12879,14 @@ namespace TCG
 			new HoloCard("Ivysaur", Pokedex.Ivysaur, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Grass, Sets.Pokémon_GO, 2),
 			new HoloCard("Venusaur", Pokedex.Venusaur, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Grass, Sets.Pokémon_GO, 3, true),
 			new HoloCard("Spinarak", Pokedex.Spinarak, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Grass, Sets.Pokémon_GO, 6),
-			new HoloCard("Spinarak", Pokedex.Spinarak, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Grass, Sets.Pokémon_GO, 6, true),
+			new HoloCard("Spinarak [Ditto]", Pokedex.Spinarak, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Grass, Sets.Pokémon_GO, 6.1, true),
 			new HoloCard("Ariados", Pokedex.Ariados, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Grass, Sets.Pokémon_GO, 7),
 			new HoloCard("Charmander", Pokedex.Charmander, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Fire, Sets.Pokémon_GO, 8),
 			new HoloCard("Charmeleon", Pokedex.Charmeleon, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Fire, Sets.Pokémon_GO, 9),
 			new HoloCard("Charizard", Pokedex.Charizard, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Fire, Sets.Pokémon_GO, 10),
 			new HoloCard("Moltres", Pokedex.Moltres, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Fire, Sets.Pokémon_GO, 12, true),
 			new HoloCard("Numel", Pokedex.Numel, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Fire, Sets.Pokémon_GO, 13),
-			new HoloCard("Numel", Pokedex.Numel, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Fire, Sets.Pokémon_GO, 13, true),
+			new HoloCard("Numel [Ditto]", Pokedex.Numel, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Fire, Sets.Pokémon_GO, 13.1, true),
 			new HoloCard("Camerupt", Pokedex.Camerupt, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Fire, Sets.Pokémon_GO, 14, true),
 			new HoloCard("Squirtle", Pokedex.Squirtle, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Water, Sets.Pokémon_GO, 15),
 			new HoloCard("Wartortle", Pokedex.Wartortle, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Water, Sets.Pokémon_GO, 16),
@@ -12923,7 +12923,7 @@ namespace TCG
 			new HoloCard("Aipom", Pokedex.Aipom, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Colorless, Sets.Pokémon_GO, 56, true),
 			new HoloCard("Ambipom", Pokedex.Ambipom, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Colorless, Sets.Pokémon_GO, 57),
 			new HoloCard("Bidoof", Pokedex.Bidoof, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Colorless, Sets.Pokémon_GO, 59, true),
-			new HoloCard("Bidoof", Pokedex.Bidoof, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Colorless, Sets.Pokémon_GO, 59, true),
+			new HoloCard("Bidoof [Ditto]", Pokedex.Bidoof, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Colorless, Sets.Pokémon_GO, 59.1, true),
 			new HoloCard("Bibarel", Pokedex.Bibarel, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Colorless, Sets.Pokémon_GO, 60, true),
 			new HoloCard("Pidove", Pokedex.Pidove, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Colorless, Sets.Pokémon_GO, 61, true),
 			new HoloCard("Tranquill", Pokedex.Tranquill, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Colorless, Sets.Pokémon_GO, 62),
@@ -13979,8 +13979,7 @@ namespace TCG
 		// the DELETED play labs promos might get reasonably obtainable in leagues soon
 		// Smoliv and Growlithe from SV_Promo seem to have both pixel and smooth cosmos
 		// Mankey and Primeape from Paldea_Evolved seem to have pixel cosmos
-		// the other current (pre Obsidian Flames) SV cosmos holos seem to have smooth cosmos
-		// the Obsidian Flames blister promos seem to have smooth cosmos (investigate more in future)
+		// the other current (pre 151) SV cosmos holos seem to have smooth cosmos
 
 		public static IEnumerable<HoloCard> Get()
 		{

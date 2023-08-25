@@ -3601,7 +3601,7 @@ start($j++, 'Spewpa', $holoHave, $Spewpa);
 foreach ($Spewpa as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Vivillon = array(6502,6503,6634,6900,6901,6580,6710,7600,6795,9433,12017,13359);
+$Vivillon = array(6502,6634,6900,6503,6901,6580,6710,7600,6795,9433,12017,13359);
 start($j++, 'Vivillon', $holoHave, $Vivillon);
 foreach ($Vivillon as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

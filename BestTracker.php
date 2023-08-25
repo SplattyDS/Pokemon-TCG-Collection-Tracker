@@ -596,7 +596,7 @@ if (isset($_GET['holo']))
 {
 	if (isset($_GET['test']))
 	{
-		$test = array(43,23,40,77,2707,147,433,424,592,1082,1205,1206,2706,1114,1138,1139,1134,1126,1123,1472,1611,1817,2255,2322,2300,2408,2430,2496,2500,2520,2596,2588,2569,2613,2601,2698,2704,2703,2732,2979,2927,2784,2863,2762,3015,2719,2901,2782,3040,2770,2758,2804,2710,2792,2926,2776,3008,2841,2742,2777,2994,2708,2731,2810,2778,2821,2917,2761,3019,3020,2803,3002,3037,4125,2921,2886,3529,3310,4926,4437,3032,4332,4345,4363,4432,5071,5072,4952,5166,5058,5035,5084,4968,5331,4957,5330,5066,5067,5036,5059,5037,5040,6736,5871,6357,5543,7680,8097);
+		$test = array(39,43,23,40,77,2707,147,433,424,592,1082,1205,1206,2706,1114,1138,1139,1134,1126,1123,1472,1611,1817,2255,2322,2300,2408,2430,2496,2500,2520,2596,2588,2569,2613,2601,2698,2704,2703,2732,2979,2927,2784,2863,2762,3015,2719,2901,2782,3040,2770,2758,2804,2710,2792,2926,2776,3008,2841,2742,2777,2994,2708,2731,2810,2778,2821,2917,2761,3019,3020,2803,3002,3037,4125,2921,2886,3529,3310,4926,4437,3032,4332,4345,4363,4432,5071,5072,4952,5166,5058,5035,5084,4968,5331,4957,5330,5066,5067,5036,5059,5037,5040,6736,5871,6357,5543,7680,8097);
 		start($j++, 'Lost', $holoHave, $test);
 		foreach ($test as $cur) { if (in_array($cur, $holoHave, true)) {/*imgHN($cur);*/} else {imgH($cur);} }
 		finish();
@@ -608,8 +608,8 @@ if (isset($_GET['holo']))
 		finish();
 		
 		$test = array(1,72,321,468,2936,434,588,863,985,1918,2595,3222,3009,3828,583,3063,672,3,6,15,16,235,83,215,111,220,144,345,324,309,342,404,368,411,622,2958,585,610,2957,494,927,2966,968,975,3843,3243,3228,3263,566,941,1063,565,590,862,865,723,1055,1068,791,637,1072,1233,1773,1775,1215,1405,1683,1185,1440,1244,1500,1549,1716,1730,1779,1230,1784,1792,1805,1151,1837,1107,1156,1310,3091,1574,1464,1520,1573,3054,2493,2399,2704,2066,2721,3071,2133,3116,2211,2615,2602,3630,1964,2328,2329,3604,3573,2737,3087,3578,2876,3486,3351,3394,2935,2693,2487,2392,2603,1987,3470,3365,3611,2173,2374,2458,2927,2087,3455,3645,3646,3696,3691,3683,3817,3657,3807,3714,3715,3820);
-		start($j++, '1 of each type (ultra rare)', $have, $test);
-		foreach ($test as $cur) { if ($cur == '<br>') { print('<br>'); } else if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+		start($j++, '1 of each type (ultra rare)', array(), $test);
+		foreach ($test as $cur) { if ($cur == '<br>') { print('<br>'); } else if (in_array($cur, array(), true)) {imgN($cur);} else {img($cur);} }
 		finish();
 		
 		
@@ -673,8 +673,8 @@ if (isset($_GET['holo']))
 		'<br>',
 		13337, // mirage
 		);
-		start($j++, '1 of each type for acetone', $holoHave, $test);
-		foreach ($test as $cur) { if ($cur == '<br>') { print('<br>'); } else if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+		start($j++, '1 of each type for acetone', array(), $test);
+		foreach ($test as $cur) { if ($cur == '<br>') { print('<br>'); } else if (in_array($cur, array(), true)) {imgHN($cur);} else {imgH($cur);} }
 		finish();
 		
 		
@@ -813,8 +813,8 @@ if (isset($_GET['holo']))
 		// 2615,'<br>', // confetti
 		3646,3683,3817,3807,3714,3715,3820,'<br>', // sparkle 2
 		);
-		start($j++, '1 of each type for acetone (ultra rare)', $have, $test);
-		foreach ($test as $cur) { if ($cur == '<br>') { print($cur); } else if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+		start($j++, '1 of each type for acetone (ultra rare)', array(), $test);
+		foreach ($test as $cur) { if ($cur == '<br>') { print($cur); } else if (in_array($cur, array(), true)) {imgN($cur);} else {img($cur);} }
 		finish();
 		
 		return;
@@ -1010,6 +1010,57 @@ else if (isset($_GET['col']))
 	start($j++, 'Collection', $have, $have);
 	foreach ($have as $cur) { imgN($cur); }
 	finish();
+}
+else if (isset($_GET['allall']))
+{
+	require 'BestTracker_HoloHave.php';
+	require 'BestTracker_WorldsHave.php';
+	
+	require 'BestTracker_All.php';
+	require 'BestTracker_Holo_All.php';
+	require 'BestTracker_Worlds_All.php';
+	
+	$name = 'All Cards (TOTAL)';
+	$visible = false;
+	$ID = 3;
+	
+	$amount = countN($all) + countN($holoAll) + countN($worldsAll);
+	$haveAmount = countHave($all, $have) + countHave($holoAll, $holoHave) + countHave($worldsAll, $worldsHave);
+	
+	if ($amount != 0)
+		$percent = round($haveAmount / $amount * 100, 2);
+	else
+		$percent = 0;
+	
+	if ($percent == 100)
+		$barClass = 'success';
+	else if ($percent >= 50)
+		$barClass = 'info';
+	else if ($percent >= 25)
+		$barClass = 'warning';
+	else
+		$barClass = 'danger';
+	
+	// progress-bar-animated
+	
+	$onclick = $visible ? '' : 'onclick="toggleSection(this, '.$ID.')"';
+	
+	print('<div id="header-'.$ID.'" class="center" '.$onclick.'>');
+	
+	print('<h1>'.$name.'</h1>');
+	print('<h2>'.$haveAmount.'/'.$amount.' ('.$percent.'%)</h2>');
+	
+	print('
+	<div class="progress">
+		<div class="progress-bar bg-'.$barClass.' progress-bar-striped" role="progressbar" aria-valuenow="'.$percent.'" aria-valuemin="0" aria-valuemax="100" style="width:'.$percent.'%">
+			'.$percent.'%
+		</div>
+	</div>
+	');
+	
+	$class = $visible ? 'center' : 'center hidden';
+	
+	print('</div><div id="container-'.$ID.'" class="'.$class.'">');
 }
 else if (isset($_GET['random']))
 {

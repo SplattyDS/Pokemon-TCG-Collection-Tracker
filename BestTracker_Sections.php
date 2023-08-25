@@ -183,31 +183,35 @@ start($j++, 'Full Art Trainer (BW & XY)', $have, $Full_Art_Trainer_BW_XY);
 foreach ($Full_Art_Trainer_BW_XY as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Full Art Trainer (BW & XY - Plasma)', $have, $Full_Art_Trainer_BW_XY_Plasma);
+foreach ($Full_Art_Trainer_BW_XY_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Full Art Trainer (Evolutions)', $have, $Full_Art_Trainer_Evolutions);
 foreach ($Full_Art_Trainer_Evolutions as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Full Art Pokémon (BWXY - Textured)', $have, $Full_Art_Pokemon_BWXY_Textured);
+start($j++, 'Full Art Pokémon (BW & XY - Textured)', $have, $Full_Art_Pokemon_BWXY_Textured);
 foreach ($Full_Art_Pokemon_BWXY_Textured as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Full Art Pokémon (BWXY - Radiant)', $have, $Full_Art_Pokemon_BWXY_Radiant);
+start($j++, 'Full Art Pokémon (BW & XY - Radiant)', $have, $Full_Art_Pokemon_BWXY_Radiant);
 foreach ($Full_Art_Pokemon_BWXY_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Full Art Pokémon (BWXY - Plasma)', $have, $Full_Art_Pokemon_BWXY_Plasma);
+start($j++, 'Full Art Pokémon (BW & XY - Plasma)', $have, $Full_Art_Pokemon_BWXY_Plasma);
 foreach ($Full_Art_Pokemon_BWXY_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Full Art Pokémon (BWXY - Legendary)', $have, $Full_Art_Pokemon_BWXY_Legendary);
+start($j++, 'Full Art Pokémon (BW & XY - Legendary)', $have, $Full_Art_Pokemon_BWXY_Legendary);
 foreach ($Full_Art_Pokemon_BWXY_Legendary as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Full Art Pokémon (BWXY - Mythical)', $have, $Full_Art_Pokemon_BWXY_Mythical);
+start($j++, 'Full Art Pokémon (BW & XY - Mythical)', $have, $Full_Art_Pokemon_BWXY_Mythical);
 foreach ($Full_Art_Pokemon_BWXY_Mythical as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Full Art Pokémon (BWXY - Other)', $have, $Full_Art_Pokemon_BWXY_Other);
+start($j++, 'Full Art Pokémon (BW & XY - Other)', $have, $Full_Art_Pokemon_BWXY_Other);
 foreach ($Full_Art_Pokemon_BWXY_Other as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
@@ -465,6 +469,10 @@ finish();
 
 start($j++, 'Special Art Pokémon (SWSH)', $have, $Special_Art_Pokemon_SWSH);
 foreach ($Special_Art_Pokemon_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Special Art Pokémon (SWSH - Forest)', $have, $Special_Art_Pokemon_SWSH_Forest);
+foreach ($Special_Art_Pokemon_SWSH_Forest as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'V Special Art', $have, $V_Special_Art);

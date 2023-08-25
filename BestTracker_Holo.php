@@ -555,6 +555,10 @@ start($j++, 'SWSH Series - Reverse Line Holo', $holoHave, $SWSH_REVERSE_LINE_HOL
 foreach ($SWSH_REVERSE_LINE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'SWSH Series - Reverse Pixel Cosmos Holo', $holoHave, $SWSH_REVERSE_PIXEL_COSMOS_HOLO);
+foreach ($SWSH_REVERSE_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'SV Series - Mirage Holo', $holoHave, $SV_MIRAGE_HOLO);
 foreach ($SV_MIRAGE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

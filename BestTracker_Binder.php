@@ -133,6 +133,17 @@ function AddCards(&$binder, $cards)
 	$binder = array_merge($binder, $cards);
 }
 
+function AddCards9(&$binder, $cards)
+{
+	for ($i = 0; $i < count($cards); $i++)
+	{
+		array_push($binder, $cards[$i]);
+		
+		if ($i % 3 == 2)
+			array_push($binder, -1);
+	}
+}
+
 function AddV_Union(&$binder, $cards)
 {
 	Align($cards, 8);
@@ -418,6 +429,8 @@ AddCards($binder3, $Radiant_Collection_BW);
 AddCards($binder3, $Radiant_Collection_XY);
 AlignPage($binder3);
 AddCards($binder3, $Full_Art_Trainer_BW_XY);
+AlignPage($binder3);
+AddCards($binder3, $Full_Art_Trainer_BW_XY_Plasma);
 AlignRow($binder3);
 AddCards($binder3, array(-1,-1,-1,-1));
 AddCards($binder3, $Full_Art_Trainer_Evolutions);
@@ -485,7 +498,7 @@ AddCards($binder5, $GX_Special_Art);
 AlignPage($binder5);
 AddCards($binder5, $TT_GX_Special_Art);
 AddCards($binder5, $TT_UB_GX_Special_Art);
-AlignPage($binder5);
+AddCards($binder5, array(-1,-1,-1));
 AddCards($binder5, $Character_Art_SM);
 AddCards($binder5, $Gold_Item_SM);
 AddCards($binder5, $Gold_Stadium_SM);
@@ -533,11 +546,11 @@ AlignPage($binder8);
 AddCards($binder8, $Special_Art_Trainer_SWSH);
 AlignPage($binder8);
 AddCards($binder8, $Special_Art_Pokemon_SWSH);
-AlignRow($binder8);
+AlignPage($binder8);
+AddCards9($binder8, $Special_Art_Pokemon_SWSH_Forest);
+AlignPage($binder8);
 AddCards($binder8, $V_Special_Art);
-AlignPage($binder8);
 AddCards($binder8, $VMAX_Special_Art);
-AlignPage($binder8);
 AddCards($binder8, $VSTAR_Special_Art);
 AlignPage($binder8);
 AddCards($binder8, $Character_Art_SWSH);

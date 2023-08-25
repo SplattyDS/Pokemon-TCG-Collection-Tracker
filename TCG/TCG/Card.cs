@@ -17,7 +17,7 @@
 
 		public bool IsEqualTo(CardBase card)
 		{
-			return set == card.set && setNum == card.setNum;
+			return set == card.set && setNum == card.setNum && set != Sets.Unnumbered_Promo;
 		}
 	}
 
@@ -58,6 +58,11 @@
 			this.have = have;
 
 			id = curID++;
+		}
+
+		public bool IsEqualTo(HoloCard card)
+		{
+			return set == card.set && setNum == card.setNum && rarity == card.rarity && set != Sets.Unnumbered_Promo;
 		}
 	}
 

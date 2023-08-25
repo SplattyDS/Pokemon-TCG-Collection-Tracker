@@ -188,6 +188,7 @@
 			new Section(HoloRarity.SWSH_REVERSE_MIRROR_HOLO, "SWSH Series - Reverse Mirror Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SWSH_REVERSE_PLAIN_HOLO, "SWSH Series - Reverse Plain Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SWSH_REVERSE_LINE_HOLO, "SWSH Series - Reverse Line Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_REVERSE_PIXEL_COSMOS_HOLO, "SWSH Series - Reverse Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			// SV Series
 			new Section(HoloRarity.SV_MIRAGE_HOLO, "SV Series - Mirage Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),

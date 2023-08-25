@@ -9,7 +9,11 @@ namespace TCG
 	{
 		static void Main(string[] args)
 		{
-			Card[] duplicates = Cards.HasDuplicates();
+			CardBase[] duplicates = Cards.HasDuplicates();
+			if (duplicates != null)
+				throw new Exception();
+
+			duplicates = HoloCards.HasDuplicates();
 			if (duplicates != null)
 				throw new Exception();
 

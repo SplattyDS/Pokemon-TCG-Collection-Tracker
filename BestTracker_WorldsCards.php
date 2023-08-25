@@ -91,6 +91,8 @@ $Radiant_Collection_XY = array();
 
 $Full_Art_Trainer_BW_XY = array();
 
+$Full_Art_Trainer_BW_XY_Plasma = array();
+
 $Full_Art_Trainer_Evolutions = array();
 
 $Full_Art_Pokemon_BWXY_Textured = array();
@@ -232,6 +234,8 @@ $VMAX_Shiny_Full_Art = array();
 $Special_Art_Trainer_SWSH = array();
 
 $Special_Art_Pokemon_SWSH = array();
+
+$Special_Art_Pokemon_SWSH_Forest = array();
 
 $V_Special_Art = array();
 
