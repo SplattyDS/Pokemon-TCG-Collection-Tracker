@@ -20,6 +20,7 @@
 			new Section(HoloRarity.NEO_PIXEL_COSMOS_HOLO, "Neo - Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.NEO_PIXEL_COSMOS_HOLO_DARK, "Neo - Pixel Cosmos Holo (Dark)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.NEO_PIXEL_COSMOS_HOLO_LIGHT, "Neo - Pixel Cosmos Holo (Light)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.NEO_SMOOTH_COSMOS_HOLO_LIGHT, "Neo - Smooth Cosmos Holo (Light)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.NEO_REVERSE_PIXEL_COSMOS_HOLO, "Neo - Reverse Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			
@@ -42,6 +43,7 @@
 			new Section(HoloRarity.EX_PIXEL_COSMOS_HOLO_DARK, "EX Series - Pixel Cosmos Holo (Dark)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.EX_PIXEL_COSMOS_HOLO_VICTORY_MEDAL, "EX Series - Pixel Cosmos Holo Victory Medal", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.EX_PIXEL_COSMOS_HOLO_DELTA, "EX Series - Pixel Cosmos Holo Delta", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.EX_SMOOTH_COSMOS_HOLO_DELTA, "EX Series - Smooth Cosmos Holo Delta", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.EX_VERTICAL_PLAIN_HOLO_DELTA, "EX Series - Vertical Plain Holo Delta", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.EX_PIXEL_WAVE_HOLO_ENERGY, "EX Series - Pixel Wave Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
@@ -74,6 +76,7 @@
 			// DPPt series
 			new Section(HoloRarity.DP_PIXEL_COSMOS_HOLO, "DPPt Series - Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.DP_PIXEL_COSMOS_HOLO_SP, "DPPt Series - Pixel Cosmos Holo (SP)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.DP_SMOOTH_COSMOS_HOLO_SP, "DPPt Series - Smooth Cosmos Holo (SP)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.DP_PIXEL_COSMOS_HOLO_VICTORY_MEDAL, "DPPt Series - Pixel Cosmos Holo Victory Medal", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.DP_RUMBLE_PIXEL_COSMOS_HOLO, "DPPt Series - Rumble Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.DP_RUMBLE_PIXEL_COSMOS_HOLO_LOGO, "DPPt Series - Rumble Pixel Cosmos Holo Logo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
@@ -94,6 +97,7 @@
 
 			// HGSS series
 			new Section(HoloRarity.HGSS_PIXEL_COSMOS_HOLO, "HGSS Series - Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.HGSS_PIXEL_COSMOS_HOLO_PW, "HGSS Series - Pixel Cosmos Holo PW", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.HGSS_PIXEL_COSMOS_HOLO_VICTORY_MEDAL, "HGSS Series - Pixel Cosmos Holo Victory Medal", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.HGSS_CRACKED_ICE_HOLO, "HGSS Series - Cracked Ice Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
@@ -194,11 +198,14 @@
 			new Section(HoloRarity.SV_MIRAGE_HOLO, "SV Series - Mirage Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_SMOOTH_COSMOS_HOLO, "SV Series - Smooth Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_PIXEL_COSMOS_HOLO, "SV Series - Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SV_CONFETTI_HOLO, "SV Series - Confetti Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_LINE_HOLO, "SV Series - Line Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY, "SV Series - Pixel Cosmos Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.SV_REVERSE_ROCKY_HOLO, "SV Series - Reverse Rocky Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.SV_REVERSE_MIRAGE_ROCKY_HOLO, "SV Series - Reverse Mirage Rocky Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 		};
 
 		public static Section[] Get()

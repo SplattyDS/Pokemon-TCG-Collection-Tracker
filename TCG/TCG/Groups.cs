@@ -12,7 +12,7 @@ namespace TCG
 		{
 			new Group // Legendary Birds Secret Rares
 			(
-				Rarity.Secret,
+				Rarity.Secret_DP_Gold,
 				Rules.GROUP_CARDS,
 				Cards.Find(Sets.Supreme_Victors, 148),
 				Cards.Find(Sets.Supreme_Victors, 150),

@@ -196,6 +196,7 @@
 		Obsidian_Flames,
 		SV_151,
 		SV_Promo,
+		Mc_Donalds_2023,
 
 		Length,
 	}

@@ -5,20 +5,24 @@
 		private static Section[] TheSections =
 		{
 			// all
-			new Section(Rarity.Secret, "Secret Rare", SortMode.SORT_BY_SET),
 			new Section(Rarity.Ancient_Mew, "Ancient Mew", SortMode.NO_SORT),
 			new Section(Rarity.Full_Art_Costume_Pikachu, "Full Art Custume Pikachu", SortMode.SORT_BY_SET),
 			new Section(Rarity.Gold_Pokemon, "Gold Pokémon", SortMode.SORT_BY_SET),
 			new Section(Rarity.Metal, "Metal Cards", SortMode.SORT_BY_SET),
 			// new Section(Rarity.Stamped, "Stamped Cards (0 priority)", SortMode.SORT_BY_SET),
 			
+			// os
+			new Section(Rarity.Secret_OS, "Secret Rare (OS)", SortMode.SORT_BY_SET),
+
 			// neo
 			new Section(Rarity.Shining_Neo, "Shining (Neo)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 
 			// e series
+			new Section(Rarity.Secret_e_Series, "Secret Rare (e Series)", SortMode.SORT_BY_SET),
 			new Section(Rarity.Crystal_Type, "Crystal Type", SortMode.NO_SORT),
 
 			// ex
+			new Section(Rarity.Secret_EX, "Secret Rare (EX)", SortMode.SORT_BY_SET),
 			new Section(Rarity.ex, "ex", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.Delta_Species_ex, "δ ex", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.Rockets_ex, "Rockets ex", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
@@ -31,6 +35,8 @@
 			new Section(Rarity.Holo_Energy_EX_Power_Keepers, "Holo Energy (EX Power Keepers)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 
 			// DP
+			new Section(Rarity.Secret_DP, "Secret Rare (DP)", SortMode.SORT_BY_SET),
+			new Section(Rarity.Secret_DP_Gold, "Secret Rare (DP - Gold)", SortMode.SORT_BY_SET),
 			new Section(Rarity.LV_X, "LV.X", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.LV_X_SP, "LV.X (SP)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.LV_X_Arceus, "LV.X (Arceus)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
@@ -39,6 +45,7 @@
 			new Section(Rarity.Arceus, "Arceus Subset", SortMode.SORT_BY_SET),
 
 			// HGSS
+			new Section(Rarity.Secret_HGSS, "Secret Rare (HGSS)", SortMode.SORT_BY_SET),
 			new Section(Rarity.Prime, "Prime", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.LEGEND, "LEGEND", SortMode.NO_SORT),
 			new Section(Rarity.Alph_Lithograph, "Alph Litograph", SortMode.SORT_BY_SET),
@@ -46,6 +53,10 @@
 			new Section(Rarity.Shiny_Legend_Promo, "Shiny Legend Promo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 
 			// BW & XY
+			new Section(Rarity.Secret_BWXY, "Secret Rare (BW & XY)", SortMode.SORT_BY_SET),
+			new Section(Rarity.Secret_BWXY_Shiny, "Secret Rare (BW & XY - Shiny)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(Rarity.Secret_BWXY_Gold, "Secret Rare (BW & XY - Gold)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(Rarity.Secret_Evolutions, "Secret Rare (Evolutions)", SortMode.SORT_BY_SET),
 			new Section(Rarity.EX, "EX", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.EX_Plasma, "EX (Plasma)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.EX_Radiant, "EX (Radiant)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
@@ -129,6 +140,7 @@
 			new Section(Rarity.Amazing_Rare, "Amazing Rare", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.Radiant, "Radiant", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.Seal_Stone, "Seal Stone", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
+			new Section(Rarity.Seal_Stone_Non_Holo, "Seal Stone (Non Holo)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(Rarity.Shiny_Vault_SWSH, "Shiny Vault (SWSH)", SortMode.SORT_BY_SET),
 			new Section(Rarity.Classic_Collection, "Classic Collection", SortMode.NO_SORT),
 			new Section(Rarity.Full_Art_Trainer_SWSH, "Full Art Trainer (SWSH)", SortMode.SORT_BY_NAME),

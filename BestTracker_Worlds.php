@@ -6,6 +6,8 @@
 
 
 
+
+
 start($j++, 'ex', $worldsHave, $ex);
 foreach ($ex as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
@@ -28,6 +30,8 @@ finish();
 
 
 
+
+
 start($j++, 'LV.X', $worldsHave, $LV_X);
 foreach ($LV_X as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
@@ -40,6 +44,7 @@ finish();
 
 
 
+
 start($j++, 'Prime', $worldsHave, $Prime);
 foreach ($Prime as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
@@ -47,6 +52,10 @@ finish();
 start($j++, 'LEGEND', $worldsHave, $LEGEND);
 foreach ($LEGEND as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
+
+
+
+
 
 
 
@@ -182,6 +191,7 @@ finish();
 start($j++, 'VSTAR', $worldsHave, $VSTAR);
 foreach ($VSTAR as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();
+
 
 
 

@@ -13,9 +13,11 @@ namespace TCG
 			if (duplicates != null)
 				throw new Exception();
 
-			duplicates = HoloCards.HasDuplicates();
+			/*duplicates = HoloCards.HasDuplicates();
 			if (duplicates != null)
-				throw new Exception();
+				throw new Exception();*/
+
+			AcetoneGroups.Init();
 
 			WriteCards();
 			ModifyCards();
@@ -45,6 +47,8 @@ namespace TCG
 			WriteWorldsPokedex();
 			WriteWorldsAll();
 			WriteWorldsHave();
+
+			WriteAcetone();
 
 			// PrintRarities();
 		}
@@ -476,6 +480,32 @@ namespace TCG
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Worlds_All.php", code);
 		}
 
+		static void WriteAcetone()
+		{
+			List<string> code = new List<string>();
+			IEnumerable<AcetoneGroup> acetoneGroups = AcetoneGroups.Get();
+
+			code.Add("<?php");
+
+			code.Add(
+				"function acetoneImg($ID, $color)\r\n" +
+				"{\r\n" +
+				"\tprint('<img class=\"card-img\" src=\"images/best_tracker/cards/'.idToName($ID).'.png\" style=\"background-color: '.$color.'; border: 3px solid '.$color.';\">');\r\n" +
+				"}\r\n\r\n" +
+				"function acetoneImgH($ID, $color)\r\n" +
+				"{\r\n" +
+				"\tprint('<img class=\"card-img\" src=\"images/best_tracker/holo/'.idToHoloName($ID).'.png\" style=\"background-color: '.$color.'; border: 3px solid '.$color.';\">');\r\n" +
+				"}\r\n"
+			);
+
+			foreach (AcetoneGroup group in acetoneGroups)
+				code.Add(CodeFromAcetoneGroup(group));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Acetone.php", code);
+		}
+
 		static string CodeFromCards(Section section)
 		{
 			IEnumerable<Card> cards = CardsFromSection(section);
@@ -721,6 +751,20 @@ namespace TCG
 				"start($j++, '" + pokedex.ToString().Replace('_', ' ') + "', $have, $" + pokedex.ToString() + ");\r\n" +
 				"foreach ($" + pokedex.ToString() + " as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }\r\n" +
 				"finish();\r\n";
+		}
+
+		static string CodeFromAcetoneGroup(AcetoneGroup group)
+		{
+			string[] colors = new string[(int)AcetoneStatus.NUM_STATUSES] { "red", "orange", "lime", "deepskyblue", "purple" };
+			string cardArr = string.Join(',', group.cards.Select(c => "array(" + c.Item1.ToString() + ",'" + (c.Item1 is Card ? "u" : "h") + "', '" + colors[(int)c.Item2] + "')"));
+
+
+			return
+				"$temp = array(" + cardArr + ");\r\n" +
+				"print('<div id=\"container - '.$j++.'\" class=\"center\">');\r\n" +
+				"print('<h1>" + group.holoName + "</h1>');\r\n" +
+				"foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }\r\n" +
+				"print('</div>');\r\n";
 		}
 
 		static IEnumerable<Card> GetMyCollection()

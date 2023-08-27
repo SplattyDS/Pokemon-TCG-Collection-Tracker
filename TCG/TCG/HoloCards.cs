@@ -2715,9 +2715,9 @@ namespace TCG
 			new HoloCard("Multi Energy", Pokedex.NVT, HoloRarity.EX_PLAIN_HOLO_PK, Types.Special_Energy, Sets.EX_Power_Keepers, 89),
 			new HoloCard("Cyclone Energy", Pokedex.NVT, HoloRarity.EX_PLAIN_HOLO_PK, Types.Special_Energy, Sets.EX_Power_Keepers, 90),
 			new HoloCard("Warp Energy", Pokedex.NVT, HoloRarity.EX_PLAIN_HOLO_PK, Types.Special_Energy, Sets.EX_Power_Keepers, 91),
-			new HoloCard("Mimikyu δ", Pokedex.Mimikyu, HoloRarity.EX_PIXEL_COSMOS_HOLO_DELTA, Types.Water, Sets.SWSH_Promo, 136, true),
-			new HoloCard("Light Toxtricity", Pokedex.Toxtricity, HoloRarity.NEO_PIXEL_COSMOS_HOLO, Types.Lightning, Sets.SWSH_Promo, 137, true),
-			new HoloCard("Hydreigon C", Pokedex.Hydreigon, HoloRarity.DP_PIXEL_COSMOS_HOLO_SP, Types.Darkness, Sets.SWSH_Promo, 138, true),
+			new HoloCard("Mimikyu δ", Pokedex.Mimikyu, HoloRarity.EX_SMOOTH_COSMOS_HOLO_DELTA, Types.Water, Sets.SWSH_Promo, 136, true),
+			new HoloCard("Light Toxtricity", Pokedex.Toxtricity, HoloRarity.NEO_SMOOTH_COSMOS_HOLO_LIGHT, Types.Lightning, Sets.SWSH_Promo, 137, true),
+			new HoloCard("Hydreigon C", Pokedex.Hydreigon, HoloRarity.DP_SMOOTH_COSMOS_HOLO_SP, Types.Darkness, Sets.SWSH_Promo, 138, true),
 			new HoloCard("Dialga", Pokedex.Dialga, HoloRarity.DP_PIXEL_COSMOS_HOLO, Types.Metal, Sets.Diamond_Pearl, 1),
 			new HoloCard("Dusknoir", Pokedex.Dusknoir, HoloRarity.DP_PIXEL_COSMOS_HOLO, Types.Psychic, Sets.Diamond_Pearl, 2),
 			new HoloCard("Electivire", Pokedex.Electivire, HoloRarity.DP_PIXEL_COSMOS_HOLO, Types.Lightning, Sets.Diamond_Pearl, 3),
@@ -13974,6 +13974,15 @@ namespace TCG
 			new HoloCard("Paldean Wooper", Pokedex.Paldean_Wooper, HoloRarity.SV_SMOOTH_COSMOS_HOLO, Types.Darkness, Sets.SV_Promo, 41),
 			new HoloCard("Houndstone", Pokedex.Houndstone, HoloRarity.SV_SMOOTH_COSMOS_HOLO, Types.Psychic, Sets.SV_Promo, 42),
 			new HoloCard("Eevee", Pokedex.Eevee, HoloRarity.SV_SMOOTH_COSMOS_HOLO, Types.Colorless, Sets.SV_Promo, 43),
+			new HoloCard("Espeon", Pokedex.Espeon, HoloRarity.SV_REVERSE_MIRAGE_ROCKY_HOLO, Types.Psychic, Sets.Obsidian_Flames, 86),
+			new HoloCard("Umbreon", Pokedex.Umbreon, HoloRarity.SV_REVERSE_MIRAGE_ROCKY_HOLO, Types.Darkness, Sets.Obsidian_Flames, 130),
+			new HoloCard("Sprigatito", Pokedex.Sprigatito, HoloRarity.SV_CONFETTI_HOLO, Types.Grass, Sets.Mc_Donalds_2023, 1),
+			new HoloCard("Fuecoco", Pokedex.Fuecoco, HoloRarity.SV_CONFETTI_HOLO, Types.Fire, Sets.Mc_Donalds_2023, 2),
+			new HoloCard("Quaxly", Pokedex.Quaxly, HoloRarity.SV_CONFETTI_HOLO, Types.Water, Sets.Mc_Donalds_2023, 3),
+			new HoloCard("Cetitan", Pokedex.Cetitan, HoloRarity.SV_CONFETTI_HOLO, Types.Water, Sets.Mc_Donalds_2023, 5),
+			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.SV_CONFETTI_HOLO, Types.Lightning, Sets.Mc_Donalds_2023, 6),
+			new HoloCard("Klawf", Pokedex.Klawf, HoloRarity.SV_CONFETTI_HOLO, Types.Fighting, Sets.Mc_Donalds_2023, 11),
+			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.HGSS_PIXEL_COSMOS_HOLO_PW, Types.Lightning, Sets.Unnumbered_Promo, -1),
 		};
 		
 		// the DELETED play labs promos might get reasonably obtainable in leagues soon
@@ -13986,9 +13995,9 @@ namespace TCG
 			return TheCards.Where(c => c.rarity != HoloRarity.DELETED);
 		}
 
-		public static HoloCard Find(Sets set, double setNum)
+		public static HoloCard Find(Sets set, double setNum, HoloRarity rarity)
 		{
-			return TheCards.Where(c => c.set == set && c.setNum == setNum).First();
+			return TheCards.Where(c => c.set == set && c.setNum == setNum && c.rarity == rarity).First();
 		}
 
 		public static HoloCard[] HasDuplicates()

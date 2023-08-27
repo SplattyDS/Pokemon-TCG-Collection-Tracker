@@ -1,6 +1,4 @@
 <?php
-$Secret = array();
-
 $Ancient_Mew = array();
 
 $Full_Art_Costume_Pikachu = array();
@@ -9,9 +7,15 @@ $Gold_Pokemon = array();
 
 $Metal = array();
 
+$Secret_OS = array();
+
 $Shining_Neo = array();
 
+$Secret_e_Series = array();
+
 $Crystal_Type = array();
+
+$Secret_EX = array();
 
 $ex = array(15,4,12,19,22,29,2,18,21,28,8,7,26,17,27,3,32,31,36,10,1,6,9,16,23,25,13,11,5);
 
@@ -33,6 +37,10 @@ $Holo_Energy_EX_Holon_Phantoms = array();
 
 $Holo_Energy_EX_Power_Keepers = array();
 
+$Secret_DP = array();
+
+$Secret_DP_Gold = array();
+
 $LV_X = array(39,38,34,49,41,47,50,37);
 
 $LV_X_SP = array(40,43,45,48,42,46,44);
@@ -45,6 +53,8 @@ $Rotom = array();
 
 $Arceus = array();
 
+$Secret_HGSS = array();
+
 $Prime = array(67,52,54,53,51,59,55,56);
 
 $LEGEND = array(57,58,60,61);
@@ -54,6 +64,14 @@ $Alph_Lithograph = array();
 $Shiny_Legend = array();
 
 $Shiny_Legend_Promo = array();
+
+$Secret_BWXY = array();
+
+$Secret_BWXY_Shiny = array();
+
+$Secret_BWXY_Gold = array();
+
+$Secret_Evolutions = array();
 
 $EX = array(91,114,106,71,74,78,109,95,66,77,63,64,65,69,96,113,70,87,140,121,127,100,104,102,62,73,124,90,110,122,97,84,76,125,94,103,107,111,117,120,126,119,68);
 
@@ -212,6 +230,8 @@ $Amazing_Rare = array();
 $Radiant = array();
 
 $Seal_Stone = array();
+
+$Seal_Stone_Non_Holo = array();
 
 $Shiny_Vault_SWSH = array();
 

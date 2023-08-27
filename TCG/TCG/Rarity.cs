@@ -18,20 +18,24 @@
 		Unknown,
 
 		// all
-		Secret,
 		Ancient_Mew,
 		Full_Art_Costume_Pikachu,
 		Gold_Pokemon,
 		Metal,
 		Stamped,
 
+		// os
+		Secret_OS,
+
 		// neo
 		Shining_Neo,
 
 		// e series
+		Secret_e_Series,
 		Crystal_Type,
 
 		// ex
+		Secret_EX,
 		ex,
 		Delta_Species_ex,
 		Rockets_ex,
@@ -44,6 +48,8 @@
 		Holo_Energy_EX_Power_Keepers,
 
 		// DP
+		Secret_DP,
+		Secret_DP_Gold,
 		LV_X,
 		LV_X_SP,
 		LV_X_Arceus,
@@ -52,6 +58,7 @@
 		Arceus,
 
 		// HGSS
+		Secret_HGSS,
 		Prime,
 		LEGEND,
 		Alph_Lithograph,
@@ -59,6 +66,10 @@
 		Shiny_Legend_Promo,
 
 		// BW & XY
+		Secret_BWXY,
+		Secret_BWXY_Shiny,
+		Secret_BWXY_Gold,
+		Secret_Evolutions,
 		EX,
 		EX_Plasma,
 		EX_Radiant,
@@ -142,6 +153,7 @@
 		Amazing_Rare,
 		Radiant,
 		Seal_Stone,
+		Seal_Stone_Non_Holo,
 		Shiny_Vault_SWSH,
 		Classic_Collection,
 		Full_Art_Trainer_SWSH,

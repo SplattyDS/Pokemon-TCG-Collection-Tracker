@@ -893,8 +893,8 @@ else if (isset($_GET['extremely_rare']))
 		'BW_1','BW_2','BW_3','BW_4','<br>',
 		'XY_1','XY_2','XY_3','XY_4','<br>',
 		'SM_1','SM_2','SM_3','SM_4','<br>',
-		'SWSH_1','SWSH_2','SWSH_3','SWSH_4','<br>',
-		'SV_1','SV_2','SV_3','<br>',
+		'SWSH_1','<br>',
+		'SV_1','SV_2','SV_3','SV_4','<br>',
 		'M_Sachiko_EX','<br>',
 		'Ishihara_GX','Ishihara_Pikachu_GX','<br>',
 		'J_Balvin_V','Katy_Perry_V','Post_Malone_V','<br>',
@@ -903,6 +903,10 @@ else if (isset($_GET['extremely_rare']))
 	start($j++, 'Extremely Rare Cards', array(), $extreme_rares, true);
 	foreach ($extreme_rares as $cur) { imgER($cur, true); }
 	finish();
+}
+else if (isset($_GET['acetone']))
+{
+	require 'BestTracker_Acetone.php';
 }
 else if (isset($_GET['test']))
 {
@@ -945,11 +949,6 @@ else if (isset($_GET['test']))
 	start($j++, 'Lost', $have, $test);
 	foreach ($test as $cur) { if (in_array($cur, $have, true)) {/*imgN($cur);*/} else {img($cur);} }
 	finish();
-	
-	// $test = array(53);
-	// start($j++, 'Expensive (€100+)', $have, $test);
-	// foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	// finish();
 	
 	// $have = array_merge($have, $test);
 	

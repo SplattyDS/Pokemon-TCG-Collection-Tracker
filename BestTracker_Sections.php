@@ -1,8 +1,4 @@
 <?php
-start($j++, 'Secret Rare', $have, $Secret);
-foreach ($Secret as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
 start($j++, 'Ancient Mew', $have, $Ancient_Mew);
 foreach ($Ancient_Mew as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -19,12 +15,24 @@ start($j++, 'Metal Cards', $have, $Metal);
 foreach ($Metal as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Secret Rare (OS)', $have, $Secret_OS);
+foreach ($Secret_OS as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Shining (Neo)', $have, $Shining_Neo);
 foreach ($Shining_Neo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Secret Rare (e Series)', $have, $Secret_e_Series);
+foreach ($Secret_e_Series as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Crystal Type', $have, $Crystal_Type);
 foreach ($Crystal_Type as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Secret Rare (EX)', $have, $Secret_EX);
+foreach ($Secret_EX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'ex', $have, $ex);
@@ -67,6 +75,14 @@ start($j++, 'Holo Energy (EX Power Keepers)', $have, $Holo_Energy_EX_Power_Keepe
 foreach ($Holo_Energy_EX_Power_Keepers as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Secret Rare (DP)', $have, $Secret_DP);
+foreach ($Secret_DP as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Secret Rare (DP - Gold)', $have, $Secret_DP_Gold);
+foreach ($Secret_DP_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'LV.X', $have, $LV_X);
 foreach ($LV_X as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -91,6 +107,10 @@ start($j++, 'Arceus Subset', $have, $Arceus);
 foreach ($Arceus as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Secret Rare (HGSS)', $have, $Secret_HGSS);
+foreach ($Secret_HGSS as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Prime', $have, $Prime);
 foreach ($Prime as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -109,6 +129,22 @@ finish();
 
 start($j++, 'Shiny Legend Promo', $have, $Shiny_Legend_Promo);
 foreach ($Shiny_Legend_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Secret Rare (BW & XY)', $have, $Secret_BWXY);
+foreach ($Secret_BWXY as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Secret Rare (BW & XY - Shiny)', $have, $Secret_BWXY_Shiny);
+foreach ($Secret_BWXY_Shiny as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Secret Rare (BW & XY - Gold)', $have, $Secret_BWXY_Gold);
+foreach ($Secret_BWXY_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Secret Rare (Evolutions)', $have, $Secret_Evolutions);
+foreach ($Secret_Evolutions as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'EX', $have, $EX);
@@ -425,6 +461,10 @@ finish();
 
 start($j++, 'Seal Stone', $have, $Seal_Stone);
 foreach ($Seal_Stone as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Seal Stone (Non Holo)', $have, $Seal_Stone_Non_Holo);
+foreach ($Seal_Stone_Non_Holo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Shiny Vault (SWSH)', $have, $Shiny_Vault_SWSH);
