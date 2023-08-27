@@ -527,6 +527,10 @@ start($j++, 'SWSH Series - Sequin Holo', $holoHave, $SWSH_SEQUIN_HOLO);
 foreach ($SWSH_SEQUIN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'SWSH Series - Mirage Holo', $holoHave, $SWSH_MIRAGE_HOLO);
+foreach ($SWSH_MIRAGE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'SWSH Series - Plain Holo Energy', $holoHave, $SWSH_PLAIN_HOLO_ENERGY);
 foreach ($SWSH_PLAIN_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

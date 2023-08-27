@@ -49,6 +49,10 @@ namespace TCG
 					(HoloCards.Find(Sets.Legendary_Collection, 11, HoloRarity.LC_STARLIGHT_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Legendary_Collection, 4, HoloRarity.LC_STARLIGHT_HOLO_DARK), AcetoneStatus.NO_PROGRESS)
 				),
+				new AcetoneGroup("Starlight Holo (Evolutions)",
+					(HoloCards.Find(Sets.Evolutions, 38, HoloRarity.EV_STARLIGHT_HOLO), AcetoneStatus.NO_PROGRESS)
+				),
+				
 				new AcetoneGroup("Pixel Cosmos Holo",
 					(HoloCards.Find(Sets.Base_Set_2, 11, HoloRarity.OS_PIXEL_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Team_Rocket, 11, HoloRarity.OS_PIXEL_COSMOS_HOLO_DARK), AcetoneStatus.NO_PROGRESS),
@@ -113,7 +117,7 @@ namespace TCG
 					(HoloCards.Find(Sets.SWSH_Promo, 138, HoloRarity.DP_SMOOTH_COSMOS_HOLO_SP), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.XY_Promo, 161, HoloRarity.BWXY_SMOOTH_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.XY_Promo, 179, HoloRarity.EV_SMOOTH_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.SM_Promo, 42, HoloRarity.SM_SMOOTH_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.SM_Promo, 42, HoloRarity.SM_SMOOTH_COSMOS_HOLO), AcetoneStatus.CARD_OBTAINED),
 					(HoloCards.Find(Sets.Celestial_Storm, 8, HoloRarity.SM_REVERSE_SMOOTH_COSMOS_BIG_ENERGY_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.SWSH_Promo, 29, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Vivid_Voltage, 130, HoloRarity.SWSH_REVERSE_SMOOTH_COSMOS_ENERGY_BANNER_HOLO), AcetoneStatus.NO_PROGRESS),
@@ -123,10 +127,12 @@ namespace TCG
 					(Cards.Find(Sets.SWSH_Promo, 132, Rarity.Prime), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.SM_Promo, 228, Rarity.Full_Art_Pokemon_SM), AcetoneStatus.NO_PROGRESS)
 				),
+				
 				new AcetoneGroup("Fireworks Holo",
 					(HoloCards.Find(Sets.Legendary_Collection, 99, HoloRarity.LC_REVERSE_FIREWORKS_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Legendary_Collection, 38, HoloRarity.LC_REVERSE_FIREWORKS_HOLO_DARK), AcetoneStatus.NO_PROGRESS)
 				),
+				
 				new AcetoneGroup("Plain Holo (1)",
 					(HoloCards.Find(Sets.Expedition, 148, HoloRarity.E_REVERSE_PLAIN_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.EX_Ruby_Sapphire, 109, HoloRarity.EX_PLAIN_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
@@ -136,15 +142,84 @@ namespace TCG
 					
 					(Cards.Find(Sets.Skyridge, 145.1, Rarity.Crystal_Type), AcetoneStatus.NO_PROGRESS)
 				),
+				new AcetoneGroup("Plain Holo (2)",
+					(HoloCards.Find(Sets.EX_Delta_Species, 63, HoloRarity.EX_PLAIN_HOLO_DS), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.EX_Delta_Species, 71, HoloRarity.EX_PLAIN_HOLO_DS_HOLON), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.EX_Delta_Species, 14, HoloRarity.EX_PLAIN_HOLO_DS_DELTA), AcetoneStatus.NO_PROGRESS)
+				),
+				new AcetoneGroup("Plain Holo (3)",
+					(HoloCards.Find(Sets.EX_Power_Keepers, 68, HoloRarity.EX_PLAIN_HOLO_PK), AcetoneStatus.NO_PROGRESS),
+					
+					(Cards.Find(Sets.EX_Power_Keepers, 108, Rarity.Holo_Energy_EX_Power_Keepers), AcetoneStatus.NO_PROGRESS)
+				),
+				new AcetoneGroup("Plain Holo (4)",
+					(HoloCards.Find(Sets.Legends_Awakened, 106, HoloRarity.DP_REVERSE_PLAIN_HOLO), AcetoneStatus.NO_PROGRESS)
+				),
+				new AcetoneGroup("Plain Holo (5)",
+					(HoloCards.Find(Sets.Celebrations, 14, HoloRarity.SWSH_PLAIN_HOLO), AcetoneStatus.CARD_OBTAINED),
+					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.SWSH_PLAIN_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.SWSH_PLAIN_HOLO_ENERGY_STAR), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Rebel_Clash, 6, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO), AcetoneStatus.CARD_OBTAINED),
+					(HoloCards.Find(Sets.Brilliant_Stars, 150, HoloRarity.SWSH_REVERSE_PLAIN_HOLO), AcetoneStatus.NO_PROGRESS),
+					
+					(Cards.Find(Sets.Celebrations, 5, Rarity.Full_Art_Pokemon_SWSH), AcetoneStatus.CARD_OBTAINED)
+				),
+				new AcetoneGroup("Plain Holo (6)",
+					(HoloCards.Find(Sets.Scarlet_Violet, 80, HoloRarity.SV_REVERSE_ROCKY_HOLO), AcetoneStatus.NO_PROGRESS)
+				),
+				
 				new AcetoneGroup("Vertical Plain Holo", // is this different from mirror?
 					(HoloCards.Find(Sets.EX_Holon_Phantoms, 14, HoloRarity.EX_VERTICAL_PLAIN_HOLO_DELTA), AcetoneStatus.NO_PROGRESS),
 					
 					(Cards.Find(Sets.EX_Dragon_Frontiers, 96, Rarity.Delta_Species_ex), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.EX_Dragon_Frontiers, 101, Rarity.Delta_Species_Gold_Star), AcetoneStatus.NO_PROGRESS)
 				),
+				
+				new AcetoneGroup("Mirror Holo (1)",
+					(HoloCards.Find(Sets.EX_Holon_Phantoms, 58, HoloRarity.EX_MIRROR_HOLO_HP), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.EX_Holon_Phantoms, 44, HoloRarity.EX_MIRROR_HOLO_HP_HOLON), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.EX_Holon_Phantoms, 10, HoloRarity.EX_MIRROR_HOLO_HP_DELTA), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.EX_Crystal_Guardians, 59, HoloRarity.EX_MIRROR_HOLO_CG), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.EX_Crystal_Guardians, 68, HoloRarity.EX_MIRROR_HOLO_CG_DELTA), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.EX_Dragon_Frontiers, 51, HoloRarity.EX_MIRROR_HOLO_DF), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.EX_Dragon_Frontiers, 4, HoloRarity.EX_MIRROR_HOLO_DF_DELTA), AcetoneStatus.CARD_OBTAINED),
+					
+					(Cards.Find(Sets.EX_Holon_Phantoms, 107, Rarity.Holo_Energy_EX_Holon_Phantoms), AcetoneStatus.NO_PROGRESS)
+				),
+				new AcetoneGroup("Mirror Holo (2)",
+					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.DP_MIRROR_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Secret_Wonders, 14, HoloRarity.DP_REVERSE_MIRROR_HOLO), AcetoneStatus.CARD_OBTAINED),
+					(HoloCards.Find(Sets.Arceus, 12, HoloRarity.DP_REVERSE_MIRROR_HOLO_SP), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Call_of_Legends, 95, HoloRarity.HGSS_MIRROR_HOLO_ENERGY_COL), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Call_of_Legends, 50, HoloRarity.HGSS_REVERSE_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Generations, 32, HoloRarity.BWXY_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.BWXY_MIRROR_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Generations, 83, HoloRarity.BWXY_MIRROR_HOLO_ENERGY_GENERATIONS), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Black_White, 45, HoloRarity.BWXY_REVERSE_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Plasma_Freeze, 20, HoloRarity.BWXY_REVERSE_MIRROR_HOLO_PLASMA), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Double_Crisis, 27, HoloRarity.BWXY_REVERSE_MIRROR_HOLO_AQUA), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Double_Crisis, 22, HoloRarity.BWXY_REVERSE_MIRROR_HOLO_MAGMA), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Dark_Explorers, 14, HoloRarity.BWXY_REVERSE_ENERGY_HOLO), AcetoneStatus.CARD_OBTAINED),
+					(HoloCards.Find(Sets.Evolutions, 53, HoloRarity.EV_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Evolutions, 96, HoloRarity.EV_MIRROR_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Evolutions, 63, HoloRarity.EV_REVERSE_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Sun_Moon, 52, HoloRarity.SM_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
+					
+					(Cards.Find(Sets.Supreme_Victors, 153, Rarity.Shiny_Holo), AcetoneStatus.NO_PROGRESS),
+					(Cards.Find(Sets.HeartGold_SoulSilver, 123.1, Rarity.Secret_HGSS), AcetoneStatus.NO_PROGRESS)
+				),
+				new AcetoneGroup("Mirror Holo (3)",
+					(HoloCards.Find(Sets.SWSH_Promo, 220, HoloRarity.SWSH_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS)
+				),
+				new AcetoneGroup("Mirror Holo (4)",
+					(HoloCards.Find(Sets.Rebel_Clash, 167, HoloRarity.SWSH_REVERSE_MIRROR_ENERGY_BANNER_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Fusion_Strike, 237, HoloRarity.SWSH_REVERSE_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS)
+				),
+				
 				new AcetoneGroup("Pixel Wave Holo",
 					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.EX_PIXEL_WAVE_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS)
 				),
+				
 				new AcetoneGroup("Big Energy Holo*", // some said it might come off with acetone
 					(HoloCards.Find(Sets.EX_Hidden_Legends, 83, HoloRarity.EX_BIG_ENERGY_HOLO_HL), AcetoneStatus.NO_PROGRESS)
 				),
@@ -163,27 +238,7 @@ namespace TCG
 				new AcetoneGroup("3D Pokéball Holo*", // some said it might come off with acetone
 					(HoloCards.Find(Sets.EX_Unseen_Forces, 12, HoloRarity.EX_3D_POKEBALL_HOLO_UF), AcetoneStatus.NO_PROGRESS)
 				),
-				new AcetoneGroup("Plain Holo (2)",
-					(HoloCards.Find(Sets.EX_Delta_Species, 63, HoloRarity.EX_PLAIN_HOLO_DS), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.EX_Delta_Species, 71, HoloRarity.EX_PLAIN_HOLO_DS_HOLON), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.EX_Delta_Species, 14, HoloRarity.EX_PLAIN_HOLO_DS_DELTA), AcetoneStatus.NO_PROGRESS)
-				),
-				new AcetoneGroup("Mirror Holo (1)",
-					(HoloCards.Find(Sets.EX_Holon_Phantoms, 58, HoloRarity.EX_MIRROR_HOLO_HP), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.EX_Holon_Phantoms, 44, HoloRarity.EX_MIRROR_HOLO_HP_HOLON), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.EX_Holon_Phantoms, 10, HoloRarity.EX_MIRROR_HOLO_HP_DELTA), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.EX_Crystal_Guardians, 59, HoloRarity.EX_MIRROR_HOLO_CG), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.EX_Crystal_Guardians, 68, HoloRarity.EX_MIRROR_HOLO_CG_DELTA), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.EX_Dragon_Frontiers, 51, HoloRarity.EX_MIRROR_HOLO_DF), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.EX_Dragon_Frontiers, 4, HoloRarity.EX_MIRROR_HOLO_DF_DELTA), AcetoneStatus.NO_PROGRESS),
-					
-					(Cards.Find(Sets.EX_Holon_Phantoms, 107, Rarity.Holo_Energy_EX_Holon_Phantoms), AcetoneStatus.NO_PROGRESS)
-				),
-				new AcetoneGroup("Plain Holo (3)",
-					(HoloCards.Find(Sets.EX_Power_Keepers, 68, HoloRarity.EX_PLAIN_HOLO_PK), AcetoneStatus.NO_PROGRESS),
-					
-					(Cards.Find(Sets.EX_Power_Keepers, 108, Rarity.Holo_Energy_EX_Power_Keepers), AcetoneStatus.NO_PROGRESS)
-				),
+				
 				new AcetoneGroup("Cracked Ice Holo",
 					(HoloCards.Find(Sets.Supreme_Victors, 5, HoloRarity.DP_CRACKED_ICE_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Supreme_Victors, 8, HoloRarity.DP_CRACKED_ICE_HOLO_SP), AcetoneStatus.NO_PROGRESS),
@@ -199,28 +254,7 @@ namespace TCG
 					(Cards.Find(Sets.EX_FireRed_LeafGreen, 114, Rarity.ex), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Rising_Rivals, 118, Rarity.Rotom), AcetoneStatus.NO_PROGRESS)
 				),
-				new AcetoneGroup("Mirror Holo (2)",
-					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.DP_MIRROR_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Secret_Wonders, 14, HoloRarity.DP_REVERSE_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Arceus, 12, HoloRarity.DP_REVERSE_MIRROR_HOLO_SP), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Call_of_Legends, 95, HoloRarity.HGSS_MIRROR_HOLO_ENERGY_COL), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Call_of_Legends, 50, HoloRarity.HGSS_REVERSE_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Generations, 32, HoloRarity.BWXY_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.BWXY_MIRROR_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Generations, 83, HoloRarity.BWXY_MIRROR_HOLO_ENERGY_GENERATIONS), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Black_White, 45, HoloRarity.BWXY_REVERSE_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Plasma_Freeze, 20, HoloRarity.BWXY_REVERSE_MIRROR_HOLO_PLASMA), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Double_Crisis, 27, HoloRarity.BWXY_REVERSE_MIRROR_HOLO_AQUA), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Double_Crisis, 22, HoloRarity.BWXY_REVERSE_MIRROR_HOLO_MAGMA), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Dark_Explorers, 14, HoloRarity.BWXY_REVERSE_ENERGY_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Evolutions, 53, HoloRarity.EV_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Evolutions, 96, HoloRarity.EV_MIRROR_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Evolutions, 63, HoloRarity.EV_REVERSE_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Sun_Moon, 52, HoloRarity.SM_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS),
-					
-					(Cards.Find(Sets.Supreme_Victors, 153, Rarity.Shiny_Holo), AcetoneStatus.NO_PROGRESS),
-					(Cards.Find(Sets.HeartGold_SoulSilver, 123.1, Rarity.Secret_HGSS), AcetoneStatus.NO_PROGRESS)
-				),
+				
 				new AcetoneGroup("Crosshatch Holo",
 					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.DP_CROSSHATCH_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Legends_Awakened, 43, HoloRarity.DP_REVERSE_CROSSHATCH_HOLO), AcetoneStatus.NO_PROGRESS),
@@ -233,9 +267,7 @@ namespace TCG
 					(HoloCards.Find(Sets.Furious_Fists, 12, HoloRarity.BWXY_REVERSE_CROSSHATCH_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Plasma_Storm, 123, HoloRarity.BWXY_REVERSE_CROSSHATCH_HOLO_PLASMA), AcetoneStatus.NO_PROGRESS)
 				),
-				new AcetoneGroup("Plain Holo (4)",
-					(HoloCards.Find(Sets.Legends_Awakened, 106, HoloRarity.DP_REVERSE_PLAIN_HOLO), AcetoneStatus.NO_PROGRESS)
-				),
+				
 				new AcetoneGroup("Tinsel Holo",
 					(HoloCards.Find(Sets.Noble_Victories, 15, HoloRarity.BWXY_TINSEL_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Plasma_Storm, 55, HoloRarity.BWXY_TINSEL_HOLO_PLASMA), AcetoneStatus.NO_PROGRESS),
@@ -244,6 +276,7 @@ namespace TCG
 					(Cards.Find(Sets.Boundaries_Crossed, 138, Rarity.Ace_Spec), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Plasma_Blast, 92, Rarity.Ace_Spec_Plasma), AcetoneStatus.NO_PROGRESS)
 				),
+				
 				new AcetoneGroup("Sheen Holo (1)",
 					(HoloCards.Find(Sets.Primal_Clash, 12, HoloRarity.BWXY_SHEEN_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Phantom_Forces, 98, HoloRarity.BWXY_SHEEN_HOLO_FLARE), AcetoneStatus.NO_PROGRESS),
@@ -256,27 +289,6 @@ namespace TCG
 					(Cards.Find(Sets.Plasma_Storm, 14.1, Rarity.EX_Plasma), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Flashfire, 69.1, Rarity.M_EX), AcetoneStatus.NO_PROGRESS)
 				),
-				new AcetoneGroup("Confetti Holo",
-					(HoloCards.Find(Sets.Mc_Donalds_2011, 5, HoloRarity.BWXY_CONFETTI_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Mc_Donalds_2017, 4, HoloRarity.SM_CONFETTI_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Mc_Donalds_2022, 5, HoloRarity.SWSH_CONFETTI_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Mc_Donalds_2023, 6, HoloRarity.SV_CONFETTI_HOLO), AcetoneStatus.NO_PROGRESS),
-					
-					(Cards.Find(Sets.Celebrations, 33, Rarity.Classic_Collection), AcetoneStatus.NO_PROGRESS)
-				),
-				new AcetoneGroup("Star Holo (Evolutions)",
-					(HoloCards.Find(Sets.Evolutions, 38, HoloRarity.EV_STARLIGHT_HOLO), AcetoneStatus.NO_PROGRESS)
-				),
-				new AcetoneGroup("Water Web Holo",
-					(HoloCards.Find(Sets.Unified_Minds, 26, HoloRarity.SM_WATER_WEB_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.SM_WATER_WEB_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
-					
-					(Cards.Find(Sets.Sun_Moon, 12, Rarity.GX), AcetoneStatus.NO_PROGRESS),
-					(Cards.Find(Sets.Crimson_Invasion, 49, Rarity.UB_GX), AcetoneStatus.NO_PROGRESS),
-					(Cards.Find(Sets.Cosmic_Eclipse, 156, Rarity.TT_GX), AcetoneStatus.NO_PROGRESS),
-					(Cards.Find(Sets.Cosmic_Eclipse, 158, Rarity.TT_UB_GX), AcetoneStatus.NO_PROGRESS),
-					(Cards.Find(Sets.Lost_Thunder, 19, Rarity.Prism_Star), AcetoneStatus.NO_PROGRESS)
-				),
 				new AcetoneGroup("Sheen Holo (2)",
 					(HoloCards.Find(Sets.Alolan_Raichu_Half_Deck, 30, HoloRarity.SM_SHEEN_HOLO), AcetoneStatus.NO_PROGRESS)
 				),
@@ -284,14 +296,39 @@ namespace TCG
 					(HoloCards.Find(Sets.SM_Promo, 170, HoloRarity.SM_SHEEN_HOLO_DP), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.SM_SHEEN_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.SM_SHEEN_HOLO_ENERGY_TT), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Guardians_Rising, 68, HoloRarity.SM_REVERSE_BIG_ENERGY_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Guardians_Rising, 68, HoloRarity.SM_REVERSE_BIG_ENERGY_HOLO), AcetoneStatus.CARD_OBTAINED),
 					(HoloCards.Find(Sets.Sun_Moon, 135, HoloRarity.SM_REVERSE_SHEEN_HOLO), AcetoneStatus.NO_PROGRESS)
 				),
+				
+				new AcetoneGroup("Confetti Holo",
+					(HoloCards.Find(Sets.Mc_Donalds_2011, 5, HoloRarity.BWXY_CONFETTI_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Mc_Donalds_2017, 4, HoloRarity.SM_CONFETTI_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Mc_Donalds_2022, 5, HoloRarity.SWSH_CONFETTI_HOLO), AcetoneStatus.CARD_OBTAINED),
+					(HoloCards.Find(Sets.Mc_Donalds_2023, 6, HoloRarity.SV_CONFETTI_HOLO), AcetoneStatus.NO_PROGRESS),
+					
+					(Cards.Find(Sets.Celebrations, 33, Rarity.Classic_Collection), AcetoneStatus.CARD_OBTAINED)
+				),
+				
+				new AcetoneGroup("Water Web Holo",
+					(HoloCards.Find(Sets.Unified_Minds, 26, HoloRarity.SM_WATER_WEB_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.SM_WATER_WEB_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
+					
+					(Cards.Find(Sets.Sun_Moon, 12, Rarity.GX), AcetoneStatus.CARD_OBTAINED),
+					(Cards.Find(Sets.Crimson_Invasion, 49, Rarity.UB_GX), AcetoneStatus.NO_PROGRESS),
+					(Cards.Find(Sets.Cosmic_Eclipse, 156, Rarity.TT_GX), AcetoneStatus.NO_PROGRESS),
+					(Cards.Find(Sets.Cosmic_Eclipse, 158, Rarity.TT_UB_GX), AcetoneStatus.NO_PROGRESS),
+					(Cards.Find(Sets.Lost_Thunder, 19, Rarity.Prism_Star), AcetoneStatus.NO_PROGRESS)
+				),
+				
 				new AcetoneGroup("Sequin Holo (1)",
 					(HoloCards.Find(Sets.Shining_Legends, 1, HoloRarity.SM_SEQUIN_HOLO), AcetoneStatus.NO_PROGRESS)
 				),
+				new AcetoneGroup("Sequin Holo (2)",
+					(HoloCards.Find(Sets.SWSH_Promo, 39, HoloRarity.SWSH_SEQUIN_HOLO), AcetoneStatus.NO_PROGRESS)
+				),
+				
 				new AcetoneGroup("Line Holo",
-					(HoloCards.Find(Sets.Chilling_Reign, 114, HoloRarity.SWSH_LINE_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Chilling_Reign, 114, HoloRarity.SWSH_LINE_HOLO), AcetoneStatus.CARD_OBTAINED),
 					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.SWSH_LINE_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.SWSH_LINE_HOLO_ENERGY_STAR), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Rebel_Clash, 171, HoloRarity.SWSH_REVERSE_LINE_HOLO), AcetoneStatus.NO_PROGRESS),
@@ -299,42 +336,16 @@ namespace TCG
 					
 					(Cards.Find(Sets.Silver_Tempest, 156, Rarity.Seal_Stone), AcetoneStatus.NO_PROGRESS)
 				),
-				new AcetoneGroup("Plain Holo (5)",
-					(HoloCards.Find(Sets.Celebrations, 14, HoloRarity.SWSH_PLAIN_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.SWSH_PLAIN_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.SWSH_PLAIN_HOLO_ENERGY_STAR), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Rebel_Clash, 6, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Brilliant_Stars, 150, HoloRarity.SWSH_REVERSE_PLAIN_HOLO), AcetoneStatus.NO_PROGRESS),
-					
-					(Cards.Find(Sets.Celebrations, 5, Rarity.Full_Art_Pokemon_SWSH), AcetoneStatus.NO_PROGRESS)
-				),
-				new AcetoneGroup("Mirror Holo (3)",
-					(HoloCards.Find(Sets.SWSH_Promo, 220, HoloRarity.SWSH_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS)
-				),
-				new AcetoneGroup("Sequin Holo (2)",
-					(HoloCards.Find(Sets.SWSH_Promo, 39, HoloRarity.SWSH_SEQUIN_HOLO), AcetoneStatus.NO_PROGRESS)
-				),
-				new AcetoneGroup("Mirror Holo (4)",
-					(HoloCards.Find(Sets.Rebel_Clash, 167, HoloRarity.SWSH_REVERSE_MIRROR_ENERGY_BANNER_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Fusion_Strike, 237, HoloRarity.SWSH_REVERSE_MIRROR_HOLO), AcetoneStatus.NO_PROGRESS)
-				),
+				
 				new AcetoneGroup("Mirage Holo (1)",
 					(HoloCards.Find(Sets.Scarlet_Violet, 13, HoloRarity.SV_MIRAGE_HOLO), AcetoneStatus.NO_PROGRESS)
-				),
-				new AcetoneGroup("Plain Holo (6)",
-					(HoloCards.Find(Sets.Scarlet_Violet, 80, HoloRarity.SV_REVERSE_ROCKY_HOLO), AcetoneStatus.NO_PROGRESS)
 				),
 				new AcetoneGroup("Mirage Holo (2)",
 					(HoloCards.Find(Sets.Obsidian_Flames, 86, HoloRarity.SV_REVERSE_MIRAGE_ROCKY_HOLO), AcetoneStatus.NO_PROGRESS)
 				),
 				
-				
-				
 				new AcetoneGroup("Unknown Holo (BW Gold)",
 					(Cards.Find(Sets.Legendary_Treasures, 114, Rarity.Gold_Pokemon), AcetoneStatus.NO_PROGRESS)
-				),
-				new AcetoneGroup("Unknown Holo (XY Silver)",
-					(Cards.Find(Sets.Phantom_Forces, 122, Rarity.Gold_Pokemon), AcetoneStatus.NO_PROGRESS)
 				),
 				new AcetoneGroup("Unknown Holo (SWSH Gold)",
 					(Cards.Find(Sets.SWSH_Promo, 145, Rarity.Gold_Pokemon), AcetoneStatus.NO_PROGRESS)
@@ -369,7 +380,8 @@ namespace TCG
 					(Cards.Find(Sets.Evolutions, 101, Rarity.M_EX_Full_Art_Evolutions), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Steam_Siege, 116, Rarity.EX_Special_Art), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Ancient_Origins, 98, Rarity.M_EX_Special_Art), AcetoneStatus.NO_PROGRESS),
-					(Cards.Find(Sets.Phantom_Forces, 121, Rarity.Secret_M_EX), AcetoneStatus.NO_PROGRESS)
+					(Cards.Find(Sets.Phantom_Forces, 121, Rarity.Secret_M_EX), AcetoneStatus.NO_PROGRESS),
+					(Cards.Find(Sets.Phantom_Forces, 122, Rarity.Gold_Pokemon), AcetoneStatus.NO_PROGRESS)
 				),
 				new AcetoneGroup("Unknown Confetti Holo (Radiant BW)",
 					(Cards.Find(Sets.Legendary_Treasures_RC, 11, Rarity.EX_Radiant), AcetoneStatus.NO_PROGRESS),
@@ -382,7 +394,7 @@ namespace TCG
 				),
 				new AcetoneGroup("Unknown Plain Holo (Radiant XY)",
 					(Cards.Find(Sets.Generations_RC, 21, Rarity.EX_Radiant), AcetoneStatus.NO_PROGRESS),
-					(Cards.Find(Sets.Generations_RC, 13, Rarity.Radiant_Collection_XY), AcetoneStatus.NO_PROGRESS),
+					(Cards.Find(Sets.Generations_RC, 13, Rarity.Radiant_Collection_XY), AcetoneStatus.CARD_OBTAINED),
 					(Cards.Find(Sets.Generations_RC, 29, Rarity.Full_Art_Pokemon_BWXY_Radiant), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Generations_RC, 28, Rarity.EX_Full_Art_Radiant_XY), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Generations_RC, 31, Rarity.M_EX_Full_Art_Radiant), AcetoneStatus.NO_PROGRESS)
@@ -427,7 +439,7 @@ namespace TCG
 					(Cards.Find(Sets.Cosmic_Eclipse, 237, Rarity.Character_Art_SM), AcetoneStatus.NO_PROGRESS)
 				),
 				new AcetoneGroup("Unknown Sheen Holo (SWSH)",
-					(Cards.Find(Sets.SWSH_Promo, 134, Rarity.V), AcetoneStatus.NO_PROGRESS),
+					(Cards.Find(Sets.SWSH_Promo, 134, Rarity.V), AcetoneStatus.CARD_OBTAINED),
 					(Cards.Find(Sets.Evolving_Skies, 14, Rarity.VMAX), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Chilling_Reign, 75, Rarity.VMAX_Blue), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Sword_Shield, 142, Rarity.VMAX_Gigantamax), AcetoneStatus.NO_PROGRESS),
@@ -450,7 +462,7 @@ namespace TCG
 					(Cards.Find(Sets.Vivid_Voltage, 50, Rarity.Amazing_Rare), AcetoneStatus.NO_PROGRESS)
 				),
 				new AcetoneGroup("Unknown Holo (Radiant)",
-					(Cards.Find(Sets.Astral_Radiance, 46, Rarity.Radiant), AcetoneStatus.NO_PROGRESS)
+					(Cards.Find(Sets.Astral_Radiance, 46, Rarity.Radiant), AcetoneStatus.CARD_OBTAINED)
 				),
 				new AcetoneGroup("Unknown Plain Holo 1 (SWSH)",
 					(Cards.Find(Sets.Crown_Zenith, 160, Rarity.Full_Art_Pokemon_SWSH), AcetoneStatus.NO_PROGRESS)

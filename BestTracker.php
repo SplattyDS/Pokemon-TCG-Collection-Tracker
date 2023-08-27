@@ -914,7 +914,7 @@ else if (isset($_GET['test']))
 	290,321, // Secret Rare
 	436,863, // Full Art Pokémon
 	22, // Crystal Type
-	56,215,216,184,180,221,35, // ex
+	56,215,216,184,29,180,221,35, // ex
 	220,230, // Gold Star
 	3851, // Holo Energy EX Emerald
 	3856,3857, // Holo Energy EX Holon Phantoms
