@@ -11,7 +11,7 @@ function acetoneImgH($ID, $color)
 
 $temp = array(array(31,'h', 'red'),array(202,'h', 'red'),array(195,'h', 'red'));
 print('<div id="container - '.$j++.'" class="center">');
-print('<h1>Star Holo</h1>');
+print('<h1>Starlight Holo</h1>');
 foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }
 print('</div>');
 

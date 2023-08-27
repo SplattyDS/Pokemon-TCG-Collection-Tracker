@@ -44,10 +44,10 @@ namespace TCG
 		{
 			TheGroups = new AcetoneGroup[]
 			{
-				new AcetoneGroup("Star Holo",
-					(HoloCards.Find(Sets.Jungle, 14, HoloRarity.OS_STAR_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Legendary_Collection, 11, HoloRarity.LC_STAR_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Legendary_Collection, 4, HoloRarity.LC_STAR_HOLO_DARK), AcetoneStatus.NO_PROGRESS)
+				new AcetoneGroup("Starlight Holo",
+					(HoloCards.Find(Sets.Jungle, 14, HoloRarity.OS_STARLIGHT_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Legendary_Collection, 11, HoloRarity.LC_STARLIGHT_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Legendary_Collection, 4, HoloRarity.LC_STARLIGHT_HOLO_DARK), AcetoneStatus.NO_PROGRESS)
 				),
 				new AcetoneGroup("Pixel Cosmos Holo",
 					(HoloCards.Find(Sets.Base_Set_2, 11, HoloRarity.OS_PIXEL_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
@@ -265,7 +265,7 @@ namespace TCG
 					(Cards.Find(Sets.Celebrations, 33, Rarity.Classic_Collection), AcetoneStatus.NO_PROGRESS)
 				),
 				new AcetoneGroup("Star Holo (Evolutions)",
-					(HoloCards.Find(Sets.Evolutions, 38, HoloRarity.EV_STAR_HOLO), AcetoneStatus.NO_PROGRESS)
+					(HoloCards.Find(Sets.Evolutions, 38, HoloRarity.EV_STARLIGHT_HOLO), AcetoneStatus.NO_PROGRESS)
 				),
 				new AcetoneGroup("Water Web Holo",
 					(HoloCards.Find(Sets.Unified_Minds, 26, HoloRarity.SM_WATER_WEB_HOLO), AcetoneStatus.NO_PROGRESS),

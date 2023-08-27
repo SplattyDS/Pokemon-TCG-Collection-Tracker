@@ -1,6 +1,6 @@
 <?php
-start($j++, 'OS - Star Holo', $holoHave, $OS_STAR_HOLO);
-foreach ($OS_STAR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+start($j++, 'OS - Starlight Holo', $holoHave, $OS_STARLIGHT_HOLO);
+foreach ($OS_STARLIGHT_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'OS - Pixel Cosmos Holo', $holoHave, $OS_PIXEL_COSMOS_HOLO);
@@ -51,12 +51,12 @@ start($j++, 'Neo - Reverse Pixel Cosmos Holo', $holoHave, $NEO_REVERSE_PIXEL_COS
 foreach ($NEO_REVERSE_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-start($j++, 'Legendary Collection - Star Holo', $holoHave, $LC_STAR_HOLO);
-foreach ($LC_STAR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+start($j++, 'Legendary Collection - Starlight Holo', $holoHave, $LC_STARLIGHT_HOLO);
+foreach ($LC_STARLIGHT_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-start($j++, 'Legendary Collection - Star Holo (Dark)', $holoHave, $LC_STAR_HOLO_DARK);
-foreach ($LC_STAR_HOLO_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+start($j++, 'Legendary Collection - Starlight Holo (Dark)', $holoHave, $LC_STARLIGHT_HOLO_DARK);
+foreach ($LC_STARLIGHT_HOLO_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'Legendary Collection - Reverse Fireworks Holo', $holoHave, $LC_REVERSE_FIREWORKS_HOLO);
@@ -411,8 +411,8 @@ start($j++, 'BW & XY Series - Reverse Crosshatch Holo (Plasma)', $holoHave, $BWX
 foreach ($BWXY_REVERSE_CROSSHATCH_HOLO_PLASMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-start($j++, 'XY Evolutions - Star Holo', $holoHave, $EV_STAR_HOLO);
-foreach ($EV_STAR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+start($j++, 'XY Evolutions - Starlight Holo', $holoHave, $EV_STARLIGHT_HOLO);
+foreach ($EV_STARLIGHT_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
 start($j++, 'XY Evolutions - Smooth Cosmos Holo', $holoHave, $EV_SMOOTH_COSMOS_HOLO);

@@ -5,7 +5,7 @@
 		private static Section[] TheSections =
 		{
 			// original series
-			new Section(HoloRarity.OS_STAR_HOLO, "OS - Star Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.OS_STARLIGHT_HOLO, "OS - Starlight Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.OS_PIXEL_COSMOS_HOLO, "OS - Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.OS_PIXEL_COSMOS_HOLO_DARK, "OS - Pixel Cosmos Holo (Dark)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.OS_PIXEL_COSMOS_HOLO_OWNER, "OS - Pixel Cosmos Holo (Owner)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
@@ -25,8 +25,8 @@
 			new Section(HoloRarity.NEO_REVERSE_PIXEL_COSMOS_HOLO, "Neo - Reverse Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			
 			// legendary collection
-			new Section(HoloRarity.LC_STAR_HOLO, "Legendary Collection - Star Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
-			new Section(HoloRarity.LC_STAR_HOLO_DARK, "Legendary Collection - Star Holo (Dark)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.LC_STARLIGHT_HOLO, "Legendary Collection - Starlight Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.LC_STARLIGHT_HOLO_DARK, "Legendary Collection - Starlight Holo (Dark)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.LC_REVERSE_FIREWORKS_HOLO, "Legendary Collection - Reverse Fireworks Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.LC_REVERSE_FIREWORKS_HOLO_DARK, "Legendary Collection - Reverse Fireworks Holo (Dark)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
@@ -140,7 +140,7 @@
 			new Section(HoloRarity.BWXY_REVERSE_CROSSHATCH_HOLO_PLASMA, "BW & XY Series - Reverse Crosshatch Holo (Plasma)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			
 			// XY Evolutions
-			new Section(HoloRarity.EV_STAR_HOLO, "XY Evolutions - Star Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.EV_STARLIGHT_HOLO, "XY Evolutions - Starlight Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.EV_SMOOTH_COSMOS_HOLO, "XY Evolutions - Smooth Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.EV_MIRROR_HOLO, "XY Evolutions - Mirror Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.EV_CRACKED_ICE_HOLO, "XY Evolutions - Cracked Ice Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
