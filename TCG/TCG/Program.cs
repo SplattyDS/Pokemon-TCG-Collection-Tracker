@@ -483,7 +483,6 @@ namespace TCG
 		static void WriteAcetone()
 		{
 			List<string> code = new List<string>();
-			IEnumerable<AcetoneGroup> acetoneGroups = AcetoneGroups.Get();
 
 			code.Add("<?php");
 
@@ -495,11 +494,18 @@ namespace TCG
 				"function acetoneImgH($ID, $color)\r\n" +
 				"{\r\n" +
 				"\tprint('<img class=\"card-img\" src=\"images/best_tracker/holo/'.idToHoloName($ID).'.png\" style=\"background-color: '.$color.'; border: 3px solid '.$color.';\">');\r\n" +
+				"}\r\n" +
+				"function foreignImg($ID, $color)\r\n" +
+				"{\r\n" +
+				"\tprint('<img class=\"card-img\" src=\"images/best_tracker/foreign_holo_'.$ID.'.png\" style=\"background-color: '.$color.'; border: 3px solid '.$color.';\">');\r\n" +
 				"}\r\n"
 			);
 
-			foreach (AcetoneGroup group in acetoneGroups)
+			foreach (AcetoneGroup group in AcetoneGroups.Get())
 				code.Add(CodeFromAcetoneGroup(group));
+
+			foreach (ForeignGroup group in AcetoneGroups.Foreign())
+				code.Add(CodeFromForeignGroup(group));
 
 			code.Add("?>");
 
@@ -758,12 +764,24 @@ namespace TCG
 			string[] colors = new string[(int)AcetoneStatus.NUM_STATUSES] { "red", "orange", "lime", "deepskyblue", "purple" };
 			string cardArr = string.Join(',', group.cards.Select(c => "array(" + c.Item1.ToString() + ",'" + (c.Item1 is Card ? "u" : "h") + "', '" + colors[(int)c.Item2] + "')"));
 
-
 			return
 				"$temp = array(" + cardArr + ");\r\n" +
 				"print('<div id=\"container - '.$j++.'\" class=\"center\">');\r\n" +
 				"print('<h1>" + group.holoName + "</h1>');\r\n" +
 				"foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }\r\n" +
+				"print('</div>');\r\n";
+		}
+
+		static string CodeFromForeignGroup(ForeignGroup group)
+		{
+			string[] colors = new string[(int)AcetoneStatus.NUM_STATUSES] { "red", "orange", "lime", "deepskyblue", "purple" };
+			string cardArr = string.Join(',', group.cards.Select(c => "array(" + c.Item1.ToString() + ", '" + colors[(int)c.Item2] + "')"));
+
+			return
+				"$temp = array(" + cardArr + ");\r\n" +
+				"print('<div id=\"container - '.$j++.'\" class=\"center\">');\r\n" +
+				"print('<h1>" + group.holoName + "</h1>');\r\n" +
+				"foreach ($temp as $cur) { foreignImg($cur[0], $cur[1]); }\r\n" +
 				"print('</div>');\r\n";
 		}
 

@@ -13985,6 +13985,28 @@ namespace TCG
 			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.HGSS_PIXEL_COSMOS_HOLO_PW, Types.Lightning, Sets.Unnumbered_Promo, -1),
 		};
 		
+		/*
+		Holiday Calendar 2023 (all SwSH pixel cosmos?):
+		V	Pikachu 49 SIT
+		V	Stantler 125 ASR
+		V	Snom 84 FUS
+		V	Glastrier 55 LOO
+		V	Cryogonal 43 EVS
+
+		BOOster Bundle 2023 (all mirage holo - SWSH & SV)
+		V	Dusknoir 71 VIV
+		V	Marshadow 80 EVS
+		V	Trevenant 17 LOO
+		V	Chandelure 26 LOO
+		V	Gengar 66 LOO
+		V	Spectrier 81 LOO
+
+		V	Houndoom 43 SV1
+		X	Houndstone 106 SV1
+		V	Pikachu 62 PAL
+		X	Mimikyu 97 PAL
+		*/
+		
 		// the DELETED play labs promos might get reasonably obtainable in leagues soon
 		// Smoliv and Growlithe from SV_Promo seem to have both pixel and smooth cosmos
 		// Mankey and Primeape from Paldea_Evolved seem to have pixel cosmos

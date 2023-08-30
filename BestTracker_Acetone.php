@@ -8,8 +8,12 @@ function acetoneImgH($ID, $color)
 {
 	print('<img class="card-img" src="images/best_tracker/holo/'.idToHoloName($ID).'.png" style="background-color: '.$color.'; border: 3px solid '.$color.';">');
 }
+function foreignImg($ID, $color)
+{
+	print('<img class="card-img" src="images/best_tracker/foreign_holo_'.$ID.'.png" style="background-color: '.$color.'; border: 3px solid '.$color.';">');
+}
 
-$temp = array(array(31,'h', 'red'),array(202,'h', 'red'),array(195,'h', 'red'));
+$temp = array(array(31,'h', 'orange'),array(202,'h', 'red'),array(195,'h', 'red'));
 print('<div id="container - '.$j++.'" class="center">');
 print('<h1>Starlight Holo</h1>');
 foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }
@@ -21,7 +25,7 @@ print('<h1>Starlight Holo (Evolutions)</h1>');
 foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }
 print('</div>');
 
-$temp = array(array(60,'h', 'red'),array(80,'h', 'red'),array(93,'h', 'red'),array(99,'h', 'red'),array(437,'h', 'red'),array(426,'h', 'red'),array(430,'h', 'red'),array(127,'h', 'red'),array(183,'h', 'red'),array(190,'h', 'red'),array(435,'h', 'red'),array(395,'h', 'red'),array(996,'h', 'red'),array(956,'h', 'red'),array(959,'h', 'red'),array(997,'h', 'red'),array(899,'h', 'red'),array(1190,'h', 'red'),array(2269,'h', 'red'),array(2840,'h', 'red'),array(2857,'h', 'red'),array(2961,'h', 'red'),array(3048,'h', 'red'),array(3051,'h', 'red'),array(4445,'h', 'red'),array(13973,'h', 'red'),array(4463,'h', 'red'),array(5144,'h', 'red'),array(5312,'h', 'red'),array(13747,'h', 'red'),array(2936,'u', 'red'),array(1,'u', 'red'),array(3,'u', 'red'),array(13,'u', 'red'),array(72,'u', 'red'),array(239,'u', 'red'),array(114,'u', 'red'),array(140,'u', 'red'),array(144,'u', 'red'),array(3851,'u', 'red'),array(253,'u', 'red'),array(321,'u', 'red'),array(344,'u', 'red'),array(358,'u', 'red'),array(360,'u', 'red'),array(2943,'u', 'red'),array(372,'u', 'red'),array(404,'u', 'red'),array(408,'u', 'red'),array(411,'u', 'red'),array(427,'u', 'red'));
+$temp = array(array(60,'h', 'orange'),array(80,'h', 'red'),array(93,'h', 'red'),array(99,'h', 'red'),array(437,'h', 'red'),array(426,'h', 'red'),array(430,'h', 'red'),array(127,'h', 'orange'),array(183,'h', 'red'),array(190,'h', 'red'),array(435,'h', 'red'),array(395,'h', 'red'),array(996,'h', 'red'),array(956,'h', 'red'),array(959,'h', 'red'),array(997,'h', 'red'),array(899,'h', 'red'),array(1190,'h', 'red'),array(2269,'h', 'red'),array(2840,'h', 'red'),array(2857,'h', 'red'),array(2961,'h', 'red'),array(3048,'h', 'red'),array(3051,'h', 'red'),array(4445,'h', 'red'),array(13973,'h', 'red'),array(4463,'h', 'red'),array(5144,'h', 'red'),array(5312,'h', 'red'),array(13747,'h', 'red'),array(2936,'u', 'red'),array(1,'u', 'red'),array(3,'u', 'red'),array(13,'u', 'red'),array(72,'u', 'red'),array(239,'u', 'red'),array(114,'u', 'red'),array(140,'u', 'red'),array(144,'u', 'red'),array(3851,'u', 'red'),array(253,'u', 'red'),array(321,'u', 'red'),array(344,'u', 'red'),array(358,'u', 'red'),array(360,'u', 'red'),array(2943,'u', 'red'),array(372,'u', 'red'),array(404,'u', 'red'),array(408,'u', 'red'),array(411,'u', 'red'),array(427,'u', 'red'));
 print('<div id="container - '.$j++.'" class="center">');
 print('<h1>Pixel Cosmos Holo</h1>');
 foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }
@@ -111,7 +115,7 @@ print('<h1>Pixel Wave Holo</h1>');
 foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }
 print('</div>');
 
-$temp = array(array(1659,'h', 'red'));
+$temp = array(array(1659,'h', 'orange'));
 print('<div id="container - '.$j++.'" class="center">');
 print('<h1>Big Energy Holo*</h1>');
 foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }
@@ -397,6 +401,18 @@ $temp = array(array(3713,'u', 'red'),array(3918,'u', 'red'),array(3715,'u', 'red
 print('<div id="container - '.$j++.'" class="center">');
 print('<h1>Unknown Holo (SV Gold)</h1>');
 foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }
+print('</div>');
+
+$temp = array(array(1, 'orange'));
+print('<div id="container - '.$j++.'" class="center">');
+print('<h1>Foreign Starlight Holo</h1>');
+foreach ($temp as $cur) { foreignImg($cur[0], $cur[1]); }
+print('</div>');
+
+$temp = array(array(2, 'red'));
+print('<div id="container - '.$j++.'" class="center">');
+print('<h1>Foreign Glitter Holo</h1>');
+foreach ($temp as $cur) { foreignImg($cur[0], $cur[1]); }
 print('</div>');
 
 ?>

@@ -18,6 +18,18 @@ namespace TCG
 		}
 	}
 	
+	public class ForeignGroup
+	{
+		public string holoName;
+		public (int, AcetoneStatus)[] cards;
+
+		public ForeignGroup(string holoName, params (int, AcetoneStatus)[] cards)
+		{
+			this.holoName = holoName;
+			this.cards = cards;
+		}
+	}
+	
 	public enum AcetoneStatus
 	{
 		NO_PROGRESS,
@@ -34,10 +46,16 @@ namespace TCG
 	public static class AcetoneGroups
 	{
 		public static AcetoneGroup[] TheGroups;
+		public static ForeignGroup[] ForeignGroups;
 
 		public static IEnumerable<AcetoneGroup> Get()
 		{
 			return TheGroups;
+		}
+
+		public static IEnumerable<ForeignGroup> Foreign()
+		{
+			return ForeignGroups;
 		}
 
 		public static void Init()
@@ -45,7 +63,7 @@ namespace TCG
 			TheGroups = new AcetoneGroup[]
 			{
 				new AcetoneGroup("Starlight Holo",
-					(HoloCards.Find(Sets.Jungle, 14, HoloRarity.OS_STARLIGHT_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Jungle, 14, HoloRarity.OS_STARLIGHT_HOLO), AcetoneStatus.CARD_OBTAINED),
 					(HoloCards.Find(Sets.Legendary_Collection, 11, HoloRarity.LC_STARLIGHT_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Legendary_Collection, 4, HoloRarity.LC_STARLIGHT_HOLO_DARK), AcetoneStatus.NO_PROGRESS)
 				),
@@ -54,14 +72,14 @@ namespace TCG
 				),
 				
 				new AcetoneGroup("Pixel Cosmos Holo",
-					(HoloCards.Find(Sets.Base_Set_2, 11, HoloRarity.OS_PIXEL_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Base_Set_2, 11, HoloRarity.OS_PIXEL_COSMOS_HOLO), AcetoneStatus.CARD_OBTAINED),
 					(HoloCards.Find(Sets.Team_Rocket, 11, HoloRarity.OS_PIXEL_COSMOS_HOLO_DARK), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Gym_Heroes, 7, HoloRarity.OS_PIXEL_COSMOS_HOLO_OWNER), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Gym_Heroes, 13, HoloRarity.OS_PIXEL_COSMOS_HOLO_ROCKET), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.OS_PIXEL_COSMOS_HOLO_ENERGY), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Best_of_Game, 1, HoloRarity.OS_REVERSE_PIXEL_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Best_of_Game, 5, HoloRarity.OS_REVERSE_PIXEL_COSMOS_HOLO_ROCKET), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Neo_Genesis, 2, HoloRarity.NEO_PIXEL_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
+					(HoloCards.Find(Sets.Neo_Genesis, 2, HoloRarity.NEO_PIXEL_COSMOS_HOLO), AcetoneStatus.CARD_OBTAINED),
 					(HoloCards.Find(Sets.Neo_Destiny, 8, HoloRarity.NEO_PIXEL_COSMOS_HOLO_DARK), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Neo_Destiny, 15, HoloRarity.NEO_PIXEL_COSMOS_HOLO_LIGHT), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Southern_Islands, 5, HoloRarity.NEO_REVERSE_PIXEL_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
@@ -221,7 +239,7 @@ namespace TCG
 				),
 				
 				new AcetoneGroup("Big Energy Holo*", // some said it might come off with acetone
-					(HoloCards.Find(Sets.EX_Hidden_Legends, 83, HoloRarity.EX_BIG_ENERGY_HOLO_HL), AcetoneStatus.NO_PROGRESS)
+					(HoloCards.Find(Sets.EX_Hidden_Legends, 83, HoloRarity.EX_BIG_ENERGY_HOLO_HL), AcetoneStatus.CARD_OBTAINED)
 				),
 				new AcetoneGroup("Energy Holo*", // some said it might come off with acetone
 					(HoloCards.Find(Sets.EX_FireRed_LeafGreen, 13, HoloRarity.EX_ENERGY_HOLO_FL), AcetoneStatus.NO_PROGRESS),
@@ -526,6 +544,18 @@ namespace TCG
 					(Cards.Find(Sets.Scarlet_Violet, 257, Rarity.Gold_Energy_SV), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Scarlet_Violet, 253, Rarity.ex_SV_Gold), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Obsidian_Flames, 228, Rarity.ex_SV_Tera_Gold), AcetoneStatus.NO_PROGRESS)
+				),
+			};
+			
+			int foreignID = 1;
+			
+			ForeignGroups = new ForeignGroup[]
+			{
+				new ForeignGroup("Foreign Starlight Holo",
+					(foreignID++, AcetoneStatus.CARD_OBTAINED)
+				),
+				new ForeignGroup("Foreign Glitter Holo",
+					(foreignID++, AcetoneStatus.NO_PROGRESS)
 				),
 			};
 		}
