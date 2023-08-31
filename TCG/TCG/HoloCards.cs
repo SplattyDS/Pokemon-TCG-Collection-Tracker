@@ -10965,9 +10965,9 @@ namespace TCG
 			new HoloCard("Sobble", Pokedex.Sobble, HoloRarity.SWSH_LINE_HOLO, Types.Water, Sets.Sword_Shield, 55, true),
 			new HoloCard("Inteleon", Pokedex.Inteleon, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Water, Sets.Sword_Shield, 58),
 			new HoloCard("Inteleon", Pokedex.Inteleon, HoloRarity.SWSH_CRACKED_ICE_HOLO, Types.Water, Sets.Sword_Shield, 59),
-			new HoloCard("Drednaw", Pokedex.Drednaw, HoloRarity.DELETED, Types.Water, Sets.Sword_Shield, 61),
+			new HoloCard("Drednaw", Pokedex.Drednaw, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Water, Sets.Sword_Shield, 61),
 			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.SWSH_REVERSE_SMOOTH_COSMOS_ENERGY_BANNER_HOLO, Types.Lightning, Sets.Sword_Shield, 65),
-			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.DELETED, Types.Lightning, Sets.Sword_Shield, 65),
+			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Lightning, Sets.Sword_Shield, 65),
 			new HoloCard("Boltund", Pokedex.Boltund, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Lightning, Sets.Sword_Shield, 76),
 			new HoloCard("Galarian Obstagoon", Pokedex.Obstagoon, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Darkness, Sets.Sword_Shield, 119),
 			new HoloCard("Snorlax", Pokedex.Snorlax, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Colorless, Sets.Sword_Shield, 140),
@@ -10976,7 +10976,7 @@ namespace TCG
 			new HoloCard("Flapple", Pokedex.Flapple, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Grass, Sets.Rebel_Clash, 22),
 			new HoloCard("Magikarp", Pokedex.Magikarp, HoloRarity.SWSH_REVERSE_SMOOTH_COSMOS_ENERGY_BANNER_HOLO, Types.Water, Sets.Rebel_Clash, 39),
 			new HoloCard("Eiscue", Pokedex.Eiscue, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Water, Sets.Rebel_Clash, 54),
-			new HoloCard("Alcremie", Pokedex.Alcremie, HoloRarity.DELETED, Types.Psychic, Sets.Rebel_Clash, 87),
+			new HoloCard("Alcremie", Pokedex.Alcremie, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Psychic, Sets.Rebel_Clash, 87),
 			new HoloCard("Dragapult", Pokedex.Dragapult, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Psychic, Sets.Rebel_Clash, 91),
 			new HoloCard("Galarian Sirfetch'd", Pokedex.Sirfetch_d, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Fighting, Sets.Rebel_Clash, 95),
 			new HoloCard("Zacian", Pokedex.Zacian, HoloRarity.SWSH_CRACKED_ICE_HOLO, Types.Metal, Sets.Rebel_Clash, 139),
@@ -10991,7 +10991,7 @@ namespace TCG
 			new HoloCard("Galarian Sirfetch'd", Pokedex.Sirfetch_d, HoloRarity.SWSH_CRACKED_ICE_HOLO, Types.Fighting, Sets.Darkness_Ablaze, 98),
 			new HoloCard("Darkrai", Pokedex.Darkrai, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Darkness, Sets.Darkness_Ablaze, 105),
 			new HoloCard("Corviknight", Pokedex.Corviknight, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Colorless, Sets.Darkness_Ablaze, 156),
-			new HoloCard("Shaymin", Pokedex.Shaymin, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Grass, Sets.Vivid_Voltage, 15),
+			new HoloCard("Shaymin", Pokedex.Shaymin, HoloRarity.SWSH_PIXEL_COSMOS_HOLO, Types.Grass, Sets.Vivid_Voltage, 15),
 			new HoloCard("Charmander", Pokedex.Charmander, HoloRarity.SWSH_REVERSE_SMOOTH_COSMOS_ENERGY_BANNER_HOLO, Types.Fire, Sets.Vivid_Voltage, 23),
 			new HoloCard("Charizard", Pokedex.Charizard, HoloRarity.SWSH_CRACKED_ICE_HOLO, Types.Fire, Sets.Vivid_Voltage, 25),
 			new HoloCard("Flareon", Pokedex.Flareon, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Fire, Sets.Vivid_Voltage, 26),
@@ -11000,7 +11000,7 @@ namespace TCG
 			new HoloCard("Jolteon", Pokedex.Jolteon, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Lightning, Sets.Vivid_Voltage, 47),
 			new HoloCard("Zapdos", Pokedex.Zapdos, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Lightning, Sets.Vivid_Voltage, 48),
 			new HoloCard("Zekrom", Pokedex.Zekrom, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Lightning, Sets.Vivid_Voltage, 60),
-			new HoloCard("Zeraora", Pokedex.Zeraora, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Lightning, Sets.Vivid_Voltage, 61),
+			new HoloCard("Zeraora", Pokedex.Zeraora, HoloRarity.SWSH_PIXEL_COSMOS_HOLO, Types.Lightning, Sets.Vivid_Voltage, 61),
 			new HoloCard("Duraludon", Pokedex.Duraludon, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Metal, Sets.Vivid_Voltage, 129),
 			new HoloCard("Eevee", Pokedex.Eevee, HoloRarity.SWSH_REVERSE_SMOOTH_COSMOS_ENERGY_BANNER_HOLO, Types.Colorless, Sets.Vivid_Voltage, 130),
 			new HoloCard("Snorlax", Pokedex.Snorlax, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Colorless, Sets.Vivid_Voltage, 131),
@@ -11022,7 +11022,7 @@ namespace TCG
 			new HoloCard("Klara", Pokedex.NVT, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Supporter, Sets.Chilling_Reign, 145),
 			new HoloCard("Regieleki", Pokedex.Regieleki, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Lightning, Sets.Evolving_Skies, 60),
 			new HoloCard("Gourgeist", Pokedex.Gourgeist, HoloRarity.SWSH_LINE_HOLO, Types.Psychic, Sets.Evolving_Skies, 77),
-			new HoloCard("Marshadow", Pokedex.Marshadow, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Psychic, Sets.Evolving_Skies, 80),
+			new HoloCard("Marshadow", Pokedex.Marshadow, HoloRarity.SWSH_PIXEL_COSMOS_HOLO, Types.Psychic, Sets.Evolving_Skies, 80),
 			new HoloCard("Dialga", Pokedex.Dialga, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Dragon, Sets.Evolving_Skies, 112),
 			new HoloCard("Regidrago", Pokedex.Regidrago, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Dragon, Sets.Evolving_Skies, 124),
 			new HoloCard("Electrode", Pokedex.Electrode, HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, Types.Lightning, Sets.Fusion_Strike, 88),
@@ -14007,7 +14007,7 @@ namespace TCG
 		X	Mimikyu 97 PAL
 		*/
 		
-		// the DELETED play labs promos might get reasonably obtainable in leagues soon
+		// the play labs promos might get reasonably obtainable in leagues soon
 		// Smoliv and Growlithe from SV_Promo seem to have both pixel and smooth cosmos
 		// Mankey and Primeape from Paldea_Evolved seem to have pixel cosmos
 		// the other current (pre 151) SV cosmos holos seem to have smooth cosmos

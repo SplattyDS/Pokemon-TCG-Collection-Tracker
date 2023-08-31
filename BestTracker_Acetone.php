@@ -409,9 +409,9 @@ print('<h1>Foreign Starlight Holo</h1>');
 foreach ($temp as $cur) { foreignImg($cur[0], $cur[1]); }
 print('</div>');
 
-$temp = array(array(2, 'red'));
+$temp = array(array(2, 'orange'));
 print('<div id="container - '.$j++.'" class="center">');
-print('<h1>Foreign Glitter Holo</h1>');
+print('<h1>Foreign Sparkle Holo</h1>');
 foreach ($temp as $cur) { foreignImg($cur[0], $cur[1]); }
 print('</div>');
 

@@ -554,8 +554,8 @@ namespace TCG
 				new ForeignGroup("Foreign Starlight Holo",
 					(foreignID++, AcetoneStatus.CARD_OBTAINED)
 				),
-				new ForeignGroup("Foreign Glitter Holo",
-					(foreignID++, AcetoneStatus.NO_PROGRESS)
+				new ForeignGroup("Foreign Sparkle Holo",
+					(foreignID++, AcetoneStatus.CARD_OBTAINED)
 				),
 			};
 		}
