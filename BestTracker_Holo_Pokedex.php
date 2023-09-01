@@ -134,7 +134,7 @@ start($j++, 'Arbok', $holoHave, $Arbok);
 foreach ($Arbok as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Pikachu = array(13973,296,423,568,838,1379,1531,1742,2021,2417,2418,2671,1161,1171,1195,1200,2890,3270,2910,3598,3833,4201,4292,2989,3013,3048,4552,4722,4445,5706,6013,6639,6924,7124,7463,7629,6731,7835,8094,8124,6781,6784,6829,6846,6859,6871,6884,9067,8479,8480,8481,8482,9173,9237,8353,10090,10266,10267,10427,10528,8545,8594,8596,8599,8600,8610,8642,8647,8651,8652,8658,8662,8663,8664,8675,8690,8691,8737,8748,8762,10957,10958,11350,12300,11034,12890,10878,12891,12974,13115,11136,11137,11160,11191,11225,11269,11274,13624,13971);
+$Pikachu = array(296,423,568,838,1379,1531,1742,2021,2417,2418,2671,1161,1171,1195,1200,2890,3270,2910,3598,3833,4201,4292,2989,3013,3048,4552,4722,4445,5706,6013,6639,6924,7124,7463,7629,6731,7835,8094,8124,6781,6784,6829,6846,6859,6871,6884,9067,8479,8480,8481,8482,9173,9237,8353,10090,10266,10267,10427,10528,8545,8594,8596,8599,8600,8610,8642,8647,8651,8652,8658,8662,8663,8664,8675,8690,8691,8737,8748,8762,10957,10958,11350,12300,11034,12890,10878,12891,12974,13115,11136,11137,11160,11191,11225,11269,11274,13624,13971);
 start($j++, 'Pikachu', $holoHave, $Pikachu);
 foreach ($Pikachu as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -4839,7 +4839,7 @@ start($j++, 'Enamorus', $holoHave, $Enamorus);
 foreach ($Enamorus as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Sprigatito = array(13362,13536,13580,13581,13748,13967);
+$Sprigatito = array(13362,13536,13580,13581,13973,13748,13967);
 start($j++, 'Sprigatito', $holoHave, $Sprigatito);
 foreach ($Sprigatito as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -4854,7 +4854,7 @@ start($j++, 'Meowscarada', $holoHave, $Meowscarada);
 foreach ($Meowscarada as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Fuecoco = array(13383,13538,13600,13601,13749,13968);
+$Fuecoco = array(13383,13538,13600,13974,13601,13749,13968);
 start($j++, 'Fuecoco', $holoHave, $Fuecoco);
 foreach ($Fuecoco as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -4869,7 +4869,7 @@ start($j++, 'Skeledirge', $holoHave, $Skeledirge);
 foreach ($Skeledirge as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Quaxly = array(13398,13540,13613,13614,13750,13969);
+$Quaxly = array(13398,13540,13613,13614,13975,13750,13969);
 start($j++, 'Quaxly', $holoHave, $Quaxly);
 foreach ($Quaxly as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

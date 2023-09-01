@@ -8,6 +8,7 @@
 
 
 
+
 start($j++, 'ex', $worldsHave, $ex);
 foreach ($ex as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }
 finish();

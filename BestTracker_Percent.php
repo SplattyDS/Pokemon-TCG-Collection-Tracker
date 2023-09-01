@@ -315,6 +315,10 @@ start($j++, 'Special Art Pokémon (SV)', $have, $Special_Art_Pokemon_SV);
 foreach ($Special_Art_Pokemon_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Pikachu Worlds Collection', $have, $Pikachu_Worlds_Collection);
+foreach ($Pikachu_Worlds_Collection as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Full Art Custume Pikachu', $have, $Full_Art_Costume_Pikachu);
 foreach ($Full_Art_Costume_Pikachu as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

@@ -3939,6 +3939,16 @@ namespace TCG
 			new Card("Earthen Seal Stone", Pokedex.NVT, Rarity.Seal_Stone_Non_Holo, Types.Tool, Sets.Silver_Tempest, 154.1),
 			new Card("Forest Seal Stone", Pokedex.NVT, Rarity.Seal_Stone_Non_Holo, Types.Tool, Sets.Silver_Tempest, 156.1),
 			new Card("Sky Seal Stone", Pokedex.NVT, Rarity.Seal_Stone_Non_Holo, Types.Tool, Sets.Crown_Zenith, 143.1),
+			new Card("Pikachu", Pokedex.Pikachu, Rarity.Pikachu_Worlds_Collection, Types.Lightning, Sets.Pikachu_Worlds_Collection, 1),
+			new Card("Pikachu", Pokedex.Pikachu, Rarity.Pikachu_Worlds_Collection, Types.Lightning, Sets.Pikachu_Worlds_Collection, 2),
+			new Card("Pikachu", Pokedex.Pikachu, Rarity.Pikachu_Worlds_Collection, Types.Lightning, Sets.Pikachu_Worlds_Collection, 3),
+			new Card("Pikachu", Pokedex.Pikachu, Rarity.Pikachu_Worlds_Collection, Types.Lightning, Sets.Pikachu_Worlds_Collection, 4),
+			new Card("Pikachu", Pokedex.Pikachu, Rarity.Pikachu_Worlds_Collection, Types.Lightning, Sets.Pikachu_Worlds_Collection, 5),
+			new Card("Pikachu", Pokedex.Pikachu, Rarity.Pikachu_Worlds_Collection, Types.Lightning, Sets.Pikachu_Worlds_Collection, 5.1),
+			new Card("Pikachu", Pokedex.Pikachu, Rarity.Pikachu_Worlds_Collection, Types.Lightning, Sets.Pikachu_Worlds_Collection, 6),
+			new Card("Pikachu", Pokedex.Pikachu, Rarity.Pikachu_Worlds_Collection, Types.Lightning, Sets.Pikachu_Worlds_Collection, 7),
+			new Card("Pikachu", Pokedex.Pikachu, Rarity.Pikachu_Worlds_Collection, Types.Lightning, Sets.Pikachu_Worlds_Collection, 8),
+			new Card("Pikachu", Pokedex.Pikachu, Rarity.Pikachu_Worlds_Collection, Types.Lightning, Sets.Pikachu_Worlds_Collection, 9),
 		};
 		
 		// do not add Play! Pokémon prize pack cards (too many and uncertain amount)

@@ -282,6 +282,11 @@ finish();
 
 
 
+$Pikachu_Worlds_Collection = array(3930,3931,3932,3933,3934,3935,3936,3937,3938,3939);
+start($j++, 'Pikachu Worlds Collection', $have, $Pikachu_Worlds_Collection);
+foreach ($Pikachu_Worlds_Collection as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 
 $Black_White = array(428,429,430);
 start($j++, 'Black White', $have, $Black_White);

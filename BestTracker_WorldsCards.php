@@ -1,6 +1,8 @@
 <?php
 $Ancient_Mew = array();
 
+$Pikachu_Worlds_Collection = array();
+
 $Full_Art_Costume_Pikachu = array();
 
 $Gold_Pokemon = array();

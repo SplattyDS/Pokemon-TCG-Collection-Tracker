@@ -89,6 +89,7 @@
 		HGSS_Promo,
 		Gyarados_Half_Deck,
 		Raichu_Half_Deck,
+		Pikachu_Worlds_Collection,
 		Japanese_HGSS,
 		
 		Black_White,

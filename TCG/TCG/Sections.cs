@@ -6,6 +6,7 @@
 		{
 			// all
 			new Section(Rarity.Ancient_Mew, "Ancient Mew", SortMode.NO_SORT),
+			new Section(Rarity.Pikachu_Worlds_Collection, "Pikachu Worlds Collection", SortMode.SORT_BY_SET),
 			new Section(Rarity.Full_Art_Costume_Pikachu, "Full Art Custume Pikachu", SortMode.SORT_BY_SET),
 			new Section(Rarity.Gold_Pokemon, "Gold Pokémon", SortMode.SORT_BY_SET),
 			new Section(Rarity.Metal, "Metal Cards", SortMode.SORT_BY_SET),

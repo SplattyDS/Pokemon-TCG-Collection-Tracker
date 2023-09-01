@@ -1,6 +1,8 @@
 <?php
 $Ancient_Mew = array(2936);
 
+$Pikachu_Worlds_Collection = array(3930,3931,3932,3933,3934,3935,3936,3937,3938,3939);
+
 $Full_Art_Costume_Pikachu = array(3148,3149,3152,3153,3154,3155,3160,3161,3200);
 
 $Gold_Pokemon = array(583,584,3062,3063,672);

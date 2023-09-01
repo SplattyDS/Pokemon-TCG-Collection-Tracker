@@ -469,8 +469,6 @@ AlignBinder($binder10);
 
 AddCards($binder11, $HGSS_PIXEL_COSMOS_HOLO);
 AlignRow($binder11);
-AddCards($binder11, $HGSS_PIXEL_COSMOS_HOLO_PW);
-AlignRow($binder11);
 AddCards($binder11, $HGSS_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
 AlignPage($binder11);
 AddCards($binder11, $HGSS_CRACKED_ICE_HOLO);
@@ -611,7 +609,7 @@ AlignBinder($binder29);
 AddCards($binder30, array(-1));
 AlignBinder($binder30);
 
-$input = array(2, '/r', 2, '/p', 2, '/r', 1, '/p', 1, '/p', 4, '/r', 1, '/r', 2, '/p', 2, '/r', 4, '/r', 1, '/r', 2, '/r', 3, '/r', 1, '/r', 4, '/p', 29, '/p', 25, '/r', 2, '/r', 1, '/p', 3, '/r', 1, '/r', 3, '/p', 11, '/p', 1, '/p', 9, '/p', 1, '/r', 3, '/p', 3, '/r', 1, '/r', 3, '/p', 7, '/p', 8, '/p', 1, '/r', 3, '/p', 5, '/r', 2, '/p', 78, '/s', 2, '/r', 1, '/r', 2, '/p', 8, '/p', 9, '/p', 12, '/p', 2, '/p', 5, '/p', 1, '/b', 43, '/s', 45, '/s', 16, '/p', 4, '/p', 5, '/p', 1, '/p', 1, '/p', 146, '/s', 5, '/p', 3, '/p', 4, '/s', 0, '/s', '/b');
+$input = array(2, '/r', 2, '/p', 2, '/r', 1, '/p', 1, '/p', 4, '/r', 1, '/r', 2, '/p', 2, '/r', 4, '/r', 1, '/r', 2, '/r', 3, '/r', 1, '/r', 4, '/p', 29, '/p', 25, '/r', 2, '/r', 1, '/p', 3, '/r', 1, '/r', 3, '/p', 11, '/p', 1, '/p', 9, '/p', 1, '/r', 3, '/p', 3, '/r', 1, '/r', 3, '/p', 7, '/p', 8, '/p', 1, '/r', 3, '/p', 5, '/r', 2, '/p', 78, '/s', 2, '/r', 1, '/r', 2, '/p', 8, '/p', 9, '/p', 12, '/p', 2, '/p', 5, '/p', 1, '/b', 43, '/s', 45, '/s', 16, '/p', 4, '/p', 5, '/p', 1, '/p', 1, '/p', 147, '/s', 5, '/p', 3, '/p', 3, '/p', 4, '/s', 0, '/s', '/b');
 
 // start($j++, 'Collection Test', $holoHave, $output);
 // foreach ($output as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }

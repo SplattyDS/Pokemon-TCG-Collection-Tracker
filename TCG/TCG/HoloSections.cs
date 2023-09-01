@@ -97,7 +97,6 @@
 
 			// HGSS series
 			new Section(HoloRarity.HGSS_PIXEL_COSMOS_HOLO, "HGSS Series - Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
-			new Section(HoloRarity.HGSS_PIXEL_COSMOS_HOLO_PW, "HGSS Series - Pixel Cosmos Holo PW", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.HGSS_PIXEL_COSMOS_HOLO_VICTORY_MEDAL, "HGSS Series - Pixel Cosmos Holo Victory Medal", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.HGSS_CRACKED_ICE_HOLO, "HGSS Series - Cracked Ice Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 

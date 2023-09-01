@@ -279,10 +279,6 @@ start($j++, 'HGSS Series - Pixel Cosmos Holo', $holoHave, $HGSS_PIXEL_COSMOS_HOL
 foreach ($HGSS_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-start($j++, 'HGSS Series - Pixel Cosmos Holo PW', $holoHave, $HGSS_PIXEL_COSMOS_HOLO_PW);
-foreach ($HGSS_PIXEL_COSMOS_HOLO_PW as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
 start($j++, 'HGSS Series - Pixel Cosmos Holo Victory Medal', $holoHave, $HGSS_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
 foreach ($HGSS_PIXEL_COSMOS_HOLO_VICTORY_MEDAL as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

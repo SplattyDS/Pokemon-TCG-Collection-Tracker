@@ -12666,7 +12666,7 @@ namespace TCG
 			new HoloCard("Clefairy", Pokedex.Clefairy, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Psychic, Sets.Brilliant_Stars, 53),
 			new HoloCard("Clefable", Pokedex.Clefable, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Psychic, Sets.Brilliant_Stars, 54),
 			new HoloCard("Starmie", Pokedex.Starmie, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Psychic, Sets.Brilliant_Stars, 55, true),
-			new HoloCard("Mewtwo", Pokedex.Mewtwo, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Psychic, Sets.Brilliant_Stars, 56),
+			new HoloCard("Mewtwo", Pokedex.Mewtwo, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Psychic, Sets.Brilliant_Stars, 56, true),
 			new HoloCard("Baltoy", Pokedex.Baltoy, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Psychic, Sets.Brilliant_Stars, 58),
 			new HoloCard("Claydol", Pokedex.Claydol, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Psychic, Sets.Brilliant_Stars, 59),
 			new HoloCard("Duskull", Pokedex.Duskull, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, Types.Psychic, Sets.Brilliant_Stars, 60, true),
@@ -13976,13 +13976,15 @@ namespace TCG
 			new HoloCard("Eevee", Pokedex.Eevee, HoloRarity.SV_SMOOTH_COSMOS_HOLO, Types.Colorless, Sets.SV_Promo, 43),
 			new HoloCard("Espeon", Pokedex.Espeon, HoloRarity.SV_REVERSE_MIRAGE_ROCKY_HOLO, Types.Psychic, Sets.Obsidian_Flames, 86),
 			new HoloCard("Umbreon", Pokedex.Umbreon, HoloRarity.SV_REVERSE_MIRAGE_ROCKY_HOLO, Types.Darkness, Sets.Obsidian_Flames, 130),
-			new HoloCard("Sprigatito", Pokedex.Sprigatito, HoloRarity.SV_CONFETTI_HOLO, Types.Grass, Sets.Mc_Donalds_2023, 1),
+			new HoloCard("Sprigatito", Pokedex.Sprigatito, HoloRarity.SV_CONFETTI_HOLO, Types.Grass, Sets.Mc_Donalds_2023, 1, true),
 			new HoloCard("Fuecoco", Pokedex.Fuecoco, HoloRarity.SV_CONFETTI_HOLO, Types.Fire, Sets.Mc_Donalds_2023, 2),
 			new HoloCard("Quaxly", Pokedex.Quaxly, HoloRarity.SV_CONFETTI_HOLO, Types.Water, Sets.Mc_Donalds_2023, 3),
 			new HoloCard("Cetitan", Pokedex.Cetitan, HoloRarity.SV_CONFETTI_HOLO, Types.Water, Sets.Mc_Donalds_2023, 5),
-			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.SV_CONFETTI_HOLO, Types.Lightning, Sets.Mc_Donalds_2023, 6),
-			new HoloCard("Klawf", Pokedex.Klawf, HoloRarity.SV_CONFETTI_HOLO, Types.Fighting, Sets.Mc_Donalds_2023, 11),
-			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.HGSS_PIXEL_COSMOS_HOLO_PW, Types.Lightning, Sets.Unnumbered_Promo, -1),
+			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.SV_CONFETTI_HOLO, Types.Lightning, Sets.Mc_Donalds_2023, 6, true),
+			new HoloCard("Klawf", Pokedex.Klawf, HoloRarity.SV_CONFETTI_HOLO, Types.Fighting, Sets.Mc_Donalds_2023, 11, true),
+			new HoloCard("Sprigatito", Pokedex.Sprigatito, HoloRarity.SV_MIRAGE_HOLO, Types.Grass, Sets.Paldea_Evolved, 13),
+			new HoloCard("Fuecoco", Pokedex.Fuecoco, HoloRarity.SV_MIRAGE_HOLO, Types.Fire, Sets.Paldea_Evolved, 34),
+			new HoloCard("Quaxly", Pokedex.Quaxly, HoloRarity.SV_MIRAGE_HOLO, Types.Water, Sets.Paldea_Evolved, 50),
 		};
 		
 		/*

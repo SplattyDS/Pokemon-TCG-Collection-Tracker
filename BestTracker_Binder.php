@@ -353,6 +353,8 @@ AlignBinder($binder0);
 // AlignPage($binder1);
 // AddCards($binder1, $Japanese_Full_art);
 // AlignPage($binder1);
+AddCards($binder1, $Pikachu_Worlds_Collection);
+AlignPage($binder1);
 AddCards($binder1, $Full_Art_Costume_Pikachu);
 AlignPage($binder1);
 AddCards($binder1, $Gold_Pokemon);

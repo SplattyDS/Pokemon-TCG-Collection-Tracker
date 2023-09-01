@@ -174,6 +174,7 @@ finish();
 
 
 
+
 $Next_Destinies = array(63,64,65,69);
 start($j++, 'Next Destinies', $worldsHave, $Next_Destinies);
 foreach ($Next_Destinies as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }

@@ -97,7 +97,7 @@ namespace TCG
 					(HoloCards.Find(Sets.Rumble, 7, HoloRarity.DP_RUMBLE_PIXEL_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Rumble, 10, HoloRarity.DP_RUMBLE_PIXEL_COSMOS_HOLO_LOGO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.HGSS_Promo, 3, HoloRarity.HGSS_PIXEL_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
-					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.HGSS_PIXEL_COSMOS_HOLO_PW), AcetoneStatus.NO_PROGRESS),
+					// (HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.HGSS_PIXEL_COSMOS_HOLO_PW), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Unnumbered_Promo, -1, HoloRarity.HGSS_PIXEL_COSMOS_HOLO_VICTORY_MEDAL), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Emerging_Powers, 56, HoloRarity.BWXY_PIXEL_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.BW_Promo, 79, HoloRarity.BWXY_PIXEL_COSMOS_HOLO_PLASMA), AcetoneStatus.NO_PROGRESS),

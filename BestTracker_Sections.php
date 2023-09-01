@@ -3,6 +3,10 @@ start($j++, 'Ancient Mew', $have, $Ancient_Mew);
 foreach ($Ancient_Mew as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Pikachu Worlds Collection', $have, $Pikachu_Worlds_Collection);
+foreach ($Pikachu_Worlds_Collection as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Full Art Custume Pikachu', $have, $Full_Art_Costume_Pikachu);
 foreach ($Full_Art_Costume_Pikachu as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

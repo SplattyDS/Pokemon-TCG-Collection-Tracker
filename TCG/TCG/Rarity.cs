@@ -19,6 +19,7 @@
 
 		// all
 		Ancient_Mew,
+		Pikachu_Worlds_Collection,
 		Full_Art_Costume_Pikachu,
 		Gold_Pokemon,
 		Metal,
