@@ -13985,29 +13985,20 @@ namespace TCG
 			new HoloCard("Sprigatito", Pokedex.Sprigatito, HoloRarity.SV_MIRAGE_HOLO, Types.Grass, Sets.Paldea_Evolved, 13),
 			new HoloCard("Fuecoco", Pokedex.Fuecoco, HoloRarity.SV_MIRAGE_HOLO, Types.Fire, Sets.Paldea_Evolved, 34),
 			new HoloCard("Quaxly", Pokedex.Quaxly, HoloRarity.SV_MIRAGE_HOLO, Types.Water, Sets.Paldea_Evolved, 50),
+			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.SWSH_PIXEL_COSMOS_HOLO, Types.Lightning, Sets.Silver_Tempest, 49),
+			new HoloCard("Stantler", Pokedex.Stantler, HoloRarity.SWSH_PIXEL_COSMOS_HOLO, Types.Colorless, Sets.Astral_Radiance, 125),
+			new HoloCard("Snom", Pokedex.Snom, HoloRarity.SWSH_PIXEL_COSMOS_HOLO, Types.Water, Sets.Fusion_Strike, 84),
+			new HoloCard("Glastrier", Pokedex.Glastrier, HoloRarity.SWSH_PIXEL_COSMOS_HOLO, Types.Water, Sets.Lost_Origin, 55),
+			new HoloCard("Cryogonal", Pokedex.Cryogonal, HoloRarity.SWSH_PIXEL_COSMOS_HOLO, Types.Water, Sets.Evolving_Skies, 43),
+			new HoloCard("Dusknoir", Pokedex.Dusknoir, HoloRarity.SWSH_MIRAGE_HOLO, Types.Psychic, Sets.Vivid_Voltage, 71),
+			new HoloCard("Marshadow", Pokedex.Marshadow, HoloRarity.SWSH_MIRAGE_HOLO, Types.Psychic, Sets.Evolving_Skies, 80),
+			new HoloCard("Trevenant", Pokedex.Trevenant, HoloRarity.SWSH_MIRAGE_HOLO, Types.Grass, Sets.Lost_Origin, 17),
+			new HoloCard("Chandelure", Pokedex.Chandelure, HoloRarity.SWSH_MIRAGE_HOLO, Types.Fire, Sets.Lost_Origin, 26),
+			new HoloCard("Gengar", Pokedex.Gengar, HoloRarity.SWSH_MIRAGE_HOLO, Types.Psychic, Sets.Lost_Origin, 66),
+			new HoloCard("Spectrier", Pokedex.Spectrier, HoloRarity.SWSH_MIRAGE_HOLO, Types.Psychic, Sets.Lost_Origin, 81),
+			new HoloCard("Houndoom", Pokedex.Houndoom, HoloRarity.SV_MIRAGE_HOLO, Types.Fire, Sets.Scarlet_Violet, 43),
+			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.SV_MIRAGE_HOLO, Types.Lightning, Sets.Paldea_Evolved, 62),
 		};
-		
-		/*
-		Holiday Calendar 2023 (all SwSH pixel cosmos?):
-		V	Pikachu 49 SIT
-		V	Stantler 125 ASR
-		V	Snom 84 FUS
-		V	Glastrier 55 LOO
-		V	Cryogonal 43 EVS
-
-		BOOster Bundle 2023 (all mirage holo - SWSH & SV)
-		V	Dusknoir 71 VIV
-		V	Marshadow 80 EVS
-		V	Trevenant 17 LOO
-		V	Chandelure 26 LOO
-		V	Gengar 66 LOO
-		V	Spectrier 81 LOO
-
-		V	Houndoom 43 SV1
-		X	Houndstone 106 SV1
-		V	Pikachu 62 PAL
-		X	Mimikyu 97 PAL
-		*/
 		
 		// the play labs promos might get reasonably obtainable in leagues soon
 		// Smoliv and Growlithe from SV_Promo seem to have both pixel and smooth cosmos

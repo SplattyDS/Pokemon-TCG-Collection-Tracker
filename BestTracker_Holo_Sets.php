@@ -733,7 +733,7 @@ start($j++, 'Champions Path', $holoHave, $Champions_Path);
 foreach ($Champions_Path as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Vivid_Voltage = array(10725,10982,10726,10983,10984,10985,10986,10727,10987,10728,10988,10729,10989,10730,10990,10731,10991,10732,10733,10734,10735,10736,10737,10738,10739,10992,10993,10740,10994,10741,10742,10995,10996,10743,11060);
+$Vivid_Voltage = array(10725,10982,10726,10983,10984,10985,10986,10727,10987,10728,10988,10729,10989,10730,10990,10731,10991,10732,13981,10733,10734,10735,10736,10737,10738,10739,10992,10993,10740,10994,10741,10742,10995,10996,10743,11060);
 start($j++, 'Vivid Voltage', $holoHave, $Vivid_Voltage);
 foreach ($Vivid_Voltage as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -754,7 +754,7 @@ start($j++, 'Chilling Reign', $holoHave, $Chilling_Reign);
 foreach ($Chilling_Reign as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Evolving_Skies = array(10791,10792,10793,10794,10795,10796,11071,10797,11011,10798,10799,11072,11012,10800,11013,10801,10802,10803,10804,10805,11014,10806,10807,10808,10809,11015,10810,11073,11074,11075);
+$Evolving_Skies = array(10791,10792,10793,10794,10795,13980,10796,11071,10797,11011,10798,10799,11072,11012,10800,11013,13982,10801,10802,10803,10804,10805,11014,10806,10807,10808,10809,11015,10810,11073,11074,11075);
 start($j++, 'Evolving Skies', $holoHave, $Evolving_Skies);
 foreach ($Evolving_Skies as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -764,7 +764,7 @@ start($j++, 'Celebrations', $holoHave, $Celebrations);
 foreach ($Celebrations as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Fusion_Strike = array(10827,10828,10829,10830,11016,10831,10832,10833,11084,10834,11017,10835,10836,11018,10837,11019,10838,10839,11020,11085,11086,11087,11088,11021,11089);
+$Fusion_Strike = array(10827,10828,10829,10830,13978,11016,10831,10832,10833,11084,10834,11017,10835,10836,11018,10837,11019,10838,10839,11020,11085,11086,11087,11088,11021,11089);
 start($j++, 'Fusion Strike', $holoHave, $Fusion_Strike);
 foreach ($Fusion_Strike as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -774,7 +774,7 @@ start($j++, 'Brilliant Stars', $holoHave, $Brilliant_Stars);
 foreach ($Brilliant_Stars as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Astral_Radiance = array(11029,10850,10851,11030,10852,10853,11031,10854,10855,10856,10857,11032,10858,10859,10860,11033,10861,10862,10863,10864,10865,10866,10867,10868,10869);
+$Astral_Radiance = array(11029,10850,10851,11030,10852,10853,11031,10854,10855,10856,10857,11032,10858,10859,10860,11033,10861,10862,10863,10864,10865,13977,10866,10867,10868,10869);
 start($j++, 'Astral Radiance', $holoHave, $Astral_Radiance);
 foreach ($Astral_Radiance as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -784,12 +784,12 @@ start($j++, 'Pokémon GO', $holoHave, $Pokémon_GO);
 foreach ($Pokémon_GO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Lost_Origin = array(10886,10887,10888,10889,10890,10891,10892,10893,10894,10895,10896,10897,10898,10899,10900,10901,10902,10903,10904,10905,10906,10907);
+$Lost_Origin = array(10886,10887,10888,10889,13983,10890,10891,13984,10892,10893,10894,10895,13979,10896,13985,10897,10898,10899,10900,13986,10901,10902,10903,10904,10905,10906,10907);
 start($j++, 'Lost Origin', $holoHave, $Lost_Origin);
 foreach ($Lost_Origin as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Silver_Tempest = array(10908,10909,10910,11037,10911,10912,10913,10914,10915,10916,10917,10918,10919);
+$Silver_Tempest = array(10908,10909,10910,11037,13976,10911,10912,10913,10914,10915,10916,10917,10918,10919);
 start($j++, 'Silver Tempest', $holoHave, $Silver_Tempest);
 foreach ($Silver_Tempest as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -816,12 +816,12 @@ foreach ($Mc_Donalds_2022 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN
 finish();
 
 
-$Scarlet_Violet = array(13536,13329,13330,13537,13538,13331,13332,13539,13333,13540,13334,13335,13541,13542,13336,13543,13337,13338,13544,13339,13340,13341,13342,13343,13344,13345,13346,13347,13348,13349);
+$Scarlet_Violet = array(13536,13329,13330,13537,13538,13331,13332,13539,13333,13987,13540,13334,13335,13541,13542,13336,13543,13337,13338,13544,13339,13340,13341,13342,13343,13344,13345,13346,13347,13348,13349);
 start($j++, 'Scarlet Violet', $holoHave, $Scarlet_Violet);
 foreach ($Scarlet_Violet as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Paldea_Evolved = array(13545,13546,13973,13547,13548,13974,13549,13975,13550,13551,13552,13553,13554,13555,13556,13557,13558,13559,13746,13747,13560,13561,13562,13563,13564,13565,13566,13567,13568,13569);
+$Paldea_Evolved = array(13545,13546,13973,13547,13548,13974,13549,13975,13550,13551,13988,13552,13553,13554,13555,13556,13557,13558,13559,13746,13747,13560,13561,13562,13563,13564,13565,13566,13567,13568,13569);
 start($j++, 'Paldea Evolved', $holoHave, $Paldea_Evolved);
 foreach ($Paldea_Evolved as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
