@@ -170,9 +170,11 @@
 
 			// SWSH Series
 			new Section(HoloRarity.SWSH_LINE_HOLO, "SWSH Series - Line Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_LINE_HOLO_LOST, "SWSH Series - Line Holo (Lost)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SWSH_PLAIN_HOLO, "SWSH Series - Plain Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SWSH_SMOOTH_COSMOS_HOLO, "SWSH Series - Smooth Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SWSH_PIXEL_COSMOS_HOLO, "SWSH Series - Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_PIXEL_COSMOS_HOLO_LOST, "SWSH Series - Pixel Cosmos Holo (Lost)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SWSH_MIRROR_HOLO, "SWSH Series - Mirror Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SWSH_CRACKED_ICE_HOLO, "SWSH Series - Cracked Ice Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SWSH_CONFETTI_HOLO, "SWSH Series - Confetti Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
@@ -186,6 +188,7 @@
 			new Section(HoloRarity.SWSH_PIXEL_COSMOS_HOLO_ENERGY_STAR, "SWSH Series - Pixel Cosmos Holo Energy (Star)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, "SWSH Series - Reverse Energy Banner Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO_LOST, "SWSH Series - Reverse Energy Banner Holo (Lost)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.SWSH_REVERSE_SMOOTH_COSMOS_ENERGY_BANNER_HOLO, "SWSH Series - Reverse Smooth Cosmos Energy Banner Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SWSH_REVERSE_MIRROR_ENERGY_BANNER_HOLO, "SWSH Series - Reverse Mirror Energy Banner Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
@@ -196,8 +199,8 @@
 
 			// SV Series
 			new Section(HoloRarity.SV_MIRAGE_HOLO, "SV Series - Mirage Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
-			new Section(HoloRarity.SV_SMOOTH_COSMOS_HOLO, "SV Series - Smooth Cosmos Holo", SortMode.SORT_BY_SET),
-			new Section(HoloRarity.SV_PIXEL_COSMOS_HOLO, "SV Series - Pixel Cosmos Holo", SortMode.SORT_BY_SET),
+			new Section(HoloRarity.SV_SMOOTH_COSMOS_HOLO, "SV Series - Smooth Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SV_PIXEL_COSMOS_HOLO, "SV Series - Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_CONFETTI_HOLO, "SV Series - Confetti Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_LINE_HOLO, "SV Series - Line Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
