@@ -114,9 +114,9 @@ namespace TCG
 			new SetReverse(Sets.Brilliant_Stars, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO),
 			new SetReverse(Sets.Astral_Radiance, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO),
 			new SetReverse(Sets.Pokémon_GO, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO),
-			new SetReverse(Sets.Lost_Origin, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO),
+			new SetReverse(Sets.Lost_Origin, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO_LOST),
 			new SetReverse(Sets.Silver_Tempest, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO),
-			new SetReverse(Sets.Crown_Zenith, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO),
+			new SetReverse(Sets.Crown_Zenith, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO, HoloRarity.SWSH_REVERSE_ENERGY_BANNER_HOLO_LOST),
 
 			new SetReverse(Sets.Scarlet_Violet, HoloRarity.SV_REVERSE_ROCKY_HOLO),
 			new SetReverse(Sets.Paldea_Evolved, HoloRarity.SV_REVERSE_ROCKY_HOLO),

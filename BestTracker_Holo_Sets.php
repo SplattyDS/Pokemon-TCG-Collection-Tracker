@@ -784,7 +784,7 @@ start($j++, 'Pokémon GO', $holoHave, $Pokémon_GO);
 foreach ($Pokémon_GO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Lost_Origin = array(10886,10887,10888,12938,10889,13983,10890,12947,10891,13984,10892,10893,10894,14002,12972,10895,13979,10896,13985,10897,14003,12988,14004,12991,10898,10899,12997,10900,13986,10901,10902,10903,13022,13026,10904,10905,13046,10906,13051,13058,14005,13060,13064,13065,14006,13066,10907);
+$Lost_Origin = array(10886,10887,10888,10889,13983,10890,10891,13984,10892,10893,10894,14002,10895,13979,10896,13985,10897,14003,14004,10898,10899,10900,13986,10901,10902,10903,10904,10905,10906,14005,14006,10907);
 start($j++, 'Lost Origin', $holoHave, $Lost_Origin);
 foreach ($Lost_Origin as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -794,7 +794,7 @@ start($j++, 'Silver Tempest', $holoHave, $Silver_Tempest);
 foreach ($Silver_Tempest as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Crown_Zenith = array(10922,10923,10924,10925,10926,10927,10928,10929,13274,10930,10931,10932,10933,10934,10935,10936,10937,10938,14009,13318,10939,10940,14010,14011);
+$Crown_Zenith = array(10922,10923,10924,10925,10926,10927,10928,10929,10930,10931,10932,10933,10934,10935,10936,10937,10938,14009,10939,10940,14010,14011);
 start($j++, 'Crown Zenith', $holoHave, $Crown_Zenith);
 foreach ($Crown_Zenith as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
