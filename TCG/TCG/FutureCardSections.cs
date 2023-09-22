@@ -4,15 +4,14 @@
 	{
 		private static FutureCardSection[] TheSections =
 		{
-			new FutureCardSection("Pokemon Card 151 (JP)", "PC", 54),
-			
-			new FutureCardSection("Raging Surf (JP)", "RS", 18),
+			new FutureCardSection("Raging Surf (JP)", "RS", 36),
 			new FutureCardSection("Ancient Roar (JP)", "AR", 1),
 			new FutureCardSection("Future Flash (JP)", "FF", 1),
 			new FutureCardSection("Paradox Rift", "PR", 4),
 
 			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 2),
 			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 5),
+			new FutureCardSection("Scarlet & Violet Promo (CH)", "SVPCH", 2),
 
 			new FutureCardSection("ex Starter Decks (JP)", "EXSD", 1),
 			new FutureCardSection("Starter Set Terastal ex (JP)", "SST", 2),
