@@ -44,7 +44,7 @@ start($j++, 'Wartortle', $holoHave, $Wartortle);
 foreach ($Wartortle as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Blastoise = array(2,7,51,72,195,214,324,448,480,481,1140,2439,1085,2451,1184,2745,3298,2818,3860,4407,4408,4591,5019,5995,5058,5245,6328,8521,9920,10873,12881);
+$Blastoise = array(2,51,72,195,214,324,448,480,481,1140,2439,1085,2451,1184,2745,3298,2818,3860,4407,4408,4591,5019,5995,5058,5245,6328,8521,9920,10873,12881);
 start($j++, 'Blastoise', $holoHave, $Blastoise);
 foreach ($Blastoise as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -676,7 +676,7 @@ start($j++, 'Hitmonlee', $holoHave, $Hitmonlee);
 foreach ($Hitmonlee as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Hitmonchan = array(57,97,427,430,686,2074,3723,4712,4888,4461,7145,7853,8088,8148,9964,11375,12324);
+$Hitmonchan = array(7,57,97,427,430,686,2074,3723,4712,4888,4461,7145,7853,8088,8148,9964,11375,12324);
 start($j++, 'Hitmonchan', $holoHave, $Hitmonchan);
 foreach ($Hitmonchan as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

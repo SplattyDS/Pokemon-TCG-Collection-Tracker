@@ -16,7 +16,7 @@ namespace TCG
 			new HoloCard("Charizard", Pokedex.Charizard, HoloRarity.OS_STARLIGHT_HOLO, Types.Fire, Sets.Base_Set, 4),
 			new HoloCard("Clefairy", Pokedex.Clefairy, HoloRarity.OS_STARLIGHT_HOLO, Types.Colorless, Sets.Base_Set, 5),
 			new HoloCard("Gyarados", Pokedex.Gyarados, HoloRarity.OS_STARLIGHT_HOLO, Types.Water, Sets.Base_Set, 6),
-			new HoloCard("Hitmonchan", Pokedex.Blastoise, HoloRarity.OS_STARLIGHT_HOLO, Types.Fighting, Sets.Base_Set, 7),
+			new HoloCard("Hitmonchan", Pokedex.Hitmonchan, HoloRarity.OS_STARLIGHT_HOLO, Types.Fighting, Sets.Base_Set, 7),
 			new HoloCard("Machamp", Pokedex.Machamp, HoloRarity.OS_STARLIGHT_HOLO, Types.Fighting, Sets.Base_Set, 8),
 			new HoloCard("Machamp", Pokedex.Machamp, HoloRarity.OS_PIXEL_COSMOS_HOLO, Types.Fighting, Sets.Base_Set, 8.1),
 			new HoloCard("Magneton", Pokedex.Magneton, HoloRarity.OS_STARLIGHT_HOLO, Types.Lightning, Sets.Base_Set, 9),
