@@ -692,7 +692,7 @@ start($j++, 'SV 151', $have, $SV_151);
 foreach ($SV_151 as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$SV_Promo = array(3641,3638,3639,3643,3644,3642,3828,3720,3721,3722,3723,3724,3829,3830,3831,3837,3834,3835,3836,3840,3841);
+$SV_Promo = array(3641,3638,3639,3643,3644,3642,3828,3720,3721,3722,3723,3724,3829,3830,3831,3837,3834,3835,3836,3840,3841,3994);
 start($j++, 'SV Promo', $have, $SV_Promo);
 foreach ($SV_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

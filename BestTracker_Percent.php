@@ -35,10 +35,6 @@ start($j++, 'Classic Collection', $have, $Classic_Collection);
 foreach ($Classic_Collection as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Full Art Pokémon (SV)', $have, $Full_Art_Pokemon_SV);
-foreach ($Full_Art_Pokemon_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
 start($j++, 'Full Art Pokémon (BW & XY - Radiant)', $have, $Full_Art_Pokemon_BWXY_Radiant);
 foreach ($Full_Art_Pokemon_BWXY_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -53,6 +49,10 @@ finish();
 
 start($j++, 'Ace Spec (Plasma)', $have, $Ace_Spec_Plasma);
 foreach ($Ace_Spec_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Full Art Pokémon (SV)', $have, $Full_Art_Pokemon_SV);
+foreach ($Full_Art_Pokemon_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Ace Spec', $have, $Ace_Spec);

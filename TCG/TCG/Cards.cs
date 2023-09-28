@@ -4003,6 +4003,7 @@ namespace TCG
 			new Card("Mew ex", Pokedex.Mew, Rarity.ex_SV_Gold, Types.Psychic, Sets.SV_151, 205),
 			new Card("Switch", Pokedex.NVT, Rarity.Gold_Item_SV, Types.Item, Sets.SV_151, 206),
 			new Card("Basic Psychic Energy", Pokedex.NVT, Rarity.Gold_Energy_SV, Types.Basic_Psychic_Energy, Sets.SV_151, 207),
+			new Card("Pikachu with Grey Felt Hat", Pokedex.Pikachu, Rarity.Full_Art_Pokemon_SV, Types.Lightning, Sets.SV_Promo, 85),
 		};
 		
 		// do not add Play! Pokémon prize pack cards (too many and uncertain amount)
