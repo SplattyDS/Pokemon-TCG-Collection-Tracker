@@ -516,6 +516,28 @@ function finish()
 	print('</div>');
 }
 
+function printComp($compArr)
+{
+	global $holoHave;
+	
+	foreach ($compArr as $comp)
+	{
+		foreach ($comp as $cur)
+		{
+			if (in_array($cur, $holoHave, true) || $cur == 0)
+			{
+				imgHN($cur);
+			}
+			else
+			{
+				imgH($cur);
+			}
+		}
+		
+		print('<br>');
+	}
+}
+
 // function startTable($id)
 // {
 	// print('<div id="header-'.$ID.'" class="center" onclick="toggleSection(this, '.$ID.')">
@@ -1174,6 +1196,8 @@ else if (isset($_GET['holo']))
 		require 'BestTracker_Holo_Pokedex.php';
 	else if (isset($_GET['all']))
 		require 'BestTracker_Holo_All.php';
+	else if (isset($_GET['comp']))
+		require 'BestTracker_Holo_Comp.php';
 	else if (isset($_GET['col']))
 	{
 		start($j++, 'Holo Collection', $holoHave, $holoHave);

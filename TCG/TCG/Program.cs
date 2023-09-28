@@ -38,6 +38,7 @@ namespace TCG
 			WriteHoloPokedex();
 			WriteHoloAll();
 			WriteHoloHave();
+			WriteHoloComp();
 
 			WriteWorldsCards();
 			WriteWorldsSections();
@@ -69,7 +70,7 @@ namespace TCG
 
 			foreach (Section section in Sections.Get())
 				code.Add(CodeFromCards(section));
-			
+
 			code.Add("?>");
 
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Cards.php", code);
@@ -146,7 +147,7 @@ namespace TCG
 		static void WritePokedex()
 		{
 			List<string> code = new List<string>((int)Pokedex.Length + 2);
-			List<(Pokedex,int)> mons = new List<(Pokedex, int)>((int)Pokedex.Length);
+			List<(Pokedex, int)> mons = new List<(Pokedex, int)>((int)Pokedex.Length);
 
 			code.Add("<?php");
 
@@ -214,7 +215,7 @@ namespace TCG
 		{
 			List<string> code = new List<string>(Sections.Get().Length + 2);
 			IEnumerable<Section> orderedSections;
-			
+
 			if (Sections.Get().Select(s => (decimal)Cards.Get(false).Where(c => c.rarity == s.rarity).Count()).Contains(0))
 			{
 				orderedSections = Sections.Get();
@@ -225,7 +226,7 @@ namespace TCG
 			{
 				orderedSections = Sections.Get().OrderByDescending(s => (decimal)Cards.Get(false).Where(c => c.rarity == s.rarity && c.have).Count() / (decimal)Cards.Get(false).Where(c => c.rarity == s.rarity).Count());
 			}
-			
+
 			code.Add("<?php");
 
 			foreach (Section section in orderedSections)
@@ -356,6 +357,74 @@ namespace TCG
 			code.Add("?>");
 
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Holo_All.php", code);
+		}
+
+		static void WriteHoloComp()
+		{
+			List<string> code = new List<string>(6);
+
+			IEnumerable<HoloCard> cards = HoloCards.Get().OrderBy(c => c.setNum).OrderBy(c => c.set);
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			code.Add("<?php");
+
+			code.Add("$holoAll = array(" + cardArr + ");");
+			code.Add("start($j++, 'Compare SV Cosmos Holo Cards', $holoHave, array());");
+			code.Add("printComp(array(" + GetSvCosmos() + "));");
+			code.Add("finish();");
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Holo_Comp.php", code);
+		}
+
+		static string GetSvCosmos()
+		{
+			IEnumerable<HoloCard> cards = HoloCards.Get();
+			List<List<HoloCard>> res = new List<List<HoloCard>>();
+
+			foreach (HoloCard card in cards)
+			{
+				if (card.rarity != HoloRarity.SV_PIXEL_COSMOS_HOLO && card.rarity != HoloRarity.SV_SMOOTH_COSMOS_HOLO)
+					continue;
+
+				bool contains = false;
+
+				foreach (IEnumerable<HoloCard> arr in res)
+				{
+					if (arr.Where(c => c != null).Select(c => c.id).Contains(card.id))
+						contains = true;
+				}
+
+				if (contains)
+					continue;
+
+				List<HoloCard> list = new List<HoloCard>();
+
+				list.Add(cards.Where(c => c.set == card.set && c.setNum == card.setNum && c.rarity == HoloRarity.SV_SMOOTH_COSMOS_HOLO).FirstOrDefault());
+				list.Add(cards.Where(c => c.set == card.set && c.setNum == card.setNum && c.rarity == HoloRarity.SV_PIXEL_COSMOS_HOLO).FirstOrDefault());
+
+				res.Add(list);
+			}
+
+			string ret = "";
+
+			foreach (List<HoloCard> arr in res)
+			{
+				ret += "array(";
+
+				foreach (HoloCard cur in arr)
+				{
+					ret += (cur == null ? 0 : cur) + ",";
+				}
+
+				ret.Trim(',');
+				ret += "),";
+			}
+
+			ret.Trim(',');
+
+			return ret;
 		}
 
 		static void WriteWorldsCards()

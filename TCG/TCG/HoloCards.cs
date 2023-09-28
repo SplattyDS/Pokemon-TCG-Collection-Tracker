@@ -14041,6 +14041,12 @@ namespace TCG
 			new HoloCard("Basic Fighting Energy", Pokedex.NVT, HoloRarity.SWSH_PIXEL_COSMOS_HOLO_ENERGY_STAR, Types.Basic_Fighting_Energy, Sets.Unnumbered_Promo, -1),
 			new HoloCard("Basic Darkness Energy", Pokedex.NVT, HoloRarity.SWSH_PIXEL_COSMOS_HOLO_ENERGY_STAR, Types.Basic_Darkness_Energy, Sets.Unnumbered_Promo, -1),
 			new HoloCard("Basic Metal Energy", Pokedex.NVT, HoloRarity.SWSH_PIXEL_COSMOS_HOLO_ENERGY_STAR, Types.Basic_Metal_Energy, Sets.Unnumbered_Promo, -1),
+			new HoloCard("Bulbasaur", Pokedex.Bulbasaur, HoloRarity.SV_SMOOTH_COSMOS_HOLO, Types.Grass, Sets.SV_Promo, 46),
+			new HoloCard("Bulbasaur", Pokedex.Bulbasaur, HoloRarity.SV_PIXEL_COSMOS_HOLO, Types.Grass, Sets.SV_Promo, 46),
+			new HoloCard("Charmander", Pokedex.Charmander, HoloRarity.SV_SMOOTH_COSMOS_HOLO, Types.Fire, Sets.SV_Promo, 47),
+			new HoloCard("Charmander", Pokedex.Charmander, HoloRarity.SV_PIXEL_COSMOS_HOLO, Types.Fire, Sets.SV_Promo, 47),
+			new HoloCard("Squirtle", Pokedex.Squirtle, HoloRarity.SV_SMOOTH_COSMOS_HOLO, Types.Water, Sets.SV_Promo, 48),
+			new HoloCard("Squirtle", Pokedex.Squirtle, HoloRarity.SV_PIXEL_COSMOS_HOLO, Types.Water, Sets.SV_Promo, 48),
 		};
 		
 		// the play labs promos might get reasonably obtainable in leagues soon
