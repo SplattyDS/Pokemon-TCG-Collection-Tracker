@@ -15,6 +15,7 @@
 
 			new FutureCardSection("ex Starter Decks (JP)", "EXSD", 1),
 			new FutureCardSection("Starter Set Terastal ex (JP)", "SST", 2),
+			new FutureCardSection("Special Deck Set ex Venusaur & Charizard & Blastoise (JP)", "SVG", 3),
 
 			new FutureCardSection("Classic - Venusaur Deck", "CLV", 1),
 			new FutureCardSection("Classic - Charizard Deck", "CLC", 1),

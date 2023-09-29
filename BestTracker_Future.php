@@ -44,6 +44,11 @@ start($j++, 'Starter Set Terastal ex (JP)', $have, $FUT_SST);
 foreach ($FUT_SST as $cur) { imgF($cur); }
 finish();
 
+$FUT_SVG = array('SVG1','SVG2','SVG3');
+start($j++, 'Special Deck Set ex Venusaur & Charizard & Blastoise (JP)', $have, $FUT_SVG);
+foreach ($FUT_SVG as $cur) { imgF($cur); }
+finish();
+
 $FUT_CLV = array('CLV1');
 start($j++, 'Classic - Venusaur Deck', $have, $FUT_CLV);
 foreach ($FUT_CLV as $cur) { imgF($cur); }
@@ -59,7 +64,7 @@ start($j++, 'Classic - Blastoise Deck', $have, $FUT_CLB);
 foreach ($FUT_CLB as $cur) { imgF($cur); }
 finish();
 
-$FUT_All = array('RS1','RS2','RS3','RS4','RS5','RS6','RS7','RS8','RS9','RS10','RS11','RS12','RS13','RS14','RS15','RS16','RS17','RS18','RS19','RS20','RS21','RS22','RS23','RS24','RS25','RS26','RS27','RS28','RS29','RS30','RS31','RS32','RS33','RS34','RS35','RS36','AR1','FF1','PR1','PR2','PR3','PR4','SVPEN1','SVPEN2','SVP1','SVP2','SVP3','SVP4','SVP5','SVPCH1','SVPCH2','EXSD1','SST1','SST2','CLV1','CLC1','CLB1');
+$FUT_All = array('RS1','RS2','RS3','RS4','RS5','RS6','RS7','RS8','RS9','RS10','RS11','RS12','RS13','RS14','RS15','RS16','RS17','RS18','RS19','RS20','RS21','RS22','RS23','RS24','RS25','RS26','RS27','RS28','RS29','RS30','RS31','RS32','RS33','RS34','RS35','RS36','AR1','FF1','PR1','PR2','PR3','PR4','SVPEN1','SVPEN2','SVP1','SVP2','SVP3','SVP4','SVP5','SVPCH1','SVPCH2','EXSD1','SST1','SST2','SVG1','SVG2','SVG3','CLV1','CLC1','CLB1');
 start($j++, 'All', $have, $FUT_All);
 foreach ($FUT_All as $cur) { imgF($cur); }
 finish();

@@ -607,6 +607,10 @@ start($j++, 'SV Series - Line Holo', $holoHave, $SV_LINE_HOLO);
 foreach ($SV_LINE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'SV Series - Smooth Cosmos Holo Energy', $holoHave, $SV_SMOOTH_COSMOS_HOLO_ENERGY);
+foreach ($SV_SMOOTH_COSMOS_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'SV Series - Pixel Cosmos Holo Energy', $holoHave, $SV_PIXEL_COSMOS_HOLO_ENERGY);
 foreach ($SV_PIXEL_COSMOS_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

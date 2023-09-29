@@ -196,6 +196,7 @@
 		Paldea_Evolved,
 		Obsidian_Flames,
 		SV_151,
+		SV_Energy,
 		SV_Promo,
 		Mc_Donalds_2023,
 

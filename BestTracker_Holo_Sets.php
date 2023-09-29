@@ -831,6 +831,15 @@ start($j++, 'Obsidian Flames', $holoHave, $Obsidian_Flames);
 foreach ($Obsidian_Flames as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+$SV_151 = array(14038,14039,14040,14041,14042,14043,14044,14045,14046,14047,14048,14049,14050,14051,14052,14053,14054,14055,14056,14057,14058,14059,14060,14061,14062);
+start($j++, 'SV 151', $holoHave, $SV_151);
+foreach ($SV_151 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+$SV_Energy = array(14224,14216,14225,14217,14226,14218,14227,14219,14228,14220,14229,14221,14230,14222,14231,14223);
+start($j++, 'SV Energy', $holoHave, $SV_Energy);
+foreach ($SV_Energy as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
 $SV_Promo = array(13748,13749,13750,13751,13752,13753,13754,13755,13756,13757,13758,13759,13760,13761,13762,13763,13767,13764,13768,13765,13766,13957,13958,13959,13960,13961,13962,13963,13964,14032,14033,14034,14035,14036,14037);
 start($j++, 'SV Promo', $holoHave, $SV_Promo);
