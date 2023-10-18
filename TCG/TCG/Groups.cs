@@ -381,6 +381,20 @@ namespace TCG
 				Cards.Find(Sets.Lost_Origin, 246),
 				Cards.Find(Sets.Lost_Origin, 247)
 			),
+			new Group // Miraidon ex
+			(
+				Rarity.ex_SV,
+				Rules.GROUP_CARDS,
+				Cards.Find(Sets.Scarlet_Violet, 81),
+				Cards.Find(Sets.SV_Promo, 28)
+			),
+			new Group // Koraidon ex
+			(
+				Rarity.ex_SV,
+				Rules.GROUP_CARDS,
+				Cards.Find(Sets.Scarlet_Violet, 125),
+				Cards.Find(Sets.SV_Promo, 29)
+			),
 		};
 
 		static public Group[] Get()

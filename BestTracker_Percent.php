@@ -39,6 +39,10 @@ start($j++, 'Full Art Pokémon (BW & XY - Radiant)', $have, $Full_Art_Pokemon_BW
 foreach ($Full_Art_Pokemon_BWXY_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Seal Stone', $have, $Seal_Stone);
+foreach ($Seal_Stone as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Tera ex (SV)', $have, $ex_SV_Tera);
 foreach ($ex_SV_Tera as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -55,12 +59,12 @@ start($j++, 'Full Art Pokémon (SV)', $have, $Full_Art_Pokemon_SV);
 foreach ($Full_Art_Pokemon_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Ace Spec', $have, $Ace_Spec);
-foreach ($Ace_Spec as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
 start($j++, 'VSTAR', $have, $VSTAR);
 foreach ($VSTAR as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Ace Spec', $have, $Ace_Spec);
+foreach ($Ace_Spec as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Gold Pokémon', $have, $Gold_Pokemon);
@@ -77,10 +81,6 @@ finish();
 
 start($j++, 'EX Full Art (Radiant - BW)', $have, $EX_Full_Art_Radiant_BW);
 foreach ($EX_Full_Art_Radiant_BW as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Seal Stone', $have, $Seal_Stone);
-foreach ($Seal_Stone as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Full Art Pokémon (SWSH)', $have, $Full_Art_Pokemon_SWSH);
@@ -187,6 +187,10 @@ start($j++, 'GX', $have, $GX);
 foreach ($GX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Prism Star', $have, $Prism_Star);
+foreach ($Prism_Star as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Special Art Pokémon (SWSH - Forest)', $have, $Special_Art_Pokemon_SWSH_Forest);
 foreach ($Special_Art_Pokemon_SWSH_Forest as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -237,10 +241,6 @@ finish();
 
 start($j++, 'Full Art Pokémon (BW & XY - Textured)', $have, $Full_Art_Pokemon_BWXY_Textured);
 foreach ($Full_Art_Pokemon_BWXY_Textured as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Prism Star', $have, $Prism_Star);
-foreach ($Prism_Star as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Special Art Pokémon (SWSH)', $have, $Special_Art_Pokemon_SWSH);
