@@ -38,6 +38,7 @@ namespace TCG
 			WriteHoloPokedex();
 			WriteHoloAll();
 			WriteHoloHave();
+			WriteHoloPrizePack();
 			WriteHoloComp();
 
 			WriteWorldsCards();
@@ -357,6 +358,28 @@ namespace TCG
 			code.Add("?>");
 
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Holo_All.php", code);
+		}
+
+		static void WriteHoloPrizePack()
+		{
+			List<string> code = new List<string>(2 + PrizePacks.Get().Length * 4);
+
+			code.Add("<?php");
+
+			foreach (PrizePack prizePack in PrizePacks.Get())
+			{
+				IEnumerable<HoloCard> cards = prizePack.Cards;
+				string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+				code.Add("$prizePack" + prizePack.Series + " = array(" + cardArr + ");");
+				code.Add("start($j++, 'Prize Pack Series " + prizePack.Series + "', $holoHave, $prizePack" + prizePack.Series + ");");
+				code.Add("foreach ($prizePack" + prizePack.Series + " as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }");
+				code.Add("finish();");
+			}
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Holo_PrizePack.php", code);
 		}
 
 		static void WriteHoloComp()

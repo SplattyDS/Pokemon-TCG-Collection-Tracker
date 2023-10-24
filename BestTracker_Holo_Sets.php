@@ -774,7 +774,7 @@ start($j++, 'Brilliant Stars', $holoHave, $Brilliant_Stars);
 foreach ($Brilliant_Stars as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Astral_Radiance = array(11029,10850,13996,10851,11030,10852,10853,11031,10854,10855,10856,10857,11032,10858,10859,10860,11033,10861,10862,10863,10864,10865,13977,10866,10867,10868,13997,13998,13999,14000,10869,14001);
+$Astral_Radiance = array(11029,10850,13996,10851,11030,10852,10853,11031,10854,10855,10856,10857,11032,10858,10859,10860,11033,10861,10862,14232,10863,10864,10865,13977,10866,10867,10868,13997,13998,13999,14000,10869,14001);
 start($j++, 'Astral Radiance', $holoHave, $Astral_Radiance);
 foreach ($Astral_Radiance as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -831,7 +831,7 @@ start($j++, 'Obsidian Flames', $holoHave, $Obsidian_Flames);
 foreach ($Obsidian_Flames as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$SV_151 = array(14038,14039,14040,14041,14042,14043,14044,14045,14046,14047,14048,14049,14050,14051,14052,14053,14054,14055,14056,14057,14058,14059,14060,14061,14062);
+$SV_151 = array(14038,14039,14040,14041,14235,14236,14237,14042,14043,14044,14045,14046,14047,14048,14049,14050,14233,14234,14051,14052,14053,14054,14055,14056,14057,14058,14059,14060,14061,14062);
 start($j++, 'SV 151', $holoHave, $SV_151);
 foreach ($SV_151 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -841,7 +841,7 @@ start($j++, 'SV Energy', $holoHave, $SV_Energy);
 foreach ($SV_Energy as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$SV_Promo = array(13748,13749,13750,13751,13752,13753,13754,13755,13756,13757,13758,13759,13760,13761,13762,13763,13767,13764,13768,13765,13766,13957,13958,13959,13960,13961,13962,13963,13964,14032,14033,14034,14035,14036,14037);
+$SV_Promo = array(13748,13749,13750,13751,13752,13753,13754,13755,13756,13757,13758,13759,13760,13761,13762,13763,13767,13764,13768,13765,13766,13957,13958,13959,13960,13961,13962,13963,13964,14032,14034,14036);
 start($j++, 'SV Promo', $holoHave, $SV_Promo);
 foreach ($SV_Promo as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

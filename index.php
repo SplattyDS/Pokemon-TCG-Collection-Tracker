@@ -338,6 +338,7 @@
 							<li><a class="dropdown-item" href="BestTracker.php?holo&type">Type</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&dex">Dex</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&all">All</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?holo&prize">Prize Pack</a></li>
 							<!--<li><a class="dropdown-item" href="BestTracker.php?holo&fut">Future</a></li>-->
 							<!--<li><a class="dropdown-item" href="BestTracker.php?holo&test">Test</a></li>-->
 						</ul>

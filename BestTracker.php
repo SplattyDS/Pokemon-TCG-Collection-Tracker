@@ -340,6 +340,7 @@
 							<li><a class="dropdown-item" href="BestTracker.php?holo&type">Type</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&dex">Dex</a></li>
 							<li><a class="dropdown-item" href="BestTracker.php?holo&all">All</a></li>
+							<li><a class="dropdown-item" href="BestTracker.php?holo&prize">Prize Pack</a></li>
 							<!--<li><a class="dropdown-item" href="BestTracker.php?holo&fut">Future</a></li>-->
 							<!--<li><a class="dropdown-item" href="BestTracker.php?holo&test">Test</a></li>-->
 						</ul>
@@ -1196,6 +1197,8 @@ else if (isset($_GET['holo']))
 		require 'BestTracker_Holo_Pokedex.php';
 	else if (isset($_GET['all']))
 		require 'BestTracker_Holo_All.php';
+	else if (isset($_GET['prize']))
+		require 'BestTracker_Holo_PrizePack.php';
 	else if (isset($_GET['comp']))
 		require 'BestTracker_Holo_Comp.php';
 	else if (isset($_GET['col']))

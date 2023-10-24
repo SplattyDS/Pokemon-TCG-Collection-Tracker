@@ -3412,7 +3412,7 @@ namespace TCG
 			new Card("Virizion V", Pokedex.Virizion, Rarity.V, Types.Grass, Sets.SWSH_Promo, 295),
 			new Card("Hisuian Zoroark V", Pokedex.Hisuian_Zoroark, Rarity.V_Full_Art, Types.Colorless, Sets.SWSH_Promo, 297),
 			new Card("Hisuian Zoroark VSTAR", Pokedex.Hisuian_Zoroark, Rarity.VSTAR, Types.Colorless, Sets.SWSH_Promo, 298),
-			new Card("Jirachi V", Pokedex.Jirachi, Rarity.V, Types.Psychic, Sets.Japanese_SWSH, 3),
+			new Card("Jirachi V", Pokedex.Jirachi, Rarity.V, Types.Psychic, Sets.SWSH_Promo, 299),
 			new Card("Serperior V", Pokedex.Serperior, Rarity.V, Types.Grass, Sets.Silver_Tempest, 7),
 			new Card("Serperior VSTAR", Pokedex.Serperior, Rarity.VSTAR, Types.Grass, Sets.Silver_Tempest, 8),
 			new Card("Chesnaught V", Pokedex.Chesnaught, Rarity.V, Types.Grass, Sets.Silver_Tempest, 15, true),
