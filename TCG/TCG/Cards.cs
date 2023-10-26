@@ -2663,7 +2663,7 @@ namespace TCG
 			new Card("Tyranitar V", Pokedex.Tyranitar, Rarity.V, Types.Darkness, Sets.Fusion_Strike, 158),
 			new Card("Genesect V", Pokedex.Genesect, Rarity.V, Types.Metal, Sets.Fusion_Strike, 185),
 			new Card("Dodrio V", Pokedex.Dodrio, Rarity.V, Types.Colorless, Sets.Fusion_Strike, 201),
-			new Card("Greedent V", Pokedex.Greedent, Rarity.V, Types.Colorless, Sets.Fusion_Strike, 217),
+			new Card("Greedent V", Pokedex.Greedent, Rarity.V, Types.Colorless, Sets.Fusion_Strike, 217, true),
 			new Card("Greedent VMAX", Pokedex.Greedent, Rarity.VMAX, Types.Colorless, Sets.Fusion_Strike, 218),
 			new Card("Celebi V", Pokedex.Celebi, Rarity.V_Special_Art, Types.Grass, Sets.Fusion_Strike, 245),
 			new Card("Tsareena V", Pokedex.Tsareena, Rarity.V_Full_Art, Types.Grass, Sets.Fusion_Strike, 246),

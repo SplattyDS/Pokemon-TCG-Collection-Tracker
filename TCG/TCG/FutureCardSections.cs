@@ -5,11 +5,11 @@
 		private static FutureCardSection[] TheSections =
 		{
 			new FutureCardSection("Raging Surf (JP)", "RS", 36),
-			new FutureCardSection("Ancient Roar (JP)", "AR", 16),
-			new FutureCardSection("Future Flash (JP)", "FF", 16),
+			new FutureCardSection("Ancient Roar (JP)", "AR", 35),
+			new FutureCardSection("Future Flash (JP)", "FF", 35),
 
 			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 2),
-			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 5),
+			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 6),
 			new FutureCardSection("Scarlet & Violet Promo (CH)", "SVPCH", 2),
 
 			new FutureCardSection("ex Starter Decks (JP)", "EXSD", 1),
