@@ -29,7 +29,7 @@ start($j++, 'Charmeleon', $have, $Charmeleon);
 foreach ($Charmeleon as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Charizard = array(3223,5,17,18,53,74,219,278,314,357,526,621,622,2958,623,626,2959,629,636,637,849,850,3248,920,921,935,951,957,1020,3146,1161,1193,1656,1716,1764,1780,1819,1857,1908,1913,1920,2053,2054,2116,2121,2317,2605,2699,2700,2724,2725,2745,2908,3339,3507,3508,3509,3016,3053,3376,3377,3378,3879,3904,3912,3917,3941,3969,3985);
+$Charizard = array(3223,5,17,18,53,74,219,278,314,357,526,621,622,2958,623,626,2959,629,636,637,849,850,3248,920,921,935,951,957,1020,3146,1161,1193,1656,1716,1764,1780,1819,1857,1908,1913,1920,2053,2054,2116,2121,2317,2605,2699,2700,2724,2725,2745,2908,3339,3507,3508,3509,3016,3053,3376,3377,3378,3879,3904,3912,3917,3941,3969,3985,4101);
 start($j++, 'Charizard', $have, $Charizard);
 foreach ($Charizard as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -493,7 +493,7 @@ start($j++, 'Tangela', $have, $Tangela);
 foreach ($Tangela as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Kangaskhan = array(627,628,632,638,1903,3948,3976);
+$Kangaskhan = array(627,628,632,638,1903,3948,3976,4100);
 start($j++, 'Kangaskhan', $have, $Kangaskhan);
 foreach ($Kangaskhan as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -2297,7 +2297,7 @@ start($j++, 'Frogadier', $have, $Frogadier);
 foreach ($Frogadier as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Greninja = array(826,954,1026,1312,1325,1338,1542,1558,1559,1580,1723,1910,3196,2639,3621,2797,3061,3071,3072,3073,3074);
+$Greninja = array(826,954,1026,1312,1325,1338,1542,1558,1559,1580,1723,1910,3196,2639,3621,2797,3061,3071,3072,3073,3074,4099);
 start($j++, 'Greninja', $have, $Greninja);
 foreach ($Greninja as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();

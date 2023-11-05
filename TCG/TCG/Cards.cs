@@ -4108,6 +4108,9 @@ namespace TCG
 			new Card("Counter Catcher", Pokedex.NVT, Rarity.Gold_Item_SV, Types.Item, Sets.Paradox_Rift, 264),
 			new Card("Luxurious Cape", Pokedex.NVT, Rarity.Gold_Item_SV, Types.Tool, Sets.Paradox_Rift, 265),
 			new Card("Reversal Energy", Pokedex.NVT, Rarity.Gold_Special_Energy_SV, Types.Special_Energy, Sets.Paradox_Rift, 266),
+			new Card("Greninja ex", Pokedex.Greninja, Rarity.ex_SV, Types.Water, Sets.SV_Promo, 54),
+			new Card("Kangaskhan ex", Pokedex.Kangaskhan, Rarity.ex_SV, Types.Colorless, Sets.SV_Promo, 55),
+			new Card("Charizard ex", Pokedex.Charizard, Rarity.ex_SV_Tera_Full_Art, Types.Tera_Dark, Sets.SV_Promo, 56),
 		};
 		
 		// do not add Play! Pokémon prize pack cards (too many and uncertain amount)
