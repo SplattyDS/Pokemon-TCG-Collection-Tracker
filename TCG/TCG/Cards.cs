@@ -4111,6 +4111,8 @@ namespace TCG
 			new Card("Greninja ex", Pokedex.Greninja, Rarity.ex_SV, Types.Water, Sets.SV_Promo, 54),
 			new Card("Kangaskhan ex", Pokedex.Kangaskhan, Rarity.ex_SV, Types.Colorless, Sets.SV_Promo, 55),
 			new Card("Charizard ex", Pokedex.Charizard, Rarity.ex_SV_Tera_Full_Art, Types.Tera_Dark, Sets.SV_Promo, 56),
+			new Card("Scream Tail", Pokedex.Scream_Tail, Rarity.Special_Art_Pokemon_SV_Ancient, Types.Psychic, Sets.SV_Promo, 65),
+			new Card("Iron Bundle", Pokedex.Iron_Bundle, Rarity.Special_Art_Pokemon_SV_Future, Types.Water, Sets.SV_Promo, 66),
 		};
 		
 		// do not add Play! Pokémon prize pack cards (too many and uncertain amount)

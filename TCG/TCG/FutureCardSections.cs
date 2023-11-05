@@ -4,8 +4,8 @@
 	{
 		private static FutureCardSection[] TheSections =
 		{
-			new FutureCardSection("Ancient Roar (JP)", "AR", 2),
-			new FutureCardSection("Future Flash (JP)", "FF", 2),
+			new FutureCardSection("Ancient Roar (JP)", "AR", 1),
+			new FutureCardSection("Future Flash (JP)", "FF", 1),
 			new FutureCardSection("Shiny Treasure ex (JP)", "ST", 17),
 
 			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 2),

@@ -3590,6 +3590,10 @@ start($j++, 'Great Tusk', $have, $Great_Tusk);
 foreach ($Great_Tusk as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$Scream_Tail = array(4102);
+start($j++, 'Scream Tail', $have, $Scream_Tail);
+foreach ($Scream_Tail as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
 $Brute_Bonnet = array(4039);
 start($j++, 'Brute Bonnet', $have, $Brute_Bonnet);
@@ -3612,6 +3616,10 @@ start($j++, 'Iron Treads', $have, $Iron_Treads);
 foreach ($Iron_Treads as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$Iron_Bundle = array(4103);
+start($j++, 'Iron Bundle', $have, $Iron_Bundle);
+foreach ($Iron_Bundle as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
 $Iron_Hands = array(4002,4055,4080);
 start($j++, 'Iron Hands', $have, $Iron_Hands);

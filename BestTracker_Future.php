@@ -1,10 +1,10 @@
 <?php
-$FUT_AR = array('AR1','AR2');
+$FUT_AR = array('AR1');
 start($j++, 'Ancient Roar (JP)', $have, $FUT_AR);
 foreach ($FUT_AR as $cur) { imgF($cur); }
 finish();
 
-$FUT_FF = array('FF1','FF2');
+$FUT_FF = array('FF1');
 start($j++, 'Future Flash (JP)', $have, $FUT_FF);
 foreach ($FUT_FF as $cur) { imgF($cur); }
 finish();
@@ -49,7 +49,7 @@ start($j++, 'Classic - Blastoise Deck', $have, $FUT_CLB);
 foreach ($FUT_CLB as $cur) { imgF($cur); }
 finish();
 
-$FUT_All = array('AR1','AR2','FF1','FF2','ST1','ST2','ST3','ST4','ST5','ST6','ST7','ST8','ST9','ST10','ST11','ST12','ST13','ST14','ST15','ST16','ST17','SVPEN1','SVPEN2','SVP1','SVP2','SVP3','SVP4','SVP5','SVP6','CH1','CH2','CH3','CH4','SVG1','SVG2','SVG3','SVG4','SVG5','CLV1','CLC1','CLB1');
+$FUT_All = array('AR1','FF1','ST1','ST2','ST3','ST4','ST5','ST6','ST7','ST8','ST9','ST10','ST11','ST12','ST13','ST14','ST15','ST16','ST17','SVPEN1','SVPEN2','SVP1','SVP2','SVP3','SVP4','SVP5','SVP6','CH1','CH2','CH3','CH4','SVG1','SVG2','SVG3','SVG4','SVG5','CLV1','CLC1','CLB1');
 start($j++, 'All', $have, $FUT_All);
 foreach ($FUT_All as $cur) { imgF($cur); }
 finish();
