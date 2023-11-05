@@ -754,7 +754,7 @@ start($j++, 'Chilling Reign', $holoHave, $Chilling_Reign);
 foreach ($Chilling_Reign as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Evolving_Skies = array(10791,10792,10793,10794,10795,13980,10796,11071,10797,11011,10798,10799,11072,11012,10800,11013,13982,10801,10802,10803,10804,10805,11014,10806,10807,10808,10809,11015,10810,11073,11074,11075);
+$Evolving_Skies = array(10791,10792,10793,10794,10795,13980,14238,10796,11071,10797,11011,10798,10799,11072,11012,10800,11013,13982,10801,10802,10803,10804,10805,11014,10806,10807,10808,10809,11015,10810,11073,11074,11075);
 start($j++, 'Evolving Skies', $holoHave, $Evolving_Skies);
 foreach ($Evolving_Skies as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

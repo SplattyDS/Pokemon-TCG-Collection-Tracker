@@ -14247,6 +14247,7 @@ namespace TCG
 			new HoloCard("Abra", Pokedex.Abra, HoloRarity.SV_SMOOTH_COSMOS_HOLO, Types.Psychic, Sets.SV_151, 63),
 			new HoloCard("Abra", Pokedex.Abra, HoloRarity.SV_PIXEL_COSMOS_HOLO, Types.Psychic, Sets.SV_151, 63),
 			new HoloCard("Kadabra", Pokedex.Kadabra, HoloRarity.SV_PIXEL_COSMOS_HOLO, Types.Psychic, Sets.SV_151, 64),
+			new HoloCard("Pikachu", Pokedex.Pikachu, HoloRarity.SWSH_REVERSE_MIRROR_ENERGY_BANNER_HOLO, Types.Lightning, Sets.Evolving_Skies, 49),
 		};
 		
 		// the play labs promos might get reasonably obtainable in leagues soon
