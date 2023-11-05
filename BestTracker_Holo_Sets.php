@@ -836,6 +836,7 @@ start($j++, 'SV 151', $holoHave, $SV_151);
 foreach ($SV_151 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+
 $SV_Energy = array(14224,14216,14225,14217,14226,14218,14227,14219,14228,14220,14229,14221,14230,14222,14231,14223);
 start($j++, 'SV Energy', $holoHave, $SV_Energy);
 foreach ($SV_Energy as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }

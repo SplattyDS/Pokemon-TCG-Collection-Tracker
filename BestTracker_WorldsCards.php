@@ -305,21 +305,45 @@ $VSTAR_Rainbow = array();
 
 $ex_SV = array();
 
+$ex_SV_Ancient = array();
+
+$ex_SV_Future = array();
+
 $ex_SV_Tera = array();
 
 $Full_Art_Trainer_SV = array();
+
+$Full_Art_Trainer_SV_Ancient = array();
+
+$Full_Art_Trainer_SV_Future = array();
 
 $Full_Art_Pokemon_SV = array();
 
 $ex_SV_Full_Art = array();
 
+$ex_SV_Ancient_Full_Art = array();
+
+$ex_SV_Future_Full_Art = array();
+
 $ex_SV_Tera_Full_Art = array();
 
 $Special_Art_Trainer_SV = array();
 
+$Special_Art_Trainer_SV_Ancient = array();
+
+$Special_Art_Trainer_SV_Future = array();
+
 $Special_Art_Pokemon_SV = array();
 
+$Special_Art_Pokemon_SV_Ancient = array();
+
+$Special_Art_Pokemon_SV_Future = array();
+
 $ex_SV_Special_Art = array();
+
+$ex_SV_Ancient_Special_Art = array();
+
+$ex_SV_Future_Special_Art = array();
 
 $ex_SV_Tera_Special_Art = array();
 
@@ -329,7 +353,13 @@ $Gold_Stadium_SV = array();
 
 $Gold_Energy_SV = array();
 
+$Gold_Special_Energy_SV = array();
+
 $ex_SV_Gold = array();
+
+$ex_SV_Ancient_Gold = array();
+
+$ex_SV_Future_Gold = array();
 
 $ex_SV_Tera_Gold = array();
 

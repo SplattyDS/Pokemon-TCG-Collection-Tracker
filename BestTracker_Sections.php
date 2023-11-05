@@ -611,12 +611,28 @@ start($j++, 'ex (SV)', $have, $ex_SV);
 foreach ($ex_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'ex (SV - Ancient)', $have, $ex_SV_Ancient);
+foreach ($ex_SV_Ancient as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'ex (SV - Future)', $have, $ex_SV_Future);
+foreach ($ex_SV_Future as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Tera ex (SV)', $have, $ex_SV_Tera);
 foreach ($ex_SV_Tera as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Full Art Trainer (SV)', $have, $Full_Art_Trainer_SV);
 foreach ($Full_Art_Trainer_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Full Art Trainer (SV - Ancient)', $have, $Full_Art_Trainer_SV_Ancient);
+foreach ($Full_Art_Trainer_SV_Ancient as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Full Art Trainer (SV - Future)', $have, $Full_Art_Trainer_SV_Future);
+foreach ($Full_Art_Trainer_SV_Future as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Full Art Pokémon (SV)', $have, $Full_Art_Pokemon_SV);
@@ -627,6 +643,14 @@ start($j++, 'ex (SV) Full Art', $have, $ex_SV_Full_Art);
 foreach ($ex_SV_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'ex (SV - Ancient) Full Art', $have, $ex_SV_Ancient_Full_Art);
+foreach ($ex_SV_Ancient_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'ex (SV - Future) Full Art', $have, $ex_SV_Future_Full_Art);
+foreach ($ex_SV_Future_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Tera ex (SV) Full Art', $have, $ex_SV_Tera_Full_Art);
 foreach ($ex_SV_Tera_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -635,12 +659,36 @@ start($j++, 'Special Art Trainer (SV)', $have, $Special_Art_Trainer_SV);
 foreach ($Special_Art_Trainer_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Special Art Trainer (SV - Ancient)', $have, $Special_Art_Trainer_SV_Ancient);
+foreach ($Special_Art_Trainer_SV_Ancient as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Special Art Trainer (SV - Future)', $have, $Special_Art_Trainer_SV_Future);
+foreach ($Special_Art_Trainer_SV_Future as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'Special Art Pokémon (SV)', $have, $Special_Art_Pokemon_SV);
 foreach ($Special_Art_Pokemon_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Special Art Pokémon (SV - Ancient)', $have, $Special_Art_Pokemon_SV_Ancient);
+foreach ($Special_Art_Pokemon_SV_Ancient as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Special Art Pokémon (SV - Future)', $have, $Special_Art_Pokemon_SV_Future);
+foreach ($Special_Art_Pokemon_SV_Future as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'ex (SV) Special Art', $have, $ex_SV_Special_Art);
 foreach ($ex_SV_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'ex (SV - Ancient) Special Art', $have, $ex_SV_Ancient_Special_Art);
+foreach ($ex_SV_Ancient_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'ex (SV - Future) Special Art', $have, $ex_SV_Future_Special_Art);
+foreach ($ex_SV_Future_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Tera ex (SV) Special Art', $have, $ex_SV_Tera_Special_Art);
@@ -659,8 +707,20 @@ start($j++, 'Gold Energy (SV)', $have, $Gold_Energy_SV);
 foreach ($Gold_Energy_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+start($j++, 'Gold Special Energy (SV)', $have, $Gold_Special_Energy_SV);
+foreach ($Gold_Special_Energy_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 start($j++, 'ex (SV) Gold', $have, $ex_SV_Gold);
 foreach ($ex_SV_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'ex (SV - Ancient) Gold', $have, $ex_SV_Ancient_Gold);
+foreach ($ex_SV_Ancient_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'ex (SV - Future) Gold', $have, $ex_SV_Future_Gold);
+foreach ($ex_SV_Future_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Tera ex (SV) Gold', $have, $ex_SV_Tera_Gold);
