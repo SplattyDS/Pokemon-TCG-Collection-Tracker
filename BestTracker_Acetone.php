@@ -1,16 +1,16 @@
 <?php
 function acetoneImg($ID, $color)
 {
-	print('<img class="card-img" src="images/best_tracker/cards/'.idToName($ID).'.png" style="background-color: '.$color.'; border: 3px solid '.$color.';">');
+	print('<img class="card-img" src="images/best_tracker/cards/'.idToName($ID).'.png" style="background-color: '.$color.'; border: 5px solid '.$color.';">');
 }
 
 function acetoneImgH($ID, $color)
 {
-	print('<img class="card-img" src="images/best_tracker/holo/'.idToHoloName($ID).'.png" style="background-color: '.$color.'; border: 3px solid '.$color.';">');
+	print('<img class="card-img" src="images/best_tracker/holo/'.idToHoloName($ID).'.png" style="background-color: '.$color.'; border: 5px solid '.$color.';">');
 }
 function foreignImg($ID, $color)
 {
-	print('<img class="card-img" src="images/best_tracker/foreign_holo_'.$ID.'.png" style="background-color: '.$color.'; border: 3px solid '.$color.';">');
+	print('<img class="card-img" src="images/best_tracker/foreign_holo_'.$ID.'.png" style="background-color: '.$color.'; border: 5px solid '.$color.';">');
 }
 
 $temp = array(array(31,'h', 'orange'),array(202,'h', 'red'),array(195,'h', 'red'));
@@ -145,7 +145,13 @@ print('<h1>3D Pokéball Holo*</h1>');
 foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }
 print('</div>');
 
-$temp = array(array(2942,'h', 'red'),array(2944,'h', 'red'),array(3032,'h', 'red'),array(2933,'h', 'red'),array(4450,'h', 'red'),array(5157,'h', 'red'),array(5244,'h', 'red'),array(8094,'h', 'red'),array(8471,'h', 'red'),array(10987,'h', 'red'),array(83,'u', 'red'),array(309,'u', 'red'));
+$temp = array(array(83,'u', 'red'));
+print('<div id="container - '.$j++.'" class="center">');
+print('<h1>Cracked Ice Holo (ex)</h1>');
+foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }
+print('</div>');
+
+$temp = array(array(2942,'h', 'red'),array(2944,'h', 'red'),array(3032,'h', 'red'),array(2933,'h', 'red'),array(4450,'h', 'red'),array(5157,'h', 'red'),array(5244,'h', 'red'),array(8094,'h', 'red'),array(8471,'h', 'red'),array(10987,'h', 'red'),array(309,'u', 'red'));
 print('<div id="container - '.$j++.'" class="center">');
 print('<h1>Cracked Ice Holo</h1>');
 foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }
@@ -367,7 +373,7 @@ print('<h1>Unknown Plain Holo 4 (SWSH)</h1>');
 foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }
 print('</div>');
 
-$temp = array(array(3649,'u', 'red'));
+$temp = array(array(3649,'u', 'orange'));
 print('<div id="container - '.$j++.'" class="center">');
 print('<h1>Unknown Sheen Holo 1 (SV)**</h1>');
 foreach ($temp as $cur) { if ($cur[1] == 'u') {acetoneImg($cur[0], $cur[2]);} else {acetoneImgH($cur[0], $cur[2]);} }

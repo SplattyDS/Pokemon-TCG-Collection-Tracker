@@ -344,6 +344,7 @@ $binder7 = array();
 $binder8 = array();
 $binder9 = array();
 $binder10 = array();
+$binder11 = array();
 // $binder11 = array();
 
 AddCards($binder0, $Metal);
@@ -613,7 +614,7 @@ AlignRow($binder9);
 AddCards($binder9, $VSTAR_Rainbow);
 AlignBinder($binder9);
 
-AddCards($binder10, $ex_SV);
+/*AddCards($binder10, $ex_SV);
 AlignPage($binder10);
 AddCards($binder10, $ex_SV_Tera);
 AlignPage($binder10);
@@ -643,10 +644,71 @@ AddCards($binder10, $ex_SV_Gold);
 AlignPage($binder10);
 AddCards($binder10, $ex_SV_Tera_Gold);
 AlignPage($binder10);
+AlignBinder($binder10);*/
+
+AddCards($binder10, $ex_SV);
+AlignRow($binder10);
+AddCards($binder10, $ex_SV_Ancient);
+AlignRow($binder10);
+AddCards($binder10, $ex_SV_Future);
+AlignPage($binder10);
+AddCards($binder10, $ex_SV_Tera);
+AlignPage($binder10);
+AddCards($binder10, $Full_Art_Trainer_SV);
+AlignRow($binder10);
+AddCards($binder10, $Full_Art_Trainer_SV_Ancient);
+AlignRow($binder10);
+AddCards($binder10, $Full_Art_Trainer_SV_Future);
+AlignPage($binder10);
+AddCards($binder10, $Full_Art_Pokemon_SV);
+AlignPage($binder10);
+AddCards($binder10, $ex_SV_Full_Art);
+AlignRow($binder10);
+AddCards($binder10, $ex_SV_Ancient_Full_Art);
+AlignRow($binder10);
+AddCards($binder10, $ex_SV_Future_Full_Art);
+AlignPage($binder10);
+AddCards($binder10, $ex_SV_Tera_Full_Art);
+AlignPage($binder10);
 AlignBinder($binder10);
 
-// AddCards($binder11, array(-1));
-// AlignBinder($binder11);
+AddCards($binder11, $Special_Art_Trainer_SV);
+AlignRow($binder11);
+AddCards($binder11, $Special_Art_Trainer_SV_Ancient);
+AlignRow($binder11);
+AddCards($binder11, $Special_Art_Trainer_SV_Future);
+AlignPage($binder11);
+AddCards($binder11, $Special_Art_Pokemon_SV);
+AlignRow($binder11);
+AddCards($binder11, $Special_Art_Pokemon_SV_Ancient);
+AlignRow($binder11);
+AddCards($binder11, $Special_Art_Pokemon_SV_Future);
+AlignPage($binder11);
+AddCards($binder11, $ex_SV_Special_Art);
+AlignRow($binder11);
+AddCards($binder11, $ex_SV_Ancient_Special_Art);
+AlignRow($binder11);
+AddCards($binder11, $ex_SV_Future_Special_Art);
+AlignPage($binder11);
+AddCards($binder11, $ex_SV_Tera_Special_Art);
+AlignPage($binder11);
+AddCards($binder11, $Gold_Item_SV);
+AlignRow($binder11);
+AddCards($binder11, $Gold_Stadium_SV);
+AlignPage($binder11);
+AddCards($binder11, $Gold_Energy_SV);
+AlignRow($binder11);
+AddCards($binder11, $Gold_Special_Energy_SV);
+AlignPage($binder11);
+AddCards($binder11, $ex_SV_Gold);
+AlignRow($binder11);
+AddCards($binder11, $ex_SV_Ancient_Gold);
+AlignRow($binder11);
+AddCards($binder11, $ex_SV_Future_Gold);
+AlignPage($binder11);
+AddCards($binder11, $ex_SV_Tera_Gold);
+AlignPage($binder11);
+AlignBinder($binder11);
 
 $binders = array
 (
@@ -661,7 +723,7 @@ $binders = array
 	&$binder8,
 	&$binder9,
 	&$binder10,
-	// &$binder11,
+	&$binder11,
 );
 
 $markers = 0;
@@ -681,8 +743,8 @@ $binderContents = array
 	'Gen 8.2',
 	'Gen 8.3',
 	'Gen 8.4, Rainbow',
-	'Gen 9 - Ongoing',
-	// 'TBA',
+	'Gen 9.1 - Ongoing',
+	'Gen 9.2 - Ongoing',
 );
 
 print('<h1>Number of VSTAR Markers: '.$markers.'</h1>');

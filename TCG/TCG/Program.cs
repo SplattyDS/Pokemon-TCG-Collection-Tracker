@@ -581,15 +581,15 @@ namespace TCG
 			code.Add(
 				"function acetoneImg($ID, $color)\r\n" +
 				"{\r\n" +
-				"\tprint('<img class=\"card-img\" src=\"images/best_tracker/cards/'.idToName($ID).'.png\" style=\"background-color: '.$color.'; border: 3px solid '.$color.';\">');\r\n" +
+				"\tprint('<img class=\"card-img\" src=\"images/best_tracker/cards/'.idToName($ID).'.png\" style=\"background-color: '.$color.'; border: 5px solid '.$color.';\">');\r\n" +
 				"}\r\n\r\n" +
 				"function acetoneImgH($ID, $color)\r\n" +
 				"{\r\n" +
-				"\tprint('<img class=\"card-img\" src=\"images/best_tracker/holo/'.idToHoloName($ID).'.png\" style=\"background-color: '.$color.'; border: 3px solid '.$color.';\">');\r\n" +
+				"\tprint('<img class=\"card-img\" src=\"images/best_tracker/holo/'.idToHoloName($ID).'.png\" style=\"background-color: '.$color.'; border: 5px solid '.$color.';\">');\r\n" +
 				"}\r\n" +
 				"function foreignImg($ID, $color)\r\n" +
 				"{\r\n" +
-				"\tprint('<img class=\"card-img\" src=\"images/best_tracker/foreign_holo_'.$ID.'.png\" style=\"background-color: '.$color.'; border: 3px solid '.$color.';\">');\r\n" +
+				"\tprint('<img class=\"card-img\" src=\"images/best_tracker/foreign_holo_'.$ID.'.png\" style=\"background-color: '.$color.'; border: 5px solid '.$color.';\">');\r\n" +
 				"}\r\n"
 			);
 

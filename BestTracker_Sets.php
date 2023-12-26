@@ -698,11 +698,26 @@ foreach ($Paradox_Rift as $cur) { if (in_array($cur, $have, true)) {imgN($cur);}
 finish();
 
 
-$SV_Promo = array(3641,3638,3639,3643,3644,3642,3828,3720,3721,3722,3723,3724,3829,3830,3831,3837,3834,3835,3836,3840,3841,4099,4100,4101,4102,4103,3994);
+$SV_Promo = array(3641,3638,3639,3643,3644,3642,3828,3720,3721,3722,3723,3724,3829,3830,3831,3837,3834,3835,3836,3840,3841,4099,4100,4101,4102,4103,4107,4108,3994);
 start($j++, 'SV Promo', $have, $SV_Promo);
 foreach ($SV_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+
+$Classic_Venusaur = array(4104);
+start($j++, 'Classic Venusaur', $have, $Classic_Venusaur);
+foreach ($Classic_Venusaur as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+$Classic_Charizard = array(4105);
+start($j++, 'Classic Charizard', $have, $Classic_Charizard);
+foreach ($Classic_Charizard as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+$Classic_Blastoise = array(4106);
+start($j++, 'Classic Blastoise', $have, $Classic_Blastoise);
+foreach ($Classic_Blastoise as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
 
 ?>

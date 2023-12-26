@@ -256,7 +256,10 @@ namespace TCG
 				new AcetoneGroup("3D Pokéball Holo*", // some said it might come off with acetone
 					(HoloCards.Find(Sets.EX_Unseen_Forces, 12, HoloRarity.EX_3D_POKEBALL_HOLO_UF), AcetoneStatus.NO_PROGRESS)
 				),
-				
+
+				new AcetoneGroup("Cracked Ice Holo (ex)",
+					(Cards.Find(Sets.EX_FireRed_LeafGreen, 114, Rarity.ex), AcetoneStatus.NO_PROGRESS)
+				),
 				new AcetoneGroup("Cracked Ice Holo",
 					(HoloCards.Find(Sets.Supreme_Victors, 5, HoloRarity.DP_CRACKED_ICE_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Supreme_Victors, 8, HoloRarity.DP_CRACKED_ICE_HOLO_SP), AcetoneStatus.NO_PROGRESS),
@@ -269,7 +272,6 @@ namespace TCG
 					(HoloCards.Find(Sets.Burning_Shadows, 28, HoloRarity.SM_CRACKED_ICE_HOLO), AcetoneStatus.NO_PROGRESS),
 					(HoloCards.Find(Sets.Vivid_Voltage, 39, HoloRarity.SWSH_CRACKED_ICE_HOLO), AcetoneStatus.NO_PROGRESS),
 					
-					(Cards.Find(Sets.EX_FireRed_LeafGreen, 114, Rarity.ex), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Rising_Rivals, 118, Rarity.Rotom), AcetoneStatus.NO_PROGRESS)
 				),
 				
@@ -519,7 +521,7 @@ namespace TCG
 					(Cards.Find(Sets.Lost_Origin, 222, Rarity.Character_Art_SWSH), AcetoneStatus.NO_PROGRESS)
 				),
 				new AcetoneGroup("Unknown Sheen Holo 1 (SV)**", // stars may come off with acetone
-					(Cards.Find(Sets.Scarlet_Violet, 81, Rarity.ex_SV), AcetoneStatus.NO_PROGRESS)
+					(Cards.Find(Sets.Scarlet_Violet, 81, Rarity.ex_SV), AcetoneStatus.CARD_OBTAINED)
 				),
 				new AcetoneGroup("Unknown Holo (SV Tera ex)",
 					(Cards.Find(Sets.Scarlet_Violet, 32, Rarity.ex_SV_Tera), AcetoneStatus.NO_PROGRESS)

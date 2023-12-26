@@ -990,7 +990,7 @@ start($j++, 'Entei', $have, $Entei);
 foreach ($Entei as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Suicune = array(59,95,141,384,385,421,427,1426,1445,1465,2232,2499,2530,3579);
+$Suicune = array(59,95,141,384,385,421,427,1426,1445,1465,2232,2499,2530,3579,4106);
 start($j++, 'Suicune', $have, $Suicune);
 foreach ($Suicune as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -1006,12 +1006,12 @@ start($j++, 'Tyranitar', $have, $Tyranitar);
 foreach ($Tyranitar as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Lugia = array(13,131,3133,370,371,417,517,524,582,605,776,2960,787,881,1435,1452,1472,1868,3426,3427,3444,3445,3461,3470,3833,3925);
+$Lugia = array(13,131,3133,370,371,417,517,524,582,605,776,2960,787,881,1435,1452,1472,1868,3426,3427,3444,3445,3461,3470,3833,3925,4104);
 start($j++, 'Lugia', $have, $Lugia);
 foreach ($Lugia as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Ho_Oh = array(23,24,130,235,2940,3132,368,369,415,470,2946,476,835,843,1034,1162,1174,1717,1854,1864,1867,3428,3446);
+$Ho_Oh = array(23,24,130,235,2940,3132,368,369,415,470,2946,476,835,843,1034,1162,1174,1717,1854,1864,1867,3428,3446,4105);
 start($j++, 'Ho Oh', $have, $Ho_Oh);
 foreach ($Ho_Oh as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -3682,12 +3682,12 @@ start($j++, 'Chi Yu', $have, $Chi_Yu);
 foreach ($Chi_Yu as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Roaring_Moon = array(4008,4061,4083,4094);
+$Roaring_Moon = array(4008,4061,4083,4094,4107);
 start($j++, 'Roaring Moon', $have, $Roaring_Moon);
 foreach ($Roaring_Moon as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Iron_Valiant = array(4004,4057,4081,4093);
+$Iron_Valiant = array(4004,4057,4081,4093,4108);
 start($j++, 'Iron Valiant', $have, $Iron_Valiant);
 foreach ($Iron_Valiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
