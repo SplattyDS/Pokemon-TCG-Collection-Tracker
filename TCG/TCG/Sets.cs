@@ -197,6 +197,7 @@
 		Obsidian_Flames,
 		SV_151,
 		Paradox_Rift,
+		Paldean_Fates,
 		SV_Energy,
 		SV_Promo,
 		Mc_Donalds_2023,

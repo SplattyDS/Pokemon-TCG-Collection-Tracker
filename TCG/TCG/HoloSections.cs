@@ -199,6 +199,8 @@
 
 			// SV Series
 			new Section(HoloRarity.SV_MIRAGE_HOLO, "SV Series - Mirage Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SV_MIRAGE_HOLO_ANCIENT, "SV Series - Mirage Holo (Ancient)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SV_MIRAGE_HOLO_FUTURE, "SV Series - Mirage Holo (Future)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_SMOOTH_COSMOS_HOLO, "SV Series - Smooth Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_PIXEL_COSMOS_HOLO, "SV Series - Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_CONFETTI_HOLO, "SV Series - Confetti Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),

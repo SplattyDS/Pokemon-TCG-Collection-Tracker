@@ -1066,7 +1066,7 @@ start($j++, 'Natu', $holoHave, $Natu);
 foreach ($Natu as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Xatu = array(416,789,1362,1895,2099,2550,3340,4338,4406,4589,6449,7470,9803,10540,11520,12894);
+$Xatu = array(416,789,1362,1895,2099,2550,3340,4338,4406,4589,6449,7470,9803,10540,11520,12894,14249);
 start($j++, 'Xatu', $holoHave, $Xatu);
 foreach ($Xatu as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -1226,7 +1226,7 @@ start($j++, 'Gligar', $holoHave, $Gligar);
 foreach ($Gligar as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Steelix = array(140,375,638,413,785,1330,1005,1781,3095,3791,4030,4411,4412,4602,6290,8285,9611,8514,9838,10311,8425,10597,10764,12089,10835,12516,12904);
+$Steelix = array(140,375,638,413,785,1330,1005,1781,3095,3791,4030,4411,4412,4602,6290,8285,9611,8514,9838,10311,8425,10597,10764,12089,10835,12516,12904,14261);
 start($j++, 'Steelix', $holoHave, $Steelix);
 foreach ($Steelix as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -1351,7 +1351,7 @@ start($j++, 'Houndoom', $holoHave, $Houndoom);
 foreach ($Houndoom as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Kingdra = array(133,366,622,1007,1783,1130,2349,2795,3631,4595,5056,6295,7379,8215,9059,10755,12033,10893,12961);
+$Kingdra = array(133,366,622,1007,1783,1130,2349,2795,3631,4595,5056,6295,7379,8215,9059,10755,12033,10893,12961,14243);
 start($j++, 'Kingdra', $holoHave, $Kingdra);
 foreach ($Kingdra as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -1961,7 +1961,7 @@ start($j++, 'Feebas', $holoHave, $Feebas);
 foreach ($Feebas as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Milotic = array(975,1588,1036,1969,1147,2530,3451,2950,2951,4116,4151,4983,5196,5880,6520,7029,6551,7334,8241,9234,9693,10702,11640,12292,13106);
+$Milotic = array(975,1588,1036,1969,1147,2530,3451,2950,2951,4116,4151,4983,5196,5880,6520,7029,6551,7334,8241,9234,9693,10702,11640,12292,13106,14244);
 start($j++, 'Milotic', $holoHave, $Milotic);
 foreach ($Milotic as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -2116,7 +2116,7 @@ start($j++, 'Latias', $holoHave, $Latias);
 foreach ($Latias as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Latios = array(1111,2159,1132,2351,1139,2361,1204,3449,3020,4451,4452,5003,5212,6777,6883,8235,9183,8602,8630,12566);
+$Latios = array(1111,2159,1132,2351,1139,2361,1204,3449,3020,4451,4452,5003,5212,6777,6883,8235,9183,8602,8630,12566,14250);
 start($j++, 'Latios', $holoHave, $Latios);
 foreach ($Latios as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -2126,7 +2126,7 @@ start($j++, 'Kyogre', $holoHave, $Kyogre);
 foreach ($Kyogre as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Groudon = array(960,1497,1033,1966,1975,3653,4366,4837,6696,7365,6774,8283,8503,9605,8537,10572,10821);
+$Groudon = array(960,1497,1033,1966,1975,3653,4366,4837,6696,7365,6774,8283,8503,9605,8537,10572,10821,14253);
 start($j++, 'Groudon', $holoHave, $Groudon);
 foreach ($Groudon as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -2141,7 +2141,7 @@ start($j++, 'Jirachi', $holoHave, $Jirachi);
 foreach ($Jirachi as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Deoxys = array(1027,1882,1883,1884,1030,1963,1123,2342,1124,2343,1125,2344,1126,2345,1190,2789,3625,3648,3649,3650,4362,4833,6568,7473,8281,9591,9592,9593,8649,10833,12497,11195);
+$Deoxys = array(1027,1882,1883,1884,1030,1963,1123,2342,1124,2343,1125,2344,1126,2345,1190,2789,3625,3648,3649,3650,4362,4833,6568,7473,8281,9591,9592,9593,8649,10833,12497,11195,14251);
 start($j++, 'Deoxys', $holoHave, $Deoxys);
 foreach ($Deoxys as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -2581,7 +2581,7 @@ start($j++, 'Mamoswine', $holoHave, $Mamoswine);
 foreach ($Mamoswine as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Porygon_Z = array(2769,3432,4247,3000,4355,4748,5068,6382,5315,7571,8226,9125,8381,10184,8697,10788,12226,13047);
+$Porygon_Z = array(2769,3432,4247,3000,4355,4748,5068,6382,5315,7571,8226,9125,8381,10184,8697,10788,12226,13047,14264);
 start($j++, 'Porygon Z', $holoHave, $Porygon_Z);
 foreach ($Porygon_Z as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -2631,7 +2631,7 @@ start($j++, 'Dialga', $holoHave, $Dialga);
 foreach ($Dialga as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Palkia = array(2719,3068,2901,2902,3452,2785,3539,2828,3870,3895,2996,4379,4850,8230,9170,10814);
+$Palkia = array(2719,3068,2901,2902,3452,2785,3539,2828,3870,3895,2996,4379,4850,8230,9170,10814,14245);
 start($j++, 'Palkia', $holoHave, $Palkia);
 foreach ($Palkia as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -3481,7 +3481,7 @@ start($j++, 'Reshiram', $holoHave, $Reshiram);
 foreach ($Reshiram as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Zekrom = array(4934,5421,5173,5717,5049,5238,6251,5083,6446,5257,5274,6573,7495,8234,9179,8300,9707,10730,10990,11866,10815);
+$Zekrom = array(4934,5421,5173,5717,5049,5238,6251,5083,6446,5257,5274,6573,7495,8234,9179,8300,9707,10730,10990,11866,10815,14248);
 start($j++, 'Zekrom', $holoHave, $Zekrom);
 foreach ($Zekrom as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -3676,7 +3676,7 @@ start($j++, 'Doublade', $holoHave, $Doublade);
 foreach ($Doublade as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Aegislash = array(6648,6964,6514,6965,6559,7375,6599,7776,9471,8337,9995,8396,10302,11572,10766,12097,12098);
+$Aegislash = array(6648,6964,6514,6965,6559,7375,6599,7776,9471,8337,9995,8396,10302,11572,10766,12097,12098,14262);
 start($j++, 'Aegislash', $holoHave, $Aegislash);
 foreach ($Aegislash as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -3871,7 +3871,7 @@ start($j++, 'Xerneas', $holoHave, $Xerneas);
 foreach ($Xerneas as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Yveltal = array(6645,6959,6592,7668,6617,8044,6751,6765,8237,9194,8335,9984,8399,10342,10822,12548);
+$Yveltal = array(6645,6959,6592,7668,6617,8044,6751,6765,8237,9194,8335,9984,8399,10342,10822,12548,14256);
 start($j++, 'Yveltal', $holoHave, $Yveltal);
 foreach ($Yveltal as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -3891,7 +3891,7 @@ start($j++, 'Hoopa', $holoHave, $Hoopa);
 foreach ($Hoopa as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Volcanion = array(6741,8006,6803,6813,8365,10062,8654,11978,10925,13235);
+$Volcanion = array(6741,8006,6803,6813,8365,10062,8654,11978,10925,13235,14240);
 start($j++, 'Volcanion', $holoHave, $Volcanion);
 foreach ($Volcanion as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -4131,7 +4131,7 @@ start($j++, 'Wimpod', $holoHave, $Wimpod);
 foreach ($Wimpod as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Golisopod = array(8199,8923,8389,8530,10263,8583,10698,11624,10877,12889);
+$Golisopod = array(8199,8923,8389,8530,10263,8583,10698,11624,10877,12889,14246);
 start($j++, 'Golisopod', $holoHave, $Golisopod);
 foreach ($Golisopod as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -4446,7 +4446,7 @@ start($j++, 'Nickit', $holoHave, $Nickit);
 foreach ($Nickit as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Thievul = array(11402,11709,10749,11995,12341,12815);
+$Thievul = array(11402,11709,10749,11995,12341,12815,14257);
 start($j++, 'Thievul', $holoHave, $Thievul);
 foreach ($Thievul as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -4691,7 +4691,7 @@ start($j++, 'Indeedee', $holoHave, $Indeedee);
 foreach ($Indeedee as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Morpeko = array(11362,11516,11988,11989,12088,12488,12552,13172,11115,11116,11128,11178);
+$Morpeko = array(11362,11516,11988,11989,12088,12488,12552,13172,11115,11116,11128,11178,14258);
 start($j++, 'Morpeko', $holoHave, $Morpeko);
 foreach ($Morpeko as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -4746,7 +4746,7 @@ start($j++, 'Dragapult', $holoHave, $Dragapult);
 foreach ($Dragapult as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Zacian = array(10970,11574,10932,13292,11130);
+$Zacian = array(10970,11574,10932,13292,11130,14263);
 start($j++, 'Zacian', $holoHave, $Zacian);
 foreach ($Zacian as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -4909,7 +4909,7 @@ start($j++, 'Nymble', $holoHave, $Nymble);
 foreach ($Nymble as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Lokix = array(13547,13588);
+$Lokix = array(13547,13588,14259);
 start($j++, 'Lokix', $holoHave, $Lokix);
 foreach ($Lokix as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -4979,7 +4979,7 @@ start($j++, 'Naclstack', $holoHave, $Naclstack);
 foreach ($Naclstack as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Garganacl = array(13561,13680);
+$Garganacl = array(13561,13680,14254);
 start($j++, 'Garganacl', $holoHave, $Garganacl);
 foreach ($Garganacl as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -5089,7 +5089,7 @@ start($j++, 'Flittle', $holoHave, $Flittle);
 foreach ($Flittle as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Espathra = array(13445,13756);
+$Espathra = array(13445,14252,13756);
 start($j++, 'Espathra', $holoHave, $Espathra);
 foreach ($Espathra as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -5231,6 +5231,10 @@ finish();
 
 
 
+$Brute_Bonnet = array(14260);
+start($j++, 'Brute Bonnet', $holoHave, $Brute_Bonnet);
+foreach ($Brute_Bonnet as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
 
 
@@ -5238,7 +5242,15 @@ finish();
 
 
 
+$Iron_Jugulis = array(14265);
+start($j++, 'Iron Jugulis', $holoHave, $Iron_Jugulis);
+foreach ($Iron_Jugulis as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
+$Iron_Moth = array(14241);
+start($j++, 'Iron Moth', $holoHave, $Iron_Moth);
+foreach ($Iron_Moth as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
 
 $Frigibax = array(13620,13621);
@@ -5258,9 +5270,25 @@ finish();
 
 
 
+$Wo_Chien = array(14239);
+start($j++, 'Wo Chien', $holoHave, $Wo_Chien);
+foreach ($Wo_Chien as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
+$Chien_Pao = array(14247);
+start($j++, 'Chien Pao', $holoHave, $Chien_Pao);
+foreach ($Chien_Pao as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
+$Ting_Lu = array(14255);
+start($j++, 'Ting Lu', $holoHave, $Ting_Lu);
+foreach ($Ting_Lu as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
+$Chi_Yu = array(14242);
+start($j++, 'Chi Yu', $holoHave, $Chi_Yu);
+foreach ($Chi_Yu as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
 
 

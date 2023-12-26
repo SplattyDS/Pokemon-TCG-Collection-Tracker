@@ -591,6 +591,14 @@ start($j++, 'SV Series - Mirage Holo', $holoHave, $SV_MIRAGE_HOLO);
 foreach ($SV_MIRAGE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'SV Series - Mirage Holo (Ancient)', $holoHave, $SV_MIRAGE_HOLO_ANCIENT);
+foreach ($SV_MIRAGE_HOLO_ANCIENT as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'SV Series - Mirage Holo (Future)', $holoHave, $SV_MIRAGE_HOLO_FUTURE);
+foreach ($SV_MIRAGE_HOLO_FUTURE as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'SV Series - Smooth Cosmos Holo', $holoHave, $SV_SMOOTH_COSMOS_HOLO);
 foreach ($SV_SMOOTH_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
