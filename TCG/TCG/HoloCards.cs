@@ -14437,6 +14437,10 @@ namespace TCG
 			new HoloCard("Techno Radar", Pokedex.NVT, HoloRarity.SV_REVERSE_FUTURE_HOLO, Types.Item, Sets.Paradox_Rift, 180),
 			new HoloCard("Tulip", Pokedex.NVT, HoloRarity.SV_REVERSE_ROCKY_HOLO, Types.Supporter, Sets.Paradox_Rift, 181),
 			new HoloCard("Medical Energy", Pokedex.NVT, HoloRarity.SV_REVERSE_ROCKY_HOLO, Types.Special_Energy, Sets.Paradox_Rift, 182),
+			new HoloCard("Brute Bonnet", Pokedex.Brute_Bonnet, HoloRarity.SV_PIXEL_COSMOS_HOLO_ANCIENT, Types.Darkness, Sets.Paradox_Rift, 123),
+			new HoloCard("Ancient Booster Energy Capsule", Pokedex.NVT, HoloRarity.SV_PIXEL_COSMOS_HOLO_ANCIENT, Types.Tool, Sets.Paradox_Rift, 159),
+			new HoloCard("Iron Moth", Pokedex.Iron_Moth, HoloRarity.SV_PIXEL_COSMOS_HOLO_FUTURE, Types.Fire, Sets.Paradox_Rift, 28),
+			new HoloCard("Future Booster Energy Capsule", Pokedex.NVT, HoloRarity.SV_PIXEL_COSMOS_HOLO_FUTURE, Types.Tool, Sets.Paradox_Rift, 164),
 		};
 		
 		// the play labs promos might get reasonably obtainable in leagues soon

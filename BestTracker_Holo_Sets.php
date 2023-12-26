@@ -836,7 +836,7 @@ start($j++, 'SV 151', $holoHave, $SV_151);
 foreach ($SV_151 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Paradox_Rift = array(14239,14240,14241,14242,14243,14244,14245,14246,14247,14248,14249,14250,14251,14252,14253,14254,14255,14256,14257,14258,14259,14260,14261,14262,14263,14264,14265);
+$Paradox_Rift = array(14239,14240,14241,14430,14242,14243,14244,14245,14246,14247,14248,14249,14250,14251,14252,14253,14254,14255,14256,14257,14258,14259,14260,14428,14261,14262,14263,14264,14265,14429,14431);
 start($j++, 'Paradox Rift', $holoHave, $Paradox_Rift);
 foreach ($Paradox_Rift as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();

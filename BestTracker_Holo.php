@@ -607,6 +607,14 @@ start($j++, 'SV Series - Pixel Cosmos Holo', $holoHave, $SV_PIXEL_COSMOS_HOLO);
 foreach ($SV_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'SV Series - Pixel Cosmos Holo (Ancient)', $holoHave, $SV_PIXEL_COSMOS_HOLO_ANCIENT);
+foreach ($SV_PIXEL_COSMOS_HOLO_ANCIENT as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'SV Series - Pixel Cosmos Holo (Future)', $holoHave, $SV_PIXEL_COSMOS_HOLO_FUTURE);
+foreach ($SV_PIXEL_COSMOS_HOLO_FUTURE as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 start($j++, 'SV Series - Confetti Holo', $holoHave, $SV_CONFETTI_HOLO);
 foreach ($SV_CONFETTI_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
