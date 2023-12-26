@@ -122,6 +122,7 @@ namespace TCG
 			new SetReverse(Sets.Paldea_Evolved, HoloRarity.SV_REVERSE_ROCKY_HOLO),
 			new SetReverse(Sets.Obsidian_Flames, HoloRarity.SV_REVERSE_ROCKY_HOLO),
 			new SetReverse(Sets.SV_151, HoloRarity.SV_REVERSE_ROCKY_HOLO),
+			new SetReverse(Sets.Paradox_Rift, HoloRarity.SV_REVERSE_ROCKY_HOLO, HoloRarity.SV_REVERSE_ANCIENT_HOLO, HoloRarity.SV_REVERSE_FUTURE_HOLO),
 		};
 
 		public static HoloRarity[] GetRarities(Sets set)

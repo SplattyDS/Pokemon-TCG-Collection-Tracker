@@ -210,6 +210,8 @@
 			new Section(HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY, "SV Series - Pixel Cosmos Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.SV_REVERSE_ROCKY_HOLO, "SV Series - Reverse Rocky Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SV_REVERSE_ANCIENT_HOLO, "SV Series - Reverse Ancient Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SV_REVERSE_FUTURE_HOLO, "SV Series - Reverse Future Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.SV_REVERSE_MIRAGE_ROCKY_HOLO, "SV Series - Reverse Mirage Rocky Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 		};
