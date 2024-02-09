@@ -11,7 +11,7 @@
 			new FutureCardSection("Cyber Judge ex (JP)", "CJ", 4),
 
 			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 3),
-			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 5),
+			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 6),
 			new FutureCardSection("Chinese Cards", "CH", 6),
 
 			new FutureCardSection("Special Deck Set ex Venusaur & Charizard & Blastoise (JP)", "SVG", 5),

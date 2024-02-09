@@ -124,4 +124,5 @@ foreach ($Worlds_2022 as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($
 finish();
 
 
+
 ?>

@@ -1181,7 +1181,7 @@ else if (isset($_GET['holo']))
 	}
 	else if (isset($_GET['random']))
 	{
-		$random = rand(1, 13766);
+		$random = rand(1, 14439);
 		
 		start($j++, 'Random Card', $holoHave, array($random), true);
 		if (in_array($random, $holoHave, true)) {imgHN($random, true);} else {imgH($random, true);}
@@ -1220,7 +1220,7 @@ else if (isset($_GET['worlds']))
 	}
 	else if (isset($_GET['random']))
 	{
-		$random = rand(1, 10);
+		$random = rand(1, 200);
 		
 		start($j++, 'Random Card', $worldsHave, array($random), true);
 		if (in_array($random, $worldsHave, true)) {imgWN($random, true);} else {imgW($random, true);}
@@ -1270,7 +1270,10 @@ else if (isset($_GET['extremely_rare']))
 }
 else if (isset($_GET['acetone']))
 {
-	require 'BestTracker_Acetone.php';
+	if (isset($_GET['binder']))
+		require 'BestTracker_Acetone_Binder.php';
+	else
+		require 'BestTracker_Acetone.php';
 }
 else if (isset($_GET['test']))
 {
@@ -1441,7 +1444,7 @@ else if (isset($_GET['allall']))
 }
 else if (isset($_GET['random']))
 {
-	$random = rand(1, 3865);
+	$random = rand(1, 4108);
 	
 	start($j++, 'Random Card', $have, array($random), true);
 	if (in_array($random, $have, true)) {imgN($random, true);} else {img($random, true);}

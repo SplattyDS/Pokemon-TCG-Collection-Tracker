@@ -143,7 +143,7 @@ function SplitCards(&$binders, $cards)
 	if ($freeSpace < count($cards))
 	{
 		print('Not enough space to split cards. Needed '.count($cards).', has '.$freeSpace.'.<br>');
-		return ;
+		return;
 	}
 	
 	for ($i = 0; $i < count($binders); $i++)
@@ -329,6 +329,7 @@ $binder29 = array();
 $binder30 = array();
 $binder31 = array();
 $binder32 = array();
+$binder33 = array();
 
 AddCards($binder0, $OS_STARLIGHT_HOLO);
 AlignRow($binder0);
@@ -609,17 +610,19 @@ AlignBinder($binder29);
 AddCards($binder30, array(-1));
 AlignBinder($binder30);
 
-$input = array(2, '/r', 2, '/p', 2, '/r', 1, '/p', 1, '/p', 4, '/r', 1, '/r', 2, '/p', 2, '/r', 4, '/r', 1, '/r', 2, '/r', 3, '/r', 1, '/r', 4, '/p', 28, '/r', 1, '/r', 1, '/p', 25, '/r', 2, '/r', 1, '/p', 3, '/r', 1, '/r', 3, '/p', 11, '/p', 1, '/p', 9, '/p', 1, '/r', 3, '/p', 3, '/r', 1, '/r', 4, '/p', 7, '/p', 10, '/p', 1, '/r', 4, '/p', 6, '/r', 2, '/p', 80, '/s', 2, '/r', 1, '/r', 2, '/p', 8, '/p', 12, '/p', 12, '/p', 2, '/p', 6, '/p', 1, '/b', 45, '/s', 48, '/s', 16, '/p', 11, '/p', 7, '/p', 1, '/r', 1, '/s', 167, 1, '/s', 16, '/p', 3, '/r', 2, '/p', 6, '/r', 1, '/p', 1, '/r', 2, '/p', 26, '/s', 0, '/s', '/b');
+// $input = array(2, '/r', 2, '/p', 2, '/r', 1, '/p', 1, '/p', 4, '/r', 1, '/r', 2, '/p', 2, '/r', 4, '/r', 1, '/r', 2, '/r', 3, '/r', 1, '/r', 4, '/p', 28, '/r', 1, '/r', 1, '/p', 25, '/r', 2, '/r', 1, '/p', 3, '/r', 1, '/r', 3, '/p', 11, '/p', 1, '/p', 9, '/p', 1, '/r', 3, '/p', 3, '/r', 1, '/r', 4, '/p', 7, '/p', 10, '/p', 1, '/r', 4, '/p', 6, '/r', 2, '/p', 80, '/s', 2, '/r', 1, '/r', 2, '/p', 8, '/p', 12, '/p', 12, '/p', 2, '/p', 6, '/p', 1, '/b', 45, '/s', 48, '/s', 16, '/p', 11, '/p', 7, '/p', 1, '/r', 1, '/s', 167, 1, '/s', 16, '/p', 3, '/r', 2, '/p', 6, '/r', 1, '/p', 1, '/r', 2, '/p', 26, '/s', 0, '/s', '/b');
+$input = array(2, '/r', 2, '/p', 1, '/r', 1, '/r', 1, '/p', 2, '/p', 4, '/r', 1, '/r', 2, '/p', 2, '/r', 4, '/r', 1, '/r', 2, '/r', 3, '/r', 1, '/r', 4, '/p', 28, '/r', 1, '/r', 1, '/p', 25, '/r', 2, '/r', 1, '/p', 3, '/r', 1, '/r', 3, '/p', 11, '/p', 1, '/p', 10, '/p', 2, '/r', 3, '/p', 3, 1, '/r', 5, '/p', 7, '/p', 10, '/p', 1, '/r', 4, '/p', 6, '/r', 2, '/p', 86, '/s', 2, '/r', 1, '/r', 3, '/p', 8, '/p', 15, '/p', 12, '/p', 2, '/r', 6, '/p', 1, '/b', 49, '/r', 50, '/r', 16, '/r', 14, '/r', 5, '/r', 7, '/r', 1, -1, -1, 1, '/r', 181, 1, '/p', 24, '/r', 3, '/r', 3, '/r', 2, 2, '/r', 6, '/r', 1, '/r', 1, '/r', 3, '/p', 61, '/r', 1, '/r', 1, '/b', 0, '/b');
 
 // start($j++, 'Collection Test', $holoHave, $output);
 // foreach ($output as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 // finish();
 
-$testBinders = array(&$binder31, &$binder32);
+$testBinders = array(&$binder31, &$binder32, &$binder33);
 SplitCards($testBinders, Process($input));
 
 AlignBinder($binder31);
 AlignBinder($binder32);
+AlignBinder($binder33);
 
 $binders = array
 (
@@ -656,6 +659,7 @@ $binders = array
 	&$binder30,
 	&$binder31,
 	&$binder32,
+	&$binder33,
 );
 
 $markers = 0;
@@ -698,6 +702,7 @@ $binderContents = array
 	'TBA',
 	'Collection 1',
 	'Collection 2',
+	'Reserved',
 );
 
 print('<h1>Number of VSTAR Markers: '.$markers.'</h1>');

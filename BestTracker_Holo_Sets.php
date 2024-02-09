@@ -525,7 +525,7 @@ start($j++, 'Steam Siege', $holoHave, $Steam_Siege);
 foreach ($Steam_Siege as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$Evolutions = array(8091,8078,8092,8079,8080,8081,8093,8094,8082,8083,8095,8084,8085,8097,8096,8086,8098,8087,8099,8088,8089,8090,8174,8175,8176,8177,8178,8179,8180,8181,8182);
+$Evolutions = array(8091,8078,8092,8079,8080,8081,8093,8094,8082,8083,8095,8084,8085,8097,8096,8086,8098,8087,8099,8088,8089,8090,8173,8174,8175,8176,8177,8178,8179,8180,8181,8182);
 start($j++, 'Evolutions', $holoHave, $Evolutions);
 foreach ($Evolutions as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
@@ -847,7 +847,7 @@ start($j++, 'SV Energy', $holoHave, $SV_Energy);
 foreach ($SV_Energy as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
-$SV_Promo = array(13748,13749,13750,13751,13752,13753,13754,13755,13756,13757,13758,13759,13760,13761,13762,13763,13767,13764,13768,13765,13766,13957,13958,13959,13960,13961,13962,13963,13964,14032,14034,14036);
+$SV_Promo = array(13748,13749,13750,13751,13752,13753,13754,13755,13756,13757,13758,13759,13760,13761,13762,13763,13767,13764,13768,13765,13766,13957,13958,13959,13960,13961,13962,13963,13964,14032,14034,14036,14432,14433,14434,14435,14436,14437,14438,14439);
 start($j++, 'SV Promo', $holoHave, $SV_Promo);
 foreach ($SV_Promo as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
