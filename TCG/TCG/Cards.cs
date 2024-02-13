@@ -4003,7 +4003,7 @@ namespace TCG
 			new Card("Mew ex", Pokedex.Mew, Rarity.ex_SV_Gold, Types.Psychic, Sets.SV_151, 205),
 			new Card("Switch", Pokedex.NVT, Rarity.Gold_Item_SV, Types.Item, Sets.SV_151, 206),
 			new Card("Basic Psychic Energy", Pokedex.NVT, Rarity.Gold_Energy_SV, Types.Basic_Psychic_Energy, Sets.SV_151, 207),
-			new Card("Pikachu with Grey Felt Hat", Pokedex.Pikachu, Rarity.Full_Art_Pokemon_SV, Types.Lightning, Sets.SV_Promo, 85),
+			new Card("Pikachu with Grey Felt Hat", Pokedex.Pikachu, Rarity.Full_Art_Pokemon_SV, Types.Lightning, Sets.SV_Promo, 85, true),
 			new Card("Froslass ex", Pokedex.Froslass, Rarity.ex_SV_Tera, Types.Tera_Grass, Sets.Paradox_Rift, 3),
 			new Card("Armarouge ex", Pokedex.Armarouge, Rarity.ex_SV, Types.Fire, Sets.Paradox_Rift, 27),
 			new Card("Garchomp ex", Pokedex.Garchomp, Rarity.ex_SV_Tera, Types.Tera_Water, Sets.Paradox_Rift, 38),

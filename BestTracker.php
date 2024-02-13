@@ -609,6 +609,7 @@ else if (isset($_GET['worlds']))
 else
 {
 	require 'BestTracker_Have.php';
+	require 'BestTracker_HaveBinder.php';
 	require 'BestTracker_Cards.php';
 }
 

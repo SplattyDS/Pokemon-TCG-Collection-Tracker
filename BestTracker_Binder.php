@@ -237,7 +237,7 @@ function SplitCards(&$binders, $cards)
 	if ($freeSpace < count($cards))
 	{
 		print('Not enough space to split cards. Needed '.count($cards).', has '.$freeSpace.'.<br>');
-		return ;
+		return;
 	}
 	
 	for ($i = 0; $i < count($binders); $i++)
@@ -254,7 +254,7 @@ function SplitCards(&$binders, $cards)
 		for ($j = 0; $j < $freeSpace; $j++)
 			unset($cards[$j]);
 		
-		array_splice($cards, 1, 1);
+		array_splice($cards, 1, 0);
 	}
 	
 	
@@ -333,6 +333,104 @@ function CountHaveBinder(&$binder)
 	return $amount;
 }
 
+$V_Union_Mode = false;
+
+function Process(&$input)
+{
+	global $V_Union_Mode;
+	
+	global $have;
+	global $haveBinder;
+	
+	if (count($have) - 2 != count($haveBinder)) // minus 2 because metal cards
+		print('<h1>Missing cards in collection binders: '.(count($have) - 2 - count($haveBinder)).'</h1>');
+	
+	$output = array();
+	$haveIndex = 0;
+
+	for ($i = 0; $i < count($input); $i++)
+	{
+		$var = $input[$i];
+		
+		if (is_numeric($var))
+		{
+			if ($var == 0)
+			{
+				for ($j = $haveIndex; $j < count($haveBinder); $j++)
+					array_push($output, $haveBinder[$j]);
+			}
+			else if ($var < 0)
+			{
+				for ($j = 0; $j < abs($var); $j++)
+					array_push($output, 0);
+				// print('<p>Added: -1</p>');
+			}
+			else
+			{
+				if ($V_Union_Mode)
+				{
+					$numCards = $var * 4;
+					$offs = $haveIndex;
+					
+					for ($j = 0; $j < $numCards; $j += 8)
+					{
+						if ($numCards % 8 != 0 && $j + 8 > $numCards)
+						{
+						$sortedCards = array(
+						$haveBinder[$offs + $j + 0], $haveBinder[$offs + $j + 1],                           0,                           0, 
+						$haveBinder[$offs + $j + 2], $haveBinder[$offs + $j + 3],                           0,                           0,
+						                          0,                           0,                           0,                           0);
+						}
+						else
+						{
+						$sortedCards = array(
+						$haveBinder[$offs + $j + 0], $haveBinder[$offs + $j + 1], $haveBinder[$offs + $j + 4], $haveBinder[$offs + $j + 5], 
+						$haveBinder[$offs + $j + 2], $haveBinder[$offs + $j + 3], $haveBinder[$offs + $j + 6], $haveBinder[$offs + $j + 7],
+						                          0,                           0,                           0,                           0);
+						}
+						
+						$output = array_merge($output, $sortedCards);
+					}
+					
+					$haveIndex += $numCards;
+				}
+				else
+				{
+					for ($j = 0; $j < $var; $j++)
+					{
+						array_push($output, $haveBinder[$haveIndex + $j]);
+						// print('<p>Added: '.$haveBinder[$haveIndex + $j].'</p>');
+					}
+					
+					$haveIndex += $var;
+				}
+			}
+		}
+		else if ($var == '/r')
+		{
+			Align($output, 4, 0, 0);
+		}
+		else if ($var == '/p')
+		{
+			Align($output, 12, 0, 0);
+		}
+		else if ($var == '/s')
+		{
+			Align($output, 24, 12, 0);
+		}
+		else if ($var == '/b')
+		{
+			Align($output, 480, 0, 0);
+		}
+		else if ($var == '/v')
+		{
+			$V_Union_Mode = !$V_Union_Mode;
+		}
+	}
+	
+	return $output;
+}
+
 $binder0 = array();
 $binder1 = array();
 $binder2 = array();
@@ -345,7 +443,9 @@ $binder8 = array();
 $binder9 = array();
 $binder10 = array();
 $binder11 = array();
-// $binder11 = array();
+$binder12 = array();
+$binder13 = array();
+$binder14 = array();
 
 AddCards($binder0, $Metal);
 AlignBinder($binder0);
@@ -710,6 +810,15 @@ AddCards($binder11, $ex_SV_Tera_Gold);
 AlignPage($binder11);
 AlignBinder($binder11);
 
+$input = array(11, '/p', 1, '/r', 2, '/p', 2, '/r', 4, '/r', 2, '/p', 1, -1, 1, -1, 1, -5, 1, -5, 1, -2, 1, -1, 2, -2, 1, -2, '/p', 9, '/p', 2, '/r', 5, '/p', 6, '/r', 1, '/p', 11, '/p', 3, '/r', 4, '/p', 12, '/r', 1, '/r', 3, '/p', 5, '/r', 1, '/p', 3, '/p', 19, '/r', 1, '/p', 14, -1, 1, '/r', 2, '/r', 1, '/p', 1, 1, '/r', 5, 1, '/p', 21, '/r', 3, '/r', 3, '/p', 8, '/p', 2, '/r', 2, '/r', 1, '/b', 100, '/s', 8, '/p', 8, '/p', 21, -1, 2, '/p', '/v', 5, '/v', '/p', 9, '/p', 16, '/r', 3, '/r', -3, 1, '/p', 24, '/p', 7, '/r', 1, 1, '/p', 8, '/p', 4, '/r', 2, '/r', 1, '/p', 4, '/r', 3, '/r', 1, '/p', 14, '/p', 2, -1, 1, '/r', 1, '/r', 1, '/p', 2, '/r', 4, '/p', 1, '/r', 2, '/b', 14, '/r', 1, '/r', 1, '/p', 6, '/p', 2, '/r', 2, '/r', 2, '/r', 2, '/r', 1, '/r', '/s', 0, '/b');
+
+$testBinders = array(&$binder12, &$binder13, &$binder14);
+SplitCards($testBinders, Process($input));
+
+AlignBinder($binder12);
+AlignBinder($binder13);
+AlignBinder($binder14);
+
 $binders = array
 (
 	&$binder0,
@@ -724,6 +833,9 @@ $binders = array
 	&$binder9,
 	&$binder10,
 	&$binder11,
+	&$binder12,
+	&$binder13,
+	&$binder14,
 );
 
 $markers = 0;
@@ -745,6 +857,9 @@ $binderContents = array
 	'Gen 8.4, Rainbow',
 	'Gen 9.1 - Ongoing',
 	'Gen 9.2 - Ongoing',
+	'Collection 1',
+	'Collection 2',
+	'Collection 3',
 );
 
 print('<h1>Number of VSTAR Markers: '.$markers.'</h1>');

@@ -28,6 +28,7 @@ namespace TCG
 			WriteFuture();
 			WriteAll();
 			WriteHave();
+			WriteHaveBinder();
 			WritePercent();
 
 			WriteHoloCards();
@@ -210,6 +211,17 @@ namespace TCG
 			code.Add("?>");
 
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Have.php", code);
+		}
+
+		static void WriteHaveBinder()
+		{
+			List<string> code = new List<string>(3);
+
+			code.Add("<?php");
+			code.Add(CodeFromBinderCollection(GetBinderCollection()));
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_HaveBinder.php", code);
 		}
 
 		static void WritePercent()
@@ -803,6 +815,12 @@ namespace TCG
 			return "$have = array(" + cardArr + ");";
 		}
 
+		static string CodeFromBinderCollection(IEnumerable<Card> cards)
+		{
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+			return "$haveBinder = array(" + cardArr + ");";
+		}
+
 		static string CodeFromSet(Sets set)
 		{
 			IEnumerable<Card> cards = CardsFromSet(set);
@@ -877,181 +895,142 @@ namespace TCG
 				"print('</div>');\r\n";
 		}
 
+		static IEnumerable<CardBase> SortCards(IEnumerable<CardBase> cards, SortMode sortMode)
+		{
+			switch (sortMode)
+			{
+				case SortMode.NO_SORT:
+					return cards;
+
+				case SortMode.SORT_BY_SET:
+					return cards.OrderBy(c => c.setNum).OrderBy(c => c.set);
+
+				case SortMode.SORT_BY_TYPE:
+					return cards.OrderBy(c => c.type);
+
+				case SortMode.SORT_BY_NAME:
+					return cards.OrderBy(c => c.name);
+
+				case SortMode.SORT_BY_NAME_AND_TYPE:
+					return cards.OrderBy(c => c.name).OrderBy(c => c.type);
+
+				case SortMode.SORT_BY_SET_AND_TYPE:
+					return cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.type);
+
+				case SortMode.SORT_BY_SET_AND_DEX:
+					return cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex);
+
+				case SortMode.SORT_BY_TYPE_AND_SET:
+					return cards.OrderBy(c => c.setNum).OrderBy(c => c.type).OrderBy(c => c.set);
+
+				case SortMode.SORT_BY_SET_AND_DEX_AND_TYPE:
+					return cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type);
+
+				case SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type);
+
+					List<CardBase> noExtraSort = cards.Where(c => c.type != Types.Item && c.type != Types.Tool && c.type != Types.Technical_Machine && c.type != Types.Supporter && c.type != Types.Stadium && c.type != Types.Special_Energy).ToList();
+
+					List<CardBase> sortedItem = cards.Where(c => c.type == Types.Item).OrderBy(c => c.name).ToList();
+					List<CardBase> sortedTool = cards.Where(c => c.type == Types.Tool).OrderBy(c => c.name).ToList();
+					List<CardBase> sortedTM = cards.Where(c => c.type == Types.Technical_Machine).OrderBy(c => c.name).ToList();
+					List<CardBase> sortedR = cards.Where(c => c.type == Types.Rockets_Secret_Machine).OrderBy(c => c.name).ToList();
+					List<CardBase> sortedSupporter = cards.Where(c => c.type == Types.Supporter).OrderBy(c => c.name).ToList();
+					List<CardBase> sortedStadium = cards.Where(c => c.type == Types.Stadium).OrderBy(c => c.name).ToList();
+					List<CardBase> sortedSpecialEnergy = cards.Where(c => c.type == Types.Special_Energy).OrderBy(c => c.name).ToList();
+
+					noExtraSort.AddRange(sortedItem);
+					noExtraSort.AddRange(sortedTool);
+					noExtraSort.AddRange(sortedTM);
+					noExtraSort.AddRange(sortedR);
+					noExtraSort.AddRange(sortedSupporter);
+					noExtraSort.AddRange(sortedStadium);
+					noExtraSort.AddRange(sortedSpecialEnergy);
+
+					return noExtraSort.OrderBy(c => c.type);
+
+				case SortMode.SORT_BY_SET_AND_NAME_AND_DEX_AND_TYPE:
+					return cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.name).OrderBy(c => c.dex).OrderBy(c => c.type);
+
+				case SortMode.SORT_BY_DEX_AND_TYPE_AND_SET:
+					return cards.OrderBy(c => c.setNum).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.set);
+
+				default:
+					throw new NotSupportedException(sortMode.ToString());
+			}
+		}
+
 		static IEnumerable<Card> GetMyCollection()
 		{
-			return Cards.Get().Where(c => c.have).OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.rarity);
+			IEnumerable<Card> unsorted = Cards.Get().Where(c => c.have);
+			List<Card> sorted = new List<Card>();
+
+			foreach (Section section in Sections.Get())
+				sorted.AddRange(SortCards(unsorted.Where(c => c.rarity == section.rarity), section.sortMode).OfType<Card>());
+
+			if (unsorted.Count() != sorted.Count)
+				throw new Exception();
+
+			return sorted;
+
+			// return Cards.Get().Where(c => c.have).OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.rarity);
+		}
+
+		static IEnumerable<Card> GetBinderCollection()
+		{
+			IEnumerable<Card> unsorted = GetMyCollection();
+			List<Card> sorted = new List<Card>();
+
+			foreach (Rarity rarity in CurrentCollectionOrder.Order)
+				sorted.AddRange(unsorted.Where(c => c.rarity == rarity));
+
+			return sorted;
 		}
 
 		static IEnumerable<HoloCard> GetMyHoloCollection()
 		{
-			return HoloCards.Get().Where(c => c.have).OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.rarity);
+			IEnumerable<HoloCard> unsorted = HoloCards.Get().Where(c => c.have);
+			List<HoloCard> sorted = new List<HoloCard>();
+
+			foreach (Section section in HoloSections.Get())
+				sorted.AddRange(SortCards(unsorted.Where(c => c.rarity == section.holoRarity), section.sortMode).OfType<HoloCard>());
+
+			if (unsorted.Count() != sorted.Count)
+				throw new Exception();
+
+			return sorted;
+
+			// return HoloCards.Get().Where(c => c.have).OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.rarity);
 		}
 
 		static IEnumerable<WorldsCard> GetMyWorldsCollection()
 		{
-			return WorldsCards.Get().Where(c => c.have).OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.rarity);
+			IEnumerable<WorldsCard> unsorted = WorldsCards.Get().Where(c => c.have);
+			List<WorldsCard> sorted = new List<WorldsCard>();
+
+			foreach (Section section in Sections.Get())
+				sorted.AddRange(SortCards(unsorted.Where(c => c.rarity == section.rarity), section.sortMode).OfType<WorldsCard>());
+
+			if (unsorted.Count() != sorted.Count)
+				throw new Exception();
+
+			return sorted;
+
+			// return WorldsCards.Get().Where(c => c.have).OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.rarity);
 		}
 
 		static IEnumerable<Card> CardsFromSection(Section section)
 		{
 			IEnumerable<Card> cards = Cards.Get(false).Where(c => c.rarity == section.rarity);
 
-			switch (section.sortMode)
-			{
-				case SortMode.NO_SORT:
-					break;
-
-				case SortMode.SORT_BY_SET:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set);
-					break;
-
-				case SortMode.SORT_BY_TYPE:
-					cards = cards.OrderBy(c => c.type);
-					break;
-
-				case SortMode.SORT_BY_NAME:
-					cards = cards.OrderBy(c => c.name);
-					break;
-
-				case SortMode.SORT_BY_NAME_AND_TYPE:
-					cards = cards.OrderBy(c => c.name).OrderBy(c => c.type);
-					break;
-
-				case SortMode.SORT_BY_SET_AND_TYPE:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.type);
-					break;
-
-				case SortMode.SORT_BY_SET_AND_DEX:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex);
-					break;
-
-				case SortMode.SORT_BY_TYPE_AND_SET:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.type).OrderBy(c => c.set);
-					break;
-
-				case SortMode.SORT_BY_SET_AND_DEX_AND_TYPE:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type);
-					break;
-
-				case SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type);
-
-					List<Card> noExtraSort = cards.Where(c => c.type != Types.Item && c.type != Types.Tool && c.type != Types.Technical_Machine && c.type != Types.Supporter && c.type != Types.Stadium && c.type != Types.Special_Energy).ToList();
-
-					List<Card> sortedItem = cards.Where(c => c.type == Types.Item).OrderBy(c => c.name).ToList();
-					List<Card> sortedTool = cards.Where(c => c.type == Types.Tool).OrderBy(c => c.name).ToList();
-					List<Card> sortedTM = cards.Where(c => c.type == Types.Technical_Machine).OrderBy(c => c.name).ToList();
-					List<Card> sortedR = cards.Where(c => c.type == Types.Rockets_Secret_Machine).OrderBy(c => c.name).ToList();
-					List<Card> sortedSupporter = cards.Where(c => c.type == Types.Supporter).OrderBy(c => c.name).ToList();
-					List<Card> sortedStadium = cards.Where(c => c.type == Types.Stadium).OrderBy(c => c.name).ToList();
-					List<Card> sortedSpecialEnergy = cards.Where(c => c.type == Types.Special_Energy).OrderBy(c => c.name).ToList();
-
-					noExtraSort.AddRange(sortedItem);
-					noExtraSort.AddRange(sortedTool);
-					noExtraSort.AddRange(sortedTM);
-					noExtraSort.AddRange(sortedR);
-					noExtraSort.AddRange(sortedSupporter);
-					noExtraSort.AddRange(sortedStadium);
-					noExtraSort.AddRange(sortedSpecialEnergy);
-
-					cards = noExtraSort.OrderBy(c => c.type);
-
-					break;
-
-				case SortMode.SORT_BY_SET_AND_NAME_AND_DEX_AND_TYPE:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.name).OrderBy(c => c.dex).OrderBy(c => c.type);
-					break;
-
-				case SortMode.SORT_BY_DEX_AND_TYPE_AND_SET:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.set);
-					break;
-
-				default:
-					throw new NotSupportedException(section.sortMode.ToString());
-			}
-
-			return cards;
+			return SortCards(cards, section.sortMode).OfType<Card>();
 		}
 
 		static IEnumerable<HoloCard> HoloCardsFromSection(Section section)
 		{
 			IEnumerable<HoloCard> cards = HoloCards.Get().Where(c => c.rarity == section.holoRarity);
 
-			switch (section.sortMode)
-			{
-				case SortMode.NO_SORT:
-					break;
-
-				case SortMode.SORT_BY_SET:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set);
-					break;
-
-				case SortMode.SORT_BY_TYPE:
-					cards = cards.OrderBy(c => c.type);
-					break;
-
-				case SortMode.SORT_BY_NAME:
-					cards = cards.OrderBy(c => c.name);
-					break;
-
-				case SortMode.SORT_BY_NAME_AND_TYPE:
-					cards = cards.OrderBy(c => c.name).OrderBy(c => c.type);
-					break;
-
-				case SortMode.SORT_BY_SET_AND_TYPE:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.type);
-					break;
-
-				case SortMode.SORT_BY_SET_AND_DEX:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex);
-					break;
-
-				case SortMode.SORT_BY_TYPE_AND_SET:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.type).OrderBy(c => c.set);
-					break;
-
-				case SortMode.SORT_BY_SET_AND_DEX_AND_TYPE:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type);
-					break;
-
-				case SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type);
-
-					List<HoloCard> noExtraSort = cards.Where(c => c.type != Types.Item && c.type != Types.Tool && c.type != Types.Technical_Machine && c.type != Types.Supporter && c.type != Types.Stadium && c.type != Types.Special_Energy).ToList();
-					
-					List<HoloCard> sortedItem = cards.Where(c => c.type == Types.Item).OrderBy(c => c.name).ToList();
-					List<HoloCard> sortedTool = cards.Where(c => c.type == Types.Tool).OrderBy(c => c.name).ToList();
-					List<HoloCard> sortedTM = cards.Where(c => c.type == Types.Technical_Machine).OrderBy(c => c.name).ToList();
-					List<HoloCard> sortedR = cards.Where(c => c.type == Types.Rockets_Secret_Machine).OrderBy(c => c.name).ToList();
-					List<HoloCard> sortedSupporter = cards.Where(c => c.type == Types.Supporter).OrderBy(c => c.name).ToList();
-					List<HoloCard> sortedStadium = cards.Where(c => c.type == Types.Stadium).OrderBy(c => c.name).ToList();
-					List<HoloCard> sortedSpecialEnergy = cards.Where(c => c.type == Types.Special_Energy).OrderBy(c => c.name).ToList();
-
-					noExtraSort.AddRange(sortedItem);
-					noExtraSort.AddRange(sortedTool);
-					noExtraSort.AddRange(sortedTM);
-					noExtraSort.AddRange(sortedR);
-					noExtraSort.AddRange(sortedSupporter);
-					noExtraSort.AddRange(sortedStadium);
-					noExtraSort.AddRange(sortedSpecialEnergy);
-
-					cards = noExtraSort.OrderBy(c => c.type);
-
-					break;
-
-				case SortMode.SORT_BY_SET_AND_NAME_AND_DEX_AND_TYPE:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.name).OrderBy(c => c.dex).OrderBy(c => c.type);
-					break;
-
-				case SortMode.SORT_BY_DEX_AND_TYPE_AND_SET:
-					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.set);
-					break;
-
-				default:
-					throw new NotSupportedException(section.sortMode.ToString());
-			}
-
-			return cards;
+			return SortCards(cards, section.sortMode).OfType<HoloCard>();
 		}
 
 		static IEnumerable<WorldsCard> WorldsCardsFromSection(Section section)
