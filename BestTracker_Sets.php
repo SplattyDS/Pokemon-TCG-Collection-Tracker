@@ -703,6 +703,8 @@ foreach ($Paldean_Fates as $cur) { if (in_array($cur, $have, true)) {imgN($cur);
 finish();
 
 
+
+
 $SV_Promo = array(3641,3638,3639,3643,3644,3642,3828,3720,3721,3722,3723,3724,3829,3830,3831,3837,3834,3835,3836,3840,3841,4099,4100,4101,4102,4103,4107,4108,4273,4274,4275,4276,4277,4278,4279,4280,4281,4282,4283,4284,4285,4286,4287,4288,3994);
 start($j++, 'SV Promo', $have, $SV_Promo);
 foreach ($SV_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }

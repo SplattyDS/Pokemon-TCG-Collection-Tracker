@@ -841,6 +841,12 @@ start($j++, 'Paradox Rift', $holoHave, $Paradox_Rift);
 foreach ($Paradox_Rift as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+$Paldean_Fates = array(14440,14441,14442,14443,14444,14445,14446,14447,14448,14449,14450,14451,14452,14453,14454,14455);
+start($j++, 'Paldean Fates', $holoHave, $Paldean_Fates);
+foreach ($Paldean_Fates as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+
 
 $SV_Energy = array(14224,14216,14225,14217,14226,14218,14227,14219,14228,14220,14229,14221,14230,14222,14231,14223);
 start($j++, 'SV Energy', $holoHave, $SV_Energy);

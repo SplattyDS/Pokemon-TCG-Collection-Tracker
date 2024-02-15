@@ -198,6 +198,8 @@
 		SV_151,
 		Paradox_Rift,
 		Paldean_Fates,
+		Temporal_Forces,
+		Twilight_Masquerade,
 		SV_Energy,
 		SV_Promo,
 		Mc_Donalds_2023,
