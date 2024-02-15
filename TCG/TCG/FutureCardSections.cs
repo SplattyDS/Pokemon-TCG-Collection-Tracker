@@ -6,7 +6,6 @@
 		{
 			new FutureCardSection("Ancient Roar (JP)", "AR", 1),
 			new FutureCardSection("Future Flash (JP)", "FF", 1),
-			new FutureCardSection("Shiny Treasure ex (JP)", "ST", 173),
 			new FutureCardSection("Wild Force ex (JP)", "WF", 4),
 			new FutureCardSection("Cyber Judge ex (JP)", "CJ", 4),
 
