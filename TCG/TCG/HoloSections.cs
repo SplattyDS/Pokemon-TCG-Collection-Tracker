@@ -216,6 +216,7 @@
 			new Section(HoloRarity.SV_REVERSE_FUTURE_HOLO, "SV Series - Reverse Future Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.SV_REVERSE_MIRAGE_ROCKY_HOLO, "SV Series - Reverse Mirage Rocky Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SV_REVERSE_PIXEL_COSMOS_HOLO, "SV Series - Reverse Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 		};
 
 		public static Section[] Get()

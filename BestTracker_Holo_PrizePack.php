@@ -11,4 +11,8 @@ $prizePack3 = array(14004,13991,14002,14012,13989,13996,14008,13990,14003,14013,
 start($j++, 'Prize Pack Series 3', $holoHave, $prizePack3);
 foreach ($prizePack3 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
+$prizePack4 = array(14537,14008,14538,14539,14540,14007,14541,14014,14015,14542,14543,14544,14545,14016,14546,14017,14547,14548,14009,14018,14549,14021,14550,14551,14022,14010,14011,14023,14552,14553,14554,14555,14216,14217,14218,14219,14220,14221,14222,14223);
+start($j++, 'Prize Pack Series 4', $holoHave, $prizePack4);
+foreach ($prizePack4 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 ?>

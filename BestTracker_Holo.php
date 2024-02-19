@@ -647,4 +647,8 @@ start($j++, 'SV Series - Reverse Mirage Rocky Holo', $holoHave, $SV_REVERSE_MIRA
 foreach ($SV_REVERSE_MIRAGE_ROCKY_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'SV Series - Reverse Pixel Cosmos Holo', $holoHave, $SV_REVERSE_PIXEL_COSMOS_HOLO);
+foreach ($SV_REVERSE_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 ?>
