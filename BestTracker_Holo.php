@@ -651,4 +651,52 @@ start($j++, 'SV Series - Reverse Pixel Cosmos Holo', $holoHave, $SV_REVERSE_PIXE
 foreach ($SV_REVERSE_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+start($j++, 'OS - Classic Stars Cosmos Holo', $holoHave, $OS_CLASSIC_STARS_HOLO);
+foreach ($OS_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'OS - Classic Stars Cosmos Holo Energy', $holoHave, $OS_CLASSIC_STARS_HOLO_ENERGY);
+foreach ($OS_CLASSIC_STARS_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'Neo - Classic Stars Cosmos Holo', $holoHave, $NEO_CLASSIC_STARS_HOLO);
+foreach ($NEO_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'e Series - Classic Stars Cosmos Holo', $holoHave, $E_CLASSIC_STARS_HOLO);
+foreach ($E_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'EX Series - Classic Stars Cosmos Holo', $holoHave, $EX_CLASSIC_STARS_HOLO);
+foreach ($EX_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'DPPt Series - Classic Stars Cosmos Holo', $holoHave, $DP_CLASSIC_STARS_HOLO);
+foreach ($DP_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'HGSS Series - Classic Stars Cosmos Holo', $holoHave, $HGSS_CLASSIC_STARS_HOLO);
+foreach ($HGSS_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'BW & XY Series - Classic Stars Cosmos Holo', $holoHave, $BWXY_CLASSIC_STARS_HOLO);
+foreach ($BWXY_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'XY Evolutions - Classic Stars Cosmos Holo', $holoHave, $EV_CLASSIC_STARS_HOLO);
+foreach ($EV_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'SM Series - Classic Stars Cosmos Holo', $holoHave, $SM_CLASSIC_STARS_HOLO);
+foreach ($SM_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'SWSH Series - Classic Stars Cosmos Holo', $holoHave, $SWSH_CLASSIC_STARS_HOLO);
+foreach ($SWSH_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
+start($j++, 'SV Series - Classic Stars Cosmos Holo', $holoHave, $SV_CLASSIC_STARS_HOLO);
+foreach ($SV_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
+
 ?>

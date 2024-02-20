@@ -217,6 +217,20 @@
 
 			new Section(HoloRarity.SV_REVERSE_MIRAGE_ROCKY_HOLO, "SV Series - Reverse Mirage Rocky Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_REVERSE_PIXEL_COSMOS_HOLO, "SV Series - Reverse Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			
+			// Classic
+			new Section(HoloRarity.OS_CLASSIC_STARS_HOLO, "OS - Classic Stars Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.OS_CLASSIC_STARS_HOLO_ENERGY, "OS - Classic Stars Cosmos Holo Energy", SortMode.SORT_BY_TYPE),
+			new Section(HoloRarity.NEO_CLASSIC_STARS_HOLO, "Neo - Classic Stars Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.E_CLASSIC_STARS_HOLO, "e Series - Classic Stars Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.EX_CLASSIC_STARS_HOLO, "EX Series - Classic Stars Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.DP_CLASSIC_STARS_HOLO, "DPPt Series - Classic Stars Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.HGSS_CLASSIC_STARS_HOLO, "HGSS Series - Classic Stars Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.BWXY_CLASSIC_STARS_HOLO, "BW & XY Series - Classic Stars Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.EV_CLASSIC_STARS_HOLO, "XY Evolutions - Classic Stars Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SM_CLASSIC_STARS_HOLO, "SM Series - Classic Stars Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SWSH_CLASSIC_STARS_HOLO, "SWSH Series - Classic Stars Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SV_CLASSIC_STARS_HOLO, "SV Series - Classic Stars Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 		};
 
 		public static Section[] Get()

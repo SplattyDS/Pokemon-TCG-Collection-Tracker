@@ -863,8 +863,20 @@ start($j++, 'Mc Donalds 2023', $holoHave, $Mc_Donalds_2023);
 foreach ($Mc_Donalds_2023 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+$Classic_Venusaur = array(14589,14590,14591,14592,14593,14594,14595,14596,14597,14598,14599,14600,14601,14602,14603,14604,14605,14606,14607,14608,14609,14610,14611,14612,14613,14614,14615,14616,14617,14618,14619,14620,14621);
+start($j++, 'Classic Venusaur', $holoHave, $Classic_Venusaur);
+foreach ($Classic_Venusaur as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
+$Classic_Charizard = array(14622,14623,14624,14625,14626,14627,14628,14629,14630,14631,14632,14633,14634,14635,14636,14637,14638,14639,14640,14641,14642,14643,14644,14645,14646,14647,14648,14649,14650,14651,14652,14653,14654);
+start($j++, 'Classic Charizard', $holoHave, $Classic_Charizard);
+foreach ($Classic_Charizard as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
+$Classic_Blastoise = array(14556,14557,14558,14559,14560,14561,14562,14563,14564,14565,14566,14567,14568,14569,14570,14571,14572,14573,14574,14575,14576,14577,14578,14579,14580,14581,14582,14583,14584,14585,14586,14587,14588);
+start($j++, 'Classic Blastoise', $holoHave, $Classic_Blastoise);
+foreach ($Classic_Blastoise as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
+finish();
 
 
 ?>
