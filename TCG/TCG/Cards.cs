@@ -4298,6 +4298,14 @@ namespace TCG
 			new Card("Quaxly", Pokedex.Quaxly, Rarity.Shiny_Vault_SV, Types.Water, Sets.SV_Promo, 82),
 			new Card("Quaxwell", Pokedex.Quaxwell, Rarity.Shiny_Vault_SV, Types.Water, Sets.SV_Promo, 83),
 			new Card("Quaquavalex", Pokedex.Quaquaval, Rarity.ex_SV_Shiny_Full_Art, Types.Water, Sets.SV_Promo, 84),
+			new Card("Pikachu ex", Pokedex.Pikachu, Rarity.Full_Art_Pokemon_SV, Types.Lightning, Sets.Japanese_SV, 1),
+			new Card("Detective Pikachu", Pokedex.Pikachu, Rarity.Full_Art_Pokemon_SV, Types.Lightning, Sets.Japanese_SV, 2),
+			new Card("Victini ex", Pokedex.Victini, Rarity.ex_SV_Full_Art, Types.Fire, Sets.Japanese_SV, 3),
+			new Card("Victini ex", Pokedex.Victini, Rarity.Full_Art_Pokemon_SV, Types.Fire, Sets.Japanese_SV, 4),
+			new Card("Venusaur V", Pokedex.Venusaur, Rarity.V_Full_Art, Types.Grass, Sets.Japanese_SV, 5),
+			new Card("Blastoise V", Pokedex.Blastoise, Rarity.V_Full_Art, Types.Water, Sets.Japanese_SV, 6),
+			new Card("Venusaur VMAX", Pokedex.Venusaur, Rarity.VMAX_Rainbow_Gigantamax, Types.Grass, Sets.Japanese_SV, 7),
+			new Card("Blastoise VMAX", Pokedex.Blastoise, Rarity.VMAX_Rainbow_Gigantamax, Types.Water, Sets.Japanese_SV, 8),
 		};
 		
 		// do not add Play! Pokémon prize pack cards (too many and uncertain amount)

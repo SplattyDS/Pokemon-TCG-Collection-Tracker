@@ -863,6 +863,7 @@ start($j++, 'Mc Donalds 2023', $holoHave, $Mc_Donalds_2023);
 foreach ($Mc_Donalds_2023 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
 finish();
 
+
 $Classic_Venusaur = array(14589,14590,14591,14592,14593,14594,14595,14596,14597,14598,14599,14600,14601,14602,14603,14604,14605,14606,14607,14608,14609,14610,14611,14612,14613,14614,14615,14616,14617,14618,14619,14620,14621);
 start($j++, 'Classic Venusaur', $holoHave, $Classic_Venusaur);
 foreach ($Classic_Venusaur as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }

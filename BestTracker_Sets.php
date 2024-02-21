@@ -711,6 +711,11 @@ foreach ($SV_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} els
 finish();
 
 
+$Japanese_SV = array(4289,4290,4291,4292,4293,4294,4295,4296);
+start($j++, 'Japanese SV', $have, $Japanese_SV);
+foreach ($Japanese_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
 $Classic_Venusaur = array(4104);
 start($j++, 'Classic Venusaur', $have, $Classic_Venusaur);
 foreach ($Classic_Venusaur as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }

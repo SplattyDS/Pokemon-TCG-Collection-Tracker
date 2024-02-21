@@ -203,6 +203,8 @@
 		SV_Energy,
 		SV_Promo,
 		Mc_Donalds_2023,
+		Japanese_SV,
+
 		Classic_Venusaur,
 		Classic_Charizard,
 		Classic_Blastoise,

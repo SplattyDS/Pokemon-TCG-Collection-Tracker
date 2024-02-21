@@ -11,8 +11,7 @@
 			new FutureCardSection("Crimson Haze (JP)", "CH", 6),
 
 			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 6),
-			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 6),
-			new FutureCardSection("Chinese Cards", "CHI", 6),
+			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 4),
 
 			new FutureCardSection("Special Deck Set ex Venusaur & Charizard & Blastoise (JP)", "SVG", 5),
 			new FutureCardSection("Starter Deck & Build Sets (JP)", "SVH", 3),

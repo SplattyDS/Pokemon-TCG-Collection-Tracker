@@ -14,7 +14,7 @@ start($j++, 'Ivysaur', $have, $Ivysaur);
 foreach ($Ivysaur as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Venusaur = array(81,607,608,615,846,847,918,919,934,956,1022,1762,1778,1817,1919,2097,2606,2906,3037,3039,3940,3968,3984);
+$Venusaur = array(81,607,608,615,846,847,918,919,934,956,1022,1762,1778,1817,1919,2097,2606,2906,3037,3039,3940,3968,3984,4293,4295);
 start($j++, 'Venusaur', $have, $Venusaur);
 foreach ($Venusaur as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -44,7 +44,7 @@ start($j++, 'Wartortle', $have, $Wartortle);
 foreach ($Wartortle as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Blastoise = array(73,527,609,2956,610,2957,616,852,853,923,924,936,958,1021,1538,1576,1766,1782,1783,1821,1904,2604,2909,3038,3040,3942,3970,3986);
+$Blastoise = array(73,527,609,2956,610,2957,616,852,853,923,924,936,958,1021,1538,1576,1766,1782,1783,1821,1904,2604,2909,3038,3040,3942,3970,3986,4294,4296);
 start($j++, 'Blastoise', $have, $Blastoise);
 foreach ($Blastoise as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -106,7 +106,7 @@ start($j++, 'Arbok', $have, $Arbok);
 foreach ($Arbok as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Pikachu = array(3224,189,195,303,3142,3930,3931,3932,3933,3934,3935,3936,3937,3938,3939,430,3231,863,995,1023,1044,3145,3147,3148,3149,3151,3152,3153,3154,3155,3159,3160,3161,1484,1500,1522,1809,1893,1921,3091,3163,3200,3201,3206,3209,3218,2130,2131,2150,2168,2595,2611,2643,2728,3341,3352,3353,3365,3222,3571,3009,3020,3021,3022,3056,3057,3058,3059,3060,3062,3096,3390,3391,3221,3732,3959,4158,3828,3994);
+$Pikachu = array(3224,189,195,303,3142,3930,3931,3932,3933,3934,3935,3936,3937,3938,3939,430,3231,863,995,1023,1044,3145,3147,3148,3149,3151,3152,3153,3154,3155,3159,3160,3161,1484,1500,1522,1809,1893,1921,3091,3163,3200,3201,3206,3209,3218,2130,2131,2150,2168,2595,2611,2643,2728,3341,3352,3353,3365,3222,3571,3009,3020,3021,3022,3056,3057,3058,3059,3060,3062,3096,3390,3391,3221,3732,3959,4158,3828,3994,4289,4290);
 start($j++, 'Pikachu', $have, $Pikachu);
 foreach ($Pikachu as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -1909,7 +1909,7 @@ start($j++, 'Arceus', $have, $Arceus);
 foreach ($Arceus as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Victini = array(434,511,521,571,1016,1398,1945,2336,2337,2353,2374,3041,3868);
+$Victini = array(434,511,521,571,1016,1398,1945,2336,2337,2353,2374,3041,3868,4291,4292);
 start($j++, 'Victini', $have, $Victini);
 foreach ($Victini as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
