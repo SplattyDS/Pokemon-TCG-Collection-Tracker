@@ -222,7 +222,7 @@ namespace TCG
 			// new WorldsCard("Swampert ex", Pokedex.Swampert, Rarity.ex, Types.Fighting, Sets.EX_Team_Magma_vs_Team_Aqua, 95, 2007),
 		};
 		
-		public static WorldsCard[] Get(bool removeStamped = true)
+		public static WorldsCard[] Get()
 		{
 			return TheCards;
 		}

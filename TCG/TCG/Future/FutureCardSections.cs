@@ -8,9 +8,10 @@
 			new FutureCardSection("Future Flash (JP)", "FF", 1),
 			new FutureCardSection("Wild Force ex (JP)", "WF", 38),
 			new FutureCardSection("Cyber Judge ex (JP)", "CJ", 38),
-			new FutureCardSection("Crimson Haze (JP)", "CH", 6),
+			new FutureCardSection("Crimson Haze (JP)", "CH", 14),
+			new FutureCardSection("Mask of Change (JP)", "MC", 4),
 
-			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 6),
+			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 8),
 			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 4),
 
 			new FutureCardSection("Special Deck Set ex Venusaur & Charizard & Blastoise (JP)", "SVG", 5),

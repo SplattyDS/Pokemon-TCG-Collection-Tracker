@@ -72,6 +72,10 @@ finish();
 
 
 
+
+
+
+
 $Other = array(57,58,60,61);
 start($j++, 'Other', $worldsHave, $Other);
 foreach ($Other as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }

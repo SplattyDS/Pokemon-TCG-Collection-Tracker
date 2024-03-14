@@ -5323,4 +5323,21 @@ foreach ($Miraidon as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);
 finish();
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>

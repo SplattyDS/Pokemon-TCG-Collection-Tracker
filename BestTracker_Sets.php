@@ -732,4 +732,5 @@ foreach ($Classic_Blastoise as $cur) { if (in_array($cur, $have, true)) {imgN($c
 finish();
 
 
+
 ?>

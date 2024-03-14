@@ -132,6 +132,10 @@ foreach ($Tera_Normal as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} 
 finish();
 
 
+
+
+
+
 $Other = array(380,381,382,383,384,385,393,394,395,396,406,407,408,409);
 start($j++, 'Other', $have, $Other);
 foreach ($Other as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }

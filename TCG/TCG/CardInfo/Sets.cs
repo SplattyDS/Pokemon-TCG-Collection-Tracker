@@ -2,10 +2,12 @@
 {
 	public enum Sets
 	{
+		// Other
 		Unknown,
 		Unnumbered_Promo,
 		Metal_Cards,
 
+		// Original
 		Base_Set,
 		Jungle,
 		Fossil,
@@ -15,23 +17,28 @@
 		Gym_Challenge,
 		Japanese_OS,
 
+		// Neo
 		Neo_Genesis,
 		Neo_Discovery,
 		Neo_Revelation,
 		Neo_Destiny,
 		Japanese_Neo,
 
+		// Legendary Collection
 		Legendary_Collection,
 
+		// WOTC Promo
 		WOTC_Promo,
 		Southern_Islands,
 		Best_of_Game,
 
+		// e Series
 		Expedition,
 		Aquapolis,
 		Skyridge,
 		Japanese_e_Series,
 
+		// EX
 		EX_Ruby_Sapphire,
 		EX_Sandstorm,
 		EX_Dragon,
@@ -60,6 +67,7 @@
 		Minun_Half_Deck,
 		Japanese_EX,
 		
+		// DPPt
 		Diamond_Pearl,
 		Mysterious_Treasures,
 		Secret_Wonders,
@@ -81,6 +89,7 @@
 		Lucario_Half_Deck,
 		Japanese_DP,
 		
+		// HGSS
 		HeartGold_SoulSilver,
 		Unleashed,
 		Undaunted,
@@ -92,6 +101,7 @@
 		Pikachu_Worlds_Collection,
 		Japanese_HGSS,
 		
+		// BW
 		Black_White,
 		Emerging_Powers,
 		Noble_Victories,
@@ -111,6 +121,7 @@
 		Zoroark_Half_Deck,
 		Excadrill_Half_Deck,
 
+		// XY
 		Kalos_Starter_Set,
 		XY,
 		Flashfire,
@@ -140,8 +151,11 @@
 		XY_Latios_Half_Deck,
 		Pikachu_Libre_Half_Deck,
 		Suicune_Half_Deck,
+
+		// BW & XY
 		Japanese_BW_XY,
 		
+		// SM
 		Sun_Moon,
 		Guardians_Rising,
 		Burning_Shadows,
@@ -168,6 +182,7 @@
 		Alolan_Raichu_Half_Deck,
 		Japanese_SM,
 		
+		// SWSH
 		Sword_Shield,
 		Rebel_Clash,
 		Darkness_Ablaze,
@@ -192,6 +207,7 @@
 		Mc_Donalds_2022,
 		Japanese_SWSH,
 		
+		// SV
 		Scarlet_Violet,
 		Paldea_Evolved,
 		Obsidian_Flames,
@@ -205,9 +221,13 @@
 		Mc_Donalds_2023,
 		Japanese_SV,
 
+		// Classic
 		Classic_Venusaur,
 		Classic_Charizard,
 		Classic_Blastoise,
+
+		// Pocket
+		Genetic_Apex,
 
 		Length,
 	}

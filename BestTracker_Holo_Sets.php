@@ -880,4 +880,5 @@ foreach ($Classic_Blastoise as $cur) { if (in_array($cur, $holoHave, true)) {img
 finish();
 
 
+
 ?>

@@ -364,6 +364,23 @@
 						</ul>
 					</li>
 					
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Pocket
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="BestTracker.php?pocket">Main</a></li>
+							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&set">Set</a></li>-->
+							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&col">Collection</a></li>-->
+							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&binder">Binder</a></li>-->
+							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&type">Type</a></li>-->
+							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&dex">Dex</a></li>-->
+							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&all">All</a></li>-->
+							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&fut">Future</a></li>-->
+							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&test">Test</a></li>-->
+						</ul>
+					</li>
+					
 					<!--<li class="nav-item"><a class="nav-link" href="BestTracker.php?test">Test</a></li>-->
 				</ul>
 			</div>
@@ -459,6 +476,26 @@ function imgWN($ID, $visible = false)
 		cardImg('card-have-img', 'images/best_tracker/worlds/'.idToName($ID).'.png', $visible);
 	// else
 		// cardImg('card-img', 'images/best_tracker/worlds/'.$ID.'.png', $visible);
+}
+
+function imgP($ID, $visible = false)
+{
+	if ($ID == -1)
+		cardImg('card-img', 'images/best_tracker/pocket/-1.png', $visible);
+	else if (is_numeric($ID))
+		cardImg('card-img', 'images/best_tracker/pocket/'.idToName($ID).'.png', $visible);
+	// else
+		// cardImg('card-img', 'images/best_tracker/pocket/'.$ID.'.png', $visible);
+}
+
+function imgPN($ID, $visible = false)
+{
+	if ($ID == -1)
+		cardImg('card-img', 'images/best_tracker/pocket/-1.png', $visible);
+	else if (is_numeric($ID))
+		cardImg('card-have-img', 'images/best_tracker/pocket/'.idToName($ID).'.png', $visible);
+	// else
+		// cardImg('card-img', 'images/best_tracker/pocket/'.$ID.'.png', $visible);
 }
 
 function imgER($name, $visible = false)
@@ -941,6 +978,10 @@ if (isset($_GET['date']))
 	start($j++, 'Missing', $have, array());
 	foreach ($have as $cur) { if (in_array($cur, $all, true)) {/*img($cur);*/} else {imgN($cur);/*print($cur.',');*/} }
 	finish();
+}
+else if (isset($_GET['pocket']))
+{
+	require 'BestTracker_Pocket.php';
 }
 else if (isset($_GET['holo']))
 {

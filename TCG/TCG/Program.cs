@@ -51,6 +51,8 @@ namespace TCG
 			WriteWorldsAll();
 			WriteWorldsHave();
 
+			WritePocket();
+
 			WriteAcetone();
 
 			// PrintRarities();
@@ -582,6 +584,26 @@ namespace TCG
 			code.Add("?>");
 
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Worlds_All.php", code);
+		}
+
+		static void WritePocket()
+		{
+			List<string> code = new List<string>(7);
+
+			IEnumerable<PocketCard> cards = PocketCards.Get().OrderBy(c => c.setNum).OrderBy(c => c.set);
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			code.Add("<?php");
+
+			code.Add("$pocketHave = array();");
+			code.Add("$pocketAll = array(" + cardArr + ");");
+			code.Add("start($j++, 'All Revealed Pocket Cards', $pocketHave, $pocketAll);");
+			code.Add("foreach ($pocketAll as $cur) { if (in_array($cur, $pocketHave, true)) {imgPN($cur);} else {imgP($cur);} }");
+			code.Add("finish();");
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Pocket.php", code);
 		}
 
 		static void WriteAcetone()

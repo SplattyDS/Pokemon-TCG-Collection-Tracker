@@ -32,6 +32,12 @@
 		Tera_Dragon,
 		Tera_Normal,
 		Tera_Flying,
+		// Tera_Stellar,
+		Tera_Teal_Mask,
+		Tera_Heartflame_Mask,
+		Tera_Wellspring_Mask,
+		Tera_Cornerstone_Mask,
+		// Tera_Stellar_Terapagos,
 
 		Other,
 		

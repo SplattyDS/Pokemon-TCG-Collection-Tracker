@@ -3871,4 +3871,21 @@ foreach ($Miraidon as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} els
 finish();
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
