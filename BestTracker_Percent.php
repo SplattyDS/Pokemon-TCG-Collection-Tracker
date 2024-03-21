@@ -71,10 +71,6 @@ start($j++, 'Metal Cards', $have, $Metal);
 foreach ($Metal as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Full Art Pokémon (SV)', $have, $Full_Art_Pokemon_SV);
-foreach ($Full_Art_Pokemon_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
 start($j++, 'Tera ex (SV)', $have, $ex_SV_Tera);
 foreach ($ex_SV_Tera as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -95,12 +91,12 @@ start($j++, 'V & VMAX Gold', $have, $V_VMAX_Gold);
 foreach ($V_VMAX_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Special Art Trainer (SV - Poké Ball)', $have, $Special_Art_Trainer_SV_Poke_Ball);
-foreach ($Special_Art_Trainer_SV_Poke_Ball as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+start($j++, 'Full Art Pokémon (SV)', $have, $Full_Art_Pokemon_SV);
+foreach ($Full_Art_Pokemon_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'Special Art Pokémon (SV - Future)', $have, $Special_Art_Pokemon_SV_Future);
-foreach ($Special_Art_Pokemon_SV_Future as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+start($j++, 'Special Art Trainer (SV - Poké Ball)', $have, $Special_Art_Trainer_SV_Poke_Ball);
+foreach ($Special_Art_Trainer_SV_Poke_Ball as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Unown Subset', $have, $Unown);
@@ -125,6 +121,10 @@ finish();
 
 start($j++, 'ex (SV - Future)', $have, $ex_SV_Future);
 foreach ($ex_SV_Future as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'Special Art Pokémon (SV - Future)', $have, $Special_Art_Pokemon_SV_Future);
+foreach ($Special_Art_Pokemon_SV_Future as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'Special Art Pokémon (SV - Shiny)', $have, $Special_Art_Pokemon_SV_Shiny);
@@ -155,10 +155,6 @@ start($j++, 'Shiny Vault (SM)', $have, $Shiny_Vault_SM);
 foreach ($Shiny_Vault_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-start($j++, 'ex (SV)', $have, $ex_SV);
-foreach ($ex_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
 start($j++, 'Holo Energy (EX Holon Phantoms)', $have, $Holo_Energy_EX_Holon_Phantoms);
 foreach ($Holo_Energy_EX_Holon_Phantoms as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -177,6 +173,10 @@ finish();
 
 start($j++, 'ex (SV) Gold (Raised Foil)', $have, $ex_SV_Gold_Raised_Foil);
 foreach ($ex_SV_Gold_Raised_Foil as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
+
+start($j++, 'ex (SV)', $have, $ex_SV);
+foreach ($ex_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
 start($j++, 'LV.X', $have, $LV_X);

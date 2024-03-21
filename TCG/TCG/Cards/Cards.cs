@@ -4384,6 +4384,13 @@ namespace TCG
 			new Card("Iron Crown ex", Pokedex.Iron_Crown, Rarity.ex_SV_Future_Gold, Types.Psychic, Sets.Temporal_Forces, 216),
 			new Card("Iron Boulder ex", Pokedex.Iron_Boulder, Rarity.ex_SV_Future_Gold, Types.Fighting, Sets.Temporal_Forces, 217),
 			new Card("Raging Bolt ex", Pokedex.Raging_Bolt, Rarity.ex_SV_Ancient_Gold, Types.Dragon, Sets.Temporal_Forces, 218),
+			new Card("Mabosstiff ex", Pokedex.Mabosstiff, Rarity.ex_SV, Types.Darkness, Sets.SV_Promo, 86),
+			new Card("Houndoom ex", Pokedex.Houndoom, Rarity.ex_SV, Types.Darkness, Sets.SV_Promo, 103),
+			new Card("Melmetal ex", Pokedex.Melmetal, Rarity.ex_SV, Types.Metal, Sets.SV_Promo, 104),
+			new Card("Sprigatito ex", Pokedex.Sprigatito, Rarity.ex_SV, Types.Grass, Sets.SV_Promo, 87),
+			new Card("Pikachu ex", Pokedex.Pikachu, Rarity.Full_Art_Pokemon_SV, Types.Lightning, Sets.SV_Promo, 88),
+			new Card("Flutter Mane", Pokedex.Flutter_Mane, Rarity.Special_Art_Pokemon_SV_Ancient, Types.Psychic, Sets.SV_Promo, 97),
+			new Card("Iron Thorns", Pokedex.Iron_Thorns, Rarity.Special_Art_Pokemon_SV_Future, Types.Lightning, Sets.SV_Promo, 98),
 		};
 		
 		// do not add Play! Pokémon prize pack cards (too many and uncertain amount)

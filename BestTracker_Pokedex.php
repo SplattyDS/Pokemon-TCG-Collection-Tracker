@@ -106,7 +106,7 @@ start($j++, 'Arbok', $have, $Arbok);
 foreach ($Arbok as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Pikachu = array(3224,189,195,303,3142,3930,3931,3932,3933,3934,3935,3936,3937,3938,3939,430,3231,863,995,1023,1044,3145,3147,3148,3149,3151,3152,3153,3154,3155,3159,3160,3161,1484,1500,1522,1809,1893,1921,3091,3163,3200,3201,3206,3209,3218,2130,2131,2150,2168,2595,2611,2643,2728,3341,3352,3353,3365,3222,3571,3009,3020,3021,3022,3056,3057,3058,3059,3060,3062,3096,3390,3391,3221,3732,3959,4158,3828,3994,4289,4290);
+$Pikachu = array(3224,189,195,303,3142,3930,3931,3932,3933,3934,3935,3936,3937,3938,3939,430,3231,863,995,1023,1044,3145,3147,3148,3149,3151,3152,3153,3154,3155,3159,3160,3161,1484,1500,1522,1809,1893,1921,3091,3163,3200,3201,3206,3209,3218,2130,2131,2150,2168,2595,2611,2643,2728,3341,3352,3353,3365,3222,3571,3009,3020,3021,3022,3056,3057,3058,3059,3060,3062,3096,3390,3391,3221,3732,3959,4158,3828,3994,4379,4289,4290);
 start($j++, 'Pikachu', $have, $Pikachu);
 foreach ($Pikachu as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -998,7 +998,7 @@ start($j++, 'Houndour', $have, $Houndour);
 foreach ($Houndour as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Houndoom = array(388,795,796,808,809,2055,2073,2388,2767,3880);
+$Houndoom = array(388,795,796,808,809,2055,2073,2388,2767,3880,4376);
 start($j++, 'Houndoom', $have, $Houndoom);
 foreach ($Houndoom as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -2955,7 +2955,7 @@ start($j++, 'Meltan', $have, $Meltan);
 foreach ($Meltan as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Melmetal = array(1901,3171,3192,2913,2914,2922,2927,3110,3882);
+$Melmetal = array(1901,3171,3192,2913,2914,2922,2927,3110,3882,4377);
 start($j++, 'Melmetal', $have, $Melmetal);
 foreach ($Melmetal as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -3431,7 +3431,7 @@ start($j++, 'Enamorus', $have, $Enamorus);
 foreach ($Enamorus as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Sprigatito = array(3744,4280);
+$Sprigatito = array(3744,4280,4378);
 start($j++, 'Sprigatito', $have, $Sprigatito);
 foreach ($Sprigatito as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -3604,7 +3604,7 @@ start($j++, 'Maschiff', $have, $Maschiff);
 foreach ($Maschiff as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
-$Mabosstiff = array(3676,4215);
+$Mabosstiff = array(3676,4215,4375);
 start($j++, 'Mabosstiff', $have, $Mabosstiff);
 foreach ($Mabosstiff as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
@@ -3812,6 +3812,10 @@ start($j++, 'Brute Bonnet', $have, $Brute_Bonnet);
 foreach ($Brute_Bonnet as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$Flutter_Mane = array(4380);
+start($j++, 'Flutter Mane', $have, $Flutter_Mane);
+foreach ($Flutter_Mane as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
 $Slither_Wing = array(4035);
 start($j++, 'Slither Wing', $have, $Slither_Wing);
@@ -3848,6 +3852,10 @@ start($j++, 'Iron Moth', $have, $Iron_Moth);
 foreach ($Iron_Moth as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
 finish();
 
+$Iron_Thorns = array(4381);
+start($j++, 'Iron Thorns', $have, $Iron_Thorns);
+foreach ($Iron_Thorns as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
+finish();
 
 $Frigibax = array(3756,4155);
 start($j++, 'Frigibax', $have, $Frigibax);

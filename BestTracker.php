@@ -1427,17 +1427,17 @@ else if (isset($_GET['fut']))
 {
 	require 'BestTracker_Future.php';
 	
-	$FUT_Tera = array('WF4','CJ5','CH2','CH5','MC1','MC2','MC3','MC4');
+	$FUT_Tera = array('CH2','CH5','MC1','MC2','MC3','MC4');
 	start($j++, 'Tera', $have, $FUT_Tera);
 	foreach ($FUT_Tera as $cur) { imgF($cur); }
 	finish();
 	
-	$FUT_Ancient = array('WF2','WF3','WF6','SVH1','CH4','SVPEN9');
+	$FUT_Ancient = array('CH4','SVPEN9');
 	start($j++, 'Ancient', $have, $FUT_Ancient);
 	foreach ($FUT_Ancient as $cur) { imgF($cur); }
 	finish();
 	
-	$FUT_Future = array('CJ1','CJ3','CJ4','SVH2','CH3','SVPEN10');
+	$FUT_Future = array('CH3','SVPEN10');
 	start($j++, 'Future', $have, $FUT_Future);
 	foreach ($FUT_Future as $cur) { imgF($cur); }
 	finish();
