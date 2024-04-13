@@ -1,18 +1,10 @@
 <?php
 $prizePack1 = array(11056,11040,11054,11038,11049,11071,11053,11039,10774,10665,11066,11067,11055,11072,10740,11068,11041,11057,10997,11058,11061,11073,11042,11062,11069,11063,10677,11043,11060,11044,11070,10999,11045,11074,11046,11050,11075,11047,11059,11048,11051,11064,11065,11076,11077,11078,11079,11080,11081,11082,11083);
-start($j++, 'Prize Pack Series 1', $holoHave, $prizePack1);
-foreach ($prizePack1 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
+printHolo('Prize Pack Series 1', $prizePack1);
 $prizePack2 = array(10847,11071,10763,10774,11066,11090,11084,10756,11067,10840,11085,10848,11061,11091,11073,11086,11042,11087,11062,11069,11092,11063,11093,11070,11088,10849,11074,11046,11075,11047,11094,11095,11089,11064,11065,11096,11097,11098,11099,11100,11101,11102,11103);
-start($j++, 'Prize Pack Series 2', $holoHave, $prizePack2);
-foreach ($prizePack2 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
+printHolo('Prize Pack Series 2', $prizePack2);
 $prizePack3 = array(14004,13991,14002,14012,13989,13996,14008,13990,14003,14013,14007,14014,14015,13992,13997,14005,14016,13998,13999,14000,14017,14009,13993,14006,14018,13994,14019,14020,14021,14022,14001,14010,14011,14023,13995,14024,14025,14026,14027,14028,14029,14030,14031);
-start($j++, 'Prize Pack Series 3', $holoHave, $prizePack3);
-foreach ($prizePack3 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
+printHolo('Prize Pack Series 3', $prizePack3);
 $prizePack4 = array(14537,14008,14538,14539,14540,14007,14541,14014,14015,14542,14543,14544,14545,14016,14546,14017,14547,14548,14009,14018,14549,14021,14550,14551,14022,14010,14011,14023,14552,14553,14554,14555,14216,14217,14218,14219,14220,14221,14222,14223);
-start($j++, 'Prize Pack Series 4', $holoHave, $prizePack4);
-foreach ($prizePack4 as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
+printHolo('Prize Pack Series 4', $prizePack4);
 ?>

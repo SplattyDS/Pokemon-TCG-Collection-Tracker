@@ -14683,7 +14683,7 @@ namespace TCG
 
 		public static HoloCard FindUnnumbered(string name, HoloRarity rarity)
 		{
-			return TheCards.Where(c => c.name == name && c.rarity == rarity).First();
+			return TheCards.Where(c => c.name == name && c.rarity == rarity && c.set == Sets.Unnumbered_Promo && c.setNum == -1).First();
 		}
 
 		public static HoloCard[] HasDuplicates()

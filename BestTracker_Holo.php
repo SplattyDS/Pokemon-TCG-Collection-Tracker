@@ -1,702 +1,352 @@
 <?php
-start($j++, 'OS - Starlight Holo', $holoHave, $OS_STARLIGHT_HOLO);
-foreach ($OS_STARLIGHT_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'OS - Pixel Cosmos Holo', $holoHave, $OS_PIXEL_COSMOS_HOLO);
-foreach ($OS_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'OS - Pixel Cosmos Holo (Dark)', $holoHave, $OS_PIXEL_COSMOS_HOLO_DARK);
-foreach ($OS_PIXEL_COSMOS_HOLO_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'OS - Pixel Cosmos Holo (Owner)', $holoHave, $OS_PIXEL_COSMOS_HOLO_OWNER);
-foreach ($OS_PIXEL_COSMOS_HOLO_OWNER as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'OS - Pixel Cosmos Holo (Rocket)', $holoHave, $OS_PIXEL_COSMOS_HOLO_ROCKET);
-foreach ($OS_PIXEL_COSMOS_HOLO_ROCKET as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'OS - Pixel Cosmos Holo Energy', $holoHave, $OS_PIXEL_COSMOS_HOLO_ENERGY);
-foreach ($OS_PIXEL_COSMOS_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'OS - Reverse Pixel Cosmos Holo', $holoHave, $OS_REVERSE_PIXEL_COSMOS_HOLO);
-foreach ($OS_REVERSE_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'OS - Reverse Pixel Cosmos Holo (Rocket)', $holoHave, $OS_REVERSE_PIXEL_COSMOS_HOLO_ROCKET);
-foreach ($OS_REVERSE_PIXEL_COSMOS_HOLO_ROCKET as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'Neo - Pixel Cosmos Holo', $holoHave, $NEO_PIXEL_COSMOS_HOLO);
-foreach ($NEO_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'Neo - Pixel Cosmos Holo (Dark)', $holoHave, $NEO_PIXEL_COSMOS_HOLO_DARK);
-foreach ($NEO_PIXEL_COSMOS_HOLO_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'Neo - Pixel Cosmos Holo (Light)', $holoHave, $NEO_PIXEL_COSMOS_HOLO_LIGHT);
-foreach ($NEO_PIXEL_COSMOS_HOLO_LIGHT as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'Neo - Smooth Cosmos Holo (Light)', $holoHave, $NEO_SMOOTH_COSMOS_HOLO_LIGHT);
-foreach ($NEO_SMOOTH_COSMOS_HOLO_LIGHT as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'Neo - Reverse Pixel Cosmos Holo', $holoHave, $NEO_REVERSE_PIXEL_COSMOS_HOLO);
-foreach ($NEO_REVERSE_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'Legendary Collection - Starlight Holo', $holoHave, $LC_STARLIGHT_HOLO);
-foreach ($LC_STARLIGHT_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'Legendary Collection - Starlight Holo (Dark)', $holoHave, $LC_STARLIGHT_HOLO_DARK);
-foreach ($LC_STARLIGHT_HOLO_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'Legendary Collection - Reverse Fireworks Holo', $holoHave, $LC_REVERSE_FIREWORKS_HOLO);
-foreach ($LC_REVERSE_FIREWORKS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'Legendary Collection - Reverse Fireworks Holo (Dark)', $holoHave, $LC_REVERSE_FIREWORKS_HOLO_DARK);
-foreach ($LC_REVERSE_FIREWORKS_HOLO_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'e Series - Pixel Cosmos Holo', $holoHave, $E_PIXEL_COSMOS_HOLO);
-foreach ($E_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'e Series - Reverse Plain Holo', $holoHave, $E_REVERSE_PLAIN_HOLO);
-foreach ($E_REVERSE_PLAIN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Pixel Cosmos Holo', $holoHave, $EX_PIXEL_COSMOS_HOLO);
-foreach ($EX_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Pixel Cosmos Holo (Aqua)', $holoHave, $EX_PIXEL_COSMOS_HOLO_AQUA);
-foreach ($EX_PIXEL_COSMOS_HOLO_AQUA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Pixel Cosmos Holo (Magma)', $holoHave, $EX_PIXEL_COSMOS_HOLO_MAGMA);
-foreach ($EX_PIXEL_COSMOS_HOLO_MAGMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Pixel Cosmos Holo (Dark)', $holoHave, $EX_PIXEL_COSMOS_HOLO_DARK);
-foreach ($EX_PIXEL_COSMOS_HOLO_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Pixel Cosmos Holo Victory Medal', $holoHave, $EX_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
-foreach ($EX_PIXEL_COSMOS_HOLO_VICTORY_MEDAL as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Pixel Cosmos Holo Delta', $holoHave, $EX_PIXEL_COSMOS_HOLO_DELTA);
-foreach ($EX_PIXEL_COSMOS_HOLO_DELTA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Smooth Cosmos Holo Delta', $holoHave, $EX_SMOOTH_COSMOS_HOLO_DELTA);
-foreach ($EX_SMOOTH_COSMOS_HOLO_DELTA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Vertical Plain Holo Delta', $holoHave, $EX_VERTICAL_PLAIN_HOLO_DELTA);
-foreach ($EX_VERTICAL_PLAIN_HOLO_DELTA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Pixel Wave Holo Energy', $holoHave, $EX_PIXEL_WAVE_HOLO_ENERGY);
-foreach ($EX_PIXEL_WAVE_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Plain Holo Energy', $holoHave, $EX_PLAIN_HOLO_ENERGY);
-foreach ($EX_PLAIN_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Reverse Plain Holo', $holoHave, $EX_REVERSE_PLAIN_HOLO);
-foreach ($EX_REVERSE_PLAIN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Reverse Plain Holo (Aqua)', $holoHave, $EX_REVERSE_PLAIN_HOLO_AQUA);
-foreach ($EX_REVERSE_PLAIN_HOLO_AQUA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Reverse Plain Holo (Magma)', $holoHave, $EX_REVERSE_PLAIN_HOLO_MAGMA);
-foreach ($EX_REVERSE_PLAIN_HOLO_MAGMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Big Energy Holo (Hidden Legends)', $holoHave, $EX_BIG_ENERGY_HOLO_HL);
-foreach ($EX_BIG_ENERGY_HOLO_HL as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Energy Holo (FireRed & LeafGreen)', $holoHave, $EX_ENERGY_HOLO_FL);
-foreach ($EX_ENERGY_HOLO_FL as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Energy Holo (Team Rocket Returns)', $holoHave, $EX_ENERGY_HOLO_TRR);
-foreach ($EX_ENERGY_HOLO_TRR as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Energy Holo (Team Rocket Returns - Dark)', $holoHave, $EX_ENERGY_HOLO_TRR_DARK);
-foreach ($EX_ENERGY_HOLO_TRR_DARK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Energy Holo (Team Rocket Returns - Rocket)', $holoHave, $EX_ENERGY_HOLO_TRR_ROCKET);
-foreach ($EX_ENERGY_HOLO_TRR_ROCKET as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Prism Holo (Deoxys)', $holoHave, $EX_PRISM_HOLO_D);
-foreach ($EX_PRISM_HOLO_D as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - 2D Pokeball Holo (Emerald)', $holoHave, $EX_2D_POKEBALL_HOLO_E);
-foreach ($EX_2D_POKEBALL_HOLO_E as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - 3D Pokeball Holo (Unseen Forces)', $holoHave, $EX_3D_POKEBALL_HOLO_UF);
-foreach ($EX_3D_POKEBALL_HOLO_UF as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Plain Holo (Delta Species)', $holoHave, $EX_PLAIN_HOLO_DS);
-foreach ($EX_PLAIN_HOLO_DS as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Plain Holo (Delta Species - Holon)', $holoHave, $EX_PLAIN_HOLO_DS_HOLON);
-foreach ($EX_PLAIN_HOLO_DS_HOLON as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Plain Holo (Delta Species - δ)', $holoHave, $EX_PLAIN_HOLO_DS_DELTA);
-foreach ($EX_PLAIN_HOLO_DS_DELTA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Pixel Cosmos Holo (Legend Maker)', $holoHave, $EX_PIXEL_COSMOS_HOLO_LM);
-foreach ($EX_PIXEL_COSMOS_HOLO_LM as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Mirror Holo (Holon Phantoms)', $holoHave, $EX_MIRROR_HOLO_HP);
-foreach ($EX_MIRROR_HOLO_HP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Mirror Holo (Holon Phantoms - Holon)', $holoHave, $EX_MIRROR_HOLO_HP_HOLON);
-foreach ($EX_MIRROR_HOLO_HP_HOLON as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Mirror Holo (Holon Phantoms - δ)', $holoHave, $EX_MIRROR_HOLO_HP_DELTA);
-foreach ($EX_MIRROR_HOLO_HP_DELTA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Mirror Holo (Crystal Guardians)', $holoHave, $EX_MIRROR_HOLO_CG);
-foreach ($EX_MIRROR_HOLO_CG as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Mirror Holo (Crystal Guardians - δ)', $holoHave, $EX_MIRROR_HOLO_CG_DELTA);
-foreach ($EX_MIRROR_HOLO_CG_DELTA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Mirror Holo (Dragon Frontiers)', $holoHave, $EX_MIRROR_HOLO_DF);
-foreach ($EX_MIRROR_HOLO_DF as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Mirror Holo (Dragon Frontiers - δ)', $holoHave, $EX_MIRROR_HOLO_DF_DELTA);
-foreach ($EX_MIRROR_HOLO_DF_DELTA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Plain Holo (Power Keepers)', $holoHave, $EX_PLAIN_HOLO_PK);
-foreach ($EX_PLAIN_HOLO_PK as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Pixel Cosmos Holo', $holoHave, $DP_PIXEL_COSMOS_HOLO);
-foreach ($DP_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Pixel Cosmos Holo (SP)', $holoHave, $DP_PIXEL_COSMOS_HOLO_SP);
-foreach ($DP_PIXEL_COSMOS_HOLO_SP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Smooth Cosmos Holo (SP)', $holoHave, $DP_SMOOTH_COSMOS_HOLO_SP);
-foreach ($DP_SMOOTH_COSMOS_HOLO_SP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Pixel Cosmos Holo Victory Medal', $holoHave, $DP_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
-foreach ($DP_PIXEL_COSMOS_HOLO_VICTORY_MEDAL as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Rumble Pixel Cosmos Holo', $holoHave, $DP_RUMBLE_PIXEL_COSMOS_HOLO);
-foreach ($DP_RUMBLE_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Rumble Pixel Cosmos Holo Logo', $holoHave, $DP_RUMBLE_PIXEL_COSMOS_HOLO_LOGO);
-foreach ($DP_RUMBLE_PIXEL_COSMOS_HOLO_LOGO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Cracked Ice Holo', $holoHave, $DP_CRACKED_ICE_HOLO);
-foreach ($DP_CRACKED_ICE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Cracked Ice Holo (SP)', $holoHave, $DP_CRACKED_ICE_HOLO_SP);
-foreach ($DP_CRACKED_ICE_HOLO_SP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Mirror Holo Energy', $holoHave, $DP_MIRROR_HOLO_ENERGY);
-foreach ($DP_MIRROR_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Crosshatch Holo Energy', $holoHave, $DP_CROSSHATCH_HOLO_ENERGY);
-foreach ($DP_CROSSHATCH_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Reverse Mirror Holo', $holoHave, $DP_REVERSE_MIRROR_HOLO);
-foreach ($DP_REVERSE_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Reverse Mirror Holo (SP)', $holoHave, $DP_REVERSE_MIRROR_HOLO_SP);
-foreach ($DP_REVERSE_MIRROR_HOLO_SP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Reverse Cracked Ice Holo', $holoHave, $DP_REVERSE_CRACKED_ICE_HOLO);
-foreach ($DP_REVERSE_CRACKED_ICE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Reverse Cracked Ice Holo (SP)', $holoHave, $DP_REVERSE_CRACKED_ICE_HOLO_SP);
-foreach ($DP_REVERSE_CRACKED_ICE_HOLO_SP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Reverse Crosshatch Holo', $holoHave, $DP_REVERSE_CROSSHATCH_HOLO);
-foreach ($DP_REVERSE_CROSSHATCH_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Reverse Crosshatch Holo (SP)', $holoHave, $DP_REVERSE_CROSSHATCH_HOLO_SP);
-foreach ($DP_REVERSE_CROSSHATCH_HOLO_SP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Reverse Plain Holo', $holoHave, $DP_REVERSE_PLAIN_HOLO);
-foreach ($DP_REVERSE_PLAIN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'HGSS Series - Pixel Cosmos Holo', $holoHave, $HGSS_PIXEL_COSMOS_HOLO);
-foreach ($HGSS_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'HGSS Series - Pixel Cosmos Holo Victory Medal', $holoHave, $HGSS_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
-foreach ($HGSS_PIXEL_COSMOS_HOLO_VICTORY_MEDAL as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'HGSS Series - Cracked Ice Holo', $holoHave, $HGSS_CRACKED_ICE_HOLO);
-foreach ($HGSS_CRACKED_ICE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'HGSS Series - Mirror Holo Energy (COL)', $holoHave, $HGSS_MIRROR_HOLO_ENERGY_COL);
-foreach ($HGSS_MIRROR_HOLO_ENERGY_COL as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'HGSS Series - Crosshatch Holo Energy', $holoHave, $HGSS_CROSSHATCH_HOLO_ENERGY);
-foreach ($HGSS_CROSSHATCH_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'HGSS Series - Crosshatch Holo Energy (COL)', $holoHave, $HGSS_CROSSHATCH_HOLO_ENERGY_COL);
-foreach ($HGSS_CROSSHATCH_HOLO_ENERGY_COL as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'HGSS Series - Reverse Mirror Holo', $holoHave, $HGSS_REVERSE_MIRROR_HOLO);
-foreach ($HGSS_REVERSE_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'HGSS Series - Reverse Crosshatch Holo', $holoHave, $HGSS_REVERSE_CROSSHATCH_HOLO);
-foreach ($HGSS_REVERSE_CROSSHATCH_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Tinsel Holo', $holoHave, $BWXY_TINSEL_HOLO);
-foreach ($BWXY_TINSEL_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Tinsel Holo (Plasma)', $holoHave, $BWXY_TINSEL_HOLO_PLASMA);
-foreach ($BWXY_TINSEL_HOLO_PLASMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Sheen Holo', $holoHave, $BWXY_SHEEN_HOLO);
-foreach ($BWXY_SHEEN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Sheen Holo (Flare)', $holoHave, $BWXY_SHEEN_HOLO_FLARE);
-foreach ($BWXY_SHEEN_HOLO_FLARE as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Sheen Holo (Aqua)', $holoHave, $BWXY_SHEEN_HOLO_AQUA);
-foreach ($BWXY_SHEEN_HOLO_AQUA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Sheen Holo (Magma)', $holoHave, $BWXY_SHEEN_HOLO_MAGMA);
-foreach ($BWXY_SHEEN_HOLO_MAGMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Pixel Cosmos Holo', $holoHave, $BWXY_PIXEL_COSMOS_HOLO);
-foreach ($BWXY_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Pixel Cosmos Holo (Plasma)', $holoHave, $BWXY_PIXEL_COSMOS_HOLO_PLASMA);
-foreach ($BWXY_PIXEL_COSMOS_HOLO_PLASMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Smooth Cosmos Holo', $holoHave, $BWXY_SMOOTH_COSMOS_HOLO);
-foreach ($BWXY_SMOOTH_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Mirror Holo', $holoHave, $BWXY_MIRROR_HOLO);
-foreach ($BWXY_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Cracked Ice Holo', $holoHave, $BWXY_CRACKED_ICE_HOLO);
-foreach ($BWXY_CRACKED_ICE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Cracked Ice Holo (Plasma)', $holoHave, $BWXY_CRACKED_ICE_HOLO_PLASMA);
-foreach ($BWXY_CRACKED_ICE_HOLO_PLASMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Confetti Holo', $holoHave, $BWXY_CONFETTI_HOLO);
-foreach ($BWXY_CONFETTI_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Crosshatch Holo Energy (BW)', $holoHave, $BWXY_CROSSHATCH_HOLO_ENERGY_BW);
-foreach ($BWXY_CROSSHATCH_HOLO_ENERGY_BW as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Mirror Holo Energy', $holoHave, $BWXY_MIRROR_HOLO_ENERGY);
-foreach ($BWXY_MIRROR_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Crosshatch Holo Energy', $holoHave, $BWXY_CROSSHATCH_HOLO_ENERGY);
-foreach ($BWXY_CROSSHATCH_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Sheen Holo Energy', $holoHave, $BWXY_SHEEN_HOLO_ENERGY);
-foreach ($BWXY_SHEEN_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Mirror Holo Energy (Generations)', $holoHave, $BWXY_MIRROR_HOLO_ENERGY_GENERATIONS);
-foreach ($BWXY_MIRROR_HOLO_ENERGY_GENERATIONS as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Reverse Mirror Holo', $holoHave, $BWXY_REVERSE_MIRROR_HOLO);
-foreach ($BWXY_REVERSE_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Reverse Mirror Holo (Plasma)', $holoHave, $BWXY_REVERSE_MIRROR_HOLO_PLASMA);
-foreach ($BWXY_REVERSE_MIRROR_HOLO_PLASMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Reverse Mirror Holo (Aqua)', $holoHave, $BWXY_REVERSE_MIRROR_HOLO_AQUA);
-foreach ($BWXY_REVERSE_MIRROR_HOLO_AQUA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Reverse Mirror Holo (Magma)', $holoHave, $BWXY_REVERSE_MIRROR_HOLO_MAGMA);
-foreach ($BWXY_REVERSE_MIRROR_HOLO_MAGMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Reverse Energy Holo', $holoHave, $BWXY_REVERSE_ENERGY_HOLO);
-foreach ($BWXY_REVERSE_ENERGY_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Reverse Crosshatch Holo', $holoHave, $BWXY_REVERSE_CROSSHATCH_HOLO);
-foreach ($BWXY_REVERSE_CROSSHATCH_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Reverse Crosshatch Holo (Plasma)', $holoHave, $BWXY_REVERSE_CROSSHATCH_HOLO_PLASMA);
-foreach ($BWXY_REVERSE_CROSSHATCH_HOLO_PLASMA as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'XY Evolutions - Starlight Holo', $holoHave, $EV_STARLIGHT_HOLO);
-foreach ($EV_STARLIGHT_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'XY Evolutions - Smooth Cosmos Holo', $holoHave, $EV_SMOOTH_COSMOS_HOLO);
-foreach ($EV_SMOOTH_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'XY Evolutions - Mirror Holo', $holoHave, $EV_MIRROR_HOLO);
-foreach ($EV_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'XY Evolutions - Cracked Ice Holo', $holoHave, $EV_CRACKED_ICE_HOLO);
-foreach ($EV_CRACKED_ICE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'XY Evolutions - Sheen Holo', $holoHave, $EV_SHEEN_HOLO);
-foreach ($EV_SHEEN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'XY Evolutions - Mirror Holo Energy', $holoHave, $EV_MIRROR_HOLO_ENERGY);
-foreach ($EV_MIRROR_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'XY Evolutions - Reverse Mirror Holo', $holoHave, $EV_REVERSE_MIRROR_HOLO);
-foreach ($EV_REVERSE_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Water Web Holo', $holoHave, $SM_WATER_WEB_HOLO);
-foreach ($SM_WATER_WEB_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Smooth Cosmos Holo', $holoHave, $SM_SMOOTH_COSMOS_HOLO);
-foreach ($SM_SMOOTH_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Mirror Holo', $holoHave, $SM_MIRROR_HOLO);
-foreach ($SM_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Cracked Ice Holo', $holoHave, $SM_CRACKED_ICE_HOLO);
-foreach ($SM_CRACKED_ICE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Confetti Holo', $holoHave, $SM_CONFETTI_HOLO);
-foreach ($SM_CONFETTI_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Sheen Holo', $holoHave, $SM_SHEEN_HOLO);
-foreach ($SM_SHEEN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Sheen Holo (Detective Pikachu)', $holoHave, $SM_SHEEN_HOLO_DP);
-foreach ($SM_SHEEN_HOLO_DP as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Sequin Holo', $holoHave, $SM_SEQUIN_HOLO);
-foreach ($SM_SEQUIN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Water Web Holo Energy', $holoHave, $SM_WATER_WEB_HOLO_ENERGY);
-foreach ($SM_WATER_WEB_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Sheen Holo Energy', $holoHave, $SM_SHEEN_HOLO_ENERGY);
-foreach ($SM_SHEEN_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Sheen Holo Energy (TT)', $holoHave, $SM_SHEEN_HOLO_ENERGY_TT);
-foreach ($SM_SHEEN_HOLO_ENERGY_TT as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Reverse Big Energy Holo', $holoHave, $SM_REVERSE_BIG_ENERGY_HOLO);
-foreach ($SM_REVERSE_BIG_ENERGY_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Reverse Smooth Cosmos Big Energy Holo', $holoHave, $SM_REVERSE_SMOOTH_COSMOS_BIG_ENERGY_HOLO);
-foreach ($SM_REVERSE_SMOOTH_COSMOS_BIG_ENERGY_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Reverse Sheen Holo', $holoHave, $SM_REVERSE_SHEEN_HOLO);
-foreach ($SM_REVERSE_SHEEN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Line Holo', $holoHave, $SWSH_LINE_HOLO);
-foreach ($SWSH_LINE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Line Holo (Lost)', $holoHave, $SWSH_LINE_HOLO_LOST);
-foreach ($SWSH_LINE_HOLO_LOST as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Plain Holo', $holoHave, $SWSH_PLAIN_HOLO);
-foreach ($SWSH_PLAIN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Smooth Cosmos Holo', $holoHave, $SWSH_SMOOTH_COSMOS_HOLO);
-foreach ($SWSH_SMOOTH_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Pixel Cosmos Holo', $holoHave, $SWSH_PIXEL_COSMOS_HOLO);
-foreach ($SWSH_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Pixel Cosmos Holo (Lost)', $holoHave, $SWSH_PIXEL_COSMOS_HOLO_LOST);
-foreach ($SWSH_PIXEL_COSMOS_HOLO_LOST as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Mirror Holo', $holoHave, $SWSH_MIRROR_HOLO);
-foreach ($SWSH_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Cracked Ice Holo', $holoHave, $SWSH_CRACKED_ICE_HOLO);
-foreach ($SWSH_CRACKED_ICE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Confetti Holo', $holoHave, $SWSH_CONFETTI_HOLO);
-foreach ($SWSH_CONFETTI_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Sequin Holo', $holoHave, $SWSH_SEQUIN_HOLO);
-foreach ($SWSH_SEQUIN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Mirage Holo', $holoHave, $SWSH_MIRAGE_HOLO);
-foreach ($SWSH_MIRAGE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Plain Holo Energy', $holoHave, $SWSH_PLAIN_HOLO_ENERGY);
-foreach ($SWSH_PLAIN_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Plain Holo Energy (Star)', $holoHave, $SWSH_PLAIN_HOLO_ENERGY_STAR);
-foreach ($SWSH_PLAIN_HOLO_ENERGY_STAR as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Line Holo Energy', $holoHave, $SWSH_LINE_HOLO_ENERGY);
-foreach ($SWSH_LINE_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Line Holo Energy (Star)', $holoHave, $SWSH_LINE_HOLO_ENERGY_STAR);
-foreach ($SWSH_LINE_HOLO_ENERGY_STAR as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Pixel Cosmos Holo Energy (Star)', $holoHave, $SWSH_PIXEL_COSMOS_HOLO_ENERGY_STAR);
-foreach ($SWSH_PIXEL_COSMOS_HOLO_ENERGY_STAR as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Reverse Energy Banner Holo', $holoHave, $SWSH_REVERSE_ENERGY_BANNER_HOLO);
-foreach ($SWSH_REVERSE_ENERGY_BANNER_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Reverse Energy Banner Holo (Lost)', $holoHave, $SWSH_REVERSE_ENERGY_BANNER_HOLO_LOST);
-foreach ($SWSH_REVERSE_ENERGY_BANNER_HOLO_LOST as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Reverse Smooth Cosmos Energy Banner Holo', $holoHave, $SWSH_REVERSE_SMOOTH_COSMOS_ENERGY_BANNER_HOLO);
-foreach ($SWSH_REVERSE_SMOOTH_COSMOS_ENERGY_BANNER_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Reverse Mirror Energy Banner Holo', $holoHave, $SWSH_REVERSE_MIRROR_ENERGY_BANNER_HOLO);
-foreach ($SWSH_REVERSE_MIRROR_ENERGY_BANNER_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Reverse Mirror Holo', $holoHave, $SWSH_REVERSE_MIRROR_HOLO);
-foreach ($SWSH_REVERSE_MIRROR_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Reverse Plain Holo', $holoHave, $SWSH_REVERSE_PLAIN_HOLO);
-foreach ($SWSH_REVERSE_PLAIN_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Reverse Line Holo', $holoHave, $SWSH_REVERSE_LINE_HOLO);
-foreach ($SWSH_REVERSE_LINE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Reverse Pixel Cosmos Holo', $holoHave, $SWSH_REVERSE_PIXEL_COSMOS_HOLO);
-foreach ($SWSH_REVERSE_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Mirage Holo', $holoHave, $SV_MIRAGE_HOLO);
-foreach ($SV_MIRAGE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Mirage Holo (Ancient)', $holoHave, $SV_MIRAGE_HOLO_ANCIENT);
-foreach ($SV_MIRAGE_HOLO_ANCIENT as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Mirage Holo (Future)', $holoHave, $SV_MIRAGE_HOLO_FUTURE);
-foreach ($SV_MIRAGE_HOLO_FUTURE as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Smooth Cosmos Holo', $holoHave, $SV_SMOOTH_COSMOS_HOLO);
-foreach ($SV_SMOOTH_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Pixel Cosmos Holo', $holoHave, $SV_PIXEL_COSMOS_HOLO);
-foreach ($SV_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Pixel Cosmos Holo (Ancient)', $holoHave, $SV_PIXEL_COSMOS_HOLO_ANCIENT);
-foreach ($SV_PIXEL_COSMOS_HOLO_ANCIENT as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Pixel Cosmos Holo (Future)', $holoHave, $SV_PIXEL_COSMOS_HOLO_FUTURE);
-foreach ($SV_PIXEL_COSMOS_HOLO_FUTURE as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Confetti Holo', $holoHave, $SV_CONFETTI_HOLO);
-foreach ($SV_CONFETTI_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Line Holo', $holoHave, $SV_LINE_HOLO);
-foreach ($SV_LINE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Smooth Cosmos Holo Energy', $holoHave, $SV_SMOOTH_COSMOS_HOLO_ENERGY);
-foreach ($SV_SMOOTH_COSMOS_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Pixel Cosmos Holo Energy', $holoHave, $SV_PIXEL_COSMOS_HOLO_ENERGY);
-foreach ($SV_PIXEL_COSMOS_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Reverse Rocky Holo', $holoHave, $SV_REVERSE_ROCKY_HOLO);
-foreach ($SV_REVERSE_ROCKY_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Reverse Ancient Holo', $holoHave, $SV_REVERSE_ANCIENT_HOLO);
-foreach ($SV_REVERSE_ANCIENT_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Reverse Future Holo', $holoHave, $SV_REVERSE_FUTURE_HOLO);
-foreach ($SV_REVERSE_FUTURE_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Reverse Mirage Rocky Holo', $holoHave, $SV_REVERSE_MIRAGE_ROCKY_HOLO);
-foreach ($SV_REVERSE_MIRAGE_ROCKY_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Reverse Pixel Cosmos Holo', $holoHave, $SV_REVERSE_PIXEL_COSMOS_HOLO);
-foreach ($SV_REVERSE_PIXEL_COSMOS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'OS - Classic Stars Cosmos Holo', $holoHave, $OS_CLASSIC_STARS_HOLO);
-foreach ($OS_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'OS - Classic Stars Cosmos Holo Energy', $holoHave, $OS_CLASSIC_STARS_HOLO_ENERGY);
-foreach ($OS_CLASSIC_STARS_HOLO_ENERGY as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'Neo - Classic Stars Cosmos Holo', $holoHave, $NEO_CLASSIC_STARS_HOLO);
-foreach ($NEO_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'e Series - Classic Stars Cosmos Holo', $holoHave, $E_CLASSIC_STARS_HOLO);
-foreach ($E_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'EX Series - Classic Stars Cosmos Holo', $holoHave, $EX_CLASSIC_STARS_HOLO);
-foreach ($EX_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'DPPt Series - Classic Stars Cosmos Holo', $holoHave, $DP_CLASSIC_STARS_HOLO);
-foreach ($DP_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'HGSS Series - Classic Stars Cosmos Holo', $holoHave, $HGSS_CLASSIC_STARS_HOLO);
-foreach ($HGSS_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'BW & XY Series - Classic Stars Cosmos Holo', $holoHave, $BWXY_CLASSIC_STARS_HOLO);
-foreach ($BWXY_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'XY Evolutions - Classic Stars Cosmos Holo', $holoHave, $EV_CLASSIC_STARS_HOLO);
-foreach ($EV_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SM Series - Classic Stars Cosmos Holo', $holoHave, $SM_CLASSIC_STARS_HOLO);
-foreach ($SM_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SWSH Series - Classic Stars Cosmos Holo', $holoHave, $SWSH_CLASSIC_STARS_HOLO);
-foreach ($SWSH_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
-
-start($j++, 'SV Series - Classic Stars Cosmos Holo', $holoHave, $SV_CLASSIC_STARS_HOLO);
-foreach ($SV_CLASSIC_STARS_HOLO as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-finish();
+printHolo('OS - Starlight Holo', $OS_STARLIGHT_HOLO);
+
+printHolo('OS - Pixel Cosmos Holo', $OS_PIXEL_COSMOS_HOLO);
+
+printHolo('OS - Pixel Cosmos Holo (Dark)', $OS_PIXEL_COSMOS_HOLO_DARK);
+
+printHolo('OS - Pixel Cosmos Holo (Owner)', $OS_PIXEL_COSMOS_HOLO_OWNER);
+
+printHolo('OS - Pixel Cosmos Holo (Rocket)', $OS_PIXEL_COSMOS_HOLO_ROCKET);
+
+printHolo('OS - Pixel Cosmos Holo Energy', $OS_PIXEL_COSMOS_HOLO_ENERGY);
+
+printHolo('OS - Reverse Pixel Cosmos Holo', $OS_REVERSE_PIXEL_COSMOS_HOLO);
+
+printHolo('OS - Reverse Pixel Cosmos Holo (Rocket)', $OS_REVERSE_PIXEL_COSMOS_HOLO_ROCKET);
+
+printHolo('Neo - Pixel Cosmos Holo', $NEO_PIXEL_COSMOS_HOLO);
+
+printHolo('Neo - Pixel Cosmos Holo (Dark)', $NEO_PIXEL_COSMOS_HOLO_DARK);
+
+printHolo('Neo - Pixel Cosmos Holo (Light)', $NEO_PIXEL_COSMOS_HOLO_LIGHT);
+
+printHolo('Neo - Smooth Cosmos Holo (Light)', $NEO_SMOOTH_COSMOS_HOLO_LIGHT);
+
+printHolo('Neo - Reverse Pixel Cosmos Holo', $NEO_REVERSE_PIXEL_COSMOS_HOLO);
+
+printHolo('Legendary Collection - Starlight Holo', $LC_STARLIGHT_HOLO);
+
+printHolo('Legendary Collection - Starlight Holo (Dark)', $LC_STARLIGHT_HOLO_DARK);
+
+printHolo('Legendary Collection - Reverse Fireworks Holo', $LC_REVERSE_FIREWORKS_HOLO);
+
+printHolo('Legendary Collection - Reverse Fireworks Holo (Dark)', $LC_REVERSE_FIREWORKS_HOLO_DARK);
+
+printHolo('e Series - Pixel Cosmos Holo', $E_PIXEL_COSMOS_HOLO);
+
+printHolo('e Series - Reverse Plain Holo', $E_REVERSE_PLAIN_HOLO);
+
+printHolo('EX Series - Pixel Cosmos Holo', $EX_PIXEL_COSMOS_HOLO);
+
+printHolo('EX Series - Pixel Cosmos Holo (Aqua)', $EX_PIXEL_COSMOS_HOLO_AQUA);
+
+printHolo('EX Series - Pixel Cosmos Holo (Magma)', $EX_PIXEL_COSMOS_HOLO_MAGMA);
+
+printHolo('EX Series - Pixel Cosmos Holo (Dark)', $EX_PIXEL_COSMOS_HOLO_DARK);
+
+printHolo('EX Series - Pixel Cosmos Holo Victory Medal', $EX_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
+
+printHolo('EX Series - Pixel Cosmos Holo Delta', $EX_PIXEL_COSMOS_HOLO_DELTA);
+
+printHolo('EX Series - Smooth Cosmos Holo Delta', $EX_SMOOTH_COSMOS_HOLO_DELTA);
+
+printHolo('EX Series - Vertical Plain Holo Delta', $EX_VERTICAL_PLAIN_HOLO_DELTA);
+
+printHolo('EX Series - Pixel Wave Holo Energy', $EX_PIXEL_WAVE_HOLO_ENERGY);
+
+printHolo('EX Series - Plain Holo Energy', $EX_PLAIN_HOLO_ENERGY);
+
+printHolo('EX Series - Reverse Plain Holo', $EX_REVERSE_PLAIN_HOLO);
+
+printHolo('EX Series - Reverse Plain Holo (Aqua)', $EX_REVERSE_PLAIN_HOLO_AQUA);
+
+printHolo('EX Series - Reverse Plain Holo (Magma)', $EX_REVERSE_PLAIN_HOLO_MAGMA);
+
+printHolo('EX Series - Big Energy Holo (Hidden Legends)', $EX_BIG_ENERGY_HOLO_HL);
+
+printHolo('EX Series - Energy Holo (FireRed & LeafGreen)', $EX_ENERGY_HOLO_FL);
+
+printHolo('EX Series - Energy Holo (Team Rocket Returns)', $EX_ENERGY_HOLO_TRR);
+
+printHolo('EX Series - Energy Holo (Team Rocket Returns - Dark)', $EX_ENERGY_HOLO_TRR_DARK);
+
+printHolo('EX Series - Energy Holo (Team Rocket Returns - Rocket)', $EX_ENERGY_HOLO_TRR_ROCKET);
+
+printHolo('EX Series - Prism Holo (Deoxys)', $EX_PRISM_HOLO_D);
+
+printHolo('EX Series - 2D Pokeball Holo (Emerald)', $EX_2D_POKEBALL_HOLO_E);
+
+printHolo('EX Series - 3D Pokeball Holo (Unseen Forces)', $EX_3D_POKEBALL_HOLO_UF);
+
+printHolo('EX Series - Plain Holo (Delta Species)', $EX_PLAIN_HOLO_DS);
+
+printHolo('EX Series - Plain Holo (Delta Species - Holon)', $EX_PLAIN_HOLO_DS_HOLON);
+
+printHolo('EX Series - Plain Holo (Delta Species - δ)', $EX_PLAIN_HOLO_DS_DELTA);
+
+printHolo('EX Series - Pixel Cosmos Holo (Legend Maker)', $EX_PIXEL_COSMOS_HOLO_LM);
+
+printHolo('EX Series - Mirror Holo (Holon Phantoms)', $EX_MIRROR_HOLO_HP);
+
+printHolo('EX Series - Mirror Holo (Holon Phantoms - Holon)', $EX_MIRROR_HOLO_HP_HOLON);
+
+printHolo('EX Series - Mirror Holo (Holon Phantoms - δ)', $EX_MIRROR_HOLO_HP_DELTA);
+
+printHolo('EX Series - Mirror Holo (Crystal Guardians)', $EX_MIRROR_HOLO_CG);
+
+printHolo('EX Series - Mirror Holo (Crystal Guardians - δ)', $EX_MIRROR_HOLO_CG_DELTA);
+
+printHolo('EX Series - Mirror Holo (Dragon Frontiers)', $EX_MIRROR_HOLO_DF);
+
+printHolo('EX Series - Mirror Holo (Dragon Frontiers - δ)', $EX_MIRROR_HOLO_DF_DELTA);
+
+printHolo('EX Series - Plain Holo (Power Keepers)', $EX_PLAIN_HOLO_PK);
+
+printHolo('DPPt Series - Pixel Cosmos Holo', $DP_PIXEL_COSMOS_HOLO);
+
+printHolo('DPPt Series - Pixel Cosmos Holo (SP)', $DP_PIXEL_COSMOS_HOLO_SP);
+
+printHolo('DPPt Series - Smooth Cosmos Holo (SP)', $DP_SMOOTH_COSMOS_HOLO_SP);
+
+printHolo('DPPt Series - Pixel Cosmos Holo Victory Medal', $DP_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
+
+printHolo('DPPt Series - Rumble Pixel Cosmos Holo', $DP_RUMBLE_PIXEL_COSMOS_HOLO);
+
+printHolo('DPPt Series - Rumble Pixel Cosmos Holo Logo', $DP_RUMBLE_PIXEL_COSMOS_HOLO_LOGO);
+
+printHolo('DPPt Series - Cracked Ice Holo', $DP_CRACKED_ICE_HOLO);
+
+printHolo('DPPt Series - Cracked Ice Holo (SP)', $DP_CRACKED_ICE_HOLO_SP);
+
+printHolo('DPPt Series - Mirror Holo Energy', $DP_MIRROR_HOLO_ENERGY);
+
+printHolo('DPPt Series - Crosshatch Holo Energy', $DP_CROSSHATCH_HOLO_ENERGY);
+
+printHolo('DPPt Series - Reverse Mirror Holo', $DP_REVERSE_MIRROR_HOLO);
+
+printHolo('DPPt Series - Reverse Mirror Holo (SP)', $DP_REVERSE_MIRROR_HOLO_SP);
+
+printHolo('DPPt Series - Reverse Cracked Ice Holo', $DP_REVERSE_CRACKED_ICE_HOLO);
+
+printHolo('DPPt Series - Reverse Cracked Ice Holo (SP)', $DP_REVERSE_CRACKED_ICE_HOLO_SP);
+
+printHolo('DPPt Series - Reverse Crosshatch Holo', $DP_REVERSE_CROSSHATCH_HOLO);
+
+printHolo('DPPt Series - Reverse Crosshatch Holo (SP)', $DP_REVERSE_CROSSHATCH_HOLO_SP);
+
+printHolo('DPPt Series - Reverse Plain Holo', $DP_REVERSE_PLAIN_HOLO);
+
+printHolo('HGSS Series - Pixel Cosmos Holo', $HGSS_PIXEL_COSMOS_HOLO);
+
+printHolo('HGSS Series - Pixel Cosmos Holo Victory Medal', $HGSS_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
+
+printHolo('HGSS Series - Cracked Ice Holo', $HGSS_CRACKED_ICE_HOLO);
+
+printHolo('HGSS Series - Mirror Holo Energy (COL)', $HGSS_MIRROR_HOLO_ENERGY_COL);
+
+printHolo('HGSS Series - Crosshatch Holo Energy', $HGSS_CROSSHATCH_HOLO_ENERGY);
+
+printHolo('HGSS Series - Crosshatch Holo Energy (COL)', $HGSS_CROSSHATCH_HOLO_ENERGY_COL);
+
+printHolo('HGSS Series - Reverse Mirror Holo', $HGSS_REVERSE_MIRROR_HOLO);
+
+printHolo('HGSS Series - Reverse Crosshatch Holo', $HGSS_REVERSE_CROSSHATCH_HOLO);
+
+printHolo('BW & XY Series - Tinsel Holo', $BWXY_TINSEL_HOLO);
+
+printHolo('BW & XY Series - Tinsel Holo (Plasma)', $BWXY_TINSEL_HOLO_PLASMA);
+
+printHolo('BW & XY Series - Sheen Holo', $BWXY_SHEEN_HOLO);
+
+printHolo('BW & XY Series - Sheen Holo (Flare)', $BWXY_SHEEN_HOLO_FLARE);
+
+printHolo('BW & XY Series - Sheen Holo (Aqua)', $BWXY_SHEEN_HOLO_AQUA);
+
+printHolo('BW & XY Series - Sheen Holo (Magma)', $BWXY_SHEEN_HOLO_MAGMA);
+
+printHolo('BW & XY Series - Pixel Cosmos Holo', $BWXY_PIXEL_COSMOS_HOLO);
+
+printHolo('BW & XY Series - Pixel Cosmos Holo (Plasma)', $BWXY_PIXEL_COSMOS_HOLO_PLASMA);
+
+printHolo('BW & XY Series - Smooth Cosmos Holo', $BWXY_SMOOTH_COSMOS_HOLO);
+
+printHolo('BW & XY Series - Mirror Holo', $BWXY_MIRROR_HOLO);
+
+printHolo('BW & XY Series - Cracked Ice Holo', $BWXY_CRACKED_ICE_HOLO);
+
+printHolo('BW & XY Series - Cracked Ice Holo (Plasma)', $BWXY_CRACKED_ICE_HOLO_PLASMA);
+
+printHolo('BW & XY Series - Confetti Holo', $BWXY_CONFETTI_HOLO);
+
+printHolo('BW & XY Series - Crosshatch Holo Energy (BW)', $BWXY_CROSSHATCH_HOLO_ENERGY_BW);
+
+printHolo('BW & XY Series - Mirror Holo Energy', $BWXY_MIRROR_HOLO_ENERGY);
+
+printHolo('BW & XY Series - Crosshatch Holo Energy', $BWXY_CROSSHATCH_HOLO_ENERGY);
+
+printHolo('BW & XY Series - Sheen Holo Energy', $BWXY_SHEEN_HOLO_ENERGY);
+
+printHolo('BW & XY Series - Mirror Holo Energy (Generations)', $BWXY_MIRROR_HOLO_ENERGY_GENERATIONS);
+
+printHolo('BW & XY Series - Reverse Mirror Holo', $BWXY_REVERSE_MIRROR_HOLO);
+
+printHolo('BW & XY Series - Reverse Mirror Holo (Plasma)', $BWXY_REVERSE_MIRROR_HOLO_PLASMA);
+
+printHolo('BW & XY Series - Reverse Mirror Holo (Aqua)', $BWXY_REVERSE_MIRROR_HOLO_AQUA);
+
+printHolo('BW & XY Series - Reverse Mirror Holo (Magma)', $BWXY_REVERSE_MIRROR_HOLO_MAGMA);
+
+printHolo('BW & XY Series - Reverse Energy Holo', $BWXY_REVERSE_ENERGY_HOLO);
+
+printHolo('BW & XY Series - Reverse Crosshatch Holo', $BWXY_REVERSE_CROSSHATCH_HOLO);
+
+printHolo('BW & XY Series - Reverse Crosshatch Holo (Plasma)', $BWXY_REVERSE_CROSSHATCH_HOLO_PLASMA);
+
+printHolo('XY Evolutions - Starlight Holo', $EV_STARLIGHT_HOLO);
+
+printHolo('XY Evolutions - Smooth Cosmos Holo', $EV_SMOOTH_COSMOS_HOLO);
+
+printHolo('XY Evolutions - Mirror Holo', $EV_MIRROR_HOLO);
+
+printHolo('XY Evolutions - Cracked Ice Holo', $EV_CRACKED_ICE_HOLO);
+
+printHolo('XY Evolutions - Sheen Holo', $EV_SHEEN_HOLO);
+
+printHolo('XY Evolutions - Mirror Holo Energy', $EV_MIRROR_HOLO_ENERGY);
+
+printHolo('XY Evolutions - Reverse Mirror Holo', $EV_REVERSE_MIRROR_HOLO);
+
+printHolo('SM Series - Water Web Holo', $SM_WATER_WEB_HOLO);
+
+printHolo('SM Series - Smooth Cosmos Holo', $SM_SMOOTH_COSMOS_HOLO);
+
+printHolo('SM Series - Mirror Holo', $SM_MIRROR_HOLO);
+
+printHolo('SM Series - Cracked Ice Holo', $SM_CRACKED_ICE_HOLO);
+
+printHolo('SM Series - Confetti Holo', $SM_CONFETTI_HOLO);
+
+printHolo('SM Series - Sheen Holo', $SM_SHEEN_HOLO);
+
+printHolo('SM Series - Sheen Holo (Detective Pikachu)', $SM_SHEEN_HOLO_DP);
+
+printHolo('SM Series - Sequin Holo', $SM_SEQUIN_HOLO);
+
+printHolo('SM Series - Water Web Holo Energy', $SM_WATER_WEB_HOLO_ENERGY);
+
+printHolo('SM Series - Sheen Holo Energy', $SM_SHEEN_HOLO_ENERGY);
+
+printHolo('SM Series - Sheen Holo Energy (TT)', $SM_SHEEN_HOLO_ENERGY_TT);
+
+printHolo('SM Series - Reverse Big Energy Holo', $SM_REVERSE_BIG_ENERGY_HOLO);
+
+printHolo('SM Series - Reverse Smooth Cosmos Big Energy Holo', $SM_REVERSE_SMOOTH_COSMOS_BIG_ENERGY_HOLO);
+
+printHolo('SM Series - Reverse Sheen Holo', $SM_REVERSE_SHEEN_HOLO);
+
+printHolo('SWSH Series - Line Holo', $SWSH_LINE_HOLO);
+
+printHolo('SWSH Series - Line Holo (Lost)', $SWSH_LINE_HOLO_LOST);
+
+printHolo('SWSH Series - Plain Holo', $SWSH_PLAIN_HOLO);
+
+printHolo('SWSH Series - Smooth Cosmos Holo', $SWSH_SMOOTH_COSMOS_HOLO);
+
+printHolo('SWSH Series - Pixel Cosmos Holo', $SWSH_PIXEL_COSMOS_HOLO);
+
+printHolo('SWSH Series - Pixel Cosmos Holo (Lost)', $SWSH_PIXEL_COSMOS_HOLO_LOST);
+
+printHolo('SWSH Series - Mirror Holo', $SWSH_MIRROR_HOLO);
+
+printHolo('SWSH Series - Cracked Ice Holo', $SWSH_CRACKED_ICE_HOLO);
+
+printHolo('SWSH Series - Confetti Holo', $SWSH_CONFETTI_HOLO);
+
+printHolo('SWSH Series - Sequin Holo', $SWSH_SEQUIN_HOLO);
+
+printHolo('SWSH Series - Mirage Holo', $SWSH_MIRAGE_HOLO);
+
+printHolo('SWSH Series - Plain Holo Energy', $SWSH_PLAIN_HOLO_ENERGY);
+
+printHolo('SWSH Series - Plain Holo Energy (Star)', $SWSH_PLAIN_HOLO_ENERGY_STAR);
+
+printHolo('SWSH Series - Line Holo Energy', $SWSH_LINE_HOLO_ENERGY);
+
+printHolo('SWSH Series - Line Holo Energy (Star)', $SWSH_LINE_HOLO_ENERGY_STAR);
+
+printHolo('SWSH Series - Pixel Cosmos Holo Energy (Star)', $SWSH_PIXEL_COSMOS_HOLO_ENERGY_STAR);
+
+printHolo('SWSH Series - Reverse Energy Banner Holo', $SWSH_REVERSE_ENERGY_BANNER_HOLO);
+
+printHolo('SWSH Series - Reverse Energy Banner Holo (Lost)', $SWSH_REVERSE_ENERGY_BANNER_HOLO_LOST);
+
+printHolo('SWSH Series - Reverse Smooth Cosmos Energy Banner Holo', $SWSH_REVERSE_SMOOTH_COSMOS_ENERGY_BANNER_HOLO);
+
+printHolo('SWSH Series - Reverse Mirror Energy Banner Holo', $SWSH_REVERSE_MIRROR_ENERGY_BANNER_HOLO);
+
+printHolo('SWSH Series - Reverse Mirror Holo', $SWSH_REVERSE_MIRROR_HOLO);
+
+printHolo('SWSH Series - Reverse Plain Holo', $SWSH_REVERSE_PLAIN_HOLO);
+
+printHolo('SWSH Series - Reverse Line Holo', $SWSH_REVERSE_LINE_HOLO);
+
+printHolo('SWSH Series - Reverse Pixel Cosmos Holo', $SWSH_REVERSE_PIXEL_COSMOS_HOLO);
+
+printHolo('SV Series - Mirage Holo', $SV_MIRAGE_HOLO);
+
+printHolo('SV Series - Mirage Holo (Ancient)', $SV_MIRAGE_HOLO_ANCIENT);
+
+printHolo('SV Series - Mirage Holo (Future)', $SV_MIRAGE_HOLO_FUTURE);
+
+printHolo('SV Series - Smooth Cosmos Holo', $SV_SMOOTH_COSMOS_HOLO);
+
+printHolo('SV Series - Pixel Cosmos Holo', $SV_PIXEL_COSMOS_HOLO);
+
+printHolo('SV Series - Pixel Cosmos Holo (Ancient)', $SV_PIXEL_COSMOS_HOLO_ANCIENT);
+
+printHolo('SV Series - Pixel Cosmos Holo (Future)', $SV_PIXEL_COSMOS_HOLO_FUTURE);
+
+printHolo('SV Series - Confetti Holo', $SV_CONFETTI_HOLO);
+
+printHolo('SV Series - Line Holo', $SV_LINE_HOLO);
+
+printHolo('SV Series - Smooth Cosmos Holo Energy', $SV_SMOOTH_COSMOS_HOLO_ENERGY);
+
+printHolo('SV Series - Pixel Cosmos Holo Energy', $SV_PIXEL_COSMOS_HOLO_ENERGY);
+
+printHolo('SV Series - Reverse Rocky Holo', $SV_REVERSE_ROCKY_HOLO);
+
+printHolo('SV Series - Reverse Ancient Holo', $SV_REVERSE_ANCIENT_HOLO);
+
+printHolo('SV Series - Reverse Future Holo', $SV_REVERSE_FUTURE_HOLO);
+
+printHolo('SV Series - Reverse Mirage Rocky Holo', $SV_REVERSE_MIRAGE_ROCKY_HOLO);
+
+printHolo('SV Series - Reverse Pixel Cosmos Holo', $SV_REVERSE_PIXEL_COSMOS_HOLO);
+
+printHolo('OS - Classic Stars Cosmos Holo', $OS_CLASSIC_STARS_HOLO);
+
+printHolo('OS - Classic Stars Cosmos Holo Energy', $OS_CLASSIC_STARS_HOLO_ENERGY);
+
+printHolo('Neo - Classic Stars Cosmos Holo', $NEO_CLASSIC_STARS_HOLO);
+
+printHolo('e Series - Classic Stars Cosmos Holo', $E_CLASSIC_STARS_HOLO);
+
+printHolo('EX Series - Classic Stars Cosmos Holo', $EX_CLASSIC_STARS_HOLO);
+
+printHolo('DPPt Series - Classic Stars Cosmos Holo', $DP_CLASSIC_STARS_HOLO);
+
+printHolo('HGSS Series - Classic Stars Cosmos Holo', $HGSS_CLASSIC_STARS_HOLO);
+
+printHolo('BW & XY Series - Classic Stars Cosmos Holo', $BWXY_CLASSIC_STARS_HOLO);
+
+printHolo('XY Evolutions - Classic Stars Cosmos Holo', $EV_CLASSIC_STARS_HOLO);
+
+printHolo('SM Series - Classic Stars Cosmos Holo', $SM_CLASSIC_STARS_HOLO);
+
+printHolo('SWSH Series - Classic Stars Cosmos Holo', $SWSH_CLASSIC_STARS_HOLO);
+
+printHolo('SV Series - Classic Stars Cosmos Holo', $SV_CLASSIC_STARS_HOLO);
 
 ?>

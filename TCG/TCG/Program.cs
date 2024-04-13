@@ -17,6 +17,7 @@ namespace TCG
 			if (duplicates != null)
 				throw new Exception();*/
 
+			EnergyGroups.Init();
 			AcetoneGroups.Init();
 
 			WriteCards();
@@ -53,6 +54,7 @@ namespace TCG
 
 			WritePocket();
 
+			WriteEnergy();
 			WriteAcetone();
 
 			// PrintRarities();
@@ -187,7 +189,7 @@ namespace TCG
 
 		static void WriteAll()
 		{
-			List<string> code = new List<string>(6);
+			List<string> code = new List<string>(4);
 
 			IEnumerable<Card> cards = Cards.Get().OrderBy(c => c.setNum).OrderBy(c => c.set);
 			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
@@ -195,9 +197,7 @@ namespace TCG
 			code.Add("<?php");
 
 			code.Add("$all = array(" + cardArr + ");");
-			code.Add("start($j++, 'All Cards', $have, $all);");
-			code.Add("foreach ($all as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }");
-			code.Add("finish();");
+			code.Add("printCards('All Cards', $all);");
 
 			code.Add("?>");
 
@@ -357,7 +357,7 @@ namespace TCG
 
 		static void WriteHoloAll()
 		{
-			List<string> code = new List<string>(6);
+			List<string> code = new List<string>(4);
 
 			IEnumerable<HoloCard> cards = HoloCards.Get().OrderBy(c => c.setNum).OrderBy(c => c.set);
 			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
@@ -365,9 +365,7 @@ namespace TCG
 			code.Add("<?php");
 
 			code.Add("$holoAll = array(" + cardArr + ");");
-			code.Add("start($j++, 'All Holo Cards', $holoHave, $holoAll);");
-			code.Add("foreach ($holoAll as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }");
-			code.Add("finish();");
+			code.Add("printHolo('All Holo Cards', $holoAll);");
 
 			code.Add("?>");
 
@@ -376,7 +374,7 @@ namespace TCG
 
 		static void WriteHoloPrizePack()
 		{
-			List<string> code = new List<string>(2 + PrizePacks.Get().Length * 4);
+			List<string> code = new List<string>(2 + PrizePacks.Get().Length * 2);
 
 			code.Add("<?php");
 
@@ -386,9 +384,10 @@ namespace TCG
 				string cardArr = string.Join(',', cards.Select(c => c.ToString()));
 
 				code.Add("$prizePack" + prizePack.Series + " = array(" + cardArr + ");");
-				code.Add("start($j++, 'Prize Pack Series " + prizePack.Series + "', $holoHave, $prizePack" + prizePack.Series + ");");
-				code.Add("foreach ($prizePack" + prizePack.Series + " as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }");
-				code.Add("finish();");
+				code.Add("printHolo('Prize Pack Series " + prizePack.Series + "', $prizePack" + prizePack.Series + ");");
+				// code.Add("start($j++, 'Prize Pack Series " + prizePack.Series + "', $holoHave, $prizePack" + prizePack.Series + ");");
+				// code.Add("foreach ($prizePack" + prizePack.Series + " as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }");
+				// code.Add("finish();");
 			}
 
 			code.Add("?>");
@@ -569,7 +568,7 @@ namespace TCG
 
 		static void WriteWorldsAll()
 		{
-			List<string> code = new List<string>(6);
+			List<string> code = new List<string>(4);
 
 			IEnumerable<WorldsCard> cards = WorldsCards.Get().OrderBy(c => c.setNum).OrderBy(c => c.set);
 			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
@@ -577,9 +576,7 @@ namespace TCG
 			code.Add("<?php");
 
 			code.Add("$worldsAll = array(" + cardArr + ");");
-			code.Add("start($j++, 'All Worlds Cards', $worldsHave, $worldsAll);");
-			code.Add("foreach ($worldsAll as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }");
-			code.Add("finish();");
+			code.Add("printWorlds('All Worlds Cards', $worldsAll);");
 
 			code.Add("?>");
 
@@ -588,7 +585,7 @@ namespace TCG
 
 		static void WritePocket()
 		{
-			List<string> code = new List<string>(7);
+			List<string> code = new List<string>(5);
 
 			IEnumerable<PocketCard> cards = PocketCards.Get().OrderBy(c => c.setNum).OrderBy(c => c.set);
 			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
@@ -597,13 +594,31 @@ namespace TCG
 
 			code.Add("$pocketHave = array();");
 			code.Add("$pocketAll = array(" + cardArr + ");");
-			code.Add("start($j++, 'All Revealed Pocket Cards', $pocketHave, $pocketAll);");
-			code.Add("foreach ($pocketAll as $cur) { if (in_array($cur, $pocketHave, true)) {imgPN($cur);} else {imgP($cur);} }");
-			code.Add("finish();");
+			code.Add("printPocket('All Revealed Pocket Cards', $pocketAll);");
 
 			code.Add("?>");
 
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Pocket.php", code);
+		}
+
+		static void WriteEnergy()
+		{
+			List<string> code = new List<string>(EnergyGroups.Get().Count() + 3);
+
+			code.Add("<?php");
+
+			foreach (EnergyGroup group in EnergyGroups.Get())
+				code.Add(CodeFromEnergyGroup(group));
+
+			EnergyGroup remaining = EnergyGroups.FromRemaining();
+			if (remaining != null)
+				code.Add(CodeFromEnergyGroup(remaining));
+
+			code.Add(CodeFromEnergyGroup(EnergyGroups.FromAll()));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Energy.php", code);
 		}
 
 		static void WriteAcetone()
@@ -648,10 +663,7 @@ namespace TCG
 
 		static string CodeFromSection(Section section)
 		{
-			return
-				"start($j++, '" + section.title + "', $have, $" + section.rarity + ");\r\n" +
-				"foreach ($" + section.rarity + " as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }\r\n" +
-				"finish();\r\n";
+			return "printCards('" + section.title + "', $" + section.rarity + ");\r\n";
 		}
 
 		static string CodeFromHoloCards(Section section)
@@ -664,10 +676,7 @@ namespace TCG
 
 		static string CodeFromHoloSection(Section section)
 		{
-			return
-				"start($j++, '" + section.title + "', $holoHave, $" + section.holoRarity + ");\r\n" +
-				"foreach ($" + section.holoRarity + " as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }\r\n" +
-				"finish();\r\n";
+			return "printHolo('" + section.title + "', $" + section.holoRarity + ");\r\n";
 		}
 
 		static string CodeFromHoloSet(Sets set)
@@ -681,9 +690,7 @@ namespace TCG
 
 			return
 				"$" + set.ToString() + " = array(" + cardArr + ");\r\n" +
-				"start($j++, '" + set.ToString().Replace('_', ' ') + "', $holoHave, $" + set.ToString() + ");\r\n" +
-				"foreach ($" + set.ToString() + " as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }\r\n" +
-				"finish();\r\n";
+				"printHolo('" + set.ToString().Replace('_', ' ') + "', $" + set.ToString() + ");\r\n";
 		}
 
 		static string CodeFromHoloSetReverse(Sets set)
@@ -697,9 +704,7 @@ namespace TCG
 
 			return
 				"$" + set.ToString() + "_Rev = array(" + cardArr + ");\r\n" +
-				"start($j++, '" + set.ToString().Replace('_', ' ') + "', $holoHave, $" + set.ToString() + "_Rev);\r\n" +
-				"foreach ($" + set.ToString() + "_Rev as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }\r\n" +
-				"finish();\r\n";
+				"printHolo('" + set.ToString().Replace('_', ' ') + "', $" + set.ToString() + "_Rev);\r\n";
 		}
 
 		static string CodeFromHoloType(Types type)
@@ -713,9 +718,7 @@ namespace TCG
 
 			return
 				"$" + type.ToString() + " = array(" + cardArr + ");\r\n" +
-				"start($j++, '" + type.ToString().Replace('_', ' ') + "', $holoHave, $" + type.ToString() + ");\r\n" +
-				"foreach ($" + type.ToString() + " as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }\r\n" +
-				"finish();\r\n";
+				"printHolo('" + type.ToString().Replace('_', ' ') + "', $" + type.ToString() + ");\r\n";
 		}
 
 		static string CodeFromHoloPokedex(Pokedex pokedex)
@@ -729,9 +732,7 @@ namespace TCG
 
 			return
 				"$" + pokedex.ToString() + " = array(" + cardArr + ");\r\n" +
-				"start($j++, '" + pokedex.ToString().Replace('_', ' ') + "', $holoHave, $" + pokedex.ToString() + ");\r\n" +
-				"foreach ($" + pokedex.ToString() + " as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }\r\n" +
-				"finish();\r\n";
+				"printHolo('" + pokedex.ToString().Replace('_', ' ') + "', $" + pokedex.ToString() + ");\r\n";
 		}
 
 		static string CodeFromWorldsCards(Section section)
@@ -747,10 +748,7 @@ namespace TCG
 			if (!WorldsCardsFromSection(section).Any())
 				return "";
 
-			return
-				"start($j++, '" + section.title + "', $worldsHave, $" + section.rarity + ");\r\n" +
-				"foreach ($" + section.rarity + " as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }\r\n" +
-				"finish();\r\n";
+			return "printWorlds('" + section.title + "', $" + section.rarity + ");\r\n";
 		}
 
 		static string CodeFromWorldsSet(Sets set)
@@ -764,9 +762,7 @@ namespace TCG
 
 			return
 				"$" + set.ToString() + " = array(" + cardArr + ");\r\n" +
-				"start($j++, '" + set.ToString().Replace('_', ' ') + "', $worldsHave, $" + set.ToString() + ");\r\n" +
-				"foreach ($" + set.ToString() + " as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }\r\n" +
-				"finish();\r\n";
+				"printWorlds('" + set.ToString().Replace('_', ' ') + "', $" + set.ToString() + ");\r\n";
 		}
 
 		static string CodeFromWorldsYear(int year)
@@ -810,9 +806,7 @@ namespace TCG
 
 			return
 				"$" + type.ToString() + " = array(" + cardArr + ");\r\n" +
-				"start($j++, '" + type.ToString().Replace('_', ' ') + "', $worldsHave, $" + type.ToString() + ");\r\n" +
-				"foreach ($" + type.ToString() + " as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }\r\n" +
-				"finish();\r\n";
+				"printWorlds('" + type.ToString().Replace('_', ' ') + "', $" + type.ToString() + ");\r\n";
 		}
 
 		static string CodeFromWorldsPokedex(Pokedex pokedex)
@@ -826,9 +820,7 @@ namespace TCG
 
 			return
 				"$" + pokedex.ToString() + " = array(" + cardArr + ");\r\n" +
-				"start($j++, '" + pokedex.ToString().Replace('_', ' ') + "', $worldsHave, $" + pokedex.ToString() + ");\r\n" +
-				"foreach ($" + pokedex.ToString() + " as $cur) { if (in_array($cur, $worldsHave, true)) {imgWN($cur);} else {imgW($cur);} }\r\n" +
-				"finish();\r\n";
+				"printWorlds('" + pokedex.ToString().Replace('_', ' ') + "', $" + pokedex.ToString() + ");\r\n";
 		}
 
 		static string CodeFromCollection(IEnumerable<Card> cards)
@@ -854,9 +846,7 @@ namespace TCG
 
 			return
 				"$" + set.ToString() + " = array(" + cardArr + ");\r\n" +
-				"start($j++, '" + set.ToString().Replace('_', ' ') + "', $have, $" + set.ToString() + ");\r\n" +
-				"foreach ($" + set.ToString() + " as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }\r\n" +
-				"finish();\r\n";
+				"printCards('" + set.ToString().Replace('_', ' ') + "', $" + set.ToString() + ");\r\n";
 		}
 
 		static string CodeFromType(Types type)
@@ -870,9 +860,7 @@ namespace TCG
 
 			return
 				"$" + type.ToString() + " = array(" + cardArr + ");\r\n" +
-				"start($j++, '" + type.ToString().Replace('_', ' ') + "', $have, $" + type.ToString() + ");\r\n" +
-				"foreach ($" + type.ToString() + " as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }\r\n" +
-				"finish();\r\n";
+				"printCards('" + type.ToString().Replace('_', ' ') + "', $" + type.ToString() + ");\r\n";
 		}
 
 		static string CodeFromPokedex(Pokedex pokedex)
@@ -886,8 +874,24 @@ namespace TCG
 
 			return
 				"$" + pokedex.ToString() + " = array(" + cardArr + ");\r\n" +
-				"start($j++, '" + pokedex.ToString().Replace('_', ' ') + "', $have, $" + pokedex.ToString() + ");\r\n" +
-				"foreach ($" + pokedex.ToString() + " as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }\r\n" +
+				"printCards('" + pokedex.ToString().Replace('_', ' ') + "', $" + pokedex.ToString() + ");\r\n";
+		}
+
+		static string CodeFromEnergyGroup(EnergyGroup group)
+		{
+			string cardArr = "";
+
+			foreach (CardBase card in group.cards)
+			{
+				if (card is Card)
+					cardArr += "imgN(" + card.id + ");";
+				else if (card is HoloCard)
+					cardArr += "imgHN(" + card.id + ");";
+			}
+
+			return
+				"start($j++, '" + group.energyName + "', array(), array());\r\n" +
+				cardArr + "\r\n" +
 				"finish();\r\n";
 		}
 
@@ -1199,9 +1203,7 @@ namespace TCG
 
 			return
 				"$FUT_" + section.id + " = array(" + cardArr + ");\r\n" +
-				"start($j++, '" + section.name + "', $have, $FUT_" + section.id + ");\r\n" +
-				"foreach ($FUT_" + section.id + " as $cur) { imgF($cur); }\r\n" +
-				"finish();\r\n";
+				"printFuture('" + section.name + "', $FUT_" + section.id + ");\r\n";
 		}
 
 		static string CodeFromAllFutureSections()
@@ -1220,9 +1222,7 @@ namespace TCG
 
 			return
 				"$FUT_All = array(" + cardArr + ");\r\n" +
-				"start($j++, 'All', $have, $FUT_All);\r\n" +
-				"foreach ($FUT_All as $cur) { imgF($cur); }\r\n" +
-				"finish();\r\n";
+				"printFuture('All', $FUT_All);\r\n";
 		}
 	}
 }

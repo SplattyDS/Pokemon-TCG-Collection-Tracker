@@ -186,14 +186,14 @@ namespace TCG
 				HoloCards.Find(Sets.Paldea_Evolved, 190, HoloRarity.SV_REVERSE_PIXEL_COSMOS_HOLO),
 				HoloCards.Find(Sets.Paldea_Evolved, 191, HoloRarity.SV_REVERSE_PIXEL_COSMOS_HOLO),
 				HoloCards.Find(Sets.Paldea_Evolved, 192, HoloRarity.SV_REVERSE_PIXEL_COSMOS_HOLO),
-				HoloCards.FindUnnumbered("Basic Grass Energy", HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
-				HoloCards.FindUnnumbered("Basic Fire Energy", HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
-				HoloCards.FindUnnumbered("Basic Water Energy", HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
-				HoloCards.FindUnnumbered("Basic Lightning Energy", HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
-				HoloCards.FindUnnumbered("Basic Psychic Energy", HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
-				HoloCards.FindUnnumbered("Basic Fighting Energy", HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
-				HoloCards.FindUnnumbered("Basic Darkness Energy", HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
-				HoloCards.FindUnnumbered("Basic Metal Energy", HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY)
+				HoloCards.Find(Sets.SV_Energy, 1, HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
+				HoloCards.Find(Sets.SV_Energy, 2, HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
+				HoloCards.Find(Sets.SV_Energy, 3, HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
+				HoloCards.Find(Sets.SV_Energy, 4, HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
+				HoloCards.Find(Sets.SV_Energy, 5, HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
+				HoloCards.Find(Sets.SV_Energy, 6, HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
+				HoloCards.Find(Sets.SV_Energy, 7, HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY),
+				HoloCards.Find(Sets.SV_Energy, 8, HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY)
 			),
 		};
 

@@ -511,42 +511,47 @@ function imgER($name, $visible = false)
 
 function start($ID, $name, $have, $arrC, $visible = false)
 {
-	$amount = countN($arrC);
-	$haveAmount = countHave($arrC, $have);
-	if ($amount != 0)
-		$percent = round($haveAmount / $amount * 100, 2);
-	else
-		$percent = 0;
+	$subHeader = '';
+	$progressBar = '';
 	
-	if ($percent == 100)
-		$barClass = 'success';
-	else if ($percent >= 50)
-		$barClass = 'info';
-	else if ($percent >= 25)
-		$barClass = 'warning';
-	else
-		$barClass = 'danger';
-	
-	// progress-bar-animated
+	if (count($have) != 0 || count($arrC) != 0)
+	{
+		$amount = countN($arrC);
+		$haveAmount = countHave($arrC, $have);
+		$percent = $amount == 0 ? 0 : round($haveAmount / $amount * 100, 2);
+		
+		if ($percent == 100)
+			$barClass = 'success';
+		else if ($percent >= 50)
+			$barClass = 'info';
+		else if ($percent >= 25)
+			$barClass = 'warning';
+		else
+			$barClass = 'danger';
+		
+		$subHeader = '<h2>'.$haveAmount.'/'.$amount.' ('.$percent.'%)</h2>';
+		
+		// progress-bar-animated
+		$progressBar = '
+		<div class="progress">
+			<div class="progress-bar bg-'.$barClass.' progress-bar-striped" role="progressbar" aria-valuenow="'.$percent.'" aria-valuemin="0" aria-valuemax="100" style="width:'.$percent.'%">
+				'.$percent.'%
+			</div>
+		</div>
+		';
+	}
 	
 	$onclick = $visible ? '' : 'onclick="toggleSection(this, '.$ID.')"';
 	
 	print('<div id="header-'.$ID.'" class="center" '.$onclick.'>');
-	
 	print('<h1>'.$name.'</h1>');
-	print('<h2>'.$haveAmount.'/'.$amount.' ('.$percent.'%)</h2>');
-	
-	print('
-	<div class="progress">
-		<div class="progress-bar bg-'.$barClass.' progress-bar-striped" role="progressbar" aria-valuenow="'.$percent.'" aria-valuemin="0" aria-valuemax="100" style="width:'.$percent.'%">
-			'.$percent.'%
-		</div>
-	</div>
-	');
+	print($subHeader);
+	print($progressBar);
+	print('</div>');
 	
 	$class = $visible ? 'center' : 'center hidden';
 	
-	print('</div><div id="container-'.$ID.'" class="'.$class.'">');
+	print('<div id="container-'.$ID.'" class="'.$class.'">');
 }
 
 function finish()
@@ -604,10 +609,10 @@ function printComp($compArr)
 	// </tr>');
 // }
 
-function finishTable()
-{
-	print('</table></div>');
-}
+// function finishTable()
+// {
+	// print('</table></div>');
+// }
 
 function countN($array)
 {
@@ -629,9 +634,116 @@ function countHave($arr, $have)
 	return $i;
 }
 
-// $have = array(288,319,320,321,468,545,943,944,945,946,947,'AM',16,3061,3016,209,215,203,199,356,'JP18',328,350,255,354,3055,325,360,326,361,327,399,3052,370,371,408,409,493,494,495,535,536,557,925,1026,1033,693,645,776,743,883,610,658,626,922,927,928,682,686,'0673_2',690,'0702_2',725,728,'0729_2',740,'0740_2',744,762,767,768,775,973,1423,1072,1160,1844,1854,1075,1915,1113,1115,1078,1855,1841,1169,1080,1662,1119,1081,1840,1773,1421,1496,3111,3092,3003,2698,3053,2336,2702,3045,3094,2000,3060,3096,2596,2598,2132,2644,3108,2401,2910,3099,3100,3054,2600,2404,1954,2912,2601,2407,3101,2408,3046,3083,2714,2139,3007,3008,2717,2718,2518,2144,2720,3125,3015,2493,3021,2597,2599,2513,2136,2517,2914,3032,1961,3093,2700,3095,2911,2710,3103,2807,3123,2721,2123,2186,2134,2137,2195,2143,2906,2908,2805,3116,3071,3072,3073,3074,3056,3057,3058,3059,3104,3105,3106,3107,3075,3076,3077,3078,3079,3080,3081,3082,436,587,588,2595,1805,1816,2760,2762,2880,2763,2764,2766,2768,590,1063,618,889,501,502,1055,2523,2111,3115,3102,2920,3122,2315,2086,2167,2927,3062,3063,2786,2603,2487,1156,2392,2935,3084,3086,3088,2836,3085,3087,3089,144,146,148,154,160,163,165,166,169,306,307,308,309,310,311,324,334,335,336,337,338,339,340,341,342,'0338_A','RC2_1','RC2_4','RC2_14','RC2_17','RC2_18','RC2_19','RC2_20','RC2_21','RC2_22','RC2_23',1675,1678,2241,2314,2604,2605,2606,2607,2608,2609,2610,2611,2612,2613,2614,2615,2616,2617,2618,2619,2620,2621,2622,2623,2624,2625,2626,2627,2628,'METAL_1','METAL_2',355,347,282,404,1547,1603,1943,2347);
-
 $j = 1;
+
+function printCards($title, &$cardArr, $printObtained = true)
+{
+	global $j;
+	global $have;
+	
+	start($j++, $title, $have, $cardArr);
+	
+	foreach ($cardArr as $cur)
+	{
+		if (in_array($cur, $have, true))
+		{
+			if ($printObtained)
+				imgN($cur);
+		}
+		else
+		{
+			img($cur);
+		}
+	}
+	
+	finish();
+}
+
+function printFuture($title, &$cardArr)
+{
+	global $j;
+	global $have;
+	
+	start($j++, $title, $have, $cardArr);
+	
+	foreach ($cardArr as $cur)
+	{
+		imgF($cur);
+	}
+	
+	finish();
+}
+
+function printHolo($title, &$cardArr, $printObtained = true)
+{
+	global $j;
+	global $holoHave;
+	
+	start($j++, $title, $holoHave, $cardArr);
+	
+	foreach ($cardArr as $cur)
+	{
+		if (in_array($cur, $holoHave, true))
+		{
+			if ($printObtained)
+				imgHN($cur);
+		}
+		else
+		{
+			imgH($cur);
+		}
+	}
+	
+	finish();
+}
+
+function printWorlds($title, &$cardArr, $printObtained = true)
+{
+	global $j;
+	global $worldsHave;
+	
+	start($j++, $title, $worldsHave, $cardArr);
+	
+	foreach ($cardArr as $cur)
+	{
+		if (in_array($cur, $worldsHave, true))
+		{
+			if ($printObtained)
+				imgWN($cur);
+		}
+		else
+		{
+			imgW($cur);
+		}
+	}
+	
+	finish();
+}
+
+function printPocket($title, &$cardArr, $printObtained = true)
+{
+	global $j;
+	global $pocketHave;
+	
+	start($j++, $title, $pocketHave, $cardArr);
+	
+	foreach ($cardArr as $cur)
+	{
+		if (in_array($cur, $pocketHave, true))
+		{
+			if ($printObtained)
+				imgPN($cur);
+		}
+		else
+		{
+			imgP($cur);
+		}
+	}
+	
+	finish();
+}
+
+// $have = array(288,319,320,321,468,545,943,944,945,946,947,'AM',16,3061,3016,209,215,203,199,356,'JP18',328,350,255,354,3055,325,360,326,361,327,399,3052,370,371,408,409,493,494,495,535,536,557,925,1026,1033,693,645,776,743,883,610,658,626,922,927,928,682,686,'0673_2',690,'0702_2',725,728,'0729_2',740,'0740_2',744,762,767,768,775,973,1423,1072,1160,1844,1854,1075,1915,1113,1115,1078,1855,1841,1169,1080,1662,1119,1081,1840,1773,1421,1496,3111,3092,3003,2698,3053,2336,2702,3045,3094,2000,3060,3096,2596,2598,2132,2644,3108,2401,2910,3099,3100,3054,2600,2404,1954,2912,2601,2407,3101,2408,3046,3083,2714,2139,3007,3008,2717,2718,2518,2144,2720,3125,3015,2493,3021,2597,2599,2513,2136,2517,2914,3032,1961,3093,2700,3095,2911,2710,3103,2807,3123,2721,2123,2186,2134,2137,2195,2143,2906,2908,2805,3116,3071,3072,3073,3074,3056,3057,3058,3059,3104,3105,3106,3107,3075,3076,3077,3078,3079,3080,3081,3082,436,587,588,2595,1805,1816,2760,2762,2880,2763,2764,2766,2768,590,1063,618,889,501,502,1055,2523,2111,3115,3102,2920,3122,2315,2086,2167,2927,3062,3063,2786,2603,2487,1156,2392,2935,3084,3086,3088,2836,3085,3087,3089,144,146,148,154,160,163,165,166,169,306,307,308,309,310,311,324,334,335,336,337,338,339,340,341,342,'0338_A','RC2_1','RC2_4','RC2_14','RC2_17','RC2_18','RC2_19','RC2_20','RC2_21','RC2_22','RC2_23',1675,1678,2241,2314,2604,2605,2606,2607,2608,2609,2610,2611,2612,2613,2614,2615,2616,2617,2618,2619,2620,2621,2622,2623,2624,2625,2626,2627,2628,'METAL_1','METAL_2',355,347,282,404,1547,1603,1943,2347);
 
 if (isset($_GET['holo']))
 {
@@ -1310,6 +1422,10 @@ else if (isset($_GET['extremely_rare']))
 	foreach ($extreme_rares as $cur) { imgER($cur, true); }
 	finish();
 }
+else if (isset($_GET['energy']))
+{
+	require 'BestTracker_Energy.php';
+}
 else if (isset($_GET['acetone']))
 {
 	if (isset($_GET['binder']))
@@ -1362,51 +1478,36 @@ else if (isset($_GET['test']))
 	2737, // V Special Art
 	2769 // Character Art (SWSH)
 	);
-	start($j++, 'Lost', $have, $test);
-	foreach ($test as $cur) { if (in_array($cur, $have, true)) {/*imgN($cur);*/} else {img($cur);} }
-	finish();
+	printCards('Lost', $test, false);
 	
 	// $have = array_merge($have, $test);
 	
 	$test = array(2697,2796,2911,3103,2807,3123,943,944,945,946,947,863,2595,2762,2759,2760,2764,794,927,930,1048,2097,3037,2051,2393,2333,2184,2126,3053,2395,2336,3041,2127,3004,3045,2128,1948,2639,2640,2398,2130,3020,3060,3096,2596,2598,3068,2058,2339,2400,3028,2401,2910,2059,2506,3054,2600,2108,2060,2135,2601,3044,2649,2193,2347,2713,2138,2011,3083,2063,2714,1958,3070,3064,3065,3001,3125,3039,1994,2396,2337,2704,3021,2597,2599,2005,1951,2510,2803,2650,2412,703,1023,664,911,938,1778,1086,1927,1090,2146,2073,1964,2530,2425,3115,3102,2920,3122,2077,2665,1892,1911,3086,2919,2433,3087,1667,2168,2210,2040,2089,2175,552,621,2951,970,2952,1026,2953,603,657,966,831,554,903,1045,774,1031,931,627,605,460,919,921,924,865,1655,1072,1883,1074,1884,1427,1356,1217,1843,1602,1841,1167,1168,1079,1169,1935,1362,1081,1871,941,1094,2165,2451,2369,2371,2602,3113,357,3055,275,352,360,3061,3052,1219,1730,3116,1361,1364,1436,2133,2134,2195,2143,3233,3235,3238,3261,3056,3057,3058,3059,2603,2754,2933,2181,3062,3063,3223,3224,2604,2605,2606,2607,2608,2609,2610,2611,2612,2613,2614,2615,2616,2617,2618,2619,2620,2621,2622,2623,2624,2625,2626,2627,2628);
-	start($j++, 'Mat', $have, $test);
-	foreach ($test as $cur) { if (in_array($cur, $have, true)) {/*imgN($cur);*/} else {img($cur);} }
-	finish();
+	printCards('Mat', $test, false);
 	
 	$test = array(3399,3408,3513,3526,3527,3275,3282,3315,3396);
-	start($j++, 'Test', $have, $test);
-	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Test', $test);
 	
 	$test = array(727,1914,1660,1665,2051,2788,3406,2492,2795,2504,3415,2511,2512,3420,3421,2516,3023,2067,3070,2413,3289,2817,2015,2071,2796,3418,3407,2793,3422,1684,1697,1702,1705,2325);
-	start($j++, 'Test', $have, $test);
-	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Test', $test);
 	
 	$test = array(2815,2905);
-	start($j++, 'Test', $have, $test);
-	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Test', $test);
 	
 	$test = array(3390,2715,2069,3414,3281,3542,2882,3483,3645,3648,3648,3641,3652,3653,3654,3655,3656,3646,3647);
-	start($j++, 'Test', $have, $test);
-	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Test', $test);
 	
 	$test = array(1852,1694,1695,1701,2124,3409,3512,3270,3274,3424,2196,2414,3536,3515,3416,3280,2189,3509,3717,3531,3554,2764,3345);
-	start($j++, 'Test', $have, $test);
-	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Test', $test);
 	
 	$test = array(3730,3649,3725,3735);
-	start($j++, 'Test', $have, $test);
-	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Test', $test);
 	
 	$test = array(3732,3734);
-	start($j++, 'Test', $have, $test);
-	foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Test', $test);
+	
+	$test = array(3547,3995,3997,3998,3874,4010);
+	printCards('Test', $test);
 	
 	// start($j++, 'Test', $have, $test);
 	// $test = array(3719,3392,3393,3394,3395,3721,3836); // UR
@@ -1427,28 +1528,50 @@ else if (isset($_GET['fut']))
 {
 	require 'BestTracker_Future.php';
 	
-	$FUT_Tera = array('CH2','CH5','MC1','MC2','MC3','MC4');
-	start($j++, 'Tera', $have, $FUT_Tera);
-	foreach ($FUT_Tera as $cur) { imgF($cur); }
-	finish();
+	$FUT_Ancient = array('CH4','SVPEN4');
+	printFuture('Ancient', $FUT_Ancient);
 	
-	$FUT_Ancient = array('CH4','SVPEN9');
-	start($j++, 'Ancient', $have, $FUT_Ancient);
-	foreach ($FUT_Ancient as $cur) { imgF($cur); }
-	finish();
+	$FUT_Future = array('CH3','SVPEN5');
+	printFuture('Future', $FUT_Future);
 	
-	$FUT_Future = array('CH3','SVPEN10');
-	start($j++, 'Future', $have, $FUT_Future);
-	foreach ($FUT_Future as $cur) { imgF($cur); }
+	$FUT_Tera = array('CH2','CH5','MC6','MC1','MC2','MC4','MC5');
+	printFuture('Tera', $FUT_Tera);
+	
+	$FUT_Tera_Index = array(5,15,22,-1,-1,-1,-1);
+	
+	start($j++, 'Tera (All)', $have, $ex_SV_Tera);
+	
+	$curIndex = 0;
+	
+	foreach ($ex_SV_Tera as $cur)
+	{
+		for ($k = 0; $k < count($FUT_Tera_Index); $k++)
+		{
+			if ($FUT_Tera_Index[$k] == $curIndex)
+				imgF($FUT_Tera[$k]);
+		}
+		
+		if (in_array($cur, $have, true))
+			imgN($cur);
+		else
+			img($cur);
+		
+		$curIndex++;
+	}
+	
+	for ($k = 0; $k < count($FUT_Tera_Index); $k++)
+	{
+		if ($FUT_Tera_Index[$k] == -1)
+			imgF($FUT_Tera[$k]);
+	}
+	
 	finish();
 }
 else if (isset($_GET['all']))
 	require 'BestTracker_All.php';
 else if (isset($_GET['col']))
 {
-	start($j++, 'Collection', $have, $have);
-	foreach ($have as $cur) { imgN($cur); }
-	finish();
+	printCards('Collection', $have);
 }
 else if (isset($_GET['allall']))
 {

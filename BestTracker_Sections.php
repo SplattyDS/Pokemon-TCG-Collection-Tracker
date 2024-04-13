@@ -1,782 +1,392 @@
 <?php
-start($j++, 'Ancient Mew', $have, $Ancient_Mew);
-foreach ($Ancient_Mew as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Pikachu Worlds Collection', $have, $Pikachu_Worlds_Collection);
-foreach ($Pikachu_Worlds_Collection as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Custume Pikachu', $have, $Full_Art_Costume_Pikachu);
-foreach ($Full_Art_Costume_Pikachu as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Pokémon', $have, $Gold_Pokemon);
-foreach ($Gold_Pokemon as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Metal Cards', $have, $Metal);
-foreach ($Metal as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Secret Rare (OS)', $have, $Secret_OS);
-foreach ($Secret_OS as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Shining (Neo)', $have, $Shining_Neo);
-foreach ($Shining_Neo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Secret Rare (e Series)', $have, $Secret_e_Series);
-foreach ($Secret_e_Series as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Crystal Type', $have, $Crystal_Type);
-foreach ($Crystal_Type as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Secret Rare (EX)', $have, $Secret_EX);
-foreach ($Secret_EX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex', $have, $ex);
-foreach ($ex as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'δ ex', $have, $Delta_Species_ex);
-foreach ($Delta_Species_ex as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Rockets ex', $have, $Rockets_ex);
-foreach ($Rockets_ex as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Lucario ex', $have, $Lucario_ex);
-foreach ($Lucario_ex as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Star', $have, $Gold_Star);
-foreach ($Gold_Star as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'δ Gold Star', $have, $Delta_Species_Gold_Star);
-foreach ($Delta_Species_Gold_Star as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Unown Subset', $have, $Unown);
-foreach ($Unown as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Holo Energy (EX Emerald)', $have, $Holo_Energy_EX_Emerald);
-foreach ($Holo_Energy_EX_Emerald as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Holo Energy (EX Holon Phantoms)', $have, $Holo_Energy_EX_Holon_Phantoms);
-foreach ($Holo_Energy_EX_Holon_Phantoms as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Holo Energy (EX Power Keepers)', $have, $Holo_Energy_EX_Power_Keepers);
-foreach ($Holo_Energy_EX_Power_Keepers as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Secret Rare (DP)', $have, $Secret_DP);
-foreach ($Secret_DP as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Secret Rare (DP - Gold)', $have, $Secret_DP_Gold);
-foreach ($Secret_DP_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'LV.X', $have, $LV_X);
-foreach ($LV_X as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'LV.X (SP)', $have, $LV_X_SP);
-foreach ($LV_X_SP as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'LV.X (Arceus)', $have, $LV_X_Arceus);
-foreach ($LV_X_Arceus as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Shiny Holo Subset', $have, $Shiny_Holo);
-foreach ($Shiny_Holo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Rotom Subset', $have, $Rotom);
-foreach ($Rotom as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Arceus Subset', $have, $Arceus);
-foreach ($Arceus as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Secret Rare (HGSS)', $have, $Secret_HGSS);
-foreach ($Secret_HGSS as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Prime', $have, $Prime);
-foreach ($Prime as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'LEGEND', $have, $LEGEND);
-foreach ($LEGEND as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Alph Litograph', $have, $Alph_Lithograph);
-foreach ($Alph_Lithograph as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Shiny Legend Subset', $have, $Shiny_Legend);
-foreach ($Shiny_Legend as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Shiny Legend Promo', $have, $Shiny_Legend_Promo);
-foreach ($Shiny_Legend_Promo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Secret Rare (BW & XY)', $have, $Secret_BWXY);
-foreach ($Secret_BWXY as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Secret Rare (BW & XY - Shiny)', $have, $Secret_BWXY_Shiny);
-foreach ($Secret_BWXY_Shiny as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Secret Rare (BW & XY - Gold)', $have, $Secret_BWXY_Gold);
-foreach ($Secret_BWXY_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Secret Rare (Evolutions)', $have, $Secret_Evolutions);
-foreach ($Secret_Evolutions as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'EX', $have, $EX);
-foreach ($EX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'EX (Plasma)', $have, $EX_Plasma);
-foreach ($EX_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'EX (Radiant)', $have, $EX_Radiant);
-foreach ($EX_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'EX (Evolutions)', $have, $EX_Evolutions);
-foreach ($EX_Evolutions as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Mega EX', $have, $M_EX);
-foreach ($M_EX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Mega EX (Primal)', $have, $M_EX_Primal);
-foreach ($M_EX_Primal as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Mega EX (Evolutions)', $have, $M_EX_Evolutions);
-foreach ($M_EX_Evolutions as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ace Spec', $have, $Ace_Spec);
-foreach ($Ace_Spec as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ace Spec (Plasma)', $have, $Ace_Spec_Plasma);
-foreach ($Ace_Spec_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, ' BREAK', $have, $BREAK);
-foreach ($BREAK as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ancient Trait α', $have, $Ancient_Trait_Alpha);
-foreach ($Ancient_Trait_Alpha as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ancient Trait Ω', $have, $Ancient_Trait_Omega);
-foreach ($Ancient_Trait_Omega as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ancient Trait Δ', $have, $Ancient_Trait_Delta);
-foreach ($Ancient_Trait_Delta as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ancient Trait θ', $have, $Ancient_Trait_Theta);
-foreach ($Ancient_Trait_Theta as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Mirrored Stadium', $have, $Mirrored_Stadium);
-foreach ($Mirrored_Stadium as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Radiant Collection (BW)', $have, $Radiant_Collection_BW);
-foreach ($Radiant_Collection_BW as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Radiant Collection (XY)', $have, $Radiant_Collection_XY);
-foreach ($Radiant_Collection_XY as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Trainer (BW & XY)', $have, $Full_Art_Trainer_BW_XY);
-foreach ($Full_Art_Trainer_BW_XY as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Trainer (BW & XY - Plasma)', $have, $Full_Art_Trainer_BW_XY_Plasma);
-foreach ($Full_Art_Trainer_BW_XY_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Trainer (Evolutions)', $have, $Full_Art_Trainer_Evolutions);
-foreach ($Full_Art_Trainer_Evolutions as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Pokémon (BW & XY - Textured)', $have, $Full_Art_Pokemon_BWXY_Textured);
-foreach ($Full_Art_Pokemon_BWXY_Textured as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Pokémon (BW & XY - Radiant)', $have, $Full_Art_Pokemon_BWXY_Radiant);
-foreach ($Full_Art_Pokemon_BWXY_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Pokémon (BW & XY - Plasma)', $have, $Full_Art_Pokemon_BWXY_Plasma);
-foreach ($Full_Art_Pokemon_BWXY_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Pokémon (BW & XY - Legendary)', $have, $Full_Art_Pokemon_BWXY_Legendary);
-foreach ($Full_Art_Pokemon_BWXY_Legendary as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Pokémon (BW & XY - Mythical)', $have, $Full_Art_Pokemon_BWXY_Mythical);
-foreach ($Full_Art_Pokemon_BWXY_Mythical as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Pokémon (BW & XY - Other)', $have, $Full_Art_Pokemon_BWXY_Other);
-foreach ($Full_Art_Pokemon_BWXY_Other as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'EX Full Art', $have, $EX_Full_Art);
-foreach ($EX_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'EX Full Art (Evolutions)', $have, $EX_Full_Art_Evolutions);
-foreach ($EX_Full_Art_Evolutions as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'EX Full Art (Team Plasma)', $have, $EX_Full_Art_Plasma);
-foreach ($EX_Full_Art_Plasma as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'EX Full Art (Radiant - BW)', $have, $EX_Full_Art_Radiant_BW);
-foreach ($EX_Full_Art_Radiant_BW as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'EX Full Art (Radiant - XY)', $have, $EX_Full_Art_Radiant_XY);
-foreach ($EX_Full_Art_Radiant_XY as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'EX Full Art (Special)', $have, $EX_Full_Art_Special);
-foreach ($EX_Full_Art_Special as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Mega EX Full Art', $have, $M_EX_Full_Art);
-foreach ($M_EX_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Mega EX Full Art (Primal)', $have, $M_EX_Full_Art_Primal);
-foreach ($M_EX_Full_Art_Primal as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Mega EX Full Art (Evolutions)', $have, $M_EX_Full_Art_Evolutions);
-foreach ($M_EX_Full_Art_Evolutions as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Mega EX Full Art (Radiant)', $have, $M_EX_Full_Art_Radiant);
-foreach ($M_EX_Full_Art_Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'EX Special Art', $have, $EX_Special_Art);
-foreach ($EX_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Mega EX Special Art', $have, $M_EX_Special_Art);
-foreach ($M_EX_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Mega EX Gold', $have, $Secret_M_EX);
-foreach ($Secret_M_EX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'GX', $have, $GX);
-foreach ($GX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ultra Beast GX', $have, $UB_GX);
-foreach ($UB_GX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tag Team GX', $have, $TT_GX);
-foreach ($TT_GX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tag Team Ultra Beast GX', $have, $TT_UB_GX);
-foreach ($TT_UB_GX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Shining (SM)', $have, $Shining_SM);
-foreach ($Shining_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Prism Star', $have, $Prism_Star);
-foreach ($Prism_Star as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Shiny Vault (SM)', $have, $Shiny_Vault_SM);
-foreach ($Shiny_Vault_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Trainer (SM)', $have, $Full_Art_Trainer_SM);
-foreach ($Full_Art_Trainer_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Pokémon (SM)', $have, $Full_Art_Pokemon_SM);
-foreach ($Full_Art_Pokemon_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Pokémon (SM - Screaming)', $have, $Full_Art_Pokemon_SM_Screaming);
-foreach ($Full_Art_Pokemon_SM_Screaming as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'GX Full Art', $have, $GX_Full_Art);
-foreach ($GX_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ultra Beast GX Full Art', $have, $UB_GX_Full_Art);
-foreach ($UB_GX_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tag Team GX Full Art', $have, $TT_GX_Full_Art);
-foreach ($TT_GX_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tag Team Ultra Beast GX Full Art', $have, $TT_UB_GX_Full_Art);
-foreach ($TT_UB_GX_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'GX Shiny', $have, $GX_Shiny_Full_Art);
-foreach ($GX_Shiny_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ultra Beast GX Shiny', $have, $UB_GX_Shiny_Full_Art);
-foreach ($UB_GX_Shiny_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'GX Special Art', $have, $GX_Special_Art);
-foreach ($GX_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tag Team GX Special Art', $have, $TT_GX_Special_Art);
-foreach ($TT_GX_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tag Team Ultra Beast GX Special Art', $have, $TT_UB_GX_Special_Art);
-foreach ($TT_UB_GX_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Character Art (SM)', $have, $Character_Art_SM);
-foreach ($Character_Art_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Item (SM)', $have, $Gold_Item_SM);
-foreach ($Gold_Item_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Stadium (SM)', $have, $Gold_Stadium_SM);
-foreach ($Gold_Stadium_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Energy (SM)', $have, $Gold_Energy_SM);
-foreach ($Gold_Energy_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Special Energy (SM)', $have, $Gold_Special_Energy_SM);
-foreach ($Gold_Special_Energy_SM as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'GX Gold', $have, $GX_Gold);
-foreach ($GX_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tag Team GX Gold', $have, $TT_GX_Gold);
-foreach ($TT_GX_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'GX Rainbow', $have, $GX_Rainbow);
-foreach ($GX_Rainbow as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ultra Beast GX Rainbow', $have, $UB_GX_Rainbow);
-foreach ($UB_GX_Rainbow as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tag Team GX Rainbow', $have, $TT_GX_Rainbow);
-foreach ($TT_GX_Rainbow as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tag Team Ultra Beast GX Rainbow', $have, $TT_UB_GX_Rainbow);
-foreach ($TT_UB_GX_Rainbow as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'V', $have, $V);
-foreach ($V as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VMAX', $have, $VMAX);
-foreach ($VMAX as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VMAX (Blue)', $have, $VMAX_Blue);
-foreach ($VMAX_Blue as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VMAX (Gigantamax)', $have, $VMAX_Gigantamax);
-foreach ($VMAX_Gigantamax as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VMAX (Eternamax)', $have, $VMAX_Eternamax);
-foreach ($VMAX_Eternamax as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VSTAR', $have, $VSTAR);
-foreach ($VSTAR as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'V-UNION', $have, $V_Union);
-foreach ($V_Union as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Amazing Rare', $have, $Amazing_Rare);
-foreach ($Amazing_Rare as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Radiant', $have, $Radiant);
-foreach ($Radiant as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Seal Stone', $have, $Seal_Stone);
-foreach ($Seal_Stone as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Seal Stone (Non Holo)', $have, $Seal_Stone_Non_Holo);
-foreach ($Seal_Stone_Non_Holo as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Shiny Vault (SWSH)', $have, $Shiny_Vault_SWSH);
-foreach ($Shiny_Vault_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Classic Collection', $have, $Classic_Collection);
-foreach ($Classic_Collection as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Trainer (SWSH)', $have, $Full_Art_Trainer_SWSH);
-foreach ($Full_Art_Trainer_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Energy (SWSH)', $have, $Full_Art_Energy_SWSH);
-foreach ($Full_Art_Energy_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Pokémon (SWSH)', $have, $Full_Art_Pokemon_SWSH);
-foreach ($Full_Art_Pokemon_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Pokémon (SWSH - Stamp Box)', $have, $Full_Art_Pokemon_SWSH_Stamp_Box);
-foreach ($Full_Art_Pokemon_SWSH_Stamp_Box as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'V Full Art', $have, $V_Full_Art);
-foreach ($V_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'V Shiny', $have, $V_Shiny_Full_Art);
-foreach ($V_Shiny_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VMAX Shiny', $have, $VMAX_Shiny_Full_Art);
-foreach ($VMAX_Shiny_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Special Art Trainer (SWSH)', $have, $Special_Art_Trainer_SWSH);
-foreach ($Special_Art_Trainer_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Special Art Pokémon (SWSH)', $have, $Special_Art_Pokemon_SWSH);
-foreach ($Special_Art_Pokemon_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Special Art Pokémon (SWSH - Forest)', $have, $Special_Art_Pokemon_SWSH_Forest);
-foreach ($Special_Art_Pokemon_SWSH_Forest as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'V Special Art', $have, $V_Special_Art);
-foreach ($V_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VMAX Special Art', $have, $VMAX_Special_Art);
-foreach ($VMAX_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VSTAR Special Art', $have, $VSTAR_Special_Art);
-foreach ($VSTAR_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Character Art (SWSH)', $have, $Character_Art_SWSH);
-foreach ($Character_Art_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'V Character Art', $have, $V_Character_Art);
-foreach ($V_Character_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VMAX Character Art', $have, $VMAX_Character_Art);
-foreach ($VMAX_Character_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'V-UNION Character Art', $have, $V_UNION_Character_Art);
-foreach ($V_UNION_Character_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Item (SWSH)', $have, $Gold_Item_SWSH);
-foreach ($Gold_Item_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Stadium (SWSH)', $have, $Gold_Stadium_SWSH);
-foreach ($Gold_Stadium_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Energy (SWSH)', $have, $Gold_Energy_SWSH);
-foreach ($Gold_Energy_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Special Energy (SWSH)', $have, $Gold_Special_Energy_SWSH);
-foreach ($Gold_Special_Energy_SWSH as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Shiny', $have, $Gold_Shiny);
-foreach ($Gold_Shiny as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'V Gold', $have, $V_Gold);
-foreach ($V_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VSTAR Gold', $have, $VSTAR_Gold);
-foreach ($VSTAR_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'V & VMAX Gold', $have, $V_VMAX_Gold);
-foreach ($V_VMAX_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VSTAR Gold Special Art', $have, $VSTAR_Gold_Special_Art);
-foreach ($VSTAR_Gold_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Rainbow Trainer', $have, $Rainbow_Trainer);
-foreach ($Rainbow_Trainer as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VMAX Rainbow', $have, $VMAX_Rainbow);
-foreach ($VMAX_Rainbow as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VMAX Rainbow (Blue)', $have, $VMAX_Rainbow_Blue);
-foreach ($VMAX_Rainbow_Blue as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VMAX Rainbow (Gigantamax)', $have, $VMAX_Rainbow_Gigantamax);
-foreach ($VMAX_Rainbow_Gigantamax as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VMAX Rainbow (Eternamax)', $have, $VMAX_Rainbow_Eternamax);
-foreach ($VMAX_Rainbow_Eternamax as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'VSTAR Rainbow', $have, $VSTAR_Rainbow);
-foreach ($VSTAR_Rainbow as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV)', $have, $ex_SV);
-foreach ($ex_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV - Ancient)', $have, $ex_SV_Ancient);
-foreach ($ex_SV_Ancient as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV - Future)', $have, $ex_SV_Future);
-foreach ($ex_SV_Future as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tera ex (SV)', $have, $ex_SV_Tera);
-foreach ($ex_SV_Tera as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ace Spec (SV)', $have, $Ace_Spec_SV);
-foreach ($Ace_Spec_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ace Spec (SV - Ancient)', $have, $Ace_Spec_SV_Ancient);
-foreach ($Ace_Spec_SV_Ancient as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ace Spec (SV - Future)', $have, $Ace_Spec_SV_Future);
-foreach ($Ace_Spec_SV_Future as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Shiny Vault (SV)', $have, $Shiny_Vault_SV);
-foreach ($Shiny_Vault_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Trainer (SV)', $have, $Full_Art_Trainer_SV);
-foreach ($Full_Art_Trainer_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Trainer (SV - Ancient)', $have, $Full_Art_Trainer_SV_Ancient);
-foreach ($Full_Art_Trainer_SV_Ancient as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Trainer (SV - Future)', $have, $Full_Art_Trainer_SV_Future);
-foreach ($Full_Art_Trainer_SV_Future as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Full Art Pokémon (SV)', $have, $Full_Art_Pokemon_SV);
-foreach ($Full_Art_Pokemon_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV) Full Art', $have, $ex_SV_Full_Art);
-foreach ($ex_SV_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV - Ancient) Full Art', $have, $ex_SV_Ancient_Full_Art);
-foreach ($ex_SV_Ancient_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV - Future) Full Art', $have, $ex_SV_Future_Full_Art);
-foreach ($ex_SV_Future_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tera ex (SV) Full Art', $have, $ex_SV_Tera_Full_Art);
-foreach ($ex_SV_Tera_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV) Shiny Full Art', $have, $ex_SV_Shiny_Full_Art);
-foreach ($ex_SV_Shiny_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Ancient ex (SV) Shiny Full Art', $have, $ex_SV_Ancient_Shiny_Full_Art);
-foreach ($ex_SV_Ancient_Shiny_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Future ex (SV) Shiny Full Art', $have, $ex_SV_Future_Shiny_Full_Art);
-foreach ($ex_SV_Future_Shiny_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tera ex (SV) Shiny Full Art', $have, $ex_SV_Tera_Shiny_Full_Art);
-foreach ($ex_SV_Tera_Shiny_Full_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Special Art Trainer (SV)', $have, $Special_Art_Trainer_SV);
-foreach ($Special_Art_Trainer_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Special Art Trainer (SV - Poké Ball)', $have, $Special_Art_Trainer_SV_Poke_Ball);
-foreach ($Special_Art_Trainer_SV_Poke_Ball as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Special Art Trainer (SV - Ancient)', $have, $Special_Art_Trainer_SV_Ancient);
-foreach ($Special_Art_Trainer_SV_Ancient as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Special Art Trainer (SV - Future)', $have, $Special_Art_Trainer_SV_Future);
-foreach ($Special_Art_Trainer_SV_Future as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Special Art Pokémon (SV)', $have, $Special_Art_Pokemon_SV);
-foreach ($Special_Art_Pokemon_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Special Art Pokémon (SV - Ancient)', $have, $Special_Art_Pokemon_SV_Ancient);
-foreach ($Special_Art_Pokemon_SV_Ancient as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Special Art Pokémon (SV - Future)', $have, $Special_Art_Pokemon_SV_Future);
-foreach ($Special_Art_Pokemon_SV_Future as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Special Art Pokémon (SV - Shiny)', $have, $Special_Art_Pokemon_SV_Shiny);
-foreach ($Special_Art_Pokemon_SV_Shiny as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV) Special Art', $have, $ex_SV_Special_Art);
-foreach ($ex_SV_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV - Ancient) Special Art', $have, $ex_SV_Ancient_Special_Art);
-foreach ($ex_SV_Ancient_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV - Future) Special Art', $have, $ex_SV_Future_Special_Art);
-foreach ($ex_SV_Future_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tera ex (SV) Special Art', $have, $ex_SV_Tera_Special_Art);
-foreach ($ex_SV_Tera_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV) Shiny Special Art', $have, $ex_SV_Shiny_Special_Art);
-foreach ($ex_SV_Shiny_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tera ex (SV) Shiny Special Art', $have, $ex_SV_Tera_Shiny_Special_Art);
-foreach ($ex_SV_Tera_Shiny_Special_Art as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Item (SV)', $have, $Gold_Item_SV);
-foreach ($Gold_Item_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Stadium (SV)', $have, $Gold_Stadium_SV);
-foreach ($Gold_Stadium_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Energy (SV)', $have, $Gold_Energy_SV);
-foreach ($Gold_Energy_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Gold Special Energy (SV)', $have, $Gold_Special_Energy_SV);
-foreach ($Gold_Special_Energy_SV as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV) Gold', $have, $ex_SV_Gold);
-foreach ($ex_SV_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV - Ancient) Gold', $have, $ex_SV_Ancient_Gold);
-foreach ($ex_SV_Ancient_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV - Future) Gold', $have, $ex_SV_Future_Gold);
-foreach ($ex_SV_Future_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'Tera ex (SV) Gold', $have, $ex_SV_Tera_Gold);
-foreach ($ex_SV_Tera_Gold as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
-
-start($j++, 'ex (SV) Gold (Raised Foil)', $have, $ex_SV_Gold_Raised_Foil);
-foreach ($ex_SV_Gold_Raised_Foil as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-finish();
+printCards('Ancient Mew', $Ancient_Mew);
+
+printCards('Pikachu Worlds Collection', $Pikachu_Worlds_Collection);
+
+printCards('Full Art Custume Pikachu', $Full_Art_Costume_Pikachu);
+
+printCards('Gold Pokémon', $Gold_Pokemon);
+
+printCards('Metal Cards', $Metal);
+
+printCards('Secret Rare (OS)', $Secret_OS);
+
+printCards('Shining (Neo)', $Shining_Neo);
+
+printCards('Secret Rare (e Series)', $Secret_e_Series);
+
+printCards('Crystal Type', $Crystal_Type);
+
+printCards('Secret Rare (EX)', $Secret_EX);
+
+printCards('ex', $ex);
+
+printCards('δ ex', $Delta_Species_ex);
+
+printCards('Rockets ex', $Rockets_ex);
+
+printCards('Lucario ex', $Lucario_ex);
+
+printCards('Gold Star', $Gold_Star);
+
+printCards('δ Gold Star', $Delta_Species_Gold_Star);
+
+printCards('Unown Subset', $Unown);
+
+printCards('Holo Energy (EX Emerald)', $Holo_Energy_EX_Emerald);
+
+printCards('Holo Energy (EX Holon Phantoms)', $Holo_Energy_EX_Holon_Phantoms);
+
+printCards('Holo Energy (EX Power Keepers)', $Holo_Energy_EX_Power_Keepers);
+
+printCards('Secret Rare (DP)', $Secret_DP);
+
+printCards('Secret Rare (DP - Gold)', $Secret_DP_Gold);
+
+printCards('LV.X', $LV_X);
+
+printCards('LV.X (SP)', $LV_X_SP);
+
+printCards('LV.X (Arceus)', $LV_X_Arceus);
+
+printCards('Shiny Holo Subset', $Shiny_Holo);
+
+printCards('Rotom Subset', $Rotom);
+
+printCards('Arceus Subset', $Arceus);
+
+printCards('Secret Rare (HGSS)', $Secret_HGSS);
+
+printCards('Prime', $Prime);
+
+printCards('LEGEND', $LEGEND);
+
+printCards('Alph Litograph', $Alph_Lithograph);
+
+printCards('Shiny Legend Subset', $Shiny_Legend);
+
+printCards('Shiny Legend Promo', $Shiny_Legend_Promo);
+
+printCards('Secret Rare (BW & XY)', $Secret_BWXY);
+
+printCards('Secret Rare (BW & XY - Shiny)', $Secret_BWXY_Shiny);
+
+printCards('Secret Rare (BW & XY - Gold)', $Secret_BWXY_Gold);
+
+printCards('Secret Rare (Evolutions)', $Secret_Evolutions);
+
+printCards('EX', $EX);
+
+printCards('EX (Plasma)', $EX_Plasma);
+
+printCards('EX (Radiant)', $EX_Radiant);
+
+printCards('EX (Evolutions)', $EX_Evolutions);
+
+printCards('Mega EX', $M_EX);
+
+printCards('Mega EX (Primal)', $M_EX_Primal);
+
+printCards('Mega EX (Evolutions)', $M_EX_Evolutions);
+
+printCards('Ace Spec', $Ace_Spec);
+
+printCards('Ace Spec (Plasma)', $Ace_Spec_Plasma);
+
+printCards(' BREAK', $BREAK);
+
+printCards('Ancient Trait α', $Ancient_Trait_Alpha);
+
+printCards('Ancient Trait Ω', $Ancient_Trait_Omega);
+
+printCards('Ancient Trait Δ', $Ancient_Trait_Delta);
+
+printCards('Ancient Trait θ', $Ancient_Trait_Theta);
+
+printCards('Mirrored Stadium', $Mirrored_Stadium);
+
+printCards('Radiant Collection (BW)', $Radiant_Collection_BW);
+
+printCards('Radiant Collection (XY)', $Radiant_Collection_XY);
+
+printCards('Full Art Trainer (BW & XY)', $Full_Art_Trainer_BW_XY);
+
+printCards('Full Art Trainer (BW & XY - Plasma)', $Full_Art_Trainer_BW_XY_Plasma);
+
+printCards('Full Art Trainer (Evolutions)', $Full_Art_Trainer_Evolutions);
+
+printCards('Full Art Pokémon (BW & XY - Textured)', $Full_Art_Pokemon_BWXY_Textured);
+
+printCards('Full Art Pokémon (BW & XY - Radiant)', $Full_Art_Pokemon_BWXY_Radiant);
+
+printCards('Full Art Pokémon (BW & XY - Plasma)', $Full_Art_Pokemon_BWXY_Plasma);
+
+printCards('Full Art Pokémon (BW & XY - Legendary)', $Full_Art_Pokemon_BWXY_Legendary);
+
+printCards('Full Art Pokémon (BW & XY - Mythical)', $Full_Art_Pokemon_BWXY_Mythical);
+
+printCards('Full Art Pokémon (BW & XY - Other)', $Full_Art_Pokemon_BWXY_Other);
+
+printCards('EX Full Art', $EX_Full_Art);
+
+printCards('EX Full Art (Evolutions)', $EX_Full_Art_Evolutions);
+
+printCards('EX Full Art (Team Plasma)', $EX_Full_Art_Plasma);
+
+printCards('EX Full Art (Radiant - BW)', $EX_Full_Art_Radiant_BW);
+
+printCards('EX Full Art (Radiant - XY)', $EX_Full_Art_Radiant_XY);
+
+printCards('EX Full Art (Special)', $EX_Full_Art_Special);
+
+printCards('Mega EX Full Art', $M_EX_Full_Art);
+
+printCards('Mega EX Full Art (Primal)', $M_EX_Full_Art_Primal);
+
+printCards('Mega EX Full Art (Evolutions)', $M_EX_Full_Art_Evolutions);
+
+printCards('Mega EX Full Art (Radiant)', $M_EX_Full_Art_Radiant);
+
+printCards('EX Special Art', $EX_Special_Art);
+
+printCards('Mega EX Special Art', $M_EX_Special_Art);
+
+printCards('Mega EX Gold', $Secret_M_EX);
+
+printCards('GX', $GX);
+
+printCards('Ultra Beast GX', $UB_GX);
+
+printCards('Tag Team GX', $TT_GX);
+
+printCards('Tag Team Ultra Beast GX', $TT_UB_GX);
+
+printCards('Shining (SM)', $Shining_SM);
+
+printCards('Prism Star', $Prism_Star);
+
+printCards('Shiny Vault (SM)', $Shiny_Vault_SM);
+
+printCards('Full Art Trainer (SM)', $Full_Art_Trainer_SM);
+
+printCards('Full Art Pokémon (SM)', $Full_Art_Pokemon_SM);
+
+printCards('Full Art Pokémon (SM - Screaming)', $Full_Art_Pokemon_SM_Screaming);
+
+printCards('GX Full Art', $GX_Full_Art);
+
+printCards('Ultra Beast GX Full Art', $UB_GX_Full_Art);
+
+printCards('Tag Team GX Full Art', $TT_GX_Full_Art);
+
+printCards('Tag Team Ultra Beast GX Full Art', $TT_UB_GX_Full_Art);
+
+printCards('GX Shiny', $GX_Shiny_Full_Art);
+
+printCards('Ultra Beast GX Shiny', $UB_GX_Shiny_Full_Art);
+
+printCards('GX Special Art', $GX_Special_Art);
+
+printCards('Tag Team GX Special Art', $TT_GX_Special_Art);
+
+printCards('Tag Team Ultra Beast GX Special Art', $TT_UB_GX_Special_Art);
+
+printCards('Character Art (SM)', $Character_Art_SM);
+
+printCards('Gold Item (SM)', $Gold_Item_SM);
+
+printCards('Gold Stadium (SM)', $Gold_Stadium_SM);
+
+printCards('Gold Energy (SM)', $Gold_Energy_SM);
+
+printCards('Gold Special Energy (SM)', $Gold_Special_Energy_SM);
+
+printCards('GX Gold', $GX_Gold);
+
+printCards('Tag Team GX Gold', $TT_GX_Gold);
+
+printCards('GX Rainbow', $GX_Rainbow);
+
+printCards('Ultra Beast GX Rainbow', $UB_GX_Rainbow);
+
+printCards('Tag Team GX Rainbow', $TT_GX_Rainbow);
+
+printCards('Tag Team Ultra Beast GX Rainbow', $TT_UB_GX_Rainbow);
+
+printCards('V', $V);
+
+printCards('VMAX', $VMAX);
+
+printCards('VMAX (Blue)', $VMAX_Blue);
+
+printCards('VMAX (Gigantamax)', $VMAX_Gigantamax);
+
+printCards('VMAX (Eternamax)', $VMAX_Eternamax);
+
+printCards('VSTAR', $VSTAR);
+
+printCards('V-UNION', $V_Union);
+
+printCards('Amazing Rare', $Amazing_Rare);
+
+printCards('Radiant', $Radiant);
+
+printCards('Seal Stone', $Seal_Stone);
+
+printCards('Seal Stone (Non Holo)', $Seal_Stone_Non_Holo);
+
+printCards('Shiny Vault (SWSH)', $Shiny_Vault_SWSH);
+
+printCards('Classic Collection', $Classic_Collection);
+
+printCards('Full Art Trainer (SWSH)', $Full_Art_Trainer_SWSH);
+
+printCards('Full Art Energy (SWSH)', $Full_Art_Energy_SWSH);
+
+printCards('Full Art Pokémon (SWSH)', $Full_Art_Pokemon_SWSH);
+
+printCards('Full Art Pokémon (SWSH - Stamp Box)', $Full_Art_Pokemon_SWSH_Stamp_Box);
+
+printCards('V Full Art', $V_Full_Art);
+
+printCards('V Shiny', $V_Shiny_Full_Art);
+
+printCards('VMAX Shiny', $VMAX_Shiny_Full_Art);
+
+printCards('Special Art Trainer (SWSH)', $Special_Art_Trainer_SWSH);
+
+printCards('Special Art Pokémon (SWSH)', $Special_Art_Pokemon_SWSH);
+
+printCards('Special Art Pokémon (SWSH - Forest)', $Special_Art_Pokemon_SWSH_Forest);
+
+printCards('V Special Art', $V_Special_Art);
+
+printCards('VMAX Special Art', $VMAX_Special_Art);
+
+printCards('VSTAR Special Art', $VSTAR_Special_Art);
+
+printCards('Character Art (SWSH)', $Character_Art_SWSH);
+
+printCards('V Character Art', $V_Character_Art);
+
+printCards('VMAX Character Art', $VMAX_Character_Art);
+
+printCards('V-UNION Character Art', $V_UNION_Character_Art);
+
+printCards('Gold Item (SWSH)', $Gold_Item_SWSH);
+
+printCards('Gold Stadium (SWSH)', $Gold_Stadium_SWSH);
+
+printCards('Gold Energy (SWSH)', $Gold_Energy_SWSH);
+
+printCards('Gold Special Energy (SWSH)', $Gold_Special_Energy_SWSH);
+
+printCards('Gold Shiny', $Gold_Shiny);
+
+printCards('V Gold', $V_Gold);
+
+printCards('VSTAR Gold', $VSTAR_Gold);
+
+printCards('V & VMAX Gold', $V_VMAX_Gold);
+
+printCards('VSTAR Gold Special Art', $VSTAR_Gold_Special_Art);
+
+printCards('Rainbow Trainer', $Rainbow_Trainer);
+
+printCards('VMAX Rainbow', $VMAX_Rainbow);
+
+printCards('VMAX Rainbow (Blue)', $VMAX_Rainbow_Blue);
+
+printCards('VMAX Rainbow (Gigantamax)', $VMAX_Rainbow_Gigantamax);
+
+printCards('VMAX Rainbow (Eternamax)', $VMAX_Rainbow_Eternamax);
+
+printCards('VSTAR Rainbow', $VSTAR_Rainbow);
+
+printCards('ex (SV)', $ex_SV);
+
+printCards('ex (SV - Ancient)', $ex_SV_Ancient);
+
+printCards('ex (SV - Future)', $ex_SV_Future);
+
+printCards('Tera ex (SV)', $ex_SV_Tera);
+
+printCards('Ace Spec (SV)', $Ace_Spec_SV);
+
+printCards('Ace Spec (SV - Ancient)', $Ace_Spec_SV_Ancient);
+
+printCards('Ace Spec (SV - Future)', $Ace_Spec_SV_Future);
+
+printCards('Shiny Vault (SV)', $Shiny_Vault_SV);
+
+printCards('Full Art Trainer (SV)', $Full_Art_Trainer_SV);
+
+printCards('Full Art Trainer (SV - Ancient)', $Full_Art_Trainer_SV_Ancient);
+
+printCards('Full Art Trainer (SV - Future)', $Full_Art_Trainer_SV_Future);
+
+printCards('Full Art Pokémon (SV)', $Full_Art_Pokemon_SV);
+
+printCards('ex (SV) Full Art', $ex_SV_Full_Art);
+
+printCards('ex (SV - Ancient) Full Art', $ex_SV_Ancient_Full_Art);
+
+printCards('ex (SV - Future) Full Art', $ex_SV_Future_Full_Art);
+
+printCards('Tera ex (SV) Full Art', $ex_SV_Tera_Full_Art);
+
+printCards('ex (SV) Shiny Full Art', $ex_SV_Shiny_Full_Art);
+
+printCards('Ancient ex (SV) Shiny Full Art', $ex_SV_Ancient_Shiny_Full_Art);
+
+printCards('Future ex (SV) Shiny Full Art', $ex_SV_Future_Shiny_Full_Art);
+
+printCards('Tera ex (SV) Shiny Full Art', $ex_SV_Tera_Shiny_Full_Art);
+
+printCards('Special Art Trainer (SV)', $Special_Art_Trainer_SV);
+
+printCards('Special Art Trainer (SV - Poké Ball)', $Special_Art_Trainer_SV_Poke_Ball);
+
+printCards('Special Art Trainer (SV - Ancient)', $Special_Art_Trainer_SV_Ancient);
+
+printCards('Special Art Trainer (SV - Future)', $Special_Art_Trainer_SV_Future);
+
+printCards('Special Art Pokémon (SV)', $Special_Art_Pokemon_SV);
+
+printCards('Special Art Pokémon (SV - Ancient)', $Special_Art_Pokemon_SV_Ancient);
+
+printCards('Special Art Pokémon (SV - Future)', $Special_Art_Pokemon_SV_Future);
+
+printCards('Special Art Pokémon (SV - Shiny)', $Special_Art_Pokemon_SV_Shiny);
+
+printCards('ex (SV) Special Art', $ex_SV_Special_Art);
+
+printCards('ex (SV - Ancient) Special Art', $ex_SV_Ancient_Special_Art);
+
+printCards('ex (SV - Future) Special Art', $ex_SV_Future_Special_Art);
+
+printCards('Tera ex (SV) Special Art', $ex_SV_Tera_Special_Art);
+
+printCards('ex (SV) Shiny Special Art', $ex_SV_Shiny_Special_Art);
+
+printCards('Tera ex (SV) Shiny Special Art', $ex_SV_Tera_Shiny_Special_Art);
+
+printCards('Gold Item (SV)', $Gold_Item_SV);
+
+printCards('Gold Stadium (SV)', $Gold_Stadium_SV);
+
+printCards('Gold Energy (SV)', $Gold_Energy_SV);
+
+printCards('Gold Special Energy (SV)', $Gold_Special_Energy_SV);
+
+printCards('ex (SV) Gold', $ex_SV_Gold);
+
+printCards('ex (SV - Ancient) Gold', $ex_SV_Ancient_Gold);
+
+printCards('ex (SV - Future) Gold', $ex_SV_Future_Gold);
+
+printCards('Tera ex (SV) Gold', $ex_SV_Tera_Gold);
+
+printCards('ex (SV) Gold (Raised Foil)', $ex_SV_Gold_Raised_Foil);
 
 ?>
