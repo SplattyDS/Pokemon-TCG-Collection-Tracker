@@ -24,7 +24,7 @@
 			transition: background-image 1s;
 		}
 		
-		p, h1, h2, h3, h4, label {
+		p, h1, h2, h3, h4, label, .shadow li {
 			color: black;
 			text-shadow: 1px 1px 5px white, 2px 2px 5px white, -1px -1px 5px white, -2px -2px 5px white, -1px 1px 5px white, -2px 2px 5px white, 1px -1px 5px white, 2px -2px 5px white;
 		}
@@ -1578,6 +1578,15 @@ else if (isset($_GET['test']))
 	removeCardsFrom($lf, $have);
 	removeCardsFrom($lf, $test);
 	printCards('Looking for', $lf);
+	print('<p>Max prices:</p>
+	<ul class="shadow">
+		<li>tera ex: 2</li>
+		<li>ancient ex: 1,5</li>
+		<li>future ex: 1,5</li>
+		<li>vmax: 2,5</li>
+		<li>ub gx: 3</li>
+		<li>ace spec: 3</li>
+	</ul>');
 	
 	// $test = array(-1,'\n',-1,'\n',46,47,50,'\n',-1,'\n',67,68,69,'\n',73,74,81,'\n',89,'\n',103,104,105,108,'\n',118,'\n',136,138,135,'\n',172,'\n',179,181,184,'\n',-1,'\n',198,199,202,'\n',214,215,217,218,'\n',228,'\n',-1,'\n',252,'\n',255,'\n',256,257,258,259,'\n',260,'\n',269,'\n',271,275,'\n',282,284,285,287,'\n',-1,'\n',312,314,316,317,'\n',329,335,337,'\n',362,364,368,369,370,371,'\n',374,380,381,382,383,384,385,'\n',388,395,396,'\n',408,409,'\n',-1,'\n',428,429,'\n',431,432,'\n',434,'\n',440,442,443,444,'\n',459,'\n',472,474,475,'\n',-1,'\n',488,490,491,492,'\n',512,517,'\n',530,531,'\n',552,555,556,'\n',572,575,576,'\n',-1,'\n',608,610,612,614,'\n',623,626,628,'\n',640,643,644,'\n',656,658,661,'\n',684,692,695,699,'\n',723,724,'\n',731,735,737,742,'\n',769,772,789,790,791,'\n',796,802,803,805,'\n',823,826,827,832,'\n');
 	// printCards('Iconic cards', $test);
