@@ -415,7 +415,9 @@ function idToHoloName($ID)
 
 function img($ID, $visible = false)
 {
-	if ($ID == -1)
+	if ($ID == '\n')
+		print('<br>');
+	else if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/cards/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-img', 'images/best_tracker/cards/'.idToName($ID).'.png', $visible);
@@ -425,7 +427,9 @@ function img($ID, $visible = false)
 
 function imgN($ID, $visible = false)
 {
-	if ($ID == -1)
+	if ($ID == '\n')
+		print('<br>');
+	else if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/cards/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-have-img', 'images/best_tracker/cards/'.idToName($ID).'.png', $visible);
@@ -435,12 +439,17 @@ function imgN($ID, $visible = false)
 
 function imgF($ID, $visible = false)
 {
-	cardImg('card-fut-img', 'images/best_tracker/FUT/'.idToName($ID).'.png', $visible);
+	if ($ID == '\n')
+		print('<br>');
+	else
+		cardImg('card-fut-img', 'images/best_tracker/FUT/'.idToName($ID).'.png', $visible);
 }
 
 function imgH($ID, $visible = false)
 {
-	if ($ID == -1)
+	if ($ID == '\n')
+		print('<br>');
+	else if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/holo/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-img', 'images/best_tracker/holo/'.idToHoloName($ID).'.png', $visible);
@@ -450,7 +459,9 @@ function imgH($ID, $visible = false)
 
 function imgHN($ID, $visible = false)
 {
-	if ($ID == -1)
+	if ($ID == '\n')
+		print('<br>');
+	else if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/holo/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-have-img', 'images/best_tracker/holo/'.idToHoloName($ID).'.png', $visible);
@@ -460,7 +471,9 @@ function imgHN($ID, $visible = false)
 
 function imgW($ID, $visible = false)
 {
-	if ($ID == -1)
+	if ($ID == '\n')
+		print('<br>');
+	else if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/worlds/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-img', 'images/best_tracker/worlds/'.idToName($ID).'.png', $visible);
@@ -470,7 +483,9 @@ function imgW($ID, $visible = false)
 
 function imgWN($ID, $visible = false)
 {
-	if ($ID == -1)
+	if ($ID == '\n')
+		print('<br>');
+	else if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/worlds/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-have-img', 'images/best_tracker/worlds/'.idToName($ID).'.png', $visible);
@@ -480,7 +495,9 @@ function imgWN($ID, $visible = false)
 
 function imgP($ID, $visible = false)
 {
-	if ($ID == -1)
+	if ($ID == '\n')
+		print('<br>');
+	else if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/pocket/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-img', 'images/best_tracker/pocket/'.idToName($ID).'.png', $visible);
@@ -490,7 +507,9 @@ function imgP($ID, $visible = false)
 
 function imgPN($ID, $visible = false)
 {
-	if ($ID == -1)
+	if ($ID == '\n')
+		print('<br>');
+	else if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/pocket/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-have-img', 'images/best_tracker/pocket/'.idToName($ID).'.png', $visible);
@@ -500,13 +519,10 @@ function imgPN($ID, $visible = false)
 
 function imgER($name, $visible = false)
 {
-	if ($name == '<br>')
-	{
-		print($name);
-		return;
-	}
-	
-	cardImg('card-img', 'images/best_tracker/extremely_rare/'.$name.'.png', $visible);
+	if ($name == '\n')
+		print('<br>');
+	else
+		cardImg('card-img', 'images/best_tracker/extremely_rare/'.$name.'.png', $visible);
 }
 
 function start($ID, $name, $have, $arrC, $visible = false)
@@ -669,6 +685,40 @@ function printFuture($title, &$cardArr)
 	foreach ($cardArr as $cur)
 	{
 		imgF($cur);
+	}
+	
+	finish();
+}
+
+function printMix($title, &$cards, &$futureCards, &$futureIndex)
+{
+	global $j;
+	global $have;
+	
+	start($j++, $title, $have, array_merge($cards, $futureCards));
+	
+	$curIndex = 0;
+	
+	foreach ($cards as $cur)
+	{
+		for ($k = 0; $k < count($futureCards); $k++)
+		{
+			if ($futureIndex[$k] == $curIndex)
+				imgF($futureCards[$k]);
+		}
+		
+		if (in_array($cur, $have, true))
+			imgN($cur);
+		else
+			img($cur);
+		
+		$curIndex++;
+	}
+	
+	for ($k = 0; $k < count($futureIndex); $k++)
+	{
+		if ($futureIndex[$k] == -1)
+			imgF($futureCards[$k]);
 	}
 	
 	finish();
@@ -1405,17 +1455,17 @@ else if (isset($_GET['extremely_rare']))
 {
 	$extreme_rares = array
 	(
-		'EX_1','EX_2','EX_3','<br>',
-		'DP_1','DP_2','DP_3','<br>',
-		'HGSS_1','HGSS_2','HGSS_3','<br>',
-		'BW_1','BW_2','BW_3','BW_4','<br>',
-		'XY_1','XY_2','XY_3','XY_4','<br>',
-		'SM_1','SM_2','SM_3','SM_4','<br>',
-		'SWSH_1','<br>',
-		'SV_1','SV_2','SV_3','SV_4','<br>',
-		'M_Sachiko_EX','<br>',
-		'Ishihara_GX','Ishihara_Pikachu_GX','<br>',
-		'J_Balvin_V','Katy_Perry_V','Post_Malone_V','<br>',
+		'EX_1','EX_2','EX_3','\n',
+		'DP_1','DP_2','DP_3','\n',
+		'HGSS_1','HGSS_2','HGSS_3','\n',
+		'BW_1','BW_2','BW_3','BW_4','\n',
+		'XY_1','XY_2','XY_3','XY_4','\n',
+		'SM_1','SM_2','SM_3','SM_4','\n',
+		'SWSH_1','\n',
+		'SV_1','SV_2','SV_3','SV_4','\n',
+		'M_Sachiko_EX','\n',
+		'Ishihara_GX','Ishihara_Pikachu_GX','\n',
+		'J_Balvin_V','Katy_Perry_V','Post_Malone_V','\n',
 	);
 	
 	start($j++, 'Extremely Rare Cards', array(), $extreme_rares, true);
@@ -1435,6 +1485,21 @@ else if (isset($_GET['acetone']))
 }
 else if (isset($_GET['test']))
 {
+	function removeCardsFrom(&$cards, &$removeThese)
+	{
+		foreach ($removeThese as $removeThis)
+		{
+			if (in_array($removeThis, $cards, true))
+			{
+				unset($cards[array_search($removeThis, $cards)]);
+				// if (($key = array_search($removeThis, $cards)) !== false)
+				// {
+					// unset($cards[$key]);
+				// }
+			}
+		}
+	}
+	
 	// start($j++, 'Bui', array(), array());
 	// img(1323);
 	// img(3922);
@@ -1507,7 +1572,15 @@ else if (isset($_GET['test']))
 	printCards('Test', $test);
 	
 	$test = array(3547,3995,3997,3998,3874,4010);
-	printCards('Test', $test);
+	printCards('Reserved by aunt', $test);
+	
+	$lf = array_merge($ex_SV_Tera, $VSTAR, $ex_SV_Ancient, $ex_SV_Future, $VMAX_Gigantamax, $VMAX_Eternamax, $VMAX_Blue, $UB_GX, $Ace_Spec/*, $LV_X, $LEGEND, $Prime*/);
+	removeCardsFrom($lf, $have);
+	removeCardsFrom($lf, $test);
+	printCards('Looking for', $lf);
+	
+	// $test = array(-1,'\n',-1,'\n',46,47,50,'\n',-1,'\n',67,68,69,'\n',73,74,81,'\n',89,'\n',103,104,105,108,'\n',118,'\n',136,138,135,'\n',172,'\n',179,181,184,'\n',-1,'\n',198,199,202,'\n',214,215,217,218,'\n',228,'\n',-1,'\n',252,'\n',255,'\n',256,257,258,259,'\n',260,'\n',269,'\n',271,275,'\n',282,284,285,287,'\n',-1,'\n',312,314,316,317,'\n',329,335,337,'\n',362,364,368,369,370,371,'\n',374,380,381,382,383,384,385,'\n',388,395,396,'\n',408,409,'\n',-1,'\n',428,429,'\n',431,432,'\n',434,'\n',440,442,443,444,'\n',459,'\n',472,474,475,'\n',-1,'\n',488,490,491,492,'\n',512,517,'\n',530,531,'\n',552,555,556,'\n',572,575,576,'\n',-1,'\n',608,610,612,614,'\n',623,626,628,'\n',640,643,644,'\n',656,658,661,'\n',684,692,695,699,'\n',723,724,'\n',731,735,737,742,'\n',769,772,789,790,791,'\n',796,802,803,805,'\n',823,826,827,832,'\n');
+	// printCards('Iconic cards', $test);
 	
 	// start($j++, 'Test', $have, $test);
 	// $test = array(3719,3392,3393,3394,3395,3721,3836); // UR
@@ -1528,44 +1601,25 @@ else if (isset($_GET['fut']))
 {
 	require 'BestTracker_Future.php';
 	
-	$FUT_Ancient = array('CH4','SVPEN4');
-	printFuture('Ancient', $FUT_Ancient);
+	$FUT_ex = array('SVG1','CH1','SVG2','SVPEN6','SVG3','SVI1','MC3','SVPEN9','SVJ2','SVPEN7','MC5','SVP4','SVI2','SVI3','SVP1','SVPEN8','SVI4','MC8','CH6','SVPEN2','SVP2');
+	$FUT_ex_Index = array(1,11,12,19,21,24,27,27,29,30,33,37,51,53,54,68,75,86,87,91,-1);
+	// printFuture('ex', $FUT_ex);
+	printMix('ex', $ex_SV, $FUT_ex, $FUT_ex_Index);
 	
-	$FUT_Future = array('CH3','SVPEN5');
-	printFuture('Future', $FUT_Future);
+	$FUT_Tera = array('CH2','CH5','SVJ1','MC7','MC1','MC2','MC4','MC6');
+	$FUT_Tera_Index = array(5,15,19,22,-1,-1,-1,-1);
+	// printFuture('Tera ex', $FUT_Tera);
+	printMix('Tera ex', $ex_SV_Tera, $FUT_Tera, $FUT_Tera_Index);
 	
-	$FUT_Tera = array('CH2','CH5','MC6','MC1','MC2','MC4','MC5');
-	printFuture('Tera', $FUT_Tera);
+	$FUT_Ancient = array('SVPEN4','CH4');
+	$FUT_Ancient_Index = array(2,2);
+	// printFuture('Ancient ex', $FUT_Ancient);
+	printMix('Ancient ex', $ex_SV_Ancient, $FUT_Ancient, $FUT_Ancient_Index);
 	
-	$FUT_Tera_Index = array(5,15,22,-1,-1,-1,-1);
-	
-	start($j++, 'Tera (All)', $have, $ex_SV_Tera);
-	
-	$curIndex = 0;
-	
-	foreach ($ex_SV_Tera as $cur)
-	{
-		for ($k = 0; $k < count($FUT_Tera_Index); $k++)
-		{
-			if ($FUT_Tera_Index[$k] == $curIndex)
-				imgF($FUT_Tera[$k]);
-		}
-		
-		if (in_array($cur, $have, true))
-			imgN($cur);
-		else
-			img($cur);
-		
-		$curIndex++;
-	}
-	
-	for ($k = 0; $k < count($FUT_Tera_Index); $k++)
-	{
-		if ($FUT_Tera_Index[$k] == -1)
-			imgF($FUT_Tera[$k]);
-	}
-	
-	finish();
+	$FUT_Future = array('SVPEN5','CH3');
+	$FUT_Future_Index = array(1,2);
+	// printFuture('Future ex', $FUT_Future);
+	printMix('Future ex', $ex_SV_Future, $FUT_Future, $FUT_Future_Index);
 }
 else if (isset($_GET['all']))
 	require 'BestTracker_All.php';
