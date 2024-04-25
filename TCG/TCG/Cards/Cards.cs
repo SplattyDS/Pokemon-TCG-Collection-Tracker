@@ -4407,7 +4407,14 @@ namespace TCG
 
 		public static Card Find(Sets set, double setNum)
 		{
-			return TheCards.Where(c => c.set == set && c.setNum == setNum).First();
+			try
+			{
+				return TheCards.Where(c => c.set == set && c.setNum == setNum).First();
+			}
+			catch
+			{
+				throw new Exception();
+			}
 		}
 
 		public static Card Find(Sets set, double setNum, Rarity rarity)

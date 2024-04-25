@@ -7,9 +7,9 @@
 			new FutureCardSection("Ancient Roar (JP)", "AR", 1),
 			new FutureCardSection("Future Flash (JP)", "FF", 1),
 			new FutureCardSection("Crimson Haze (JP)", "CH", 39),
-			new FutureCardSection("Mask of Change (JP)", "MC", 26),
+			new FutureCardSection("Mask of Change (JP)", "MC", 43),
 
-			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 9),
+			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 11),
 			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 4),
 
 			new FutureCardSection("Special Deck Set ex Venusaur & Charizard & Blastoise (JP)", "SVG", 5),

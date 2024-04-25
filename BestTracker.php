@@ -1483,6 +1483,10 @@ else if (isset($_GET['acetone']))
 	else
 		require 'BestTracker_Acetone.php';
 }
+else if (isset($_GET['clone']))
+{
+	require 'BestTracker_Clone.php';
+}
 else if (isset($_GET['test']))
 {
 	function removeCardsFrom(&$cards, &$removeThese)
@@ -1609,6 +1613,9 @@ else if (isset($_GET['dex']))
 else if (isset($_GET['fut']))
 {
 	require 'BestTracker_Future.php';
+	
+	$FUT_Ogerpon = array('MC1','MC2','MC4','MC6','\n','MC24','MC25','MC27','MC29','\n','MC35','MC36','MC37','MC38','\n','MC41',0,0,0);
+	printFuture('Ogerpon', $FUT_Ogerpon);
 	
 	$FUT_ex = array('SVG1','CH1','SVG2','SVPEN6','SVG3','SVI1','MC3','SVPEN9','SVJ2','SVPEN7','MC5','SVP4','SVI2','SVI3','SVP1','SVPEN8','SVI4','MC8','CH6','SVPEN2','SVP2');
 	$FUT_ex_Index = array(1,11,12,19,21,24,27,27,29,30,33,37,51,53,54,68,75,86,87,91,-1);

@@ -56,6 +56,7 @@ namespace TCG
 
 			WriteEnergy();
 			WriteAcetone();
+			WriteClone();
 
 			// PrintRarities();
 		}
@@ -651,6 +652,28 @@ namespace TCG
 			code.Add("?>");
 
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Acetone.php", code);
+		}
+
+		static void WriteClone()
+		{
+			List<string> code = new List<string>();
+
+			code.Add("<?php");
+
+			string arr = "$clones = array(";
+
+			foreach (Card[] clones in CloneCards.Get())
+				arr += string.Join(',', clones.Select(c => c.ToString())) + ",'\\n',";
+
+			arr = arr.TrimEnd(',');
+			arr += ");";
+
+			code.Add(arr);
+			code.Add("printCards('Clones', $clones);");
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Clone.php", code);
 		}
 
 		static string CodeFromCards(Section section)
