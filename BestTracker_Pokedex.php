@@ -1,5 +1,5 @@
 <?php
-$NVT = array(101,3848,3849,3850,3851,3852,3853,3854,3855,3856,3857,3858,3859,3860,3861,3862,3863,3864,3865,253,311,373,386,397,410,437,469,493,494,495,496,503,504,505,509,518,519,520,525,528,535,536,543,544,549,550,557,558,559,560,566,570,3243,633,634,635,650,651,652,667,668,669,715,716,717,718,719,720,721,722,754,755,756,757,788,792,793,3842,3843,816,817,3844,3845,844,3267,3268,3846,3847,893,914,915,941,942,947,1054,1059,1060,1062,1065,1066,1069,3157,3158,1091,1092,1093,1094,1103,1104,1105,1106,1107,1108,1133,1134,1135,1151,1152,1153,1154,1155,1156,1157,1158,1159,1185,1186,1187,1188,1189,1190,1204,1205,1206,1207,1208,1209,1210,1211,1212,1225,1247,1248,1249,1258,1259,1260,1261,1262,1274,1275,1285,1286,1287,1288,1289,1290,1291,1292,1293,1303,1304,1305,1306,1307,1308,1322,1323,1333,1334,1335,1336,1346,1347,1348,1349,1350,1351,1375,1376,1377,1378,1379,1380,1381,1382,1392,1393,1394,1395,1396,1397,1405,1410,1411,1416,1417,1418,1436,1437,1438,1439,1453,1454,1455,1456,1457,1458,1459,1473,1474,1475,1476,1477,1478,1479,1480,1481,1495,1496,1510,1511,1512,1513,1514,1515,1516,1517,1518,1519,1530,1531,1532,1533,1534,1567,1568,1569,1570,1571,1572,1587,1588,1589,1590,1591,1592,1627,1628,1629,1630,1631,1632,1646,1647,1648,1649,1650,1651,1652,1653,1654,1665,1666,1748,1749,1750,1751,1752,1753,1754,1755,1756,1757,1796,1797,1798,1799,1800,1801,1802,1803,1804,1831,1832,1833,1834,1835,1836,1837,1838,1839,3162,3173,3174,3175,3176,3177,3178,3179,3180,3181,3182,3183,3184,3185,3202,3215,3216,3217,3219,1975,1976,1977,1978,1983,1984,1985,1986,1989,1990,1991,1992,2030,2031,2032,2033,2041,2042,2043,2044,2047,2048,2049,2050,2081,2082,2083,2084,2090,2091,2094,2095,2096,2115,2119,2120,2122,2159,2160,2161,2162,2163,2164,2165,2172,2173,2174,2175,2176,2177,2180,2181,2182,2183,2202,2203,2204,2205,2206,2207,2208,2209,2367,2368,2369,2370,2371,2372,2381,2382,2383,2384,2385,2386,2389,2390,2391,2392,2442,2443,2444,2445,2446,2447,2448,2449,2450,2451,2452,2453,2454,2466,2467,2468,2469,2470,2471,2472,2473,2474,2475,2476,2477,2481,2482,2483,2484,2485,2486,2487,2488,2489,2556,2557,2558,2559,2560,2578,2579,2580,2581,2582,2586,2587,2588,2589,2590,2591,2592,2593,2594,2602,2607,2609,2615,2669,2670,2671,2672,2673,2674,2675,2684,2685,2686,2687,2688,2689,2690,2692,2693,2694,2695,2738,2739,2740,2741,2742,2743,2748,2749,2750,2751,2756,2757,2781,2782,2783,2784,2785,2840,2841,2842,2843,2844,2845,2846,2847,2848,2858,2859,2860,2861,2862,2863,2864,2865,2866,2870,2871,2872,2873,2874,2875,2899,2900,2901,2902,2903,2925,2929,2930,2931,2932,2934,2935,3308,3309,3310,3311,3312,3313,3314,3315,3323,3324,3325,3326,3327,3328,3329,3330,3333,3334,3335,3336,3359,3360,3361,3362,3363,3364,3920,3927,3921,3928,3447,3448,3449,3450,3451,3452,3453,3454,3462,3463,3464,3465,3466,3467,3468,3471,3472,3473,3474,3497,3498,3499,3500,3501,3502,3922,3929,3537,3538,3539,3540,3541,3630,3631,3632,3633,3634,3635,3636,3637,3598,3599,3600,3601,3602,3603,3604,3605,3606,3607,3049,3063,3069,3112,3113,3114,3367,3640,3693,3694,3695,3696,3697,3698,3699,3700,3707,3708,3709,3710,3713,3714,3715,3716,3796,3797,3798,3799,3800,3801,3802,3803,3813,3814,3815,3816,3817,3818,3824,3825,3826,3827,3907,3908,3909,3910,3915,3916,3918,3919,3980,3981,3982,3983,3989,3990,3992,3993,4067,4068,4069,4070,4071,4072,4073,4074,4075,4076,4086,4087,4088,4089,4090,4091,4095,4096,4097,4098,4254,4255,4256,4257,4258,4262,4263,4264,4265,4266,4312,4313,4314,4315,4316,4317,4318,4353,4354,4355,4356,4357,4358,4365,4366,4367,4368);
+$NVT = array(101,3848,3849,3850,3851,3852,3853,3854,3855,3856,3857,3858,3859,3860,3861,3862,3863,3864,3865,253,311,373,386,397,410,437,469,493,494,495,496,503,504,505,509,518,519,520,525,528,535,536,543,544,549,550,557,558,559,560,566,570,3243,633,634,635,650,651,652,667,668,669,715,716,717,718,719,720,721,722,754,755,756,757,788,792,793,3842,3843,816,817,3844,3845,844,3267,3268,3846,3847,893,914,915,941,942,947,1054,1059,1060,1062,1065,1066,1069,3157,3158,1091,1092,1093,1094,1103,1104,1105,1106,1107,1108,1133,1134,1135,1151,1152,1153,1154,1155,1156,1157,1158,1159,1185,1186,1187,1188,1189,1190,1204,1205,1206,1207,1208,1209,1210,1211,1212,1225,1247,1248,1249,1258,1259,1260,1261,1262,1274,1275,1285,1286,1287,1288,1289,1290,1291,1292,1293,1303,1304,1305,1306,1307,1308,1322,1323,1333,1334,1335,1336,1346,1347,1348,1349,1350,1351,1375,1376,1377,1378,1379,1380,1381,1382,1392,1393,1394,1395,1396,1397,1405,1410,1411,1416,1417,1418,1436,1437,1438,1439,1453,1454,1455,1456,1457,1458,1459,1473,1474,1475,1476,1477,1478,1479,1480,1481,1495,1496,1510,1511,1512,1513,1514,1515,1516,1517,1518,1519,1530,1531,1532,1533,1534,1567,1568,1569,1570,1571,1572,1587,1588,1589,1590,1591,1592,1627,1628,1629,1630,1631,1632,1646,1647,1648,1649,1650,1651,1652,1653,1654,1665,1666,1748,1749,1750,1751,1752,1753,1754,1755,1756,1757,1796,1797,1798,1799,1800,1801,1802,1803,1804,1831,1832,1833,1834,1835,1836,1837,1838,1839,3162,3173,3174,3175,3176,3177,3178,3179,3180,3181,3182,3183,3184,3185,3202,3215,3216,3217,3219,1975,1976,1977,1978,1983,1984,1985,1986,1989,1990,1991,1992,2030,2031,2032,2033,2041,2042,2043,2044,2047,2048,2049,2050,2081,2082,2083,2084,2090,2091,2094,2095,2096,2115,2119,2120,2122,2159,2160,2161,2162,2163,2164,2165,2172,2173,2174,2175,2176,2177,2180,2181,2182,2183,2202,2203,2204,2205,2206,2207,2208,2209,2367,2368,2369,2370,2371,2372,2381,2382,2383,2384,2385,2386,2389,2390,2391,2392,2442,2443,2444,2445,2446,2447,2448,2449,2450,2451,2452,2453,2454,2466,2467,2468,2469,2470,2471,2472,2473,2474,2475,2476,2477,2481,2482,2483,2484,2485,2486,2487,2488,2489,2556,2557,2558,2559,2560,2578,2579,2580,2581,2582,2586,2587,2588,2589,2590,2591,2592,2593,2594,2602,2607,2609,2615,2669,2670,2671,2672,2673,2674,2675,2684,2685,2686,2687,2688,2689,2690,2692,2693,2694,2695,2738,2739,2740,2741,2742,2743,2748,2749,2750,2751,2756,2757,2781,2782,2783,2784,2785,2840,2841,2842,2843,2844,2845,2846,2847,2848,2858,2859,2860,2861,2862,2863,2864,2865,2866,2870,2871,2872,2873,2874,2875,2899,2900,2901,2902,2903,2925,2929,2930,2931,2932,2934,2935,3308,3309,3310,3311,3312,3313,3314,3315,3323,3324,3325,3326,3327,3328,3329,3330,3333,3334,3335,3336,3359,3360,3361,3362,3363,3364,3920,3927,3921,3928,3447,3448,3449,3450,3451,3452,3453,3454,3462,3463,3464,3465,3466,3467,3468,3471,3472,3473,3474,3497,3498,3499,3500,3501,3502,3922,3929,3537,3538,3539,3540,3541,3630,3631,3632,3633,3634,3635,3636,3637,3598,3599,3600,3601,3602,3603,3604,3605,3606,3607,3049,3063,3069,3112,3113,3114,3367,3640,3693,3694,3695,3696,3697,3698,3699,3700,3707,3708,3709,3710,3713,3714,3715,3716,3796,3797,3798,3799,3800,3801,3802,3803,3813,3814,3815,3816,3817,3818,3824,3825,3826,3827,3907,3908,3909,3910,3915,3916,3918,3919,3980,3981,3982,3983,3989,3990,3992,3993,4067,4068,4069,4070,4071,4072,4073,4074,4075,4076,4086,4087,4088,4089,4090,4091,4095,4096,4097,4098,4254,4255,4256,4257,4258,4262,4263,4264,4265,4266,4312,4313,4314,4315,4316,4317,4318,4353,4354,4355,4356,4357,4358,4365,4366,4367,4368,4396,4397,4398,4399,4400,4401,4437,4438,4439,4440,4441,4442,4443,4451,4452,4453,4454,4457,4458,4459,4460,4461);
 printCards('NVT', $NVT);
 
 $Bulbasaur = array(3952);
@@ -66,7 +66,7 @@ printCards('Fearow', $Fearow);
 $Arbok = array(3943,3971,4332);
 printCards('Arbok', $Arbok);
 
-$Pikachu = array(3224,189,195,303,3142,3930,3931,3932,3933,3934,3935,3936,3937,3938,3939,430,3231,863,995,1023,1044,3145,3147,3148,3149,3151,3152,3153,3154,3155,3159,3160,3161,1484,1500,1522,1809,1893,1921,3091,3163,3200,3201,3206,3209,3218,2130,2131,2150,2168,2595,2611,2643,2728,3341,3352,3353,3365,3222,3571,3009,3020,3021,3022,3056,3057,3058,3059,3060,3062,3096,3390,3391,3221,3732,3959,4158,3828,3994,4379,4289,4290);
+$Pikachu = array(3224,189,195,303,3142,3930,3931,3932,3933,3934,3935,3936,3937,3938,3939,430,3231,863,995,1023,1044,3145,3147,3148,3149,3151,3152,3153,3154,3155,3159,3160,3161,1484,1500,1522,1809,1893,1921,3091,3163,3200,3201,3206,3209,3218,2130,2131,2150,2168,2595,2611,2643,2728,3341,3352,3353,3365,3222,3571,3009,3020,3021,3022,3056,3057,3058,3059,3060,3062,3096,3390,3391,3221,3732,3959,4158,3828,3994,4379,4467,4289,4290);
 printCards('Pikachu', $Pikachu);
 
 $Flying_Pikachu = array(304,944,2596,2597);
@@ -74,6 +74,7 @@ printCards('Flying Pikachu', $Flying_Pikachu);
 
 $Surfing_Pikachu = array(305,945,2598,2599);
 printCards('Surfing Pikachu', $Surfing_Pikachu);
+
 
 $Raichu = array(1,9,39,122,274,389,799,3251,1216,1227,1597,1616,1617,1637,1659,1870,1915,2706,2729,3759,4159);
 printCards('Raichu', $Raichu);
@@ -172,6 +173,8 @@ printCards('Primeape', $Primeape);
 $Growlithe = array(3228);
 printCards('Growlithe', $Growlithe);
 
+$Hisuian_Growlithe = array(4415);
+printCards('Hisuian Growlithe', $Hisuian_Growlithe);
 
 $Arcanine = array(179,1046,3646,3682);
 printCards('Arcanine', $Arcanine);
@@ -329,7 +332,7 @@ printCards('Galarian Weezing', $Galarian_Weezing);
 
 
 
-$Chansey = array(27);
+$Chansey = array(27,4421);
 printCards('Chansey', $Chansey);
 
 $Tangela = array(3964);
@@ -366,14 +369,20 @@ printCards('Electabuzz', $Electabuzz);
 $Magmar = array(31);
 printCards('Magmar', $Magmar);
 
-$Pinsir = array(1655);
+$Pinsir = array(1655,4402);
 printCards('Pinsir', $Pinsir);
 
 $Tauros = array(1081,1089,1101);
 printCards('Tauros', $Tauros);
 
-$Paldean_Tauros = array(3766,4138,4147,4199);
-printCards('Paldean Tauros', $Paldean_Tauros);
+$Paldean_Tauros_Combat = array(3766,4199);
+printCards('Paldean Tauros Combat', $Paldean_Tauros_Combat);
+
+$Paldean_Tauros_Blaze = array(4138);
+printCards('Paldean Tauros Blaze', $Paldean_Tauros_Blaze);
+
+$Paldean_Tauros_Aqua = array(4147);
+printCards('Paldean Tauros Aqua', $Paldean_Tauros_Aqua);
 
 $Magikarp = array(3,1498,1499,1521,1891,2613,3751);
 printCards('Magikarp', $Magikarp);
@@ -387,7 +396,7 @@ printCards('Lapras', $Lapras);
 $Ditto = array(1434,2196,2197,2328,2329,3563,4228);
 printCards('Ditto', $Ditto);
 
-$Eevee = array(3237,1494,1509,1529,1708,1894,1898,1899,1900,1922,1927,3194,3208,2768,3532,3024,3032,3116);
+$Eevee = array(3237,1494,1509,1529,1708,1894,1898,1899,1900,1922,1927,3194,3208,2768,3532,3024,3032,3116,4422);
 printCards('Eevee', $Eevee);
 
 $Vaporeon = array(174,231,854,1896,2498,2529,2759,3067,3086,3087);
@@ -538,6 +547,8 @@ $Aipom = array(4043);
 printCards('Aipom', $Aipom);
 
 
+$Sunflora = array(4403);
+printCards('Sunflora', $Sunflora);
 
 $Yanma = array(324);
 printCards('Yanma', $Yanma);
@@ -613,7 +624,7 @@ $Ursaring = array(379,3239);
 printCards('Ursaring', $Ursaring);
 
 
-$Magcargo = array(48,675,2962,1424,1443,1463);
+$Magcargo = array(48,675,2962,1424,1443,1463,4384,4425);
 printCards('Magcargo', $Magcargo);
 
 
@@ -659,7 +670,7 @@ printCards('Magby', $Magby);
 $Miltank = array(3565);
 printCards('Miltank', $Miltank);
 
-$Blissey = array(127,363,2413,2438,2439,3496);
+$Blissey = array(127,363,2413,2438,2439,3496,4394,4435);
 printCards('Blissey', $Blissey);
 
 $Raikou = array(57,114,140,382,383,419,425,457,463,1877,2133,2707,3582);
@@ -800,6 +811,8 @@ $Mawile = array(1004,1005,1606,1623,1642,3417,3418,3437,3459,3491);
 printCards('Mawile', $Mawile);
 
 
+$Lairon = array(4418);
+printCards('Lairon', $Lairon);
 
 $Aggron = array(36,197,694,695,711,712,2715,2716);
 printCards('Aggron', $Aggron);
@@ -839,7 +852,7 @@ printCards('Wailord', $Wailord);
 $Camerupt = array(117,677,704,1052,1070);
 printCards('Camerupt', $Camerupt);
 
-$Torkoal = array(1805,1944,1964);
+$Torkoal = array(1805,1944,1964,4406);
 printCards('Torkoal', $Torkoal);
 
 
@@ -900,6 +913,9 @@ $Castform = array(3347);
 printCards('Castform', $Castform);
 
 
+
+
+
 $Shuppet = array(1683);
 printCards('Shuppet', $Shuppet);
 
@@ -915,6 +931,8 @@ printCards('Dusclops', $Dusclops);
 $Tropius = array(3743);
 printCards('Tropius', $Tropius);
 
+$Chimecho = array(4413);
+printCards('Chimecho', $Chimecho);
 
 $Absol = array(61,221,312,398,977,978,3557,3881,3903);
 printCards('Absol', $Absol);
@@ -983,8 +1001,17 @@ printCards('Rayquaza', $Rayquaza);
 $Jirachi = array(62,202,3134,554,563,3255,1011,1067,1219,1361,1601,1938,3189,2140,2829,3422,3403);
 printCards('Jirachi', $Jirachi);
 
-$Deoxys = array(103,104,105,118,236,3130,411,531,539,604,3553,3586,3587,3382,3383,3384);
+$Deoxys = array(103,3130,411,531,539,604,3553,3382);
 printCards('Deoxys', $Deoxys);
+
+$Deoxys_Attack = array(104,3587,3384);
+printCards('Deoxys Attack', $Deoxys_Attack);
+
+$Deoxys_Defense = array(105,3586,3383);
+printCards('Deoxys Defense', $Deoxys_Defense);
+
+$Deoxys_Speed = array(118,236);
+printCards('Deoxys Speed', $Deoxys_Speed);
 
 $Turtwig = array(3572);
 printCards('Turtwig', $Turtwig);
@@ -997,7 +1024,7 @@ printCards('Torterra', $Torterra);
 
 
 
-$Infernape = array(248,299,344,3368);
+$Infernape = array(248,299,344,3368,4407);
 printCards('Infernape', $Infernape);
 
 $Piplup = array(3230,1807);
@@ -1030,12 +1057,17 @@ printCards('Shinx', $Shinx);
 $Luxio = array(4163);
 printCards('Luxio', $Luxio);
 
-$Luxray = array(300,827,2620,2799,2827,4164);
+$Luxray = array(300,827,2620,2799,2827,4164,4388,4429);
 printCards('Luxray', $Luxray);
 
 
 $Roserade = array(3338);
 printCards('Roserade', $Roserade);
+
+
+
+
+
 
 
 
@@ -1054,6 +1086,11 @@ printCards('Pachirisu', $Pachirisu);
 
 $Floatzel = array(295);
 printCards('Floatzel', $Floatzel);
+
+
+
+
+
 
 
 
@@ -1183,15 +1220,32 @@ printCards('Porygon Z', $Porygon_Z);
 $Gallade = array(297,730,731,746,747,966,1812,3300,3355,3374);
 printCards('Gallade', $Gallade);
 
+$Probopass = array(4416);
+printCards('Probopass', $Probopass);
 
 $Dusknoir = array(271,569,2763);
 printCards('Dusknoir', $Dusknoir);
 
-$Froslass = array(3250,2583,3995,4049);
+$Froslass = array(3250,2583,3995,4049,4408);
 printCards('Froslass', $Froslass);
 
-$Rotom = array(306,307,308,309,310,2248,3274,3295,3296,3514,3515,3373);
+$Rotom = array(2248,3274,3295,3296,3514,3515,3373);
 printCards('Rotom', $Rotom);
+
+$Heat_Rotom = array(308);
+printCards('Heat Rotom', $Heat_Rotom);
+
+$Wash_Rotom = array(310);
+printCards('Wash Rotom', $Wash_Rotom);
+
+$Frost_Rotom = array(307);
+printCards('Frost Rotom', $Frost_Rotom);
+
+$Fan_Rotom = array(306);
+printCards('Fan Rotom', $Fan_Rotom);
+
+$Mow_Rotom = array(309);
+printCards('Mow Rotom', $Mow_Rotom);
 
 $Uxie = array(270);
 printCards('Uxie', $Uxie);
@@ -1202,11 +1256,17 @@ printCards('Mesprit', $Mesprit);
 $Azelf = array(264);
 printCards('Azelf', $Azelf);
 
-$Dialga = array(258,282,347,354,412,555,564,660,672,988,1271,1283,1301,1318,1330,1343,2814,2815,2836,2857,2869,3609,3371,3372);
+$Dialga = array(258,282,347,354,412,555,564,660,672,988,1271,1283,1301,1318,1330,1343);
 printCards('Dialga', $Dialga);
 
-$Palkia = array(259,285,348,3138,408,409,418,556,565,824,986,1272,1284,1302,1311,1324,1337,2795,2796,2826,2851,2867,3608,3369,3370);
+$Dialga_Origin = array(2814,2815,2836,2857,2869,3609,3371,3372);
+printCards('Dialga Origin', $Dialga_Origin);
+
+$Palkia = array(259,285,348,3138,408,409,418,556,565,824,986,1272,1284,1302,1311,1324,1337);
 printCards('Palkia', $Palkia);
+
+$Palkia_Origin = array(2795,2796,2826,2851,2867,3608,3369,3370);
+printCards('Palkia Origin', $Palkia_Origin);
 
 $Heatran = array(272,353,529,537,1594,1612,1634,2791,2792,2793,2824,2850);
 printCards('Heatran', $Heatran);
@@ -1214,21 +1274,29 @@ printCards('Heatran', $Heatran);
 $Regigigas = array(275,352,444,450,993,3533,3534,3596);
 printCards('Regigigas', $Regigigas);
 
-$Giratina = array(284,355,475,481,602,774,786,3144,1265,3284,3285,3304,3305,3320,3331,3610,3375);
+$Giratina = array(475,481,602,3144);
 printCards('Giratina', $Giratina);
+
+$Giratina_Origin = array(284,355,774,786,1265,3284,3285,3304,3305,3320,3331,3610,3375);
+printCards('Giratina Origin', $Giratina_Origin);
 
 $Cresselia = array(256,489,499,2585);
 printCards('Cresselia', $Cresselia);
 
+$Phione = array(4409);
+printCards('Phione', $Phione);
 
 $Manaphy = array(825,838,1012,3547);
 printCards('Manaphy', $Manaphy);
 
-$Darkrai = array(257,349,406,407,459,2945,465,579,596,601,830,840,1013,1169,1182,1201,1268,1737,1932,2810,2811,3591);
+$Darkrai = array(257,349,406,407,459,2945,465,579,596,601,830,840,1013,1169,1182,1201,1268,1737,1932,2810,2811,3591,4468);
 printCards('Darkrai', $Darkrai);
 
-$Shaymin = array(286,287,356,439,445,586,743,753,1014,1030,1058,1483,2696,2697,2723,2744);
-printCards('Shaymin', $Shaymin);
+$Shaymin_Land = array(286,1014,1030);
+printCards('Shaymin Land', $Shaymin_Land);
+
+$Shaymin_Sky = array(287,356,439,445,586,743,753,1058,1483,2696,2697,2723,2744);
+printCards('Shaymin Sky', $Shaymin_Sky);
 
 $Arceus = array(3612,3613,325,326,327,334,335,336,337,338,339,340,341,342,2943,360,361,3838,994,1015,1222,1321,1773,1788,1789,1826,2720,2721,2736,2737,2747,2755,3611,3125,3718,3719);
 printCards('Arceus', $Arceus);
@@ -1300,6 +1368,8 @@ printCards('Excadrill', $Excadrill);
 $Audino = array(3240,883,884);
 printCards('Audino', $Audino);
 
+$Timburr = array(4417);
+printCards('Timburr', $Timburr);
 
 
 $Conkeldurr = array(2912,2920,2921);
@@ -1329,6 +1399,7 @@ printCards('Hisuian Lilligant', $Hisuian_Lilligant);
 
 
 
+
 $Sandile = array(3674);
 printCards('Sandile', $Sandile);
 
@@ -1341,8 +1412,10 @@ $Galarian_Darumaka = array(2233);
 printCards('Galarian Darumaka', $Galarian_Darumaka);
 
 
+
 $Galarian_Darmanitan = array(2128,2129,2149,2167,2234);
 printCards('Galarian Darmanitan', $Galarian_Darmanitan);
+
 
 
 
@@ -1410,11 +1483,17 @@ $Vanillish = array(4022);
 printCards('Vanillish', $Vanillish);
 
 
-$Deerling = array(4321);
-printCards('Deerling', $Deerling);
 
-$Sawsbuck = array(4322);
-printCards('Sawsbuck', $Sawsbuck);
+
+$Deerling_Autumn = array(4321);
+printCards('Deerling Autumn', $Deerling_Autumn);
+
+
+
+
+$Sawsbuck_Autumn = array(4322);
+printCards('Sawsbuck Autumn', $Sawsbuck_Autumn);
+
 
 $Emolga = array(588,611,617);
 printCards('Emolga', $Emolga);
@@ -1510,11 +1589,17 @@ printCards('Terrakion', $Terrakion);
 $Virizion = array(433,551,561,568,1423,1442,1462,2823,3400);
 printCards('Virizion', $Virizion);
 
-$Tornadus = array(432,460,466,534,542,606,1882,2414,2415,2440,2441,2465);
+$Tornadus = array(432,460,466,606,1882,2414,2415,2440,2441,2465);
 printCards('Tornadus', $Tornadus);
 
-$Thundurus = array(431,530,538,603,727,745,1881,4166);
+$Tornadus_Therian = array(534,542);
+printCards('Tornadus Therian', $Tornadus_Therian);
+
+$Thundurus = array(431,727,745,1881,4166);
 printCards('Thundurus', $Thundurus);
+
+$Thundurus_Therian = array(530,538,603);
+printCards('Thundurus Therian', $Thundurus_Therian);
 
 $Reshiram = array(428,440,446,572,583,587,591,985,1399,1406,1412,1537,1552,1575,1718,1774,1790,1827,1883,1911,3090,2186,2623,3408,3431);
 printCards('Reshiram', $Reshiram);
@@ -1522,8 +1607,11 @@ printCards('Reshiram', $Reshiram);
 $Zekrom = array(429,442,448,575,584,593,987,1884,3204,3205,2624,2762);
 printCards('Zekrom', $Zekrom);
 
-$Landorus = array(490,500,594);
+$Landorus = array(594);
 printCards('Landorus', $Landorus);
+
+$Landorus_Therian = array(490,500);
+printCards('Landorus Therian', $Landorus_Therian);
 
 $Kyurem = array(441,447,486,553,573,592,764,779,3270,3271,3293,3316);
 printCards('Kyurem', $Kyurem);
@@ -1534,11 +1622,15 @@ printCards('Black Kyurem', $Black_Kyurem);
 $White_Kyurem = array(492,2950,502,516,2955,581,600,992,1404,1415,1886);
 printCards('White Kyurem', $White_Kyurem);
 
-$Keldeo = array(488,2948,498,574,598,1017,1596,1615,1636,1948,3548);
-printCards('Keldeo', $Keldeo);
+$Keldeo_Ordinary = array(1017,3548);
+printCards('Keldeo Ordinary', $Keldeo_Ordinary);
 
-$Meloetta = array(585,590,1019);
-printCards('Meloetta', $Meloetta);
+$Keldeo_Resolute = array(488,2948,498,574,598,1596,1615,1636,1948);
+printCards('Keldeo Resolute', $Keldeo_Resolute);
+
+$Meloetta_Aria = array(585,590,1019);
+printCards('Meloetta Aria', $Meloetta_Aria);
+
 
 $Genesect = array(552,562,877,889,1018,1213,1430,1449,1469,2652,2665,2666);
 printCards('Genesect', $Genesect);
@@ -1561,8 +1653,11 @@ printCards('Froakie', $Froakie);
 $Frogadier = array(1679);
 printCards('Frogadier', $Frogadier);
 
-$Greninja = array(826,954,1026,1312,1325,1338,1542,1558,1559,1580,1723,1910,3196,2639,3621,2797,3061,3071,3072,3073,3074,4099);
+$Greninja = array(826,954,1312,1325,1338,1542,1558,1559,1580,1723,1910,3196,2639,3621,2797,3061,3071,3072,3073,3074,4391,4432,4448,4099);
 printCards('Greninja', $Greninja);
+
+$Ash_Greninja = array(1026);
+printCards('Ash Greninja', $Ash_Greninja);
 
 $Bunnelby = array(702,2978,2307);
 printCards('Bunnelby', $Bunnelby);
@@ -1576,6 +1671,7 @@ printCards('Fletchinder', $Fletchinder);
 
 $Talonflame = array(896,2127,2148);
 printCards('Talonflame', $Talonflame);
+
 
 
 
@@ -1598,16 +1694,32 @@ printCards('Florges', $Florges);
 
 
 
+
+
+
+
+
+
+
+
+
 $Espurr = array(3256);
 printCards('Espurr', $Espurr);
 
-$Meowstic = array(858,3257);
+$Meowstic = array(3257);
 printCards('Meowstic', $Meowstic);
 
+$Meowstic_F = array(858);
+printCards('Meowstic F', $Meowstic_F);
 
 
-$Aegislash = array(661,1057,2141,2142,2157,2170,4009,4042,4062);
-printCards('Aegislash', $Aegislash);
+
+
+$Aegislash_Shield = array(661,1057,4042);
+printCards('Aegislash Shield', $Aegislash_Shield);
+
+$Aegislash_Blade = array(2141,2142,2157,2170,4009,4062);
+printCards('Aegislash Blade', $Aegislash_Blade);
 
 
 
@@ -1634,6 +1746,8 @@ $Clawitzer = array(899);
 printCards('Clawitzer', $Clawitzer);
 
 
+$Heliolisk = array(4411);
+printCards('Heliolisk', $Heliolisk);
 
 
 $Tyrantrum = array(981);
@@ -1686,14 +1800,21 @@ printCards('Xerneas', $Xerneas);
 $Yveltal = array(612,618,3258,900,949,1032,1068,1317,1329,1342,2195,4037);
 printCards('Yveltal', $Yveltal);
 
-$Zygarde = array(874,1033,1063,1315,1328,1341,1732,1878,3203);
-printCards('Zygarde', $Zygarde);
+
+$Zygarde_50 = array(1878,3203);
+printCards('Zygarde 50', $Zygarde_50);
+
+$Zygarde_Complete = array(874,1033,1063,1315,1328,1341,1732);
+printCards('Zygarde Complete', $Zygarde_Complete);
 
 $Diancie = array(3263,879,964,965,1316,1703,3554);
 printCards('Diancie', $Diancie);
 
-$Hoopa = array(769,782,982,996,3150,1490,1504,1525,2664,3594,3083,4005,4058);
-printCards('Hoopa', $Hoopa);
+$Hoopa_Confined = array(996,3150);
+printCards('Hoopa Confined', $Hoopa_Confined);
+
+$Hoopa_Unbound = array(769,782,982,1490,1504,1525,2664,3594,3083,4005,4058);
+printCards('Hoopa Unbound', $Hoopa_Unbound);
 
 $Volcanion = array(898,908,916,1043,1050,1215,1313,2397,2418);
 printCards('Volcanion', $Volcanion);
@@ -1740,8 +1861,13 @@ printCards('Vikavolt', $Vikavolt);
 $Crabominable = array(2640,2659);
 printCards('Crabominable', $Crabominable);
 
-$Oricorio = array(1769,1785,1823,3545,4140);
-printCards('Oricorio', $Oricorio);
+$Oricorio_Baile = array(3545,4140);
+printCards('Oricorio Baile', $Oricorio_Baile);
+
+
+
+$Oricorio_Sensu = array(1769,1785,1823);
+printCards('Oricorio Sensu', $Oricorio_Sensu);
 
 $Cutiefly = array(4328);
 printCards('Cutiefly', $Cutiefly);
@@ -1750,11 +1876,20 @@ printCards('Cutiefly', $Cutiefly);
 $Rockruff = array(1690,3481);
 printCards('Rockruff', $Rockruff);
 
-$Lycanroc = array(1116,1128,1146,1179,1198,1489,1733,1734,1841,2512,2513,2544,2570,3097,3736,3789);
-printCards('Lycanroc', $Lycanroc);
+$Lycanroc_Midday = array(1179,1198,1734,1841);
+printCards('Lycanroc Midday', $Lycanroc_Midday);
 
-$Wishiwashi = array(1111,1123,1141,1767,1808,3165,3186);
-printCards('Wishiwashi', $Wishiwashi);
+$Lycanroc_Midnight = array(1116,1128,1146,1733,3736,3789);
+printCards('Lycanroc Midnight', $Lycanroc_Midnight);
+
+$Lycanroc_Dusk = array(1489,2512,2513,2544,2570,3097);
+printCards('Lycanroc Dusk', $Lycanroc_Dusk);
+
+$Wishiwashi_Solo = array(1767,3165,3186);
+printCards('Wishiwashi Solo', $Wishiwashi_Solo);
+
+$Wishiwashi_School = array(1111,1123,1141,1808);
+printCards('Wishiwashi School', $Wishiwashi_School);
 
 
 $Toxapex = array(1114,1126,1144);
@@ -1815,6 +1950,7 @@ printCards('Silvally', $Silvally);
 
 $Minior = array(4033);
 printCards('Minior', $Minior);
+
 
 
 $Turtonator = array(1109,1121,1138,1719);
@@ -2006,7 +2142,7 @@ printCards('Carkol', $Carkol);
 $Coalossal = array(2093,2135,2136,2153,2169,2279);
 printCards('Coalossal', $Coalossal);
 
-$Applin = array(2222);
+$Applin = array(2222,4419);
 printCards('Applin', $Applin);
 
 $Flapple = array(2223,2334,2335,2352,2373,2877);
@@ -2021,7 +2157,7 @@ printCards('Silicobra', $Silicobra);
 $Sandaconda = array(2009,2025,2281,2405,2406,2431,2462,2663);
 printCards('Sandaconda', $Sandaconda);
 
-$Cramorant = array(1962,1974,2199,2200,2240,3031,3220);
+$Cramorant = array(1962,1974,2199,2200,2240,3031,3220,4410);
 printCards('Cramorant', $Cramorant);
 
 $Arrokuda = array(2241);
@@ -2033,8 +2169,14 @@ printCards('Barraskewda', $Barraskewda);
 $Toxel = array(2251,4167);
 printCards('Toxel', $Toxel);
 
-$Toxtricity = array(2004,2005,2023,2037,2252,2322,2323,3550,3006,4006,4059,4168);
+$Toxtricity = array(2005,2037,2323);
 printCards('Toxtricity', $Toxtricity);
+
+$Toxtricity_Amped = array(2004,2023,2252,2322,4006,4059);
+printCards('Toxtricity Amped', $Toxtricity_Amped);
+
+$Toxtricity_Low_Key = array(3550,3006,4168);
+printCards('Toxtricity Low Key', $Toxtricity_Low_Key);
 
 $Sizzlipede = array(2228);
 printCards('Sizzlipede', $Sizzlipede);
@@ -2114,11 +2256,18 @@ printCards('Stonjourner', $Stonjourner);
 $Eiscue = array(2002,2245,3753,3869,3899,3911);
 printCards('Eiscue', $Eiscue);
 
-$Indeedee = array(1953,1968,2192,2269,2324);
-printCards('Indeedee', $Indeedee);
 
-$Morpeko = array(1950,1951,1966,1980,2190,2191,2254,2714,3018,3104,3105,3106,3107,3392,3393,3394,3395,4038);
+$Indeedee_F = array(1953,1968,2269,2324);
+printCards('Indeedee F', $Indeedee_F);
+
+$Indeedee_M = array(2192);
+printCards('Indeedee M', $Indeedee_M);
+
+$Morpeko = array(1950,1951,1966,1980,2190,2191,2254,3018,3104,3105,3106,3107,3392,3393,3394,3395);
 printCards('Morpeko', $Morpeko);
+
+$Morpeko_Hangry = array(2714,4038);
+printCards('Morpeko Hangry', $Morpeko_Hangry);
 
 $Cufant = array(2300);
 printCards('Cufant', $Cufant);
@@ -2147,7 +2296,7 @@ printCards('Dreepy', $Dreepy);
 $Drakloak = array(2271);
 printCards('Drakloak', $Drakloak);
 
-$Dragapult = array(2007,2008,2024,2038,2272,3033,3034,3052);
+$Dragapult = array(2007,2008,2024,2038,2272,3033,3034,3052,4393,4434);
 printCards('Dragapult', $Dragapult);
 
 $Zacian = array(1958,1971,1987,2134,2600,2896,3522,3523,3589,3007,3025,3055,3079,3080,3081,3082,3397);
@@ -2193,13 +2342,18 @@ printCards('Kleavor', $Kleavor);
 $Ursaluna = array(3420);
 printCards('Ursaluna', $Ursaluna);
 
+$Bloodmoon_Ursaluna = array(4395,4436,4450,4456);
+printCards('Bloodmoon Ursaluna', $Bloodmoon_Ursaluna);
+
+
 
 $Sneasler = array(2809,2833,2834,3281);
 printCards('Sneasler', $Sneasler);
 
 
-$Enamorus = array(3276,3297,3354);
+$Enamorus = array(3276,3297,3354,4414);
 printCards('Enamorus', $Enamorus);
+
 
 $Sprigatito = array(3744,4280,4378);
 printCards('Sprigatito', $Sprigatito);
@@ -2231,8 +2385,11 @@ printCards('Quaquaval', $Quaquaval);
 $Lechonk = array(3898,4234);
 printCards('Lechonk', $Lechonk);
 
-$Oinkologne = array(3656,3692,4235);
-printCards('Oinkologne', $Oinkologne);
+$Oinkologne_F = array(4235);
+printCards('Oinkologne F', $Oinkologne_F);
+
+$Oinkologne_M = array(3656,3692);
+printCards('Oinkologne M', $Oinkologne_M);
 
 $Tarountula = array(3657);
 printCards('Tarountula', $Tarountula);
@@ -2256,6 +2413,7 @@ printCards('Tandemaus', $Tandemaus);
 
 $Maushold = array(3774,4013,4065,4237);
 printCards('Maushold', $Maushold);
+
 
 $Fidough = array(3671,4273);
 printCards('Fidough', $Fidough);
@@ -2287,7 +2445,7 @@ printCards('Garganacl', $Garganacl);
 $Charcadet = array(4141);
 printCards('Charcadet', $Charcadet);
 
-$Armarouge = array(3661,3996,4050,4142);
+$Armarouge = array(3661,3996,4050,4142,4466,4463);
 printCards('Armarouge', $Armarouge);
 
 $Ceruledge = array(4189);
@@ -2297,7 +2455,7 @@ printCards('Ceruledge', $Ceruledge);
 $Bellibolt = array(3733,3785,3890);
 printCards('Bellibolt', $Bellibolt);
 
-$Wattrel = array(4172);
+$Wattrel = array(4172,4412);
 printCards('Wattrel', $Wattrel);
 
 $Kilowattrel = array(4173);
@@ -2312,7 +2470,7 @@ printCards('Mabosstiff', $Mabosstiff);
 $Shroodle = array(4216);
 printCards('Shroodle', $Shroodle);
 
-$Grafaiai = array(3771,4217);
+$Grafaiai = array(3771,4217,4462);
 printCards('Grafaiai', $Grafaiai);
 
 $Bramblin = array(3746);
@@ -2367,7 +2525,7 @@ printCards('Bombirdier', $Bombirdier);
 $Finizen = array(4150);
 printCards('Finizen', $Finizen);
 
-$Palafin = array(3889,4151,4252);
+$Palafin = array(3889,4151,4252,4386,4427,4469);
 printCards('Palafin', $Palafin);
 
 $Varoom = array(3895,4219);
@@ -2405,7 +2563,7 @@ printCards('Veluza', $Veluza);
 $Dondozo = array(3665,4153);
 printCards('Dondozo', $Dondozo);
 
-$Tatsugiri = array(4154);
+$Tatsugiri = array(4154,4420);
 printCards('Tatsugiri', $Tatsugiri);
 
 $Annihilape = array(3790,4198,3724);
@@ -2426,7 +2584,7 @@ printCards('Kingambit', $Kingambit);
 $Great_Tusk = array(3652,3688,3704,4113,4276);
 printCards('Great Tusk', $Great_Tusk);
 
-$Scream_Tail = array(4102);
+$Scream_Tail = array(4390,4431,4102);
 printCards('Scream Tail', $Scream_Tail);
 
 $Brute_Bonnet = array(4039);
@@ -2456,7 +2614,7 @@ printCards('Iron Jugulis', $Iron_Jugulis);
 $Iron_Moth = array(4019);
 printCards('Iron Moth', $Iron_Moth);
 
-$Iron_Thorns = array(4381);
+$Iron_Thorns = array(4389,4430,4381);
 printCards('Iron Thorns', $Iron_Thorns);
 
 $Frigibax = array(3756,4155);
@@ -2498,18 +2656,26 @@ printCards('Koraidon', $Koraidon);
 $Miraidon = array(3649,3685,3702,3711,3872,4270,4310,3638,3720);
 printCards('Miraidon', $Miraidon);
 
-$Walking_Wake = array(4302,4345,4361,4371);
+$Walking_Wake = array(4302,4345,4361,4371,4464);
 printCards('Walking Wake', $Walking_Wake);
 
-$Iron_Leaves = array(4299,4342,4359,4369);
+$Iron_Leaves = array(4299,4342,4359,4369,4465);
 printCards('Iron Leaves', $Iron_Leaves);
 
+$Dipplin = array(4404);
+printCards('Dipplin', $Dipplin);
+
+$Poltchageist = array(4405);
+printCards('Poltchageist', $Poltchageist);
+
+$Sinistcha = array(4382,4423,4444);
+printCards('Sinistcha', $Sinistcha);
 
 
 
 
-
-
+$Ogerpon = array(4383,4385,4387,4392,4424,4426,4428,4433,4445,4446,4447,4449,4455);
+printCards('Ogerpon', $Ogerpon);
 
 
 

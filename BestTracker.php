@@ -715,10 +715,20 @@ function printMix($title, &$cards, &$futureCards, &$futureIndex)
 		$curIndex++;
 	}
 	
+	$min = 0;
 	for ($k = 0; $k < count($futureIndex); $k++)
 	{
-		if ($futureIndex[$k] == -1)
-			imgF($futureCards[$k]);
+		if ($futureIndex[$k] < $min)
+			$min = $futureIndex[$k];
+	}
+	
+	for ($l = -1; $l >= $min; $l--)
+	{
+		for ($k = 0; $k < count($futureIndex); $k++)
+		{
+			if ($futureIndex[$k] == $l)
+				imgF($futureCards[$k]);
+		}
 	}
 	
 	finish();
@@ -1595,6 +1605,9 @@ else if (isset($_GET['test']))
 	// $test = array(-1,'\n',-1,'\n',46,47,50,'\n',-1,'\n',67,68,69,'\n',73,74,81,'\n',89,'\n',103,104,105,108,'\n',118,'\n',136,138,135,'\n',172,'\n',179,181,184,'\n',-1,'\n',198,199,202,'\n',214,215,217,218,'\n',228,'\n',-1,'\n',252,'\n',255,'\n',256,257,258,259,'\n',260,'\n',269,'\n',271,275,'\n',282,284,285,287,'\n',-1,'\n',312,314,316,317,'\n',329,335,337,'\n',362,364,368,369,370,371,'\n',374,380,381,382,383,384,385,'\n',388,395,396,'\n',408,409,'\n',-1,'\n',428,429,'\n',431,432,'\n',434,'\n',440,442,443,444,'\n',459,'\n',472,474,475,'\n',-1,'\n',488,490,491,492,'\n',512,517,'\n',530,531,'\n',552,555,556,'\n',572,575,576,'\n',-1,'\n',608,610,612,614,'\n',623,626,628,'\n',640,643,644,'\n',656,658,661,'\n',684,692,695,699,'\n',723,724,'\n',731,735,737,742,'\n',769,772,789,790,791,'\n',796,802,803,805,'\n',823,826,827,832,'\n');
 	// printCards('Iconic cards', $test);
 	
+	// $test = array(2,3,'\n',239,240,'\n',139,140,141,'\n',247,248,249,'\n',282,285,'\n',365,366,367,'\n',368,369,370,371,'\n',428,429,'\n',440,441,442,443,'\n',493,'\n',517,'\n',608,610,'\n',684,692,'\n',805,807,'\n',1078,1080,'\n',1234,1235,'\n',1266,1269,'\n',1484,'\n',1958,1959,'\n',1947,1961,'\n',2344,2346,2647,'\n',2721,'\n',3649,3653,'\n',3646,3647,'\n',3870,3879,'\n',4004,4008);
+	// printCards('Iconic cards', $test);
+	
 	// start($j++, 'Test', $have, $test);
 	// $test = array(3719,3392,3393,3394,3395,3721,3836); // UR
 	// foreach ($test as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
@@ -1614,26 +1627,28 @@ else if (isset($_GET['fut']))
 {
 	require 'BestTracker_Future.php';
 	
-	$FUT_Ogerpon = array('MC1','MC2','MC4','MC6','\n','MC24','MC25','MC27','MC29','\n','MC35','MC36','MC37','MC38','\n','MC41',0,0,0);
-	printFuture('Ogerpon', $FUT_Ogerpon);
-	
-	$FUT_ex = array('SVG1','CH1','SVG2','SVPEN6','SVG3','SVI1','MC3','SVPEN9','SVJ2','SVPEN7','MC5','SVP4','SVI2','SVI3','SVP1','SVPEN8','SVI4','MC8','CH6','SVPEN2','SVP2');
-	$FUT_ex_Index = array(1,11,12,19,21,24,27,27,29,30,33,37,51,53,54,68,75,86,87,91,-1);
+	$FUT_ex = array('SVG1','SM1','SVG2','SVPEN1','SVG3','NW1','SVI1','SVJ2','SVP3','SVPEN2','SVI2','SVI3','SVP1','NW3','NW4','NW5','NW6','SVI4','SVP2');
+	$FUT_ex_Index = array(1,12,13,16,23,24,26,33,43,46,57,59,60,78,78,78,78,82,-1);
 	// printFuture('ex', $FUT_ex);
 	printMix('ex', $ex_SV, $FUT_ex, $FUT_ex_Index);
 	
-	$FUT_Tera = array('CH2','CH5','SVJ1','MC7','MC1','MC2','MC4','MC6');
-	$FUT_Tera_Index = array(5,15,19,22,-1,-1,-1,-1);
+	$FUT_Tera = array('NW2','SVJ1','SCR1','SM2','SCR3','KO1','SM3');
+	$FUT_Tera_Index = array(13,21,26,26,26,27,-1);
 	// printFuture('Tera ex', $FUT_Tera);
 	printMix('Tera ex', $ex_SV_Tera, $FUT_Tera, $FUT_Tera_Index);
 	
-	$FUT_Ancient = array('SVPEN4','CH4');
-	$FUT_Ancient_Index = array(2,2);
+	// $FUT_Tera_B = array('\n','CH2','\n','\n','\n','\n','CH5','\n','SVJ1','\n','\n','MC7','\n','\n','MC1','MC2','MC4','MC6','SCR1','SCR2','SCR3','\n','SCR4');
+	// $FUT_Tera_Index_B = array(4,5,6,9,12,15,15,17,19,20,21,22,22,-1,-2,-2,-2,-2,-1,-1,-1,-1,-2);
+	// printFuture('Tera ex', $FUT_Tera_B);
+	// printMix('Tera ex', $ex_SV_Tera, $FUT_Tera_B, $FUT_Tera_Index_B);
+	
+	$FUT_Ancient = array('SVPEN8','SVPEN9');
+	$FUT_Ancient_Index = array(1,-1);
 	// printFuture('Ancient ex', $FUT_Ancient);
 	printMix('Ancient ex', $ex_SV_Ancient, $FUT_Ancient, $FUT_Ancient_Index);
 	
-	$FUT_Future = array('SVPEN5','CH3');
-	$FUT_Future_Index = array(1,2);
+	$FUT_Future = array('SVPEN10','SVPEN11');
+	$FUT_Future_Index = array(7,8);
 	// printFuture('Future ex', $FUT_Future);
 	printMix('Future ex', $ex_SV_Future, $FUT_Future, $FUT_Future_Index);
 }

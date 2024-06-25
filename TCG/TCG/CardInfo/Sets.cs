@@ -216,6 +216,7 @@
 		Paldean_Fates,
 		Temporal_Forces,
 		Twilight_Masquerade,
+		Shrouded_Fable,
 		SV_Energy,
 		SV_Promo,
 		Mc_Donalds_2023,

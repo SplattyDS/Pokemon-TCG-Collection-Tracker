@@ -37,6 +37,7 @@ $Flying_Pikachu = array(196,195);
 printWorlds('Flying Pikachu', $Flying_Pikachu);
 
 
+
 $Raichu = array(163);
 printWorlds('Raichu', $Raichu);
 
@@ -159,6 +160,8 @@ printWorlds('Alolan Ninetales', $Alolan_Ninetales);
 
 $Kangaskhan = array(94,93);
 printWorlds('Kangaskhan', $Kangaskhan);
+
+
 
 
 
@@ -463,6 +466,9 @@ printWorlds('Flygon', $Flygon);
 
 
 
+
+
+
 $Banette = array(32,148);
 printWorlds('Banette', $Banette);
 
@@ -532,8 +538,21 @@ printWorlds('Deoxys', $Deoxys);
 
 
 
+
+
+
 $Luxray = array(40,43,45,48);
 printWorlds('Luxray', $Luxray);
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -619,6 +638,11 @@ printWorlds('Yanmega', $Yanmega);
 
 
 
+
+
+
+
+
 $Uxie = array(41,47);
 printWorlds('Uxie', $Uxie);
 
@@ -629,15 +653,18 @@ printWorlds('Azelf', $Azelf);
 $Dialga = array(42,46);
 printWorlds('Dialga', $Dialga);
 
+
 $Palkia = array(39,184,183);
 printWorlds('Palkia', $Palkia);
+
 
 $Heatran = array(158,180);
 printWorlds('Heatran', $Heatran);
 
 
-$Giratina = array(125);
-printWorlds('Giratina', $Giratina);
+
+$Giratina_Origin = array(125);
+printWorlds('Giratina Origin', $Giratina_Origin);
 
 
 
@@ -645,8 +672,9 @@ printWorlds('Giratina', $Giratina);
 $Darkrai = array(62,73,124);
 printWorlds('Darkrai', $Darkrai);
 
-$Shaymin = array(103,107,111,117,120,126);
-printWorlds('Shaymin', $Shaymin);
+
+$Shaymin_Sky = array(103,107,111,117,120,126);
+printWorlds('Shaymin Sky', $Shaymin_Sky);
 
 $Arceus = array(194,193);
 printWorlds('Arceus', $Arceus);
@@ -701,6 +729,9 @@ printWorlds('Audino', $Audino);
 
 $Seismitoad = array(106);
 printWorlds('Seismitoad', $Seismitoad);
+
+
+
 
 
 
@@ -813,6 +844,12 @@ printWorlds('Zoroark', $Zoroark);
 
 
 
+
+
+
+
+
+
 $Cobalion = array(170);
 printWorlds('Cobalion', $Cobalion);
 
@@ -823,8 +860,10 @@ printWorlds('Virizion', $Virizion);
 $Tornadus = array(68);
 printWorlds('Tornadus', $Tornadus);
 
+
 $Thundurus = array(80,85);
 printWorlds('Thundurus', $Thundurus);
+
 
 $Reshiram = array(176,178);
 printWorlds('Reshiram', $Reshiram);
@@ -836,8 +875,11 @@ printWorlds('Landorus', $Landorus);
 
 
 
-$Keldeo = array(71,74,78,109,95);
-printWorlds('Keldeo', $Keldeo);
+
+
+$Keldeo_Resolute = array(71,74,78,109,95);
+printWorlds('Keldeo Resolute', $Keldeo_Resolute);
+
 
 
 $Genesect = array(89,192);
@@ -854,8 +896,22 @@ printWorlds('Genesect', $Genesect);
 $Greninja = array(130);
 printWorlds('Greninja', $Greninja);
 
+
 $Bunnelby = array(101);
 printWorlds('Bunnelby', $Bunnelby);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -923,11 +979,14 @@ printWorlds('Xerneas', $Xerneas);
 
 
 
+
+
 $Diancie = array(154);
 printWorlds('Diancie', $Diancie);
 
-$Hoopa = array(121,127);
-printWorlds('Hoopa', $Hoopa);
+
+$Hoopa_Unbound = array(121,127);
+printWorlds('Hoopa Unbound', $Hoopa_Unbound);
 
 
 
@@ -958,8 +1017,14 @@ printWorlds('Hisuian Decidueye', $Hisuian_Decidueye);
 
 
 
-$Lycanroc = array(153);
-printWorlds('Lycanroc', $Lycanroc);
+
+
+
+
+$Lycanroc_Midnight = array(153);
+printWorlds('Lycanroc Midnight', $Lycanroc_Midnight);
+
+
 
 
 
@@ -985,6 +1050,7 @@ printWorlds('Lycanroc', $Lycanroc);
 
 $Golisopod = array(135,138);
 printWorlds('Golisopod', $Golisopod);
+
 
 
 
@@ -1135,6 +1201,11 @@ printWorlds('Zeraora', $Zeraora);
 
 
 
+
+
+
+
+
 $Rapid_Strike_Urshifu = array(188,187);
 printWorlds('Rapid Strike Urshifu', $Rapid_Strike_Urshifu);
 
@@ -1146,6 +1217,11 @@ printWorlds('Rapid Strike Urshifu', $Rapid_Strike_Urshifu);
 
 $Ice_Rider_Calyrex = array(186,185);
 printWorlds('Ice Rider Calyrex', $Ice_Rider_Calyrex);
+
+
+
+
+
 
 
 

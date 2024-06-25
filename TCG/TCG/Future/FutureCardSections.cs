@@ -6,15 +6,20 @@
 		{
 			new FutureCardSection("Ancient Roar (JP)", "AR", 1),
 			new FutureCardSection("Future Flash (JP)", "FF", 1),
-			new FutureCardSection("Crimson Haze (JP)", "CH", 39),
-			new FutureCardSection("Mask of Change (JP)", "MC", 43),
+			new FutureCardSection("Mask of Change (JP)", "MC", 3),
+			new FutureCardSection("Night Wanderer (JP)", "NW", 39),
+			new FutureCardSection("Stellar Miracle (JP)", "SM", 4),
+			new FutureCardSection("Stellar Crown", "SCR", 4),
 
 			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 11),
-			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 4),
+			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 3),
 
 			new FutureCardSection("Special Deck Set ex Venusaur & Charizard & Blastoise (JP)", "SVG", 5),
 			new FutureCardSection("Battle Academy (JP)", "SVI", 4),
 			new FutureCardSection("Battle Master Decks (JP)", "SVJ", 2),
+
+			new FutureCardSection("Korean Cards", "KO", 1),
+			new FutureCardSection("Chinese Cards", "CH", 2),
 		};
 
 		public static FutureCardSection[] Get()

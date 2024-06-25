@@ -54,6 +54,17 @@ printWorlds('Colorless', $Colorless);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 $Other = array(57,58,60,61);
 printWorlds('Other', $Other);
 

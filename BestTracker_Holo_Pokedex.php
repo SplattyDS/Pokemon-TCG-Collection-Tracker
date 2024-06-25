@@ -80,10 +80,13 @@ printHolo('Ekans', $Ekans);
 $Arbok = array(71,323,447,479,1336,1800,2538,3459,6929,9181,10097,10434,11784);
 printHolo('Arbok', $Arbok);
 
-$Pikachu = array(296,423,568,838,1379,1531,1742,2021,2417,2418,2671,1161,1171,1195,1200,2890,3270,2910,3598,3833,4201,4292,2989,3013,3048,4552,4722,4445,5706,6013,6639,6924,7124,7463,7629,6731,7835,8094,8124,6781,6784,6829,6846,6859,6871,6884,9067,8479,8480,8481,8482,9173,9237,8353,10090,10266,10267,10427,10528,8545,8594,8596,8599,8600,8610,8642,8647,8651,8652,8658,8662,8663,8664,8675,8690,8691,8737,8748,8762,10957,10958,11350,12300,14238,11034,12890,10878,12891,12974,13115,13976,11136,11137,11160,11191,11225,11269,11274,13624,13988,14083,14470,13971,14628);
+$Pikachu = array(296,423,568,838,1379,1531,1742,2021,2417,2418,2671,1161,1171,1195,1200,2890,3270,2910,3598,3833,4201,4292,2989,3013,3048,4552,4722,4445,5706,6013,6639,6924,7124,7463,7629,6731,7835,8094,8124,6781,6784,6829,6846,6859,6871,6884,9067,8479,8480,8481,8482,9173,9237,10090,10266,10267,10427,10528,8545,8594,8596,8599,8600,8610,8642,8647,8658,8675,8690,8691,8737,8748,8762,10957,10958,11350,12300,14238,11034,12890,10878,12891,12974,13115,13976,11136,11137,11160,11191,11225,11269,11274,13624,13988,14083,14470,13971,14628);
 printHolo('Pikachu', $Pikachu);
 
 
+
+$Detective_Pikachu = array(8353,8651,8652,8662,8663,8664);
+printHolo('Detective Pikachu', $Detective_Pikachu);
 
 $Raichu = array(15,47,65,116,198,217,345,469,505,409,781,1501,990,1680,1135,2354,2390,1099,2626,2740,3191,3573,2813,3771,4010,4158,4248,2991,3036,4324,4385,4484,4694,4474,5168,5707,6509,6640,6925,7125,6712,7630,6603,7836,8082,8125,8217,8474,9068,10091,10529,11351,10796,12301,12975,13116,13625,14039,14084,14443,14471,14629);
 printHolo('Raichu', $Raichu);
@@ -478,8 +481,14 @@ printHolo('Pinsir', $Pinsir);
 $Tauros = array(275,577,994,1684,1083,2449,1182,3698,3956,4619,6978,7862,10013,10363,11723,10787,12223,13294,14180);
 printHolo('Tauros', $Tauros);
 
-$Paldean_Tauros = array(13594,13605,13666);
-printHolo('Paldean Tauros', $Paldean_Tauros);
+$Paldean_Tauros_Combat = array(13666);
+printHolo('Paldean Tauros Combat', $Paldean_Tauros_Combat);
+
+$Paldean_Tauros_Blaze = array(13594);
+printHolo('Paldean Tauros Blaze', $Paldean_Tauros_Blaze);
+
+$Paldean_Tauros_Aqua = array(13605);
+printHolo('Paldean Tauros Aqua', $Paldean_Tauros_Aqua);
 
 $Magikarp = array(262,562,829,1460,1735,1836,1930,2408,3265,3828,4191,4546,4892,5875,6427,7536,6730,7833,8122,6801,6869,9060,9225,9683,9924,8351,10424,10965,11490,12884,13391,13606,14181,14561);
 printHolo('Magikarp', $Magikarp);
@@ -1180,8 +1189,17 @@ printHolo('Feebas', $Feebas);
 $Milotic = array(975,1588,1036,1969,1147,2530,3451,2950,2951,4116,4151,4983,5196,5880,6520,7029,6551,7334,8241,9234,9693,10702,11640,12292,13106,14244,14299);
 printHolo('Milotic', $Milotic);
 
-$Castform = array(1599,1601,1602,1606,2176,2179,2181,2184,2383,3672,3673,3674,3675,9008,12146,12156,12157,12228,12705);
+$Castform = array(1606,2184,2383,3672,9008,12228,12705);
 printHolo('Castform', $Castform);
+
+$Castform_Sunny = array(1602,2181,3675,12146);
+printHolo('Castform Sunny', $Castform_Sunny);
+
+$Castform_Rainy = array(1599,2176,3673,12156);
+printHolo('Castform Rainy', $Castform_Rainy);
+
+$Castform_Snowy = array(1601,2179,3674,12157);
+printHolo('Castform Snowy', $Castform_Snowy);
 
 $Kecleon = array(1325,2294,3348,4046,6303,9638,9868,9869,12229);
 printHolo('Kecleon', $Kecleon);
@@ -1285,8 +1303,17 @@ printHolo('Rayquaza', $Rayquaza);
 $Jirachi = array(971,1584,1020,1875,3655,2840,3986,4328,4579,4371,4842,6570,7480,6778,6826,8336,9986,8646,14377);
 printHolo('Jirachi', $Jirachi);
 
-$Deoxys = array(1027,1882,1883,1884,1030,1963,1123,2342,1124,2343,1125,2344,1126,2345,1190,2789,3625,3648,3649,3650,4362,4833,6568,7473,8281,9591,9592,9593,8649,10833,12497,11195,14251,14331);
+$Deoxys = array(1027,1882,1125,2344,1190,2789,3625,4362,4833,6568,7473,8649,10833,12497,11195,14251,14331);
 printHolo('Deoxys', $Deoxys);
+
+$Deoxys_Attack = array(1883,1123,2342,3648,8281,9591);
+printHolo('Deoxys Attack', $Deoxys_Attack);
+
+$Deoxys_Defense = array(1884,1124,2343,3649,9592);
+printHolo('Deoxys Defense', $Deoxys_Defense);
+
+$Deoxys_Speed = array(1030,1963,1126,2345,3650,9593);
+printHolo('Deoxys Speed', $Deoxys_Speed);
 
 $Turtwig = array(2884,2885,3160,2912,3605,3606,3959,4064,4212,2979,3016,4645,6096,9306,9307,12619,11248);
 printHolo('Turtwig', $Turtwig);
@@ -1363,11 +1390,26 @@ printHolo('Shieldon', $Shieldon);
 $Bastiodon = array(2887,3197,3878,2835,3981,3055,8046,8261,9379,10865,12821);
 printHolo('Bastiodon', $Bastiodon);
 
-$Burmy = array(3374,3375,3376,3582,4277,4278,4279,7890,12622);
+$Burmy = array(7890,12622);
 printHolo('Burmy', $Burmy);
 
-$Wormadam = array(3337,3338,3339,4270,4271,4272,7891,7926,7938,12623,12673,12690);
-printHolo('Wormadam', $Wormadam);
+$Burmy_Plant = array(3374,4277);
+printHolo('Burmy Plant', $Burmy_Plant);
+
+$Burmy_Sandy = array(3375,3582,4278);
+printHolo('Burmy Sandy', $Burmy_Sandy);
+
+$Burmy_Trash = array(3376,4279);
+printHolo('Burmy Trash', $Burmy_Trash);
+
+$Wormadam_Plant = array(3337,4270,7891,12623);
+printHolo('Wormadam Plant', $Wormadam_Plant);
+
+$Wormadam_Sandy = array(3338,4271,7926,12673);
+printHolo('Wormadam Sandy', $Wormadam_Sandy);
+
+$Wormadam_Trash = array(3339,4272,7938,12690);
+printHolo('Wormadam Trash', $Wormadam_Trash);
 
 $Mothim = array(3329,3570,2866,4227,3021,7892,12624);
 printHolo('Mothim', $Mothim);
@@ -1390,14 +1432,29 @@ printHolo('Floatzel', $Floatzel);
 $Cherubi = array(3132,3819,4177,4281,4625,6101,6403,9310,12011,12625,13227);
 printHolo('Cherubi', $Cherubi);
 
-$Cherrim = array(3102,3777,4136,4236,3028,3043,4606,6102,9311,10751,12012,11166);
+$Cherrim = array(3102,3777,4136,3028,3043,4606,6102,9311,10751,12012,11166);
 printHolo('Cherrim', $Cherrim);
 
-$Shellos = array(3402,3403,3601,4058,4059,8008,9236,12963);
+$Cherrim_Overcast = array(4236);
+printHolo('Cherrim Overcast', $Cherrim_Overcast);
+
+$Shellos = array(8008,9236,12963);
 printHolo('Shellos', $Shellos);
 
-$Gastrodon = array(2751,3304,2752,3305,4000,4001,8009,9259,13017);
+$Shellos_West = array(3403,4059);
+printHolo('Shellos West', $Shellos_West);
+
+$Shellos_East = array(3402,3601,4058);
+printHolo('Shellos East', $Shellos_East);
+
+$Gastrodon = array(8009,9259,13017);
 printHolo('Gastrodon', $Gastrodon);
+
+$Gastrodon_West = array(2752,3305,4001);
+printHolo('Gastrodon West', $Gastrodon_West);
+
+$Gastrodon_East = array(2751,3304,4000);
+printHolo('Gastrodon East', $Gastrodon_East);
 
 $Ambipom = array(2728,3179,3563,4035,4754,5947,8062,10623,12912,13050,14393);
 printHolo('Ambipom', $Ambipom);
@@ -1564,8 +1621,23 @@ printHolo('Dusknoir', $Dusknoir);
 $Froslass = array(2791,3627,2839,3985,2862,4223,6335,8388,10251,10772,12159,13109);
 printHolo('Froslass', $Froslass);
 
-$Rotom = array(2770,3433,2787,3541,4163,3038,4681,6140,7542,7909,9313,9323,9338,9339,9348,9400,9462,10547,8606,11987,12475,13119,13414,13415,13542,14441,14465);
+$Rotom = array(2770,3433,2787,3541,4163,3038,4681,6140,7542,7909,9348,9462,10547,11987,12475,13119,13414,13415,13542);
 printHolo('Rotom', $Rotom);
+
+$Heat_Rotom = array(9323,14441,14465);
+printHolo('Heat Rotom', $Heat_Rotom);
+
+$Wash_Rotom = array(9338,8606);
+printHolo('Wash Rotom', $Wash_Rotom);
+
+$Frost_Rotom = array(9339);
+printHolo('Frost Rotom', $Frost_Rotom);
+
+$Fan_Rotom = array(9400);
+printHolo('Fan Rotom', $Fan_Rotom);
+
+$Mow_Rotom = array(9313);
+printHolo('Mow Rotom', $Mow_Rotom);
 
 $Uxie = array(2743,3194,2919,3667,6347,9463,8394,10290,12788);
 printHolo('Uxie', $Uxie);
@@ -1579,8 +1651,10 @@ printHolo('Azelf', $Azelf);
 $Dialga = array(2709,3058,2899,2900,3442,2778,3532,2821,3863,2822,3864,2823,2925,3865,3881,2995,3007,4363,4834,8319,9840,10737,11920,10805,11014,12346,10823);
 printHolo('Dialga', $Dialga);
 
+
 $Palkia = array(2719,3068,2901,2902,3452,2785,3539,2828,3870,3895,2996,4379,4850,8230,9170,10814,14245,14302);
 printHolo('Palkia', $Palkia);
+
 
 $Heatran = array(2794,3630,2917,3654,2863,4224,3023,3045,6541,7254,8262,8492,9382,9438,8287,9618,8309,9766,8608,10700,11628,12692);
 printHolo('Heatran', $Heatran);
@@ -1588,8 +1662,11 @@ printHolo('Heatran', $Heatran);
 $Regigigas = array(2803,3639,2918,3661,2814,3772,2855,4090,3002,3037,6546,7275,8249,9285,8693,8699,10867,12838,11233);
 printHolo('Regigigas', $Regigigas);
 
-$Giratina = array(2792,2915,3628,2825,3867,2826,3868,3885,2926,3886,5228,6153,6817,8314,8512,9812,8395,10293,8638);
+$Giratina = array(2792,2915,3628,2825,3867,3885,5228,6153,8314,8512,9812,8638);
 printHolo('Giratina', $Giratina);
+
+$Giratina_Origin = array(2826,3868,2926,3886,6817,8395,10293);
+printHolo('Giratina Origin', $Giratina_Origin);
 
 $Cresselia = array(2765,3428,2776,3530,3008,7646,8256,9356,10294,10779,12183,10898,12992,11176);
 printHolo('Cresselia', $Cresselia);
@@ -1603,8 +1680,11 @@ printHolo('Manaphy', $Manaphy);
 $Darkrai = array(2766,3429,2767,3430,2777,3531,2836,3982,2994,3009,6760,6825,8223,9110,10709,10980,11701,12540,10904,13033,13778,13900);
 printHolo('Darkrai', $Darkrai);
 
-$Shaymin = array(2830,3872,2831,3873,2927,3896,4335,4586,5974,6819,8227,9155,8252,9314,9401,8306,9753,10725,10982,11831,10789,12230,12750,13300);
-printHolo('Shaymin', $Shaymin);
+$Shaymin_Land = array(2830,3872,2927,3896,5974,6819,8252,9314,8306,9753,12750);
+printHolo('Shaymin Land', $Shaymin_Land);
+
+$Shaymin_Sky = array(2831,3873,4335,4586,8227,9155,9401,10725,10982,11831,10789,12230,13300);
+printHolo('Shaymin Sky', $Shaymin_Sky);
 
 $Arceus = array(6828);
 printHolo('Arceus', $Arceus);
@@ -1783,11 +1863,14 @@ printHolo('Lilligant', $Lilligant);
 $Hisuian_Lilligant = array(10850,12752,13082);
 printHolo('Hisuian Lilligant', $Hisuian_Lilligant);
 
-$Basculin = array(5409,5502,5503,5698,10256,12456);
-printHolo('Basculin', $Basculin);
+$Basculin_Red = array(5409,5502,5503);
+printHolo('Basculin Red', $Basculin_Red);
 
-$Hisuian_Basculin = array(12771,13996,12968,11238);
-printHolo('Hisuian Basculin', $Hisuian_Basculin);
+$Basculin_Blue = array(5698,10256,12456);
+printHolo('Basculin Blue', $Basculin_Blue);
+
+$Basculin_White = array(12771,13996,12968,11238);
+printHolo('Basculin White', $Basculin_White);
 
 $Sandile = array(5118,5437,5538,5816,6279,5339,6950,7060,8863,10144,10145,11908,13167,13457);
 printHolo('Sandile', $Sandile);
@@ -1804,11 +1887,17 @@ printHolo('Darumaka', $Darumaka);
 $Galarian_Darumaka = array(11497,11644,12457);
 printHolo('Galarian Darumaka', $Galarian_Darumaka);
 
-$Darmanitan = array(5109,5399,5499,5725,5992,9675,10061,13812);
+$Darmanitan = array(5109,5399,5499,5992,9675,10061,13812);
 printHolo('Darmanitan', $Darmanitan);
 
-$Galarian_Darmanitan = array(11498,11631,10974,11645,12458);
+$Darmanitan_Zen = array(5725);
+printHolo('Darmanitan Zen', $Darmanitan_Zen);
+
+$Galarian_Darmanitan = array(11498,10974,11645,12458);
 printHolo('Galarian Darmanitan', $Galarian_Darmanitan);
+
+$Galarian_Darmanitan_Zen = array(11631);
+printHolo('Galarian Darmanitan Zen', $Galarian_Darmanitan_Zen);
 
 $Maractus = array(5385,5386,5869,6106,5333,7019,11298,12407,14457);
 printHolo('Maractus', $Maractus);
@@ -1906,11 +1995,25 @@ printHolo('Vanillish', $Vanillish);
 $Vanilluxe = array(5603,4965,5701,6129,6242,7626,8947,11648,14307);
 printHolo('Vanilluxe', $Vanilluxe);
 
-$Deerling = array(5387,5493,7896,10481,12137);
-printHolo('Deerling', $Deerling);
+$Deerling_Spring = array(5387,7896);
+printHolo('Deerling Spring', $Deerling_Spring);
 
-$Sawsbuck = array(5388,5494,8411,10482,12138);
-printHolo('Sawsbuck', $Sawsbuck);
+$Deerling_Summer = array(5493,10481);
+printHolo('Deerling Summer', $Deerling_Summer);
+
+
+$Deerling_Winter = array(12137);
+printHolo('Deerling Winter', $Deerling_Winter);
+
+$Sawsbuck_Spring = array(5388);
+printHolo('Sawsbuck Spring', $Sawsbuck_Spring);
+
+$Sawsbuck_Summer = array(5494,8411,10482);
+printHolo('Sawsbuck Summer', $Sawsbuck_Summer);
+
+
+$Sawsbuck_Winter = array(12138);
+printHolo('Sawsbuck Winter', $Sawsbuck_Winter);
 
 $Emolga = array(5510,5611,5716,5897,6444,5349,9241,9939,12307,13120,13252);
 printHolo('Emolga', $Emolga);
@@ -2083,8 +2186,10 @@ printHolo('Virizion', $Virizion);
 $Tornadus = array(4948,5567,5098,6495,5289,7179,10377,10742,10995,11936,12713);
 printHolo('Tornadus', $Tornadus);
 
+
 $Thundurus = array(4941,5513,5082,6445,5288,7130,10279,10776,11008,12173,13774,13845);
 printHolo('Thundurus', $Thundurus);
+
 
 $Reshiram = array(4931,5400,5166,5690,5046,5235,6230,5077,6426,5256,5273,6572,7494,8229,9160,10812);
 printHolo('Reshiram', $Reshiram);
@@ -2092,8 +2197,11 @@ printHolo('Reshiram', $Reshiram);
 $Zekrom = array(4934,5421,5173,5717,5049,5238,6251,5083,6446,5257,5274,6573,7495,8234,9179,8300,9707,10730,10990,11866,10815,14248,14325);
 printHolo('Zekrom', $Zekrom);
 
-$Landorus = array(4957,5648,5091,6476,5312,6531,7153,8373,10136,10836,11018,12524,13020);
+$Landorus = array(4957,5648,5091,6476,6531,7153,8373,10136,10836,11018,12524,13020);
 printHolo('Landorus', $Landorus);
+
+$Landorus_Therian = array(5312);
+printHolo('Landorus Therian', $Landorus_Therian);
 
 $Kyurem = array(4953,5154,5608,5047,6244,5080,6440,5290,8301,9708,8367,10086,8632,10807,12350);
 printHolo('Kyurem', $Kyurem);
@@ -2104,11 +2212,17 @@ printHolo('Black Kyurem', $Black_Kyurem);
 $White_Kyurem = array(5225,6062,5299,6608,7906,6790,8311,9779);
 printHolo('White Kyurem', $White_Kyurem);
 
-$Keldeo = array(5021,6011,6012,5300,6822,8232,9172,10851,11030,12773,13112);
-printHolo('Keldeo', $Keldeo);
+$Keldeo_Ordinary = array(5021,6011,6012,5300,6822,10851,11030,12773,13112);
+printHolo('Keldeo Ordinary', $Keldeo_Ordinary);
 
-$Meloetta = array(5026,6039,5088,6470,6477,6590,7660,6824,9818,10329,11084,12501);
-printHolo('Meloetta', $Meloetta);
+$Keldeo_Resolute = array(8232,9172);
+printHolo('Keldeo Resolute', $Keldeo_Resolute);
+
+$Meloetta_Aria = array(5026,6039,5088,6470,6824,9818,11084,12501);
+printHolo('Meloetta Aria', $Meloetta_Aria);
+
+$Meloetta_Pirouette = array(6477,6590,7660,10329);
+printHolo('Meloetta Pirouette', $Meloetta_Pirouette);
 
 $Genesect = array(5243,6323,5072,6415,5317,5328,6827,10157,10726,11832);
 printHolo('Genesect', $Genesect);
@@ -2140,6 +2254,7 @@ printHolo('Frogadier', $Frogadier);
 $Greninja = array(6629,6508,6638,6923,6726,7757,6762,6811,8352,8376,10148);
 printHolo('Greninja', $Greninja);
 
+
 $Bunnelby = array(6989,7276,7390,6851,9288,9511,11581,11056,11737,12585,11165,13935);
 printHolo('Bunnelby', $Bunnelby);
 
@@ -2161,8 +2276,11 @@ printHolo('Scatterbug', $Scatterbug);
 $Spewpa = array(6899,7599,9432,12016,13358);
 printHolo('Spewpa', $Spewpa);
 
-$Vivillon = array(6502,6634,6900,6503,6901,6580,6710,7600,6795,9433,12017,13359);
-printHolo('Vivillon', $Vivillon);
+$Vivillon_Meadow = array(6502,6634,6900,6580,6710,7600,6795,9433,12017,13359);
+printHolo('Vivillon Meadow', $Vivillon_Meadow);
+
+$Vivillon_High_Plains = array(6503,6901);
+printHolo('Vivillon High Plains', $Vivillon_High_Plains);
 
 $Litleo = array(7024,7025,7208,8004,9443,9768,10500,12280,12952,13597);
 printHolo('Litleo', $Litleo);
@@ -2191,14 +2309,33 @@ printHolo('Pancham', $Pancham);
 $Pangoro = array(6674,7162,7787,6772,8988,9497,9983,10579,12547,13278);
 printHolo('Pangoro', $Pangoro);
 
-$Furfrou = array(6517,6650,6992,7088,7279,7802,6853,9513,12231);
+$Furfrou = array(6517,6650,6992,7802,6853,12231);
 printHolo('Furfrou', $Furfrou);
+
+
+$Furfrou_Star = array(7279);
+printHolo('Furfrou Star', $Furfrou_Star);
+
+
+
+$Furfrou_Matron = array(9513);
+printHolo('Furfrou Matron', $Furfrou_Matron);
+
+
+
+$Furfrou_Kabuki = array(7088);
+printHolo('Furfrou Kabuki', $Furfrou_Kabuki);
+
 
 $Espurr = array(7046,7772,9086,9466,10113,12057,13140);
 printHolo('Espurr', $Espurr);
 
-$Meowstic = array(6656,7047,7773,6771,9087,9467,10114,10758,12058,13141);
-printHolo('Meowstic', $Meowstic);
+
+$Meowstic_F = array(6656,7047,7773,10114,13141);
+printHolo('Meowstic F', $Meowstic_F);
+
+$Meowstic_M = array(6771,9087,9467,10758,12058);
+printHolo('Meowstic M', $Meowstic_M);
 
 $Honedge = array(6646,6962,7373,7774,6754,6848,9468,9469,9993,10299,10300,11570,12095,14381,14382);
 printHolo('Honedge', $Honedge);
@@ -2206,8 +2343,11 @@ printHolo('Honedge', $Honedge);
 $Doublade = array(6647,6963,7374,7775,9470,9994,10301,11571,12096,14383,14384);
 printHolo('Doublade', $Doublade);
 
-$Aegislash = array(6648,6964,6514,6965,6559,7375,6599,7776,9471,8337,9995,8396,10302,11572,10766,12097,12098,14262,14385,14435);
-printHolo('Aegislash', $Aegislash);
+$Aegislash_Shield = array(6514,6965,6559,7375,8337,9995,11572,12098,14262,14385,14435);
+printHolo('Aegislash Shield', $Aegislash_Shield);
+
+$Aegislash_Blade = array(6648,6964,6599,7776,9471,8396,10302,10766,12097);
+printHolo('Aegislash Blade', $Aegislash_Blade);
 
 $Spritzee = array(6971,7071,7678,7793,10169);
 printHolo('Spritzee', $Spritzee);
@@ -2326,14 +2466,23 @@ printHolo('Xerneas', $Xerneas);
 $Yveltal = array(6645,6959,6592,7668,6617,8044,6751,6765,8237,9194,8335,9984,8399,10342,10822,12548,14256,14370);
 printHolo('Yveltal', $Yveltal);
 
-$Zygarde = array(7933,6736,7934,6791,6806,8225,9120,9492,8497,9493,9709,10330,8555,8580,10718,11779,10736,11898,10808,12351,13188);
-printHolo('Zygarde', $Zygarde);
+$Zygarde_10 = array(7933,9492,10330,13188);
+printHolo('Zygarde 10', $Zygarde_10);
+
+$Zygarde_50 = array(6736,7934,6791,6806,8497,9493,9709,10718,11779,10808,12351);
+printHolo('Zygarde 50', $Zygarde_50);
+
+$Zygarde_Complete = array(8225,9120,8555,8580,10736,11898);
+printHolo('Zygarde Complete', $Zygarde_Complete);
 
 $Diancie = array(6543,7260,8224,9115,10734,11885,10856,12791);
 printHolo('Diancie', $Diancie);
 
-$Hoopa = array(6742,8030,6782,6805,8238,9195,9476,8400,10343,10710,11707,13035,10930,13281);
-printHolo('Hoopa', $Hoopa);
+$Hoopa_Confined = array(6782,9476);
+printHolo('Hoopa Confined', $Hoopa_Confined);
+
+$Hoopa_Unbound = array(6742,8030,6805,8238,9195,8400,10343,10710,11707,13035,10930,13281);
+printHolo('Hoopa Unbound', $Hoopa_Unbound);
 
 $Volcanion = array(6741,8006,6803,6813,8365,10062,8654,11978,10925,13235,14240,14286);
 printHolo('Volcanion', $Volcanion);
@@ -2398,8 +2547,17 @@ printHolo('Crabrawler', $Crabrawler);
 $Crabominable = array(8826,9099,10138,10581,8579,12201,13885);
 printHolo('Crabominable', $Crabominable);
 
-$Oricorio = array(8928,8956,8964,8965,9558,9581,8557,12431,11193,11216,13548,13599,14326);
-printHolo('Oricorio', $Oricorio);
+$Oricorio_Baile = array(8928,9558,12431,11193,13548,13599);
+printHolo('Oricorio Baile', $Oricorio_Baile);
+
+$Oricorio_Pom_Pom = array(8956,9581,14326);
+printHolo('Oricorio Pom Pom', $Oricorio_Pom_Pom);
+
+$Oricorio_Pau = array(8964);
+printHolo('Oricorio Pau', $Oricorio_Pau);
+
+$Oricorio_Sensu = array(8965,8557,11216);
+printHolo('Oricorio Sensu', $Oricorio_Sensu);
 
 $Cutiefly = array(8871,9116,9855,8742,12321);
 printHolo('Cutiefly', $Cutiefly);
@@ -2410,11 +2568,20 @@ printHolo('Ribombee', $Ribombee);
 $Rockruff = array(8980,9494,10582,8546,8547,8620,11780,11899,12202,13024,13271,13674,13886);
 printHolo('Rockruff', $Rockruff);
 
-$Lycanroc = array(8222,9100,8475,8476,9101,8498,9495,8423,10583,8612,8618,8769,10719,11781,11900,10782,12203,13272,13887);
-printHolo('Lycanroc', $Lycanroc);
+$Lycanroc_Midday = array(8475,8476,9101,10719,11781);
+printHolo('Lycanroc Midday', $Lycanroc_Midday);
 
-$Wishiwashi = array(8827,8949,9695,8416,10525,11651,12298);
-printHolo('Wishiwashi', $Wishiwashi);
+$Lycanroc_Midnight = array(8222,9100,8423,10583,8769,11900,10782,12203,13272,13887);
+printHolo('Lycanroc Midnight', $Lycanroc_Midnight);
+
+$Lycanroc_Dusk = array(8498,9495,8612,8618);
+printHolo('Lycanroc Dusk', $Lycanroc_Dusk);
+
+$Wishiwashi_Solo = array(8827,8949,9695,11651,12298);
+printHolo('Wishiwashi Solo', $Wishiwashi_Solo);
+
+$Wishiwashi_School = array(8416,10525);
+printHolo('Wishiwashi School', $Wishiwashi_School);
 
 $Mareanie = array(8844,8950,9784,9819,10303,11652,13170);
 printHolo('Mareanie', $Mareanie);
@@ -2497,8 +2664,11 @@ printHolo('Type Null', $Type_Null);
 $Silvally = array(8404,8535,10383,8588);
 printHolo('Silvally', $Silvally);
 
-$Minior = array(8208,8983,9606,14353);
+$Minior = array(8208,8983,14353);
 printHolo('Minior', $Minior);
+
+$Minior_Meteor = array(9606);
+printHolo('Minior Meteor', $Minior_Meteor);
 
 $Komala = array(9017,10384,8572,13052);
 printHolo('Komala', $Komala);
@@ -2731,8 +2901,12 @@ printHolo('Barraskewda', $Barraskewda);
 $Toxel = array(11514,11662,12484,12485,11215,13416,13846,14327);
 printHolo('Toxel', $Toxel);
 
-$Toxtricity = array(11515,10705,10976,11663,10831,12486,10832,12487,2707,13417,13775,13847);
-printHolo('Toxtricity', $Toxtricity);
+
+$Toxtricity_Amped = array(11515,10831,12486,2707,13417);
+printHolo('Toxtricity Amped', $Toxtricity_Amped);
+
+$Toxtricity_Low_Key = array(10705,10976,11663,10832,12487,13775,13847);
+printHolo('Toxtricity Low Key', $Toxtricity_Low_Key);
 
 $Sizzlipede = array(11325,11326,11769,12029,12432,12433);
 printHolo('Sizzlipede', $Sizzlipede);
@@ -2809,14 +2983,23 @@ printHolo('Frosmoth', $Frosmoth);
 $Stonjourner = array(11393,10692,11550,12079,13026,13159,13463);
 printHolo('Stonjourner', $Stonjourner);
 
-$Eiscue = array(10683,10966,11502,12299,12647,11189,13612);
+$Eiscue = array(10683,10966,11502,12299,11189,13612);
 printHolo('Eiscue', $Eiscue);
 
-$Indeedee = array(11531,10750,11998,12107,12504,13145,13346,13491);
-printHolo('Indeedee', $Indeedee);
+$Eiscue_Noice = array(12647);
+printHolo('Eiscue Noice', $Eiscue_Noice);
 
-$Morpeko = array(11362,11516,11988,11989,12088,12488,12552,13172,11115,11116,11128,11178,14258,14373);
+$Indeedee_F = array(11531,12504,13145,13346,13491);
+printHolo('Indeedee F', $Indeedee_F);
+
+$Indeedee_M = array(10750,11998,12107);
+printHolo('Indeedee M', $Indeedee_M);
+
+$Morpeko = array(11362,11516,11988,11989,12488,11115,11116,11128,11178);
 printHolo('Morpeko', $Morpeko);
+
+$Morpeko_Hangry = array(12088,12552,13172,14258,14373);
+printHolo('Morpeko Hangry', $Morpeko_Hangry);
 
 $Cufant = array(11412,11720,11996,12563,13704);
 printHolo('Cufant', $Cufant);
@@ -2893,8 +3076,10 @@ printHolo('Kleavor', $Kleavor);
 $Ursaluna = array(12832);
 printHolo('Ursaluna', $Ursaluna);
 
-$Basculegion = array(12772,10894,12969,11211);
-printHolo('Basculegion', $Basculegion);
+
+$Basculegion_M = array(12772,10894,12969,11211);
+printHolo('Basculegion M', $Basculegion_M);
+
 
 $Sneasler = array(10861,12809);
 printHolo('Sneasler', $Sneasler);
@@ -2904,6 +3089,7 @@ printHolo('Overqwil', $Overqwil);
 
 $Enamorus = array(13265);
 printHolo('Enamorus', $Enamorus);
+
 
 $Sprigatito = array(13362,13536,13580,13581,13973,13748,13967);
 printHolo('Sprigatito', $Sprigatito);
@@ -2935,8 +3121,11 @@ printHolo('Quaquaval', $Quaquaval);
 $Lechonk = array(13492,13493,13494,13939,13940,13941,14517);
 printHolo('Lechonk', $Lechonk);
 
-$Oinkologne = array(13495,13942,13943,14518);
-printHolo('Oinkologne', $Oinkologne);
+$Oinkologne_F = array(13943,14518);
+printHolo('Oinkologne F', $Oinkologne_F);
+
+$Oinkologne_M = array(13495,13942);
+printHolo('Oinkologne M', $Oinkologne_M);
 
 $Tarountula = array(13365,13366,13367,13583,13584);
 printHolo('Tarountula', $Tarountula);
@@ -2962,8 +3151,11 @@ printHolo('Pawmot', $Pawmot);
 $Tandemaus = array(13496,13497,13719,13720,14400,14401,14519);
 printHolo('Tandemaus', $Tandemaus);
 
-$Maushold = array(13498,13721,14520);
+$Maushold = array(13498,14520);
 printHolo('Maushold', $Maushold);
+
+$Maushold_Three = array(13721);
+printHolo('Maushold Three', $Maushold_Three);
 
 $Fidough = array(13439,13440,14489);
 printHolo('Fidough', $Fidough);
