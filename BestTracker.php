@@ -1585,10 +1585,14 @@ else if (isset($_GET['test']))
 	$test = array(3732,3734);
 	printCards('Test', $test);
 	
+	// excluded: Shining (SM), Amazing Rare, V-Union
+	$test = array(184,328,364,443,443,1078,1958,3649,-1,-1,-1,-1,/*215,316*/-1,-1,368,493,610,1484,1961,3647,-1,-1,-1,-1,-1,-1,-1,-1,927,1265,2721,4314,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,2797,-1,-1,-1,-1,-1);
+	printCards('oooh', $test);
+	
 	$test = array(3547,3995,3997,3998,3874,4010);
 	printCards('Reserved by aunt', $test);
 	
-	$lf = array_merge($ex_SV_Tera, $VSTAR, $ex_SV_Ancient, $ex_SV_Future, $VMAX_Gigantamax, $VMAX_Eternamax, $VMAX_Blue, $UB_GX, $Ace_Spec/*, $LV_X, $LEGEND, $Prime*/);
+	$lf = array_merge($ex_SV_Tera, $VSTAR, $Seal_Stone, $ex_SV_Ancient, $ex_SV_Future, $VMAX_Gigantamax, $VMAX_Eternamax, $VMAX_Blue, $UB_GX, $Ace_Spec, $Ace_Spec_Plasma/*, $LV_X, $LEGEND, $Prime*/);
 	removeCardsFrom($lf, $have);
 	removeCardsFrom($lf, $test);
 	printCards('Looking for', $lf);
@@ -1632,8 +1636,8 @@ else if (isset($_GET['fut']))
 	// printFuture('ex', $FUT_ex);
 	printMix('ex', $ex_SV, $FUT_ex, $FUT_ex_Index);
 	
-	$FUT_Tera = array('NW2','SVJ1','SCR1','SM2','SCR3','KO1','SM3');
-	$FUT_Tera_Index = array(13,21,26,26,26,27,-1);
+	$FUT_Tera = array('\n','CH6','NW2','SVJ1','SM2','SVK2','SM3','SM4','SVK1','KO1','SM7','\n');
+	$FUT_Tera_Index = array(26,9,13,21,26,26,26,26,26,27,-1,26);
 	// printFuture('Tera ex', $FUT_Tera);
 	printMix('Tera ex', $ex_SV_Tera, $FUT_Tera, $FUT_Tera_Index);
 	

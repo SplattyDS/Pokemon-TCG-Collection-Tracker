@@ -517,6 +517,7 @@ printHolo('Paldean Fates', $Paldean_Fates);
 
 
 
+
 $SV_Energy = array(14224,14216,14225,14217,14226,14218,14227,14219,14228,14220,14229,14221,14230,14222,14231,14223);
 printHolo('SV Energy', $SV_Energy);
 
