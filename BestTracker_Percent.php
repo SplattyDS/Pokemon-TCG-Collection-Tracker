@@ -95,9 +95,9 @@ printCards('Gold Special Energy (SWSH)', $Gold_Special_Energy_SWSH);
 
 printCards('ex (SV) Gold (Raised Foil)', $ex_SV_Gold_Raised_Foil);
 
-printCards('ex (SV)', $ex_SV);
-
 printCards('LV.X', $LV_X);
+
+printCards('ex (SV)', $ex_SV);
 
 printCards('Character Art (SM)', $Character_Art_SM);
 
@@ -143,9 +143,9 @@ printCards('Shiny Holo Subset', $Shiny_Holo);
 
 printCards('VSTAR Special Art', $VSTAR_Special_Art);
 
-printCards('Full Art Trainer (SV)', $Full_Art_Trainer_SV);
-
 printCards('Full Art Pokémon (BW & XY - Textured)', $Full_Art_Pokemon_BWXY_Textured);
+
+printCards('Full Art Trainer (SV)', $Full_Art_Trainer_SV);
 
 printCards('Special Art Pokémon (SWSH)', $Special_Art_Pokemon_SWSH);
 
@@ -177,8 +177,6 @@ printCards('Secret Rare (BW & XY - Gold)', $Secret_BWXY_Gold);
 
 printCards('Shiny Vault (SV)', $Shiny_Vault_SV);
 
-printCards('Special Art Trainer (SV)', $Special_Art_Trainer_SV);
-
 printCards('ex (SV) Full Art', $ex_SV_Full_Art);
 
 printCards('Shiny Vault (SWSH)', $Shiny_Vault_SWSH);
@@ -186,6 +184,8 @@ printCards('Shiny Vault (SWSH)', $Shiny_Vault_SWSH);
 printCards('Full Art Trainer (BW & XY)', $Full_Art_Trainer_BW_XY);
 
 printCards('VMAX Rainbow', $VMAX_Rainbow);
+
+printCards('Special Art Trainer (SV)', $Special_Art_Trainer_SV);
 
 printCards('Full Art Trainer (SM)', $Full_Art_Trainer_SM);
 
@@ -359,9 +359,15 @@ printCards('Special Art Trainer (SV - Ancient)', $Special_Art_Trainer_SV_Ancient
 
 printCards('Special Art Trainer (SV - Future)', $Special_Art_Trainer_SV_Future);
 
+printCards('Special Art Pokémon (SV - Woodblock)', $Special_Art_Pokemon_SV_Woodblock);
+
+printCards('Special Art Pokémon (SV - Glitter)', $Special_Art_Pokemon_SV_Glitter);
+
 printCards('Special Art Pokémon (SV - Ancient)', $Special_Art_Pokemon_SV_Ancient);
 
 printCards('ex (SV) Special Art', $ex_SV_Special_Art);
+
+printCards('ex (SV) Special Art (Woodblock)', $ex_SV_Special_Art_Woodblock);
 
 printCards('ex (SV - Ancient) Special Art', $ex_SV_Ancient_Special_Art);
 
@@ -374,6 +380,8 @@ printCards('ex (SV) Shiny Special Art', $ex_SV_Shiny_Special_Art);
 printCards('Tera ex (SV) Shiny Special Art', $ex_SV_Tera_Shiny_Special_Art);
 
 printCards('Gold Item (SV)', $Gold_Item_SV);
+
+printCards('Gold Item (SV - Ancient)', $Gold_Item_Ancient_SV);
 
 printCards('Gold Stadium (SV)', $Gold_Stadium_SV);
 

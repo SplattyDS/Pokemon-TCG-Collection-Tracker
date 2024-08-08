@@ -353,6 +353,10 @@ printCards('Special Art Trainer (SV - Future)', $Special_Art_Trainer_SV_Future);
 
 printCards('Special Art Pokémon (SV)', $Special_Art_Pokemon_SV);
 
+printCards('Special Art Pokémon (SV - Woodblock)', $Special_Art_Pokemon_SV_Woodblock);
+
+printCards('Special Art Pokémon (SV - Glitter)', $Special_Art_Pokemon_SV_Glitter);
+
 printCards('Special Art Pokémon (SV - Ancient)', $Special_Art_Pokemon_SV_Ancient);
 
 printCards('Special Art Pokémon (SV - Future)', $Special_Art_Pokemon_SV_Future);
@@ -360,6 +364,8 @@ printCards('Special Art Pokémon (SV - Future)', $Special_Art_Pokemon_SV_Future)
 printCards('Special Art Pokémon (SV - Shiny)', $Special_Art_Pokemon_SV_Shiny);
 
 printCards('ex (SV) Special Art', $ex_SV_Special_Art);
+
+printCards('ex (SV) Special Art (Woodblock)', $ex_SV_Special_Art_Woodblock);
 
 printCards('ex (SV - Ancient) Special Art', $ex_SV_Ancient_Special_Art);
 
@@ -372,6 +378,8 @@ printCards('ex (SV) Shiny Special Art', $ex_SV_Shiny_Special_Art);
 printCards('Tera ex (SV) Shiny Special Art', $ex_SV_Tera_Shiny_Special_Art);
 
 printCards('Gold Item (SV)', $Gold_Item_SV);
+
+printCards('Gold Item (SV - Ancient)', $Gold_Item_Ancient_SV);
 
 printCards('Gold Stadium (SV)', $Gold_Stadium_SV);
 

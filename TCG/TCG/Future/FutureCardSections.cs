@@ -4,14 +4,11 @@
 	{
 		private static FutureCardSection[] TheSections =
 		{
-			new FutureCardSection("Ancient Roar (JP)", "AR", 1),
-			new FutureCardSection("Future Flash (JP)", "FF", 1),
-			new FutureCardSection("Mask of Change (JP)", "MC", 3),
-			new FutureCardSection("Night Wanderer (JP)", "NW", 39),
 			new FutureCardSection("Stellar Miracle (JP)", "SM", 44),
 			new FutureCardSection("Stellar Crown", "SCR", 5),
+			new FutureCardSection("Paradise Dragona (JP)", "PD", 3),
 
-			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 14),
+			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 8),
 			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 4),
 
 			new FutureCardSection("Special Deck Set ex Venusaur & Charizard & Blastoise (JP)", "SVG", 2),

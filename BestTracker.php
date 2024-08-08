@@ -1631,30 +1631,53 @@ else if (isset($_GET['fut']))
 {
 	require 'BestTracker_Future.php';
 	
-	$FUT_ex = array('SVG1','SM1','SVG2','SVPEN1','SVG3','NW1','SVI1','SVJ2','SVP3','SVPEN2','SVI2','SVI3','SVP1','NW3','NW4','NW5','NW6','SVI4','SVP2');
-	$FUT_ex_Index = array(1,12,13,16,23,24,26,33,43,46,57,59,60,78,78,78,78,82,-1);
-	// printFuture('ex', $FUT_ex);
-	printMix('ex', $ex_SV, $FUT_ex, $FUT_ex_Index);
+	$FUT_ex = array('SVG1','CH3','SM1','SVPEN7','SVG2','SCR1','SVP4','SVJ2','SVP3','CH4','CH5','PD1','SM5','SVPEN6','SM6','SCR2','SVP1','CH7','SCR3','SM7','SVPEN8','SVP2');
+	$FUT_ex_Index = array(1,6,12,13,24,28,33,35,45,47,55,56,58,60,61,62,63,86,89,91,107,-1);
+	printFuture('ex', $FUT_ex);
+	printMix('ex (All)', $ex_SV, $FUT_ex, $FUT_ex_Index);
 	
-	$FUT_Tera = array('\n','CH6','NW2','SVJ1','SM2','SVK2','SM3','SM4','SVK1','KO1','SM7','\n');
-	$FUT_Tera_Index = array(26,9,13,21,26,26,26,26,26,27,-1,26);
-	// printFuture('Tera ex', $FUT_Tera);
-	printMix('Tera ex', $ex_SV_Tera, $FUT_Tera, $FUT_Tera_Index);
+	$FUT_Tera = array('\n','CH6','SVJ1','SM2','SVL2','SM3','SM4','SVL1','PD2','KO1','SM8','\n');
+	$FUT_Tera_Index = array(27,9,22,27,27,27,27,27,27,28,-1,27);
+	printFuture('Tera ex', $FUT_Tera);
+	printMix('Tera ex (All)', $ex_SV_Tera, $FUT_Tera, $FUT_Tera_Index);
 	
 	// $FUT_Tera_B = array('\n','CH2','\n','\n','\n','\n','CH5','\n','SVJ1','\n','\n','MC7','\n','\n','MC1','MC2','MC4','MC6','SCR1','SCR2','SCR3','\n','SCR4');
 	// $FUT_Tera_Index_B = array(4,5,6,9,12,15,15,17,19,20,21,22,22,-1,-2,-2,-2,-2,-1,-1,-1,-1,-2);
 	// printFuture('Tera ex', $FUT_Tera_B);
 	// printMix('Tera ex', $ex_SV_Tera, $FUT_Tera_B, $FUT_Tera_Index_B);
 	
-	$FUT_Ancient = array('SVPEN8','SVPEN9');
+	$FUT_Ancient = array('SVPEN1','SVPEN2');
 	$FUT_Ancient_Index = array(1,-1);
-	// printFuture('Ancient ex', $FUT_Ancient);
-	printMix('Ancient ex', $ex_SV_Ancient, $FUT_Ancient, $FUT_Ancient_Index);
+	printFuture('Ancient ex', $FUT_Ancient);
+	printMix('Ancient ex (All)', $ex_SV_Ancient, $FUT_Ancient, $FUT_Ancient_Index);
 	
-	$FUT_Future = array('SVPEN10','SVPEN11');
+	$FUT_Future = array('SVPEN3','SVPEN4');
 	$FUT_Future_Index = array(7,8);
-	// printFuture('Future ex', $FUT_Future);
-	printMix('Future ex', $ex_SV_Future, $FUT_Future, $FUT_Future_Index);
+	printFuture('Future ex', $FUT_Future);
+	printMix('Future ex (All)', $ex_SV_Future, $FUT_Future, $FUT_Future_Index);
+	
+	$FUT_Ace_Spec = array('SVL3','SVL4','SM9','SM10','SM11','PD3');
+	printFuture('Ace Spec', $FUT_Ace_Spec);
+	
+	$FUT_Radiant = array('CH1','CH9','CH2');
+	printFuture('Radiant', $FUT_Radiant);
+	
+	$FUT_Types = array(&$FUT_ex, &$FUT_Tera, &$FUT_Ancient, &$FUT_Future, &$FUT_Ace_Spec, &$FUT_Radiant);
+	$FUT_Other = array();
+	foreach ($FUT_All as $currentCard)
+	{
+		$found = false;
+		
+		foreach ($FUT_Types as $type)
+		{
+			if (in_array($currentCard, $type, true))
+				$found = true;
+		}
+		
+		if (!$found)
+			array_push($FUT_Other, $currentCard);
+	}
+	printFuture('Other', $FUT_Other);
 }
 else if (isset($_GET['all']))
 	require 'BestTracker_All.php';

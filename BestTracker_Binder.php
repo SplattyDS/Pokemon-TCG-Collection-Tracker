@@ -335,6 +335,31 @@ function CountHaveBinder(&$binder)
 
 $V_Union_Mode = false;
 
+function PrintMissingCards()
+{
+	global $have;
+	global $haveBinder;
+	
+	$first = true;
+	
+	for ($i = 0; $i < count($have); $i++)
+	{
+		// $found = true;
+		
+		// for ($j = 0; $j < count($haveBinder); $j++)
+		// {
+			// if ($have[$i] == $haveBinder[$j])
+				// $found = true;
+		// }
+		
+		if (!in_array($have[$i], $haveBinder, true) && $have[$i] != 3223 && $have[$i] != 3224)
+		{
+			print(($first ? '' : ', ').$have[$i]);
+			$first = false;
+		}
+	}
+}
+
 function Process(&$input)
 {
 	global $V_Union_Mode;
@@ -342,8 +367,15 @@ function Process(&$input)
 	global $have;
 	global $haveBinder;
 	
-	if (count($have) - 2 != count($haveBinder)) // minus 2 because metal cards
-		print('<h1>Missing cards in collection binders: '.(count($have) - 2 - count($haveBinder)).'</h1>');
+	// minus 2 because metal cards
+	$haveCount = count($have);
+	
+	if (count($have) - 2 != count($haveBinder))
+	{
+		print('<h1>Missing cards in collection binders: '.(count($have) - 2 - count($haveBinder)).' (');
+		PrintMissingCards();
+		print(')</h1>');
+	}
 	
 	$output = array();
 	$haveIndex = 0;
@@ -837,7 +869,7 @@ AddCards($binder11, $ex_SV_Gold_Raised_Foil);
 AlignPage($binder11);
 AlignBinder($binder11);
 
-$input = array(11, '/p', 1, '/r', 2, '/p', 2, '/r', 4, '/r', 2, '/p', 1, -1, 1, -1, 1, -5, 1, -5, 1, -2, 1, -1, 2, -2, 1, -2, '/p', 9, '/p', 2, '/r', 5, '/p', 6, '/r', 1, '/p', 11, '/p', 3, '/r', 4, '/p', 12, '/r', 1, '/r', 3, '/p', 5, '/r', 1, '/p', 3, '/p', 19, '/r', 1, '/p', 14, -1, 1, '/r', 2, '/r', 1, '/p', 1, 1, '/r', 5, 1, '/p', 21, '/r', 3, 1, '/r', 3, '/p', 8, '/p', 2, '/r', 2, '/r', 1, '/b', 100, '/s', 8, '/p', 8, '/p', 21, -1, 2, '/p', '/v', 5, '/v', '/p', 9, '/p', 16, '/r', 3, '/r', -3, 1, '/p', 24, '/p', 7, '/r', 1, 1, '/p', 8, '/p', 4, '/r', 2, '/r', 1, '/p', 4, '/r', 3, '/r', 1, '/p', 14, '/p', 2, -1, 1, '/r', 1, '/r', 1, '/p', 2, '/r', 4, '/p', 1, '/r', 2, '/b', 17, '/p', 2, '/r', 3, '/p', 12, '/s', 5, '/r', 2, '/r', 4, '/r', 2, '/r', 2, 1, 1, '/p', 3, 1, 2, '/r', 2, '/p', 1, '/s', 0, '/b');
+$input = array(11, '/p', 1, '/r', 2, '/p', 2, '/r', 4, '/r', 2, '/p', 1, -1, 1, -1, 1, -5, 1, -5, 1, -2, 1, -1, 2, -2, 1, -2, '/p', 9, '/p', 2, '/r', 5, '/p', 6, '/r', 1, '/p', 11, '/p', 3, '/r', 4, '/p', 12, '/r', 1, '/r', 3, '/p', 5, '/r', 1, '/p', 3, '/p', 19, '/r', 1, '/p', 14, -1, 1, '/r', 2, '/r', 1, '/p', 1, 1, '/r', 5, 1, '/p', 21, '/r', 1, '/r', 3, 1, '/r', 3, '/p', 8, '/p', 2, '/r', 2, '/r', 1, '/b', 101, '/s', 8, '/p', 8, '/p', 21, 3, '/p', -1, '/s', '/v', 6, '/v', '/p', 9, '/p', 16, '/r', 3, '/r', -3, 1, '/p', 24, '/p', 7, '/r', 1, 1, '/p', 8, '/p', 4, '/r', 2, '/r', 1, '/p', 4, '/r', 3, '/r', 1, '/p', 14, '/p', 2, -1, 1, '/r', 1, '/r', 1, '/p', 2, '/r', 4, '/p', 1, '/r', 2, '/b', 17, '/p', 4, '/r', 3, '/p', 16, '/s', 5, '/r', 2, '/r', 4, '/r', 2, '/r', 2, 1, 1, '/p', 3, 1, 2, '/r', 2, '/p', 1, '/s', 0, '/b');
 
 $testBinders = array(&$binder12, &$binder13, &$binder14);
 SplitCards($testBinders, Process($input));

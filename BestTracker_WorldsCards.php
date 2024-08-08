@@ -353,6 +353,10 @@ $Special_Art_Trainer_SV_Future = array();
 
 $Special_Art_Pokemon_SV = array();
 
+$Special_Art_Pokemon_SV_Woodblock = array();
+
+$Special_Art_Pokemon_SV_Glitter = array();
+
 $Special_Art_Pokemon_SV_Ancient = array();
 
 $Special_Art_Pokemon_SV_Future = array();
@@ -360,6 +364,8 @@ $Special_Art_Pokemon_SV_Future = array();
 $Special_Art_Pokemon_SV_Shiny = array();
 
 $ex_SV_Special_Art = array();
+
+$ex_SV_Special_Art_Woodblock = array();
 
 $ex_SV_Ancient_Special_Art = array();
 
@@ -372,6 +378,8 @@ $ex_SV_Shiny_Special_Art = array();
 $ex_SV_Tera_Shiny_Special_Art = array();
 
 $Gold_Item_SV = array();
+
+$Gold_Item_Ancient_SV = array();
 
 $Gold_Stadium_SV = array();
 
