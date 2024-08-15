@@ -478,6 +478,7 @@ $binder11 = array();
 $binder12 = array();
 $binder13 = array();
 $binder14 = array();
+$binder15 = array();
 
 AddCards($binder0, $Metal);
 AlignBinder($binder0);
@@ -780,103 +781,96 @@ AlignPage($binder10);
 AlignBinder($binder10);*/
 
 AddCards($binder10, $ex_SV);
-AlignRow($binder10);
+AlignPages($binder10);
 AddCards($binder10, $ex_SV_Ancient);
-AlignRow($binder10);
+AlignPage($binder10);
 AddCards($binder10, $ex_SV_Future);
 AlignPage($binder10);
 AddCards($binder10, $ex_SV_Tera);
-AlignPage($binder10);
+AlignPages($binder10);
 AddCards($binder10, $Ace_Spec_SV);
-AlignRow($binder10);
 AddCards($binder10, $Ace_Spec_SV_Ancient);
-AlignRow($binder10);
 AddCards($binder10, $Ace_Spec_SV_Future);
-AlignPage($binder10);
+AlignPages($binder10);
 AddCards($binder10, $Shiny_Vault_SV);
-AlignPage($binder10);
-AddCards($binder10, $Full_Art_Trainer_SV);
-AlignRow($binder10);
-AddCards($binder10, $Full_Art_Trainer_SV_Ancient);
-AlignRow($binder10);
-AddCards($binder10, $Full_Art_Trainer_SV_Future);
-AlignPage($binder10);
-AddCards($binder10, $Full_Art_Pokemon_SV);
-AlignPage($binder10);
-AddCards($binder10, $ex_SV_Full_Art);
-AlignRow($binder10);
-AddCards($binder10, $ex_SV_Ancient_Full_Art);
-AlignRow($binder10);
-AddCards($binder10, $ex_SV_Future_Full_Art);
-AlignPage($binder10);
-AddCards($binder10, $ex_SV_Tera_Full_Art);
-AlignPage($binder10);
-AddCards($binder10, $ex_SV_Shiny_Full_Art);
-AlignRow($binder10);
-AddCards($binder10, $ex_SV_Ancient_Shiny_Full_Art);
-AlignRow($binder10);
-AddCards($binder10, $ex_SV_Future_Shiny_Full_Art);
-AlignPage($binder10);
-AddCards($binder10, $ex_SV_Tera_Shiny_Full_Art);
 AlignPage($binder10);
 AlignBinder($binder10);
 
-AddCards($binder11, $Special_Art_Trainer_SV);
+AddCards($binder11, $Full_Art_Trainer_SV);
 AlignRow($binder11);
-AddCards($binder11, $Special_Art_Trainer_SV_Poke_Ball);
-AlignRow($binder11);
-AddCards($binder11, $Special_Art_Trainer_SV_Ancient);
-AlignRow($binder11);
-AddCards($binder11, $Special_Art_Trainer_SV_Future);
+AddCards($binder11, $Full_Art_Trainer_SV_Ancient);
+AddCards($binder11, $Full_Art_Trainer_SV_Future);
+AlignPages($binder11);
+AddCards($binder11, $Full_Art_Pokemon_SV);
 AlignPage($binder11);
-AddCards($binder11, $Special_Art_Pokemon_SV);
-AlignRow($binder11);
-AddCards($binder11, $Special_Art_Pokemon_SV_Ancient);
-AlignRow($binder11);
-AddCards($binder11, $Special_Art_Pokemon_SV_Future);
-AlignRow($binder11);
-AddCards($binder11, $Special_Art_Pokemon_SV_Shiny);
+AddCards($binder11, $ex_SV_Full_Art);
 AlignPage($binder11);
-AddCards($binder11, $ex_SV_Special_Art);
-AlignRow($binder11);
-AddCards($binder11, $ex_SV_Ancient_Special_Art);
-AlignRow($binder11);
-AddCards($binder11, $ex_SV_Future_Special_Art);
-AlignRow($binder11);
-AddCards($binder11, $ex_SV_Shiny_Special_Art);
+AddCards($binder11, $ex_SV_Ancient_Full_Art);
 AlignPage($binder11);
-AddCards($binder11, $ex_SV_Tera_Special_Art);
-AlignRow($binder11);
-AddCards($binder11, $ex_SV_Tera_Shiny_Special_Art);
+AddCards($binder11, $ex_SV_Future_Full_Art);
 AlignPage($binder11);
-AddCards($binder11, $Gold_Item_SV);
-AlignRow($binder11);
-AddCards($binder11, $Gold_Stadium_SV);
+AddCards($binder11, $ex_SV_Tera_Full_Art);
 AlignPage($binder11);
-AddCards($binder11, $Gold_Energy_SV);
+AddCards($binder11, $ex_SV_Shiny_Full_Art);
+AddCards($binder11, $ex_SV_Ancient_Shiny_Full_Art);
+AddCards($binder11, $ex_SV_Future_Shiny_Full_Art);
 AlignRow($binder11);
-AddCards($binder11, $Gold_Special_Energy_SV);
-AlignPage($binder11);
-AddCards($binder11, $ex_SV_Gold);
-AlignRow($binder11);
-AddCards($binder11, $ex_SV_Ancient_Gold);
-AlignRow($binder11);
-AddCards($binder11, $ex_SV_Future_Gold);
-AlignPage($binder11);
-AddCards($binder11, $ex_SV_Tera_Gold);
-AlignPage($binder11);
-AddCards($binder11, $ex_SV_Gold_Raised_Foil);
+AddCards($binder11, $ex_SV_Tera_Shiny_Full_Art);
 AlignPage($binder11);
 AlignBinder($binder11);
 
-$input = array(11, '/p', 1, '/r', 2, '/p', 2, '/r', 4, '/r', 2, '/p', 1, -1, 1, -1, 1, -5, 1, -5, 1, -2, 1, -1, 2, -2, 1, -2, '/p', 9, '/p', 2, '/r', 5, '/p', 6, '/r', 1, '/p', 11, '/p', 3, '/r', 4, '/p', 12, '/r', 1, '/r', 3, '/p', 5, '/r', 1, '/p', 3, '/p', 19, '/r', 1, '/p', 14, -1, 1, '/r', 2, '/r', 1, '/p', 1, 1, '/r', 5, 1, '/p', 21, '/r', 1, '/r', 3, 1, '/r', 3, '/p', 8, '/p', 2, '/r', 2, '/r', 1, '/b', 101, '/s', 8, '/p', 8, '/p', 21, 3, '/p', -1, '/s', '/v', 6, '/v', '/p', 9, '/p', 16, '/r', 3, '/r', -3, 1, '/p', 24, '/p', 7, '/r', 1, 1, '/p', 8, '/p', 4, '/r', 2, '/r', 1, '/p', 4, '/r', 3, '/r', 1, '/p', 14, '/p', 2, -1, 1, '/r', 1, '/r', 1, '/p', 2, '/r', 4, '/p', 1, '/r', 2, '/b', 17, '/p', 4, '/r', 3, '/p', 16, '/s', 5, '/r', 2, '/r', 4, '/r', 2, '/r', 2, 1, 1, '/p', 3, 1, 2, '/r', 2, '/p', 1, '/s', 0, '/b');
+AddCards($binder12, $Special_Art_Trainer_SV);
+AddCards($binder12, $Special_Art_Trainer_SV_Ancient);
+AddCards($binder12, $Special_Art_Trainer_SV_Future);
+AlignRow($binder12);
+AddCards($binder12, $Special_Art_Trainer_SV_Poke_Ball);
+AlignPages($binder12);
+AddCards($binder12, $Special_Art_Pokemon_SV);
+AlignRow($binder12);
+AddCards($binder12, $Special_Art_Pokemon_SV_Ancient);
+AlignRow($binder12);
+AddCards($binder12, $Special_Art_Pokemon_SV_Future);
+AlignRow($binder12);
+AddCards($binder12, $Special_Art_Pokemon_SV_Shiny);
+AlignPages($binder12);
+AddCards($binder12, $ex_SV_Special_Art);
+AddCards($binder12, $ex_SV_Ancient_Special_Art);
+AddCards($binder12, $ex_SV_Future_Special_Art);
+AlignRow($binder12);
+AddCards($binder12, $ex_SV_Shiny_Special_Art);
+AlignPage($binder12);
+AddCards($binder12, $ex_SV_Tera_Special_Art);
+AlignRow($binder12);
+AddCards($binder12, $ex_SV_Tera_Shiny_Special_Art);
+AlignPage($binder12);
+AddCards($binder12, $Gold_Item_SV);
+AlignRow($binder12);
+AddCards($binder12, $Gold_Stadium_SV);
+AlignPage($binder12);
+AddCards($binder12, $Gold_Energy_SV);
+AlignRow($binder12);
+AddCards($binder12, $Gold_Special_Energy_SV);
+AlignPage($binder12);
+AddCards($binder12, $ex_SV_Gold);
+AlignRow($binder12);
+AddCards($binder12, $ex_SV_Ancient_Gold);
+AlignRow($binder12);
+AddCards($binder12, $ex_SV_Future_Gold);
+AlignRow($binder12);
+AddCards($binder12, $ex_SV_Tera_Gold);
+AlignPage($binder12);
+AddCards($binder12, $ex_SV_Gold_Raised_Foil);
+AlignPage($binder12);
+AlignBinder($binder12);
 
-$testBinders = array(&$binder12, &$binder13, &$binder14);
+$input = array(11, '/p', 1, '/r', 2, '/p', 2, '/r', 4, '/p', 1, '/r', 3, '/r', 1, '/s', 1, -1, 1, -1, 1, -5, 1, -5, 1, -2, 1, -1, 2, -2, 1, -2, '/p', 9, '/p', 2, '/r', 5, '/p', 6, '/r', 1, '/p', 11, '/p', 3, '/r', 4, '/p', 12, '/r', 1, '/r', 3, '/p', 5, '/r', 1, '/p', 3, '/p', 19, '/r', 1, '/p', 15, 1, '/r', 2, '/r', 2, '/p', 1, 1, -1, 1, '/r', 5, 1, '/p', 21, '/r', 1, '/r', 3, 1, '/r', 3, '/p', 8, '/p', 2, '/r', 2, '/r', 1, '/b', 101, '/s', 8, '/p', 12, '/p', 23, '/p', 3, '/s', '/v', 6, '/v', '/p', 9, '/p', 16, '/r', 3, '/r', -3, 1, '/p', 24, '/p', 7, '/r', 2, -1, 1, '/p', 8, '/p', 4, '/r', 2, '/r', 1, '/p', 4, '/r', 3, '/r', 1, '/p', 14, '/p', 2, -1, 1, '/r', 1, '/r', 1, '/p', 2, '/r', 4, '/p', 1, '/r', 2, '/b', 17, '/p', 4, '/r', 3, '/p', 15, '/r', 4, '/s', 5, '/r', 2, '/r', 4, '/r', 2, '/r', 2, 1, 1, '/p', 3, 1, 2, '/r', 2, '/p', 1, '/s', 0, '/b');
+
+$testBinders = array(&$binder13, &$binder14, &$binder15);
 SplitCards($testBinders, Process($input));
 
-AlignBinder($binder12);
 AlignBinder($binder13);
 AlignBinder($binder14);
+AlignBinder($binder15);
 
 $binders = array
 (
@@ -895,6 +889,7 @@ $binders = array
 	&$binder12,
 	&$binder13,
 	&$binder14,
+	&$binder15,
 );
 
 $markers = 0;
@@ -916,6 +911,7 @@ $binderContents = array
 	'Gen 8.4, Rainbow',
 	'Gen 9.1 - Ongoing',
 	'Gen 9.2 - Ongoing',
+	'Gen 9.3 - Ongoing',
 	'Collection 1',
 	'Collection 2',
 	'Collection 3',

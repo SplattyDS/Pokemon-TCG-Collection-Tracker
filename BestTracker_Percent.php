@@ -25,17 +25,19 @@ printCards('Future ex (SV) Shiny Full Art', $ex_SV_Future_Shiny_Full_Art);
 
 printCards('Full Art Pokémon (BW & XY - Radiant)', $Full_Art_Pokemon_BWXY_Radiant);
 
+printCards('Tera ex (SV)', $ex_SV_Tera);
+
 printCards('Radiant Collection (XY)', $Radiant_Collection_XY);
 
-printCards('Tera ex (SV)', $ex_SV_Tera);
+printCards('VSTAR', $VSTAR);
+
+printCards('Holo Energy (EX Holon Phantoms)', $Holo_Energy_EX_Holon_Phantoms);
 
 printCards('Ace Spec (Plasma)', $Ace_Spec_Plasma);
 
 printCards('Tag Team Ultra Beast GX', $TT_UB_GX);
 
 printCards('Special Art Pokémon (SV - Shiny)', $Special_Art_Pokemon_SV_Shiny);
-
-printCards('VSTAR', $VSTAR);
 
 printCards('Ace Spec', $Ace_Spec);
 
@@ -45,9 +47,13 @@ printCards('Metal Cards', $Metal);
 
 printCards('ex (SV - Ancient)', $ex_SV_Ancient);
 
+printCards('VMAX (Gigantamax)', $VMAX_Gigantamax);
+
 printCards('Secret Rare (DP - Gold)', $Secret_DP_Gold);
 
 printCards('EX Full Art (Radiant - BW)', $EX_Full_Art_Radiant_BW);
+
+printCards('EX Full Art (Radiant - XY)', $EX_Full_Art_Radiant_XY);
 
 printCards('Full Art Pokémon (SWSH)', $Full_Art_Pokemon_SWSH);
 
@@ -71,11 +77,11 @@ printCards('ex (SV - Future)', $ex_SV_Future);
 
 printCards('Ancient Trait Δ', $Ancient_Trait_Delta);
 
+printCards('Full Art Energy (SWSH)', $Full_Art_Energy_SWSH);
+
 printCards('Special Art Pokémon (SV - Future)', $Special_Art_Pokemon_SV_Future);
 
 printCards('V Shiny', $V_Shiny_Full_Art);
-
-printCards('VMAX (Gigantamax)', $VMAX_Gigantamax);
 
 printCards('Ancient Trait θ', $Ancient_Trait_Theta);
 
@@ -85,7 +91,7 @@ printCards('δ ex', $Delta_Species_ex);
 
 printCards('Shiny Vault (SM)', $Shiny_Vault_SM);
 
-printCards('Holo Energy (EX Holon Phantoms)', $Holo_Energy_EX_Holon_Phantoms);
+printCards('Holo Energy (EX Emerald)', $Holo_Energy_EX_Emerald);
 
 printCards('Holo Energy (EX Power Keepers)', $Holo_Energy_EX_Power_Keepers);
 
@@ -109,8 +115,6 @@ printCards('EX (Evolutions)', $EX_Evolutions);
 
 printCards('VMAX Special Art', $VMAX_Special_Art);
 
-printCards('Full Art Energy (SWSH)', $Full_Art_Energy_SWSH);
-
 printCards('Gold Energy (SWSH)', $Gold_Energy_SWSH);
 
 printCards('Gold Shiny', $Gold_Shiny);
@@ -132,6 +136,8 @@ printCards('Tag Team GX', $TT_GX);
 printCards('Gold Stadium (SWSH)', $Gold_Stadium_SWSH);
 
 printCards('Secret Rare (BW & XY - Shiny)', $Secret_BWXY_Shiny);
+
+printCards('Full Art Pokémon (BW & XY - Mythical)', $Full_Art_Pokemon_BWXY_Mythical);
 
 printCards('Gold Special Energy (SM)', $Gold_Special_Energy_SM);
 
@@ -211,8 +217,6 @@ printCards('Lucario ex', $Lucario_ex);
 
 printCards('δ Gold Star', $Delta_Species_Gold_Star);
 
-printCards('Holo Energy (EX Emerald)', $Holo_Energy_EX_Emerald);
-
 printCards('Secret Rare (DP)', $Secret_DP);
 
 printCards('Secret Rare (HGSS)', $Secret_HGSS);
@@ -241,15 +245,11 @@ printCards('Full Art Pokémon (BW & XY - Plasma)', $Full_Art_Pokemon_BWXY_Plasma
 
 printCards('Full Art Pokémon (BW & XY - Legendary)', $Full_Art_Pokemon_BWXY_Legendary);
 
-printCards('Full Art Pokémon (BW & XY - Mythical)', $Full_Art_Pokemon_BWXY_Mythical);
-
 printCards('Full Art Pokémon (BW & XY - Other)', $Full_Art_Pokemon_BWXY_Other);
 
 printCards('EX Full Art (Evolutions)', $EX_Full_Art_Evolutions);
 
 printCards('EX Full Art (Team Plasma)', $EX_Full_Art_Plasma);
-
-printCards('EX Full Art (Radiant - XY)', $EX_Full_Art_Radiant_XY);
 
 printCards('EX Full Art (Special)', $EX_Full_Art_Special);
 

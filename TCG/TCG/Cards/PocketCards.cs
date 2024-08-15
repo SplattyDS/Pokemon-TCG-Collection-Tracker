@@ -13,10 +13,12 @@ namespace TCG
 			new PocketCard("Charizard ex", Pokedex.Charizard, PocketRarity.ex, Types.Fire, Sets.Genetic_Apex, -1),
 			new PocketCard("Pikachu ex", Pokedex.Pikachu, PocketRarity.ex, Types.Lightning, Sets.Genetic_Apex, -1),
 			new PocketCard("Mewtwo ex", Pokedex.Mewtwo, PocketRarity.ex, Types.Psychic, Sets.Genetic_Apex, -1),
-			new PocketCard("Lapras", Pokedex.Lapras, PocketRarity.ex, Types.Water, Sets.Genetic_Apex, -1),
-			new PocketCard("Meowth", Pokedex.Meowth, PocketRarity.ex, Types.Colorless, Sets.Genetic_Apex, -1),
-			new PocketCard("Moltres ex", Pokedex.Moltres, PocketRarity.ex, Types.Fire, Sets.Genetic_Apex, -1),
-			new PocketCard("Pikachu ex", Pokedex.Pikachu, PocketRarity.ex, Types.Lightning, Sets.Genetic_Apex, -1),
+			new PocketCard("Lapras", Pokedex.Lapras, PocketRarity.Special_Art_Pokémon, Types.Water, Sets.Genetic_Apex, -1),
+			new PocketCard("Meowth", Pokedex.Meowth, PocketRarity.Special_Art_Pokémon, Types.Colorless, Sets.Genetic_Apex, -1),
+			new PocketCard("Moltres ex", Pokedex.Moltres, PocketRarity.Special_Art_ex, Types.Fire, Sets.Genetic_Apex, -1),
+			new PocketCard("Pikachu ex", Pokedex.Pikachu, PocketRarity.Special_Art_ex, Types.Lightning, Sets.Genetic_Apex, -1),
+			new PocketCard("Squirtle", Pokedex.Squirtle, PocketRarity.Special_Art_Pokémon, Types.Lightning, Sets.Genetic_Apex, -1),
+			new PocketCard("Pidgeot", Pokedex.Pidgeot, PocketRarity.Special_Art_Pokémon, Types.Lightning, Sets.Genetic_Apex, -1),
 		};
 		
 		public static PocketCard[] Get()

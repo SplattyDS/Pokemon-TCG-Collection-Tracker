@@ -218,6 +218,7 @@
 		Twilight_Masquerade,
 		Shrouded_Fable,
 		Stellar_Crown,
+		Surging_Sparks,
 		SV_Energy,
 		SV_Promo,
 		Mc_Donalds_2023,
