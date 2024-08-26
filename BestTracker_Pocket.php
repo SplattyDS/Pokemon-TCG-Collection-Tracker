@@ -1,5 +1,12 @@
 <?php
-$pocketHave = array();
-$pocketAll = array(1,2,3,4,5,6,7,8,9);
-printPocket('All Revealed Pocket Cards', $pocketAll);
+printPocket('ex', $ex);
+
+printPocket('Special Art Pokémon', $Special_Art_Pokémon);
+
+printPocket('Full Art Trainer', $Full_Art_Trainer);
+
+printPocket('Special Art ex', $Special_Art_ex);
+
+printPocket('Immersive Art ex', $Immersive_Art_ex);
+
 ?>

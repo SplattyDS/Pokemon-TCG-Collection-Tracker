@@ -107,4 +107,24 @@
 			id = curID++;
 		}
 	}
+
+	public class JumboCard : CardBase
+	{
+		public JumboRarity rarity;
+
+		public static int curID = 1;
+
+		public JumboCard(string name, Pokedex dex, JumboRarity rarity, Types type, Sets set, double setNum, bool have = false)
+		{
+			this.name = name;
+			this.dex = dex;
+			this.rarity = rarity;
+			this.type = type;
+			this.set = set;
+			this.setNum = setNum;
+			this.have = have;
+
+			id = curID++;
+		}
+	}
 }

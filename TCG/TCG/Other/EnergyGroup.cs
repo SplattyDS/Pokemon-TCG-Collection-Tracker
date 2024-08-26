@@ -366,7 +366,14 @@ namespace TCG
 					HoloCards.Find(Sets.Paldea_Evolved, 193, HoloRarity.SV_REVERSE_ROCKY_HOLO),
 
 					// Medical Energy
-					HoloCards.Find(Sets.Paradox_Rift, 182, HoloRarity.SV_REVERSE_ROCKY_HOLO)
+					HoloCards.Find(Sets.Paradox_Rift, 182, HoloRarity.SV_REVERSE_ROCKY_HOLO),
+
+					// Mist Energy
+					HoloCards.Find(Sets.Temporal_Forces, 161, HoloRarity.SV_REVERSE_ROCKY_HOLO),
+					HoloCards.Find(Sets.Temporal_Forces, 161, HoloRarity.SV_REVERSE_PIXEL_COSMOS_HOLO),
+
+					// Boomerang Energy
+					HoloCards.Find(Sets.Twilight_Masquerade, 166, HoloRarity.SV_REVERSE_ROCKY_HOLO)
 				),
 				new EnergyGroup("Rainbow Energy",
 					HoloCards.Find(Sets.Team_Rocket, 17, HoloRarity.OS_PIXEL_COSMOS_HOLO),
@@ -450,6 +457,7 @@ namespace TCG
 				new EnergyGroup("Luminous Energy",
 					HoloCards.Find(Sets.Paldea_Evolved, 191, HoloRarity.SV_REVERSE_ROCKY_HOLO),
 					HoloCards.Find(Sets.Paldea_Evolved, 191, HoloRarity.SV_REVERSE_PIXEL_COSMOS_HOLO),
+					Cards.Find(Sets.Twilight_Masquerade, 226, Rarity.Gold_Special_Energy_SV),
 
 					// Reversal Energy
 					HoloCards.Find(Sets.Paldea_Evolved, 192, HoloRarity.SV_REVERSE_ROCKY_HOLO),
@@ -457,7 +465,10 @@ namespace TCG
 					Cards.Find(Sets.Paradox_Rift, 266, Rarity.Gold_Special_Energy_SV),
 
 					// Neo Upper Energy
-					Cards.Find(Sets.Temporal_Forces, 162, Rarity.Ace_Spec_SV)
+					Cards.Find(Sets.Temporal_Forces, 162, Rarity.Ace_Spec_SV),
+
+					// Legacy Energy
+					Cards.Find(Sets.Twilight_Masquerade, 167, Rarity.Ace_Spec_SV)
 				),
 				//new EnergyGroup("Rainbow Energy",
 				//	HoloCards.Find(Sets.Base_Set, 4, HoloRarity.OS_STARLIGHT_HOLO)

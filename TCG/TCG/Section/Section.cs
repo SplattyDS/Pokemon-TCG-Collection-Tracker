@@ -20,6 +20,7 @@
 	{
 		public Rarity rarity;
 		public HoloRarity holoRarity;
+		public PocketRarity pocketRarity;
 		public string title;
 		public SortMode sortMode;
 
@@ -33,6 +34,13 @@
 		public Section(HoloRarity holoRarity, string title, SortMode sortMode = SortMode.NO_SORT)
 		{
 			this.holoRarity = holoRarity;
+			this.title = title;
+			this.sortMode = sortMode;
+		}
+
+		public Section(PocketRarity pocketRarity, string title, SortMode sortMode = SortMode.NO_SORT)
+		{
+			this.pocketRarity = pocketRarity;
 			this.title = title;
 			this.sortMode = sortMode;
 		}

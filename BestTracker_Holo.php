@@ -9,7 +9,11 @@ printHolo('OS - Pixel Cosmos Holo (Owner)', $OS_PIXEL_COSMOS_HOLO_OWNER);
 
 printHolo('OS - Pixel Cosmos Holo (Rocket)', $OS_PIXEL_COSMOS_HOLO_ROCKET);
 
+printHolo('OS - Classic Stars Cosmos Holo', $OS_CLASSIC_STARS_HOLO);
+
 printHolo('OS - Pixel Cosmos Holo Energy', $OS_PIXEL_COSMOS_HOLO_ENERGY);
+
+printHolo('OS - Classic Stars Cosmos Holo Energy', $OS_CLASSIC_STARS_HOLO_ENERGY);
 
 printHolo('OS - Reverse Pixel Cosmos Holo', $OS_REVERSE_PIXEL_COSMOS_HOLO);
 
@@ -23,6 +27,8 @@ printHolo('Neo - Pixel Cosmos Holo (Light)', $NEO_PIXEL_COSMOS_HOLO_LIGHT);
 
 printHolo('Neo - Smooth Cosmos Holo (Light)', $NEO_SMOOTH_COSMOS_HOLO_LIGHT);
 
+printHolo('Neo - Classic Stars Cosmos Holo', $NEO_CLASSIC_STARS_HOLO);
+
 printHolo('Neo - Reverse Pixel Cosmos Holo', $NEO_REVERSE_PIXEL_COSMOS_HOLO);
 
 printHolo('Legendary Collection - Starlight Holo', $LC_STARLIGHT_HOLO);
@@ -34,6 +40,8 @@ printHolo('Legendary Collection - Reverse Fireworks Holo', $LC_REVERSE_FIREWORKS
 printHolo('Legendary Collection - Reverse Fireworks Holo (Dark)', $LC_REVERSE_FIREWORKS_HOLO_DARK);
 
 printHolo('e Series - Pixel Cosmos Holo', $E_PIXEL_COSMOS_HOLO);
+
+printHolo('e Series - Classic Stars Cosmos Holo', $E_CLASSIC_STARS_HOLO);
 
 printHolo('e Series - Reverse Plain Holo', $E_REVERSE_PLAIN_HOLO);
 
@@ -52,6 +60,8 @@ printHolo('EX Series - Pixel Cosmos Holo Delta', $EX_PIXEL_COSMOS_HOLO_DELTA);
 printHolo('EX Series - Smooth Cosmos Holo Delta', $EX_SMOOTH_COSMOS_HOLO_DELTA);
 
 printHolo('EX Series - Vertical Plain Holo Delta', $EX_VERTICAL_PLAIN_HOLO_DELTA);
+
+printHolo('EX Series - Classic Stars Cosmos Holo', $EX_CLASSIC_STARS_HOLO);
 
 printHolo('EX Series - Pixel Wave Holo Energy', $EX_PIXEL_WAVE_HOLO_ENERGY);
 
@@ -119,6 +129,8 @@ printHolo('DPPt Series - Cracked Ice Holo', $DP_CRACKED_ICE_HOLO);
 
 printHolo('DPPt Series - Cracked Ice Holo (SP)', $DP_CRACKED_ICE_HOLO_SP);
 
+printHolo('DPPt Series - Classic Stars Cosmos Holo', $DP_CLASSIC_STARS_HOLO);
+
 printHolo('DPPt Series - Mirror Holo Energy', $DP_MIRROR_HOLO_ENERGY);
 
 printHolo('DPPt Series - Crosshatch Holo Energy', $DP_CROSSHATCH_HOLO_ENERGY);
@@ -142,6 +154,8 @@ printHolo('HGSS Series - Pixel Cosmos Holo', $HGSS_PIXEL_COSMOS_HOLO);
 printHolo('HGSS Series - Pixel Cosmos Holo Victory Medal', $HGSS_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
 
 printHolo('HGSS Series - Cracked Ice Holo', $HGSS_CRACKED_ICE_HOLO);
+
+printHolo('HGSS Series - Classic Stars Cosmos Holo', $HGSS_CLASSIC_STARS_HOLO);
 
 printHolo('HGSS Series - Mirror Holo Energy (COL)', $HGSS_MIRROR_HOLO_ENERGY_COL);
 
@@ -179,6 +193,8 @@ printHolo('BW & XY Series - Cracked Ice Holo (Plasma)', $BWXY_CRACKED_ICE_HOLO_P
 
 printHolo('BW & XY Series - Confetti Holo', $BWXY_CONFETTI_HOLO);
 
+printHolo('BW & XY Series - Classic Stars Cosmos Holo', $BWXY_CLASSIC_STARS_HOLO);
+
 printHolo('BW & XY Series - Crosshatch Holo Energy (BW)', $BWXY_CROSSHATCH_HOLO_ENERGY_BW);
 
 printHolo('BW & XY Series - Mirror Holo Energy', $BWXY_MIRROR_HOLO_ENERGY);
@@ -213,6 +229,8 @@ printHolo('XY Evolutions - Cracked Ice Holo', $EV_CRACKED_ICE_HOLO);
 
 printHolo('XY Evolutions - Sheen Holo', $EV_SHEEN_HOLO);
 
+printHolo('XY Evolutions - Classic Stars Cosmos Holo', $EV_CLASSIC_STARS_HOLO);
+
 printHolo('XY Evolutions - Mirror Holo Energy', $EV_MIRROR_HOLO_ENERGY);
 
 printHolo('XY Evolutions - Reverse Mirror Holo', $EV_REVERSE_MIRROR_HOLO);
@@ -232,6 +250,8 @@ printHolo('SM Series - Sheen Holo', $SM_SHEEN_HOLO);
 printHolo('SM Series - Sheen Holo (Detective Pikachu)', $SM_SHEEN_HOLO_DP);
 
 printHolo('SM Series - Sequin Holo', $SM_SEQUIN_HOLO);
+
+printHolo('SM Series - Classic Stars Cosmos Holo', $SM_CLASSIC_STARS_HOLO);
 
 printHolo('SM Series - Water Web Holo Energy', $SM_WATER_WEB_HOLO_ENERGY);
 
@@ -266,6 +286,8 @@ printHolo('SWSH Series - Confetti Holo', $SWSH_CONFETTI_HOLO);
 printHolo('SWSH Series - Sequin Holo', $SWSH_SEQUIN_HOLO);
 
 printHolo('SWSH Series - Mirage Holo', $SWSH_MIRAGE_HOLO);
+
+printHolo('SWSH Series - Classic Stars Cosmos Holo', $SWSH_CLASSIC_STARS_HOLO);
 
 printHolo('SWSH Series - Plain Holo Energy', $SWSH_PLAIN_HOLO_ENERGY);
 
@@ -311,11 +333,19 @@ printHolo('SV Series - Confetti Holo', $SV_CONFETTI_HOLO);
 
 printHolo('SV Series - Line Holo', $SV_LINE_HOLO);
 
+printHolo('SV Series - Snowflake Holo', $SV_SNOWFLAKE_HOLO);
+
+printHolo('SV Series - Classic Stars Cosmos Holo', $SV_CLASSIC_STARS_HOLO);
+
 printHolo('SV Series - Smooth Cosmos Holo Energy', $SV_SMOOTH_COSMOS_HOLO_ENERGY);
 
 printHolo('SV Series - Pixel Cosmos Holo Energy', $SV_PIXEL_COSMOS_HOLO_ENERGY);
 
+printHolo('SV Series - Toxic Chain Holo Energy', $SV_TOXIC_CHAIN_HOLO_ENERGY);
+
 printHolo('SV Series - Reverse Rocky Holo', $SV_REVERSE_ROCKY_HOLO);
+
+printHolo('SV Series - Reverse Toxic Chain Holo', $SV_REVERSE_TOXIC_CHAIN_HOLO);
 
 printHolo('SV Series - Reverse Ancient Holo', $SV_REVERSE_ANCIENT_HOLO);
 
@@ -325,28 +355,8 @@ printHolo('SV Series - Reverse Mirage Rocky Holo', $SV_REVERSE_MIRAGE_ROCKY_HOLO
 
 printHolo('SV Series - Reverse Pixel Cosmos Holo', $SV_REVERSE_PIXEL_COSMOS_HOLO);
 
-printHolo('OS - Classic Stars Cosmos Holo', $OS_CLASSIC_STARS_HOLO);
+printHolo('SV Series - Reverse Line Holo', $SV_REVERSE_LINE_HOLO);
 
-printHolo('OS - Classic Stars Cosmos Holo Energy', $OS_CLASSIC_STARS_HOLO_ENERGY);
-
-printHolo('Neo - Classic Stars Cosmos Holo', $NEO_CLASSIC_STARS_HOLO);
-
-printHolo('e Series - Classic Stars Cosmos Holo', $E_CLASSIC_STARS_HOLO);
-
-printHolo('EX Series - Classic Stars Cosmos Holo', $EX_CLASSIC_STARS_HOLO);
-
-printHolo('DPPt Series - Classic Stars Cosmos Holo', $DP_CLASSIC_STARS_HOLO);
-
-printHolo('HGSS Series - Classic Stars Cosmos Holo', $HGSS_CLASSIC_STARS_HOLO);
-
-printHolo('BW & XY Series - Classic Stars Cosmos Holo', $BWXY_CLASSIC_STARS_HOLO);
-
-printHolo('XY Evolutions - Classic Stars Cosmos Holo', $EV_CLASSIC_STARS_HOLO);
-
-printHolo('SM Series - Classic Stars Cosmos Holo', $SM_CLASSIC_STARS_HOLO);
-
-printHolo('SWSH Series - Classic Stars Cosmos Holo', $SWSH_CLASSIC_STARS_HOLO);
-
-printHolo('SV Series - Classic Stars Cosmos Holo', $SV_CLASSIC_STARS_HOLO);
+printHolo('SV Series - Reverse Plain Holo', $SV_REVERSE_PLAIN_HOLO);
 
 ?>

@@ -183,6 +183,8 @@ printCards('Secret Rare (BW & XY - Gold)', $Secret_BWXY_Gold);
 
 printCards('Shiny Vault (SV)', $Shiny_Vault_SV);
 
+printCards('Special Art Trainer (SV)', $Special_Art_Trainer_SV);
+
 printCards('ex (SV) Full Art', $ex_SV_Full_Art);
 
 printCards('Shiny Vault (SWSH)', $Shiny_Vault_SWSH);
@@ -190,8 +192,6 @@ printCards('Shiny Vault (SWSH)', $Shiny_Vault_SWSH);
 printCards('Full Art Trainer (BW & XY)', $Full_Art_Trainer_BW_XY);
 
 printCards('VMAX Rainbow', $VMAX_Rainbow);
-
-printCards('Special Art Trainer (SV)', $Special_Art_Trainer_SV);
 
 printCards('Full Art Trainer (SM)', $Full_Art_Trainer_SM);
 

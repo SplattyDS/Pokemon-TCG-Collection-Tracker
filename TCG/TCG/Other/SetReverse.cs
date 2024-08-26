@@ -124,6 +124,9 @@ namespace TCG
 			new SetReverse(Sets.SV_151, HoloRarity.SV_REVERSE_ROCKY_HOLO),
 			new SetReverse(Sets.Paradox_Rift, HoloRarity.SV_REVERSE_ROCKY_HOLO, HoloRarity.SV_REVERSE_ANCIENT_HOLO, HoloRarity.SV_REVERSE_FUTURE_HOLO),
 			new SetReverse(Sets.Paldean_Fates, HoloRarity.SV_REVERSE_ROCKY_HOLO),
+			new SetReverse(Sets.Temporal_Forces, HoloRarity.SV_REVERSE_ROCKY_HOLO, HoloRarity.SV_REVERSE_ANCIENT_HOLO, HoloRarity.SV_REVERSE_FUTURE_HOLO),
+			new SetReverse(Sets.Twilight_Masquerade, HoloRarity.SV_REVERSE_ROCKY_HOLO, HoloRarity.SV_REVERSE_ANCIENT_HOLO, HoloRarity.SV_REVERSE_FUTURE_HOLO),
+			new SetReverse(Sets.Shrouded_Fable, HoloRarity.SV_REVERSE_TOXIC_CHAIN_HOLO, HoloRarity.SV_REVERSE_ANCIENT_HOLO, HoloRarity.SV_REVERSE_FUTURE_HOLO),
 		};
 
 		public static HoloRarity[] GetRarities(Sets set)

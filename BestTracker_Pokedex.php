@@ -2684,8 +2684,17 @@ printCards('Munkidori', $Munkidori);
 $Fezandipiti = array(4474,4487,4498,4506);
 printCards('Fezandipiti', $Fezandipiti);
 
-$Ogerpon = array(4383,4385,4387,4392,4424,4426,4428,4433,4445,4446,4447,4449,4455,4520);
-printCards('Ogerpon', $Ogerpon);
+$Teal_Mask_Ogerpon = array(4383,4424,4445,4455,4520);
+printCards('Teal Mask Ogerpon', $Teal_Mask_Ogerpon);
+
+$Hearthflame_Mask_Ogerpon = array(4385,4426,4446);
+printCards('Hearthflame Mask Ogerpon', $Hearthflame_Mask_Ogerpon);
+
+$Wellspring_Mask_Ogerpon = array(4387,4428,4447);
+printCards('Wellspring Mask Ogerpon', $Wellspring_Mask_Ogerpon);
+
+$Cornerstone_Mask_Ogerpon = array(4392,4433,4449);
+printCards('Cornerstone Mask Ogerpon', $Cornerstone_Mask_Ogerpon);
 
 
 

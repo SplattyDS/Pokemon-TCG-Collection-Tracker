@@ -16,9 +16,13 @@ namespace TCG
 			new PocketCard("Lapras", Pokedex.Lapras, PocketRarity.Special_Art_Pokémon, Types.Water, Sets.Genetic_Apex, -1),
 			new PocketCard("Meowth", Pokedex.Meowth, PocketRarity.Special_Art_Pokémon, Types.Colorless, Sets.Genetic_Apex, -1),
 			new PocketCard("Moltres ex", Pokedex.Moltres, PocketRarity.Special_Art_ex, Types.Fire, Sets.Genetic_Apex, -1),
-			new PocketCard("Pikachu ex", Pokedex.Pikachu, PocketRarity.Special_Art_ex, Types.Lightning, Sets.Genetic_Apex, -1),
-			new PocketCard("Squirtle", Pokedex.Squirtle, PocketRarity.Special_Art_Pokémon, Types.Lightning, Sets.Genetic_Apex, -1),
-			new PocketCard("Pidgeot", Pokedex.Pidgeot, PocketRarity.Special_Art_Pokémon, Types.Lightning, Sets.Genetic_Apex, -1),
+			new PocketCard("Pikachu ex", Pokedex.Pikachu, PocketRarity.Immersive_Art_ex, Types.Lightning, Sets.Genetic_Apex, -1),
+			new PocketCard("Squirtle", Pokedex.Squirtle, PocketRarity.Special_Art_Pokémon, Types.Water, Sets.Genetic_Apex, -1),
+			new PocketCard("Pidgeot", Pokedex.Pidgeot, PocketRarity.Special_Art_Pokémon, Types.Colorless, Sets.Genetic_Apex, -1),
+			new PocketCard("Articuno ex", Pokedex.Articuno, PocketRarity.Special_Art_ex, Types.Water, Sets.Genetic_Apex, -1),
+			new PocketCard("Sabrina", Pokedex.NVT, PocketRarity.Full_Art_Trainer, Types.Supporter, Sets.Genetic_Apex, -1),
+			new PocketCard("Eevee", Pokedex.Eevee, PocketRarity.Special_Art_Pokémon, Types.Colorless, Sets.Genetic_Apex, -1),
+			new PocketCard("Mewtwo ex", Pokedex.Mewtwo, PocketRarity.Immersive_Art_ex, Types.Psychic, Sets.Genetic_Apex, -1),
 		};
 		
 		public static PocketCard[] Get()

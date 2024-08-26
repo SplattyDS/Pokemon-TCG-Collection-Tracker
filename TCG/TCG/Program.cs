@@ -52,7 +52,12 @@ namespace TCG
 			WriteWorldsAll();
 			WriteWorldsHave();
 
-			WritePocket();
+			WritePocketCards();
+			WritePocketSections();
+			WritePocketAll();
+
+			WriteJumboCards();
+			WriteJumboHave();
 
 			WriteEnergy();
 			WriteAcetone();
@@ -584,7 +589,35 @@ namespace TCG
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Worlds_All.php", code);
 		}
 
-		static void WritePocket()
+		static void WritePocketCards()
+		{
+			List<string> code = new List<string>(2 + PocketSections.Get().Length);
+
+			code.Add("<?php");
+
+			foreach (Section section in PocketSections.Get())
+				code.Add(CodeFromPocketCards(section));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_PocketCards.php", code);
+		}
+
+		static void WritePocketSections()
+		{
+			List<string> code = new List<string>(2 + PocketSections.Get().Length);
+
+			code.Add("<?php");
+
+			foreach (Section section in PocketSections.Get())
+				code.Add(CodeFromPocketSection(section));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Pocket.php", code);
+		}
+
+		static void WritePocketAll()
 		{
 			List<string> code = new List<string>(5);
 
@@ -599,7 +632,34 @@ namespace TCG
 
 			code.Add("?>");
 
-			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Pocket.php", code);
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Pocket_All.php", code);
+		}
+
+		static void WriteJumboCards()
+		{
+			List<string> code = new List<string>(2 + (int)JumboRarity.Length);
+
+			code.Add("<?php");
+
+			foreach (JumboRarity rarity in Enum.GetValues(typeof(JumboRarity)))
+				if (rarity != JumboRarity.Length)
+					code.Add(CodeFromJumboCards(rarity));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Jumbo.php", code);
+		}
+
+		static void WriteJumboHave()
+		{
+			List<string> code = new List<string>(3);
+			IEnumerable<JumboCard> collection = GetMyJumboCollection();
+
+			code.Add("<?php");
+			code.Add("$jumboHave = array(" + string.Join(',', collection.Select(c => c.ToString())) + ");");
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_JumboHave.php", code);
 		}
 
 		static void WriteEnergy()
@@ -846,6 +906,34 @@ namespace TCG
 				"printWorlds('" + pokedex.ToString().Replace('_', ' ') + "', $" + pokedex.ToString() + ");\r\n";
 		}
 
+		static string CodeFromPocketCards(Section section)
+		{
+			IEnumerable<PocketCard> cards = PocketCardsFromSection(section);
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			return "$" + section.pocketRarity + " = array(" + cardArr + ");\r\n";
+		}
+
+		static string CodeFromPocketSection(Section section)
+		{
+			if (!PocketCardsFromSection(section).Any())
+				return "";
+
+			return "printPocket('" + section.title + "', $" + section.pocketRarity + ");\r\n";
+		}
+
+		static string CodeFromJumboCards(JumboRarity rarity)
+		{
+			IEnumerable<JumboCard> cards = JumboCardsFromRarity(rarity);
+			if (!cards.Any())
+				return "";
+
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			return "$" + rarity + " = array(" + cardArr + ");\r\n" +
+				"printJumbo('" + rarity.ToString().Replace('_', ' ') + "', $" + rarity + ");\r\n";
+		}
+
 		static string CodeFromCollection(IEnumerable<Card> cards)
 		{
 			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
@@ -1068,6 +1156,11 @@ namespace TCG
 			// return WorldsCards.Get().Where(c => c.have).OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.rarity);
 		}
 
+		static IEnumerable<JumboCard> GetMyJumboCollection()
+		{
+			return JumboCards.Get().Where(c => c.have);
+		}
+
 		static IEnumerable<Card> CardsFromSection(Section section)
 		{
 			IEnumerable<Card> cards = Cards.Get(false).Where(c => c.rarity == section.rarity);
@@ -1161,6 +1254,92 @@ namespace TCG
 			}
 
 			return cards;
+		}
+
+		static IEnumerable<PocketCard> PocketCardsFromSection(Section section)
+		{
+			IEnumerable<PocketCard> cards = PocketCards.Get().Where(c => c.rarity == section.pocketRarity);
+
+			switch (section.sortMode)
+			{
+				case SortMode.NO_SORT:
+					break;
+
+				case SortMode.SORT_BY_SET:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set);
+					break;
+
+				case SortMode.SORT_BY_TYPE:
+					cards = cards.OrderBy(c => c.type);
+					break;
+
+				case SortMode.SORT_BY_NAME:
+					cards = cards.OrderBy(c => c.name);
+					break;
+
+				case SortMode.SORT_BY_NAME_AND_TYPE:
+					cards = cards.OrderBy(c => c.name).OrderBy(c => c.type);
+					break;
+
+				case SortMode.SORT_BY_SET_AND_TYPE:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.type);
+					break;
+
+				case SortMode.SORT_BY_SET_AND_DEX:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex);
+					break;
+
+				case SortMode.SORT_BY_TYPE_AND_SET:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.type).OrderBy(c => c.set);
+					break;
+
+				case SortMode.SORT_BY_SET_AND_DEX_AND_TYPE:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type);
+					break;
+
+				case SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type);
+
+					List<PocketCard> noExtraSort = cards.Where(c => c.type != Types.Item && c.type != Types.Tool && c.type != Types.Technical_Machine && c.type != Types.Supporter && c.type != Types.Stadium && c.type != Types.Special_Energy).ToList();
+
+					List<PocketCard> sortedItem = cards.Where(c => c.type == Types.Item).OrderBy(c => c.name).ToList();
+					List<PocketCard> sortedTool = cards.Where(c => c.type == Types.Tool).OrderBy(c => c.name).ToList();
+					List<PocketCard> sortedTM = cards.Where(c => c.type == Types.Technical_Machine).OrderBy(c => c.name).ToList();
+					List<PocketCard> sortedR = cards.Where(c => c.type == Types.Rockets_Secret_Machine).OrderBy(c => c.name).ToList();
+					List<PocketCard> sortedSupporter = cards.Where(c => c.type == Types.Supporter).OrderBy(c => c.name).ToList();
+					List<PocketCard> sortedStadium = cards.Where(c => c.type == Types.Stadium).OrderBy(c => c.name).ToList();
+					List<PocketCard> sortedSpecialEnergy = cards.Where(c => c.type == Types.Special_Energy).OrderBy(c => c.name).ToList();
+
+					noExtraSort.AddRange(sortedItem);
+					noExtraSort.AddRange(sortedTool);
+					noExtraSort.AddRange(sortedTM);
+					noExtraSort.AddRange(sortedR);
+					noExtraSort.AddRange(sortedSupporter);
+					noExtraSort.AddRange(sortedStadium);
+					noExtraSort.AddRange(sortedSpecialEnergy);
+
+					cards = noExtraSort.OrderBy(c => c.type);
+
+					break;
+
+				case SortMode.SORT_BY_SET_AND_NAME_AND_DEX_AND_TYPE:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.name).OrderBy(c => c.dex).OrderBy(c => c.type);
+					break;
+
+				case SortMode.SORT_BY_DEX_AND_TYPE_AND_SET:
+					cards = cards.OrderBy(c => c.setNum).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.set);
+					break;
+
+				default:
+					throw new NotSupportedException(section.sortMode.ToString());
+			}
+
+			return cards;
+		}
+
+		static IEnumerable<JumboCard> JumboCardsFromRarity(JumboRarity rarity)
+		{
+			return JumboCards.Get().Where(c => c.rarity == rarity);
 		}
 
 		static IEnumerable<Card> CardsFromSet(Sets set)

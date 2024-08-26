@@ -375,12 +375,13 @@
 							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&binder">Binder</a></li>-->
 							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&type">Type</a></li>-->
 							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&dex">Dex</a></li>-->
-							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&all">All</a></li>-->
+							<li><a class="dropdown-item" href="BestTracker.php?pocket&all">All</a></li>
 							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&fut">Future</a></li>-->
 							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&test">Test</a></li>-->
 						</ul>
 					</li>
 					
+					<li class="nav-item"><a class="nav-link" href="BestTracker.php?jumbo">Jumbo</a></li>
 					<!--<li class="nav-item"><a class="nav-link" href="BestTracker.php?test">Test</a></li>-->
 				</ul>
 			</div>
@@ -517,6 +518,30 @@ function imgPN($ID, $visible = false)
 		// cardImg('card-img', 'images/best_tracker/pocket/'.$ID.'.png', $visible);
 }
 
+function imgJ($ID, $visible = false)
+{
+	if ($ID == '\n')
+		print('<br>');
+	else if ($ID == -1)
+		cardImg('card-img', 'images/best_tracker/jumbo/-1.png', $visible);
+	else if (is_numeric($ID))
+		cardImg('card-img', 'images/best_tracker/jumbo/'.idToName($ID).'.png', $visible);
+	// else
+		// cardImg('card-img', 'images/best_tracker/jumbo/'.$ID.'.png', $visible);
+}
+
+function imgJN($ID, $visible = false)
+{
+	if ($ID == '\n')
+		print('<br>');
+	else if ($ID == -1)
+		cardImg('card-img', 'images/best_tracker/jumbo/-1.png', $visible);
+	else if (is_numeric($ID))
+		cardImg('card-have-img', 'images/best_tracker/jumbo/'.idToName($ID).'.png', $visible);
+	// else
+		// cardImg('card-img', 'images/best_tracker/jumbo/'.$ID.'.png', $visible);
+}
+
 function imgER($name, $visible = false)
 {
 	if ($name == '\n')
@@ -633,7 +658,7 @@ function printComp($compArr)
 function countN($array)
 {
 	$i = 0;
-	foreach ($array as $item) { if ($item != '0') { $i++; } }
+	foreach ($array as $item) { if ($item != '0' && $item != '\n' && (!is_numeric($item) || $item > 0)) { $i++; } }
 	return $i;
 }
 
@@ -803,6 +828,29 @@ function printPocket($title, &$cardArr, $printObtained = true)
 	finish();
 }
 
+function printJumbo($title, &$cardArr, $printObtained = true)
+{
+	global $j;
+	global $jumboHave;
+	
+	start($j++, $title, $jumboHave, $cardArr);
+	
+	foreach ($cardArr as $cur)
+	{
+		if (in_array($cur, $jumboHave, true))
+		{
+			if ($printObtained)
+				imgJN($cur);
+		}
+		else
+		{
+			imgJ($cur);
+		}
+	}
+	
+	finish();
+}
+
 // $have = array(288,319,320,321,468,545,943,944,945,946,947,'AM',16,3061,3016,209,215,203,199,356,'JP18',328,350,255,354,3055,325,360,326,361,327,399,3052,370,371,408,409,493,494,495,535,536,557,925,1026,1033,693,645,776,743,883,610,658,626,922,927,928,682,686,'0673_2',690,'0702_2',725,728,'0729_2',740,'0740_2',744,762,767,768,775,973,1423,1072,1160,1844,1854,1075,1915,1113,1115,1078,1855,1841,1169,1080,1662,1119,1081,1840,1773,1421,1496,3111,3092,3003,2698,3053,2336,2702,3045,3094,2000,3060,3096,2596,2598,2132,2644,3108,2401,2910,3099,3100,3054,2600,2404,1954,2912,2601,2407,3101,2408,3046,3083,2714,2139,3007,3008,2717,2718,2518,2144,2720,3125,3015,2493,3021,2597,2599,2513,2136,2517,2914,3032,1961,3093,2700,3095,2911,2710,3103,2807,3123,2721,2123,2186,2134,2137,2195,2143,2906,2908,2805,3116,3071,3072,3073,3074,3056,3057,3058,3059,3104,3105,3106,3107,3075,3076,3077,3078,3079,3080,3081,3082,436,587,588,2595,1805,1816,2760,2762,2880,2763,2764,2766,2768,590,1063,618,889,501,502,1055,2523,2111,3115,3102,2920,3122,2315,2086,2167,2927,3062,3063,2786,2603,2487,1156,2392,2935,3084,3086,3088,2836,3085,3087,3089,144,146,148,154,160,163,165,166,169,306,307,308,309,310,311,324,334,335,336,337,338,339,340,341,342,'0338_A','RC2_1','RC2_4','RC2_14','RC2_17','RC2_18','RC2_19','RC2_20','RC2_21','RC2_22','RC2_23',1675,1678,2241,2314,2604,2605,2606,2607,2608,2609,2610,2611,2612,2613,2614,2615,2616,2617,2618,2619,2620,2621,2622,2623,2624,2625,2626,2627,2628,'METAL_1','METAL_2',355,347,282,404,1547,1603,1943,2347);
 
 if (isset($_GET['holo']))
@@ -814,6 +862,16 @@ else if (isset($_GET['worlds']))
 {
 	require 'BestTracker_WorldsHave.php';
 	require 'BestTracker_WorldsCards.php';
+}
+else if (isset($_GET['pocket']))
+{
+	// require 'BestTracker_PocketHave.php';
+	$pocketHave = array();
+	require 'BestTracker_PocketCards.php';
+}
+else if (isset($_GET['jumbo']))
+{
+	require 'BestTracker_JumboHave.php';
 }
 else
 {
@@ -829,331 +887,311 @@ if (isset($_GET['date']))
 {
 	$all = array();
 	
-	$temp = array(288,468,545,203,199,3854,3865,356,350,354,360,306,307,309,310,311,334,335,336,337,338,339,340,341,342,2943,587,588,566,1185,925,1033,554,645,776,883,590,1063,618,889,501,502,493,494,535,536,557,3244,3247,3264,3266,610,658,626,1055,682,725,728,744,762,767,768,775,973,1423,1072,1844,1854,1075,1113,1115,1841,1169,1117,1119,1840,1156);
+	$temp = array(
+	468,338,2943,1185,925,776,883,590,1063,889,1055,682,725,728,744,762,767,768,775,973,1844,1854,1169,1117,1119,1156,'\n', // pulled / promo box
+	288,306,307,309,310,311,334,335,336,337,339,340,341,342,'\n', // rommelmarkt
+	1033,554,493,494,535,536,557,626,1072,1075,1841,1840,'\n', // ruildagen Gamemania Oostende
+	545,566,3244,3247,3264,3266,587,588,501,502,'\n', // Quinten
+	645,618,610,658,'\n', // Renzo
+	1113,1115,'\n', // Mattheo (trade)
+	203,199,3854,3865,356,350,354,360,1423 // other / idk
+	);
 	$all = array_merge($all, $temp);
-	start($j++, 'Collection Before Tracker', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Collection Before Tracker', $temp);
 	
 	$temp = array(1805,3003,1954,1961);
 	$all = array_merge($all, $temp);
-	start($j++, 'Grookey Tin + 2x 3 Pack SWSH Base Blisters (12/3/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Grookey Tin + 2x 3 Pack SWSH Base Blisters (12/3/2021)', $temp);
 	
 	$temp = array(319,320,321,16);
 	$all = array_merge($all, $temp);
-	start($j++, 'Facebook Groepen (14/3/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Facebook Groepen (14/3/2021)', $temp);
 	
 	$temp = array(2936,370,371);
 	$all = array_merge($all, $temp);
-	start($j++, 'Facebook Groepen (4/5/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Facebook Groepen (4/5/2021)', $temp);
 	
 	$temp = array(408,409,399,326,160,436);
 	$all = array_merge($all, $temp);
-	start($j++, 'Facebook Groepen (13/5/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Facebook Groepen (13/5/2021)', $temp);
 	
 	$temp = array(144,308);
 	$all = array_merge($all, $temp);
-	start($j++, 'Facebook Groepen (25/5/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Facebook Groepen (25/5/2021)', $temp);
 	
 	$temp = array(324);
 	$all = array_merge($all, $temp);
-	start($j++, 'Facebook Groepen (28/5/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Facebook Groepen (28/5/2021)', $temp);
 	
 	$temp = array(2241,2314,3032,2315,2195);
 	$all = array_merge($all, $temp);
-	start($j++, 'Shining Fates ETB (31/6/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Shining Fates ETB (31/6/2021)', $temp);
 	
 	$temp = array(163,165);
 	$all = array_merge($all, $temp);
-	start($j++, 'Facebook Groepen (8/7/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Facebook Groepen (8/7/2021)', $temp);
 	
 	$temp = array(943,946,169,255,3261,3262,686,690,2978,740);
 	$all = array_merge($all, $temp);
-	start($j++, 'Rommelmarkt De Haan (10/7/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Rommelmarkt De Haan (10/7/2021)', $temp);
 	
 	$temp = array(146);
 	$all = array_merge($all, $temp);
-	start($j++, 'Facebook Groepen (17/7/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Facebook Groepen (17/7/2021)', $temp);
 	
 	$temp = array(325,327,328,361,148,154,166);
 	$all = array_merge($all, $temp);
-	start($j++, 'Facebook Groepen (21/7/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Facebook Groepen (21/7/2021)', $temp);
 	
 	$temp = array(1855);
 	$all = array_merge($all, $temp);
-	start($j++, 'Geruild met Matteo tegen Dhelmise V (19/9/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Geruild met Matteo tegen Dhelmise V (19/9/2021)', $temp);
 	
 	$temp = array(209,863,1665,3257,3263,3265,2961,2982,1915);
 	$all = array_merge($all, $temp);
-	start($j++, 'Rommelmarkt Ruddervoorde (26/9/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Rommelmarkt Ruddervoorde (26/9/2021)', $temp);
 	
 	$temp = array(3071,3072,3073,3074,3075,3076,3077,3078,3079,3080,3081,3082,3052,3053,3054,3055,3056,3057,3058,3059,3060,3021,3061,3062,3063,3223,3224,2487,2392,2336,2596,2598,2132,2401,2600,2404,2601,2408,2347,2139,2396,2597,2599,2123,2134,2595,2602,2167,2086,2606,2605,2604,2608,2611,2612,2613,2614,2615,2616,2620,2624,2626,2627);
 	$all = array_merge($all, $temp);
-	start($j++, 'Celebrations & V-Union (10/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Celebrations & V-Union (10/2021)', $temp);
 	
 	$temp = array(2621);
 	$all = array_merge($all, $temp);
-	start($j++, 'Matthijs Ruil (9/11/2021)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Matthijs Ruil (9/11/2021)', $temp);
 	
-	$temp = array(3092,3093,3094,3095,3084,3085,3086,3087,3088,3089);
+	$temp = array(3092,3093,3094,3095,3084,3085,3086,3087,3088,3089,1943,2000,2644,2136,2675,2523);
 	$all = array_merge($all, $temp);
-	start($j++, 'Eeveelution VMAX & VSTAR Boxes (18/1/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Eeveelution VMAX & VSTAR Boxes (18/1/2022)', $temp);
 	
 	$temp = array(495,927,1026,2186,2619,2625);
 	$all = array_merge($all, $temp);
-	start($j++, 'TCGPlayer (5/3/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('TCGPlayer (5/3/2022)', $temp);
 	
 	$temp = array(2721);
 	$all = array_merge($all, $temp);
-	start($j++, 'Facebook Groepen (19/4/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Facebook Groepen (19/4/2022)', $temp);
 	
 	$temp = array(3142,1662,2144,2404,2407);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket mokermo (4/5/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket mokermo (4/5/2022)', $temp);
 	
 	$temp = array(3125,2407,1816);
 	$all = array_merge($all, $temp);
-	start($j++, 'Arceus V Figure Collection (6/5/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Arceus V Figure Collection (6/5/2022)', $temp);
 	
 	$temp = array(3102,3103);
 	$all = array_merge($all, $temp);
-	start($j++, 'Lucario VSTAR Box (8/5/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Lucario VSTAR Box (8/5/2022)', $temp);
 	
-	$temp = array(3122,3123,3096,3108);
+	$temp = array(3122,3123,3096,3108,2702,2717,2836,2768);
 	$all = array_merge($all, $temp);
-	start($j++, 'Kleavor VSTAR Box, Pikachu V Showcase Box, Boltund V Showcase Box (25/5/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Kleavor VSTAR Box, Pikachu V Showcase Box, Boltund V Showcase Box (25/5/2022)', $temp);
 	
 	$temp = array(3104,3105,3106,3107);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket Tamagoscorner (22/6/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket Tamagoscorner (22/6/2022)', $temp);
 	
 	$temp = array(3111,2910,2912,2912,2914,2911,3116,2906,2906,2908,3112,3113,3114,3115,2920,2920,2935,2927,2927);
 	$all = array_merge($all, $temp);
-	start($j++, 'Pokémon GO (2/7/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Pokémon GO (2/7/2022)', $temp);
 	
 	$temp = array(944,945,947,922,928,1078,1080,1081,2698,2701,2714,2718,2518,2720,3015,2513,2517,2710,2807,2137,2143,2111,2786,1675,1678,2760,2762,2880,2763,2764,2766,2769);
 	$all = array_merge($all, $temp);
-	start($j++, 'Francis (9/7/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Francis (9/7/2022)', $temp);
 	
 	$temp = array(3007,3008,3045,3046,3099,3100,3101,2805);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket cardgameshopBE (20/7/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket cardgameshopBE (20/7/2022)', $temp);
 	
 	$temp = array(404);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket Outpostgamecenter (26/7/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket Outpostgamecenter (26/7/2022)', $temp);
 	
 	$temp = array(215);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket Poromagia (26/7/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket Poromagia (26/7/2022)', $temp);
 	
 	$temp = array(355,347,282);
 	$all = array_merge($all, $temp);
-	start($j++, 'Rommelmarkt Oudenburg (15/8/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Rommelmarkt Oudenburg (15/8/2022)', $temp);
 	
 	$temp = array(3117,3118,2934,2907);
 	$all = array_merge($all, $temp);
-	start($j++, 'Dragonite VSTAR Collection (30/9/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Dragonite VSTAR Collection (30/9/2022)', $temp);
 	
-	$temp = array(3369,3370,3371,3372);
+	$temp = array(3369,3370,3371,3372,3366);
 	$all = array_merge($all, $temp);
-	start($j++, 'Palkia & Dialga VSTAR Boxes (7/10/2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Palkia & Dialga VSTAR Boxes (7/10/2022)', $temp);
 	
 	$temp = array(3083,2493);
 	$all = array_merge($all, $temp);
-	start($j++, 'Hoopa V Box (2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Hoopa V Box (2022)', $temp);
 	
 	$temp = array(2617,2623,2610,2628,2622,2618,2607,2609);
 	$all = array_merge($all, $temp);
-	start($j++, 'Matteo Ruil (2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Matteo Ruil (2022)', $temp);
 	
 	$temp = array(2603);
 	$all = array_merge($all, $temp);
-	start($j++, 'Tante Wendy (2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Tante Wendy (2022)', $temp);
 	
 	$temp = array(1421,1496);
 	$all = array_merge($all, $temp);
-	start($j++, 'Phoenix (2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Phoenix (2022)', $temp);
 	
 	$temp = array(693,743,2988,2700);
 	$all = array_merge($all, $temp);
-	start($j++, 'Rommelmarkt (2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Rommelmarkt (2022)', $temp);
 	
-	$temp = array(1547,1603,1773,3366,1160);
+	$temp = array(1547,1603,1773,1160);
 	$all = array_merge($all, $temp);
-	start($j++, 'Ruilbeurs Tante Wendy (2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
-	
-	$temp = array(1943,2702,2000,2644,2717,2136,2675,2523,2836,2768);
-	$all = array_merge($all, $temp);
-	start($j++, 'Unknown Pulls (2022)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Ruilbeurs Tante Wendy (2022)', $temp);
 	
 	$temp = array(727,1914,1684,1697,1702,1705,1660,1665,3023,3070,2015,2051,2067,2071,2325,2413,2492,2504,2511,2512,2516,2788,2793,2795,2796,2817,3289,3406,3407,3415,3418,3420,3421,3422);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket Hatze132 (1/2/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket Hatze132 (1/2/2023)', $temp);
 	
 	$temp = array(3396,3399,3275,3282,3315,3408,3513,3526,3527);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket SkippyG (3/2/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket SkippyG (3/2/2023)', $temp);
 	
 	$temp = array(2905,2815);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket Hony123456 (3/2/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket Hony123456 (3/2/2023)', $temp);
 	
 	$temp = array(2639,2065,2909,2797,2693,2585,2783);
 	$all = array_merge($all, $temp);
-	start($j++, 'Francis (8/4/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Francis (8/4/2023)', $temp);
 	
 	$temp = array(3390,2069,2715,2882,3281,3414,3483,3641,3542,3645,3646,3647,3648,3648,3652,3653,3654,3655,3656);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket geekiebelgium (14/4/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket geekiebelgium (14/4/2023)', $temp);
 	
 	$temp = array(1695,1701,2196,2189,2414,2764,3270,3274,3345,3409,3416,3424,3509,3512,3515,3717,3531,3536,3554);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket NFrerichs (17/4/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket NFrerichs (17/4/2023)', $temp);
 	
 	$temp = array(3732,3734);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket llunaox (20/6/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket llunaox (20/6/2023)', $temp);
 	
 	$temp = array(3649,3725,3730,3735);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket StylezNL (20/6/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket StylezNL (20/6/2023)', $temp);
 	
 	$temp = array(3838);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket MaghettoStore (13/7/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket MaghettoStore (13/7/2023)', $temp);
 	
 	$temp = array(831,880,1540,1942,2184,2395,1945,2398,3020,3272,2190,2059,2192,2141,3522,3535,2197,2346,2650,3273,3427,2258,3398,2328,3573,3341,3340);
 	$all = array_merge($all, $temp);
-	start($j++, 'Francis (18/7/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Francis (18/7/2023)', $temp);
 	
 	$temp = array(879);
 	$all = array_merge($all, $temp);
-	start($j++, 'Rommelmarkt Oostende (12/8/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Rommelmarkt Oostende (12/8/2023)', $temp);
 	
 	$temp = array(349,968,3245,3251,3260,3428,3525,3921,3635,3475,3869,3828);
 	$all = array_merge($all, $temp);
-	start($j++, 'Rommelmarkt Oudenburg (15/8/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Rommelmarkt Oudenburg (15/8/2023)', $temp);
 	
 	$temp = array(696,3255,2133,2140,3504,3638);
 	$all = array_merge($all, $temp);
-	start($j++, 'Cardmarket Gengar-cz (16/8/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Cardmarket Gengar-cz (16/8/2023)', $temp);
 	
 	$temp = array(3724,3730);
 	$all = array_merge($all, $temp);
-	start($j++, 'Annihilape ex Box (18/9/2023)', $have, $temp);
-	foreach ($temp as $cur) { if (in_array($cur, $have, true)) {imgN($cur);} else {img($cur);} }
-	finish();
+	printCards('Annihilape ex Box (18/9/2023)', $temp);
 	
-	start($j++, 'Missing', $have, array());
-	foreach ($have as $cur) { if (in_array($cur, $all, true)) {/*img($cur);*/} else {imgN($cur);/*print($cur.',');*/} }
-	finish();
+	$temp = array(1323,3922,2876);
+	$all = array_merge($all, $temp);
+	printCards('Cardmarket LA-Games (16/10/2023)', $temp);
+	
+	$temp = array(3719,3721);
+	$all = array_merge($all, $temp);
+	printCards('Cardmarket Outpostgamecenter (16/10/2023)', $temp);
+	
+	$temp = array(2654);
+	$all = array_merge($all, $temp);
+	printCards('Cardmarket Giannii (24/10/2023)', $temp);
+	
+	$temp = array(702,3844,3268);
+	$all = array_merge($all, $temp);
+	printCards('Cardmarket stdegiet (7/11/2023)', $temp);
+	
+	$temp = array(3796);
+	$all = array_merge($all, $temp);
+	printCards('Pawmot Single Pack Blister (10/11/2023)', $temp);
+	
+	$temp = array(3836);
+	$all = array_merge($all, $temp);
+	printCards('Cardmarket Lotje19912 (15/12/2023)', $temp);
+	
+	$temp = array(488,3243);
+	$all = array_merge($all, $temp);
+	printCards('Cardmarket stdegiet (15/12/2023)', $temp);
+	
+	$temp = array(2500,2646,2501,3999,4107,4108,4076,4062,3793,3813);
+	$all = array_merge($all, $temp);
+	printCards('Roaring Moon ex & Iron Valiant ex Boxes & Holiday Calendar 2023 (12/2023)', $temp);
+	
+	$temp = array(4002,4111,4006,4280,4281,4178,4255,4068,3994,4282,4242,4266,4021,4103,4253);
+	$all = array_merge($all, $temp);
+	printCards('Gamemania Pikachu Promotion (10/2/2023)', $temp);
+	
+	$temp = array(4115,4195,4277,4268);
+	$all = array_merge($all, $temp);
+	printCards('Paldean Fates Iron Threads ex Tin (15/2/2024)', $temp);
+	
+	$temp = array(4110,4197,4278,4251);
+	$all = array_merge($all, $temp);
+	printCards('Paldean Fates Charizard ex Tin (20/4/2024)', $temp);
+	
+	$temp = array(1775,4007,4116);
+	$all = array_merge($all, $temp);
+	printCards('Rommelmarkt Bredene / De Haan (9/5/2024)', $temp);
+	
+	$temp = array(1234,3832,3920,3392,3393,3394,3395,4302,4113,4109,4384,4303,4393);
+	$all = array_merge($all, $temp);
+	printCards('Rommelmarkt Jabbeke (21/7/2024)', $temp);
+	
+	$temp = array(1947,2102,3521,2406,2790,3410,3633,3884,3886);
+	$all = array_merge($all, $temp);
+	printCards('Rommelmarkt Mariakerke (9/8/2024)', $temp);
+	
+	$temp = array(4388,4385,4387,4392);
+	$all = array_merge($all, $temp);
+	printCards('Cardmarket Gibari (30/6/2024)', $temp);
+	
+	$temp = array(4383);
+	$all = array_merge($all, $temp);
+	printCards('Cardmarket Jordy03188 (30/6/2024)', $temp);
+	
+	$temp = array(3850,3856,3858,3252,1019,866,4471);
+	$all = array_merge($all, $temp);
+	printCards('Rommelmarkt Oudenburg (15/8/2024)', $temp);
+	
+	$missing = array();
+	foreach ($have as $card) { if (!in_array($card, $all)) { array_push($missing, $card); /*print($card.',');*/ } }
+	printCards('Missing', $missing);
 }
 else if (isset($_GET['pocket']))
 {
-	require 'BestTracker_Pocket.php';
+	if (isset($_GET['all']))
+		require 'BestTracker_Pocket_All.php';
+	else
+		require 'BestTracker_Pocket.php';
+}
+else if (isset($_GET['jumbo']))
+{
+	// Add exclusive Jumbo's here
+	// Maybe have a separate section for redacted cards and combined cards (LEGEND and V-UNION)
+	// Add a separate Japanese exclusive section? Maybe that'll be too much work, some of the non-exclusives aren't in English either, idk
+	
+	// $test = array(1,2,'\n',5,6,'\n',7,8,9,'\n',12,13,14);
+	// printJumbo('test', $test);
+	
+	require 'BestTracker_Jumbo.php';
 }
 else if (isset($_GET['holo']))
 {
@@ -1486,6 +1524,170 @@ else if (isset($_GET['energy']))
 {
 	require 'BestTracker_Energy.php';
 }
+else if (isset($_GET['owner']))
+{
+	function printOwner($title, &$cardArr)
+	{
+		global $j;
+		
+		start($j++, $title, array(), $cardArr);
+		
+		$holo = true;
+		
+		foreach ($cardArr as $cur)
+		{
+			if ($cur == 'u')
+			{
+				$holo = false;
+				continue;
+			}
+			
+			if ($holo)
+				imgHN($cur);
+			else
+				imgN($cur);
+			
+			$holo = true;
+		}
+		
+		finish();
+	}
+	
+	// Owner's (OS)
+	$Owners_OS = array(
+		88, // Brock's
+		95, // Misty's
+		116, // Lt. Surge's
+		91, // Erika's
+		114, // Koga's
+		121, // Sabrina's
+		107, // Blaine's
+		113, // Giovanni's
+		'\n',
+		120, // Rocket's
+	);
+	
+	// Owner's (ex)
+	$Owners_ex = array(
+		954, // Team Aqua's
+		960, // Team Magma's
+		'\n',
+		1817,'u',89, // Rocket's
+		'\n',
+		2383, // Holon's
+	);
+	
+	// SP
+	$SP = array(
+		3004, // G (Team Galactic Grunt)
+		3946, // G (Mars)
+		3005, // G (Jupiter)
+		3003, // G (Saturn)
+		2833,'u',282, // G (Cyrus)
+		'\n',
+		2844, // GL (Roark)
+		2845, // GL (Gardenia)
+		2841, // GL (Maylene)
+		2837,'u',295, //  GL (Wake)
+		2843,'u',301, //  GL (Fantina)
+		2835, // GL (Byron)
+		2839, // GL (Candice)
+		2842,'u',300, //  GL (Volkner)
+		'\n',
+		4027, // E4 (Aaron)
+		2931, // E4 (Bertha)
+		4022,'u',299, //  E4 (Flint)
+		2930,'u',297, //  E4 (Lucian)
+		'\n',
+		2950,'u',316, //  C (Cynthia)
+		2708, //  C (Iris)
+		'\n',
+		2855, // Palmer
+		2850,'u',315, //  FB (Thorton)
+		2848,'u',313, //  FB (Dahlia)
+		2857,'u',318, //  FB (Darach)
+		2849, // Argenta
+	);
+	
+	// Owner's (Evolutions)
+	$Owners_Evolutions = array(
+		'u',946, // Imakuni's
+	);
+	
+	// Plasma
+	$Plasma = array(
+		5037, // holo
+		'u',552, // EX
+		'u',557, // Ace Spec
+		'u',601, // Full Art Pokémon
+		'u',524, // Full Art EX
+	);
+	
+	// Flare
+	$Flare = array(
+		6548, // holo
+	);
+	
+	// Owner's (XY)
+	$Owners_XY = array(
+		6566,'u',723, // Team Aqua's
+		6566,'u',724, // Team Magma's
+	);
+	
+	// Owner's (SWSH)
+	$Owners_SWSH = array(
+		'u',3053, // Lance's
+	);
+	
+	
+	printOwner('Owner\'s (OS)', $Owners_OS);
+	printOwner('Owner\'s (ex)', $Owners_ex);
+	printOwner('SP', $SP);
+	printOwner('Owner\'s (Evolutions)', $Owners_Evolutions);
+	printOwner('Plasma', $Plasma);
+	printOwner('Flare', $Flare);
+	printOwner('Owner\'s (XY)', $Owners_XY);
+	printOwner('Owner\'s (SWSH)', $Owners_SWSH);
+}
+else if (isset($_GET['trainer']))
+{
+	function printTrainer($title, &$cardArr)
+	{
+		global $j;
+		
+		start($j++, $title, array(), $cardArr);
+		
+		$holo = $fut = false;
+		
+		foreach ($cardArr as $cur)
+		{
+			if ($cur == 'h')
+			{
+				$holo = true;
+				continue;
+			}
+			else if ($cur == 'f')
+			{
+				$fut = true;
+				continue;
+			}
+			
+			if ($holo)
+				imgHN($cur);
+			else if ($fut)
+				imgF($cur);
+			else
+				imgN($cur);
+			
+			$holo = $fut = false;
+		}
+		
+		finish();
+	}
+	
+	$lillie = array(1768,1784,1822,3214,'h',10818,'h',10819,'h',10820,'h',10824,'f','SV9EN1','h',8899,'h',9200,'h',9413,'h',8723,1092,1288,3217,'h',10648,1798,3219,'h',10649,1835);
+	printTrainer('Lillie', $lillie);
+}
 else if (isset($_GET['acetone']))
 {
 	if (isset($_GET['binder']))
@@ -1522,16 +1724,16 @@ else if (isset($_GET['test']))
 	// finish();
 	
 	$test = array(
-	290,321, // Secret Rare
+	/*290,*/321, // Secret Rare
 	436,863, // Full Art Pokémon
 	22, // Crystal Type
-	56,215,216,184,29,180,221,35, // ex
-	220,230, // Gold Star
+	/*56,*/215,/*216,184,29,*/180,/*221,*/35, // ex
+	/*220,230,*/ // Gold Star
 	3851, // Holo Energy EX Emerald
 	3856,3857, // Holo Energy EX Holon Phantoms
 	3860,3861,3862,3864, // Holo Energy EX Power Keepers
 	328,349,354,263, // LV.X
-	281,292, // Shiny Holo Subset
+	/*281,292,*/ // Shiny Holo Subset
 	366,404, // Prime
 	368,369,382, // LEGEND
 	414, // Shiny Legend Subset
@@ -1541,7 +1743,7 @@ else if (isset($_GET['test']))
 	794,927,799,930,1048, // BREAK
 	2966,968, // ancient trait
 	3229,3234,3235,3243, // Radiant Collection
-	667,754, // Full Art Trainer (BW & XY)
+	/*667,*/754, // Full Art Trainer (BW & XY)
 	1061,751, // EX Full Art
 	1056, // Mega EX Full Art
 	791, // Mega EX Special Art
@@ -1557,7 +1759,7 @@ else if (isset($_GET['test']))
 	2737, // V Special Art
 	2769 // Character Art (SWSH)
 	);
-	printCards('Lost', $test, false);
+	printCards('Lost', $test);
 	
 	// $have = array_merge($have, $test);
 	
@@ -1631,13 +1833,13 @@ else if (isset($_GET['fut']))
 {
 	require 'BestTracker_Future.php';
 	
-	$FUT_ex = array('SVG1','CH3','SM1','SVPEN7','SVG2','SCR1','SVP4','SVJ2','SVP3','CH4','CH5','PD1','SM5','SVPEN6','SM6','SCR2','SVP1','CH7','SCR3','SM7','SVPEN8','SVP2');
-	$FUT_ex_Index = array(1,6,12,13,24,28,33,35,45,47,55,56,58,60,61,62,63,86,89,91,107,-1);
+	$FUT_ex = array('SVG1','CH3','SM1','SVPEN7','SVG2','SCR1','SVP4','SVJ2','SVP3','CH4','CH5','PD1','SM5','SVPEN6','SM6','SCR2','SVP1','SVP5','SCR3','SM7','PD3','SVPEN8','SVP2');
+	$FUT_ex_Index = array(1,6,12,13,24,28,33,35,45,47,55,56,58,60,61,62,63,86,89,91,93,107,-1);
 	printFuture('ex', $FUT_ex);
 	printMix('ex (All)', $ex_SV, $FUT_ex, $FUT_ex_Index);
 	
-	$FUT_Tera = array('\n','CH6','SVJ1','SM2','SVL2','SM3','SM4','SVL1','PD2','KO1','SM8','\n');
-	$FUT_Tera_Index = array(27,9,22,27,27,27,27,27,27,28,-1,27);
+	$FUT_Tera = array('\n','CH6','SVJ1','SM2','SVL2','SM3','SM4','SVL1','PD2','PD4','KO1','SM8','\n');
+	$FUT_Tera_Index = array(27,9,22,27,27,27,27,27,27,27,28,-1,27);
 	printFuture('Tera ex', $FUT_Tera);
 	printMix('Tera ex (All)', $ex_SV_Tera, $FUT_Tera, $FUT_Tera_Index);
 	
@@ -1656,10 +1858,10 @@ else if (isset($_GET['fut']))
 	printFuture('Future ex', $FUT_Future);
 	printMix('Future ex (All)', $ex_SV_Future, $FUT_Future, $FUT_Future_Index);
 	
-	$FUT_Ace_Spec = array('SVL3','SVL4','SM9','SM10','SM11','PD3');
+	$FUT_Ace_Spec = array('SVL3','SVL4','SM9','SM10','SM11','PD5','PD6');
 	printFuture('Ace Spec', $FUT_Ace_Spec);
 	
-	$FUT_Radiant = array('CH1','CH9','CH2');
+	$FUT_Radiant = array('CH1','CH8','CH2');
 	printFuture('Radiant', $FUT_Radiant);
 	
 	$FUT_Types = array(&$FUT_ex, &$FUT_Tera, &$FUT_Ancient, &$FUT_Future, &$FUT_Ace_Spec, &$FUT_Radiant);
