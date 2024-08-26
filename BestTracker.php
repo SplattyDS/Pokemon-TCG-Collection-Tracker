@@ -309,83 +309,7 @@
 	</head>
 	<body onload="initBackground()" style="background-position: top center;">
 		
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="index.php">Best Collection Tracker</a>
-			
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item"><a class="nav-link" href="BestTracker.php">Main</a></li>
-					<li class="nav-item"><a class="nav-link" href="BestTracker.php?set">Set</a></li>
-					<li class="nav-item"><a class="nav-link" href="BestTracker.php?col">Collection</a></li>
-					<li class="nav-item"><a class="nav-link" href="BestTracker.php?binder">Binder</a></li>
-					<li class="nav-item"><a class="nav-link" href="BestTracker.php?type">Type</a></li>
-					<li class="nav-item"><a class="nav-link" href="BestTracker.php?dex">Dex</a></li>
-					<li class="nav-item"><a class="nav-link" href="BestTracker.php?all">All</a></li>
-					<li class="nav-item"><a class="nav-link" href="BestTracker.php?fut">Future</a></li>
-					
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Holo
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="BestTracker.php?holo">Main</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?holo&set">Set</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?holo&setrev">Set (Reverse)</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?holo&col">Collection</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?holo&binder">Binder</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?holo&type">Type</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?holo&dex">Dex</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?holo&all">All</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?holo&prize">Prize Pack</a></li>
-							<!--<li><a class="dropdown-item" href="BestTracker.php?holo&fut">Future</a></li>-->
-							<!--<li><a class="dropdown-item" href="BestTracker.php?holo&test">Test</a></li>-->
-						</ul>
-					</li>
-					
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Worlds
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="BestTracker.php?worlds">Main</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?worlds&set">Set</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?worlds&year">Year</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?worlds&col">Collection</a></li>
-							<!--<li><a class="dropdown-item" href="BestTracker.php?worlds&binder">Binder</a></li>-->
-							<li><a class="dropdown-item" href="BestTracker.php?worlds&type">Type</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?worlds&dex">Dex</a></li>
-							<li><a class="dropdown-item" href="BestTracker.php?worlds&all">All</a></li>
-							<!--<li><a class="dropdown-item" href="BestTracker.php?worlds&fut">Future</a></li>-->
-							<!--<li><a class="dropdown-item" href="BestTracker.php?worlds&test">Test</a></li>-->
-						</ul>
-					</li>
-					
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Pocket
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="BestTracker.php?pocket">Main</a></li>
-							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&set">Set</a></li>-->
-							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&col">Collection</a></li>-->
-							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&binder">Binder</a></li>-->
-							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&type">Type</a></li>-->
-							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&dex">Dex</a></li>-->
-							<li><a class="dropdown-item" href="BestTracker.php?pocket&all">All</a></li>
-							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&fut">Future</a></li>-->
-							<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&test">Test</a></li>-->
-						</ul>
-					</li>
-					
-					<li class="nav-item"><a class="nav-link" href="BestTracker.php?jumbo">Jumbo</a></li>
-					<!--<li class="nav-item"><a class="nav-link" href="BestTracker.php?test">Test</a></li>-->
-				</ul>
-			</div>
-		</nav>
+		<?php require 'Navbar.php'; ?>
 		
 		<label for="background-checkbox">Enable automatic background</label>
 		<input type="checkbox" id="background-checkbox" onclick="toggleAutomaticBackground()">
@@ -1184,8 +1108,6 @@ else if (isset($_GET['pocket']))
 }
 else if (isset($_GET['jumbo']))
 {
-	// Add exclusive Jumbo's here
-	// Maybe have a separate section for redacted cards and combined cards (LEGEND and V-UNION)
 	// Add a separate Japanese exclusive section? Maybe that'll be too much work, some of the non-exclusives aren't in English either, idk
 	
 	// $test = array(1,2,'\n',5,6,'\n',7,8,9,'\n',12,13,14);
@@ -1631,7 +1553,7 @@ else if (isset($_GET['owner']))
 	// Owner's (XY)
 	$Owners_XY = array(
 		6566,'u',723, // Team Aqua's
-		6566,'u',724, // Team Magma's
+		6561,'u',724, // Team Magma's
 	);
 	
 	// Owner's (SWSH)
@@ -1891,17 +1813,19 @@ else if (isset($_GET['allall']))
 {
 	require 'BestTracker_HoloHave.php';
 	require 'BestTracker_WorldsHave.php';
+	require 'BestTracker_JumboHave.php';
 	
 	require 'BestTracker_All.php';
 	require 'BestTracker_Holo_All.php';
 	require 'BestTracker_Worlds_All.php';
+	require 'BestTracker_Jumbo_All.php';
 	
 	$name = 'All Cards (TOTAL)';
 	$visible = false;
 	$ID = 3;
 	
-	$amount = countN($all) + countN($holoAll) + countN($worldsAll);
-	$haveAmount = countHave($all, $have) + countHave($holoAll, $holoHave) + countHave($worldsAll, $worldsHave);
+	$amount = countN($all) + countN($holoAll) + countN($worldsAll) + countN($jumboAll);
+	$haveAmount = countHave($all, $have) + countHave($holoAll, $holoHave) + countHave($worldsAll, $worldsHave) + countHave($jumboAll, $jumboHave);
 	
 	if ($amount != 0)
 		$percent = round($haveAmount / $amount * 100, 2);
