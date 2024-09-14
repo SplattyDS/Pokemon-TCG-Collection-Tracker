@@ -297,424 +297,506 @@ function Process(&$input)
 	return $output;
 }
 
-$binder0 = array();
-$binder1 = array();
-$binder2 = array();
-$binder3 = array();
-$binder4 = array();
-$binder5 = array();
-$binder6 = array();
-$binder7 = array();
-$binder8 = array();
-$binder9 = array();
-$binder10 = array();
-$binder11 = array();
-$binder12 = array();
-$binder13 = array();
-$binder14 = array();
-$binder15 = array();
-$binder16 = array();
-$binder17 = array();
-$binder18 = array();
-$binder19 = array();
-$binder20 = array();
-$binder21 = array();
-$binder22 = array();
-$binder23 = array();
-$binder24 = array();
-$binder25 = array();
-$binder26 = array();
-$binder27 = array();
-$binder28 = array();
-$binder29 = array();
-$binder30 = array();
-$binder31 = array();
-$binder32 = array();
-$binder33 = array();
+$binders = array();
+$binderContents = array();
 
-AddCards($binder0, $OS_STARLIGHT_HOLO);
-AlignRow($binder0);
-AddCards($binder0, $OS_PIXEL_COSMOS_HOLO);
-AddCards($binder0, $OS_PIXEL_COSMOS_HOLO_DARK);
-AddCards($binder0, $OS_PIXEL_COSMOS_HOLO_OWNER);
-AddCards($binder0, $OS_PIXEL_COSMOS_HOLO_ROCKET);
-AlignRow($binder0);
-AddCards($binder0, $OS_PIXEL_COSMOS_HOLO_ENERGY);
-AlignPage($binder0);
-AddCards($binder0, $OS_REVERSE_PIXEL_COSMOS_HOLO);
-AddCards($binder0, $OS_REVERSE_PIXEL_COSMOS_HOLO_ROCKET);
-AlignPage($binder0);
-AddCards($binder0, $NEO_PIXEL_COSMOS_HOLO);
-AddCards($binder0, $NEO_PIXEL_COSMOS_HOLO_DARK);
-AddCards($binder0, $NEO_PIXEL_COSMOS_HOLO_LIGHT);
-AddCards($binder0, $NEO_SMOOTH_COSMOS_HOLO_LIGHT);
-AlignPage($binder0);
-AddCards($binder0, $NEO_REVERSE_PIXEL_COSMOS_HOLO);
-AlignPage($binder0);
-AddCards($binder0, $LC_STARLIGHT_HOLO);
-AddCards($binder0, $LC_STARLIGHT_HOLO_DARK);
-AlignPage($binder0);
-AddCards($binder0, $LC_REVERSE_FIREWORKS_HOLO);
-AddCards($binder0, $LC_REVERSE_FIREWORKS_HOLO_DARK);
-AlignPage($binder0);
-AddCards($binder0, $E_PIXEL_COSMOS_HOLO);
-AlignBinder($binder0);
+$binder = array();
+AddCards($binder, $OS_STARLIGHT_HOLO);
+AlignRow($binder);
+AddCards($binder, $OS_PIXEL_COSMOS_HOLO);
+AlignRow($binder);
+AddCards($binder, $OS_PIXEL_COSMOS_HOLO_DARK);
+AlignPage($binder);
+AddCards($binder, $OS_PIXEL_COSMOS_HOLO_OWNER);
+AlignRow($binder);
+AddCards($binder, $OS_PIXEL_COSMOS_HOLO_ROCKET);
+AlignPage($binder);
+AddCards($binder, $OS_CLASSIC_STARS_HOLO);
+AlignRow($binder);
+AddCards($binder, $OS_REVERSE_PIXEL_COSMOS_HOLO);
+AddCards($binder, $OS_REVERSE_PIXEL_COSMOS_HOLO_ROCKET);
+AlignPage($binder);
+AddCards($binder, $OS_PIXEL_COSMOS_HOLO_ENERGY);
+AlignPage($binder);
+AddCards($binder, $OS_CLASSIC_STARS_HOLO_ENERGY);
+AlignPages($binder);
+AddCards($binder, $NEO_PIXEL_COSMOS_HOLO);
+AlignRow($binder);
+AddCards($binder, $NEO_PIXEL_COSMOS_HOLO_DARK);
+AlignRow($binder);
+AddCards($binder, $NEO_PIXEL_COSMOS_HOLO_LIGHT);
+AlignRow($binder);
+AddCards($binder, $NEO_SMOOTH_COSMOS_HOLO_LIGHT);
+// AddCards($binder, array(-1,-1));
+// AddCards($binder, $NEO_CLASSIC_STARS_HOLO);
+AlignPage($binder);
+AddCards($binder, $NEO_REVERSE_PIXEL_COSMOS_HOLO);
+AlignPages($binder);
+AddCards($binder, $LC_STARLIGHT_HOLO);
+AddCards($binder, $LC_STARLIGHT_HOLO_DARK);
+AlignPage($binder);
+AddCards($binder, $LC_REVERSE_FIREWORKS_HOLO);
+AlignPage($binder);
+AddCards($binder, $LC_REVERSE_FIREWORKS_HOLO_DARK);
+AlignPages($binder);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'OS Holo, Neo Holo, LC Holo, LC Reverse');
 
-AddCards($binder1, $E_REVERSE_PLAIN_HOLO);
-AlignBinder($binder1);
+$binder = array();
+AddCards($binder, $E_REVERSE_PLAIN_HOLO);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'e Series Reverse');
 
-AddCards($binder2, $EX_PIXEL_COSMOS_HOLO);
-AlignRow($binder2);
-AddCards($binder2, $EX_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
-AlignRow($binder2);
-AddCards($binder2, $EX_PIXEL_COSMOS_HOLO_DELTA);
-AddCards($binder2, $EX_SMOOTH_COSMOS_HOLO_DELTA);
-AlignPage($binder2);
-AddCards($binder2, $EX_PIXEL_COSMOS_HOLO_AQUA);
-AddCards($binder2, $EX_PIXEL_COSMOS_HOLO_MAGMA);
-AlignRow($binder2);
-AddCards($binder2, $EX_PIXEL_COSMOS_HOLO_DARK);
-AlignPage($binder2);
-AddCards($binder2, $EX_VERTICAL_PLAIN_HOLO_DELTA);
-AlignPages($binder2);
-AddCards($binder2, $EX_PIXEL_WAVE_HOLO_ENERGY);
-AlignPage($binder2);
-AddCards($binder2, $EX_PLAIN_HOLO_ENERGY);
-AlignBinder($binder2);
+$binder = array();
+AddCards($binder, $E_PIXEL_COSMOS_HOLO);
+AlignRow($binder);
+AddCards($binder, $E_CLASSIC_STARS_HOLO);
+AlignPage($binder);
+AddCards($binder, $EX_PIXEL_COSMOS_HOLO);
+AlignPage($binder);
+AddCards($binder, $EX_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
+AlignRow($binder);
+AddCards($binder, $EX_PIXEL_COSMOS_HOLO_DELTA);
+AlignRow($binder);
+AddCards($binder, $EX_SMOOTH_COSMOS_HOLO_DELTA);
+AlignPage($binder);
+AddCards($binder, $EX_PIXEL_COSMOS_HOLO_AQUA);
+AddCards($binder, $EX_PIXEL_COSMOS_HOLO_MAGMA);
+AlignRow($binder);
+AddCards($binder, $EX_PIXEL_COSMOS_HOLO_DARK);
+AlignPage($binder);
+AddCards($binder, $EX_VERTICAL_PLAIN_HOLO_DELTA);
+AlignPage($binder);
+AddCards($binder, $EX_CLASSIC_STARS_HOLO);
+AlignPage($binder);
+AddCards($binder, $EX_PIXEL_WAVE_HOLO_ENERGY);
+AlignPage($binder);
+AddCards($binder, $EX_PLAIN_HOLO_ENERGY);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'e Series Holo, EX Holo');
 
-AddCards($binder3, $EX_REVERSE_PLAIN_HOLO);
-AlignRow($binder3);
-AddCards($binder3, $EX_REVERSE_PLAIN_HOLO_AQUA);
-AlignRow($binder3);
-AddCards($binder3, $EX_REVERSE_PLAIN_HOLO_MAGMA);
-AlignPages($binder3);
-AddCards($binder3, $EX_BIG_ENERGY_HOLO_HL);
-AlignBinder($binder3);
+$binder = array();
+AddCards($binder, $EX_REVERSE_PLAIN_HOLO);
+AlignRow($binder);
+AddCards($binder, $EX_REVERSE_PLAIN_HOLO_AQUA);
+AlignRow($binder);
+AddCards($binder, $EX_REVERSE_PLAIN_HOLO_MAGMA);
+AlignPages($binder);
+AddCards($binder, $EX_BIG_ENERGY_HOLO_HL);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'EX Reverse 1');
 
-AddCards($binder4, $EX_ENERGY_HOLO_FL);
-AlignPages($binder4);
-AddCards($binder4, $EX_ENERGY_HOLO_TRR);
-AlignPage($binder4);
-AddCards($binder4, $EX_ENERGY_HOLO_TRR_DARK);
-AlignPage($binder4);
-AddCards($binder4, $EX_ENERGY_HOLO_TRR_ROCKET);
-AlignPages($binder4);
-AddCards($binder4, $EX_PRISM_HOLO_D);
-AlignPages($binder4);
-AddCards($binder4, $EX_2D_POKEBALL_HOLO_E);
-AlignBinder($binder4);
+$binder = array();
+AddCards($binder, $EX_ENERGY_HOLO_FL);
+AlignPages($binder);
+AddCards($binder, $EX_ENERGY_HOLO_TRR);
+AlignPage($binder);
+AddCards($binder, $EX_ENERGY_HOLO_TRR_DARK);
+AlignPage($binder);
+AddCards($binder, $EX_ENERGY_HOLO_TRR_ROCKET);
+AlignPages($binder);
+AddCards($binder, $EX_PRISM_HOLO_D);
+AlignPages($binder);
+AddCards($binder, $EX_2D_POKEBALL_HOLO_E);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'EX Reverse 2');
 
-AddCards($binder5, $EX_3D_POKEBALL_HOLO_UF);
-AlignPages($binder5);
-AddCards($binder5, $EX_PLAIN_HOLO_DS);
-AddCards($binder5, $EX_PLAIN_HOLO_DS_HOLON);
-AlignPage($binder5);
-AddCards($binder5, $EX_PLAIN_HOLO_DS_DELTA);
-AlignPages($binder5);
-AddCards($binder5, $EX_PIXEL_COSMOS_HOLO_LM);
-AlignPages($binder5);
-AddCards($binder5, $EX_MIRROR_HOLO_HP);
-AddCards($binder5, array(-1,-1));
-AddCards($binder5, $EX_MIRROR_HOLO_HP_HOLON);
-AlignPage($binder5);
-AddCards($binder5, $EX_MIRROR_HOLO_HP_DELTA);
-AlignBinder($binder5);
+$binder = array();
+AddCards($binder, $EX_3D_POKEBALL_HOLO_UF);
+AlignPages($binder);
+AddCards($binder, $EX_PLAIN_HOLO_DS);
+AddCards($binder, $EX_PLAIN_HOLO_DS_HOLON);
+AlignPage($binder);
+AddCards($binder, $EX_PLAIN_HOLO_DS_DELTA);
+AlignPages($binder);
+AddCards($binder, $EX_PIXEL_COSMOS_HOLO_LM);
+AlignPages($binder);
+AddCards($binder, $EX_MIRROR_HOLO_HP);
+AddCards($binder, array(-1,-1));
+AddCards($binder, $EX_MIRROR_HOLO_HP_HOLON);
+AlignPage($binder);
+AddCards($binder, $EX_MIRROR_HOLO_HP_DELTA);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'EX Reverse 3');
 
-AddCards($binder6, $EX_MIRROR_HOLO_CG);
-AlignPage($binder6);
-AddCards($binder6, $EX_MIRROR_HOLO_CG_DELTA);
-AlignPages($binder6);
-AddCards($binder6, $EX_MIRROR_HOLO_DF);
-AlignPage($binder6);
-AddCards($binder6, $EX_MIRROR_HOLO_DF_DELTA);
-AlignPages($binder6);
-AddCards($binder6, $EX_PLAIN_HOLO_PK);
-AlignBinder($binder6);
+$binder = array();
+AddCards($binder, $EX_MIRROR_HOLO_CG);
+AlignPage($binder);
+AddCards($binder, $EX_MIRROR_HOLO_CG_DELTA);
+AlignPages($binder);
+AddCards($binder, $EX_MIRROR_HOLO_DF);
+AlignPage($binder);
+AddCards($binder, $EX_MIRROR_HOLO_DF_DELTA);
+AlignPages($binder);
+AddCards($binder, $EX_PLAIN_HOLO_PK);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'EX Reverse 4');
 
-AddCards($binder7, $DP_PIXEL_COSMOS_HOLO);
-AddCards($binder7, $DP_PIXEL_COSMOS_HOLO_SP);
-AddCards($binder7, $DP_SMOOTH_COSMOS_HOLO_SP);
-AlignRow($binder7);
-AddCards($binder7, $DP_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
-AlignRow($binder7);
-AddCards($binder7, $DP_RUMBLE_PIXEL_COSMOS_HOLO);
-AlignPage($binder7);
-AddCards($binder7, $DP_RUMBLE_PIXEL_COSMOS_HOLO_LOGO);
-AlignPage($binder7);
-AddCards($binder7, $DP_MIRROR_HOLO_ENERGY);
-AlignPage($binder7);
-AddCards($binder7, $DP_CROSSHATCH_HOLO_ENERGY);
-AlignPage($binder7);
-AddCards($binder7, $DP_CRACKED_ICE_HOLO);
-AlignRow($binder7);
-AddCards($binder7, $DP_CRACKED_ICE_HOLO_SP);
-AlignPage($binder7);
-AddCards($binder7, $DP_REVERSE_CRACKED_ICE_HOLO);
-AlignRow($binder7);
-AddCards($binder7, $DP_REVERSE_CRACKED_ICE_HOLO_SP);
-AlignPage($binder7);
-AddCards($binder7, $DP_REVERSE_CROSSHATCH_HOLO);
-AlignRow($binder7);
-AddCards($binder7, $DP_REVERSE_CROSSHATCH_HOLO_SP);
-AlignPages($binder7);
-AddCards($binder7, $DP_REVERSE_PLAIN_HOLO);
-AlignBinder($binder7);
+$binder = array();
+AddCards($binder, $DP_PIXEL_COSMOS_HOLO);
+AddCards($binder, $DP_PIXEL_COSMOS_HOLO_SP);
+AddCards($binder, $DP_SMOOTH_COSMOS_HOLO_SP);
+AlignRow($binder);
+AddCards($binder, $DP_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
+AlignRow($binder);
+AddCards($binder, $DP_RUMBLE_PIXEL_COSMOS_HOLO);
+AlignPage($binder);
+AddCards($binder, $DP_RUMBLE_PIXEL_COSMOS_HOLO_LOGO);
+AlignRow($binder);
+AddCards($binder, array(-1));
+AlignRow($binder);
+AddCards($binder, $DP_CLASSIC_STARS_HOLO);
+AlignPage($binder);
+AddCards($binder, $DP_MIRROR_HOLO_ENERGY);
+AlignPage($binder);
+AddCards($binder, $DP_CROSSHATCH_HOLO_ENERGY);
+AlignPage($binder);
+AddCards($binder, $DP_CRACKED_ICE_HOLO);
+AlignRow($binder);
+AddCards($binder, $DP_CRACKED_ICE_HOLO_SP);
+AlignPage($binder);
+AddCards($binder, $DP_REVERSE_CRACKED_ICE_HOLO);
+AlignRow($binder);
+AddCards($binder, $DP_REVERSE_CRACKED_ICE_HOLO_SP);
+AlignPage($binder);
+AddCards($binder, $DP_REVERSE_CROSSHATCH_HOLO);
+AlignRow($binder);
+AddCards($binder, $DP_REVERSE_CROSSHATCH_HOLO_SP);
+AlignPages($binder);
+AddCards($binder, $DP_REVERSE_PLAIN_HOLO);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'DPPt Holo');
 
-$dpReverseBinders = array(&$binder8, &$binder9, &$binder10);
+$dpReverseBinders = array(array(), array(), array());
 SplitCards($dpReverseBinders, $DP_REVERSE_MIRROR_HOLO);
+AddCards($dpReverseBinders[2], $DP_REVERSE_MIRROR_HOLO_SP);
+foreach ($dpReverseBinders as $dpReverseBinder)
+{
+	AlignBinder($dpReverseBinder);
+	array_push($binders, $dpReverseBinder);
+}
+array_push($binderContents, 'DPPt Reverse 1');
+array_push($binderContents, 'DPPt Reverse 2');
+array_push($binderContents, 'DPPt Reverse 3');
 
-AlignBinder($binder8);
-AlignBinder($binder9);
+$binder = array();
+AddCards($binder, $HGSS_PIXEL_COSMOS_HOLO);
+AlignRow($binder);
+AddCards($binder, $HGSS_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
+AlignRow($binder);
+AddCards($binder, $HGSS_CLASSIC_STARS_HOLO);
+AlignPage($binder);
+AddCards($binder, $HGSS_CRACKED_ICE_HOLO);
+AlignPage($binder);
+AddCards($binder, $HGSS_MIRROR_HOLO_ENERGY_COL);
+AlignPage($binder);
+AddCards($binder, $HGSS_CROSSHATCH_HOLO_ENERGY);
+AlignPage($binder);
+AddCards($binder, $HGSS_CROSSHATCH_HOLO_ENERGY_COL);
+AlignPage($binder);
+AddCards($binder, $HGSS_REVERSE_CROSSHATCH_HOLO);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'HGSS Holo');
 
-AddCards($binder10, $DP_REVERSE_MIRROR_HOLO_SP);
-AlignBinder($binder10);
+$binder = array();
+AddCards($binder, $HGSS_REVERSE_MIRROR_HOLO);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'HGSS Reverse');
 
-AddCards($binder11, $HGSS_PIXEL_COSMOS_HOLO);
-AlignRow($binder11);
-AddCards($binder11, $HGSS_PIXEL_COSMOS_HOLO_VICTORY_MEDAL);
-AlignPage($binder11);
-AddCards($binder11, $HGSS_CRACKED_ICE_HOLO);
-AlignPage($binder11);
-AddCards($binder11, $HGSS_MIRROR_HOLO_ENERGY_COL);
-AlignPage($binder11);
-AddCards($binder11, $HGSS_CROSSHATCH_HOLO_ENERGY);
-AlignPage($binder11);
-AddCards($binder11, $HGSS_CROSSHATCH_HOLO_ENERGY_COL);
-AlignPage($binder11);
-AddCards($binder11, $HGSS_REVERSE_CROSSHATCH_HOLO);
-AlignBinder($binder11);
+$binder = array();
+AddCards($binder, $BWXY_TINSEL_HOLO);
+AlignPage($binder);
+AddCards($binder, $BWXY_TINSEL_HOLO_PLASMA);
+AlignPage($binder);
+AddCards($binder, $BWXY_SHEEN_HOLO);
+AlignPage($binder);
+AddCards($binder, $BWXY_SHEEN_HOLO_AQUA);
+AlignRow($binder);
+AddCards($binder, $BWXY_SHEEN_HOLO_MAGMA);
+AlignPage($binder);
+AddCards($binder, $BWXY_SHEEN_HOLO_FLARE);
+AlignPages($binder);
+AddCards($binder, $BWXY_MIRROR_HOLO);
+AlignRow($binder);
+AddCards($binder, $BWXY_CRACKED_ICE_HOLO_PLASMA);
+AlignRow($binder);
+AddCards($binder, $BWXY_CRACKED_ICE_HOLO);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'BWXY Holo 1');
 
-AddCards($binder12, $HGSS_REVERSE_MIRROR_HOLO);
-AlignBinder($binder12);
+$binder = array();
+AddCards($binder, $BWXY_PIXEL_COSMOS_HOLO);
+AlignRow($binder);
+AddCards($binder, $BWXY_PIXEL_COSMOS_HOLO_PLASMA);
+AlignPage($binder);
+AddCards($binder, $BWXY_SMOOTH_COSMOS_HOLO);
+AlignPage($binder);
+AddCards($binder, $BWXY_CONFETTI_HOLO);
+AlignPage($binder);
+AddCards($binder, $BWXY_CLASSIC_STARS_HOLO);
+AlignPages($binder);
+AddCards($binder, $BWXY_REVERSE_CROSSHATCH_HOLO);
+AlignRow($binder);
+AddCards($binder, $BWXY_REVERSE_CROSSHATCH_HOLO_PLASMA);
+AlignRow($binder);
+AddCards($binder, $BWXY_MIRROR_HOLO_ENERGY);
+AlignPage($binder);
+AddCards($binder, $BWXY_CROSSHATCH_HOLO_ENERGY_BW);
+AlignPage($binder);
+AddCards($binder, $BWXY_CROSSHATCH_HOLO_ENERGY);
+AlignPage($binder);
+AddCards($binder, $BWXY_SHEEN_HOLO_ENERGY);
+AlignPage($binder);
+AddCards($binder, $BWXY_MIRROR_HOLO_ENERGY_GENERATIONS);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'BWXY Holo 2');
 
-AddCards($binder13, $BWXY_TINSEL_HOLO);
-AlignPage($binder13);
-AddCards($binder13, $BWXY_TINSEL_HOLO_PLASMA);
-AlignPage($binder13);
-AddCards($binder13, $BWXY_SHEEN_HOLO);
-AlignPage($binder13);
-AddCards($binder13, $BWXY_SHEEN_HOLO_AQUA);
-AlignRow($binder13);
-AddCards($binder13, $BWXY_SHEEN_HOLO_MAGMA);
-AlignPage($binder13);
-AddCards($binder13, $BWXY_SHEEN_HOLO_FLARE);
-AlignPages($binder13);
-AddCards($binder13, $BWXY_MIRROR_HOLO);
-AlignRow($binder13);
-AddCards($binder13, $BWXY_CRACKED_ICE_HOLO_PLASMA);
-AlignRow($binder13);
-AddCards($binder13, $BWXY_CRACKED_ICE_HOLO);
-AlignBinder($binder13);
-
-AddCards($binder14, $BWXY_PIXEL_COSMOS_HOLO);
-AlignRow($binder14);
-AddCards($binder14, $BWXY_PIXEL_COSMOS_HOLO_PLASMA);
-AlignPage($binder14);
-AddCards($binder14, $BWXY_SMOOTH_COSMOS_HOLO);
-AlignPage($binder14);
-AddCards($binder14, $BWXY_CONFETTI_HOLO);
-AlignPage($binder14);
-AddCards($binder14, $BWXY_REVERSE_CROSSHATCH_HOLO);
-AlignRow($binder14);
-AddCards($binder14, $BWXY_REVERSE_CROSSHATCH_HOLO_PLASMA);
-AlignRow($binder14);
-AddCards($binder14, $BWXY_MIRROR_HOLO_ENERGY);
-AlignPage($binder14);
-AddCards($binder14, $BWXY_CROSSHATCH_HOLO_ENERGY_BW);
-AlignPage($binder14);
-AddCards($binder14, $BWXY_CROSSHATCH_HOLO_ENERGY);
-AlignPage($binder14);
-AddCards($binder14, $BWXY_SHEEN_HOLO_ENERGY);
-AlignPage($binder14);
-AddCards($binder14, $BWXY_MIRROR_HOLO_ENERGY_GENERATIONS);
-AlignBinder($binder14);
-
-AddCards($binder15, $BWXY_REVERSE_MIRROR_HOLO);
-AlignPage($binder15);
-AddCards($binder15, $BWXY_REVERSE_MIRROR_HOLO_PLASMA);
-AlignPage($binder15);
-AddCards($binder15, $BWXY_REVERSE_MIRROR_HOLO_AQUA);
-AlignPage($binder15);
-AddCards($binder15, $BWXY_REVERSE_MIRROR_HOLO_MAGMA);
-AlignPage($binder15);
-
-$bwxyReverseBinders = array(&$binder15, &$binder16, &$binder17, &$binder18, &$binder19);
+$bwxyReverseBinders = array(array(), array(), array(), array(), array());
+AddCards($bwxyReverseBinders[0], $BWXY_REVERSE_MIRROR_HOLO);
+AlignPage($bwxyReverseBinders[0]);
+AddCards($bwxyReverseBinders[0], $BWXY_REVERSE_MIRROR_HOLO_PLASMA);
+AlignPage($bwxyReverseBinders[0]);
+AddCards($bwxyReverseBinders[0], $BWXY_REVERSE_MIRROR_HOLO_AQUA);
+AlignPage($bwxyReverseBinders[0]);
+AddCards($bwxyReverseBinders[0], $BWXY_REVERSE_MIRROR_HOLO_MAGMA);
+AlignPage($bwxyReverseBinders[0]);
 SplitCards($bwxyReverseBinders, $BWXY_REVERSE_ENERGY_HOLO);
+foreach ($bwxyReverseBinders as $bwxyReverseBinder)
+{
+	AlignBinder($bwxyReverseBinder);
+	array_push($binders, $bwxyReverseBinder);
+}
+array_push($binderContents, 'BWXY Reverse 1');
+array_push($binderContents, 'BWXY Reverse 2');
+array_push($binderContents, 'BWXY Reverse 3');
+array_push($binderContents, 'BWXY Reverse 4');
+array_push($binderContents, 'BWXY Reverse 5');
 
-AlignBinder($binder15);
-AlignBinder($binder16);
-AlignBinder($binder17);
-AlignBinder($binder18);
-AlignBinder($binder19);
+$binder = array();
+AddCards($binder, $EV_STARLIGHT_HOLO);
+AlignRow($binder);
+AddCards($binder, $EV_SMOOTH_COSMOS_HOLO);
+AlignRow($binder);
+AddCards($binder, $EV_SHEEN_HOLO);
+AlignRow($binder);
+AddCards($binder, $EV_CRACKED_ICE_HOLO);
+AlignRow($binder);
+AddCards($binder, $EV_CLASSIC_STARS_HOLO);
+AlignPages($binder);
+AddCards($binder, $EV_MIRROR_HOLO);
+AlignPage($binder);
+AddCards($binder, $EV_MIRROR_HOLO_ENERGY);
+AlignPages($binder);
+AddCards($binder, $EV_REVERSE_MIRROR_HOLO);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'EV Holo, EV Reverse');
 
-AddCards($binder20, $EV_STARLIGHT_HOLO);
-AddCards($binder20, array(-1));
-AddCards($binder20, $EV_CRACKED_ICE_HOLO);
-AlignRow($binder20);
-AddCards($binder20, $EV_SMOOTH_COSMOS_HOLO);
-AlignRow($binder20);
-AddCards($binder20, $EV_SHEEN_HOLO);
-AlignPage($binder20);
-AddCards($binder20, $EV_MIRROR_HOLO);
-AlignPage($binder20);
-AddCards($binder20, $EV_MIRROR_HOLO_ENERGY);
-AlignPages($binder20);
-AddCards($binder20, $EV_REVERSE_MIRROR_HOLO);
-AlignBinder($binder20);
+$binder = array();
+AddCards($binder, $SM_WATER_WEB_HOLO);
+AlignPage($binder);
+AddCards($binder, $SM_SMOOTH_COSMOS_HOLO);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'SM Holo 1');
 
-AddCards($binder21, $SM_WATER_WEB_HOLO);
-AlignPage($binder21);
-AddCards($binder21, $SM_SMOOTH_COSMOS_HOLO);
-AlignBinder($binder21);
+$binder = array();
+AddCards($binder, $SM_CRACKED_ICE_HOLO);
+AlignRow($binder);
+AddCards($binder, $SM_MIRROR_HOLO);
+AlignPage($binder);
+AddCards($binder, $SM_CONFETTI_HOLO);
+AlignPage($binder);
+AddCards($binder, $SM_CLASSIC_STARS_HOLO);
+AlignPage($binder);
+AddCards($binder, $SM_SEQUIN_HOLO);
+AlignRow($binder);
+AddCards($binder, $SM_SHEEN_HOLO);
+AddCards($binder, array(-1));
+AddCards($binder, $SM_SHEEN_HOLO_DP);
+AlignPage($binder);
+AddCards($binder, $SM_SHEEN_HOLO_ENERGY);
+AlignPage($binder);
+AddCards($binder, $SM_SHEEN_HOLO_ENERGY_TT);
+AlignPage($binder);
+AddCards($binder, $SM_WATER_WEB_HOLO_ENERGY);
+AlignRow($binder);
+AddCards($binder, $SM_REVERSE_SHEEN_HOLO);
+AlignRow($binder);
+AddCards($binder, $SM_REVERSE_SMOOTH_COSMOS_BIG_ENERGY_HOLO);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'SM Holo 2');
 
-AddCards($binder22, $SM_CRACKED_ICE_HOLO);
-AlignRow($binder22);
-AddCards($binder22, $SM_MIRROR_HOLO);
-AlignPage($binder22);
-AddCards($binder22, $SM_CONFETTI_HOLO);
-AlignPage($binder22);
-AddCards($binder22, $SM_SEQUIN_HOLO);
-AlignRow($binder22);
-AddCards($binder22, $SM_SHEEN_HOLO);
-AddCards($binder22, array(-1));
-AddCards($binder22, $SM_SHEEN_HOLO_DP);
-AlignPage($binder22);
-AddCards($binder22, $SM_SHEEN_HOLO_ENERGY);
-AlignPage($binder22);
-AddCards($binder22, $SM_SHEEN_HOLO_ENERGY_TT);
-AlignPage($binder22);
-AddCards($binder22, $SM_WATER_WEB_HOLO_ENERGY);
-AlignRow($binder22);
-AddCards($binder22, $SM_REVERSE_SHEEN_HOLO);
-AlignRow($binder22);
-AddCards($binder22, $SM_REVERSE_SMOOTH_COSMOS_BIG_ENERGY_HOLO);
-AlignPage($binder22);
-
-$smReverseBinders = array(&$binder23, &$binder24, &$binder25, &$binder26);
+$smReverseBinders = array(array(), array(), array(), array());
 SplitCards($smReverseBinders, $SM_REVERSE_BIG_ENERGY_HOLO);
+foreach ($smReverseBinders as $smReverseBinder)
+{
+	AlignBinder($smReverseBinder);
+	array_push($binders, $smReverseBinder);
+}
+array_push($binderContents, 'SM Reverse 1');
+array_push($binderContents, 'SM Reverse 2');
+array_push($binderContents, 'SM Reverse 3');
+array_push($binderContents, 'SM Reverse 4');
 
-AlignBinder($binder22);
-AlignBinder($binder23);
-AlignBinder($binder24);
-AlignBinder($binder25);
-AlignBinder($binder26);
+$binder = array();
+AddCards($binder, $SWSH_LINE_HOLO);
+AlignRow($binder);
+AddCards($binder, $SWSH_LINE_HOLO_LOST);
+AlignPage($binder);
+AddCards($binder, $SWSH_PLAIN_HOLO);
+AlignPage($binder);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'SWSH Holo 1');
 
-AddCards($binder27, array(-1));
-AlignBinder($binder27);
+$binder = array();
+AddCards($binder, $SWSH_SMOOTH_COSMOS_HOLO);
+AlignPage($binder);
+AddCards($binder, $SWSH_PIXEL_COSMOS_HOLO);
+AddCards($binder, array(-1));
+AddCards($binder, $SWSH_PIXEL_COSMOS_HOLO_LOST);
+AlignPage($binder);
+AddCards($binder, $SWSH_CRACKED_ICE_HOLO);
+AlignPage($binder);
+AddCards($binder, $SWSH_CONFETTI_HOLO);
+AlignPage($binder);
+AddCards($binder, $SWSH_MIRROR_HOLO);
+AlignPage($binder);
+AddCards($binder, $SWSH_MIRAGE_HOLO);
+AlignPage($binder);
+AddCards($binder, $SWSH_SEQUIN_HOLO);
+AlignPage($binder);
+AddCards($binder, $SWSH_CLASSIC_STARS_HOLO);
+AlignPage($binder);
+AddCards($binder, $SWSH_PLAIN_HOLO_ENERGY);
+AlignPage($binder);
+AddCards($binder, $SWSH_PLAIN_HOLO_ENERGY_STAR);
+AlignPage($binder);
+AddCards($binder, $SWSH_LINE_HOLO_ENERGY);
+AlignPage($binder);
+AddCards($binder, $SWSH_LINE_HOLO_ENERGY_STAR);
+AlignPage($binder);
+AddCards($binder, $SWSH_PIXEL_COSMOS_HOLO_ENERGY_STAR);
+AlignPage($binder);
+AddCards($binder, $SWSH_REVERSE_SMOOTH_COSMOS_ENERGY_BANNER_HOLO);
+AlignPage($binder);
+AddCards($binder, $SWSH_REVERSE_MIRROR_ENERGY_BANNER_HOLO);
+AlignRow($binder);
+AddCards($binder, $SWSH_REVERSE_MIRROR_HOLO);
+AddCards($binder, array(-1));
+AddCards($binder, $SWSH_REVERSE_PLAIN_HOLO);
+AlignPage($binder);
+AddCards($binder, $SWSH_REVERSE_LINE_HOLO);
+AlignRow($binder);
+AddCards($binder, $SWSH_REVERSE_PIXEL_COSMOS_HOLO);
+AlignPages($binder);
 
-AddCards($binder28, array(-1));
-AlignBinder($binder28);
+$swshReverseBinders = array($binder, array(), array(), array(), array());
+SplitCards($swshReverseBinders, $SWSH_REVERSE_ENERGY_BANNER_HOLO);
+AlignRow($swshReverseBinders[4]);
+AddCards($swshReverseBinders[4], $SWSH_REVERSE_ENERGY_BANNER_HOLO_LOST);
+foreach ($swshReverseBinders as $swshReverseBinder)
+{
+	AlignBinder($swshReverseBinder);
+	array_push($binders, $swshReverseBinder);
+}
+array_push($binderContents, 'SWSH Holo 2, SWSH Reverse 1');
+array_push($binderContents, 'SWSH Reverse 2');
+array_push($binderContents, 'SWSH Reverse 3');
+array_push($binderContents, 'SWSH Reverse 4');
+array_push($binderContents, 'SWSH Reverse 5');
 
-AddCards($binder29, array(-1));
-AlignBinder($binder29);
+$binder = array();
+AddCards($binder, $SV_MIRAGE_HOLO);
+AlignPage($binder);
+AddCards($binder, $SV_MIRAGE_HOLO_ANCIENT);
+AlignPage($binder);
+AddCards($binder, $SV_MIRAGE_HOLO_FUTURE);
+AlignPage($binder);
+AddCards($binder, $SV_SMOOTH_COSMOS_HOLO);
+AlignPage($binder);
+AddCards($binder, $SV_PIXEL_COSMOS_HOLO);
+AlignPage($binder);
+AddCards($binder, $SV_PIXEL_COSMOS_HOLO_ANCIENT);
+AlignPage($binder);
+AddCards($binder, $SV_PIXEL_COSMOS_HOLO_FUTURE);
+AlignPage($binder);
+AddCards($binder, $SV_CONFETTI_HOLO);
+AlignPage($binder);
+AddCards($binder, $SV_LINE_HOLO);
+AlignPage($binder);
+AddCards($binder, $SV_SNOWFLAKE_HOLO);
+AlignPage($binder);
+AddCards($binder, $SV_CLASSIC_STARS_HOLO);
+AlignBinder($binder);
+array_push($binders, $binder);
+array_push($binderContents, 'SV Holo 1');
+/*
+// SV
 
-AddCards($binder30, array(-1));
-AlignBinder($binder30);
+SV_SMOOTH_COSMOS_HOLO_ENERGY,
+SV_PIXEL_COSMOS_HOLO_ENERGY,
+SV_TOXIC_CHAIN_HOLO_ENERGY,
+
+SV_REVERSE_ROCKY_HOLO,
+SV_REVERSE_TOXIC_CHAIN_HOLO,
+SV_REVERSE_ANCIENT_HOLO,
+SV_REVERSE_FUTURE_HOLO,
+
+SV_REVERSE_MIRAGE_ROCKY_HOLO,
+SV_REVERSE_PIXEL_COSMOS_HOLO,
+SV_REVERSE_LINE_HOLO,
+SV_REVERSE_PLAIN_HOLO,
+*/
+
+$binder = array();
+// array_push($binders, $binder);
+// array_push($binders, $binder);
+// array_push($binders, $binder);
+// array_push($binders, $binder);
+// array_push($binderContents, 'TBA');
+// array_push($binderContents, 'TBA');
+// array_push($binderContents, 'TBA');
+// array_push($binderContents, 'TBA');
 
 // oopsies:
 // Iron Moth (Pixel Cosmos Holo)
 	// stamped: already had base
 
-// not added yet (blank spots):
-// Iron Thorns (Mirage Holo)
-// Iron Valiant (Mirage Holo)
-// Miraidon (Reverse Holo)
-// Miraidon (Pixel Cosmos Holo)
-
-// $input = array(2, '/r', 2, '/p', 2, '/r', 1, '/p', 1, '/p', 4, '/r', 1, '/r', 2, '/p', 2, '/r', 4, '/r', 1, '/r', 2, '/r', 3, '/r', 1, '/r', 4, '/p', 28, '/r', 1, '/r', 1, '/p', 25, '/r', 2, '/r', 1, '/p', 3, '/r', 1, '/r', 3, '/p', 11, '/p', 1, '/p', 9, '/p', 1, '/r', 3, '/p', 3, '/r', 1, '/r', 4, '/p', 7, '/p', 10, '/p', 1, '/r', 4, '/p', 6, '/r', 2, '/p', 80, '/s', 2, '/r', 1, '/r', 2, '/p', 8, '/p', 12, '/p', 12, '/p', 2, '/p', 6, '/p', 1, '/b', 45, '/s', 48, '/s', 16, '/p', 11, '/p', 7, '/p', 1, '/r', 1, '/s', 167, 1, '/s', 16, '/p', 3, '/r', 2, '/p', 6, '/r', 1, '/p', 1, '/r', 2, '/p', 26, '/s', 0, '/s', '/b');
 $input = array(2, '/r', 2, '/p', 1, '/r', 1, '/r', 1, '/p', 3, '/p', 4, '/r', 1, '/r', 2, '/p', 2, '/r', 4, '/r', 1, 1, '/r', 2, '/r', 3, '/r', 1, '/r', 4, '/p', 31, '/r', 1, '/r', 1, '/p', 25, '/r', 2, '/r', 1, '/p', 3, '/r', 1, '/r', 3, '/p', 11, '/p', 1, '/p', 10, '/p', 2, '/r', 3, '/p', 3, 1, '/r', 6, '/p', 7, '/p', 12, '/p', 1, '/r', 4, '/p', 6, '/r', 2, '/p', 87, '/p', 2, '/r', 1, '/r', 3, '/p', 8, '/p', 15, '/p', 12, '/p', 2, '/p', 12, '/r', 1, '/b', 49, '/p', 50, '/r', -1, '/r', 16, '/r', 14, '/r', 5, '/r', 7, '/r', 1, '/r', 4, '/r', 1, '/p', 182, 1, '/b', 38, '/r', 1, '/r', 4, '/p', 3, '/r', 3, 2, 3, '/r', 6, -1, 1, '/r', 3, '/r', 2, '/r', 3, '/p', 97, '/p', 1, '/r', 2, '/s', 0, '/b');
 
-// start($j++, 'Collection Test', $holoHave, $output);
-// foreach ($output as $cur) { if (in_array($cur, $holoHave, true)) {imgHN($cur);} else {imgH($cur);} }
-// finish();
-
-$testBinders = array(&$binder31, &$binder32, &$binder33);
-SplitCards($testBinders, Process($input));
-
-AlignBinder($binder31);
-AlignBinder($binder32);
-AlignBinder($binder33);
-
-$binders = array
-(
-	&$binder0,
-	&$binder1,
-	&$binder2,
-	&$binder3,
-	&$binder4,
-	&$binder5,
-	&$binder6,
-	&$binder7,
-	&$binder8,
-	&$binder9,
-	&$binder10,
-	&$binder11,
-	&$binder12,
-	&$binder13,
-	&$binder14,
-	&$binder15,
-	&$binder16,
-	&$binder17,
-	&$binder18,
-	&$binder19,
-	&$binder20,
-	&$binder21,
-	&$binder22,
-	&$binder23,
-	&$binder24,
-	&$binder25,
-	&$binder26,
-	&$binder27,
-	&$binder28,
-	&$binder29,
-	&$binder30,
-	&$binder31,
-	&$binder32,
-	&$binder33,
-);
+$collectionBinders = array(array(), array(), array());
+SplitCards($collectionBinders, Process($input));
+foreach ($collectionBinders as $collectionBinder)
+{
+	AlignBinder($collectionBinder);
+	array_push($binders, $collectionBinder);
+}
+array_push($binderContents, 'Collection 1');
+array_push($binderContents, 'Collection 2');
+array_push($binderContents, 'Collection 3');
 
 $markers = 0;
 
-for ($i = 0; $i < count($binders); $i++)
-	$markers += CountMarkers($binders[$i]);
-
-$binderContents = array
-(
-	'OS Holo, Neo Holo, LC Holo, LC Reverse, e Series Holo',
-	'e Series Reverse',
-	'EX Holo',
-	'EX Reverse 1',
-	'EX Reverse 2',
-	'EX Reverse 3',
-	'EX Reverse 4',
-	'DPPt Holo',
-	'DPPt Reverse 1',
-	'DPPt Reverse 2',
-	'DPPt Reverse 3',
-	'HGSS Holo',
-	'HGSS Reverse',
-	'BWXY Holo 1',
-	'BWXY Holo 2',
-	'BWXY Reverse 1',
-	'BWXY Reverse 2',
-	'BWXY Reverse 3',
-	'BWXY Reverse 4',
-	'BWXY Reverse 5',
-	'EV Holo, EV Reverse',
-	'SM Holo 1',
-	'SM Holo 2',
-	'SM Reverse 1',
-	'SM Reverse 2',
-	'SM Reverse 3',
-	'SM Reverse 4',
-	'TBA',
-	'TBA',
-	'TBA',
-	'TBA',
-	'Collection 1',
-	'Collection 2',
-	'Collection 3',
-);
+foreach ($binders as $curBinder)
+{
+	AlignBinder($curBinder);
+	$markers += CountMarkers($curBinder);
+}
 
 print('<h1>Number of VSTAR Markers: '.$markers.'</h1>');
 

@@ -95,6 +95,7 @@
 					<li><a class="dropdown-item" href="BestTracker.php?owner">Owner</a></li>
 					<li><a class="dropdown-item" href="BestTracker.php?trainer">Trainer</a></li>
 					<li><a class="dropdown-item" href="BestTracker.php?clone">Clone</a></li>
+					<li><a class="dropdown-item" href="BestTracker.php?holo&comp">Holo Comp</a></li>
 					
 					<li><a class="dropdown-item" href="BestTracker.php?random">Random</a></li>
 					<li><a class="dropdown-item" href="BestTracker.php?holo&random">Random Holo</a></li>

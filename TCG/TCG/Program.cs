@@ -405,14 +405,11 @@ namespace TCG
 		{
 			List<string> code = new List<string>(6);
 
-			IEnumerable<HoloCard> cards = HoloCards.Get().OrderBy(c => c.setNum).OrderBy(c => c.set);
-			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
-
 			code.Add("<?php");
 
-			code.Add("$holoAll = array(" + cardArr + ");");
-			code.Add("start($j++, 'Compare SV Cosmos Holo Cards', $holoHave, array());");
-			code.Add("printComp(array(" + GetSvCosmos() + "));");
+			code.Add("$comp = array(" + GetCosmosComp() + ");");
+			code.Add("startComp($j++, 'Compare Pixel vs Smooth Cosmos Holo Cards', $holoHave, $comp);");
+			code.Add("printComp($comp);");
 			code.Add("finish();");
 
 			code.Add("?>");
@@ -420,14 +417,24 @@ namespace TCG
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Holo_Comp.php", code);
 		}
 
-		static string GetSvCosmos()
+		static string GetCosmosComp()
 		{
 			IEnumerable<HoloCard> cards = HoloCards.Get();
 			List<List<HoloCard>> res = new List<List<HoloCard>>();
 
 			foreach (HoloCard card in cards)
 			{
-				if (card.rarity != HoloRarity.SV_PIXEL_COSMOS_HOLO && card.rarity != HoloRarity.SV_SMOOTH_COSMOS_HOLO)
+				int mode;
+
+				if (card.rarity == HoloRarity.BWXY_PIXEL_COSMOS_HOLO || card.rarity == HoloRarity.BWXY_SMOOTH_COSMOS_HOLO)
+					mode = 1;
+				else if (card.rarity == HoloRarity.SWSH_PIXEL_COSMOS_HOLO || card.rarity == HoloRarity.SWSH_SMOOTH_COSMOS_HOLO)
+					mode = 2;
+				else if (card.rarity == HoloRarity.SV_PIXEL_COSMOS_HOLO || card.rarity == HoloRarity.SV_SMOOTH_COSMOS_HOLO)
+					mode = 3;
+				else if (card.rarity == HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY || card.rarity == HoloRarity.SV_SMOOTH_COSMOS_HOLO_ENERGY)
+					mode = 4;
+				else
 					continue;
 
 				bool contains = false;
@@ -443,8 +450,25 @@ namespace TCG
 
 				List<HoloCard> list = new List<HoloCard>();
 
-				list.Add(cards.Where(c => c.set == card.set && c.setNum == card.setNum && c.rarity == HoloRarity.SV_SMOOTH_COSMOS_HOLO).FirstOrDefault());
-				list.Add(cards.Where(c => c.set == card.set && c.setNum == card.setNum && c.rarity == HoloRarity.SV_PIXEL_COSMOS_HOLO).FirstOrDefault());
+				switch (mode)
+				{
+					case 1:
+						list.Add(cards.Where(c => c.set == card.set && c.setNum == card.setNum && c.rarity == HoloRarity.BWXY_PIXEL_COSMOS_HOLO).FirstOrDefault());
+						list.Add(cards.Where(c => c.set == card.set && c.setNum == card.setNum && c.rarity == HoloRarity.BWXY_SMOOTH_COSMOS_HOLO).FirstOrDefault());
+						break;
+					case 2:
+						list.Add(cards.Where(c => c.set == card.set && c.setNum == card.setNum && c.rarity == HoloRarity.SWSH_PIXEL_COSMOS_HOLO).FirstOrDefault());
+						list.Add(cards.Where(c => c.set == card.set && c.setNum == card.setNum && c.rarity == HoloRarity.SWSH_SMOOTH_COSMOS_HOLO).FirstOrDefault());
+						break;
+					case 3:
+						list.Add(cards.Where(c => c.set == card.set && c.setNum == card.setNum && c.rarity == HoloRarity.SV_PIXEL_COSMOS_HOLO).FirstOrDefault());
+						list.Add(cards.Where(c => c.set == card.set && c.setNum == card.setNum && c.rarity == HoloRarity.SV_SMOOTH_COSMOS_HOLO).FirstOrDefault());
+						break;
+					case 4:
+						list.Add(cards.Where(c => c.set == card.set && c.setNum == card.setNum && c.rarity == HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY).FirstOrDefault());
+						list.Add(cards.Where(c => c.set == card.set && c.setNum == card.setNum && c.rarity == HoloRarity.SV_SMOOTH_COSMOS_HOLO_ENERGY).FirstOrDefault());
+						break;
+				}
 
 				res.Add(list);
 			}
@@ -460,11 +484,10 @@ namespace TCG
 					ret += (cur == null ? 0 : cur) + ",";
 				}
 
-				ret.Trim(',');
-				ret += "),";
+				ret = ret.Trim(',') + "),";
 			}
 
-			ret.Trim(',');
+			ret = ret.Trim(',');
 
 			return ret;
 		}
@@ -644,6 +667,12 @@ namespace TCG
 			foreach (JumboRarity rarity in Enum.GetValues(typeof(JumboRarity)))
 				if (rarity != JumboRarity.Length)
 					code.Add(CodeFromJumboCards(rarity));
+
+			string cardArr = string.Join(',', JumboCards.Get().OrderBy(j => j.rarity).Select(c => c.ToString()));
+
+			code.Add("$all = array(" + cardArr + ");\r\n" +
+				"printJumbo('All', $all);\r\n");
+
 
 			code.Add("?>");
 

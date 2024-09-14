@@ -107,7 +107,7 @@ namespace TCG
 					(HoloCards.Find(Sets.Paldea_Evolved, 107, HoloRarity.SV_PIXEL_COSMOS_HOLO), AcetoneStatus.NO_PROGRESS),
 					// SV_PIXEL_COSMOS_HOLO_ENERGY
 
-					(Cards.Find(Sets.Unnumbered_Promo, 1, Rarity.Ancient_Mew), AcetoneStatus.NO_PROGRESS),
+					(Cards.Find(Sets.Unnumbered_Promo, -1, Rarity.Ancient_Mew), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Team_Rocket, 83, Rarity.Secret_OS), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Neo_Revelation, 66, Rarity.Shining_Neo), AcetoneStatus.NO_PROGRESS),
 					(Cards.Find(Sets.Aquapolis, 149, Rarity.Crystal_Type), AcetoneStatus.NO_PROGRESS),

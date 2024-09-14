@@ -92,8 +92,23 @@
 			background-color: purple;
 		}
 		
+		.card-rare-img {
+			width: 120px;
+			margin: 2px;
+			border: 3px solid yellow;
+			background-color: yellow;
+		}
+		
+		.card-marker-img {
+			width: 120px;
+			margin: 2px;
+			border: 3px solid black;
+			background-color: black;
+		}
+		
 		.page img {
 			height: 150px;
+			max-width: 105px;
 			border: 3px solid black;
 			background-color: black;
 		}
@@ -338,26 +353,98 @@ function idToHoloName($ID)
 	return ''.(is_numeric($ID) ? str_repeat("0", 5 - strlen($ID)) : '').$ID;
 }
 
+function imgBase($ID, $dir, $class, $visible, $isHolo = false)
+{
+	if ($ID == -1)
+		cardImg('card-marker-img', 'images/best_tracker/'.$dir.'/-1.png', $visible);
+	else if (is_numeric($ID))
+		cardImg($class, 'images/best_tracker/'.$dir.'/'.($isHolo ? idToHoloName($ID) : idToName($ID)).'.png', $visible);
+	else if ($ID == '\n')
+		print('<br>');
+	else // for imgF, check for weird behavior
+		cardImg($class, 'images/best_tracker/'.$dir.'/'.$ID.'.png', $visible);
+}
+
 function img($ID, $visible = false)
 {
-	if ($ID == '\n')
-		print('<br>');
-	else if ($ID == -1)
+	imgBase($ID, 'cards', 'card-img', $visible);
+}
+
+function imgN($ID, $visible = false)
+{
+	imgBase($ID, 'cards', 'card-have-img', $visible);
+}
+
+function imgF($ID, $visible = false)
+{
+	imgBase($ID, 'FUT', 'card-fut-img', $visible);
+}
+
+function imgH($ID, $visible = false)
+{
+	imgBase($ID, 'holo', 'card-img', $visible, true);
+}
+
+function imgHN($ID, $visible = false)
+{
+	imgBase($ID, 'holo', 'card-have-img', $visible, true);
+}
+
+function imgW($ID, $visible = false)
+{
+	imgBase($ID, 'worlds', 'card-img', $visible);
+}
+
+function imgWN($ID, $visible = false)
+{
+	imgBase($ID, 'worlds', 'card-have-img', $visible);
+}
+
+function imgP($ID, $visible = false)
+{
+	imgBase($ID, 'pocket', 'card-img', $visible);
+}
+
+function imgPN($ID, $visible = false)
+{
+	imgBase($ID, 'pocket', 'card-have-img', $visible);
+}
+
+function imgJ($ID, $visible = false)
+{
+	imgBase($ID, 'jumbo', 'card-img', $visible);
+}
+
+function imgJN($ID, $visible = false)
+{
+	imgBase($ID, 'jumbo', 'card-have-img', $visible);
+}
+
+function imgER($ID, $visible = false)
+{
+	imgBase($ID, 'extremely_rare', 'card-rare-img', $visible);
+}
+
+/*function img($ID, $visible = false)
+{
+	if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/cards/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-img', 'images/best_tracker/cards/'.idToName($ID).'.png', $visible);
+	else if ($ID == '\n')
+		print('<br>');
 	// else
 		// cardImg('card-img', 'images/best_tracker/cards/'.$ID.'.png', $visible);
 }
 
 function imgN($ID, $visible = false)
 {
-	if ($ID == '\n')
-		print('<br>');
-	else if ($ID == -1)
+	if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/cards/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-have-img', 'images/best_tracker/cards/'.idToName($ID).'.png', $visible);
+	else if ($ID == '\n')
+		print('<br>');
 	// else
 		// cardImg('card-img', 'images/best_tracker/cards/'.$ID.'.png', $visible);
 }
@@ -372,72 +459,72 @@ function imgF($ID, $visible = false)
 
 function imgH($ID, $visible = false)
 {
-	if ($ID == '\n')
-		print('<br>');
-	else if ($ID == -1)
+	if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/holo/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-img', 'images/best_tracker/holo/'.idToHoloName($ID).'.png', $visible);
+	else if ($ID == '\n')
+		print('<br>');
 	// else
 		// cardImg('card-img', 'images/best_tracker/holo/'.$ID.'.png', $visible);
 }
 
 function imgHN($ID, $visible = false)
 {
-	if ($ID == '\n')
-		print('<br>');
-	else if ($ID == -1)
+	if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/holo/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-have-img', 'images/best_tracker/holo/'.idToHoloName($ID).'.png', $visible);
+	else if ($ID == '\n')
+		print('<br>');
 	// else
 		// cardImg('card-img', 'images/best_tracker/holo/'.$ID.'.png', $visible);
 }
 
 function imgW($ID, $visible = false)
 {
-	if ($ID == '\n')
-		print('<br>');
-	else if ($ID == -1)
+	if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/worlds/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-img', 'images/best_tracker/worlds/'.idToName($ID).'.png', $visible);
+	else if ($ID == '\n')
+		print('<br>');
 	// else
 		// cardImg('card-img', 'images/best_tracker/worlds/'.$ID.'.png', $visible);
 }
 
 function imgWN($ID, $visible = false)
 {
-	if ($ID == '\n')
-		print('<br>');
-	else if ($ID == -1)
+	if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/worlds/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-have-img', 'images/best_tracker/worlds/'.idToName($ID).'.png', $visible);
+	else if ($ID == '\n')
+		print('<br>');
 	// else
 		// cardImg('card-img', 'images/best_tracker/worlds/'.$ID.'.png', $visible);
 }
 
 function imgP($ID, $visible = false)
 {
-	if ($ID == '\n')
-		print('<br>');
-	else if ($ID == -1)
+	if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/pocket/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-img', 'images/best_tracker/pocket/'.idToName($ID).'.png', $visible);
+	else if ($ID == '\n')
+		print('<br>');
 	// else
 		// cardImg('card-img', 'images/best_tracker/pocket/'.$ID.'.png', $visible);
 }
 
 function imgPN($ID, $visible = false)
 {
-	if ($ID == '\n')
-		print('<br>');
-	else if ($ID == -1)
+	if ($ID == -1)
 		cardImg('card-img', 'images/best_tracker/pocket/-1.png', $visible);
 	else if (is_numeric($ID))
 		cardImg('card-have-img', 'images/best_tracker/pocket/'.idToName($ID).'.png', $visible);
+	else if ($ID == '\n')
+		print('<br>');
 	// else
 		// cardImg('card-img', 'images/best_tracker/pocket/'.$ID.'.png', $visible);
 }
@@ -472,7 +559,7 @@ function imgER($name, $visible = false)
 		print('<br>');
 	else
 		cardImg('card-img', 'images/best_tracker/extremely_rare/'.$name.'.png', $visible);
-}
+}*/
 
 function start($ID, $name, $have, $arrC, $visible = false)
 {
@@ -524,12 +611,18 @@ function finish()
 	print('</div>');
 }
 
+$printSingleComp = false;
+
 function printComp($compArr)
 {
 	global $holoHave;
+	global $printSingleComp;
 	
 	foreach ($compArr as $comp)
 	{
+		if (in_array(0, $comp) && !$printSingleComp)
+			continue;
+		
 		foreach ($comp as $cur)
 		{
 			if (in_array($cur, $holoHave, true) || $cur == 0)
@@ -544,6 +637,83 @@ function printComp($compArr)
 		
 		print('<br>');
 	}
+}
+
+function countComp($compArr)
+{
+	$ret = 0;
+	
+	foreach ($compArr as $comp)
+	{
+		if (in_array(0, $comp))
+			continue;
+		
+		$ret += count($comp);
+	}
+	
+	return $ret;
+}
+
+function countCompHave($compArr, $haveArr)
+{
+	$ret = 0;
+	
+	foreach ($compArr as $comp)
+	{
+		if (in_array(0, $comp))
+			continue;
+		
+		foreach ($comp as $cur)
+			if (in_array($cur, $haveArr))
+				$ret++;
+	}
+	
+	return $ret;
+}
+
+function startComp($ID, $name, $have, $compArr, $visible = false)
+{
+	$subHeader = '';
+	$progressBar = '';
+	
+	if (count($have) != 0 || countComp($compArr) != 0)
+	{
+		$amount = countComp($compArr);
+		$haveAmount = countCompHave($compArr, $have);
+		$percent = $amount == 0 ? 0 : round($haveAmount / $amount * 100, 2);
+		
+		if ($percent == 100)
+			$barClass = 'success';
+		else if ($percent >= 50)
+			$barClass = 'info';
+		else if ($percent >= 25)
+			$barClass = 'warning';
+		else
+			$barClass = 'danger';
+		
+		$subHeader = '<h2>'.$haveAmount.'/'.$amount.' ('.$percent.'%)</h2>';
+		
+		// progress-bar-animated
+		$progressBar = '
+		<div class="progress">
+			<div class="progress-bar bg-'.$barClass.' progress-bar-striped" role="progressbar" aria-valuenow="'.$percent.'" aria-valuemin="0" aria-valuemax="100" style="width:'.$percent.'%">
+				'.$percent.'%
+			</div>
+		</div>
+		';
+	}
+	
+	$onclick = $visible ? '' : 'onclick="toggleSection(this, '.$ID.')"';
+	
+	print('<div id="header-'.$ID.'" class="center" '.$onclick.'>');
+	print('<h1>'.$name.'</h1>');
+	print($subHeader);
+	print($progressBar);
+	print('</div>');
+	
+	$class = $visible ? 'center' : 'center hidden';
+	
+	print('<div id="container-'.$ID.'" class="'.$class.'">');
 }
 
 // function startTable($id)
@@ -1355,7 +1525,7 @@ else if (isset($_GET['holo']))
 	}
 	else if (isset($_GET['random']))
 	{
-		$random = rand(1, 14439);
+		$random = rand(1, 15142);
 		
 		start($j++, 'Random Card', $holoHave, array($random), true);
 		if (in_array($random, $holoHave, true)) {imgHN($random, true);} else {imgH($random, true);}
@@ -1623,6 +1793,9 @@ else if (isset($_GET['clone']))
 }
 else if (isset($_GET['test']))
 {
+	require 'BestTracker_HoloHave.php';
+	require 'BestTracker_HoloCards.php';
+	
 	function removeCardsFrom(&$cards, &$removeThese)
 	{
 		foreach ($removeThese as $removeThis)
@@ -1688,6 +1861,12 @@ else if (isset($_GET['test']))
 	$test = array(2697,2796,2911,3103,2807,3123,943,944,945,946,947,863,2595,2762,2759,2760,2764,794,927,930,1048,2097,3037,2051,2393,2333,2184,2126,3053,2395,2336,3041,2127,3004,3045,2128,1948,2639,2640,2398,2130,3020,3060,3096,2596,2598,3068,2058,2339,2400,3028,2401,2910,2059,2506,3054,2600,2108,2060,2135,2601,3044,2649,2193,2347,2713,2138,2011,3083,2063,2714,1958,3070,3064,3065,3001,3125,3039,1994,2396,2337,2704,3021,2597,2599,2005,1951,2510,2803,2650,2412,703,1023,664,911,938,1778,1086,1927,1090,2146,2073,1964,2530,2425,3115,3102,2920,3122,2077,2665,1892,1911,3086,2919,2433,3087,1667,2168,2210,2040,2089,2175,552,621,2951,970,2952,1026,2953,603,657,966,831,554,903,1045,774,1031,931,627,605,460,919,921,924,865,1655,1072,1883,1074,1884,1427,1356,1217,1843,1602,1841,1167,1168,1079,1169,1935,1362,1081,1871,941,1094,2165,2451,2369,2371,2602,3113,357,3055,275,352,360,3061,3052,1219,1730,3116,1361,1364,1436,2133,2134,2195,2143,3233,3235,3238,3261,3056,3057,3058,3059,2603,2754,2933,2181,3062,3063,3223,3224,2604,2605,2606,2607,2608,2609,2610,2611,2612,2613,2614,2615,2616,2617,2618,2619,2620,2621,2622,2623,2624,2625,2626,2627,2628);
 	printCards('Mat', $test, false);
 	
+	$test = array(2936,215,328,3142,404,408,409,1026,590,866,1078,1947,3116,2783,2836,3475,2585,4280,4021,4268);
+	printCards('Favorites', $test);
+	
+	$test = array(1139,2732,2782,3040,4952,6548,5317,5793,8231,10734,10819,10820,11240,11217,11137,11977,13536,13967);
+	printHolo('Favorites (Holo)', $test);
+	
 	$test = array(3399,3408,3513,3526,3527,3275,3282,3315,3396);
 	printCards('Test', $test);
 	
@@ -1716,18 +1895,52 @@ else if (isset($_GET['test']))
 	$test = array(3547,3995,3997,3998,3874,4010);
 	printCards('Reserved by aunt', $test);
 	
+	function GetProgress(&$cards, &$have)
+	{
+		$haveAmount = countHave($cards, $have);
+		$amount = count($cards);
+		return '('.$haveAmount.'/'.$amount.' - '.($amount - $haveAmount).' remaining)';
+	}
+	
 	$lf = array_merge($ex_SV_Tera, $VSTAR, $Seal_Stone, $ex_SV_Ancient, $ex_SV_Future, $VMAX_Gigantamax, $VMAX_Eternamax, $VMAX_Blue, $UB_GX, $Ace_Spec, $Ace_Spec_Plasma/*, $LV_X, $LEGEND, $Prime*/);
 	removeCardsFrom($lf, $have);
 	removeCardsFrom($lf, $test);
-	printCards('Looking for', $lf);
-	print('<p>Max prices:</p>
+	printCards('Looking for (Ultra Rare)', $lf);
+	print('<p>Ultra Rare Types:</p>
 	<ul class="shadow">
-		<li>tera ex: 2</li>
-		<li>ancient ex: 1,5</li>
-		<li>future ex: 1,5</li>
-		<li>vmax: 2,5</li>
-		<li>ub gx: 3</li>
-		<li>ace spec: 3</li>
+		<li>ex (SV) Tera '.GetProgress($ex_SV_Tera, $have).'</li>
+		<li>VSTAR '.GetProgress($VSTAR, $have).'</li>
+		<li>Seal Stone '.GetProgress($Seal_Stone, $have).'</li>
+		<li>ex (SV) Ancient '.GetProgress($ex_SV_Ancient, $have).'</li>
+		<li>ex (SV) Future '.GetProgress($ex_SV_Future, $have).'</li>
+		<li>VMAX (Gigantamax) '.GetProgress($VMAX_Gigantamax, $have).'</li>
+		<li>VMAX (Eternamax) '.GetProgress($VMAX_Eternamax, $have).'</li>
+		<li>VMAX (Blue) '.GetProgress($VMAX_Blue, $have).'</li>
+		<li>UB GX '.GetProgress($UB_GX, $have).'</li>
+		<li>Ace Spec '.GetProgress($Ace_Spec, $have).'</li>
+		<li>Ace Spec (Plasma) '.GetProgress($Ace_Spec_Plasma, $have).'</li>
+	</ul>');
+	
+	$lf_holo = array_merge($SV_MIRAGE_HOLO, $SV_MIRAGE_HOLO_ANCIENT, $SV_MIRAGE_HOLO_FUTURE, $SV_SMOOTH_COSMOS_HOLO, $SV_PIXEL_COSMOS_HOLO, $SV_PIXEL_COSMOS_HOLO_ANCIENT, $SV_PIXEL_COSMOS_HOLO_FUTURE, $SV_CONFETTI_HOLO, $SV_LINE_HOLO, $SV_SNOWFLAKE_HOLO, $SV_CLASSIC_STARS_HOLO, $SV_SMOOTH_COSMOS_HOLO_ENERGY, $SV_PIXEL_COSMOS_HOLO_ENERGY, $SV_TOXIC_CHAIN_HOLO_ENERGY);
+	
+	removeCardsFrom($lf_holo, $holoHave);
+	printHolo('Looking for (Holo)', $lf_holo);
+	print('<p>Holo Types:</p>
+	<ul class="shadow">
+		<li>SV Mirage Holo '.GetProgress($SV_MIRAGE_HOLO, $holoHave).'</li>
+		<li>SV Mirage Holo (Ancient) '.GetProgress($SV_MIRAGE_HOLO_ANCIENT, $holoHave).'</li>
+		<li>SV Mirage Holo (Future) '.GetProgress($SV_MIRAGE_HOLO_FUTURE, $holoHave).'</li>
+		<li>SV Smooth Cosmos Holo '.GetProgress($SV_SMOOTH_COSMOS_HOLO, $holoHave).'</li>
+		<li>SV Pixel Cosmos Holo '.GetProgress($SV_PIXEL_COSMOS_HOLO, $holoHave).'</li>
+		<li>SV Pixel Cosmos Holo (Ancient) '.GetProgress($SV_PIXEL_COSMOS_HOLO_ANCIENT, $holoHave).'</li>
+		<li>SV Pixel Cosmos Holo (Future) '.GetProgress($SV_PIXEL_COSMOS_HOLO_FUTURE, $holoHave).'</li>
+		<li>SV Confetti Holo '.GetProgress($SV_CONFETTI_HOLO, $holoHave).'</li>
+		<li>SV Line Holo '.GetProgress($SV_LINE_HOLO, $holoHave).'</li>
+		<li>SV Snowflake Holo '.GetProgress($SV_SNOWFLAKE_HOLO, $holoHave).'</li>
+		<li>SV Classic Stars Holo '.GetProgress($SV_CLASSIC_STARS_HOLO, $holoHave).'</li>
+		<li>SV Smooth Cosmos Holo Energy '.GetProgress($SV_SMOOTH_COSMOS_HOLO_ENERGY, $holoHave).'</li>
+		<li>SV Pixel Cosmos Holo Energy '.GetProgress($SV_PIXEL_COSMOS_HOLO_ENERGY, $holoHave).'</li>
+		<li>SV Toxic Chain Holo Energy '.GetProgress($SV_TOXIC_CHAIN_HOLO_ENERGY, $holoHave).'</li>
 	</ul>');
 	
 	// $test = array(-1,'\n',-1,'\n',46,47,50,'\n',-1,'\n',67,68,69,'\n',73,74,81,'\n',89,'\n',103,104,105,108,'\n',118,'\n',136,138,135,'\n',172,'\n',179,181,184,'\n',-1,'\n',198,199,202,'\n',214,215,217,218,'\n',228,'\n',-1,'\n',252,'\n',255,'\n',256,257,258,259,'\n',260,'\n',269,'\n',271,275,'\n',282,284,285,287,'\n',-1,'\n',312,314,316,317,'\n',329,335,337,'\n',362,364,368,369,370,371,'\n',374,380,381,382,383,384,385,'\n',388,395,396,'\n',408,409,'\n',-1,'\n',428,429,'\n',431,432,'\n',434,'\n',440,442,443,444,'\n',459,'\n',472,474,475,'\n',-1,'\n',488,490,491,492,'\n',512,517,'\n',530,531,'\n',552,555,556,'\n',572,575,576,'\n',-1,'\n',608,610,612,614,'\n',623,626,628,'\n',640,643,644,'\n',656,658,661,'\n',684,692,695,699,'\n',723,724,'\n',731,735,737,742,'\n',769,772,789,790,791,'\n',796,802,803,805,'\n',823,826,827,832,'\n');
@@ -1755,12 +1968,12 @@ else if (isset($_GET['fut']))
 {
 	require 'BestTracker_Future.php';
 	
-	$FUT_ex = array('SVG1','CH3','SM1','SVPEN7','SVG2','SCR1','SVP4','SVJ2','SVP3','CH4','CH5','PD1','SM5','SVPEN6','SM6','SCR2','SVP1','SVP5','SCR3','SM7','PD3','SVPEN8','SVP2');
-	$FUT_ex_Index = array(1,6,12,13,24,28,33,35,45,47,55,56,58,60,61,62,63,86,89,91,93,107,-1);
+	$FUT_ex = array('SCR1','CH3','SM1','SVPEN7','SCR2','PD1','SCR3','SVP3','SVJ2','SVP2','CH4','CH5','PD2','SM5','SVPEN6','SM6','SCR4','SCR5','SVP4','SCR6','SM7','PD4','SVPEN8','SVP1');
+	$FUT_ex_Index = array(1,6,12,13,24,27,28,33,35,45,47,55,56,58,60,61,62,63,86,89,91,93,107,-1);
 	printFuture('ex', $FUT_ex);
 	printMix('ex (All)', $ex_SV, $FUT_ex, $FUT_ex_Index);
 	
-	$FUT_Tera = array('\n','CH6','SVJ1','SM2','SVL2','SM3','SM4','SVL1','PD2','PD4','KO1','SM8','\n');
+	$FUT_Tera = array('\n','CH6','SVJ1','SM2','SVL2','SM3','SM4','SVL1','PD3','PD5','KO1','SM8','\n');
 	$FUT_Tera_Index = array(27,9,22,27,27,27,27,27,27,27,28,-1,27);
 	printFuture('Tera ex', $FUT_Tera);
 	printMix('Tera ex (All)', $ex_SV_Tera, $FUT_Tera, $FUT_Tera_Index);
@@ -1780,7 +1993,7 @@ else if (isset($_GET['fut']))
 	printFuture('Future ex', $FUT_Future);
 	printMix('Future ex (All)', $ex_SV_Future, $FUT_Future, $FUT_Future_Index);
 	
-	$FUT_Ace_Spec = array('SVL3','SVL4','SM9','SM10','SM11','PD5','PD6');
+	$FUT_Ace_Spec = array('SVL3','SVL4','SM9','SM10','SM11','PD6','PD7','PD8');
 	printFuture('Ace Spec', $FUT_Ace_Spec);
 	
 	$FUT_Radiant = array('CH1','CH8','CH2');
@@ -1864,7 +2077,7 @@ else if (isset($_GET['allall']))
 }
 else if (isset($_GET['random']))
 {
-	$random = rand(1, 4108);
+	$random = rand(1, 4520);
 	
 	start($j++, 'Random Card', $have, array($random), true);
 	if (in_array($random, $have, true)) {imgN($random, true);} else {img($random, true);}

@@ -18,7 +18,7 @@ namespace TCG
 			new HoloCard("Gyarados", Pokedex.Gyarados, HoloRarity.OS_STARLIGHT_HOLO, Types.Water, Sets.Base_Set, 6),
 			new HoloCard("Hitmonchan", Pokedex.Hitmonchan, HoloRarity.OS_STARLIGHT_HOLO, Types.Fighting, Sets.Base_Set, 7),
 			new HoloCard("Machamp", Pokedex.Machamp, HoloRarity.OS_STARLIGHT_HOLO, Types.Fighting, Sets.Base_Set, 8),
-			new HoloCard("Machamp", Pokedex.Machamp, HoloRarity.OS_PIXEL_COSMOS_HOLO, Types.Fighting, Sets.Base_Set, 8.1),
+			new HoloCard("Machamp", Pokedex.Machamp, HoloRarity.OS_PIXEL_COSMOS_HOLO, Types.Fighting, Sets.Base_Set, 8),
 			new HoloCard("Magneton", Pokedex.Magneton, HoloRarity.OS_STARLIGHT_HOLO, Types.Lightning, Sets.Base_Set, 9),
 			new HoloCard("Mewtwo", Pokedex.Mewtwo, HoloRarity.OS_STARLIGHT_HOLO, Types.Psychic, Sets.Base_Set, 10),
 			new HoloCard("Nidoking", Pokedex.Nidoking, HoloRarity.OS_STARLIGHT_HOLO, Types.Grass, Sets.Base_Set, 11),
@@ -14576,7 +14576,7 @@ namespace TCG
 			new HoloCard("Articuno", Pokedex.Articuno, HoloRarity.OS_CLASSIC_STARS_HOLO, Types.Water, Sets.Classic_Blastoise, 9),
 			new HoloCard("Drowzee", Pokedex.Drowzee, HoloRarity.SM_CLASSIC_STARS_HOLO, Types.Psychic, Sets.Classic_Blastoise, 11),
 			new HoloCard("Hypno", Pokedex.Hypno, HoloRarity.SM_CLASSIC_STARS_HOLO, Types.Psychic, Sets.Classic_Blastoise, 12),
-			new HoloCard("Mr. Mime", Pokedex.Mr_Mime, HoloRarity.NEO_CLASSIC_STARS_HOLO, Types.Psychic, Sets.Classic_Blastoise, 13),
+			new HoloCard("Mr. Mime", Pokedex.Mr_Mime, HoloRarity.OS_CLASSIC_STARS_HOLO, Types.Psychic, Sets.Classic_Blastoise, 13),
 			new HoloCard("Mewtwo", Pokedex.Mewtwo, HoloRarity.EV_CLASSIC_STARS_HOLO, Types.Psychic, Sets.Classic_Blastoise, 14),
 			new HoloCard("Lt. Surge's Rattata", Pokedex.Rattata, HoloRarity.OS_CLASSIC_STARS_HOLO, Types.Colorless, Sets.Classic_Blastoise, 15),
 			new HoloCard("Lt. Surge's Raticate", Pokedex.Raticate, HoloRarity.OS_CLASSIC_STARS_HOLO, Types.Colorless, Sets.Classic_Blastoise, 16),
@@ -15152,6 +15152,11 @@ namespace TCG
 			new HoloCard("Basic Fighting Energy", Pokedex.NVT, HoloRarity.SV_TOXIC_CHAIN_HOLO_ENERGY, Types.Basic_Fighting_Energy, Sets.SV_Energy, 6),
 			new HoloCard("Basic Darkness Energy", Pokedex.NVT, HoloRarity.SV_TOXIC_CHAIN_HOLO_ENERGY, Types.Basic_Darkness_Energy, Sets.SV_Energy, 7),
 			new HoloCard("Basic Metal Energy", Pokedex.NVT, HoloRarity.SV_TOXIC_CHAIN_HOLO_ENERGY, Types.Basic_Metal_Energy, Sets.SV_Energy, 8),
+			new HoloCard("Arcanine", Pokedex.Arcanine, HoloRarity.SV_PIXEL_COSMOS_HOLO, Types.Fire, Sets.SV_Promo, 11),
+			new HoloCard("Dondozo", Pokedex.Dondozo, HoloRarity.SV_PIXEL_COSMOS_HOLO, Types.Water, Sets.SV_Promo, 12),
+			new HoloCard("Varoom", Pokedex.Varoom, HoloRarity.SV_PIXEL_COSMOS_HOLO, Types.Metal, Sets.SV_Promo, 26),
+			new HoloCard("Eevee", Pokedex.Eevee, HoloRarity.SV_PIXEL_COSMOS_HOLO, Types.Colorless, Sets.SV_Promo, 43),
+			new HoloCard("Rayquaza", Pokedex.Rayquaza, HoloRarity.SWSH_PIXEL_COSMOS_HOLO, Types.Colorless, Sets.SWSH_Promo, 29),
 		};
 		
 		// cards exclusive to Asia do not count, even if they are in English
