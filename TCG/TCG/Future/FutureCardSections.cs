@@ -4,12 +4,11 @@
 	{
 		private static FutureCardSection[] TheSections =
 		{
-			new FutureCardSection("Stellar Miracle (JP)", "SM", 44),
-			new FutureCardSection("Stellar Crown", "SCR", 8),
-			new FutureCardSection("Paradise Dragona (JP)", "PD", 15),
+			new FutureCardSection("Paradise Dragona (JP)", "PD", 39),
+			new FutureCardSection("Supercharged Breaker (JP)", "SB", 7),
 			new FutureCardSection("Scarlet & Violet 9 (TBA)", "SV9EN", 4),
 
-			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 11),
+			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 9),
 			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 4),
 
 			new FutureCardSection("Battle Master Decks (JP)", "SVJ", 2),

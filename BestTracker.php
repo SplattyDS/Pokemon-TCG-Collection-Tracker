@@ -2016,8 +2016,8 @@ else if (isset($_GET['fut']))
 	printFuture('ex', $FUT_ex);
 	printMix('ex (All)', $ex_SV, $FUT_ex, $FUT_ex_Index);
 	
-	$FUT_Tera = array('\n','CH6','SVJ1','SM2','SVL2','SM3','SM4','SVL1','PD3','PD5','KO1','SM8','\n');
-	$FUT_Tera_Index = array(27,9,22,27,27,27,27,27,27,27,28,-1,27);
+	$FUT_Tera = array('\n','CH6','SVJ1','SVL2','SB2','SVL1','PD3','SB3','PD5','SB4','KO1','\n');
+	$FUT_Tera_Index = array(27,9,22,28,30,30,30,30,30,30,31,30);
 	printFuture('Tera ex', $FUT_Tera);
 	printMix('Tera ex (All)', $ex_SV_Tera, $FUT_Tera, $FUT_Tera_Index);
 	
@@ -2026,13 +2026,13 @@ else if (isset($_GET['fut']))
 	// printFuture('Tera ex', $FUT_Tera_B);
 	// printMix('Tera ex', $ex_SV_Tera, $FUT_Tera_B, $FUT_Tera_Index_B);
 	
-	$FUT_Ancient = array('SVPEN1','SVPEN2');
-	$FUT_Ancient_Index = array(1,-1);
+	$FUT_Ancient = array();
+	$FUT_Ancient_Index = array();
 	printFuture('Ancient ex', $FUT_Ancient);
 	printMix('Ancient ex (All)', $ex_SV_Ancient, $FUT_Ancient, $FUT_Ancient_Index);
 	
-	$FUT_Future = array('SVPEN3','SVPEN4');
-	$FUT_Future_Index = array(7,8);
+	$FUT_Future = array();
+	$FUT_Future_Index = array();
 	printFuture('Future ex', $FUT_Future);
 	printMix('Future ex (All)', $ex_SV_Future, $FUT_Future, $FUT_Future_Index);
 	
