@@ -2989,7 +2989,7 @@ namespace TCG
 			new Card("Bidoof (Reverse)", Pokedex.Bidoof, Rarity.Ancient_Trait_Alpha, Types.Colorless, Sets.Primal_Clash, 117.1),
 			new Card("Bunnelby (Reverse)", Pokedex.Bunnelby, Rarity.Ancient_Trait_Omega, Types.Colorless, Sets.Primal_Clash, 121.1, true),
 			new Card("Dustox (Reverse)", Pokedex.Dustox, Rarity.Ancient_Trait_Delta, Types.Grass, Sets.Roaring_Skies, 8.1),
-			new Card("Articuno (Reverse)", Pokedex.Articuno, Rarity.Ancient_Trait_Delta, Types.Water, Sets.Roaring_Skies, 17.1),
+			new Card("Articuno (Reverse)", Pokedex.Articuno, Rarity.Ancient_Trait_Delta, Types.Water, Sets.Roaring_Skies, 17.1, true),
 			new Card("Natu (Reverse)", Pokedex.Natu, Rarity.Ancient_Trait_Delta, Types.Psychic, Sets.Roaring_Skies, 28.1),
 			new Card("Banette (Reverse)", Pokedex.Banette, Rarity.Ancient_Trait_Delta, Types.Psychic, Sets.Roaring_Skies, 32.1, true),
 			new Card("Togekiss (Reverse)", Pokedex.Togekiss, Rarity.Ancient_Trait_Delta, Types.Fairy, Sets.Roaring_Skies, 46.1),

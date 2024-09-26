@@ -231,6 +231,7 @@
 
 		// Pocket
 		Genetic_Apex,
+		Promo_A,
 
 		Length,
 	}

@@ -1265,6 +1265,10 @@ if (isset($_GET['date']))
 	$all = array_merge($all, $temp);
 	printCards('Rommelmarkt Oudenburg (15/8/2024)', $temp);
 	
+	$temp = array(2980);
+	$all = array_merge($all, $temp);
+	printCards('Rommelmarkt Oostende (15/9/2024)', $temp);
+	
 	$missing = array();
 	foreach ($have as $card) { if (!in_array($card, $all)) { array_push($missing, $card); /*print($card.',');*/ } }
 	printCards('Missing', $missing);
@@ -1779,6 +1783,45 @@ else if (isset($_GET['trainer']))
 	
 	$lillie = array(1768,1784,1822,3214,'h',10818,'h',10819,'h',10820,'h',10824,'f','SV9EN1','h',8899,'h',9200,'h',9413,'h',8723,1092,1288,3217,'h',10648,1798,3219,'h',10649,1835);
 	printTrainer('Lillie', $lillie);
+}
+else if (isset($_GET['cute']))
+{
+	function printCute($title, &$cardArr)
+	{
+		global $j;
+		
+		start($j++, $title, array(), $cardArr);
+		
+		$holo = $fut = false;
+		
+		foreach ($cardArr as $cur)
+		{
+			if ($cur == 'h')
+			{
+				$holo = true;
+				continue;
+			}
+			else if ($cur == 'f')
+			{
+				$fut = true;
+				continue;
+			}
+			
+			if ($holo)
+				imgHN($cur);
+			else if ($fut)
+				imgF($cur);
+			else
+				imgN($cur);
+			
+			$holo = $fut = false;
+		}
+		
+		finish();
+	}
+	
+	$trainer = array(566,544,718,1512,1513,3219,1567,3180,1287,1092,1288,3217,1798,1378,1135,3176,1459,1799,2556,3497,2783,2845,3312,2370,2165,3069,3452,4353,3802,4461,4561,4441,4070,4365,4453,4087);
+	printCute('Cute Trainers', $trainer);
 }
 else if (isset($_GET['acetone']))
 {

@@ -71,9 +71,9 @@ printCards('Unown Subset', $Unown);
 
 printCards('Ancient Trait Ω', $Ancient_Trait_Omega);
 
-printCards('Character Art (SWSH)', $Character_Art_SWSH);
-
 printCards('Ancient Trait Δ', $Ancient_Trait_Delta);
+
+printCards('Character Art (SWSH)', $Character_Art_SWSH);
 
 printCards('Full Art Energy (SWSH)', $Full_Art_Energy_SWSH);
 

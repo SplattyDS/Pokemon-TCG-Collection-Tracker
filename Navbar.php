@@ -94,6 +94,7 @@
 					<li><a class="dropdown-item" href="BestTracker.php?energy">Energy</a></li>
 					<li><a class="dropdown-item" href="BestTracker.php?owner">Owner</a></li>
 					<li><a class="dropdown-item" href="BestTracker.php?trainer">Trainer</a></li>
+					<li><a class="dropdown-item" href="BestTracker.php?cute">Cute</a></li>
 					<li><a class="dropdown-item" href="BestTracker.php?clone">Clone</a></li>
 					<li><a class="dropdown-item" href="BestTracker.php?holo&comp">Holo Comp</a></li>
 					
