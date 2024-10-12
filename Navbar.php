@@ -67,13 +67,12 @@
 				</a>
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<li><a class="dropdown-item" href="BestTracker.php?pocket">Main</a></li>
-					<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&set">Set</a></li>-->
-					<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&col">Collection</a></li>-->
+					<li><a class="dropdown-item" href="BestTracker.php?pocket&set">Set</a></li>
+					<li><a class="dropdown-item" href="BestTracker.php?pocket&col">Collection</a></li>
 					<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&binder">Binder</a></li>-->
-					<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&type">Type</a></li>-->
-					<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&dex">Dex</a></li>-->
+					<li><a class="dropdown-item" href="BestTracker.php?pocket&type">Type</a></li>
+					<li><a class="dropdown-item" href="BestTracker.php?pocket&dex">Dex</a></li>
 					<li><a class="dropdown-item" href="BestTracker.php?pocket&all">All</a></li>
-					<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&fut">Future</a></li>-->
 					<!--<li><a class="dropdown-item" href="BestTracker.php?pocket&test">Test</a></li>-->
 				</ul>
 			</li>
@@ -102,8 +101,10 @@
 					<li><a class="dropdown-item" href="BestTracker.php?holo&random">Random Holo</a></li>
 					<li><a class="dropdown-item" href="BestTracker.php?worlds&random">Random Worlds</a></li>
 					
+					<!--
 					<li><a class="dropdown-item" href="BestTracker.php?test">Test</a></li>
 					<li><a class="dropdown-item" href="BestTracker.php?holo&test">Holo Test</a></li>
+					-->
 				</ul>
 			</li>
 		</ul>

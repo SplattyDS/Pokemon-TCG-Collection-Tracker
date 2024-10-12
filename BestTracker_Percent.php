@@ -23,11 +23,11 @@ printCards('V-UNION Character Art', $V_UNION_Character_Art);
 
 printCards('Future ex (SV) Shiny Full Art', $ex_SV_Future_Shiny_Full_Art);
 
+printCards('Tera ex (SV)', $ex_SV_Tera);
+
 printCards('Full Art Pokémon (BW & XY - Radiant)', $Full_Art_Pokemon_BWXY_Radiant);
 
 printCards('Radiant Collection (XY)', $Radiant_Collection_XY);
-
-printCards('Tera ex (SV)', $ex_SV_Tera);
 
 printCards('VSTAR', $VSTAR);
 
@@ -125,6 +125,8 @@ printCards('Prism Star', $Prism_Star);
 
 printCards('Special Art Pokémon (SWSH - Forest)', $Special_Art_Pokemon_SWSH_Forest);
 
+printCards('Special Art Pokémon (SWSH)', $Special_Art_Pokemon_SWSH);
+
 printCards('LV.X (SP)', $LV_X_SP);
 
 printCards('Ancient Trait α', $Ancient_Trait_Alpha);
@@ -150,8 +152,6 @@ printCards('Shiny Holo Subset', $Shiny_Holo);
 printCards('VSTAR Special Art', $VSTAR_Special_Art);
 
 printCards('Full Art Pokémon (BW & XY - Textured)', $Full_Art_Pokemon_BWXY_Textured);
-
-printCards('Special Art Pokémon (SWSH)', $Special_Art_Pokemon_SWSH);
 
 printCards('Full Art Trainer (SV)', $Full_Art_Trainer_SV);
 

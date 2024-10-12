@@ -219,6 +219,7 @@
 		Shrouded_Fable,
 		Stellar_Crown,
 		Surging_Sparks,
+		Prismatic_Evolution,
 		SV_Energy,
 		SV_Promo,
 		Mc_Donalds_2023,

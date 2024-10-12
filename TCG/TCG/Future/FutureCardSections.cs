@@ -9,13 +9,13 @@
 			new FutureCardSection("Scarlet & Violet 9 (TBA)", "SV9EN", 4),
 
 			new FutureCardSection("Scarlet & Violet Promo", "SVPEN", 9),
-			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 4),
+			new FutureCardSection("Scarlet & Violet Promo (JP)", "SVP", 6),
 
 			new FutureCardSection("Battle Master Decks (JP)", "SVJ", 2),
 			new FutureCardSection("Starter Set Tera Type Stellar (JP)", "SVL", 4),
 
 			new FutureCardSection("Korean Cards", "KO", 1),
-			new FutureCardSection("Chinese Cards", "CH", 8),
+			new FutureCardSection("Chinese Cards", "CH", 9),
 		};
 
 		public static FutureCardSection[] Get()

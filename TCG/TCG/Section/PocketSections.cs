@@ -4,6 +4,7 @@
 	{
 		private static Section[] TheSections =
 		{
+			new Section(PocketRarity.Holo, "Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(PocketRarity.ex, "ex", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(PocketRarity.Special_Art_Pokémon, "Special Art Pokémon", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE),
 			new Section(PocketRarity.Full_Art_Trainer, "Full Art Trainer", SortMode.SORT_BY_NAME),

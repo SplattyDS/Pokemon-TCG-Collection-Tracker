@@ -1,4 +1,6 @@
 <?php
+printPocket('Holo', $Holo);
+
 printPocket('ex', $ex);
 
 printPocket('Special Art Pokémon', $Special_Art_Pokémon);

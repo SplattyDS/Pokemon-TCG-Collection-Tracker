@@ -54,7 +54,11 @@ namespace TCG
 
 			WritePocketCards();
 			WritePocketSections();
+			WritePocketSets();
+			WritePocketTypes();
+			WritePocketPokedex();
 			WritePocketAll();
+			WritePocketHave();
 
 			WriteJumboCards();
 			WriteJumboHave();
@@ -640,22 +644,82 @@ namespace TCG
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Pocket.php", code);
 		}
 
+		static void WritePocketSets()
+		{
+			List<string> code = new List<string>((int)Sets.Length + 2);
+
+			code.Add("<?php");
+
+			foreach (Sets set in Enum.GetValues(typeof(Sets)))
+				code.Add(CodeFromPocketSet(set));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Pocket_Sets.php", code);
+		}
+
+		static void WritePocketTypes()
+		{
+			List<string> code = new List<string>((int)Types.Length + 2);
+
+			code.Add("<?php");
+
+			foreach (Types type in Enum.GetValues(typeof(Types)))
+				code.Add(CodeFromPocketType(type));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Pocket_Types.php", code);
+		}
+
+		static void WritePocketPokedex()
+		{
+			List<string> code = new List<string>((int)Pokedex.Length + 2);
+			List<(Pokedex, int)> mons = new List<(Pokedex, int)>((int)Pokedex.Length);
+
+			code.Add("<?php");
+
+			foreach (Pokedex pokedex in Enum.GetValues(typeof(Pokedex)))
+				mons.Add((pokedex, PocketCardsFromPokedex(pokedex).Count()));
+
+			// IEnumerable<(Pokedex, int)> order = mons.OrderByDescending(p => p.Item2);
+			IEnumerable<(Pokedex, int)> order = mons;
+
+			foreach ((Pokedex, int) thing in order)
+				code.Add(CodeFromPocketPokedex(thing.Item1));
+
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Pocket_Pokedex.php", code);
+		}
+
 		static void WritePocketAll()
 		{
-			List<string> code = new List<string>(5);
+			List<string> code = new List<string>(4);
 
 			IEnumerable<PocketCard> cards = PocketCards.Get().OrderBy(c => c.setNum).OrderBy(c => c.set);
 			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
 
 			code.Add("<?php");
 
-			code.Add("$pocketHave = array();");
 			code.Add("$pocketAll = array(" + cardArr + ");");
 			code.Add("printPocket('All Revealed Pocket Cards', $pocketAll);");
 
 			code.Add("?>");
 
 			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_Pocket_All.php", code);
+		}
+
+		static void WritePocketHave()
+		{
+			List<string> code = new List<string>(3);
+			IEnumerable<PocketCard> collection = GetMyPocketCollection();
+
+			code.Add("<?php");
+			code.Add("$pocketHave = array(" + string.Join(',', collection.Select(c => c.ToString())) + ");");
+			code.Add("?>");
+
+			File.WriteAllLines("C:\\wamp64\\www\\PHP\\TCG\\BestTracker_PocketHave.php", code);
 		}
 
 		static void WriteJumboCards()
@@ -951,6 +1015,48 @@ namespace TCG
 			return "printPocket('" + section.title + "', $" + section.pocketRarity + ");\r\n";
 		}
 
+		static string CodeFromPocketSet(Sets set)
+		{
+			IEnumerable<PocketCard> cards = PocketCardsFromSet(set);
+
+			if (cards == null || cards.Count() == 0)
+				return "";
+
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			return
+				"$" + set.ToString() + " = array(" + cardArr + ");\r\n" +
+				"printPocket('" + set.ToString().Replace('_', ' ') + "', $" + set.ToString() + ");\r\n";
+		}
+
+		static string CodeFromPocketType(Types type)
+		{
+			IEnumerable<PocketCard> cards = PocketCardsFromType(type);
+
+			if (cards.Count() == 0)
+				return "";
+
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			return
+				"$" + type.ToString() + " = array(" + cardArr + ");\r\n" +
+				"printPocket('" + type.ToString().Replace('_', ' ') + "', $" + type.ToString() + ");\r\n";
+		}
+
+		static string CodeFromPocketPokedex(Pokedex pokedex)
+		{
+			IEnumerable<PocketCard> cards = PocketCardsFromPokedex(pokedex);
+
+			if (cards.Count() == 0)
+				return "";
+
+			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
+
+			return
+				"$" + pokedex.ToString() + " = array(" + cardArr + ");\r\n" +
+				"printPocket('" + pokedex.ToString().Replace('_', ' ') + "', $" + pokedex.ToString() + ");\r\n";
+		}
+
 		static string CodeFromJumboCards(JumboRarity rarity)
 		{
 			IEnumerable<JumboCard> cards = JumboCardsFromRarity(rarity);
@@ -1183,6 +1289,20 @@ namespace TCG
 			return sorted;
 
 			// return WorldsCards.Get().Where(c => c.have).OrderBy(c => c.setNum).OrderBy(c => c.set).OrderBy(c => c.dex).OrderBy(c => c.type).OrderBy(c => c.rarity);
+		}
+
+		static IEnumerable<PocketCard> GetMyPocketCollection()
+		{
+			IEnumerable<PocketCard> unsorted = PocketCards.Get().Where(c => c.have);
+			List<PocketCard> sorted = new List<PocketCard>();
+
+			foreach (Section section in PocketSections.Get())
+				sorted.AddRange(SortCards(unsorted.Where(c => c.rarity == section.pocketRarity), section.sortMode).OfType<PocketCard>());
+
+			if (unsorted.Count() != sorted.Count)
+				throw new Exception();
+
+			return sorted;
 		}
 
 		static IEnumerable<JumboCard> GetMyJumboCollection()
@@ -1419,6 +1539,21 @@ namespace TCG
 		static IEnumerable<WorldsCard> WorldsCardsFromPokedex(Pokedex pokedex)
 		{
 			return WorldsCards.Get().Where(c => c.dex == pokedex).OrderBy(c => c.setNum).OrderBy(c => c.set);
+		}
+
+		static IEnumerable<PocketCard> PocketCardsFromSet(Sets set)
+		{
+			return PocketCards.Get().Where(c => c.set == set).OrderBy(c => c.rarity).OrderBy(c => c.setNum);
+		}
+
+		static IEnumerable<PocketCard> PocketCardsFromType(Types type)
+		{
+			return PocketCards.Get().Where(c => c.type == type).OrderBy(c => c.setNum).OrderBy(c => c.set);
+		}
+
+		static IEnumerable<PocketCard> PocketCardsFromPokedex(Pokedex pokedex)
+		{
+			return PocketCards.Get().Where(c => c.dex == pokedex).OrderBy(c => c.setNum).OrderBy(c => c.set);
 		}
 
 		/*static int CountCardsWithRarity(Rarity rarity)

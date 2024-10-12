@@ -959,8 +959,7 @@ else if (isset($_GET['worlds']))
 }
 else if (isset($_GET['pocket']))
 {
-	// require 'BestTracker_PocketHave.php';
-	$pocketHave = array();
+	require 'BestTracker_PocketHave.php';
 	require 'BestTracker_PocketCards.php';
 }
 else if (isset($_GET['jumbo']))
@@ -1275,8 +1274,20 @@ if (isset($_GET['date']))
 }
 else if (isset($_GET['pocket']))
 {
-	if (isset($_GET['all']))
+	if (isset($_GET['set']))
+		require 'BestTracker_Pocket_Sets.php';
+	else if (isset($_GET['type']))
+		require 'BestTracker_Pocket_Types.php';
+	else if (isset($_GET['dex']))
+		require 'BestTracker_Pocket_Pokedex.php';
+	else if (isset($_GET['all']))
 		require 'BestTracker_Pocket_All.php';
+	else if (isset($_GET['col']))
+	{
+		start($j++, 'Pocket Collection', $pocketHave, $pocketHave);
+		foreach ($pocketHave as $cur) { imgPN($cur); }
+		finish();
+	}
 	else
 		require 'BestTracker_Pocket.php';
 }
@@ -2064,6 +2075,9 @@ else if (isset($_GET['all']))
 else if (isset($_GET['col']))
 {
 	printCards('Collection', $have);
+	
+	// $fav = array(2936,215,3061,319,320,321,328,3142,3838,404,408,409,1026,1033,879,626,3255,3263,588,1019,1063,590,866,1078,2336,2059,3054,3100,1947,1961,2790,2721,2797,3275,3116,2783,3547,2836,3475,3341,2603,2585,4108,4116,4387,4280,3828,4021,4268);
+	// printCards('Favorites', $fav);
 }
 else if (isset($_GET['allall']))
 {
