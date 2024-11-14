@@ -1,14 +1,14 @@
 <?php
-$Grass = array(79,1,80,81,82,83,84,2,16,17,18,40,41,78);
+$Grass = array(79,1,80,81,82,83,84,2,16,17,18,40,41,123,78,126);
 printPocket('Grass', $Grass);
 
 $Fire = array(85,3,86,4,87,88,5,19,20,42,43,44,63,69,72);
 printPocket('Fire', $Fire);
 
-$Water = array(89,6,90,7,91,92,93,94,95,8,96,21,22,23,45,46,47,64);
+$Water = array(89,6,90,7,91,92,93,94,95,8,96,21,22,23,45,46,47,64,124,125);
 printPocket('Water', $Water);
 
-$Lightning = array(97,9,98,99,100,10,101,24,48,49,65,70,73,76);
+$Lightning = array(97,9,98,99,100,10,101,24,48,49,65,70,73,76,127);
 printPocket('Lightning', $Lightning);
 
 $Psychic = array(102,103,11,104,105,12,106,25,26,50,51,66,71,75,74,77);
@@ -27,7 +27,7 @@ printPocket('Metal', $Metal);
 $Dragon = array(115,33);
 printPocket('Dragon', $Dragon);
 
-$Colorless = array(116,15,117,118,119,120,34,35,36,37,38,39,54,68);
+$Colorless = array(116,15,117,118,119,120,34,35,36,37,38,39,54,68,121,122);
 printPocket('Colorless', $Colorless);
 
 

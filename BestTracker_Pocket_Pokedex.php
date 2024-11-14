@@ -2,7 +2,7 @@
 $NVT = array(55,56,57,58,59,60,61,62);
 printPocket('NVT', $NVT);
 
-$Bulbasaur = array(16);
+$Bulbasaur = array(16,126);
 printPocket('Bulbasaur', $Bulbasaur);
 
 
@@ -25,7 +25,7 @@ printPocket('Blastoise', $Blastoise);
 
 
 
-$Butterfree = array(80);
+$Butterfree = array(80,123);
 printPocket('Butterfree', $Butterfree);
 
 
@@ -101,7 +101,7 @@ printPocket('Diglett', $Diglett);
 
 
 
-$Meowth = array(35);
+$Meowth = array(35,122);
 printPocket('Meowth', $Meowth);
 
 
@@ -160,6 +160,8 @@ printPocket('Slowpoke', $Slowpoke);
 
 
 
+$Magnemite = array(127);
+printPocket('Magnemite', $Magnemite);
 
 $Magneton = array(98);
 printPocket('Magneton', $Magneton);
@@ -218,6 +220,8 @@ printPocket('Weezing', $Weezing);
 
 
 
+$Chansey = array(121);
+printPocket('Chansey', $Chansey);
 
 
 $Kangaskhan = array(117);
@@ -248,7 +252,7 @@ printPocket('Pinsir', $Pinsir);
 $Gyarados = array(91,22);
 printPocket('Gyarados', $Gyarados);
 
-$Lapras = array(92,23);
+$Lapras = array(92,23,124);
 printPocket('Lapras', $Lapras);
 
 $Ditto = array(118,36);
@@ -875,7 +879,7 @@ printPocket('Eelektross', $Eelektross);
 
 
 
-$Greninja = array(96);
+$Greninja = array(96,125);
 printPocket('Greninja', $Greninja);
 
 

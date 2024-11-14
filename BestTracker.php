@@ -2022,13 +2022,13 @@ else if (isset($_GET['fut']))
 {
 	require 'BestTracker_Future.php';
 	
-	$FUT_ex = array('SCR1','CH3','SM1','SVPEN7','SCR2','PD1','SCR3','SVP3','SVJ2','SVP2','CH4','CH5','PD2','SM5','SVPEN6','SM6','SCR4','SCR5','SVP4','SCR6','SM7','PD4','SVPEN8','SVP1');
-	$FUT_ex_Index = array(1,6,12,13,24,27,28,33,35,45,47,55,56,58,60,61,62,63,86,89,91,93,107,-1);
+	$FUT_ex = array();
+	$FUT_ex_Index = array();
 	printFuture('ex', $FUT_ex);
 	printMix('ex (All)', $ex_SV, $FUT_ex, $FUT_ex_Index);
 	
-	$FUT_Tera = array('\n','CH6','SVJ1','SVL2','SB2','SVL1','PD3','SB3','PD5','SB4','KO1','\n');
-	$FUT_Tera_Index = array(27,9,22,28,30,30,30,30,30,30,31,30);
+	$FUT_Tera = array('\n','CH6','SVJ1','TF1','TF2','SVL2','TF3','TF4','SB4','TF5','TF6','SVL1','TF7','SB5','PD3','PD5','SB7','TF8','SB6','TF9','KO1','\n');
+	$FUT_Tera_Index = array(27,9,22,27,27,28,29,29,29,29,30,30,30,30,30,30,30,30,30,30,31,30);
 	printFuture('Tera ex', $FUT_Tera);
 	printMix('Tera ex (All)', $ex_SV_Tera, $FUT_Tera, $FUT_Tera_Index);
 	
