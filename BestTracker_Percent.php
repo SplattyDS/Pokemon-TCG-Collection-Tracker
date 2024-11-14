@@ -23,11 +23,11 @@ printCards('V-UNION Character Art', $V_UNION_Character_Art);
 
 printCards('Future ex (SV) Shiny Full Art', $ex_SV_Future_Shiny_Full_Art);
 
-printCards('Tera ex (SV)', $ex_SV_Tera);
-
 printCards('Full Art Pokémon (BW & XY - Radiant)', $Full_Art_Pokemon_BWXY_Radiant);
 
 printCards('Radiant Collection (XY)', $Radiant_Collection_XY);
+
+printCards('Tera ex (SV)', $ex_SV_Tera);
 
 printCards('VSTAR', $VSTAR);
 
@@ -43,9 +43,9 @@ printCards('Ace Spec', $Ace_Spec);
 
 printCards('Gold Pokémon', $Gold_Pokemon);
 
-printCards('Metal Cards', $Metal);
-
 printCards('VMAX (Gigantamax)', $VMAX_Gigantamax);
+
+printCards('Metal Cards', $Metal);
 
 printCards('Secret Rare (DP - Gold)', $Secret_DP_Gold);
 
@@ -111,9 +111,9 @@ printCards('VMAX', $VMAX);
 
 printCards('EX (Evolutions)', $EX_Evolutions);
 
-printCards('ex (SV)', $ex_SV);
-
 printCards('VMAX Special Art', $VMAX_Special_Art);
+
+printCards('ex (SV)', $ex_SV);
 
 printCards('Gold Energy (SWSH)', $Gold_Energy_SWSH);
 
@@ -153,13 +153,13 @@ printCards('VSTAR Special Art', $VSTAR_Special_Art);
 
 printCards('Full Art Pokémon (BW & XY - Textured)', $Full_Art_Pokemon_BWXY_Textured);
 
-printCards('Full Art Trainer (SV)', $Full_Art_Trainer_SV);
-
 printCards('Crystal Type', $Crystal_Type);
 
 printCards('V Special Art', $V_Special_Art);
 
 printCards('Mega EX', $M_EX);
+
+printCards('Full Art Trainer (SV)', $Full_Art_Trainer_SV);
 
 printCards('EX', $EX);
 
@@ -183,21 +183,21 @@ printCards('Secret Rare (BW & XY - Gold)', $Secret_BWXY_Gold);
 
 printCards('Shiny Vault (SV)', $Shiny_Vault_SV);
 
-printCards('Special Art Trainer (SV)', $Special_Art_Trainer_SV);
-
 printCards('Shiny Vault (SWSH)', $Shiny_Vault_SWSH);
 
 printCards('Full Art Trainer (BW & XY)', $Full_Art_Trainer_BW_XY);
 
-printCards('ex (SV) Full Art', $ex_SV_Full_Art);
+printCards('Special Art Trainer (SV)', $Special_Art_Trainer_SV);
 
 printCards('VMAX Rainbow', $VMAX_Rainbow);
 
+printCards('ex (SV) Full Art', $ex_SV_Full_Art);
+
 printCards('Full Art Trainer (SM)', $Full_Art_Trainer_SM);
 
-printCards('Special Art Pokémon (SV)', $Special_Art_Pokemon_SV);
-
 printCards('ex', $ex);
+
+printCards('Special Art Pokémon (SV)', $Special_Art_Pokemon_SV);
 
 printCards('Pikachu Worlds Collection', $Pikachu_Worlds_Collection);
 

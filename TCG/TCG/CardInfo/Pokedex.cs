@@ -769,6 +769,7 @@
 		Spewpa,
 		Vivillon_Meadow,
 		Vivillon_High_Plains,
+		Vivillon_Fancy,
 		Litleo,
 		Pyroar,
 		Flabébé,
