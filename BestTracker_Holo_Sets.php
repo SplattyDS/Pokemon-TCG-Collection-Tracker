@@ -523,6 +523,8 @@ printHolo('Twilight Masquerade', $Twilight_Masquerade);
 $Shrouded_Fable = array(14786,14727,14728,14787,14788,14789,14790,14791,14792);
 printHolo('Shrouded Fable', $Shrouded_Fable);
 
+$Stellar_Crown = array(15148,15149,15150,15151,15152,15153,15154,15155,15156,15157,15158,15159,15160,15161,15162);
+printHolo('Stellar Crown', $Stellar_Crown);
 
 
 
