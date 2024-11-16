@@ -1268,9 +1268,16 @@ if (isset($_GET['date']))
 	$all = array_merge($all, $temp);
 	printCards('Rommelmarkt Oostende (15/9/2024)', $temp);
 	
+	$temp = array(3547,3995,3997,3998,3874,4010);
+	$all = array_merge($all, $temp);
+	printCards('Tante Wendy (~22/9/2024)', $temp);
+	
 	$missing = array();
 	foreach ($have as $card) { if (!in_array($card, $all)) { array_push($missing, $card); /*print($card.',');*/ } }
 	printCards('Missing', $missing);
+	if (count($missing) != 0)
+		foreach ($missing as $missingCard)
+			print($missingCard.',');
 }
 else if (isset($_GET['pocket']))
 {
