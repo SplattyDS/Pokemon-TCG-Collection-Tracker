@@ -1281,7 +1281,12 @@ if (isset($_GET['date']))
 }
 else if (isset($_GET['pocket']))
 {
-	if (isset($_GET['set']))
+	if (isset($_GET['test']))
+	{
+		$wants = array(134,106,121,128,124,135,15,16,78,19,21,23,144,76,160,26,28,33,36,37,147,48,149,54,55,56,61,154,155,68,157,70,75,73,158);
+		printPocket('Wants', $wants);
+	}
+	else if (isset($_GET['set']))
 		require 'BestTracker_Pocket_Sets.php';
 	else if (isset($_GET['type']))
 		require 'BestTracker_Pocket_Types.php';
@@ -1801,6 +1806,75 @@ else if (isset($_GET['trainer']))
 	
 	$lillie = array(1768,1784,1822,3214,'h',10818,'h',10819,'h',10820,'h',10824,'f','SV9EN1','h',8899,'h',9200,'h',9413,'h',8723,1092,1288,3217,'h',10648,1798,3219,'h',10649,1835);
 	printTrainer('Lillie', $lillie);
+}
+else if (isset($_GET['moon']))
+{
+	require 'BestTracker_HoloHave.php';
+	
+	function printMoon($title, &$cardArr)
+	{
+		global $j;
+		
+		start($j++, $title, array(), $cardArr);
+		
+		$holo = $fut = false;
+		
+		foreach ($cardArr as $cur)
+		{
+			if ($cur == 'h')
+			{
+				$holo = true;
+				$fut = false;
+				continue;
+			}
+			else if ($cur == 'f')
+			{
+				$fut = true;
+				$holo = false;
+				continue;
+			}
+			else if ($cur == 'u')
+			{
+				$holo = false;
+				$fut = false;
+				continue;
+			}
+			else if ($cur == '\n')
+			{
+				print('<br>');
+				continue;
+			}
+			
+			if ($holo)
+				imgHN($cur);
+			else if ($fut)
+				imgF($cur);
+			else
+				imgN($cur);
+		}
+		
+		finish();
+	}
+	
+	$moon = array(
+	'u',3475,2634,3275,3269,
+	'\n','h',
+	10818,10819,10820,
+	'\n',
+	10832,
+	13094,13095,13192,13194,
+	13561,
+	14268,14809,14944,14287,15000,14507,
+	// '\n',
+	// 10811,10812,10813,10814,10815,10816,10817,10821,10822,10823,10824,10825,10826
+	);
+	printMoon('Project: Moon', $moon);
+	
+	$u = array(3475,2634,3275,3269);
+	printCards('U', $u);
+	
+	$h = array(10818,10819,10820,10832,13094,13095,13192,13194,13561,14268,14809,14944,14287,15000,14507);
+	printHolo('H', $h);
 }
 else if (isset($_GET['cute']))
 {

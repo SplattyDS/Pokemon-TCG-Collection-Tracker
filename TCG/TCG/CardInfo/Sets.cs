@@ -219,10 +219,13 @@
 		Shrouded_Fable,
 		Stellar_Crown,
 		Surging_Sparks,
-		Prismatic_Evolution,
+		Prismatic_Evolutions,
+		JourneyTogether,
+		Destined_Rivals,
 		SV_Energy,
 		SV_Promo,
 		Mc_Donalds_2023,
+		Mc_Donalds_2024,
 		Japanese_SV,
 
 		// Classic
@@ -232,6 +235,7 @@
 
 		// Pocket
 		Genetic_Apex,
+		Mythical_Island,
 		Promo_A,
 
 		Length,

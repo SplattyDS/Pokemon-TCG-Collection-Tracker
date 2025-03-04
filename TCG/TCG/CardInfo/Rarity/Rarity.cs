@@ -90,9 +90,6 @@
 		Radiant_Collection_BW,
 		Radiant_Collection_XY,
 
-		Full_Art_Trainer_BW_XY,
-		Full_Art_Trainer_BW_XY_Plasma,
-		Full_Art_Trainer_Evolutions,
 		Full_Art_Pokemon_BWXY_Textured,
 		Full_Art_Pokemon_BWXY_Radiant,
 		Full_Art_Pokemon_BWXY_Plasma,
@@ -109,6 +106,9 @@
 		EX_Full_Art_Radiant_XY,
 		M_EX_Full_Art_Radiant,
 		EX_Full_Art_Special,
+		Full_Art_Trainer_BW_XY,
+		Full_Art_Trainer_BW_XY_Plasma,
+		Full_Art_Trainer_Evolutions,
 
 		EX_Special_Art,
 		M_EX_Special_Art,
@@ -125,7 +125,6 @@
 
 		Shiny_Vault_SM,
 
-		Full_Art_Trainer_SM,
 		Full_Art_Pokemon_SM,
 		Full_Art_Pokemon_SM_Screaming,
 		GX_Full_Art,
@@ -134,6 +133,7 @@
 		TT_UB_GX_Full_Art,
 		GX_Shiny_Full_Art,
 		UB_GX_Shiny_Full_Art,
+		Full_Art_Trainer_SM,
 
 		GX_Special_Art,
 		TT_GX_Special_Art,
@@ -169,20 +169,20 @@
 		Shiny_Vault_SWSH,
 		Classic_Collection,
 
-		Full_Art_Trainer_SWSH,
-		Full_Art_Energy_SWSH,
 		Full_Art_Pokemon_SWSH,
 		Full_Art_Pokemon_SWSH_Stamp_Box,
 		V_Full_Art,
 		V_Shiny_Full_Art,
 		VMAX_Shiny_Full_Art,
+		Full_Art_Trainer_SWSH,
+		Full_Art_Energy_SWSH,
 
-		Special_Art_Trainer_SWSH,
 		Special_Art_Pokemon_SWSH,
 		Special_Art_Pokemon_SWSH_Forest,
 		V_Special_Art,
 		VMAX_Special_Art,
 		VSTAR_Special_Art,
+		Special_Art_Trainer_SWSH,
 
 		Character_Art_SWSH,
 		V_Character_Art,
@@ -217,9 +217,6 @@
 
 		Shiny_Vault_SV,
 
-		Full_Art_Trainer_SV,
-		Full_Art_Trainer_SV_Ancient,
-		Full_Art_Trainer_SV_Future,
 		Full_Art_Pokemon_SV,
 		ex_SV_Full_Art,
 		ex_SV_Ancient_Full_Art,
@@ -229,11 +226,10 @@
 		ex_SV_Ancient_Shiny_Full_Art,
 		ex_SV_Future_Shiny_Full_Art,
 		ex_SV_Tera_Shiny_Full_Art,
+		Full_Art_Trainer_SV,
+		Full_Art_Trainer_SV_Ancient,
+		Full_Art_Trainer_SV_Future,
 
-		Special_Art_Trainer_SV,
-		Special_Art_Trainer_SV_Poke_Ball,
-		Special_Art_Trainer_SV_Ancient,
-		Special_Art_Trainer_SV_Future,
 		Special_Art_Pokemon_SV,
 		Special_Art_Pokemon_SV_Woodblock,
 		Special_Art_Pokemon_SV_Glitter,
@@ -247,6 +243,11 @@
 		ex_SV_Tera_Special_Art,
 		ex_SV_Shiny_Special_Art,
 		ex_SV_Tera_Shiny_Special_Art,
+		Special_Art_Trainer_SV,
+		Special_Art_Trainer_SV_Poke_Ball,
+		Special_Art_Trainer_SV_Border,
+		Special_Art_Trainer_SV_Ancient,
+		Special_Art_Trainer_SV_Future,
 
 		Gold_Item_SV,
 		Gold_Item_Ancient_SV,
@@ -258,5 +259,8 @@
 		ex_SV_Future_Gold,
 		ex_SV_Tera_Gold,
 		ex_SV_Gold_Raised_Foil,
+		ex_SV_Gold_Silhouette_Ancient,
+		ex_SV_Gold_Silhouette_Future,
+		ex_SV_Gold_Silhouette_Tera,
 	}
 }

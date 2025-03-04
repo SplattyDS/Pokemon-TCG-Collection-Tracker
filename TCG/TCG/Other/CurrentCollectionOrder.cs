@@ -96,6 +96,7 @@ namespace TCG
 			Rarity.ex_SV_Ancient,
 			Rarity.ex_SV_Future,
 			Rarity.ex_SV_Tera,
+			Rarity.Ace_Spec_SV,
 			Rarity.Shiny_Vault_SV,
 			Rarity.Full_Art_Pokemon_SV,
 			Rarity.Full_Art_Trainer_SV,

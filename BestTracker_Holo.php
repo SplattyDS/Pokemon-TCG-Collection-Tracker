@@ -329,7 +329,11 @@ printHolo('SV Series - Pixel Cosmos Holo (Future)', $SV_PIXEL_COSMOS_HOLO_FUTURE
 
 printHolo('SV Series - Confetti Holo', $SV_CONFETTI_HOLO);
 
+printHolo('SV Series - Confetti Holo (Ancient)', $SV_CONFETTI_HOLO_ANCIENT);
+
 printHolo('SV Series - Line Holo', $SV_LINE_HOLO);
+
+printHolo('SV Series - Glitter Holo', $SV_GLITTER_HOLO);
 
 printHolo('SV Series - Snowflake Holo', $SV_SNOWFLAKE_HOLO);
 
@@ -341,6 +345,8 @@ printHolo('SV Series - Pixel Cosmos Holo Energy', $SV_PIXEL_COSMOS_HOLO_ENERGY);
 
 printHolo('SV Series - Toxic Chain Holo Energy', $SV_TOXIC_CHAIN_HOLO_ENERGY);
 
+printHolo('SV Series - Cracked Ice Holo Energy (Tera)', $SV_CRACKED_ICE_HOLO_ENERGY_TERA);
+
 printHolo('SV Series - Reverse Rocky Holo', $SV_REVERSE_ROCKY_HOLO);
 
 printHolo('SV Series - Reverse Toxic Chain Holo', $SV_REVERSE_TOXIC_CHAIN_HOLO);
@@ -350,6 +356,8 @@ printHolo('SV Series - Reverse Ancient Holo', $SV_REVERSE_ANCIENT_HOLO);
 printHolo('SV Series - Reverse Future Holo', $SV_REVERSE_FUTURE_HOLO);
 
 printHolo('SV Series - Reverse Mirage Rocky Holo', $SV_REVERSE_MIRAGE_ROCKY_HOLO);
+
+printHolo('SV Series - Reverse Pixel Cosmos Rocky Holo', $SV_REVERSE_PIXEL_COSMOS_ROCKY_HOLO);
 
 printHolo('SV Series - Reverse Pixel Cosmos Holo', $SV_REVERSE_PIXEL_COSMOS_HOLO);
 

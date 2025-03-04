@@ -109,12 +109,6 @@ $Radiant_Collection_BW = array();
 
 $Radiant_Collection_XY = array();
 
-$Full_Art_Trainer_BW_XY = array();
-
-$Full_Art_Trainer_BW_XY_Plasma = array();
-
-$Full_Art_Trainer_Evolutions = array();
-
 $Full_Art_Pokemon_BWXY_Textured = array();
 
 $Full_Art_Pokemon_BWXY_Radiant = array();
@@ -147,6 +141,12 @@ $M_EX_Full_Art_Evolutions = array();
 
 $M_EX_Full_Art_Radiant = array();
 
+$Full_Art_Trainer_BW_XY = array();
+
+$Full_Art_Trainer_BW_XY_Plasma = array();
+
+$Full_Art_Trainer_Evolutions = array();
+
 $EX_Special_Art = array();
 
 $M_EX_Special_Art = array();
@@ -167,8 +167,6 @@ $Prism_Star = array(181,166,154,160,182,167,155,161);
 
 $Shiny_Vault_SM = array();
 
-$Full_Art_Trainer_SM = array();
-
 $Full_Art_Pokemon_SM = array();
 
 $Full_Art_Pokemon_SM_Screaming = array();
@@ -184,6 +182,8 @@ $TT_UB_GX_Full_Art = array();
 $GX_Shiny_Full_Art = array();
 
 $UB_GX_Shiny_Full_Art = array();
+
+$Full_Art_Trainer_SM = array();
 
 $GX_Special_Art = array();
 
@@ -239,8 +239,6 @@ $Shiny_Vault_SWSH = array();
 
 $Classic_Collection = array();
 
-$Full_Art_Trainer_SWSH = array();
-
 $Full_Art_Energy_SWSH = array();
 
 $Full_Art_Pokemon_SWSH = array();
@@ -253,7 +251,7 @@ $V_Shiny_Full_Art = array();
 
 $VMAX_Shiny_Full_Art = array();
 
-$Special_Art_Trainer_SWSH = array();
+$Full_Art_Trainer_SWSH = array();
 
 $Special_Art_Pokemon_SWSH = array();
 
@@ -264,6 +262,8 @@ $V_Special_Art = array();
 $VMAX_Special_Art = array();
 
 $VSTAR_Special_Art = array();
+
+$Special_Art_Trainer_SWSH = array();
 
 $Character_Art_SWSH = array();
 
@@ -319,12 +319,6 @@ $Ace_Spec_SV_Future = array();
 
 $Shiny_Vault_SV = array();
 
-$Full_Art_Trainer_SV = array();
-
-$Full_Art_Trainer_SV_Ancient = array();
-
-$Full_Art_Trainer_SV_Future = array();
-
 $Full_Art_Pokemon_SV = array();
 
 $ex_SV_Full_Art = array();
@@ -343,13 +337,11 @@ $ex_SV_Future_Shiny_Full_Art = array();
 
 $ex_SV_Tera_Shiny_Full_Art = array();
 
-$Special_Art_Trainer_SV = array();
+$Full_Art_Trainer_SV = array();
 
-$Special_Art_Trainer_SV_Poke_Ball = array();
+$Full_Art_Trainer_SV_Ancient = array();
 
-$Special_Art_Trainer_SV_Ancient = array();
-
-$Special_Art_Trainer_SV_Future = array();
+$Full_Art_Trainer_SV_Future = array();
 
 $Special_Art_Pokemon_SV = array();
 
@@ -377,6 +369,16 @@ $ex_SV_Shiny_Special_Art = array();
 
 $ex_SV_Tera_Shiny_Special_Art = array();
 
+$Special_Art_Trainer_SV = array();
+
+$Special_Art_Trainer_SV_Poke_Ball = array();
+
+$Special_Art_Trainer_SV_Border = array();
+
+$Special_Art_Trainer_SV_Ancient = array();
+
+$Special_Art_Trainer_SV_Future = array();
+
 $Gold_Item_SV = array();
 
 $Gold_Item_Ancient_SV = array();
@@ -396,5 +398,11 @@ $ex_SV_Future_Gold = array();
 $ex_SV_Tera_Gold = array();
 
 $ex_SV_Gold_Raised_Foil = array();
+
+$ex_SV_Gold_Silhouette_Ancient = array();
+
+$ex_SV_Gold_Silhouette_Future = array();
+
+$ex_SV_Gold_Silhouette_Tera = array();
 
 ?>

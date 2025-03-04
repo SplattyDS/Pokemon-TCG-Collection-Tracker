@@ -1,5 +1,5 @@
 <?php
-$NVT = array(55,56,57,58,59,60,61,62);
+$NVT = array(55,56,57,58,59,60,61,62,152,153,154);
 printPocket('NVT', $NVT);
 
 $Bulbasaur = array(16,126);
@@ -9,18 +9,18 @@ printPocket('Bulbasaur', $Bulbasaur);
 $Venusaur = array(79,1,40,78);
 printPocket('Venusaur', $Venusaur);
 
-$Charmander = array(19);
+$Charmander = array(19,163);
 printPocket('Charmander', $Charmander);
 
 
 $Charizard = array(85,3,42,69,72);
 printPocket('Charizard', $Charizard);
 
-$Squirtle = array(21);
+$Squirtle = array(21,164);
 printPocket('Squirtle', $Squirtle);
 
 
-$Blastoise = array(89,6,45);
+$Blastoise = array(89,6,45,162);
 printPocket('Blastoise', $Blastoise);
 
 
@@ -35,7 +35,7 @@ printPocket('Beedrill', $Beedrill);
 
 
 
-$Pidgeot = array(116,34);
+$Pidgeot = array(116,34,139,151);
 printPocket('Pidgeot', $Pidgeot);
 
 
@@ -46,13 +46,13 @@ printPocket('Pidgeot', $Pidgeot);
 
 
 
-$Pikachu = array(9,48,70,73,76);
+$Pikachu = array(9,48,70,73,76,160);
 printPocket('Pikachu', $Pikachu);
 
 
 
 
-$Raichu = array(97);
+$Raichu = array(97,133);
 printPocket('Raichu', $Raichu);
 
 
@@ -144,7 +144,7 @@ printPocket('Victreebel', $Victreebel);
 
 
 
-$Golem = array(108);
+$Golem = array(108,136);
 printPocket('Golem', $Golem);
 
 
@@ -199,7 +199,7 @@ printPocket('Electrode', $Electrode);
 
 
 
-$Exeggutor = array(84,2,41);
+$Exeggutor = array(84,2,41,141);
 printPocket('Exeggutor', $Exeggutor);
 
 
@@ -244,12 +244,14 @@ printPocket('Starmie', $Starmie);
 $Pinsir = array(18);
 printPocket('Pinsir', $Pinsir);
 
+$Tauros = array(140);
+printPocket('Tauros', $Tauros);
 
 
 
 
 
-$Gyarados = array(91,22);
+$Gyarados = array(91,22,131,148);
 printPocket('Gyarados', $Gyarados);
 
 $Lapras = array(92,23,124);
@@ -261,7 +263,7 @@ printPocket('Ditto', $Ditto);
 $Eevee = array(37);
 printPocket('Eevee', $Eevee);
 
-$Vaporeon = array(93);
+$Vaporeon = array(93,132,144);
 printPocket('Vaporeon', $Vaporeon);
 
 $Jolteon = array(99);
@@ -281,7 +283,7 @@ printPocket('Omastar', $Omastar);
 $Kabutops = array(109);
 printPocket('Kabutops', $Kabutops);
 
-$Aerodactyl = array(119);
+$Aerodactyl = array(119,137,150,156);
 printPocket('Aerodactyl', $Aerodactyl);
 
 $Snorlax = array(120,39);
@@ -295,7 +297,7 @@ $Zapdos = array(100,10,49,65);
 printPocket('Zapdos', $Zapdos);
 
 
-$Moltres = array(88,5,44,63);
+$Moltres = array(88,5,44,63,159);
 printPocket('Moltres', $Moltres);
 
 
@@ -307,7 +309,7 @@ printPocket('Dragonite', $Dragonite);
 $Mewtwo = array(105,12,51,71,74,77);
 printPocket('Mewtwo', $Mewtwo);
 
-$Mew = array(75);
+$Mew = array(75,134,135,149,155,158);
 printPocket('Mew', $Mew);
 
 
@@ -415,6 +417,8 @@ printPocket('Mew', $Mew);
 
 
 
+$Celebi = array(128,147,157);
+printPocket('Celebi', $Celebi);
 
 
 
@@ -690,6 +694,8 @@ printPocket('Gardevoir', $Gardevoir);
 
 
 
+$Serperior = array(129,142);
+printPocket('Serperior', $Serperior);
 
 
 
@@ -851,6 +857,8 @@ printPocket('Eelektross', $Eelektross);
 
 
 
+$Volcarona = array(130,161);
+printPocket('Volcarona', $Volcarona);
 
 
 
@@ -940,6 +948,8 @@ printPocket('Greninja', $Greninja);
 
 
 
+$Dedenne = array(145);
+printPocket('Dedenne', $Dedenne);
 
 
 
@@ -1008,6 +1018,8 @@ printPocket('Greninja', $Greninja);
 
 
 
+$Salandit = array(143);
+printPocket('Salandit', $Salandit);
 
 
 
@@ -1057,6 +1069,8 @@ printPocket('Greninja', $Greninja);
 
 
 
+$Marshadow = array(138,146);
+printPocket('Marshadow', $Marshadow);
 
 
 

@@ -109,12 +109,6 @@ printCards('Radiant Collection (BW)', $Radiant_Collection_BW);
 
 printCards('Radiant Collection (XY)', $Radiant_Collection_XY);
 
-printCards('Full Art Trainer (BW & XY)', $Full_Art_Trainer_BW_XY);
-
-printCards('Full Art Trainer (BW & XY - Plasma)', $Full_Art_Trainer_BW_XY_Plasma);
-
-printCards('Full Art Trainer (Evolutions)', $Full_Art_Trainer_Evolutions);
-
 printCards('Full Art Pokémon (BW & XY - Textured)', $Full_Art_Pokemon_BWXY_Textured);
 
 printCards('Full Art Pokémon (BW & XY - Radiant)', $Full_Art_Pokemon_BWXY_Radiant);
@@ -147,6 +141,12 @@ printCards('Mega EX Full Art (Evolutions)', $M_EX_Full_Art_Evolutions);
 
 printCards('Mega EX Full Art (Radiant)', $M_EX_Full_Art_Radiant);
 
+printCards('Full Art Trainer (BW & XY)', $Full_Art_Trainer_BW_XY);
+
+printCards('Full Art Trainer (BW & XY - Plasma)', $Full_Art_Trainer_BW_XY_Plasma);
+
+printCards('Full Art Trainer (Evolutions)', $Full_Art_Trainer_Evolutions);
+
 printCards('EX Special Art', $EX_Special_Art);
 
 printCards('Mega EX Special Art', $M_EX_Special_Art);
@@ -167,8 +167,6 @@ printCards('Prism Star', $Prism_Star);
 
 printCards('Shiny Vault (SM)', $Shiny_Vault_SM);
 
-printCards('Full Art Trainer (SM)', $Full_Art_Trainer_SM);
-
 printCards('Full Art Pokémon (SM)', $Full_Art_Pokemon_SM);
 
 printCards('Full Art Pokémon (SM - Screaming)', $Full_Art_Pokemon_SM_Screaming);
@@ -184,6 +182,8 @@ printCards('Tag Team Ultra Beast GX Full Art', $TT_UB_GX_Full_Art);
 printCards('GX Shiny', $GX_Shiny_Full_Art);
 
 printCards('Ultra Beast GX Shiny', $UB_GX_Shiny_Full_Art);
+
+printCards('Full Art Trainer (SM)', $Full_Art_Trainer_SM);
 
 printCards('GX Special Art', $GX_Special_Art);
 
@@ -239,8 +239,6 @@ printCards('Shiny Vault (SWSH)', $Shiny_Vault_SWSH);
 
 printCards('Classic Collection', $Classic_Collection);
 
-printCards('Full Art Trainer (SWSH)', $Full_Art_Trainer_SWSH);
-
 printCards('Full Art Energy (SWSH)', $Full_Art_Energy_SWSH);
 
 printCards('Full Art Pokémon (SWSH)', $Full_Art_Pokemon_SWSH);
@@ -253,7 +251,7 @@ printCards('V Shiny', $V_Shiny_Full_Art);
 
 printCards('VMAX Shiny', $VMAX_Shiny_Full_Art);
 
-printCards('Special Art Trainer (SWSH)', $Special_Art_Trainer_SWSH);
+printCards('Full Art Trainer (SWSH)', $Full_Art_Trainer_SWSH);
 
 printCards('Special Art Pokémon (SWSH)', $Special_Art_Pokemon_SWSH);
 
@@ -264,6 +262,8 @@ printCards('V Special Art', $V_Special_Art);
 printCards('VMAX Special Art', $VMAX_Special_Art);
 
 printCards('VSTAR Special Art', $VSTAR_Special_Art);
+
+printCards('Special Art Trainer (SWSH)', $Special_Art_Trainer_SWSH);
 
 printCards('Character Art (SWSH)', $Character_Art_SWSH);
 
@@ -319,12 +319,6 @@ printCards('Ace Spec (SV - Future)', $Ace_Spec_SV_Future);
 
 printCards('Shiny Vault (SV)', $Shiny_Vault_SV);
 
-printCards('Full Art Trainer (SV)', $Full_Art_Trainer_SV);
-
-printCards('Full Art Trainer (SV - Ancient)', $Full_Art_Trainer_SV_Ancient);
-
-printCards('Full Art Trainer (SV - Future)', $Full_Art_Trainer_SV_Future);
-
 printCards('Full Art Pokémon (SV)', $Full_Art_Pokemon_SV);
 
 printCards('ex (SV) Full Art', $ex_SV_Full_Art);
@@ -343,13 +337,11 @@ printCards('Future ex (SV) Shiny Full Art', $ex_SV_Future_Shiny_Full_Art);
 
 printCards('Tera ex (SV) Shiny Full Art', $ex_SV_Tera_Shiny_Full_Art);
 
-printCards('Special Art Trainer (SV)', $Special_Art_Trainer_SV);
+printCards('Full Art Trainer (SV)', $Full_Art_Trainer_SV);
 
-printCards('Special Art Trainer (SV - Poké Ball)', $Special_Art_Trainer_SV_Poke_Ball);
+printCards('Full Art Trainer (SV - Ancient)', $Full_Art_Trainer_SV_Ancient);
 
-printCards('Special Art Trainer (SV - Ancient)', $Special_Art_Trainer_SV_Ancient);
-
-printCards('Special Art Trainer (SV - Future)', $Special_Art_Trainer_SV_Future);
+printCards('Full Art Trainer (SV - Future)', $Full_Art_Trainer_SV_Future);
 
 printCards('Special Art Pokémon (SV)', $Special_Art_Pokemon_SV);
 
@@ -377,6 +369,16 @@ printCards('ex (SV) Shiny Special Art', $ex_SV_Shiny_Special_Art);
 
 printCards('Tera ex (SV) Shiny Special Art', $ex_SV_Tera_Shiny_Special_Art);
 
+printCards('Special Art Trainer (SV)', $Special_Art_Trainer_SV);
+
+printCards('Special Art Trainer (SV - Poké Ball)', $Special_Art_Trainer_SV_Poke_Ball);
+
+printCards('Special Art Trainer (SV - Border)', $Special_Art_Trainer_SV_Border);
+
+printCards('Special Art Trainer (SV - Ancient)', $Special_Art_Trainer_SV_Ancient);
+
+printCards('Special Art Trainer (SV - Future)', $Special_Art_Trainer_SV_Future);
+
 printCards('Gold Item (SV)', $Gold_Item_SV);
 
 printCards('Gold Item (SV - Ancient)', $Gold_Item_Ancient_SV);
@@ -396,5 +398,11 @@ printCards('ex (SV - Future) Gold', $ex_SV_Future_Gold);
 printCards('Tera ex (SV) Gold', $ex_SV_Tera_Gold);
 
 printCards('ex (SV) Gold (Raised Foil)', $ex_SV_Gold_Raised_Foil);
+
+printCards('ex (SV) Gold (Silhouette - Ancient)', $ex_SV_Gold_Silhouette_Ancient);
+
+printCards('ex (SV) Gold (Silhouette - Future)', $ex_SV_Gold_Silhouette_Future);
+
+printCards('ex (SV) Gold (Silhouette - Tera)', $ex_SV_Gold_Silhouette_Tera);
 
 ?>
