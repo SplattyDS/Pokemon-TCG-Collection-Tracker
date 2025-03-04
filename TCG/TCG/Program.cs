@@ -862,6 +862,9 @@ namespace TCG
 			if (cards == null || cards.Count() == 0)
 				return "";
 
+			if (set == Sets.Prismatic_Evolutions)
+				cards = cards.Where(c => c.rarity != HoloRarity.SV_REVERSE_POKE_BALL_HOLO && c.rarity != HoloRarity.SV_REVERSE_MASTER_BALL_HOLO);
+
 			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
 
 			return
@@ -878,9 +881,24 @@ namespace TCG
 
 			string cardArr = string.Join(',', cards.Select(c => c.ToString()));
 
-			return
+			string ret =
 				"$" + set.ToString() + "_Rev = array(" + cardArr + ");\r\n" +
 				"printHolo('" + set.ToString().Replace('_', ' ') + "', $" + set.ToString() + "_Rev);\r\n";
+
+			if (set == Sets.Prismatic_Evolutions)
+			{
+				IEnumerable<HoloCard> cards1 = HoloCardsFromSetByRarity(set, new HoloRarity[] { HoloRarity.SV_REVERSE_POKE_BALL_HOLO }, true);
+				IEnumerable<HoloCard> cards2 = HoloCardsFromSetByRarity(set, new HoloRarity[] { HoloRarity.SV_REVERSE_MASTER_BALL_HOLO }, true);
+				string cardArr1 = string.Join(',', cards1.Select(c => c.ToString()));
+				string cardArr2 = string.Join(',', cards2.Select(c => c.ToString()));
+				ret +=
+					"$" + set.ToString() + "_Rev_1 = array(" + cardArr1 + ");\r\n" +
+					"printHolo('" + set.ToString().Replace('_', ' ') + " (Poké Ball)', $" + set.ToString() + "_Rev_1);\r\n" +
+					"$" + set.ToString() + "_Rev_2 = array(" + cardArr2 + ");\r\n" +
+					"printHolo('" + set.ToString().Replace('_', ' ') + " (Master Ball)', $" + set.ToString() + "_Rev_2);\r\n";
+			}
+
+			return ret;
 		}
 
 		static string CodeFromHoloType(Types type)
@@ -1509,6 +1527,11 @@ namespace TCG
 		static IEnumerable<HoloCard> HoloCardsFromSet(Sets set, bool reverse)
 		{
 			return SetReverses.FilterCards(HoloCards.Get().Where(c => c.set == set).OrderBy(c => c.rarity).OrderBy(c => c.setNum), set, reverse);
+		}
+
+		static IEnumerable<HoloCard> HoloCardsFromSetByRarity(Sets set, HoloRarity[] reverseRarities, bool reverse)
+		{
+			return SetReverses.FilterCardsByRarity(HoloCards.Get().Where(c => c.set == set).OrderBy(c => c.rarity).OrderBy(c => c.setNum), set, reverseRarities, reverse);
 		}
 
 		static IEnumerable<HoloCard> HoloCardsFromType(Types type)

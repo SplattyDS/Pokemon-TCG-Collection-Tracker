@@ -129,6 +129,9 @@ namespace TCG
 			new SetReverse(Sets.Shrouded_Fable, HoloRarity.SV_REVERSE_TOXIC_CHAIN_HOLO, HoloRarity.SV_REVERSE_ANCIENT_HOLO, HoloRarity.SV_REVERSE_FUTURE_HOLO),
 			new SetReverse(Sets.Stellar_Crown, HoloRarity.SV_REVERSE_ROCKY_HOLO, HoloRarity.SV_REVERSE_ANCIENT_HOLO, HoloRarity.SV_REVERSE_FUTURE_HOLO),
 			new SetReverse(Sets.Surging_Sparks, HoloRarity.SV_REVERSE_ROCKY_HOLO, HoloRarity.SV_REVERSE_ANCIENT_HOLO, HoloRarity.SV_REVERSE_FUTURE_HOLO),
+			new SetReverse(Sets.Prismatic_Evolutions, HoloRarity.SV_REVERSE_ROCKY_HOLO, HoloRarity.SV_REVERSE_ANCIENT_HOLO, HoloRarity.SV_REVERSE_FUTURE_HOLO),
+			// new SetReverse(Sets.Surging_Sparks, HoloRarity.SV_REVERSE_POKE_BALL_HOLO),
+			// new SetReverse(Sets.Surging_Sparks, HoloRarity.SV_REVERSE_MASTER_BALL_HOLO),
 		};
 
 		public static HoloRarity[] GetRarities(Sets set)
@@ -142,20 +145,24 @@ namespace TCG
 		public static IEnumerable<HoloCard> FilterCards(IEnumerable<HoloCard> cardsFromSet, Sets set, bool returnReverses)
 		{
 			HoloRarity[] rarities = GetRarities(set);
+			return FilterCardsByRarity(cardsFromSet, set, rarities, returnReverses);
+		}
 
+		public static IEnumerable<HoloCard> FilterCardsByRarity(IEnumerable<HoloCard> cardsFromSet, Sets set, HoloRarity[] reverseRarities, bool returnReverses)
+		{
 			if (returnReverses)
 			{
-				if (rarities == null)
+				if (reverseRarities == null)
 					return null;
 
-				return cardsFromSet.Where(c => rarities.Contains(c.rarity));
+				return cardsFromSet.Where(c => reverseRarities.Contains(c.rarity));
 			}
 			else
 			{
-				if (rarities == null)
+				if (reverseRarities == null)
 					return cardsFromSet;
 
-				return cardsFromSet.Where(c => !rarities.Contains(c.rarity));
+				return cardsFromSet.Where(c => !reverseRarities.Contains(c.rarity));
 			}
 		}
 	}

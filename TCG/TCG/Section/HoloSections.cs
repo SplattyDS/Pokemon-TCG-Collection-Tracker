@@ -160,6 +160,7 @@
 			// SM Series
 			new Section(HoloRarity.SM_WATER_WEB_HOLO, "SM Series - Water Web Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SM_SMOOTH_COSMOS_HOLO, "SM Series - Smooth Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SM_PIXEL_COSMOS_HOLO, "SM Series - Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SM_MIRROR_HOLO, "SM Series - Mirror Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SM_CRACKED_ICE_HOLO, "SM Series - Cracked Ice Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SM_CONFETTI_HOLO, "SM Series - Confetti Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
@@ -225,6 +226,8 @@
 			new Section(HoloRarity.SV_SMOOTH_COSMOS_HOLO_ENERGY, "SV Series - Smooth Cosmos Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY, "SV Series - Pixel Cosmos Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_TOXIC_CHAIN_HOLO_ENERGY, "SV Series - Toxic Chain Holo Energy", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SV_PLAIN_HOLO_ENERGY_TERA, "SV Series - Plain Holo Energy (Tera)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SV_PIXEL_COSMOS_HOLO_ENERGY_TERA, "SV Series - Pixel Cosmos Holo Energy (Tera)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_CRACKED_ICE_HOLO_ENERGY_TERA, "SV Series - Cracked Ice Holo Energy (Tera)", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 
 			new Section(HoloRarity.SV_REVERSE_ROCKY_HOLO, "SV Series - Reverse Rocky Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
@@ -237,6 +240,9 @@
 			new Section(HoloRarity.SV_REVERSE_PIXEL_COSMOS_HOLO, "SV Series - Reverse Pixel Cosmos Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_REVERSE_LINE_HOLO, "SV Series - Reverse Line Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 			new Section(HoloRarity.SV_REVERSE_PLAIN_HOLO, "SV Series - Reverse Plain Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+
+			new Section(HoloRarity.SV_REVERSE_POKE_BALL_HOLO, "SV Series - Reverse Poké Ball Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
+			new Section(HoloRarity.SV_REVERSE_MASTER_BALL_HOLO, "SV Series - Reverse Master Ball Holo", SortMode.SORT_BY_SET_AND_DEX_AND_TYPE_DX),
 		};
 
 		public static Section[] Get()

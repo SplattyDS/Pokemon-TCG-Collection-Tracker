@@ -4762,6 +4762,10 @@ namespace TCG
 			new Card("Walking Wake ex", Pokedex.Walking_Wake, Rarity.ex_SV_Gold_Silhouette_Ancient, Types.Water, Sets.Prismatic_Evolutions, 178),
 			new Card("Pikachu ex", Pokedex.Pikachu, Rarity.ex_SV_Gold_Silhouette_Tera, Types.Tera_Stellar_Lightning, Sets.Prismatic_Evolutions, 179),
 			new Card("Terapagos ex", Pokedex.Terapagos, Rarity.ex_SV_Gold_Silhouette_Tera, Types.Tera_Stellar_Terapagos, Sets.Prismatic_Evolutions, 180),
+			new Card("Eevee", Pokedex.Eevee, Rarity.Special_Art_Pokemon_SV, Types.Colorless, Sets.SV_Promo, 173),
+			new Card("Kyogre ex", Pokedex.Kyogre, Rarity.ex_SV, Types.Water, Sets.SV_Promo, 178),
+			new Card("Xerneas ex", Pokedex.Xerneas, Rarity.ex_SV, Types.Psychic, Sets.SV_Promo, 179),
+			new Card("Dialga ex", Pokedex.Dialga, Rarity.ex_SV, Types.Metal, Sets.SV_Promo, 180),
 		};
 		
 		// do not add Play! Pokémon prize pack cards (too many and uncertain amount)

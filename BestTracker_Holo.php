@@ -237,6 +237,8 @@ printHolo('SM Series - Water Web Holo', $SM_WATER_WEB_HOLO);
 
 printHolo('SM Series - Smooth Cosmos Holo', $SM_SMOOTH_COSMOS_HOLO);
 
+printHolo('SM Series - Pixel Cosmos Holo', $SM_PIXEL_COSMOS_HOLO);
+
 printHolo('SM Series - Mirror Holo', $SM_MIRROR_HOLO);
 
 printHolo('SM Series - Cracked Ice Holo', $SM_CRACKED_ICE_HOLO);
@@ -345,6 +347,10 @@ printHolo('SV Series - Pixel Cosmos Holo Energy', $SV_PIXEL_COSMOS_HOLO_ENERGY);
 
 printHolo('SV Series - Toxic Chain Holo Energy', $SV_TOXIC_CHAIN_HOLO_ENERGY);
 
+printHolo('SV Series - Plain Holo Energy (Tera)', $SV_PLAIN_HOLO_ENERGY_TERA);
+
+printHolo('SV Series - Pixel Cosmos Holo Energy (Tera)', $SV_PIXEL_COSMOS_HOLO_ENERGY_TERA);
+
 printHolo('SV Series - Cracked Ice Holo Energy (Tera)', $SV_CRACKED_ICE_HOLO_ENERGY_TERA);
 
 printHolo('SV Series - Reverse Rocky Holo', $SV_REVERSE_ROCKY_HOLO);
@@ -364,5 +370,9 @@ printHolo('SV Series - Reverse Pixel Cosmos Holo', $SV_REVERSE_PIXEL_COSMOS_HOLO
 printHolo('SV Series - Reverse Line Holo', $SV_REVERSE_LINE_HOLO);
 
 printHolo('SV Series - Reverse Plain Holo', $SV_REVERSE_PLAIN_HOLO);
+
+printHolo('SV Series - Reverse Poké Ball Holo', $SV_REVERSE_POKE_BALL_HOLO);
+
+printHolo('SV Series - Reverse Master Ball Holo', $SV_REVERSE_MASTER_BALL_HOLO);
 
 ?>
